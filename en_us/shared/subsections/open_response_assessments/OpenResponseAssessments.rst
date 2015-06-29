@@ -8,11 +8,11 @@ Open Response Assessments
 Introduction to Open Response Assessments
 *****************************************
 
-Open response assessments allow instructors to assign questions that might not
-have definite answers, such as text responses or short essays. Students submit
-responses to questions, then each student and the student's peers compare the
-responses to a rubric that you create. You can also allow students to upload an
-image to accompany a text response.
+Open response assessments allow the course team to assign questions that might
+not have definite answers, such as text responses or short essays. Students
+submit responses to questions, then each student and the student's peers
+compare the responses to a rubric that you create. You can also allow students
+to upload an image to accompany a text response.
 
 Open response assessments include peer assessments and self assessments. In peer
 assessments, students compare their peers' responses to a rubric that you
@@ -256,12 +256,12 @@ responses that he or she will assess.
 
 The student selects an option for each of the assignment's criteria, and then
 clicks **Compare your selections with the instructor's selections**. If all of
-the student's selections match the instructor's selections, the next sample
-response opens automatically.
+the student's selections match the selections defined by the course team, the
+next sample response opens automatically.
 
-If any of the student's selections differs from the instructor's selections, the
-student sees the response again, and the following message appears above the
-response:
+If any of the student's selections differ from those specified by the course
+team, the student sees the response again, and the following message appears
+above the response.
 
 .. code-block:: xml
 
@@ -271,7 +271,7 @@ response:
   the assessment again.
 
 For each of the criteria, the student sees one of the following two messages,
-depending on whether the student's selections matched those of the instructor:
+depending on whether the student's selections matched those of the course team.
 
 .. code-block:: xml
 
@@ -291,7 +291,7 @@ option.
    :width: 500
 
 The student continues to try scoring the sample response until the student's
-scoring for all criteria matches the instructor's scoring.
+scoring for all criteria matches the scoring defined by the course team.
 
 For more information, see :ref:`PA Student Training Step`.
 
@@ -300,9 +300,9 @@ For more information, see :ref:`PA Student Training Step`.
 Peer Assessment Step
 =====================
 
-In the peer assessment step, students review other students' responses. For each
-response, they select an option for each criterion in your rubric based on the
-response. Students can also provide text feedback, or comments, on each
+In the peer assessment step, students review other students' responses. For
+each response, they select an option for each criterion in your rubric based on
+the response. Students can also provide text feedback, or comments, on each
 response.
 
 
@@ -310,9 +310,9 @@ response.
 Number of Responses and Assessments
 ************************************
 
-When you specify a peer assessment step, you specify the **number of responses**
-that each student has to assess and the **number of peer assessments** that each
-response has to receive.
+When you specify a peer assessment step, you specify the **number of
+responses** that each student has to assess and the **number of peer
+assessments** that each response has to receive.
 
 .. note:: Because some students might submit a response without completing any
    peer assessments, some responses might not receive the required number of
@@ -322,12 +322,12 @@ response has to receive.
    must undergo. For example, if you require each response to receive three
    assessments, you could require each student to assess five responses.
 
-If all responses have received assessments, but some students have not completed
-the required number of peer assessments, those students can assess responses
-that other students have already assessed. The student who submitted the
-response sees the additional peer assessments when he sees his score. However,
-the additional peer assessments do not count toward the score that the response
-receives.
+If all responses have received assessments, but some students have not
+completed the required number of peer assessments, those students can assess
+responses that other students have already assessed. The student who submitted
+the response sees the additional peer assessments when he sees his score.
+However, the additional peer assessments do not count toward the score that the
+response receives.
 
 
 .. _Feedback Options:
@@ -336,9 +336,9 @@ receives.
 Feedback Options
 ****************
 
-By default, students see a single comment field below the entire rubric. You can
-also add a comment field to an individual criterion or to several individual
-criteria. This comment field can contain up to 300 characters.
+By default, students see a single comment field below the entire rubric. You
+can also add a comment field to an individual criterion or to several
+individual criteria. This comment field can contain up to 300 characters.
 
 The comment field appears below the options for the criterion. In the following
 image, both criteria have a comment field. There is also a field for overall
@@ -364,9 +364,10 @@ if the Ideas criterion in a peer assessment receives a 10 from one student, a 7
 from a second student, and an 8 from a third student, the Ideas criterion's
 score is 8.
 
-A student's final score for a peer assessment is the sum of the median scores for each individual criterion. 
+A student's final score for a peer assessment is the sum of the median scores
+for each individual criterion.
 
-For example, a response may receive the following scores from peer assessors:
+For example, a response may receive the following scores from peer assessors.
 
 .. list-table::
    :widths: 25 10 10 10 10
@@ -394,7 +395,8 @@ For example, a response may receive the following scores from peer assessors:
      - 5
      - **4**
 
-To calculate the final score, add the median scores for each criterion:
+To calculate the final score, add the median scores for each criterion as
+follows.
 
   **Ideas median (8/10) + Content median (8/10) + Grammar median (4/5) = final
   score (20/25)**
@@ -405,8 +407,8 @@ To calculate the final score, add the median scores for each criterion:
 
 
 For information on grades for student submissions that you have cancelled and
-removed from peer assessment, refer to :ref:`Remove a student response from peer
-grading`.
+removed from peer assessment, refer to :ref:`Remove a student response from
+peer grading`.
 
 
 ********************************
@@ -421,7 +423,8 @@ completes the peer assessment step, the step "collapses" so that just the
    :width: 500
    :alt: The peer assessment step with just the heading visible
 
-If the student clicks the **Assess Peers** heading, the step expands. The student can then click **Continue Assessing Peers**.
+If the student clicks the **Assess Peers** heading, the step expands. The
+student can then click **Continue Assessing Peers**.
 
 .. image:: ../../../../shared/building_and_running_chapters/Images/PA_ContinueGrading.png
    :width: 500
@@ -436,8 +439,8 @@ In self assessments, the student sees his response followed by your rubric. As
 with peer assessments, the student compares the rubric to his response and
 selects an option for each of the criteria.
 
-If you include both peer and self assessments, we recommend that you include the
-peer assessment before the self assessment.
+If you include both peer and self assessments, we recommend that you include
+the peer assessment before the self assessment.
 
 .. _PA Top Responses:
 
@@ -445,23 +448,24 @@ peer assessment before the self assessment.
 Top Responses
 *****************************
 
-You can include a **Top Responses** section that shows the top-scoring responses
-that students have submitted for the assignment, along with the scores for those
-responses. The **Top Responses** section appears below the student's score
-information after the student finishes every step in the assignment.
+You can include a **Top Responses** section that shows the top-scoring
+responses that students have submitted for the assignment, along with the
+scores for those responses. The **Top Responses** section appears below the
+student's score information after the student finishes every step in the
+assignment.
 
 .. image:: ../../../../shared/building_and_running_chapters/Images/PA_TopResponses.png
    :alt: Section that shows the text and scores of the top three responses for the assignment
    :width: 500
 
-You can allow the **Top Responses** section to show between 1 and 100 responses.
-Keep in mind, however, that each response might be up to 300 pixels in height in
-the list. (For longer responses, students can scroll to see the entire
-response.) We recommend that you specify 20 or fewer responses to prevent the
-page from becoming too long.
+You can allow the **Top Responses** section to show between 1 and 100
+responses. Keep in mind, however, that each response might be up to 300 pixels
+in height in the list. (For longer responses, students can scroll to see the
+entire response.) We recommend that you specify 20 or fewer responses to
+prevent the page from becoming too long.
 
-.. note:: It may take up to an hour for a high-scoring response to appear in the
-   **Top Responses** list.
+.. note:: It may take up to an hour for a high-scoring response to appear in 
+ the **Top Responses** list.
 
    If a high-scoring response is :ref:`removed from peer assessment<Remove a
    student response from peer grading>` it is also removed from the **Top

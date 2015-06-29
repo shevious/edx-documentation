@@ -24,12 +24,11 @@ July 2015
      - Change
    * - 8 July 2015
      - Added the :ref:`Poll Tool` and :ref:`Survey Tool` sections.
-   * - 1 July
+   * - 1 July 2015
      - Several additions were made to provide information about using feedback
        and hints in common problems.
        
        * :ref:`Adding Feedback and Hints to a Problem`
-       
        * :ref:`Use Feedback in a Checkbox Problem`
        * :ref:`Use Hints in a Checkbox Problem`
        * :ref:`Use Feedback in a Dropdown Problem` 
@@ -206,9 +205,9 @@ February 2015
        response from peer grading<Remove a student response from peer
        grading>`.
    * - 
-     - Updated ORA documentation to indicate that course staff can use student
-       usernames to :ref:`access student information<Access Student
-       Information>`. They no longer need to obtain an anonymized student ID.
+     - Updated ORA documentation to indicate that course teams can use student
+       usernames to :ref:`Access Student Information`. They no longer need to
+       obtain an anonymized student ID.
    * - 2/13/15
      - Updated the example in the :ref:`Drag and Drop Problem XML` topic.
    * - 2/12/15
