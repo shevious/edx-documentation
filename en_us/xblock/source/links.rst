@@ -3,6 +3,8 @@
 .. _PyEnv: https://github.com/yyuu/pyenv
 
 .. _VirtualEnv: http://www.virtualenv.org/en/latest/
+
+.. _VirtualEnv Installation: https://virtualenv.pypa.io/en/latest/installation.html
          
 .. _VirtualEnvWrapper: http://virtualenvwrapper.readthedocs.org/en/latest
 
@@ -17,6 +19,16 @@
 .. _1.js: https://github.com/edx/xblock-sdk/blob/master/workbench/static/workbench/js/runtime/1.js
 
 .. _Problem XBlock: https://github.com/edx/xblock-sdk/blob/master/sample_xblocks/basic/problem.py
+
+.. _Content XBlocks: https://github.com/edx/xblock-sdk/blob/master/sample_xblocks/basic/content.py
+
+.. _Slider XBlock: https://github.com/edx/xblock-sdk/blob/master/sample_xblocks/basic/slider.py
+
+.. _Structure XBlocks: https://github.com/edx/xblock-sdk/blob/master/sample_xblocks/basic/structure.py
+
+.. _View Counter XBlock: https://github.com/edx/xblock-sdk/blob/master/sample_xblocks/basic/view_counter.py
+
+.. _Download Python: https://www.python.org/download/releases/2.7/
 
 .. _thumbs.html: https://github.com/edx/xblock-sdk/blob/master/sample_xblocks/thumbs/static/html/thumbs.html
 

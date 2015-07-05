@@ -8,7 +8,7 @@ Before you continue, make sure that you have :ref:`set up the XBlock SDK <Set
 Up the XBlock Software Development Kit>`. You then create the XBlock and deploy
 it in the XBlock SDK.
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1
 

@@ -7,7 +7,7 @@ XBlock Methods
 You use XBlock methods in the XBlock Python file to define the behavior of your
 XBlock.
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1
    

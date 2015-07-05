@@ -10,7 +10,7 @@ Before you continue, make sure that you are familiar with the subjects in the
 When you have installed all prerequisites, you are ready to set up the `XBlock
 SDK`_ in a virtual environment. To do this, complete the following steps.
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1
 

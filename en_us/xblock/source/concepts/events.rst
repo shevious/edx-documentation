@@ -11,7 +11,7 @@ In most cases, your XBlock must emit events.
 
 For example, :ref:`assigning a grade <Publish Grade Events>` is a common event.
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1
    

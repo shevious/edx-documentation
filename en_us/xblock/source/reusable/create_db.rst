@@ -10,4 +10,4 @@ database.
 
    .. code-block:: bash
 
-      python manage.py syncdb
+      $ python manage.py syncdb

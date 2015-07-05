@@ -6,7 +6,7 @@ XBlock Fragments
 
 A fragment is a part of a web page returned by an XBlock view method. 
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1
 

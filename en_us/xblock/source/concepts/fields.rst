@@ -6,7 +6,7 @@ XBlock Fields
 
 You use XBlock fields to store state data for your XBlock.
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1
 
@@ -183,7 +183,7 @@ smaller fields.
 Initializing Fields
 ********************
 
-You do not use the ``init`` method with XBlocks.
+You do not use the ``__init__`` method with XBlocks.
 
 XBlocks can be used in many contexts, and the ``init`` method might not work in
 those contexts.

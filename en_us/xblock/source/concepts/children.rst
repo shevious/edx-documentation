@@ -6,7 +6,7 @@ XBlock Children
 
 An XBlock can have child XBlocks. 
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1
 

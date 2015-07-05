@@ -11,7 +11,7 @@ In the XBlock Python file, you define :ref:`fields <XBlock Fields>`,
 :ref:`views <View Methods>`, :ref:`handlers <Handler Methods>`, and workbench
 scenarios.
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1 
 

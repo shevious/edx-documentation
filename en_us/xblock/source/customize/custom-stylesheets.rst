@@ -12,7 +12,7 @@ In ``myxblock.css``, you define the styles that are added to the
 fragment that is returned by the view method to be displayed by the runtime
 application.
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1 
 

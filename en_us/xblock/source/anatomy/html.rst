@@ -21,9 +21,6 @@ Note the following details about the HTML file.
   information, see :ref:`The XBlock Stylesheets`.
 
 * The values ``self.upvotes`` and ``self.downvotes`` reference the fields in
-  the XBlock Python class that have the scope ``Scope.user_state_summary``.
-  This indicates that the data in these fields are specific to the XBlock and
-  are the same for all users. For more information, see :ref:`The XBlock Python
-  File`.
+  the XBlock Python class.
 
 .. include:: ../links.rst

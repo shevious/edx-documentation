@@ -4,7 +4,7 @@
 Testing an XBlock with the XBlock SDK
 ########################################
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1
 

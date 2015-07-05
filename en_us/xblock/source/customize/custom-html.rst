@@ -13,7 +13,7 @@ In ``myxblock.html``, you will define the HTML content that is added to a
 :ref:`fields <XBlock Fields>`. The fragment is returned by the :ref:`view
 method <View Methods>`.
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1 
 

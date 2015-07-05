@@ -7,7 +7,7 @@ XBlock Examples
 This section shows example XBlocks. These examples are meant to demonstrate
 simple XBlocks and are not meant to show the range of capabilities.
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1
 
@@ -74,6 +74,12 @@ XBlocks.
 We will use the `Thumbs XBlock`_ in the sections :ref:`Customize Your XBlock`
 and :ref:`Anatomy of an XBlock`.
 
-You can explore the example XBlocks in the XBlock SDK.
+You can explore the other example XBlocks in the XBlock SDK.
+
+* `View Counter XBlock`_
+* `Problem XBlock`_
+* `Slider XBlock`_
+* Several `Content XBlocks`_
+* Several `Structure XBlocks`_
 
 .. include:: ../links.rst

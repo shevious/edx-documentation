@@ -4,13 +4,13 @@
 Introduction to XBlocks
 #############################
 
-XBlocks are the components that you use to build interactive courseware.
+XBlocks are the components that you use to build courseware.
 	
 Like HTML ``<div>`` tags, XBlocks can represent components as small as a
 paragraph of text, a video, or a multiple choice input field, or as large as a
 section, a chapter, or an entire course.
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1
 
@@ -18,12 +18,13 @@ section, a chapter, or an entire course.
 XBlocks and the edX Platform
 *****************************
 
-The edX Platform uses many built in XBlocks that are available to course
-developers. For example, `Google Drive`_ and `Open Response Assessments`_ are
-both XBlocks that are imported into the edX Platform. For more information, see
+The edX Platform uses many built-in XBlocks that are available to course
+developers. For example, HTML content, videos, and interactive problems are all
+XBlocks. The edX Platform also includes many specialized XBlocks such as
+`Google Drive`_ and `Open Response Assessments`_. For more information, see
 :ref:`XBlocks and the edX Platform`.
 
-EdX recognizes that the ever expanding need to provide new and innovative types
+EdX recognizes the ever expanding need to provide new and innovative types
 of content. The XBlock API and XBlock SDK are available for developers to
 create new types of XBlocks for course teams to use.
 
@@ -45,7 +46,7 @@ you should have basic knowledge of the following technologies.
 * Python
 * JavaScript
 * HTML and CSS
-* Virtual Environments
+* Python virtualenv
 * Git
 
 ===================

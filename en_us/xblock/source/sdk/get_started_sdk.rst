@@ -4,7 +4,7 @@ Getting Started with the XBlock SDK
 
 This section describes how to get started with the XBlock SDK.
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1
 

@@ -12,7 +12,7 @@ In ``myxblock.js``, you will define code that manages user interaction
 with the XBlock. The code is added to a :ref:`fragment <XBlock
 Fragments>`. 
 
-.. contents:: Section Contents
+.. contents::
  :local:
  :depth: 1 
 
