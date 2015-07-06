@@ -36,10 +36,12 @@ To create the component for your open response assessment, complete these steps.
    and then click **Peer Assessment**.
 #. In the Problem component that appears, click **Edit**.
 
-.. note:: After you publish an ORA assignment, you can no longer change its
-   rubric or the point values associated with each criteria in the rubric.
-   However, you can modify due dates and the weight of the ORA assignment
-   within your grading policy after you publish an ORA assignment.
+.. note:: After you publish an ORA assignment, you can no longer change the
+   structure of the rubric or the point values associated with each criterion
+   in the rubric. If you correct typographical errors in the text of the
+   rubric, only learners who have not yet started the assignment will see the
+   corrections. However, you can modify due dates and the weight of the ORA
+   assignment after you publish an ORA assignment.
 
 
 .. _PA Add Prompt:
@@ -129,8 +131,12 @@ To add the rubric, complete these steps.
 7. Follow the instructions in steps 2-6 to add your remaining criteria. If you need to add more criteria, click **Add Criterion** at the end of the list of criteria.
 #. Include instructions for students to provide overall written feedback on their peers' responses. You can leave the default text in the **Feedback Instructions** field or replace it with your own text.
 
-.. note:: After you publish an ORA assignment, you can no longer change its
-   rubric or the point values associated with each criteria in the rubric.
+.. note:: After you publish an ORA assignment, you can no longer change the
+   structure of the rubric or the point values associated with each criterion
+   in the rubric. If you correct typographical errors in the text of the
+   rubric, only learners who have not yet started the assignment will see the
+   corrections. However, you can modify due dates and the weight of the ORA
+   assignment after you publish an ORA assignment.
 
 
 .. _PA Criteria Comment Field Only:

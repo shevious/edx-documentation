@@ -120,12 +120,13 @@ assessments in your courses.
   issues when necessary.
 
   If learners raise concerns about ORA assignments in discussion forums,
-  course staff have the ability to perform actions such as :ref:`removing a
-  student response <Remove a student response from peer grading>` from peer
-  grading, or :ref:`resetting a student's attempts <Adjust_grades>` for a
-  problem. If there are more widespread issues with peer grading, course staff
-  can reduce the weight of the peer assessment within the final course grade,
-  or allow learners to drop the lowest graded assignment from their grades.
+  course staff have the ability to perform actions such as :ref:`deleting a
+  learner's history, or "state" <Adjust_grades>` for a problem so that he can
+  submit his assignment again, or :ref:`removing a student response <Remove a
+  student response from peer grading>` from peer grading. If there are more
+  widespread issues with peer grading, course staff can reduce the weight of
+  the peer assessment within the final course grade, or allow learners to drop
+  the lowest graded assignment from their grades.
 
 
 .. _PA Elements:
@@ -484,9 +485,9 @@ option for weighting the peer and self assessment portions independently.
 In open response assessments that include only self assessments, the
 assignment's final grade is equivalent to the self assessment score.
 
-.. note:: Given the high level of subjectivity as well as rate of error in peer
-   assessments, edX recommends that you make ORA assignments count towards only
-   a small percentage of a course's final grade.
+.. note:: Given the high level of subjectivity in peer assessments, edX
+   recommends that you make ORA assignments count towards only a small
+   percentage of a course's final grade.
 
 The following sections detail how the scores for peer assessments and self
 assessments are calculated.
