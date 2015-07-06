@@ -17,7 +17,7 @@ Fragments>`.
  :depth: 1 
 
 ***********************************
-The Default XBlock JavaScirpt File
+The Default XBlock JavaScript File
 ***********************************
 
 When you :ref:`create a new XBlock <Create Your First XBlock>`, the default
@@ -34,16 +34,19 @@ added by default to the XBlock. Delete this code.
 Add JavaScript Code
 ********************
 
-You must add JavaScript code to increment the up and down votes for the XBlock.
-Follow the guidelines below.
+JavaScript code implements the browser-side functionality you need for your
+XBlock. The Thumbs XBlock uses clicks on the up and down vote buttons to call
+the handler to record votes.
 
-* Add the function ``MyXBlock`` to initializes the XBlock. 
+Follow the guidelines below to implement JavaScript code.
+
+* Add the function ``MyXBlock`` to initialize the XBlock. 
 
   The ``MyXBlock`` function maps to the constructor in the :ref:`XBlock
   Python file <The XBlock Python File>` and provides access to its methods and
   fields.
 
-* Add a runtime handler to the ``MyXBlock`` function.
+* Add the URL to the vote handler to the ``MyXBlock`` function.
   
   .. code-block:: javascript
 

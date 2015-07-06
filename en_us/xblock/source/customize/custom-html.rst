@@ -28,15 +28,16 @@ In the ``xblock-sdk/myxblock/myxblock/static/html`` directory, see the file
 
 .. include:: ../reusable/code_myxblock_html.rst
 
-The file contains HTML HTML to display the ``count`` field that was added by
+The file contains HTML to display the ``count`` field that was added by
 default to the XBlock. Delete the HTML between the ``div`` elements.
 
 ********************
 Add HTML Content
 ********************
 
-You add HTML to display the up and down votes for the XBlock. Create a single
-paragraph and follow the guidelines below.
+You can create HTML as needed to display the state of your XBlock. The Thumbs
+XBlock displays the up and down votes. Create a single paragraph and follow the
+guidelines below.
 
 * Create two ``span`` elements, to display up-votes and down-votes.
 

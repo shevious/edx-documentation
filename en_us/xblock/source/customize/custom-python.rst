@@ -30,27 +30,30 @@ the ``xblock-sdk/myxblock/myxblock/`` directory, see the file ``myxblock.py``.
 Add Comments
 ********************
 
-As a best practice and because XBlocks can be shared, you must add comments to
-the ``myxblock.py`` file. Replace the "TO DO" indicators with a description of
-what the XBlock does and any details future developers or users would want to
-know.
+As a best practice and because XBlocks can be shared, you should add comments
+to the ``myxblock.py`` file. Replace the "TO DO" indicators with a description
+of what the XBlock does and any details future developers or users would want
+to know.
 
 ********************
 Add XBlock Fields
 ********************
+
+You determine the data your XBlock stores through :ref:`fields <XBlock
+Fields>`. Fields store user and XBlock state as JSON data.
 
 To customize your ``myxblock.py`` file so that it has the same functionality
 as the ``thumbs.py`` file, you need to add three fields to the XBlock, each
 with the right :ref:`scope <Field Scope>`.
 
 * ``upvotes``, to store the number of times users up-vote the XBlock. The value
-  applies to the XBlock and all users.
+  applies to the XBlock and all users collectively.
 
 * ``downvotes``, to store the number of times users down-vote the XBlock. The
-  value applies to the XBlock and all users.
+  value applies to the XBlock and all users collectively.
 
 * ``voted``, to record whether or not the user has voted. The value applies to
-  the XBlock and each user.
+  the XBlock and each user individually.
 
 Review the :ref:`XBlock Fields` section, then add the required fields to
 ``myxblock.py``. You can remove the ``count`` field, which was defined
@@ -93,13 +96,6 @@ System as an XBlock Runtime`.
 In ``myxblock.py``, examine the ``student_view`` method that was defined
 automatically when you created the XBlock.
 
-.. note::
-  The method name, ``student_view``, is required by the edX Platform Learning
-  Management System. If you intend the XBlock to run in a different
-  :ref:`runtime application <XBlock Runtimes>`, you might need to define a
-  different name. For more information, see :ref:`EdX Learning Management
-  System as an XBlock Runtime`.
-
 The student view composes and returns the :ref:`fragment <XBlock Fragments>`
 from static HTML, JavaScript, and CSS files. A web page displays the fragment
 to learners.
@@ -124,7 +120,7 @@ Note the following details about student view.
 
      frag.initialize_js('MyXBlock')
 
-It appears that the necessary functions of the view were added automatically.
+As you can see, the necessary functions of the view were added automatically.
 Check the student view in ``myxblock.py`` against the student view in
 `thumbs.py`_. Note that the only differences are the file names of the HTML,
 CSS, and JavaScript files added to the fragment. As the file names are correct
@@ -134,11 +130,11 @@ for MyXBlock, you do not need to edit the student view at all.
 Define the Vote Handler
 **************************
 
-For your xblock to process votes from users the way that the Thumbs XBlock
-does, you use a :ref:`handler <Handler Methods>` to add the necessary logic.
+:ref:`Handlers <Handler Methods>` process input events from the XBlock
+JavaScript code. You use handlers to add interactivity to your block. In
+your XBlock, you use a handler to process votes from users.
 
-Define a handler method named ``vote`` in the ``MyXBlock`` class that processes
-user votes. The method must perform the following functions.
+The vote handler in your XBlock must perform the following functions.
 
 #. Update ``upvotes`` or ``downvotes`` fields based on the user's vote.
 
@@ -146,14 +142,18 @@ user votes. The method must perform the following functions.
   
 #. Return the updated ``upvotes`` and ``downvotes`` fields.
 
-Review the :ref:`XBlock Methods` section, then implement the ``vote`` handler
+Review the :ref:`XBlock Methods` section, then implement the vote handler
 in ``myxblock.py``. 
+
+You can use any name for the vote handler, and you will use the same name in
+the JavaScript code to connect browser events to the vote handler running in
+the server. To match the Thumbs XBlock, use the name ``vote``.
 
 ============================================
 Check the Handler Against the Thumbs XBlock
 ============================================
 
-After you have defined the ``vote`` method, check your work against the handler
+After you have defined the vote handler, check your work against the handler
 in the Thumbs XBlock.
 
 .. include:: ../reusable/code_thumbs_vote_handler.rst
