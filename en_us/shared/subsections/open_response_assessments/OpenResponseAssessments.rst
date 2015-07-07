@@ -124,7 +124,7 @@ open response assessments in your courses.
   course staff have the ability to perform actions such as :ref:`deleting a
   learner's history, or "state" <Adjust_grades>` for a problem so that he can
   submit his assignment again, or :ref:`removing a learner response <Remove a
-  student response from peer grading>` from peer grading. If there are more
+  learner response from peer grading>` from peer grading. If there are more
   widespread issues with peer grading, course staff can reduce the weight of
   the peer assessment within the final course grade or allow learners to drop
   the lowest graded assignment from their grades.
@@ -555,7 +555,7 @@ given for each criterion, as follows.
    of the scores that each individual peer assessor gave the response.
 
 For information on grades for learner submissions that you have cancelled and
-removed from peer assessment, refer to :ref:`Remove a student response from peer
+removed from peer assessment, refer to :ref:`Remove a learner response from peer
 grading`.
 
 
@@ -601,7 +601,7 @@ page from becoming too long.
    **Top Responses** list.
 
    If a high-scoring response is :ref:`removed from peer assessment<Remove a
-   student response from peer grading>` it is also removed from the **Top
+   learner response from peer grading>` it is also removed from the **Top
    Responses** list.
 
 For more information, see :ref:`PA Show Top Responses`.

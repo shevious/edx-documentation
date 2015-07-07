@@ -16,7 +16,7 @@ assignment, and then select the black **Course Staff Information** banner.
 
 When you access a specific learner's information for an open response
 assessment, you can view his responses and, if necessary, :ref:`cancel the
-learner's submission<Remove a student response from peer grading>` so that it is
+learner's submission<Remove a learner response from peer grading>` so that it is
 not included in peer assessments.
 
 .. _PA View Metrics for Individual Steps:
@@ -114,7 +114,7 @@ window, and then click anywhere on the image that opens.
    :alt: Report showing information about a learner's response
 
 
-.. _Remove a student response from peer grading:
+.. _Remove a learner response from peer grading:
 
 ************************************************
 Remove a Learner's Response from Peer Grading
@@ -188,7 +188,7 @@ Locate a Specific Submission in an ORA Assignment
 *************************************************
 
 If you are alerted to an inappropriate ORA submission that you want to cancel
-and :ref:`remove from peer assessment<Remove a student response from peer
+and :ref:`remove from peer assessment<Remove a learner response from peer
 grading>`, locate the specific submission by following these steps.
 
 #. Ask the person who reported the incident to send you a sample of text from
@@ -206,7 +206,7 @@ grading>`, locate the specific submission by following these steps.
    learner who posted the submission.
 
 #. Make a note of the username, and follow the steps to :ref:`remove a learner
-   response from peer grading<Remove a student response from peer grading>`.
+   response from peer grading<Remove a learner response from peer grading>`.
 
 
 
