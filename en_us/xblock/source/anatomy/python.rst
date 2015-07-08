@@ -7,6 +7,9 @@ The XBlock Python File
 This section of the tutorial walks through the Python file, `thumbs.py`_, for
 the Thumbs XBlock example in the XBlock SDK.
 
+If you completed the steps in :ref:`Build an XBlock Quick Start`, you can find
+this file locally at ``xblock_development/xblock-sdk/sample_xblocks/thumbs/thumbs.py``.
+
 In the XBlock Python file, you define :ref:`fields <XBlock Fields>`,
 :ref:`views <View Methods>`, :ref:`handlers <Handler Methods>`, and workbench
 scenarios.

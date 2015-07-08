@@ -4,12 +4,12 @@ Run the XBlock SDK Server
 
 To see the web interface of the XBlock SDK, you must run the SDK server. 
 
-In the ``xblock-sdk`` directory, run the following command to start the
+In the ``xblock_development`` directory, run the following command to start the
 server.
 
    .. code-block:: bash
 
-      $ python manage.py runserver
+      (venv) $ python xblock-sdk/manage.py runserver
 
 .. note:: If you do not specify a port, the XBlock SDK server uses port 8000.
   To use a different port, specify it in the ``runserver`` command.
@@ -34,6 +34,6 @@ command.
 
    .. code-block:: bash
 
-      $ python manage.py runserver help
+      (venv) $ python xblock-sdk/manage.py runserver help
 
 The command window lists and describes the available commands.

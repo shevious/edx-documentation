@@ -26,7 +26,7 @@ At the command prompt, run the following command to create the directory.
    
    .. code-block:: bash
 
-      $ mkdir my_xblock_development
+      $ mkdir xblock_development
 
 .. _Create and Activate the Virtual Environment:
 
@@ -35,14 +35,14 @@ Create and Activate the Virtual Environment
 ********************************************
 
 The first step is to create the virtual environment in your
-``my_xblock_development`` directory.
+``xblock_development`` directory.
 
-#. At the command prompt in ``my_xblock_development``, run the following
+#. At the command prompt in ``xblock_development``, run the following
    command to create the virtual environment.
    
    .. code-block:: bash
 
-      my_xblock_development $ virtualenv venv
+      $ virtualenv venv
 
 #. Run the following command to activate the virtual environment.
 
@@ -55,7 +55,7 @@ The first step is to create the virtual environment in your
 
    .. code-block:: bash
      
-      (venv)xblock my_username $
+      (venv) $
 
 .. include:: ../reusable/clone_sdk.rst
 

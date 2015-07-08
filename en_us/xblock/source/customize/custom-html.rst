@@ -23,8 +23,8 @@ The Default XBlock HTML File
 
 When you :ref:`create a new XBlock <Create Your First XBlock>`, the default
 static HTML file is created automatically, with skeletal functionality defined.
-In the ``xblock-sdk/myxblock/myxblock/static/html`` directory, see the file
-``myxblock.html``.
+In the ``xblock_development/myxblock/myxblock/static/html`` directory, see the
+file ``myxblock.html``.
 
 .. include:: ../reusable/code_myxblock_html.rst
 
@@ -59,7 +59,7 @@ Check HTML Against the Thumbs XBlock
 ****************************************
 
 After you have defined the HTML, check your work against the HTML in the
-Thumbs XBlock.
+Thumbs XBlock, in the file ``xblock_development/xblock-sdk/sample_xblocks/thumbs/static/html/thumbs.html``.
 
 .. include:: ../reusable/code_thumbs_html.rst
 

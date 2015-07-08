@@ -22,8 +22,8 @@ The Default XBlock JavaScript File
 
 When you :ref:`create a new XBlock <Create Your First XBlock>`, the default
 JavaScript file is created automatically, with skeletal functionality defined.
-In the ``xblock-sdk/myxblock/myxblock/static/js/source`` directory, see the
-file ``myxblock.js``.
+In the ``xblock_development/myxblock/myxblock/static/js/source`` directory, see
+the file ``myxblock.js``.
 
 .. include:: ../reusable/code_myxblock_js.rst
 
@@ -62,7 +62,7 @@ Check JavaScript Against the Thumbs XBlock
 *******************************************
 
 After you have defined the JavaScript code, check your work against the code in
-the Thumbs XBlock.
+the Thumbs XBlock, in the file ``xblock_development/xblock-sdk/sample_xblocks/thumbs/static/js/source/thumbs.js``.
 
 .. include:: ../reusable/code_thumbs_javascript.rst
 

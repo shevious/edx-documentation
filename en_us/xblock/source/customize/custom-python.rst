@@ -22,7 +22,8 @@ The Default XBlock Python File
 
 When you :ref:`create a new XBlock <Create Your First XBlock>`, the default
 Python file is created automatically, with skeletal functionality defined. In
-the ``xblock-sdk/myxblock/myxblock/`` directory, see the file ``myxblock.py``.
+the ``xblock_development/myxblock/myxblock/`` directory, see the file
+``myxblock.py``.
 
 .. include:: ../reusable/code_myxblock_python.rst
 
@@ -64,7 +65,7 @@ Check Fields Against the Thumbs XBlock
 =======================================
 
 After you have defined the fields, check your work against the fields in the
-Thumbs XBlock.
+Thumbs XBlock, in the file ``xblock_development/xblock-sdk/sample_xblocks/thumbs/thumbs.py``.
 
 .. include:: ../reusable/code_thumbs_fields.rst
 

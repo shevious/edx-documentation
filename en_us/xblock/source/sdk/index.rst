@@ -12,12 +12,15 @@ The XBlock SDK contains three main components:
 * Sample XBlocks that you can use as the starting point for new XBlocks, and
   for your own learning.
 
-In :ref:`Build an XBlock Quickstart`, you :ref:`set up the XBlock Software
+In :ref:`Build an XBlock Quick Start`, you :ref:`set up the XBlock Software
 Development Kit (SDK) <Set Up the XBlock Software Development Kit>`. You had to
 do this to :ref:`create your first XBlock <Create Your First XBlock>`.
 
-While covering some of the same topics, this part of the tutorial provides more
-in-depth information on using the XBlock SDK.
+While covering some of the same topics, this part of the tutorial is included
+as a later reference for using the XBlock SDK.
+
+If you have completed the quick start instructions, and want to continue
+learning about XBlocks, skip to :ref:`Anatomy of an XBlock`.
 
 .. toctree::
    :maxdepth: 2

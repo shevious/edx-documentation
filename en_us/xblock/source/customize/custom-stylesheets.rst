@@ -22,8 +22,8 @@ The Default XBlock CSS File
 
 When you :ref:`create a new XBlock <Create Your First XBlock>`, the default
 static CSS file is created automatically, with skeletal functionality defined.
-In the ``xblock-sdk/myxblock/myxblock/static/css`` directory, see the file
-``myxblock.css``.
+In the ``xblock_development/myxblock/myxblock/static/css`` directory, see the
+file ``myxblock.css``.
 
 .. include:: ../reusable/code_myxblock_css.rst
 
@@ -53,7 +53,7 @@ Check CSS Against the Thumbs XBlock
 ****************************************
 
 After you have defined the CSS code, check your work against the CSS in the
-Thumbs XBlock.
+Thumbs XBlock, in the file ``xblock_development/xblock-sdk/sample_xblocks/thumbs/static/css/thumbs.css``.
 
 .. include:: ../reusable/code_thumbs_css.rst
 

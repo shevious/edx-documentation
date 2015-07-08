@@ -5,17 +5,17 @@ Create an XBlock
 You use the XBlock SDK to create skeleton files for an XBlock. To do this,
 follow these steps at a command prompt.
 
-#. In the ``my_xblock_development/xblock-sdk`` directory, make sure that the
-   the virtual environment is activated, and then run the following command to
-   create the skeleton files for the XBlock.
+#. In the ``xblock_development`` directory, which contains the ``venv`` and
+   ``xblock-sdk`` directories, run the following command to create the skeleton
+   files for the XBlock.
    
    .. code-block:: bash
 
-      $ script/startnew.py
+      (venv) $ xblock-sdk/script/startnew.py
 
-   After you run this command, instructions in the command window instruct you
-   to determine a short name and a class name. Follow the guidelines in the
-   command window to determine the names that you want to use.
+   Instructions in the command window instruct you to determine a short name
+   and a class name. Follow the guidelines in the command window to determine
+   the names that you want to use.
 
    .. code-block:: bash
 
@@ -28,12 +28,12 @@ follow these steps at a command prompt.
         "XBlock", so for our hologram XBlock, you might choose
         "Hologram3dXBlock".
 
-      Once you specify those two words, a directory will be created in the
-      current directory containing the new project.
+      Once you specify those two names, a directory is created in the
+      ``xblock_development`` directory containing the new project.
 
       If you don't want to create the project here, or you enter a name
-      incorrectly, just type Ctrl-C to stop this script.  If you don't want the
-      resulting project, just delete the directory it created.
+      incorrectly, type Ctrl-C to stop the creation script.  If you don't want
+      the resulting project, delete the directory it created.
 
 #. At the command prompt, enter the Short Name you selected for your XBlock.
 
@@ -47,8 +47,6 @@ follow these steps at a command prompt.
   
       $ Class name: MyXBlock
 
-The skeleton files for the XBlock are created in ``xblock-sdk`` directory. For
-more information about the XBlock files, see
+The skeleton files for the XBlock are created in the ``myxblock`` directory.
+For more information about the XBlock files, see
 :ref:`Anatomy of an XBlock`.
-
-.. LIST FILES

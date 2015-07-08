@@ -7,6 +7,9 @@ The XBlock JavaScript File
 This section of the tutorial walks through the JavaScript file, `thumbs.js`_,
 that is part of the Thumbs XBlock in the XBlock SDK.
 
+If you completed the steps in :ref:`Build an XBlock Quick Start`, you can find
+this file locally at ``xblock_development/xblock-sdk/sample_xblocks/thumbs/static/js/source/thumbs.js``.
+
 In the XBlock JavaScript file, you define code that manages user interaction
 with the XBlock. The code is added to a :ref:`fragment <XBlock
 Fragments>`. 

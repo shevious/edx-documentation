@@ -1,7 +1,7 @@
-.. _Build an XBlock Quickstart:
+.. _Build an XBlock Quick Start:
 
 ##############################
-Build an XBlock: Quickstart
+Build an XBlock: Quick Start
 ##############################
 
 This part of the tutorial guides you through building an XBlock. At the end,
