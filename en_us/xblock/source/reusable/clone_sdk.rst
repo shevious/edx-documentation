@@ -3,7 +3,7 @@ Install the XBlock Software Development Kit
 ********************************************
 
 After you :ref:`create and activate the virtual environment <Create and
-Activate the Virtual Environment>`, you install the `XBlock SDK`_ and its
+Activate the Virtual Environment>`, you clone the `XBlock SDK`_ and install its
 requirements. To do this, complete the following steps at a command prompt.
 
 #. In the ``xblock_development`` directory, run the following command to clone
