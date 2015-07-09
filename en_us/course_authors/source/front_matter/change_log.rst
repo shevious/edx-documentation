@@ -4,7 +4,7 @@
 Change Log for 2015
 ########################
 
-This section lists changes in this document in 2015.
+This section lists changes made to this document in 2015.
 
 For older changes, see :ref:`Change Log 2014`.
 
@@ -22,6 +22,9 @@ July 2015
 
    * - Date
      - Change
+   * - nn July 2015
+     - Added information about signing in with campus credentials to the
+       :ref:`Getting Started with edX` section.
    * - 8 July 2015
      - Added the :ref:`Poll Tool` and :ref:`Survey Tool` sections.
    * - 1 July
