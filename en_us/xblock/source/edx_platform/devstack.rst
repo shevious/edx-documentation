@@ -36,21 +36,15 @@ Install the XBlock
 
       $ vagrant ssh
 
-#. Connect to the Vagrant instance as the user **edxapp**.
-  
-   .. code-block:: bash
-
-      vagrant@precise64:~$ sudo su edxapp 
-
 #. Install the XBlock.
    
    .. code-block:: bash
 
-      edxapp@precise64:~$ /bin/pip.edxapp install /path/to/your/xblock 
+      vagrant@precise64:~$ sudo -u edxapp /edx/bin/pip.edxapp install /path/to/your/block 
 
-*******************
-Enable the XBlock
-*******************
+**************************************
+Enable the XBlock in the edX Platform
+**************************************
 
 #. In the file ``edx-platform/lms/envs/common.py``, ensure the following lines
    are not commented out::
