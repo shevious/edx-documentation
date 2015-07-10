@@ -45,3 +45,8 @@
 .. _Google Drive Tool: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/latest/exercises_tools/google_docs.html
 
 .. _Runtime Publish Method: http://edx.readthedocs.org/projects/xblock/en/latest/api/runtime.html?highlight=grade#xblock.runtime.Runtime.publish
+
+.. _Open edX Installation and Configuration Guide: http://edx.readthedocs.org/projects/edx-installing-configuring-and-running/en/latest/
+
+.. _Developing Course Components: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/latest/developing_course/course_components.html
+
