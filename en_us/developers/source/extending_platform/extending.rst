@@ -15,11 +15,15 @@ This section of the developers' documentation lists and explains the different w
    :header-rows: 1
 
    * - 
-     - :ref:`Custom JavaScript Applications`
+     - :ref:`Custom 
+        JavaScript 
+        Applications`
      - LTI
-     - External Graders
+     - External 
+       Graders
      - XBlocks
-     - Platform Customization
+     - Platform 
+       Customization
    * - Development Cost
      - Low
      - Low
