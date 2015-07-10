@@ -4,8 +4,8 @@
 XBlocks, Events, and Grading
 #############################
 
-Events are emitted by the server, the browser, or the mobile device to capture
-information about interactions with the courseware.
+Events are emitted by the server or the browser to capture information about
+interactions with the courseware.
 
 In most cases, your XBlock must emit events. 
 
@@ -21,26 +21,25 @@ For example, :ref:`assigning a grade <Publish Grade Events>` is a common event.
 When an XBlock Should Emit Events
 **********************************
 
-Analysis of events can provide insight about how learners use the XBlock in the
-runtime application. Using event data, analysts should be able to reconstruct
-the state of the XBlock at any point in time.
+Analysis of events can provide insight about how learners use the XBlock. Using
+event data, analysts should be able to reconstruct the state of the XBlock at
+any point in time.
 
 Your XBlock should emit an event whenever a significant state change occurs,
 and when a grade for the learner's interaction is assigned. For example, when a
 learner submits an answer or otherwise interacts with your XBlock, an event
 should record that action.
 
-Your XBlock must emit an event to :ref:`assign a grade <Publish Grade Events>`
-to a learner.
+To assign grades from your XBlock, it must emit a :ref:`grade event <Publish
+Grade Events>`.
 
 **********************************
 Publish Events in Handler Methods
 **********************************
 
-You define the events your XBlock emits in the XBlock's :ref:`handler methods
-<Handler Methods>`.
+You define :ref:`handler methods <Handler Methods>` to emit events.
 
-In the handler method, you use the XBlock runtime interface ``publish`` method
+In the handler, you use the XBlock runtime interface ``publish`` method
 to emit the event. The ``runtime.publish`` method causes the runtime
 application to save the event data in the application event stream.
 
@@ -76,8 +75,9 @@ A grade event uses the ``runtime.publish`` method with specific arguments.
   * ``value``: The learner's score
   * ``max_value``: The maximum possible score
   
-The event dictionary can also contain the ``user_id`` entry. If ``user_id`` is
-not specified, the current user's ID is used.
+The current user's ``user_id`` is implicit in the event dictionary.
+
+..The event dictionary can also contain the ``user_id`` entry. If ``user_id`` is not specified, the current user's ID is used.
 
 For example, the following handler code emits a grade for the learner that is
 stored in the ``submission_result`` variable in an XBlock with the maximum
@@ -85,15 +85,22 @@ grade of ``1.0``.
 
 .. code-block:: python
 
-  self.runtime.publish(self, "grade",
+   self.runtime.publish(self, "grade",
                        { value: submission_result
                          max_value: 1.0 })
 
 Typically, the handler method also returns the calculated grade, so that it can
 be displayed to the learner.
 
-.. note:: 
- To be graded, in addition to publishing the grade event, the XBlock must also
- have a ``has_score`` variable set to ``True``.
+====================
+has_score Variable
+====================
+
+To be graded, in addition to publishing the grade event, the XBlock must also
+have a ``has_score`` variable set to ``True``.
+
+.. code-block:: python
+
+    has_score = True
 
 .. include:: ../links.rst

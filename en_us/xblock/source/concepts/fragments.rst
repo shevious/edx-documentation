@@ -17,14 +17,15 @@ Fragment Contents
 *****************
 
 A fragment typically contains all the resources needed to display the XBlock in
-a web page, including content, JavaScript, and CSS resources.
+a web page, including HTML content, JavaScript, and CSS resources.
 
-=========
-Content
-=========
+=============
+HTML Content
+=============
 
-Content in a fragment is typically HTML, though it can be of an arbitrary
-mime-type. Each fragment only has a single content value.
+Content in a fragment is typically HTML, though some runtimes might require
+views that return other mime-types. Each fragment has only a single content
+value.
 
 ==========
 JavaScript
@@ -50,6 +51,12 @@ operational.
 The JavaScript view is also passed a JavaScript runtime object that contains
 a set of functions to generate links back to the XBlock's handlers and views
 on the runtime server.
+
+For example, see the code in the Thumbs XBlock, in the file
+``xblock_development/xblock-
+sdk/sample_xblocks/thumbs/static/js/source/thumbs.js``.
+
+.. include:: ../reusable/code_thumbs_javascript.rst
 
 =====
 CSS

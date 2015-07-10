@@ -22,8 +22,11 @@ the XBlock.
 
 An XBlock can have multiple view methods. For example, an XBlock might have a
 student view for rendering the XBlock for learners, and an editing view for
-rendering the XBlock to course staff. The XBlock view name to use is specified
-in the runtime application.
+rendering the XBlock to course staff. 
+
+.. note:: 
+  The XBlock view names are specified by runtime applications; you cannot use 
+  arbitrary view names. 
 
 For information about the view requirements in the edX Platform, see :ref:`edX
 LMS <EdX Learning Management System as an XBlock Runtime>` and
@@ -31,8 +34,7 @@ LMS <EdX Learning Management System as an XBlock Runtime>` and
 
 Typically, you define a view to produce a fragment that is used to render the
 XBlock as part of a web page. Fragments are aggregated hierarchically. You can
-use the user state, settings, and preferences to affect the rendering of the
-XBlock as needed. 
+use any field to affect the rendering of the XBlock as needed.
 
 In the following example, the Thumbs sample XBlock in the XBlock SDK defines a
 student view.
@@ -40,8 +42,8 @@ student view.
 .. include:: ../reusable/code_thumbs_student_view.rst
 
 Although view methods typically produce HTML-based renderings, they can be used
-for other purposes. You must ensure that the runtime description of each view
-is clear about what return type is expected and how it will be used.
+for other purposes. See the documentation for your runtime application to
+verify the the type of data the view must return and how it will be used.
 
 .. _Handler Methods:
 
@@ -49,16 +51,19 @@ is clear about what return type is expected and how it will be used.
 Handler Methods
 ***************
 
-XBlock handler methods are Python methods invoked by AJAX calls from the user's
-browser. Handler methods accept an HTTP request and return an HTTP response.
+You write handlers to implement the server side of your XBlock's interactive
+features.
 
-An XBlock can have any number of handler methods. For example, a problem XBlock
-might contain ``submit`` and ``show_answer`` handler methods.
+XBlock handlers are Python methods invoked by AJAX calls from the user's
+browser. Handlers accept an HTTP request and return an HTTP response.
 
-Each handler method has a specific name that is mapped to from specific URLs by
-the runtime. The runtime provides a mapping from handler names to specific URLs
-so that the XBlock JavaScript code can make requests to its handlers. Handlers
-can be used with ``GET`` and ``POST`` requests.
+An XBlock can have any number of handlers. For example, a problem XBlock
+might contain ``submit`` and ``show_answer`` handlers.
+
+Each handler has a specific name of your choosing that is mapped to from
+specific URLs by the runtime. The runtime provides a mapping from handler names
+to specific URLs so that the XBlock JavaScript code can make requests to its
+handlers. Handlers can be used with ``GET`` and ``POST`` requests.
 
 Handler methods also emit events for learner interactions and grades. For more
 information, see :ref:`Publish Events in Handler Methods`.
@@ -99,9 +104,13 @@ Default Methods in a New XBlock
 When you create a new XBlock, two methods are added automatically.
 
 * The view method ``student_view``.
+  
+  You can modify the contents of this view, but to use your XBlock with the edX
+  Platform, you must keep the method name ``student_view``.
 
-* The handler method ``increment_count``.  
+* The handler method ``increment_count``. 
+  
+  This method is for demonstration purposes and you can remove it.
 
-You can use these methods or remove them as needed.
 
 .. include:: ../links.rst

@@ -24,6 +24,24 @@ file in the XBlock SDK includes three fields.
 
 .. include:: ../reusable/code_thumbs_fields.rst
 
+=================
+Field Names
+=================
+
+The field names you define in the Python file are also used in the XBlock
+:ref:`JavaScript<The XBlock JavaScript File>` and :ref:`HTML<The XBlock HTML
+File>` code.
+
+=================
+Field Types
+=================
+
+TBP
+
+=================
+Field Parameters
+=================
+
 When you initialize an XBlock field, you define three parameters.
 
 * ``help``: A help string for the field that can be used in an application such
@@ -57,8 +75,9 @@ User Scope
 
 Fields can relate to users in the following ways.
 
-* **No user**: the field data is not related to any users. For example, a field
-  that contains course content is independent of users.
+* **No user**: the field data is not related to any users. No learner activity
+  created modified the field value, and all learners see the same value.For
+  example, a field that contains course content is independent of users.
 
   .. note:: The XBlock cannot modify the value of a field that is not related
     to any users.
@@ -66,8 +85,9 @@ Fields can relate to users in the following ways.
 * **One user**: the field data is specific to a single user. For example, the
   answer to a problem is specific to the user who submitted it.
 
-* **All users**: the field data is common for all users. For example, the total
-  number of students who answer a question is the same for all users.
+* **All users**: the field data is common for all users. Learner activity can
+  change the field value, and all learners see the same value. For example, the
+  total number of learners who answer a question is the same for all users.
 
   .. note:: Field data related to all users is not the same as aggregate or 
     query data. The same value is shared for all users, and you cannot 
@@ -80,7 +100,10 @@ XBlock Scope
 Fields can relate to XBlocks in the following ways.
 
 * **Block usage**: the field data is related to an instance, or usage, of the
-  XBlock in a particular course.
+  XBlock in a particular course. In most cases, you use the **Block usage**
+  scope. For example, for an XBlock that polls learners and shows totals for
+  each response, you would need the question and available answers to be
+  specific to that instance of the XBlock in your course.
 
 * **Block definition**: the field data is related to the definition of the
   XBlock. The definition is specified by the content creator. A definition can
@@ -133,39 +156,33 @@ scope settings.
 
 * ``Scope.content``
   
-  * **Block definition**
-  * **No user**
+  * Block definition
+  * No user
 
 * ``Scope.settings``
   
-  * **Block usage**
-  * **No user**
+  * Block usage
+  * No user
 
 * ``Scope.user_state``
   
-  * **Block usage**
-  * **One user**
+  * Block usage
+  * One user
 
 * ``Scope.preferences``
   
-  * **Block type**
-  * **One user**
+  * Block type
+  * One user
 
 * ``Scope.user_info``
   
-  * **All blocks**
-  * **One user**
+  * All blocks
+  * One user
 
 * ``Scope.user_state_summary``
   
-  * **Block usage**
-  * **All users**
-
-======================
-Define a Custom Scope
-======================
-
-TBP
+  * Block usage
+  * All users
 
 ************************
 Fields and Data Storage
@@ -185,8 +202,8 @@ Initializing Fields
 
 You do not use the ``__init__`` method with XBlocks.
 
-XBlocks can be used in many contexts, and the ``init`` method might not work in
-those contexts.
+XBlocks can be used in many contexts, and the ``__init__`` method might not
+work in those contexts.
 
 To initialize field values, use one of the following alternatives.
 
@@ -196,14 +213,13 @@ To initialize field values, use one of the following alternatives.
   function is called to set the value.
 
 * Run the logic to set the default field value in the view instead of the
-  ``init`` method.
+  ``__init__`` method.
 
 ***************
 Fields and OLX
 ***************
 
-XBlock fields map to attributes in the XBlock Open Learning XML (OLX)
-definition.
+XBlock fields map to attributes in the Open Learning XML (OLX) definition.
 
 For example, you might include the fields ``href``, ``maxwidth``, and
 ``maxheight`` in a ``SimpleVideoBlock`` XBlock.  You configure the fields as in
@@ -213,7 +229,7 @@ the following example.
 
   class SimpleVideoBlock(XBlock):
       """
-      An XBlock providing oEmbed capabilities for video
+      An XBlock providing Embed capabilities for video
       """
 
       href = String(help="URL of the video page at the provider", 
@@ -247,4 +263,5 @@ Default Fields in a New XBlock
 *********************************************
 
 When you create a new XBlock, the ``count`` field is added to the Python file
-by default.  You can use this field or remove it as needed.
+by default. This field is for demonstration purposes and you should replace it
+with your own field definitions.

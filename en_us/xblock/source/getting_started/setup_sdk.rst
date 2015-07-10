@@ -22,11 +22,19 @@ It is recommended that you create a directory in which to store all your XBlock
 work, including a virtual environment, the XBlock SDK, and the XBlocks you
 develop.
 
-At the command prompt, run the following command to create the directory.
+#. At the command prompt, run the following command to create the directory.
    
    .. code-block:: bash
 
       $ mkdir xblock_development
+
+#. Change directories to the ``xblock_development`` directory.
+   
+   .. code-block:: bash
+
+      $ cd xblock_development
+
+   The rest of your work will be from this directory.
 
 .. _Create and Activate the Virtual Environment:
 

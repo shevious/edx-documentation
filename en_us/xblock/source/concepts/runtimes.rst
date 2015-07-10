@@ -17,14 +17,14 @@ applications.
 Runtime Functions
 ******************
 
-An XBlock runtime application must perform the following functions.
+An XBlock runtime application performs the following functions.
 
 * Instantiate XBlocks with the correct data access.
   
 * Display the HTML returned by XBlock views.
   
   .. note:: 
-    Runtime applications must document the view names they require of XBlocks.
+    Runtime applications document the view names they require of XBlocks.
   
 * Bind the front-end JavaScript code to the correct DOM elements.
   
@@ -35,60 +35,13 @@ An XBlock runtime application must perform the following functions.
 Extending XBlocks
 ******************
 
-When constructing a runtime instance, a runtime application can provide a list
-of mixin classes. These classes are used whenever the runtime constructs an
-XBlock to generate a new subclass of that XBlock with the mixins added as base
-classes. This allows a runtime application to add field data and methods to all
-XBlocks that it hosts, without requiring that XBlocks themselves are
-aware of the runtime they are being hosted in.
+A runtime application can have mixin classes that it combines with your XBlock
+class. Therefore, your instances of your XBlock might be subclasses of your
+original XBlock class.
 
-***********************
-Creating a new Runtime
-***********************
-
-A new XBlock runtime must provide the following capabilities.
-
-* Access to external resources and is responsible for constructing XBlocks.
-
-* A ``FieldData`` implementation, which provides access the underlying data
-  storage for the XBlock fields.
-
-* A ``UsageStore``, which provides mappings between the various
-  fields of Scope IDs. [KEEP? STILL PROPOSED?]
-
-* Access to XBlock views and handlers.
-
-================
-Rendering Views
-================
-
-A runtime application must document which XBlock views it renders, and in what
-context it will render those views. XBlock developers write views with those
-specific names so that they interact properly with the runtime application.
-
-When a runtime renders a view by calling ``Runtime.render()`` or
-``XBlock.render()``, it receives a Fragment as a result.
-
-The runtime must embed ``Fragment.content`` into the HTML it is producing, add
-``Fragment.head_html()`` to the head of the page, and add
-``Fragment.foot_html()`` to the foot of the page. This ensures that the
-JavaScript and CSS for all of the fragments on the page are combined properly.
-
-================
-Routing Handlers
-================
-
-A runtime application routes requests from the client-side XBlock to the
-server-side XBlock handler functions. The runtime’s implementation of
-``Runtime.handler_url()`` must return a relative URL that the client-side
-XBlock can call to pass data back to the server.
-
-Authentication of the handler is managed by the runtime application, although
-you can also request a URL that is unauthenticated for use from third-party
-applications.
-
-XBlock implementations might have arbitrarily named handler functions, so the
-runtime application must be able to route to any of them.
+By using mixins, a runtime application can add field data and methods to all
+XBlocks that it hosts, without requiring that XBlocks themselves are aware of
+the runtime they are being hosted in.
 
 ********************
 JavaScript Runtimes

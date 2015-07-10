@@ -13,16 +13,8 @@ requirements. To do this, complete the following steps at a command prompt.
 
       (venv) $ git clone https://github.com/edx/xblock-sdk.git
 
-#. When the XBlock SDK is cloned, run the following command to go to the
-   ``xblock-sdk`` directory in the virtual environment.
-
-   .. code-block:: bash
-
-      (venv) $ cd xblock-sdk
-
-#. From the ``xblock-sdk`` directory, run the following command to install the
-   XBlock SDK requirements.
+#. Run the following command to install the XBlock SDK requirements.
 
    .. code-block:: bash
   
-      (venv) $ pip install -r requirements.txt
+      (venv) $ pip install -r xblock-sdk/requirements.txt

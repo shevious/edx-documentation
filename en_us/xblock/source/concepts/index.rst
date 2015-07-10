@@ -4,6 +4,8 @@
 XBlock Concepts
 ####################
 
+.. include:: ../reusable/introduction_text.rst
+
 This part of the tutorial provides conceptual information about XBlocks and
 demonstrates examples.
 

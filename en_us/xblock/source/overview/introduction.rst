@@ -4,15 +4,24 @@
 Introduction to XBlocks
 #############################
 
-XBlocks are the components that you use to build courseware.
-	
-Like HTML ``<div>`` tags, XBlocks can represent components as small as a
-paragraph of text, a video, or a multiple choice input field, or as large as a
-section, a chapter, or an entire course.
+.. include:: ../reusable/introduction_text.rst
 
 .. contents::
  :local:
  :depth: 1
+
+*****************************
+XBlock API and Runtimes
+*****************************
+
+XBlock is an API than can be used by different applications, referred to as
+XBlock :ref:`runtimes<XBlock Runtimes>`.
+
+As described below, the edX Platform uses the XBlock API, and is the most
+common XBlock runtime.
+
+ If you are planning to use your XBlock in a different rutime, check the
+ documentation to understand the runtime's requirements.
 
 *****************************
 XBlocks and the edX Platform
@@ -54,7 +63,8 @@ XBlock Resources
 ===================
 
 This tutorial is meant to guide developers through the process of creating an
-XBlock, and to explain the architecture and anatomy of XBlocks.
+XBlock, and to explain the :ref:`concepts<XBlock Concepts>` and
+:ref:`anatomy<Anatomy of an XBlock>` of XBlocks.
 
 Developers should also see the XBlock API documentation. [ADD LINK]
 

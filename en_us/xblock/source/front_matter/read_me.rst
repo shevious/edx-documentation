@@ -10,9 +10,9 @@ GitHub.
 
   https://github.com/edx/edx-documentation/tree/master/en_us/xblock/source
 
-To suggest a revision, fork the project, make changes in your fork, and submit
-a pull request back to the original project: this is known as the `GitHub
-Flow`_.
+To suggest a revision, you should fork the project, make changes in your fork,
+and submit a pull request back to the original project: this is known as the
+`GitHub Flow`_.
 
 All pull requests need approval from edX. For more information, contact edX at
 docs@edx.org.

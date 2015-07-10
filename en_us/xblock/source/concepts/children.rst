@@ -35,10 +35,10 @@ Accessing Children (Server-Side)
 
 To access XBlock children through the server, use the following methods.
 
-* Iterate over the XBlock’s children attribute (``self.children``), which
+* To iterate over the XBlock’s children, use ``self.get_children`` which
   returns the IDs for each child XBlock.
 
-* Then, to access a child XBlock, use ``self.runtime.get_block(usage_id)`` for
+* Then, to access a child XBlock, use ``self.get_child(usage_id)`` for
   your desired ID. You can then modify the child XBlock using its ``.save()``
   method.
 
