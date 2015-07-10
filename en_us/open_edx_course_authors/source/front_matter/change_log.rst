@@ -12,6 +12,10 @@ July 2015
 
    * - Date
      - Change
+   * - 14 July 2015
+     - Updated the :ref:`Working with Problem Components` and :ref:`Numerical
+       Input` sections to clarify how the **Randomization** setting is used
+       with numerical input problems.
    * - 8 July 2015
      - Added the :ref:`Poll Tool` and :ref:`Survey Tool` sections.
    * - 1 July
