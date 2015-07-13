@@ -34,6 +34,6 @@ command.
 
    .. code-block:: bash
 
-      (venv) $ python xblock-sdk/manage.py runserver help
+      (venv) $ python xblock-sdk/manage.py help
 
 The command window lists and describes the available commands.

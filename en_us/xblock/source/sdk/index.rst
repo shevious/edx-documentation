@@ -1,16 +1,10 @@
 .. _Using the XBlock Software Development Kit:
 
 ################################################
-Learning to Use XBlock Software Development Kit
+Using XBlock Software Development Kit
 ################################################
 
-The XBlock SDK is a Python application you use to help you build new XBlocks.
-The XBlock SDK contains three main components:
-
-* An XBlock creation tool that builds the skeleton of a new XBlock.
-* An XBlock runtime for viewing and testing your XBlocks during development.
-* Sample XBlocks that you can use as the starting point for new XBlocks, and
-  for your own learning.
+.. include:: ../reusable/sdk_intro.rst
 
 In :ref:`Build an XBlock Quick Start`, you :ref:`set up the XBlock Software
 Development Kit (SDK) <Set Up the XBlock Software Development Kit>`. You had to
@@ -26,4 +20,3 @@ learning about XBlocks, skip to :ref:`Anatomy of an XBlock`.
    :maxdepth: 2
   
    get_started_sdk
-   testing_sdk

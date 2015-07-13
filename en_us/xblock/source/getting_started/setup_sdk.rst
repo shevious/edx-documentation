@@ -42,8 +42,9 @@ develop.
 Create and Activate the Virtual Environment
 ********************************************
 
-The first step is to create the virtual environment in your
-``xblock_development`` directory.
+You must have a virtual environment tool installed on your computer. For more information, see :ref:`Install XBlock Prerequisites`.
+
+Then create the virtual environment in your ``xblock_development`` directory.
 
 #. At the command prompt in ``xblock_development``, run the following
    command to create the virtual environment.
@@ -67,6 +68,7 @@ The first step is to create the virtual environment in your
 
 .. include:: ../reusable/clone_sdk.rst
 
-When the requirements are installed, you are ready to create your first XBlock.
+When the requirements are installed, you are ready to :ref:`create your first
+XBlock <Create Your First XBlock>`.
 
 .. include:: ../links.rst
