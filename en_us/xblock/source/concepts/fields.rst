@@ -239,8 +239,8 @@ the following example.
       maxheight = Integer(help="Maximum height of the video", default=450, 
           scope=Scope.content)
 
-The ``SimpleVideoBlock`` XBlock is represented in OLX as in the following
-example:
+By default, the ``SimpleVideoBlock`` XBlock is represented in OLX as in the
+following example:
 
 .. code-block:: xml
 
@@ -250,8 +250,13 @@ example:
         maxheight="450" 
     />
 
+You can customize the OLX representation of the XBlock by using the
+``xblock.parse_xml()`` and ``xblock.add_xml_to_node()`` methods.
+
+.. add links to api doc
+
 *********************************************
-Field Requirements in the edx Platform
+Field Requirements in the edX Platform
 *********************************************
 
 For information about field requirements in the edX Platform, see :ref:`edX LMS
