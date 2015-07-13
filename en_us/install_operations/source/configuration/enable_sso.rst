@@ -20,9 +20,9 @@ Obtain a Client ID and Secret from the OAuth2 Provider
 
 In order to add a new OAuth2 provider to your edX installation, you will first have to go to the provider's site to register your edX installation with that provider and obtain a client ID and secret for your installation. All OAuth2 providers have well defined interfaces for doing this.
 
-*****************************************************************
+************************************
 Enable Third Party Authentication
-*****************************************************************
+************************************
 
 By default, third party authentication is not enabled on edX installations. To enable it, follow these steps.
 
@@ -73,17 +73,21 @@ To enable and configure an OAuth2 client that is on the whitelist, follow these 
    (OAuth2)** select **Change**, and then select the provider that you want to
    configure.
 
-#. On the Add Provider Configuration page, enter the following required information.
- - **Icon class**: The icon class for the button that should appear on the sign
-   in page.
- - **Name**: The name of the authentication provider as it should appear on the
-   sign in page.
+#. On the Add Provider Configuration page, enter the following required
+   information.
+
+ - **Icon class**: The icon class for the button that you want to include on
+   the sign in page.
+ - **Name**: The name of the authentication provider, as it you want it to
+   appear on the sign in page.
+ - **Backend name**: Select a python-social-auth backend class from your
+   whitelist.
  - **Client ID**
  - **Client Secret**
 
-#. Optionally, specify your selections for the additional configuration
-   options. For more information about these options, see :ref:`Configuration
-   Options for OAuth2 Providers`.
+#. Specify your selections for other configuration options. For more
+   information about these options, see :ref:`Configuration Options for OAuth2
+   Providers`.
 
 #. When you are ready to enable the provider, select **Enabled** You can save
    your configuration settings and enable the provider at another time.
@@ -96,13 +100,13 @@ To enable and configure an OAuth2 client that is on the whitelist, follow these 
 
 .. _Configuration Options for OAuth2 Providers:
 
-*****************************************************************
+=================================================================
 Configuration Options for OAuth2 Providers
-*****************************************************************
+=================================================================
 
-=================================================================
-Secondary Providers
-=================================================================
+
+Provider Prominence
+**************************
 
 The list of providers enabled for an edX installation can be divided into two categories: Primary and Secondary. Providers from the primary list are displayed prominently on the login / registration pages (with a button). Secondary providers are displayed less prominently, in a separate list of "Institution" login providers.
 
@@ -118,17 +122,17 @@ Here is an example of the signin page for secondary providers:
 
 You can specify whether a provider is Primary or Secondary via the Third Party Auth -> Provider Configuration (OAuth2) admin page.
 
-=================================================================
-Skip Registration Form
-=================================================================
+
+Streamline Registration
+**************************
 
 In order to make the registration process simpler, edX makes it possible to simply absorb the user's details (such as name, email etc.) silently from their OAuth2 provider instead of asking them to confirm them. This option should be used only for trusted providers that are known to provide accurate user information.
 
 You can specify whether to skip the registration form on a per-provider basis via the Third Party Auth -> Provider Configuration (OAuth2) page.
 
-=================================================================
-Skip Email Verification
-=================================================================
+
+Activation Email Message
+**************************
 
 At the end of the registration process, edX sends an email to the email address provided during registration to confirm the identity of the user. For trusted providers, the admin can choose to skip this part so users will not be required to confirm their email, and their account will be activated immediately upon registration.
 
