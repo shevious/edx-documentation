@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 
-Building and Running an edX Course
+K-MOOC 강좌 작성 가이드
 ========================================
 
 .. toctree::
