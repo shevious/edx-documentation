@@ -1,101 +1,72 @@
 .. _RecommenderXBlock:
 
 ##################
-Recommender Tool
+추천인 도구
 ##################
 
-.. note:: EdX offers full support for this tool.
+.. note:: K-MOOC은 이 도구에 대해 전체 지원을 제공한다.
 
-The recommender provides learners with a list of online resources related to
-the course content. These resources are jointly managed by course team members
-and the learners.
+추천인은 학습자에게 강좌 콘텐츠와 관련된 온라인 자료를 제공한다. 이 자료는 강좌 운영팀과 학습자가 공동으로 관리한다.
 
 .. contents::
   :local:
   :depth: 2
 
 ***********
-Overview
+개관
 ***********
 
-The most common use of the recommender is for remediation of errors and
-misconceptions, followed by providing additional, more advanced resources.
+추천인의 가장 일반적인 기능은 추가적인 고난이도의 자료를 제공함으로써 오류와 오개념의 수정이다.
 
-For example, if a learner is working through a physics problem, the recommender
-could be used to show links to concepts used in the problem on Wikipedia, PhET,
-and OpenStax, as well as in the course itself. The recommender can help fill
-complex knowledge gaps and help move learners in the right direction.
+예를 들어 만약 학습자가 물리학 문제를 풀고 있다면 추천인은 문제에서 사용되는 개념에 대한 Wikipedia, PhET, OpenStax 등의 링크를 보여주게 된다. 추천인은 학습자의 모자란 부분을 채워주고 올바르게 학습할 수 있도록 돕는다.
 
-Learners and course team members can complete the following tasks with the
-recommender.
+학습자와 강좌 운영팀은 추천인을 이용해 다음 일을 수행할 수 있다.
 
-* Add new resources.
-* Edit existing resources and work jointly to improve the quality of resources
-  (for example, give an informative resource summary).
-* Manage quality by voting for high quality resources or flagging resources as
-  spam or abuse.
+* 새 자료 추가하기.
+* 기존 자료 편집 및 수준 높이기 (예를 들어 도움이 되는 자료의 요약본 제공할 수 있다).
+* 높은 수준의 자료에 대한 투표를 진행하거나 일부 자료를 스팸으로 분류할 수 있다.
 
-Course team members can endorse useful resources or remove irrelevant entries.
+강좌 운영팀은 관계없는 사항을 삭제하거나 유용한 자료를 추가할 수 있다.
 
-If you use the recommender, you should inform learners through course content
-or :ref:`course updates <Adding Course Updates and Handouts>` about the tool.
+추천인을 사용한다면 강좌 콘텐츠나 공지사항을 통해 도구에 대해 학습자에게 알려줘야 한다.
 
-An example of a recommender in a course follows. The upper part of the figure
-illustrates a question in a problem set where the recommender is attached. The
-middle of the figure shows a list of resources and several gadgets for users to
-work on the resources. The bottom portion shows additional information about a
-given resource on mouse-over event.
+다음은 강좌에서 활용되는 추천인의 예제다. 상단 부분은 추천인이 있을 때의 문제를 보여주며 중간 부분은 학습자가 활용할 수 있는 자료와 장치, 하단 부분은 마우스를 올렸을 때 볼 수 있는 추가 정보다.
 
 .. image:: ../../../shared/images/RecommenderXBlockExample.png
   :alt: An overview of the RecommenderXBlock.
 
-Course team members should be sure to review all supplemental materials to
-assure that they are accessible before making them available through your
-course. For more information, see :ref:`Accessibility Best Practices for Course
-Content Development`.
+강좌 운영팀은 모든 학습자가 활용할 수 있도록 사전에 모든 자료의 접근성을 검토해야 한다. 자세한 사항은  :ref:`Accessibility Best Practices for Course Content Development` 를 참고하면 된다.
 
 **************************************************
-Enable the Recommender Tool
+추천인 도구 설정하기
 **************************************************
 
-Before you can add a recommender component to your course, you must enable the
-recommender tool in Studio.
+강좌에 추천인 구성요소를 추가하기 전에 Studio에서 설정해야 한다.
 
-To enable the recommender tool in Studio, you add the ``"recommender"`` key to
-the **Advanced Module List** on the **Advanced Settings** page. (Be sure to
-include the quotation marks around the key value.) For more information, see
-:ref:`Enable Additional Exercises and Tools`.
+Studio에서 추천인 도구를 설정하기 위해  ``"recommender"`` 키를 고급 설정 페이지의 고급 모듈 목록에 추가한다. 반드시 키 값을 “ “ 사이에 입력한다. 자세한 사항은 :ref:`Enable Additional Exercises and Tools`  를 참고하면 된다.
 
 ********************************
-Add a Recommender
+추천인 추가하기
 ********************************
 
-To add a recommender to a course, follow these steps.
+강좌에 추천인을 추가하기 위해.
 
-#. Go to the unit in the course outline where you want to add the
-   recommender.
+#. 강좌 개요의 추천인을 추가하고 싶은 학습활동에 들어간다.
 
-#. Under **Add New Component**, select **Advanced**.
+#. 새 구성요소 추가 아래 고급을 선택한다.
 
-#. Select **recommender**.
+#. 추천인을 선택한다.
 
-#. In the component that appears, select **Edit**, and then specify settings as
-   needed.
+#. 나타나는 구성요소에서 편집을 선택하고 설정을 바꾼다.
 
-  * Whether to take users on an introduction tour when they see the tool the
-    first time. If selected, the first time (and only the first time) a user
-    sees the recommender, there will be a short guided tutorial.
+  * 학습자가 처음 도구를 사용할 때 가이드라인을 보여줄지 선택한다. 만약 보여준다면 학습자가 추천인을 처음 활용하는 1회에 한해 가이드라인을 보게 된다.
 
-  * Whether to disable the user interface functions which are under
-    development. Because these are untested and under development, please leave
-    these disabled unless otherwise advised by edX staff.
+  * 현재 개발중인 유저 인터페이스 기능 사용 여부를 선택한다. 이 기능은 아직 개발 중이고 테스트를 충분히 거치지 않았기 때문에 K-MOOC 운영팀과 별도의 상담을 거친 것이 아니라면 사용하지 않는 것을 권장한다.
 
-  * How many resources you want to show in each page of the resource list.
+  * 자료 목록 각 페이지에 몇 개의 자료를 보일지 정한다.
 
-  * How many page icons you want to show in the pagination control (that is,
-    the page range). The icons for pages from (current page - page range) to
-    (current page + page range) will be shown.
+  * 페이지 범위 조작에서 몇 개 아이콘을 표시할지 정한다. ~에서 페이지(현 페이지 – 페이지 범위)와 ~까지 페이지(현 페이지 + 페이지 범위) 아이콘이 표시된다.
 
-#. Select **Save**.
+#. 저장을 선택한다.
 
-#. Optionally, open the unit in the LMS and suggest some resources.
+#. 선택사항으로 학습 관리 시스템에서 학습활동을 열어 자료를 추천한다.

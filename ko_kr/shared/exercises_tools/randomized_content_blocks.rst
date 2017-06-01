@@ -4,21 +4,13 @@
 Randomized Content Blocks
 #########################
 
-If your course has :ref:`content libraries<Content Libraries>` enabled and you
-have access to a library whose content you want to use, you can reference that
-library to create randomized assignments for students.
+:ref:`content libraries<Content Libraries>` 이 활성화되어 있고 사용하고자 하는 콘텐츠가 포함된 보관함에 접근할 수 있는 경우 해당 보관함을 통해 학습자를 위한 무작위 과제를 만들 수 있다.
 
-To create a randomized assignment, you add one or more randomized content
-blocks to a course unit. For each randomized content block, specify a library
-from which to draw the content, and indicate the number and optionally the type
-of problem to randomly give each student.
+무작위 과제를 만들려면, 강좌 학습활동 1개에 무작위 콘텐츠 블록을 1개 이상 추가해야 한다. 무작위 콘텐츠 블록 각각에 대해 해당 콘텐츠를 가져올 1개 이상의 보관함을 지정하고 그 개수를 명시한다. 또한, 각 학습자에게 무작위로 배정할 문제 의 유형을 지정할 수 있는데 이는 선택사항이다.
 
-The libraries that you create or have access to are listed on the **Libraries**
-tab on the Studio Home page. For details about content libraries, see
-:ref:`Content Libraries`.
+강좌 운영팀이 만들고 접근하는 보관함의 목록은 Studio의 콘텐츠 보관함 탭에 있다. 콘텐츠 보관함에 대한 더 자세한 안내는 :ref:`Content Libraries` 에 있다.
 
-For details about using content library components in a course, see these
-topics.
+강좌에서 콘텐츠 보관함 구성요소를 사용하는 자세한 방법에 관해서는 다음 주제를 참조한다.
 
 .. contents::
   :local:
@@ -27,30 +19,19 @@ topics.
 .. _Use Components from Libraries in a Course:
 
 *****************************************
-Use Components from Libraries in a Course
+강좌 내 보관함에서 구성요소 사용하기
 *****************************************
 
-To create randomized assignments that make use of components from content
-libraries, you must have at least **User** level access to the libraries that
-you want to use. If you do not have access to a library, members of your course
-team who have **Admin** access to that library can grant you access.
+무작위 과제를 생성하려면, 학습활동 저장소에 대한 최소 사용자 수준의 접근 권한이 필요하다. 권한이 없을 경우 해당 저장소에 대한 교수자 접근 권한을 보유한 사람으로부터 접근 권한을 받을 수 있다.
 
-The libraries that you create or have access to are listed on the **Libraries**
-tab on the Studio Home page. For details about content libraries, see
-:ref:`Content Libraries`.
+강좌 운영팀이 생성하거나 접근하는 보관함의 목록은 Studio Home의 콘텐츠 보관함 탭에 있다. 콘텐츠 보관함에 대한 더 자세한 안내는 :ref:`Content Libraries` 에 있다.
 
-Using components from content libraries in your course involves two steps.
+콘텐츠 보관함에서 구성요소를 사용하는 방법은 크게 아래 두 가지다.
 
 #. :ref:`Enable Content Libraries`
 #. :ref:`Add a Randomized Content Block to Your Course`
 
-.. note:: After adding a randomized content block to your course, be aware that
-   if components in the source library change, you must manually update the
-   components in the course outline if you want to keep the components
-   synchronized with the version in the library.
-
-For details about working with randomized content blocks in your course, see
-these topics.
+강좌에서 무작위 콘텐츠 블록을 취급하는 자세한 방법에 관해서는 다음 주제를 참조한다.
 
 * :ref:`View the Matching Components in a Randomized Content Block`
 * :ref:`Edit Components in Randomized Content Blocks`
@@ -62,239 +43,157 @@ these topics.
 .. _Enable Content Libraries:
 
 ************************************************
-Enable Content Libraries
+콘텐츠 보관함 활성화하기
 ************************************************
 
-Before you can add a randomized content blocks to your course, you must enable
-the content library tool in Studio.
+강좌에 무작위 콘텐츠 블록을 추가하기 전에 우선 Studio에서 설정해야 한다.
 
-To enable the content library tool in Studio, you add the ``"library_content"``
-key to the **Advanced Module List** on the **Advanced Settings** page. For more
-information, see :ref:`Enable Additional Exercises and Tools`.
+Studio에서 콘텐츠 보관함 도구를 설정하기 위해  ``"library_content"`` 키를 고급 설정 페이지의 고급 모듈 목록에 추가한다. 반드시 키 값을 “ “ 사이에 입력한다. 자세한 사항은  :ref:`Enable Additional Exercises and Tools` 를 참고하면 된다.
 
 .. _Add a Randomized Content Block to Your Course:
 
 =============================================
-Add a Randomized Content Block to Your Course
+강좌에 무작위 콘텐츠 블록 추가하기
 =============================================
 
-After you :ref:`enable content libraries<Enable Content Libraries>` you can add
-library content to your courses using the Randomized Content Block advanced
-component.
+:ref:`enable content libraries<Enable Content Libraries>` 이후 무작위 콘텐츠 블록 고급 구성요소를 이용하여 보관함 콘텐츠를 강좌에 추가할 수 있다.
 
-#. In Studio, open the course in which you want to add randomized problems from
-   a content library.
+#. Studio에서 로그인 후 콘텐츠 보관함의 무작위 문제 를 추가하고자 하는 강좌를 연다.
 
-#. Select **Content**, and then select **Outline**.
+#. **콘텐츠** 를 클릭한 후 **강좌 개요** 를 클릭한다.
 
-#. In the unit where you want to add a set of randomized problems, select **Add
-   New Component**
+#. **무작위 문제** 를 추가하고자 하는 주차(주제)-차시(소주제)의 학습 활동에서 **신규 구성요소 추가** 를 클릭한다.
 
-#. Select **Advanced**, and then select **Randomized Content Block**.
+#. **고급 클릭**  **무작위 콘텐츠** 블록 을 클릭하면 **무작위 콘텐츠** 블록이 학습 활동에 추가된다.
 
-   The randomized content block is added to your unit.
+#. **편집** 아이콘을 클릭한다.
 
-#. Select **Edit**.
+#. 편집 화면에서 블록에 추가하고자 하는 콘텐츠의 세부 조건을 지정한다.
 
-#. In the randomized content block settings, specify the details of the content
-   you want to add in this block.
+  - **문제 수** 에는 각 학습자에게 제시할 문제의 갯수를 입력한다.
 
-  - For **Count**, enter the number of problems to display to each student.
+  - **표시될 이름** 에는 학습자가 보게 될 이 콘텐츠 블록의 명칭을 입력한다.
 
-  - For **Display Name**, enter the name that you want students to see for this
-    block.
+  - **학습활동** 저장소 에는 문제를 추가할 저장소를 선택한다.
 
-  - For **Library**, select the library from which you want to draw problems.
-
-  - For **Problem Type**, from the drop down list select a specific type of
-    problem to be drawn from the library. Select **Any Type** if you do not
-    want to specify a particular type of problem.
+  - **문제 유형** 의 드롭다운 목록에서는 1개 또는 복수의 보관함에서 가져 올 문제의 특정 유형을 선택한다. 유형을 특정하고자 하지 않는 경우 **모든 유형** 을 선택해도 무관하다.
 
     .. image:: ../../../shared/images/ContentLibraries_RCBSelectProblemType.png
      :alt: Problem type dropdown list in randomized content block settings.
 
-  - For **Scored**, from the drop down list select **True** or **False** to
-    indicate whether the assignment should be graded.
+  - 채점 여부 의 드롭다운 메뉴에서는 True 혹은 False 를 선택하여 해당 과제의 채점 여부를 규정한다.
 
-  .. note:: Grading is subject to the setting of this unit's subsection or
-     section. If the subsection or section is not graded, selecting **True**
-     here has no impact. If the subsection or section is graded, this assignment
-     is graded, even if you have selected **False**.
+  .. note:: 채점은 이 학습 활동의 소주제 또는 주제의 설정 항목이다. 소주제 또는 주제를 채점하지 않는 경우 이 학습 활동에서 True 를 선택하면 아무런 영향도 미치지 않는다. False 를 선택하더라도 소주제 또는 주제가 채점된다면 이 과제 역시 채점된다.
 
-#. Select **Save** when you have finished specifying the details of your
-   randomized content block.
+#. 무작위 콘텐츠 블록 관련 세부 조건 지정을 완료하면 저장을 클릭한다.
 
-To view the list of components in the source library that match your filter
-settings, see :ref:`View the Matching Components in a Randomized Content
-Block`.
+필터 설정과 일치하는 소스 보관함의 구성요소 목록에 대해  :ref:`View the Matching Components in a Randomized Content Block` 에 안내되어 있다.
 
-To view the entire contents of the library in Studio, see :ref:`View the
-Contents of a Library`.
+Studio에서 보관함 콘텐츠 전체를 확인하려면,  :ref:`View the Contents of a Library` 을 참고한다.
+
 
 .. _View the Matching Components in a Randomized Content Block:
 
 ***********************************************************
-View the Matching Components in a Randomized Content Block
+무작위 콘텐츠 블록에서 일치하는 구성요소 보기
 ***********************************************************
 
-In a unit that uses a randomized content block, you can view the list of all
-components that match the filters specified in that block.
+무작위 콘텐츠 블록을 사용하는 학습 활동에서 해당 블록에 지정된 필터와 일치하는 모든 구성요소의 목록을 볼 수 있다.
 
-For example, if you have specified in the randomized content block that you
-want to provide each student with 3 multiple choice problems, you see all the
-multiple choice problems that exist in the referenced library. In other words,
-you see every problem in the library that could potentially be provided to a
-student.
+이를 테면, 무작위 콘텐츠 블록을 지정하여 각 학습자에게 선다형 문제 3개를 제공하고자 하는 경우 이렇게 참조된 1개 혹은 복수의 보관함에 존재하는 모든 선다형 문제를 볼 수 있다. 다시 말해, 학습자에게 제공될 수 있는 보관함 내부의 모든 문제를 볼 수 있다.
 
-#. In Studio, navigate to the unit containing the randomized content block that
-   references your library.
+#. Studio 에서, 보관함을 참조하는 무작위 콘텐츠 블록을 포함하는 학습활동을 클릭한다.
 
-#. In the randomized content block, select **View**.
+#. 해당 무작위 콘텐츠 블록에서 보기 아이콘을 클릭한다.
 
 
    .. image:: ../../../shared/images/ContentLibraries_ViewMatching.png
       :alt: The View button for a randomized content block
 
-   You see all components that match the specifications in the randomized
-   content block. The text at the top of the list of components indicates how
-   many of these components are randomly selected and provided to each student.
+   무작위 콘텐츠 블록 내 규격과 일치하는 모든 구성요소를 볼 수 있다. 구성요소 목록 상단의 텍스트는 이들 구성요소 가운데 몇 가지를 선택하여 각 학습자에게 제공하는지를 나타낸다.
 
-To view the contents of a library in Studio, see :ref:`View the Contents of a
-Library`.
-
-To view the randomized content that was assigned to a specific learner, see
-:ref:`Specific Student View`.
+Studio에서 보관함의 콘텐츠를 보려면 :ref:`View the Contents of a Library` 를 참조한다.
 
 .. _Edit Components in Randomized Content Blocks:
 
 ******************************************************
-Editing Components in Randomized Content Blocks
+무작위 콘텐츠 블록 내 구성요소 편집하기
 ******************************************************
 
-In Studio, in the course unit that uses a randomized content block, you can
-edit each component within the randomized content block in the same way as you
-do for any other component in your course.
+무작위 콘텐츠 블록을 사용하는 강좌 학습 활동의 무작위 콘텐츠 블록 내 각 구성요소를, 강좌의 기타 어떠한 구성요소를 편집하는 방식과도 동일한 방식으로 Studio에서 편집할 수 있다.
 
-.. note:: Be aware that if you make changes on a component's **Editor** tab, if
-   you update the randomized content block with the latest version of
-   components from a library, these changes are overwritten. Only changes to a
-   component's **Settings** tab are retained when you update the component. For
-   details about getting the latest versions of library content in a randomized
-   content block, see :ref:`Get the Latest Version of Library Content`.
+.. note:: 무작위 콘텐츠 블록이 있는 학습활동 화면에서 보기 아이콘을 통해 구성요소들을 확인하고 해당 화면에서 편집 아이콘을 통해 바로 수정이 가능하다. 이 수정사항은 해당 강좌의 학습활동에서만 유효하다. 이 이후에 해당 구성요소들이 있는 본래의 학습활동 저장소에서 구성요소를 수정할 경우, 무작위 콘텐츠 블록이 있는 학습활동 화면에서 Update now 라는 버튼이 활성화되는데, 이 버튼을 클릭할 경우 이전에 강좌 학습활동 화면에서 수정했던 내용이 학습활동 저장소의 최신 콘텐츠로 덮어쓰기 되어 사라져버릴 수 있으니 주의해야 한다. 콘텐츠 업데이트 시 주의하도록 한다. 무작위 콘텐츠 블록 내 보관함 콘텐츠의 최신 버전을 획득하는 구체적인 방법에 대해서는  :ref:`Get the Latest Version of Library Content` 을 참고한다.
 
-The settings of a component that is supplied in a randomized content block are
-initially inherited from the component in the content library that it is drawn
-from. In the randomized content block, you can modify component settings so
-that they are different from the "source" component in the library.
+무작위 콘텐츠 블록 내에 제공되는 구성요소의 설정은 해당 구성요소를 가져오는 콘텐츠 보관함의 구성요소의 설정에서 유래한 것이다. 학습활동에 추가한 무작위 콘텐츠 블록에서 구성요소의 내용이나 설정을 변경하여, 보관함 내 구성요소와 다르게 할 수 있다.
 
-You can also reset a component's settings to the library default. If a
-component's settings have been changed from the default settings in the
-library, a **Clear** icon is shown next to the setting field.
+구성요소의 설정값 일부(문제유형, 총계, 학습활동 저장소)를 초기화할 수도 있다. 어떤 구성요소의 설정값이 보관함 내 초기 설정값에서 변경된 경우 해당 설정 필드 옆에 지우기(Clear) 아이콘이 표시된다.
 
  .. image:: ../../../shared/images/ContentLibraries_ResetComponentField.png
     :alt: Clear button in the course component field reverts value to library
      value.
 
-Select **Clear** to restore the library default setting for that field.
+설정 필드에 대한 보관함 초기 설정을 복구하려면 지우기 아이콘을 클릭한다.
 
 .. _Get the Latest Version of Library Content:
 
 *********************************************
-Getting the Latest Version of Library Content
+보관함 콘텐츠 최신 버전 획득하기
 *********************************************
 
-If you modify the contents of a library that is referenced by randomized
-content blocks in one or more courses, those courses do not automatically use
-the updated content. You can bring the randomized content blocks up to date
-with the version in the library.
+하나 또는 복수의 강좌에서 무작위 콘텐츠 블록이 참조하는 보관함의 콘텐츠를 변경하는 경우 이들 강좌가 업데이트된 콘텐츠를 자동으로 가져오지는 않는다. 해당 무작위 콘텐츠 블록을 보관함 내 버전으로 업데이트할 수 있다.
 
-.. warning:: Be careful when you modify problems after they have been released.
-   Changes that you make to published problems can affect the student
-   experience in the course, as well as analysis of course data.
+.. warning:: 공개된 문제를 변경할 때 주의해야 한다. 게시된 문제에 변경할 경우 해당 강좌를 수강하는 학습자 경험과 강좌 자료 분석에 영향을 미칠 수 있다.
 
-.. note:: Be aware that although you can retain changes to the settings of
-   components in a randomized content block, changes to the **Editor** tab in
-   components are overwritten if you update the component to the latest library
-   version. If you do not want to bring components in the randomized content
-   block up to date with the latest version in the library, you do not need to
-   take any action.
+.. note:: 무작위 콘텐츠 블록이 있는 학습활동 화면에서 보기 아이콘을 통해 구성요소들을 확인하고 해당 화면에서 편집 아이콘을 통해 바로 수정이 가능하다. 이 수정사항은 해당 강좌의 학습활동에서만 유효하다.  그러나 이 이후에 해당 구성요소들이 있는 본래의 학습활동 저장소에서 구성요소를 수정할 경우, 무작위 콘텐츠 블록이 있는 학습활동 화면에서 Update now 라는 버튼이 활성화되는데, 이 버튼을 클릭할 경우 이전에 강좌 학습활동 화면에서 수정했던 내용이 학습활동 저장소의 최신 콘텐츠로 덮어쓰기 되어 사라져버릴 수 있으니 주의해야 한다. 콘텐츠 업데이트 시 주의하도록 한다.
 
-* If the components in the randomized content block have not been edited in the
-  course outline, when you next open the randomized content block in the course
-  outline, you see a message indicating that the component is out of date in
-  comparison with the library.
+
+* 강좌 개요에서 무작위 콘텐츠 블록의 구성요소를 편집하지 않은 경우, 학습활동 저장소의 구성요소에 변경사항이 있다면 강좌 개요의 해당 무작위 콘텐츠 블록을 다음 번에 열 때 해당 구성요소가 보관함에 비해 최신판이 아니라는 메시지가 표시된다.
 
   .. image:: ../../../shared/images/ContentLibraries_ComponentUpdateNow.png
      :alt: Error message shown when the source library has changed, with the
       Update Now link circled.
 
-  To update your randomized content block components to the latest versions in
-  the content library, select **Update now**.
+  무작위 콘텐츠 블록 구성요소를 콘텐츠 보관함 최신 버전으로 업데이트 하려면 **지금 업데이트** 를 클릭한다.
 
-  The randomized content block is brought up to date with the latest contents
-  of the library that it references.
+  그러면 무작위 콘텐츠 블록은 해당 무작위 콘텐츠 블록이 참조하는 1개 혹은 복수의 보관함의 최신 콘텐츠로 업데이트될 것이다.
 
-* If you edited only the settings of components in the randomized content block
-  in your course so that they are different from the original version in the
-  library, you do not lose your changes if you select **Update now**. In this
-  case, the changes that you made in the randomized content block in the course
-  outline are kept, but a **Clear** option becomes available next to the
-  changed field in the component. However, any changes you made on the
-  **Editor** page of components in a randomized content block are lost if you
-  select **Update now** to get the latest library version.
+* 강좌 내 무작위 콘텐츠 블록 구성요소의 설정만을 변경하여 이들 설정이 보관함의 최초 버전과 달라진 경우에도 **지금 업데이트** 를 클릭하면 변경은 사라지지 않는다. 이 경우, 강좌 개요 내 무작위 콘텐츠 블록에 발생한 변경사항이 저장된다. 단, 해당 구성요소의 변경된 필드 옆에 **지우기** 버튼이 사용 가능한 상태로 된다. 그러나 최신 보관함 버전을 획득하기 위하여 **지금 업데이트** 를 클릭한 경우 어떠한 유형이든 무작위 콘텐츠 블록 내 구성요소의 편집기 탭의 변경사항은 손실될 것이다.
 
   .. image:: ../../../shared/images/ContentLibraries_ResetComponentField.png
      :alt: Clear icon in the course component field reverts value to library
          value.
 
-  To clear any edits made in the course outline and bring your edited
-  components up to date with the version in the library, select **Clear**.
+  강좌 개요에 취한 모든 종류의 편집을 지우고 편집된 구성요소를 보관함 버전으로 업데이트 하려면 **지우기** 를 클릭한다.
 
-  The value in that component field is reset to the current value in the
-  library.
+  해당 구성요소 필드의 값이 보관함의 현재 값으로 재설정될 것이다.
 
 
 .. _Preview Randomized Content in Student View:
 
 ***********************************************
-Preview the Randomized Content in Student View
+학습자 보기로 무작위 콘텐츠 미리보기
 ***********************************************
 
-You can preview course content before a course is live or before you publish
-specific units, to test how content will appear to students when it is
-released. To view the number and type of components from a randomized content
-block as students would see them, follow the steps described in the
-:ref:`Preview a Unit` topic.
+실제 강좌를 공개하기 전에 강좌 콘텐츠가 학습자에게 어떻게 보일지 확인하기 위해 미리보기 할 수 있다. 학습자에게 보이는 무작위 콘텐츠 블록의 구성요소 숫자와 형식을 확인하기 위해  :ref:`Preview a Unit` 의 다음 단계를 참고하면 된다.
 
 
 .. _View Specific Student Assigned Problems from Randomized Content Block:
 
 ***************************************************************************
-View a Specific Student's Assigned Problems from a Randomized Content Block
+무작위 콘텐츠 블록에서 특정 학습자에게 배정된 문제 보기
 ***************************************************************************
 
-In a live course, to view the components that are assigned to a specific
-student from a randomized content block, follow the steps described in the
-:ref:`Specific Student View` topic.
+진행중인 강좌에서 무작위 콘텐츠 블록에서 특정 학습자에게 배정된 구성요소를 :ref:`Specific Student View` 에 나와있는 단계를 참고한다.
 
 
 .. _Adjust Grades for a Problem from a Randomized Content Block:
 
 ***********************************************************
-Adjust Grades for a Problem from a Randomized Content Block
+무작위 콘텐츠 블록 문제 성적 정정하기
 ***********************************************************
 
-To adjust a grade or reset the attempts for a problem that was assigned from a
-randomized content block, you can view the course as a specific student to
-see the actual problems that they were assigned.
+무작위 콘텐츠 블록에서 배정된 문제의 성적과 시도 횟수를 정정하기 위해 특정 학습자로서 강좌를 조회해 실제 배정되는 문제를 볼 수 있다.
 
-Obtain the username or email address for the learner whose grades you want to
-adjust, and follow the steps described in the :ref:`Specific Student View`
-topic to view the actual problems in the course that this student was
-assigned.
+성적을 정정한 학습자의 사용자 이름이나 이메일 주소를 받아  :ref:`Specific Student View` 에 나온 대로 접속하여 학생에게 실제로 배정된 문제를 본다.
 
-In the **Specific student** course view in the LMS for the student whose
-username or email you entered, locate the components from the randomized
-content block. Follow the steps described in :ref:`Adjust_grades` to rescore
-the learner's submission, reset attempts, or delete the learner's state for a
-problem.
+해당 학생의 학습 관리 시스템 특정 학습자 강좌 조회에서 무작위 콘텐츠 블록의 구성요소를 확인한다. :ref:`Adjust_grades` 에 나온 대로 학습자의 성적을 고치고 시도 횟수를 수정하거나 문제에 대한 학습자 상태를 삭제한다.

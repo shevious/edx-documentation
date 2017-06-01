@@ -1,14 +1,12 @@
 .. _Protein Builder:
 
 ############################
-Protex Protein Builder Tool
+Protex 단백질 구성 도구
 ############################
 
-.. note:: EdX does not support this tool.
+.. note:: K-MOOC은 이 도구를 지원하지 않는다.
 
-The Protex protein builder asks students to create specified protein shapes by
-stringing together amino acids. In the example below, the goal protein shape is
-a simple line.
+학습자는 Protex 단백질 구성(protein builder) 도구를 이용, 아미노산을 연결하여 특정 단백질 형상을 만들 수 있다. 다음 예시에서 목표로 하는 단백질 구조는 1개의 단순 직선이다.
 
 
 .. image:: ../../../shared/images/ProteinBuilder.png
@@ -17,22 +15,20 @@ a simple line.
 .. _Create the Protein Builder:
 
 ********************************
-Create the Protein Builder Tool
+단백질 구성 도구로 문항 만들기
 ********************************
 
-To create the protein builder, follow these steps.
+단백질 구성기를 만들려면.
 
-#. Under **Add New Component**, click **Problem**, and then click **Blank
-   Advanced Problem**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, paste the problem component code from the section
-   that follows.
-#. Make any changes that you want, and then click **Save**.
+#. **신규 구성요소 추가** 에서 문제 를 클릭한 후 **BLANK ADVANCED PROBLEM** 을 클릭한다.
+#. 구성요소가 생기면 **편집** 을 클릭한다.
+#. 아래의 문제 구성요소 코드를 구성요소 편집기에 붙여 넣는다.
+#. 어떠한 요소라도 변경한 경우 **저장** 을 클릭한다.
 
 .. _Protein Builder Code:
 
 *************************
-Protein Builder Tool Code
+단백질 구성 도구 코드
 *************************
 
 .. code-block:: xml
@@ -69,14 +65,10 @@ Protein Builder Tool Code
     </solution>
   </problem>
 
-In this code:
+이 코드에서 :
 
-* **width** and **height** specify the dimensions of the application, in
-  pixels.
-* **target_shape** lists the amino acids that, combined in the order specified,
-  create the shape you've asked students to create. The list can only include
-  the following letters, which correspond to the one-letter code for each amino
-  acid. (This list appears in the upper-left corner of the protein builder.)
+* **width** 와 **height** 는 애플리케이션의 크기를 픽셀 단위로 지정한다.
+* **target_shape** 는 지정된 순서로 결합되어, 여러분이 학습자에게 생성하라 지시하는 형태를 생성하는 아미노산의 목록이다. 이 목록은 다음 문자만을 포함할 수 있다. 해당 문자는 각 아미노산에 해당하는 1자 코드이다. (이 목록은 단백질 구성기의 좌측 상단에 표시된다.)
 
   .. list-table::
      :widths: 15 15 15 15

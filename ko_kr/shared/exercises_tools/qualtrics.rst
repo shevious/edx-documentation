@@ -1,206 +1,148 @@
 .. _Qualtrics Survey:
 
 #########################
-Qualtrics Survey Tool
+퀄트릭스 설문 도구
 #########################
 
-.. note:: EdX offers full support for this tool.
+.. note:: K-MOOC은 이 도구에 대해 전체 지원을 제공한다.
 
-You can administer Qualtrics surveys to your learners in your edX course. The
-Qualtrics survey appears in an iframe inside the course.
+퀄트릭스 설문을 통해 수강자에 대한 설문을 할 수 있다. 퀄트릭스 설문은 강좌 내 iframe에 등장하게 된다.
 
 .. image:: ../../../shared/images/Qualtrics.png
   :width: 500
   :alt: A Qualtrics survey with several responses filled in.
 
-Course staff can view the overall results of the survey as well as responses
-from individual learners.
+강좌 운영자는 설문 전체 결과와 함께 각 학습자의 답변을 조회할 수 있다.
 
-.. note:: To use a Qualtrics survey, you must have a Qualtrics license.
- Qualtrics licenses are available for a fee at the `Qualtrics website
- <http://www.qualtrics.com>`_. If you want to include a survey but you do not
- have a Qualtrics license, you can use the :ref:`edX survey tool<Survey Tool>`
- or a :ref:`Google form<Google Drive Files Tool>`.
+.. note:: 퀄트릭스 설문을 사용하려면 반드시 라이센스가 있어야 한다. 퀄트릭스 라이센스는  `Qualtrics website <http://www.qualtrics.com>`_ 에서 일정 비용을 지불하면 받을 수 있다. 설문을 추가하고 싶지만 퀄트릭스 라이센스가 없다면  :ref:`edX survey tool<Survey Tool>` 나 :ref:`Google form<Google Drive Files Tool>` 을 사용할 수 있다.
 
-For more information, see the following sections.
+자세한 내용은 다음을 참고하면 된다.
 
 .. contents::
   :local:
   :depth: 1
 
-Be sure to review all supplemental materials to make sure that they are
-accessible before making them available through your course. For more
-information, see
-:ref:`Accessibility Best Practices for Course Content Development`.
+강좌에 추가하기 전에 모든 자료를 꼼꼼히 읽어 접근성을 높여야 한다. 자세한 사항은 :ref:`Accessibility Best Practices for Course Content Development` 를 참고하면 된다.
 
 *************************************
-Add a Qualtrics Survey to Your Course
+강좌에 퀄트릭스 설문 추가하기
 *************************************
 
-To add a Qualtrics survey to your course, you must :ref:`create the survey in
-Qualtrics <Create the Qualtrics Survey>`, and then :ref:`create an HTML
-component in Studio <Create the HTML Component in Studio>`.
+강좌에 퀄트릭스 설문을 추가하기 위해  :ref:`create the survey in Qualtrics <Create the Qualtrics Survey>`   :ref:`create an HTML component in Studio <Create the HTML Component in Studio>`  해야 한다.
 
 .. _Create the Qualtrics Survey:
 
 ==============================
-Create the Qualtrics Survey
+퀄트릭스 설문 생성하기
 ==============================
 
-.. note:: Because Qualtrics is a third-party tool, the following steps might
- change without notice. See the `Qualtrics website
- <http://www.qualtrics.com>`_ for the most up-to-date Qualtrics documentation.
+.. note:: 퀄트릭스는 외부 도구이므로 다음 사항은 변경될 수 있다. 최신 안내사항은 퀄트릭스  `Qualtrics website <http://www.qualtrics.com>`_  를 참고하면 된다.
 
-#. Using your Qualtrics account, create your survey.
-#. Add the statements and options that you want the survey to include.
-#. Add the **user ID** element. This element imports data from your course
-   into Qualtrics.
+#. 퀄트릭스 계정을 사용해 설문을 만든다.
+#. 설문에 추가할 문장과 선택지를 입력한다.
+#. **사용자 ID** 요소를 추가한다. 이 요소는 강좌에서 데이터를 가져와 퀄트릭스에서 사용할 수 있도록 도와준다.
 
-   #. At the top of the page, make sure the **Edit Survey** tab is selected,
-      and then select **Survey Flow**.
-   #. In the upper left corner, select **Add a New Element Here**.
-   #. Select **Embedded Data**.
-   #. Under **Set Embedded Data**, replace **Enter Embedded Data Field Name
-      Here** with ``uid``.
-   #. Select **Save Flow**.
+   #. 페이지 상단에서 **설문 편집** 탭이 선택된 것을 확인하고 **설문 흐름** 을 클릭한다.
+   #. 좌측 상단 구석의 **새 요소 추가하기** 를 선택한다.
+   #. **포함된 자료** 를 클릭한다.
+   #. **포함된 자료** 아래의 포함된 자료 필드명 입력을 ``uid`` 로 대체한다.
+   #. **설문 흐름 저장** 을 선택한다.
 
-#. At the top of the page, make sure **Edit Survey** is selected, and then
-   select **Launch Survey**.
-#. On the page that opens, select **Activate Survey** in the upper right
-   corner.
-#. On the page that opens, locate the URL that is listed under **Your
-   Anonymous Survey Link**. You will add this URL to the HTML component for
-   your survey in Studio.
+#. 페이지 상단에서 **설문 편집** 이 선택된 것을 확인하고 **설문 실행** 을 클릭한다.
+#. 열리는 페이지에서 우측 상단 구석의 **설문 활성화** 를 선택한다.
+#. 열리는 페이지에서 **익명 설문 링크** 아래 URL을 Studio의 HTML 구성요소에 추가한다.
 
-   .. note:: If you need to find this URL in the future, open your survey
-    in Qualtrics, and then select the **Distribute Survey** tab at the top of
-    the page.
+   .. note:: 추후 이 URL이 필요하다면 퀄트릭스에서 설문을 열고 페이지 상단의 **설문 배포** 를 클릭한다.
 
 .. _Create the HTML Component in Studio:
 
 =====================================
-Create the HTML Component in Studio
+Studio에서 HTML 구성요소 생성하기
 =====================================
 
-#. Open the unit where you want the survey to appear.
-#. Under **Add New Component**, select **HTML**, and then select **IFrame
-   Tool**.
-#. Select **Edit** to open the component editor, and then select **HTML** in
-   the menu bar.
-#. At the end of the instructions, locate the example iframe element, and
-   replace the placeholder values with the values for your survey. The iframe
-   element starts with the following text.
+#. 설문을 추가할 학습활동을 연다.
+#. **새 구성요소 추가하기** 아래 **HTML** 을 선택하고 **Iframe 도구** 를 클릭한다.
+#. **편집** 을 클릭해 구성요소 편집기를 열고 메뉴에서 **HTML** 을 선택한다.
+#. 각 설명 끝마다 예제 iframe 요소를 설문에서 사용할 값으로 바꾼다. Iframe 요소는 다음 텍스트로 시작한다.
 
    ``<iframe title="Euler Line Demo"``
 
-  * In the ``title`` attribute, replace ``Euler Line Demo`` with the title of
-    your survey.
-  * In the ``src`` attribute, replace the placeholder URL with the URL from
-    step 6 in :ref:`Create the Qualtrics Survey`.
-  * In the ``src`` attribute, add the following value to the end of the URL.
+  * ``title`` 속성에서 ``Euler Line Demo`` 를 설문 제목으로 바꾼다.
+  * ``src`` 속성에서 플레이스홀더 URL을 6단계  :ref:`Create the Qualtrics Survey` 의 URL로 바꾼다.
+  * ``src`` 속성에서 다음 값을 URL 끝에 추가한다.
 
     ``&uid=%%USER_ID%%``
 
-    The resulting ``src`` attribute resembles the following example.
+    결론으로 나오는 ``src`` 속성은 다음 예시와 유사해야 한다.
 
     ``src="https://qtrial2015az1.az1.qualtrics.com/SE/?SID=SV_9N27VuruRdNcpHT&uid=%%USER_ID%%"``
 
-  * Replace the values in the ``width`` and ``height`` attributes with values
-    that allow your survey to appear the way you want it to. For example, you
-    might change ``width`` to 800 and ``height`` to 1000.
-  * (Optional) If your survey might be taller than the value that you set for
-    ``height``, in the ``scrolling`` attribute, change the value to ``yes``.
-    If you do not change the value to ``yes`` and your survey is taller than
-    the ``height`` value, learners cannot scroll down to respond to all the
-    survey statements.
-  * Leave the other default values, and then select **OK** at the bottom
-    of the HTML source code editor to return to the component editor.
+  * ``width``  와  ``height``  속성의 값을 원하는 설문 형태의 값으로 바꾼다. 예를 들어 ``width``  를 800으로,  ``height``  를 1000으로 설정할 수 있다.
+  * (선택사항) 만약 설문이 ``height`` 에 설정한 값보다 길다면 ``scrolling`` 속성에서 값을 ``yes`` 로 설정한다. 만약 ``yes``  값을 바꾸지 않고 ``height`` 값보다 설문이 크다면 학습자는 모든 설문에 답하기 위해 스크롤 할 수가 없게 된다
+  * 다른 기본 설정 값은 만지지 않고 HTML 소스 코드 편집기 하단의 OK를 클릭해 구성요소 편집기로 되돌아간다.
 
-#. In the component editor, delete all of the default instructional text, or
-   replace it with introductory text for your Qualtrics survey.
-#. Select **Save**.
+#. 구성요소 편집기에서 모든 기본 설명 텍스트를 지우거나 퀄트릭스 설문을 위한 소개 텍스트로 바꾼다.
+#. **저장** 을 클릭한다.
 
 *******************************
-View Survey Responses
+설문 답변 조회하기
 *******************************
 
-You can view both overall survey responses and responses for individual
-learners.
+전체 설문 답변과 개별 학습자 답변을 모두 조회할 수 있다.
 
 =======================
-View Overall Responses
+전체 답변 조회하기   
 =======================
 
-To view your overall survey results and analyze data, open your survey on the
-`Qualtrics website <http://www.qualtrics.com>`_.
+전체 설문 결과를 보고 자료를 분석하기 위해 퀄트릭스 사이트 `Qualtrics website <http://www.qualtrics.com>`_ 에서 설문을 연다.
 
 =========================================================
-View Survey Responses for an Individual Learner
+개별 학습자 설문 답변 조회하기
 =========================================================
 
-To view a specific learner's survey responses, you must download data both
-from the Insructor Dashboard and from Qualtrics, and then review the data.
+특정 학습자의 설문 답변을 조회하기 위해 교수자 대시보드와 퀄트릭스 모두에서 자료를 다운로드하고 조회한다.
 
-Download Data from the Instructor Dashboard
+교수자 대시보드에서 자료 다운로드하기
 **********************************************
 
-#. In the LMS, go to the Instructor Dashboard.
-#. Select the **Data Download** page.
-#. Under **Data Download**, select **Get Student Anonymized IDs CSV**. If you
-   receive a prompt, specify the location where you want to save the file.
+#. 학습 관리 시스템에서 교수자 대시보드에 접속한다.
+#. **자료 다운로드** 페이지에 들어간다.
+#. **자료 다운로드** 아래의 **학습자 인명 ID CSV 받기** 를 선택한다. 프롬프트를 받는다면 파일 저장 경로를 지정한다.
 
-   The .csv file is saved to your computer. The file has the following name.
+   .csv 파일이 아래 이름으로 컴퓨터에 저장된다.
 
    ``<course name>_<course number>_<year>_<term>_anon-ids.csv``
 
-   For more information about anonymized student IDs, see
-   :ref:`Access_anonymized`.
+   익명 학습자 ID에 관한 자세한 사항은  :ref:`Access_anonymized` 를 참고하면 된다.
 
-#. Under **Reports**, select **Download profile information as a CSV**.
-#. When the profile information report appears in the list under **Reports
-   Available for Download**, select the report to download the .csv file to
-   your computer. The file has the following name.
+#. **보고** 아래의 **계정 정보 CSV 다운로드** 를 선택한다.
+#. **다운로드 가능 보고** 아래 목록에 계정 정보가 열린다. 컴퓨터에 저장할 보고를 선택하면 다음 이름으로 .csv 파일이 컴퓨터에 저장된다.
 
    ``<course name>_<course number>_<year>_<term>_student_profile_info_<date and time>.csv``
 
-For more information about accessing learner data, see :ref:`Student Data`.
+학습자 자료에 관한 자세한 사항은  :ref:`Student Data` 를 참고하면 된다.
 
-Download Data from Qualtrics
+퀄트릭스에서 자료 다운로드 받기
 *******************************
 
-.. note:: Because Qualtrics is a third-party tool, the following steps might
- change without notice. See the `Qualtrics website
- <http://www.qualtrics.com>`_ for the most up-to-date Qualtrics documentation.
+.. note:: 퀄트릭스는 외부 도구이므로 다음 사항은 변경될 수 있다. 최신 안내사항은  `Qualtrics website <http://www.qualtrics.com>`_ 를 참고하면 된다.
 
-#. In Qualtrics, select the **View Results** tab.
-#. On the page that opens, select **Download Data** in the upper left corner
-   of the page.
-#. On the page that opens, clear the **Compress the desired format into a .zip
-   file before downloading** check box. Accept all the other default values.
-#. Under **Format**, select the **This is a Comma
-   Separated Values format...** link to download the .csv file.
+#. 퀄트릭스에서 **결과 조회하기** 탭을 선택한다.
+#. 열리는 페이지에서 좌측 상단의 **자료 다운로드** 를 클릭한다.
+#. 열리는 페이지에서 **.zip 파일로 압축해 다운로드하기** 를 체크하지 않는다. 다른 기본 값은 그대로 둔다.
+#. 형식 아래 이것은 **,로 구분된 값 형식….** 링크를 클릭해 .csv 파일을 다운로드 받는다..
 
-Review the Data
+자료 검토하기
 ******************
 
-To associate learners' responses with their learner profiles, open the three
-.csv files that you have downloaded in a program such as Microsoft Excel.
+학습자 답변을 계정 정보와 연동시키기 위해 다운로드 받은 .csv 파일을 3개 연다.
 
-* The Qualtrics file has a **uid** column that contains each learner's
-  anonymized ID, as well as columns that contain each learner's answers to the
-  survey.
+* 퀄트릭스 파일은 학습자 답변을 표시하는 열과 함께 uid열이 있어 학습자 익명 ID를 표시한다.
 
-* The anonymized user ID file (``<course name>_<course number>_<year>_<term
-  >_anon-ids.csv``) contains each learner's anonymized ID and the learner's
-  edX user ID.
+* 익명 사용자 ID 파일은 학습자의 익명 ID와 K-MOOC ID 정보를 담고 있다.
 
-* The student profile data file (``<course name>_<course
-  number>_<year>_<term>_student_profile_info_<date and time>.csv``) contains
-  each learner's edX user ID and profile information, such as user name and
-  real name.
+* 학습자 계정 정보 데이터 파일은 개별 학습자의 K-MOOC ID, 사용자 이름과 실명 등의 정보를 담고 있다.
 
-To merge the data in the three spreadsheets so that you can see a learner’s
-edX user ID, profile information, and survey responses in one place, you can
-use functions such as VLOOKUP in Microsoft Excel.
+3개의 스프레드시트의 자료를 합쳐서 학습자의 K-MOOC ID, 계정 정보 및 설문 답변을 한번에 보기 위해 엑셀의 VLOOKUP 등의 기능을 활용하면 된다.
 
 

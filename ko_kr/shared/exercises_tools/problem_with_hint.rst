@@ -1,31 +1,27 @@
  .. _Problem with Adaptive Hint:
 
 ################################
-Problem with Adaptive Hint
+맞춤형 힌트 문제
 ################################
 
-.. note:: EdX offers provisional support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 부분적인 지원을 제공한다.
 
-A problem with an adaptive hint evaluates a student's response, then gives the
-student feedback or a hint based on that response so that the student is more
-likely to answer correctly on the next attempt. These problems can be text
-input problems or multiple choice problems.
+맞춤형 힌트 문제는 학습자의 응답을 평가한 후 해당 학습자에게 피드백을 제공하거나 응답을 바탕으로 힌트를 주어 학습자가 다음 기회에 정답에 보다 근접할 수 있도록 도와주는 것이다. 이러한 유형으로는 텍스트 입력 문제나 선다형 문제가 있다.
 
 .. image:: ../../../shared/images/ProblemWithAdaptiveHintExample.png
  :alt: Image of a problem with an adaptive hint
 
 ******************************************
-Create a Problem with an Adaptive Hint
+맞춤형 힌트 문제 생성하기
 ******************************************
 
-To create the problem illustrated above, follow these steps.
+맞춤형 힌트 문제는 다음과 같은 절차로 생성한다.
 
-#. In the unit where you want to create the problem, click **Problem**
-   under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Problem with Adaptive Hint**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, replace the example code with the code below.
-#. Click **Save**.
+#. 문제를 생성하고자 하는 학습 활동에서 **신규 구성요소 추가** 의 **문제** 를 클릭한 후 **고급** 탭을 클릭한다.
+#. **맞춤형 힌트 문제** 를 클릭한다.
+#. 구성요소가 표시되면 **편집** 을 클릭한다.
+#. 구성요소 편집기에서 기존 코드를 삭제하고 아래 코드를 입력한다.
+#. **저장** 을 클릭한다.
 
 .. code-block:: xml
 
@@ -69,11 +65,11 @@ To create the problem illustrated above, follow these steps.
 .. _Problem with Adaptive Hint XML:
 
 *********************************
-Problem with Adaptive Hint XML
+맞춤형 힌트 XML문제
 *********************************
 
 ========
-Template
+템플릿
 ========
 
 .. code-block:: xml
@@ -111,24 +107,22 @@ Template
 	  </text>
 	</problem>
 
-.. note:: If the hints that you supply include characters, the letters must be
- lowercase.
+.. note:: 힌트에서 영어 문자는 소문자로만 주어져야 한다.
 
 ========
-Tags
+태그
 ========
 
-* ``<text>``: Surrounds the script and text in the problem.
-* ``<customresponse>``: Indicates that this problem has a custom response.
-* ``<textline>``: Creates a response field in the LMS where the student enters
-  a response.
-* ``<hintgroup>``: Specifies that the problem contains at least one hint.
+* ``<text>``: 문제에서 스크립트와 텍스트를 감싸는 태그이다.
+* ``<customresponse>``: 문제가 맞춤형(custom) 응답이 있음을 의미한다.
+* ``<textline>``: 학습자가 응답을 입력할 수 있는 입력칸을 만든다.
+* ``<hintgroup>``: 최소 1개의 힌트가 있는 문제를 나타낸다.
 
 **Tag:** ``<customresponse>``
 
-  Attributes
+  속성
 
-  (none)
+  (없음)
 
   Children
 
@@ -137,41 +131,37 @@ Tags
 
 **Tag:** ``<textline>``
 
-  Attributes
+  속성
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - label (required)
-       - Contains the text of the problem.
-     * - size (optional)
-       - Specifies the size, in characters, of the response field in the LMS.
-     * - hidden (optional)
-       - If set to "true", students cannot see the response field.
-     * - correct_answer (optional)
-       - The answer to the problem. To supply a correct_answer value that
-         includes letters, all letters **must be lowercase**. (Students'
-         responses to the problem are not case sensitive. They can contain both
-         uppercase and lowercase letters.)
+     * - 속성
+       - 설명
+     * - label (필수)
+       - 문제의 텍스트를 포함.
+     * - size (선택)
+       - LMS 에서 응답칸에 입력받는 글자의 수를 나타낸다.
+     * - hidden (선택)
+       - “true” 로하게 되면 학습자는 응답칸을 볼 수 없다.
+     * - correct_answer (선택)
+       - 문제의 답. correct_answer 값을 지원하기 위해 문자를 포함하고, 모든 문자는 영어라면 소문자 이어야한다. 학습자의 응답은 대소문자를 구별하지 않는다. 대소문자 모두 포함할 수 있다.
 
   Children
 
-  (none)
+  (없음)
 
 **Tag:** ``<hintgroup>``
 
-  Attributes
+  속성
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
+     * - 속성
+       - 설명
      * - hintfn
-       - Must be set to **hint_fn** (that is, the tag must appear as
-         ``<hintgroup hintfn="hint_fn"/>``).
+       - hint_fn 로 설정해야 한다. (즉, ``<hintgroup hintfn="hint_fn"/>`` 로 나타내야 한다).
 
