@@ -1,88 +1,58 @@
 .. _drag_and_drop_problem:
 
 ##########################
-Drag and Drop Problem
+드래그 앤 드롭(Drag & Drop) 문제(업그레이드 버전)
 ##########################
 
-.. note:: EdX offers full support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 전체 지원을 제공한다.
 
-In drag and drop problems, learners respond to a question by dragging text or
-images to a specific location on a background image. This section explains how
-to use drag and drop problems in your course.
+드래그 앤 드롭 문제에서 학습자는 텍스트나 오브젝트를 드래그하여 이미지의 특정 위치에 드롭하여 질문에 응답한다. 이 장에선 어떻게 강좌에 드래그 앤 드롭 문제를 활용하는지 설명한다.
 
 .. contents::
   :local:
   :depth: 1
 
 .. note::
-    This drag and drop problem type is intended as a replacement for an older
-    drag and drop problem type. This drag and drop problem type includes
-    significant improvements and you should use it for any new course
-    development. For more information about the previous, deprecated drag and
-    drop problem type, see :ref:`Drag and Drop`.
+    이 드래그 앤 드롭 문제 유형은 이전 있었던 유형의 새로운 버전이다. 새로운 드래그 앤 드롭 문제 유형은 많은 기능이 추가되었으며 강좌 개발에 활용할 수 있다. 이전 드래그 앤 드롭 문제 유형은 :ref:`Drag and Drop` 를 참고하면 된다.
 
 .. _overview_of_drag_and_drop_problems:
 
 **********************************
-Overview of Drag and Drop Problems
+드래그 앤 드롭 문제 개관
 **********************************
 
-A drag and drop problem includes a background image and one or more draggable
-items that learners move into target zones on the background image. You can
-include as many draggable items and as many target zones as you need. You can
-include decoy items that do not have a target and you can include decoy targets
-that do not correspond to draggable items.
+드래그 앤 드롭 문제는 배경 이미지와 학습자가 드래그 할 수 있는 하나 이상의 대상으로 구성된다. 드래그 대상과 드롭의 수에는 제한이 없다. 또, 드롭 위치가 없는 가짜 드래그 대상을 만들 수 있고 드래그 대상이 없는 가짜 드롭 위치도 만들 수 있다.
 
-When learners view a drag and drop problem in the LMS, the problem includes a
-top section and a bottom section. Learners drag items from the top section  on
-to the background image in the section below it.
+학습자가 학습 관리 시스템에서 드래그 앤 드롭 문제를 볼 때 상단 하단으로 나뉜다. 학습자는 상단에서 드래그 대상을 선택해 하단의 드롭 위치에 놓는다.
 
-The way that a learner selects, or grabs, an item depends on the type of
-browser that the learner uses. For example, a learner might click and hold on
-a draggable item with a mouse pointer to select it, drag the item to a target,
-and release the mouse pointer to drop the item on the target. A learner who
-accesses the problem on a mobile device with a touch screen might swipe an item
-from the top section into a target zone. A learner who uses a keyboard
-interface might use the navigation keys to select an item and then match it to
-a target zone.
+학습자가 대상을 선택하고 드래그하는 방식은 브라우저에 따라 다르다. 예를 들어 마우스를 누른 채 대상을 드래그하고 드롭 위치에서 마우스에서 손을 뗄 수도 있다. 모바일 환경에서 드래그 앤 드롭 문제를 푸는 학습자는 상단에서 대상을 밀어 드롭 위치에 놓을 수도 있다. 키보드를 사용하는 학습자는 화살표를 이용해 문제를 풀 수도 있다.
 
-Learners complete a drag and drop problem when each draggable item that matches
-a target zone is correctly placed on its zone. Draggable items can require that
-learners enter number input for problems.
+각 드래그 대상을 올바른 드롭 위치에 올려 놓았을 때 문제는 끝난다. 드래그 대상은 일부 문제에서 수치 입력을 필요로 할 수도 있다.
 
-Learners must match all items to their targets to complete a problem and
-receive any credit. If draggable items do not require number input, learners
-receive full credit for a drag and drop problem when it is complete. If
-draggable items require number input, learners receive partial credit for the
-items with correct input when the problem is complete.
+학습자는 점수를 받기 위해선 모든 드래그 대상을 드롭 위치에 올려야 한다. 만약 드래그 대상이 수치 입력을 필요로 하지 않으면 드래그 앤 드롭 만으로 문제를 풀 수 있다. 만약 수치 입력이 필요하다면 올바른 수치를 입력한 대상에 대해서 부분 점수를 얻는다.
 
-The following image shows an example drag and drop problem.
+다음 이미지는 드래그 앤 드랍 문제 예제이다.
 
 .. image:: ../../../shared/images/dnd-initial.png
   :width: 600
   :alt: An example of a simple drag and drop problem. The components of the
       problem, such as its title, text, and introductory feedback are labeled.
 
-The following image shows the success feedback message that learners see when
-they match a draggable item with its target zone. Each draggable item has its
-own success feedback message.
+다음은 드래그 대상을 올바른 드롭 위치에 올렸을 때 학습자가 보게 되는 성공적인 피드백 이미지이다. 각 드래그 대상은 서로 다른 성공적인 피드백 메시지를 갖는다.
 
 .. image:: ../../../shared/images/dnd-correct-feedback.png
   :width: 400
   :alt: An example of a simple drag and drop problem. The success feedback
       message appears above the background image.
 
-The following image shows the error feedback message that learners see when
-they match a draggable item with an incorrect target zone. Each draggable item
-has its own error feedback message.
+다음 이미지는 잘못된 드롭 위치에 드래그 대상을 올려 놓았을 때 학습자가 보게 되는 오답 피드백 메시지다. 각 드래그 대상은 서로 다른 오답 피드백 메시지를 갖는다.
 
 .. image:: ../../../shared/images/dnd-incorrect-feedback.png
   :width: 400
   :alt: An example of a simple drag and drop problem. The error feedback
       message appears over the background image.
 
-The following image shows a completed drag and drop problem. The final feedback
-message informs the learner that the problem is complete.
+다음 이미지는 완성된 드래그 앤 드롭 문제다. 문제 풀이를 완료하면 학습자에게 최종 피드백 메시지가 보여진다.
 
 .. image:: ../../../shared/images/dnd-complete.png
   :width: 400
@@ -92,31 +62,16 @@ message informs the learner that the problem is complete.
 .. _drag_and_drop_background_images:
 
 ===============================
-Understanding Background Images
+배경 이미지 이해하기
 ===============================
 
-The background image for a drag and drop problem is the surface that learners
-drag items onto.
+드래그 앤 드롭 이미지의 배경 이미지는 학습자가 대상을 올려놓는 역할을 한다.
 
-A target zone is a rectangular area on the background image. You can show or
-hide the borders of a zone for learners. You can add labels for zones or leave
-them unlabeled.
+드롭 위치는 배경 이미지의 사각형 부분이다. 사각형의 변은 감출 수 있으며 드롭 위치라는 표시를 할 수도 있다.
 
-A background image must fit within the course screen. The LMS automatically
-scales images that are too wide. If you choose a background image that is
-extremely large, you should consider how it appears to learners after scaling.
-The width of the course screen depends on the device and browsing software that
-a learner uses.
+배경 이미지는 강좌 화면 크기와 맞아야 한다. 너무 넓은 이미지에 대해 학습 관리 시스템은 자동으로 크기를 맞춰준다. 크기 조절 후의 이미지가 학습자에게 어떻게 보일지 고려하며 크기를 맞춰야 한다. 강좌 화면의 너비는 학습자가 사용하는 브라우저와 장치에 따라 다르다.
 
-You define a target zone by specifying its width, height, horizontal offset
-(``x``), and vertical offset (``y``). Each specification is in pixels. The
-horizontal offset is the distance between the left side of the background image
-and the left side of the target zone. The vertical offset is the distance
-between the top of the background image and the top of the target zone.
-
-The following image shows a background image and target zones in the drag and
-drop problem editing dialog box. For more information about editing drag and
-drop problems, see :ref:`creating_a_drag_and_drop_problem`.
+드롭 위치는 너비, 높이, (``x``)값, (``y``)값을 설정해 정한다. 각 값의 단위는 픽셀이다. (``x``)값은 배경 이미지의 좌측 끝과 드롭 위치의 좌측 끝의 거리를 나타내며  (``y``)값은 배경 이미지의 맨 윗 부분과 드롭 위치의 맨 윗 부분 간의 거리를 나타낸다.
 
 .. image:: ../../../shared/images/dnd-zone-borders.png
   :width: 600
@@ -124,81 +79,51 @@ drop problems, see :ref:`creating_a_drag_and_drop_problem`.
       editing dialog box.
 
 .. note::
-  The pixel coordinates that you use to specify the size and location of target
-  zones are also used by common image editing software. You can open a
-  background image in an image editing program to find the pixel coordinates of
-  a target zone.
+  드롭 위치의 크기 및 위치를 나타내는 픽셀 좌표는 이미지 편집 프로그램을 사용해서 정할 수도 있다. 이미지 편집 프로그램에서 배경 이미지를 열어 픽셀 좌표를 찾을 수 있다.
+
 
 .. _drag_and_drop_draggable_items:
 
 ==============================
-Understanding Draggable Items
+드래그 대상 이해하기
 ==============================
 
-A draggable item is a rectangle that contains either a label or an image.
-Learners grab draggable items from the top of a drag and drop problem and drag
-them to targets on the background image.
+드래그 대상은 라벨이나 이미지를 담고 있는 상자다. 드래그 앤 드롭 문제에서 학습자는 상단의 드래그 대상을 선택하고 배경 이미지의 드롭 위치에 놓는다.
 
-You can set the size of the rectangle for a draggable item as a percentage of
-the width of the problem. If you do not specify the size, the LMS sets it based
-on the length of the text in the label or the size of the image in it. You can
-set the background color and the label text color for the items in a problem.
+드래그 대상의 크기를 문제 너비의 비율로 설정할 수도 있다. 만약 크기를 정하지 않으면 학습 관리 시스템은 텍스트 길이와 이미지 크기를 바탕으로 임의로 설정한다. 문제에서 배경과 라벨 텍스트 색도 정할 수 있다.
 
-Each draggable item can match one target zone on the background image. A
-draggable item can match none of the target zones.
+각 드래그 대상은 배경 이미지에서 드롭 위치와 연결되지 않거나 하나의 드롭 위치와 연결된다.
 
-Each item must have a text label to identify it in the drag and drop problem.
-If you include only a text label, that label appears in the draggable item. If
-you include both a text label and an image for an item, the image appears as
-its label.
+각 대상은 반드시 텍스트 라벨이 있어야 하며 텍스트 라벨만 있을 경우 그대로 드래그 대상에 등장하며 이미지와 함께 있을 경우 이미지가 라벨로서 등장한다.
 
-Using Image Draggable Items
+
+드래그 대상 사용하기
 ************************************
 
-The following image shows draggable items with images. For examples of items
-with text, see :ref:`overview_of_drag_and_drop_problems`.
+다음은 이미지를 포함한 드래그 대상이다. 텍스트를 포함한 대상의 경우 :ref:`overview_of_drag_and_drop_problems` 을 참고하면 된다.
 
 .. image:: ../../../shared/images/dnd-draggable-item-images.png
   :width: 400
   :alt: Draggable items with image labels in the item area of a drag and drop
       problem.
 
-Images for draggable items have alternate image descriptions. The alternate
-description explains the image content in text. If a learner cannot access the
-visual image content, the text description helps that learner to complete the
-problem.
+드래그 대상 이미지는 대체 설명을 포함한다. 대체 설명은 이미지를 텍스트로서 설명하며 만약 학습자가 시각 장애가 있다면 이 텍스트를 이용해 문제를 풀 수 있다.
 
-Images for draggable items must fit within the top section of the problem. The
-LMS automatically scales large images to fit. If you use a large image in a
-draggable item, you should consider how that image appears after scaling.
+드래그 대상 이미지는 문제의 상단 내에 있어야 한다. 만약 이미지가 너무 크다면 학습 관리 시스템이 크기를 자동으로 줄이므로 줄인 후 어떻게 보일지를 고려하여야 한다.
 
 .. note::
-    If an image file is unavailable, or cannot be displayed, the LMS displays
-    the text description as the button label.
+    이미지 파일이 없거나 보이지 않으면 학습 관리 시스템은 텍스트 설명을 라벨로 사용한다.
 
 .. _using_number_input_draggable_items:
 
-Using Number Input with Draggable Items
+드래그 대상 수치 입력 사용하기
 ****************************************
 
-Draggable items can accept number input after they are correctly placed on
-matching target zones. You specify the number that learners must enter and an
-optional margin of error that will be accepted as correct. The margin of error
-is the range of values above or below the correct number that also qualify as
-correct.
+드래그 대상이 올바른 드롭 위치에 놓여졌다면 수치를 입력하도록 할 수 있다. 학습자가 입력할 수치를 정할 수 있으며 오차범위를 인정할 수 있다. 복수정답은 정답 수치 이외의 정답으로 인정되는 값들을 말한다.
 
-For example, if the target value is ``5`` and the margin of error is ``1``,
-``6``, ``5``, and ``4`` are correct entries. In that example, ``3``, ``7``, and
-any other numbers are incorrect entries because they are outside of the margin
-of error.
+예를 들어 만약 정답 값이 ``5`` 고 복수정답이 ``1``, ``6``, ``5``, ``4`` 이라면 ``3``, ``7`` 등의 다른 숫자들은 모두 오답이 된다.
 
-You can specify the target number and the acceptable margin of error using
-whole numbers or fractional values to one decimal place. For example, the
-target value can be ``5`` or ``5.5``. The target value cannot be ``5.55``.
-
-The following image shows draggable items that accept number input after they
-are dragged to the correct target zone. The number entry for one item is
-correct and the number entry of the other item is incorrect.
+다음은 드롭 위치에 놓여졌을 때 수치를 입력할 수 있는 드래그 대상이다. 하나는 정답을 입력한 이미지이며 하나는 오답을 입력한 이미지이다.
 
 .. image:: ../../../shared/images/dnd-items-with-number-input.png
   :width: 600
@@ -209,272 +134,176 @@ correct and the number entry of the other item is incorrect.
 .. _enabling_drag_and_drop_problem:
 
 ********************************
-Enabling Drag and Drop Problems
+드래그 앤 드랍 문제 설정하기
 ********************************
 
-Before you can add drag and drop problems, you must enable the drag and drop
-problem type for your course.
+드래그 앤 드랍 문제를 추가하기 전에 강좌에서 사용할 수 있도록 설정해야 한다.
 
-To enable the drag and drop problem type, you add the ``"drag-and-drop-v2"``
-key to the **Advanced Module List** on the **Advanced Settings** page. (Be sure
-to include the quotation marks around the key value.) For more information, see
-:ref:`Enable Additional Exercises and Tools`.
+드래그 앤 드랍 문제 설정을 위해서 **고급 설정** 페이지의 **고급 모듈 목록** 에 ``"drag-and-drop-v2"`` 키를 추가해야 한다. (키 값은 “ “ 사이에 입력해야 한다.) 자세한 사항은 :ref:`Enable Additional Exercises and Tools` 를 참고하면 된다.
 
-After you enable the ``drag-and-drop-v2`` problem type, **Drag and Drop**
-appears in the **Advanced** menu of the **Add New Component** screen.
+드래그 앤 드랍 문제를 설정하면 **새 구성요소 추가하기** 의 **고급** 메뉴에 **드래그 앤 드랍** 이 등장한다.
 
 .. note::
-    By default, your course includes a **Drag and Drop** problem type in the
-    **Problem > Advanced** menu of the **Add New Component** screen. This is an
-    older drag and drop problem type that has been replaced by the ``drag-and-drop-v2`` advanced module in the **Advanced** menu of the **Add New
-    Component** screen.
+    새 구성요소 추가하기 화면의 **문제>고급** 에도 **드래그 앤 드랍** 문제가 있다. 이는 **새 구성요소 추가하기** 의 **고급** 메뉴에 있는 ``drag-and-drop-v2`` 로 대체된 이전 드래그 앤 드랍 문제이다.
+
 
 .. _creating_a_drag_and_drop_problem:
 
 *********************************
-Creating a Drag and Drop Problem
+드래그 앤 드랍 문제 만들기
 *********************************
 
-You must enable the drag and drop problem type for your course before you can
-add a drag and drop problem. For more information, see
-:ref:`enabling_drag_and_drop_problem`.
+드래그 앤 드랍 문제를 추가하기 전에 강좌에서 설정해야 한다. 자세한 사항은 :ref:`enabling_drag_and_drop_problem` 를 참고하면 된다.
 
-To create a drag and drop problem, follow these steps.
+드래그 앤 드랍 문제를 만들기 위해서
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Advanced**.
+#. 문제를 만들고 싶은 학습활동의 **새 구성요소 추가하기** 메뉴에서 **고급** 을 선택한다.
 
-#. From the list of advanced components, select **Drag and Drop**.
+#. 고급 구성요소 목록에서 **드래그 앤 드랍** 을 선택한다.
 
-   Studio adds the drag and drop problem to the unit.
+   Studio는 학습활동에 드래그 앤 드랍 문제를 추가한다.
 
-#. Select **Edit**. The **Editing** dialog box opens.
+#. **편집** 을 클릭하면 **편집** 다이얼로그 박스가 열린다.
 
-   Configure your drag and drop problem. For detailed information about
-   individual controls in the **Editing** dialog box, see
-   :ref:`drag_and_drop_editor_fields`.
+   드래그 앤 드롭 문제 설정을 다룰 수 있으며 자세한 사항은 :ref:`drag_and_drop_editor_fields` 를 참고하면 된다.
 
-   The **Editing** dialog box includes multiple screens.
-   Configure each screen and select **Continue**. On the final screen, select
-   **Save** to exit the configuration dialog box and save your changes.
+   **편집** 다이얼로그 박스는 다수의 화면을 포함하며 각 화면 설정을 마치고 **계속** 을 선택한다. 마지막 화면에서 **저장** 을 클릭하면 된다.
 
-   In particular, configure the aspects of the drag and drop problem described
-   below.
+   드래그 앤 드랍 문제의 다음 부분 설정은 특히 중요하다.
 
-   * Edit the problem title, problem text, introductory feedback, and final
-     feedback for the problem. For more information about how the text in these
-     fields appears in a drag and drop problem, see
-     :ref:`overview_of_drag_and_drop_problems`.
+   * 문제 이름, 텍스트, 소개 피드백과 최종 피드백을 편집한다. 드래그 앤 드롭 문제에서 텍스트가 나타나는 방식에 대해서는 :ref:`overview_of_drag_and_drop_problems` 을 참고하면 된다.
 
-   * Specify a background image in the **Background URL** field. Enter the URL
-     of a file you have added to your course or the URL of an image on the web.
-     For more information about working with course files, see :ref:`Add Files
-     to a Course`.  For more information about background images, see
-     :ref:`drag_and_drop_background_images`.
+   * 배경 URL 필드에서 배경 이미지를 선택한다. 강좌의 추가한 파일의 URL이나 인터넷에 있는 이미지의 URL을 입력한다. 강좌 파일에 대한 자세한 사항은 :ref:`Add Files to a Course` 를 참고하면 된다. 배경 이미지에 관한 자세한 사항은  :ref:`drag_and_drop_background_images` 를 참고하면 된다.
 
-     Select **Change background** after you enter the URL for your background
-     image.
+     배경 이미지에 URL을 입력한 후 **배경 바꾸기** 를 선택한다.
 
-     If you specify the URL of an image on the web, make sure that you are
-     legally authorized to use the image and that the image is available to
-     learners around the world.
+     인터넷에 있는 이미지의 URL일 경우 저작권 침해 우려가 없는 것을 확실히 해야한다.
 
-   * Remove the target zones for the example drag and drop problem. Select
-     **Add a zone** to add each target zone for your problem. For more
-     information about target zones, see
-     :ref:`drag_and_drop_background_images`.
+   * 예제 드래그 앤 드롭 문제의 드롭 위치를 제거한다. 드롭 위치 추가를 선택하여 드롭 위치를 지정한다. 자세한 사항은 :ref:`drag_and_drop_background_images` 를 참고하면 된다.
 
-   * Remove the draggable items for the example drag and drop problem. Select
-     **Add an item** to add draggable items for your problem. Select a matching
-     target zone for each item in the **Zone** field. Add a label, success
-     feedback text, and error feedback text. For more information about how the
-     text in these fields appears, see
-     :ref:`overview_of_drag_and_drop_problems`.  For more information about
-     draggable items, see
-     :ref:`drag_and_drop_draggable_items`.
+   * 예제 드래그 앤 드롭 문제의 드래그 대상을 제거한다. 대상 추가를 클릭해 드래그 대상을 추가한다. 드롭 위치를 위치 필드에서 정하고 라벨, 정답 피드백 텍스트와 오답 피드백 텍스트를 추가한다. 텍스트 추가에 관해선  :ref:`overview_of_drag_and_drop_problems` 을, 드래그 대상에 대해선  :ref:`drag_and_drop_draggable_items` 를 참고하면 된다.   
 
 
 .. _drag_and_drop_editor_fields:
 
 *******************************************************
-Understanding the Drag and Drop Editing Controls
+드래그 앤 드롭 편집 도구 이해하기
 *******************************************************
 
-The following table explains the controls in the **Editing** dialog box.
+다음은 **편집** 다이얼로그 박스에서 사용하는 도구에 대한 설명이다.
 
 .. list-table::
    :widths: 30 70
    :header-rows: 1
 
-   * - Control
-     - Explanation
+   * - 도구
+     - 설명
 
-   * - **Problem title**
-     - The heading that appears above the drag and drop problem. For an
-       example, see :ref:`overview_of_drag_and_drop_problems`.
+   * - **문제 이름**
+     - 드래그 앤 드롭 문제 위에 나타나는 이름이다. 예제는 :ref:`overview_of_drag_and_drop_problems` 을 보면 된다. 
 
-   * - **Show title**
-     - Controls whether the problem title appears above the problem in the LMS.
+   * - **이름 보기**
+     - 학습 관리 시스템에서 문제 위 이름 표시 여부를 설정한다.
 
-   * - **Maximum score**
-     - The total number of points that learners receive for completing the
-       problem. If draggable items have number input, learners may receive
-       partial credit for the item. If items do not have number input, learners
-       receive the maximum score. For more information about scores and
-       grading, see :ref:`Grading Index`.
+   * - **최대 점수**
+     - 문제를 풀었을 때 학습자가 받을 수 있는 최대 점수를 의미한다. 드래그 대상이 수치 입력을 포함한다면 학습자는 부분 점수를 받을 수도 있다. 만약 수치 입력 칸이 없다면 최대 점수를 받게 된다. 자세한 사항은 :ref:`Grading Index` 를 참고하면 된다. 
 
-   * - **Problem text**
-     - Text that appears above the problem in the LMS. You can use this text to
-       provide instructions or explain the problem. For an example, see
-       :ref:`overview_of_drag_and_drop_problems`.
+   * - **문제 텍스트**
+     - 학습 관리 시스템에서 문제 위에 나타나는 텍스트를 의미한다. 문제에 대한 설명이나 푸는 법에 대한 설명을 쓸 수 있다. 자세한 사항은 :ref:`overview_of_drag_and_drop_problems` 을 참고하면 된다.
+       
+   * - **“문제” 이름 보이기**
+     - 문제 텍스트 위 단어 **문제** 표시 여부를 설정한다.
 
-   * - **Show "Problem" heading**
-     - Controls whether the word **Problem** appears above the problem text.
+   * - **소개 피드백**
+     - 학습 시작 전 문제의 피드백 부분에 나타나는 텍스트를 의미한다.
 
-   * - **Introductory Feedback**
-     - The text that appears in the feedback section of the problem before a
-       learner begins.
+   * - **최종 피드백**
+     - 학습자가 문제를 푼 뒤 나타나는 피드백 부분의 텍스트를 의미한다.
 
-   * - **Final Feedback**
-     - The text that appears in the feedback section of the problem after a
-       learner matches all items to their target zones.
+   * - **배경 URL**
+     - 문제의 드롭 위치를 포함하는 이미지의 URL을 뜻한다. 이 URL은 강좌에 추가한 이미지의 것일 수도 있으며 인터넷 상의 이미지의 것일 수도 있다. 자세한 사항은 :ref:`drag_and_drop_background_images` 를 참고하면 된다. 
 
-   * - **Background URL**
-     - The URL of the image that contains target zones for the problem. The URL
-       can be relative to a file you add to your course or to a file on the
-       web. For more information, see :ref:`drag_and_drop_background_images`.
+       이 필드에 새 URL을 입력할 때 반드시 **배경 바꾸기** 를 선택해야 한다. **배경 바꾸기** 를 선택하지 않으면 **편집** 다이얼로그 박스에서 다른 설정을 저장할 때 이 값은 저장되지 않는다.
 
-       You must select **Change background** when you enter a new URL in this
-       field. If you do not select **Change background**, the new value will
-       not be saved when you save other changes in the **Editing** dialog box.
+   * - **배경 설명**
+     - 이미지를 보지 못하는 학습자를 위한 배경 이미지 설명이다.
 
-   * - **Background description**
-     - A description of the background image. This description is used by
-       learners who cannot access the visual image.
+   * - **이미지 상의 표시 라벨명**
+     - 학습 관리 시스템 배경 이미지의 드롭 위치 텍스트 표시 여부를 설정한다.
 
-   * - **Display label names on the image**
-     - Controls whether the text for target zones appears on the background
-       image in the LMS.
+   * - **이미지 상 위치 표시**
+     - 학습 관리 시스템 배경 이미지에 드롭 위치 구분 표시 여부를 설정한다.
 
-   * - **Display zone borders on the image**
-     - Controls whether the outlines of target zones appear on the background
-       image in the LMS.
+   * - **위치 텍스트**
+     - 드롭 위치의 이름을 의미한다. 드래그 대상 설정 중 드롭 위치의 이름을 선택할 수 있다.
 
-   * - **Zone Text**
-     - A name for a target zone. You select the name of a target zone in the
-       configuration for draggable items.
+   * - **위치 설명**
+     - 직접 드롭 위치를 볼 수 없는 학습자를 위한 드롭 위치에 관한 설명을 의미한다.
 
-   * - **Zone Description**
-     - Text that describes a target zone. This description is available to
-       learners who cannot access the target zone visually.
+   * - **위치 폭**
+     - 픽셀 단위로 표시된 드롭 위치의 가로 크기를 뜻한다.
 
-   * - **Zone width**
-     - The horizontal size of a target zone in pixels.
+   * - **위치 높이**
+     - 픽셀 단위로 표시된 드롭 위치의 세로 크기를 뜻한다.
 
-   * - **Zone height**
-     - The vertical size of a target zone in pixels.
+   * - **위치 X**
+     - 배경 이미지 좌측 끝과 드롭 위치 좌측 끝 간의 거리를 뜻한다.
 
-   * - **Zone X**
-     - The horizontal distance between the left edge of the background image
-       and the left edge of a target zone.
+   * - **위치 Y**
+     - 배경 이미지 최상단과 드롭 위치 최상단 간의 거리를 뜻한다.
 
-   * - **Zone Y**
-     - The vertical distance between the top edge of the background image and
-       the top edge of a target zone.
+   * - **위치 추가**
+     - **편집** 다이얼로그 박스에 새 드롭 위치 설정 도구를 추가한다.
 
-   * - **Add a zone**
-     - Adds a set of controls for a new zone to the **Editing** dialog box.
+   * - **배경색**
+     - 드래그 대상 라벨 뒤에 나타나는 색을 의미한다. 칼라 차트나 기타 CSS 색상 기능을 이용해 색을 지정할 수 있다. 자세한 사항은 `W3C CSS color specification`_ 을 참고하면 된다. 이 설정은 선택사항이며 색을 지정하지 않으면 학습 관리 시스템은 기본 색을 자동으로 지정한다.
 
-   * - **Background color**
-     - The color that appears behind the text or image label of a draggable
-       item. You can specify the color using a hexidecimal color code
-       (including the ``#`` character) or any other valid CSS color
-       specification. For more information, see the `W3C CSS color
-       specification`_. This is an optional configuration. If you do not set
-       the background color, the LMS will apply the default color to your
-       draggable items.
+   * - **텍스트 색**
+     - 드래그 대상 텍스트 라벨의 색을 의미하며 칼라 차트나 기타 CSS 색상 기능을 이용해 색을 지정할 수 있다. 자세한 사항은 `W3C CSS color specification`_ 을 참고하면 된다. 이 설정은 선택사항이며 색을 지정하지 않으면 학습 관리 시스템은 기본 색을 자동으로 지정한다.
 
-   * - **Text color**
-     - The color of the text label for a draggable item. You can specify the
-       color using a hexidecimal color code (including the ``#`` character) or
-       any other valid CSS color specification. For more information, see the
-       `W3C CSS color specification`_. This is an optional configuration. If
-       you do not set the background color, the LMS will apply the default
-       color to your text.
+   * - **드래그 대상 텍스트**
+     - 문제의 드래그 대상에 나타나는 텍스트를 설정한다.
 
-   * - **Item Text**
-     - Controls the text that appears on the draggable item in the problem.
+   * - **드래그 대상 위치**
+     - 드래그 대상에 대한 드롭 위치를 지정할 수 있으며 학습자는 이를 바탕으로 문제를 푼다.
 
-   * - **Item Zone**
-     - Controls the target zone that matches the draggable item. Learners must
-       drag the item to the target zone that you select.
+   * - **드래그 대상 이미지 URL**
+     - 선택사항으로서 드래그 대상 이미지에 대한 URL을 의미한다.
 
-   * - **Item Image URL**
-     - (Optional) the URL of an image that appears on a draggable item. The
-       image appears on the draggable item in the problem.
+       이 URL은 강좌에 추가한 파일에 대한 것일 수 있으며 인터넷 상의 파일에 대한 것일 수도 있다.
 
-       The URL can be relative to a file you add to your
-       course or to a file on the web.
+   * - **드래그 대상 이미지 설명**
+     - 이미지 라벨을 볼 수 없는 학습자를 위한 드래그 대상 이미지 라벨을 설명하는 텍스트를 의미한다.
 
-   * - **Item Image description**
-     - Text that describes the image label for a draggable item. The
-       description is used by learners who cannot access the visual image
-       label.
+   * - **정답 피드백**
+     - 드래그 대상을 올바른 드롭 위치에 올려 놓았을 때 나타나는 메시지다. 예제는 :ref:`overview_of_drag_and_drop_problems` 을 참고하면 된다. 이것은 선택사항 설정으로서 피드백을 등록하지 않으면 학습 관리 시스템은 아무 메시지도 보여주지 않는다.
 
-   * - **Item Success Feedback**
-     - The text message that appears above the background image when a learner
-       places a draggable item on its matching target zone. For an example, see
-       :ref:`overview_of_drag_and_drop_problems`. This is an optional
-       configuration. If you do not enter a success feedback message, the
-       LMS will not display one.
+   * - **오답 피드백**
+     - 드래그 대상을 잘못된 드롭 위치에 올려 놓았을 때 나타나는 메시지다. 예제는  :ref:`overview_of_drag_and_drop_problems` 을 참고하면 된다. 이것은 선택사항 설정으로서 피드백을 등록하지 않으면 학습 관리 시스템은 아무 메시지도 보여주지 않는다.
 
-   * - **Item Error Feedback**
-     - The text message that appears above the background image when a learner
-       places a draggable item on an incorrect matching target zone. For an
-       example, see
-       :ref:`overview_of_drag_and_drop_problems`. This is an optional
-       configuration. If you do not enter an error feedback message, the
-       LMS will not display one.
+   * - **드래그 대상 보기 고급 설정**
+     - 드래그 대상의 고급 설정이다.
 
-   * - **Item Show advanced settings**
-     - Opens additional controls for configuring a draggable item.
+   * - **선호 드래그 대상 폭**
+     - 문제 폭의 비율(0에서 100 사이의 숫자)로 표시되는 드래그 대상의 가로 폭을 뜻한다.
 
-   * - **Item Preferred width**
-     - The horizonal size of a draggable item as a percent of the problem
-       width. The percent value must be a whole number between 0 and 100.
+   * - **드래그 대상 수치 입력 값**
+     - 올바른 드롭 위치에 드래그 대상을 올려 놓았을 때 학습자가 입력해야 하는 수치 값이다. 자세한 사항은  :ref:`using_number_input_draggable_items` 를 참고하면 된다.
 
-   * - **Item Optional numerical value**
-     - A number that learners must enter after they place a draggable item on
-       the correct target zone. For more information, see
-       :ref:`using_number_input_draggable_items`.
-
-   * - **Item Margin ±**
-     - Controls the range of numbers that are accepted as the correct number
-       input for a draggable item. For more information, see
-       :ref:`using_number_input_draggable_items`.
-
-   * - **Add an item**
-     - Adds a set of controls for a new draggable item to the **Editing**
-       dialog box.
+   * - **복수정답 인정 수치 입력 값**
+     - 드래그 대상 수치 입력에서 복수정답으로 인정되는 값이다. 자세한 사항은 :ref:`using_number_input_draggable_items` 를 참고하면 된다.
+       
+   * - **대상 추가**
+     - **편집** 다이얼로그 박스에 새 드래그 대상의 설정을 추가한다.
 
 .. _changing_visual_style_of_drag_and_drop_problem:
 
 ****************************************************
-Changing the Visual Style of a Drag and Drop Problem
+드래그 앤 드롭 문제 모양 바꾸기
 ****************************************************
 
-You can change the visual appearance of drag and drop problems in your courses.
+강좌 내 드래그 앤 드롭 문제의 모양을 바꿀 수 있다.
 
-The **Background color** and **Text color** controls for the draggable items in
-a drag and drop problem set the appearance of items for an individual problem.
-You can choose colors for the background and text of items when you create or
-edit a drag and drop problem.
-
-.. only:: Open_edX
-
-  You can develop a Python programming language module and include a custom
-  Cascading Style Sheet (CSS) file for drag and drop problems in your Open edX
-  site. For more information, see
-  :ref:`installation:styling_drag_and_drop_problems`.
+드래그 앤 드롭 문제를 만들 때 문제의 전체적인 모양을 결정짓는 드래그 대상 **배경 색** 과 **텍스트 색** 을 선택할 수 있다.
 
 .. include:: ../../../links/links.rst

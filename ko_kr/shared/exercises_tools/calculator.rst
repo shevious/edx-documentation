@@ -1,55 +1,47 @@
 .. _Calculator:
 
 ##################
-Calculator Tool
+계산기 도구(신규 기능)
 ##################
 
-.. note:: EdX offers provisional support for this tool.
+.. note:: K-MOOC은 이 도구에 부분적 지원을 제공한다.
 
 .. contents::
   :local:
   :depth: 1
 
 **********
-Overview
+개요
 **********
 
-Learners can use the edX calculator tool to perform simple
-and complex calculations. Learners can enter input including numbers,
-operators, Greek letters, affixes, trigonometric functions, and more.
+학습자는 K-MOOC 계산기 도구를 이용해 간단하거나 복잡한 계산을 할 수 있다. 학습자는 숫자, 그리스 문자, 연산자, 삼각함수 등을 입력할 수 있다.
 
-The calculator is available for every edX course, but it is not visible by
-default. To make the calculator visible, you must enable it in the course
-advanced settings.
+계산기는 모든 K-MOOC 강좌에서 제공되지만 기본으로 보여지진 않는다. 계산기를 보기 위해선 강좌 고급 설정에서 허용해야 한다.
 
-When the calculator is visible in a course, the calculator icon appears at the
-bottom of every unit page.
+계산기가 강좌에서 볼 수 있게 되면 학습활동 페이지 하단에 계산기 아이콘이 나온다.
 
 .. image:: ../../../shared/images/Calc_Closed.png
   :width: 600
   :alt: Course page with an arrow pointing to the calculator.
 
-When learners select the calculator icon, the calculator opens along the lower
-edge of the browser window.
+학습자가 계산기 아이콘을 선택하면 브라우저 창 하단에 계산기가 열린다.
 
-The calculator includes an information page that learners can use if they have
-questions about entering input in the calculator. Learners access the
-calculator's information page by selecting the ``i`` icon next to the input
-field.
+계산기엔 학습자가 수치를 입력할 때 나오는 질문사항을 해결할 수 있는 참고사항 페이지가 함께 열린다. 학습자는 입력 필드 옆의 i 아이콘을 눌러서 참고사항 페이지를 볼 수 있다.
 
 .. image:: ../../../shared/images/Calc_Open_InfoPage.png
   :width: 600
   :alt: Course page with the calculator visible along the edge of the browser.
 
-Learners close the calculator by selecting the X.
+X를 선택하여 계산기를 닫을 수 있다.
 
 
 ************************************
-Enable the Calculator Tool
+계산기 도구 설정하기
 ************************************
 
-To enable the calculator tool, follow these steps.
+계산기 도구를 설정하기 위해
 
-#. In Studio, on the **Settings**  menu, select **Advanced Settings**.
-#. In the **Show Calculator** field, change ``false`` to ``true``.
-#. Select **Save Changes**.
+#. Studio의 **설정** 메뉴에서 **고급 설정** 을 고른다.
+#. **계산기 보이기** 필드에서 ``false`` 를 ``true`` 로 바꾼다.
+#. **저장** 을 클릭한다.
+

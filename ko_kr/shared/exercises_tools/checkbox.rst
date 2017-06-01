@@ -1,94 +1,73 @@
 .. _Checkbox:
 
 ##################
-Checkbox Problem
+체크박스 문제
 ##################
 
-.. note:: EdX offers full support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 전체 지원을 제공한다.
 
 .. contents::
   :local:
   :depth: 2
 
 **********
-Overview
+개요
 **********
 
-In checkbox problems, learners select one or more options from a list of
-possible answers. To answer the problem correctly, a learner must select all of
-the options that are correct answers, and none of the options that are
-incorrect. The course team must set up each checkbox problem to have at least
-one correct answer.
+체크박스 문제에서, 학습자는 선택지에서 하나 이상을 선택해야 한다. 또한 각 체크박스 문제에는 1개 이상의 정답이 있어야 한다.
+
 
 .. image:: ../../../shared/images/CheckboxExample.png
  :alt: A checkbox problem with four options, two of which are correct.
 
 .. note::
-   Make sure that all of the answer choices are unambiguous, and avoid trick
-   questions. Checkbox problems with ambiguity can be frustrating to learners,
-   especially if the problems have a limited number of attempts.
+   문제는 모호하지 않아야 하고 함정문제는 피해야 한다. 체크박스 문제가 모호하면, 특히 답안 입력 횟수가 제한된 경우 학습자에게 혼동을 초래할 수 있다.
+
 
 **************************************************
-Analyzing Performance on Checkbox Problems
+체크박스 문제 성과 분석
 **************************************************
 
-For the checkbox problems in your course, you can use edX Insights to review
-aggregated learner performance data and examine submitted answers. For more
-information, see :ref:`insights:Using edX Insights`.
+강좌의 체크박스 문제에 대해 K-MOOC Insights를 사용하여 축적된 학습자 성과 데이터를 분석할 수 있다. 자세한 사항은 K-MOOC :ref:`insights:Using edX Insights` 를 참고하면 된다.
+
 
 **************************************
-Creating a Checkbox Problem
+체크박스 문제 만들기
 **************************************
 
-You can create checkbox problems in the simple editor or in the advanced
-editor. You can set up a problem in the simple editor, and then switch to the
-advanced editor to add more configuration options in XML. However, you cannot
-switch back to the simple editor from the advanced editor. Therefore, you
-might want to format the problem as completely as possible before you begin to
-use the advanced editor.
+간편 편집기 또는 고급 편집기에서 체크박스 문제를 만들 수 있다. 우선 간편 편집기에서 문제를 만든 후 고급 편집기로 넘어가 XML의 다양한 설정을 사용할 수도 있다. 그러나 고급 편집기 사용 후 간편 편집기로 되돌아 올 수는 없다. 따라서 고급 편집기 사용 전에 완전히 문제 형식을 만드는 것이 좋다.
+
 
 .. _Use the Simple Editor to Create a Checkbox Problem:
 
 ======================================================
-Use the Simple Editor to Create a Checkbox Problem
+간편 편집기를 사용해 체크박스 문제 만들기
 ======================================================
 
-To use the :ref:`simple editor<Simple Editor>` to create a checkbox problem,
-follow these steps.
+:ref:`simple editor<Simple Editor>` 를 사용해 체크박스 문제를 만들기 위해 아래의 단계를 따라야 한다.
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Problem**.
-#. Select one of the two checkbox problem templates.
+#. 문제를 만들고 싶은 학습활동에서 **신규 구성요소 추가** 아래의 **문제** 를 클릭한다.
 
-  * From the list of **Common Problem Types**, select **Checkboxes**.
+#. 두 가지 체크박스 문제 템플릿 중에 한가지를 고른다.
 
-  * From the list of **Common Problems with Hints and Feedback**, select
-    **Checkboxes with Hints and Feedback**. For more information, see `Use
-    Feedback in a Checkbox Problem`_.
+  * **일반 문제 유형** 에서 **체크박스** 또는 **힌트가 있는 체크박스** 를 클릭한다. 
 
-    Studio adds the checkbox problem to the unit.
+  * 힌트가 있는 체크박스 관련, 자세한 사항은  `Use Feedback in a Checkbox Problem`_ 를 참고하면 된다.
 
-#. Select **Edit**. The simple editor opens.
-#. Replace the sample problem text with your own text.
-#. Determine the text that describes the question you want learners to answer,
-   and surround that text with two pairs of angle brackets (``>>question<<``).
-   This text identifies the question for screen readers, reports, and Insights.
-#. Edit the text to place each answer option on a separate line.
-#. Select the set of answer options, and then select **Checkboxes** from the
-   toolbar. A pair of brackets appears next to each answer choice.
-#. To identify each correct answer, add an **x** between the brackets for that
-   option.
-#. To provide an explanation, select the explanation text and then select
-   **Explanation** from the toolbar. ``[explanation]`` appears before
-   and after the explanation text.
-#. Select **Settings** and provide an identifying **Display Name** for the
-   problem.
-#. Define additional settings for the problem. For more information, see
-   :ref:`Problem Settings`.
-#. Select **Save**.
+    Studio는 학습활동에 체크박스 문제를 추가한다.
 
-For the example problem illustrated above, the following text displays in the
-problem component.
+#. **편집** 을 클릭하면 간편 편집기가 열린다.
+#. 예시 문제 텍스트를 지우고 새 텍스트를 입력한다.
+#. 사용할 문제의 텍스트를 결정한 다음, 괄호 두 세트 (``>>question<<``) 로 해당 텍스트를 둘러싼다. 이 텍스트는 스크린 리더, 보고서 및 Insights에서 사용된다.
+#. 기본 텍스트를 원하는 텍스트로 대체한다.
+#. 모든 선택지를 선택한 다음, **체크박스** 버튼을 클릭한다. 이렇게 할 때, 각 선택지 옆에 괄호가 표시된다.
+#. 정답 또는 답안에 대한 괄호 사이에 **x** 를 추가한다.
+#. 설명을 추가하기 위해서 설명할 텍스트를 선택하고 도구 모음에서 **설명** 을 클릭한다.  ``[explanation]`` 가 설명 텍스트 앞뒤에 추가된다.
+#. **설정** 을 클릭하고 문제에 대한 **메뉴명** 을 추가한다.
+#. 문제에 대한 추가 설정을 선택한다. 자세한 사항은  :ref:`Problem Settings` 을 참고하면 된다.
+#. **저장** 을 클릭한다.
+
+위의 예제 문제에 대하여, 문제 구성 요소에 텍스트는 다음과 같다.
 
 ::
 
@@ -107,16 +86,13 @@ problem component.
     [explanation]
 
 ========================================================================
-Use the Advanced Editor to Edit a Checkbox Problem
+고급 편집기를 사용해 체크박스 문제 편집하기
 ========================================================================
 
-To use the :ref:`advanced editor<Advanced Editor>` to edit a checkbox
-problem, follow these steps.
+:ref:`advanced editor<Advanced Editor>` 를 사용해 체크박스 문제를 편집하기 위해
 
-#. Follow the steps for creating the problem in the :ref:`simple editor<Use
-   the Simple Editor to Create a Checkbox Problem>`.
-#. Select **Advanced Editor**, and then edit the XML to add the tags and
-   attributes you want. An example follows.
+#. :ref:`simple editor<Use the Simple Editor to Create a Checkbox Problem>` 를 이용해 문제를 만든다.
+#. **고급 편집기** 를 선택하고 XML을 편집해 원하는 태그를 추가한다. 예를 들면 아래와 같다.
 
 .. code-block:: xml
 
@@ -143,39 +119,27 @@ problem, follow these steps.
 .. _Use Feedback in a Checkbox Problem:
 
 ********************************************
-Using Feedback in a Checkbox Problem
+체크박스 문제에서 피드백 사용하기
 ********************************************
 
-You can add feedback in a checkbox problem using the simple editor
-or the advanced editor. For an overview of feedback in problems, see
-:ref:`Adding Feedback and Hints to a Problem`.
+간편 편집기와 고급 편집기를 이용해 체크박스 문제에 피드백을 추가할 수 있다. 피드백에 관한 자세한 사항은 문제에 :ref:`Adding Feedback and Hints to a Problem` 를 참고하면 된다.
 
-In checkbox problems, you can provide feedback for each option that a learner
-can select, with distinct feedback depending on whether or not the learner
-selects that option. This means that there are four possible types of feedback.
+체크박스 문제에서 학습자가 고를 수 있는 보기에 대해 어떤 보기를 선택하는지에 따라 서로 다른 피드백을 추가할 수 있다. 이는 즉, 총 4가지 종류의 피드백이 존재할 수 있다는 뜻이다.
 
-* The learner selects a correct option. This type of feedback
-  should indicate why the option is correct.
+* 학습자가 정답을 고른다. 이 때 피드백은 정답인 이유를 설명한다.
 
-* The learner does not select a correct option. This type of feedback should
-  indicate that the learner missed checking this option and why it is correct.
+* 학습자가 정답을 고르지 않는다. 이 때 피드백은 학습자가 이 보기를 고르지 않았다는 것을 알려주고 정답인 이유를 설명한다.
 
-* The learner selects an incorrect option. This type of feedback should
-  indicate that the learner incorrectly checked this option and why it is
-  incorrect
+* 학습자가 오답을 고른다. 이 때 피드백은 학습자가 오답을 골랐다는 것을 알려주고 오답인 이유를 설명한다.
 
-* The learner does not select an incorrect option. This type of feedback should
-  reinforce why the learner correctly left this option unselected.
+* 학습자가 오답을 고르지 않는다. 이 때 피드백은 학습자가 오답을 고르지 않은 것에 대한 추가 설명을 해준다.
 
 =============================
-Compound Feedback
+복합 피드백
 =============================
 
-You can configure the checkbox problem to provide compound feedback.
-Compound feedback is feedback given for a specific combination of options. For
-example, if you have three possible option in the problem, you can define
-specific feedback for when a learner selects each combination of possible
-options.
+체크박스 문제를 설정하여 복합 피드백을 줄 수 있다. 복합 피드백은 특정 보기 조합에 대한 피드백이다. 예를 들어 만약 문제에 보기가 3가지 있다면 학습자가 특정 보기 조합을 골랐을 때 피드백이 나오도록 설정할 수 있다.
+
 
 * A
 * B
@@ -185,36 +149,28 @@ options.
 * A, C
 * A, B, C
 
-For problems with more than three options, providing specific feedback for each
-combination can become difficult. For such problems, you can define compound
-feedback for more likely combinations of option or for combinations of option
-that reflect common learner misunderstandings. If you do not define feedback
-for a combination that a learner selects, the learner receives feedback for the
-individual selections.
+보기가 3가지 이상인 문제는 각 조합에 대해 피드백을 따로 추가하는 것이 힘들 수 있다. 이 때 좀 더 선택될 가능성이 높거나 흔히 학습자가 틀릴 수 있는 조합에 대해 복합 피드백을 설정할 수 있다. 만약 학습자가 선택할 조합에 대해 피드백을 설정하지 않으면 개별 보기에만 피드백이 나오게 된다.
 
 =======================================
-Configure Feedback in the Simple Editor
+간편 편집기에서 피드백 설정하기
 =======================================
 
-You can configure individual option and compound feedback in the :ref:`simple
-editor<Simple Editor>`. When you create a new checkbox problem, select the
-template **Checkboxes with Hints and Feedback**. This template has example
-feedback syntax that you can replace.
+:ref:`simple editor<Simple Editor>` 에서 **개별 보기 및 복합 피드백** 을 설정할 수 있다. 새로운 체크박스 문제를 만들 때 힌트와 피드백이 있는 체크박스 템플릿을 선택한다. 이 템플릿은 피드백의 한 예시이다. 
 
-Configure Feedback for Individual Options
+개별 보기 피드백 설정하기
 ******************************************
 
-In the simple editor, you configure individual option feedback with the
-following syntax.
+간편 편집기에서 다음과 같이 개별 보기 피드백을 설정할 수 있다.
 
 ::
 
   [x] answer  {{ selected: Feedback when learner selects this option. },
   {unselected: Feedback when the learner does not select this option.}}
 
-.. note:: You can use ``S`` for ``selected`` and ``U`` for unselected.
+.. note:: ``selected`` 에 대해  ``S`` 를, unselected 에 대해  ``U`` 를 사용할 수 있다. 
 
-For example, the following problem has feedback for each option.
+
+예를 들어 다음 문제는 각 보기에 대한 피드백을 포함하고 있다.
 
 ::
 
@@ -240,19 +196,18 @@ For example, the following problem has feedback for each option.
   fruit.}}
 
 
-Configure Compound Feedback
+복합 피드백 설정하기
 ****************************
 
-In the simple editor, you configure compound feedback after the possible
-options, with the following syntax.
+간편 편집기에서 다음과 같이 복합 피드백을 설정할 수 있다.
 
 ::
 
   {{ ((Answer Combination)) Feedback when learner selects this combination of
   options.}}
 
-For example, the following compound feedback is used when learners select
-options **A, B, and D** or **A, B, C, and D**.
+예를 들어 다음 복합 피드백은 학습자가 **A, B, 및 D 혹은 A, B, C, 및 D** 조합 을 선택했을 때 나타나게 된다.
+
 
 ::
 
@@ -265,17 +220,15 @@ options **A, B, and D** or **A, B, C, and D**.
   form and is classified as a vegetable.  }}
 
 =========================================
-Configure Feedback in the Advanced Editor
+고급 편집기에서 피드백 설정하기
 =========================================
 
-You can configure individual option and compound feedback in the :ref:`Advanced
-Editor<Advanced Editor>`.
+:ref:`Advanced Editor<Advanced Editor>` 에서 개별 보기 및 복합 피드백을 설정할 수 있다.
 
-Configure Individual Option Feedback
+개별 보기 피드백 설정하기
 *************************************
 
-In the advanced editor, you configure individual option feedback with the
-following syntax.
+고급 편집기에서 다음과 같이 개별 보기 피드백을 설정할 수 있다.
 
 .. code-block:: xml
 
@@ -288,7 +241,7 @@ following syntax.
       </choicehint>
     </choice>
 
-For example, the following problem has feedback for each option.
+예를 들어 다음 문제는 각 보기에 대한 피드백이다.
 
 .. code-block:: xml
 
@@ -336,11 +289,10 @@ For example, the following problem has feedback for each option.
     </checkboxgroup>
   </choiceresponse>
 
-Configure Compound Feedback
+복합 피드백 설정하기
 ***************************
 
-In the advanced editor, you define compound feedback in the ``<compoundhint>``
-element within the ``<checkboxgroup>`` element.
+고급 편집기에서 ``<checkboxgroup>`` 요소 내의  ``<compoundhint>`` 요소에서 복합 피드백을 설정한다.
 
 .. code-block:: xml
 
@@ -348,8 +300,7 @@ element within the ``<checkboxgroup>`` element.
     Feedback when learner selects this combination of answers.
   </compoundhint>}}
 
-For example, the following compound feedback is used when learners select
-options **A, B, and D** or **A, B, C, and D**.
+예를 들어 다음 복합 피드백은 학습자가 **A, B, 및 D** 혹은 **A, B, C, 및 D** 조합을 선택했을 때 나타나게 된다.
 
 .. code-block:: xml
 
@@ -365,43 +316,29 @@ options **A, B, and D** or **A, B, C, and D**.
 .. _Use Hints in a Checkbox Problem:
 
 ********************************************
-Using Hints in a Checkbox Problem
+체크박스 문제에서 힌트 사용하기
 ********************************************
 
-You can add hints to a checkbox problem, using the simple editor
-or the advanced editor. For an overview of hints in problems, see
-:ref:`Adding Feedback and Hints to a Problem`.
+간편 편집기 및 고급 편집기를 사용해 체크박스 문제에 힌트를 추가할 수 있다. 자세한 사항은 :ref:`Adding Feedback and Hints to a Problem` 를 참고하면 된다.
 
 .. include:: ../../../shared/exercises_tools/Subsection_configure_hints.rst
 
 .. _Awarding Partial Credit in a Checkbox Problem:
 
 *********************************************
-Awarding Partial Credit in a Checkbox Problem
+체크박스 문제에서 부분점수 주기
 *********************************************
 
-You can configure a checkbox problem to award partial credit to learners
-who submit an answer that is partly correct. You must use the `advanced editor
-<Use the Advanced Editor to Edit a Checkbox Problem>`_ to configure partial
-credit.
+체크박스 문제에서 학습자에게 부분점수를 부여할 수 있다. 반드시 `advanced editor <Use the Advanced Editor to Edit a Checkbox Problem>`_ 를 사용하여야 한다.
 
-For an overview of partial credit in problems, see :ref:`Awarding Partial
-Credit for a Problem`.
+부분 점수에 대한 설명은 :ref:`Awarding Partial Credit for a Problem` 를 참고하면 된다.
 
 .. only:: Partners
 
  .. note::
-    Support for partial credit problems in courses on edx.org and edX
-    Edge is provisional. Ensure that you test such problems thoroughly before
-    releasing them to learners. For more information, contact your edX partner
-    manager.
+    테스트서버와 kmooc.kr에서 부분점수를 사용하는 것은 아직 개발 중에 있다. 학습자에게 제공하기 전에 충분한 테스트를 거칠 필요가 있으며 자세한 사항은 파트너 매니저에게 (K-MOOC 관리자에게) 문의하면 된다.
 
-In the following example, the learner selected two of the three correct
-choices, and did not select any incorrect choices. The learner therefore had
-four out of five correct answers. Because the course team set this problem up
-to award partial credit for every correct answer selected and every incorrect
-answer left unselected (known as `every decision counts`_), the learner earned
-80% of the points for this problem.
+다음 예제에서 학습자는 정답 3개 중 2개를 골랐으며 오답을 고르지 않았다. 학습자는 따라서 5개 정답 중 4개를 맞춘 것이라고 볼 수 있다. 강좌 운영팀은 고른 정답과 고르지 않은 오답에 대해 부분점수를 설정하였기 때문에 학습자는 이 문제에서 80%의 점수를 얻었다.
 
 .. image:: ../../../shared/images/checkbox_partial_credit.png
  :alt: A checkbox choice problem with partial credit for two out of
@@ -409,7 +346,7 @@ answer left unselected (known as `every decision counts`_), the learner earned
  :width: 600
 
 
-There are two ways to award partial credit in a checkbox problem.
+체크박스 문제에서 부분점수를 부여하는 방법은 두 가지 있다.
 
 .. contents::
   :local:
@@ -418,32 +355,25 @@ There are two ways to award partial credit in a checkbox problem.
 .. _Every Decision Counts:
 
 ======================================
-Using the Every Decision Counts Style
+모든 선택에 부분점수 부여하기
 ======================================
 
-You can configure a checkbox problem so that the learner's response for every
-option is evaluated and scored. This is known as "every decision counts"
-(EDC).
+체크박스 문제에서 학습자의 모든 선택에 대해 부분점수를 부여할 수 있다. 이 방식은 “모든 선택에 대한 부분점수”(EDC)이라고 부른다.
 
-With EDC, for each option the learner gets wrong, either by not selecting a
-correct option or selecting an incorrect option, the learner's score is
-reduced by 1/n, where "n" is the number of options.
+EDC에서 학습자는 정답을 고르지 않거나 오답을 골라 틀리는 보기에 대해 1/n만큼 점수를 잃는다. 이 때 “n”은 보기의 숫자를 의미한다.
 
-For example, if there are four options, each one is worth 25% of the total
-score. If a learner's response is wrong for one option, she receives 75% of the
-points for the problem.
+예를 들어 만약 보기가 4개가 있고 각 보기가 25%의 점수를 갖는다고 하면 학습자가 하나의 보기를 틀렸을 경우 75%의 점수를 받는다.
 
-The following table describes the learner's score for different submissions
-for EDC problems with a variety of correct answer options.
+다음 표는 EDC 문제에서 여러 정답 조합에 대해 학습자의 점수가 어떻게 달라질 수 있는지 보여준다.
 
 .. list-table::
      :widths: 20 20 20 20
      :header-rows: 1
 
-     * - Learner's Selections
-       - Correct Answers
-       - Incorrect Answers
-       - Score
+     * - 학습자 선택
+       - 정답
+       - 오답
+       - 점수
      * - A, B, C
        - A, B, D
        - C
@@ -461,14 +391,12 @@ for EDC problems with a variety of correct answer options.
        - A, B, C, D
        - 0%
 
-Configure an EDC Checkbox Problem
+EDC 체크박스 문제 설정하기
 **********************************
 
-To configure an EDC checkbox problem, you add the ``partial_credit="EDC"``
-attribute to the ``<choiceresponse>`` element in the problem XML.
+EDC 체크박스 문제를 설정하려면 문제 XML 내의 ``<choiceresponse>`` 요소에 ``partial_credit="EDC"`` 속성을 추가해야 한다. 
 
-For example, the following XML shows the checkbox problem template after it is
-updated to provide partial credit.
+예를 들어 다음 XML은 부분 점수가 포함된 체크박스 문제를 보여준다.
 
 .. code-block:: xml
 
@@ -482,40 +410,25 @@ updated to provide partial credit.
   </choiceresponse>
 
 =======================
-Using the Halves Style
+절반 형식 사용하기
 =======================
 
-You can configure a checkbox problem so that for every option that a learner
-gets wrong, either by not selecting a correct option or by selecting an
-incorrect option, half of the remaining points are deducted from the learner's
-score. This is known as scoring by "halves".
+학습자가 정답을 고르지 않거나 오답을 골라 틀리게 되는 모든 보기에 대해 남은 점수의 절반을 잃게 되는 방식을 사용할 수 있다. 이를 **절반** 형식이라고 부른다.
 
-.. note:: By design, partial credit by halves requires the number of answer
-   options to be more than twice the number of incorrect answers. In addition,
-   partial credit is not given for more than two wrong answers, regardless of
-   the total number of answer options. In other words, two wrong answers is
-   scored at 25% only if there are at least 5 answer options. Three or more
-   wrong answers is always scored at 0%, regardless of the number of total
-   answer options.
 
-Partial credit using the halves method is calculated as follows.
+.. note:: 절반 부분점수의 경우 오답 보기에 비해 정답 보기가 2배 이상 많아야 한다. 또한 총 정답 보기의 숫자와 관계 없이 오답 세 개 이상에 대해 부분점수가 주어지지 않는다. 즉 보기가 5개 이상인 경우에 한해서만 2개의 오답에 대해 25%의 점수를 줄 수 있는 것이다. 3개 이상의 오답은 총 보기 개수와 관계 없이 0%의 점수를 얻는다.
 
-* If a learner makes no errors, she receives full credit for the problem.
+절반 부분점수의 계산법은 다음과 같다.
 
-* If a learner makes one error, she receives 50% of the possible points, as long
-  as there are three or more choices in the problem. If a learner makes one
-  error and there are only two choices in the problem, no credit is given.
+* 오답이 없을 경우 점수의 100%를 획득한다.
 
-* If a learner makes two errors, she receives 25% of the possible points, as
-  long as there are five or more choices in the problem. If a learner makes two
-  errors and there are only three choices or four choices in the problem, no
-  credit is given.
+* 오답이 하나 있고 보기 숫자가 3개 이상일 경우 점수의 50%를 획득한다. 오답이 하나 있고 보기가 2개라면 점수를 얻지 못한다.
 
-* If a learner makes three errors, she receives no credit for the problem,
-  regardless of how many answer options there are.
+* 오답이 2개 있고 보기가 5개 이상일 경우 점수의 25%를 획득한다. 오답이 2개 있고 보기가 3개 혹은 4개 있을 경우 점수를 얻지 못한다.
 
-The following tables illustrate partial credit score using the halves method,
-for problems with an increasing number of total answer options.
+* 오답이 3개일 경우 보기의 수에 관계 없이 점수를 얻지 못한다.
+
+다음은 총 보기의 수에 따른 절반 부분점수의 점수표다.
 
 .. list-table::
      :widths: 30 30 30
@@ -630,15 +543,12 @@ for problems with an increasing number of total answer options.
        - 0
 
 
-Configure a Halves Checkbox Problem
+절반 부분점수 체크박스 문제 설정하기
 ************************************
 
-To configure a halves checkbox problem, you add the
-``partial_credit="halves"`` attribute to the ``<choiceresponse>`` element in
-the problem XML.
+절반 부분점수 체크박스 문제를 설정하기 위해 문제 XML에서 ``<choiceresponse>`` 요소에 ``partial_credit="halves"`` 속성을 추가해야 한다. 
 
-For example, the following XML shows the checkbox problem template
-updated to provide partial credit.
+예를 들어 다음 XML은 부분 점수가 포함된 체크박스 문제를 보여준다.
 
 .. code-block:: xml
 
@@ -655,11 +565,11 @@ updated to provide partial credit.
 .. _Checkbox Problem XML:
 
 ****************************
-Checkbox Problem XML
+체크박스 문제 XML (권장하지 않음)
 ****************************
 
 ============
-Template
+템플릿
 ============
 
 .. code-block:: xml
@@ -719,35 +629,32 @@ Template
   </problem>
 
 ======
-Tags
+태그
 ======
 
-* ``<choiceresponse>`` (required): Specifies that the problem contains options
-  for learners to choose from.
+* ``<choiceresponse>`` (필수사항): 학습자들이 선택할 수 있는 옵션을 포함하는 문제를 설정한다.
 
-* ``<checkboxgroup>`` (required): Specifies that the problem is a checkbox
-  problem.
+* ``<checkboxgroup>`` (필수사항): 문제가 체크박스 문제임을 설정한다.
 
-* ``<compoundhint>`` (optional): Specifies feedback for a specific combination
-  of answers.
+* ``<compoundhint>`` (선택사항): 특정 답안에 대한 피드백을 지정한다.
 
-* ``<choice>`` (required): Designates an answer option.
+* ``<choice>`` (필수사항): 답안 옵션을 지정한다
 
-* ``<demandhint>`` (optional): Specifies hints for the learner.
+* ``<demandhint>`` (선택사항): 학습자에게 힌트를 제공한다.
 
 **Tag:** ``<choiceresponse>``
 
-Specifies that the problem contains options for learners to choose from.
+학습자들이 선택할 수 있는 옵션을 포함하는 문제를 설정한다.
 
   Attributes
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
-     * - partial_credit (optional)
-       - Specifies the type of partial credit given. ``EDC`` or ``halves``.
+     * - 속성
+       - 설명
+     * - 부분 점수 (선택사항)
+       - 부여되는 부분 점수를 지정한다. ``EDC`` 혹은  ``halves``
 
   Children
 
@@ -755,17 +662,17 @@ Specifies that the problem contains options for learners to choose from.
 
 **Tag:** ``<checkboxgroup>``
 
-Specifies that the problem is a checkbox problem.
+문제가 체크박스 문제임을 지정한다.
 
   Attributes
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
-     * - label (required)
-       - Specifies the name of the response field.
+     * - 속성
+       - 설명
+     * - 라벨 (필수사항)
+       - 응답 입력 필드의 이름을 지정한다.
 
   Children
 
@@ -774,20 +681,19 @@ Specifies that the problem is a checkbox problem.
 
 **Tag:** ``<choice>``
 
-Designates an answer option.
+답안 옵션을 지정한다.
 
   Attributes
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
-     * - true (at least one required)
-       - Indicates a correct answer. For checkbox problems, one or more
-         ``<choice>`` tags can contain a correct answer.
-     * - false (at least one required)
-       - Indicates an incorrect answer.
+     * - 속성
+       - 설명
+     * - true (최소 하나 필수)
+       - 정답을 나타낸다. 체크박스 문제에 대하여, 하나 이상의 ``<choice>`` 태그는 정답을 포함할 수 있다.
+     * - false (최소 하나 필수)
+       - 오답을 나타낸다.
 
   Children
 
@@ -795,18 +701,17 @@ Designates an answer option.
 
 **Tag:** ``<choicehint>``
 
-Specifies a hint for the answer option.
+답안 보기에 대한 힌트를 나타낸다.
 
   Attributes
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
-     * - selected (required)
-       - ``true`` or ``false``. Indicates if the hint is given when the answer
-         option is selected, or when it is not selected.
+     * - 속성
+       - 설명
+     * - selected (필수사항)
+       -답안 보기에 대해 힌트가 주어졌는지 여부를 나타낸다. ``true`` 혹은 ``false`` 
 
   Children
 
@@ -814,18 +719,17 @@ Specifies a hint for the answer option.
 
 **Tag:** ``<compoundhint>``
 
-Designates feedback for a specific combination of answers.
+특정 답안 조합에 대한 피드백을 지정한다.
 
   Attributes
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
-     * - value (at least one required)
-       - Indicates which combination of selected answers triggers this
-         feedback.
+     * - 속성
+       - 설명
+     * - 값 (최소 하나 필수)
+       - 피드백이 나오기 위해 어떤 답안의 조합이 필요한지 나타낸다.
 
   Children
 
@@ -833,7 +737,7 @@ Designates feedback for a specific combination of answers.
 
 **Tag:** ``<demandhint>``
 
-Specifies hints available to the learner.
+학습자가 보게 될 힌트를 나타낸다.
 
   Children
 
@@ -841,7 +745,7 @@ Specifies hints available to the learner.
 
 **Tag:** ``<hint>``
 
-Specifies a hint available to the learner.
+학습자가 보게 될 힌트를 나타낸다.
 
   Children
 

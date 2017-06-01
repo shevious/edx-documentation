@@ -1,151 +1,119 @@
 .. _Scheduling Your Course:
 
 ##############################
-Setting Start and End Dates
+개강일 및 종강일 설정
 ##############################
 
-This section describes how to schedule your course in Studio.
+Studio에서 다음과 같이 강좌 일정을 설정할 수 있다.
 
 .. contents::
    :local:
    :depth: 1
 
-For information about providing other information for your course, see
-:ref:`Setting Details About Your Course`.
+강좌에 대한 정보를 보기 위해선 :ref:`Setting Details About Your Course` 을 참고하면 된다.
+
 
 **********
-Overview
+개요
 **********
 
-The start and end dates you set for your course and for course enrollment are
-important for prospective and current learners. As soon as enrollment starts,
-prospective learners can see your course in the course catalog, view the
-course **About** page, and enroll in the course. Current learners see your
-course start or end date on their dashboards.
+강좌의 개강일과 종강일은 수강할 학습자에게 중요하다. 수강 신청 시작과 동시에 학습자는 강좌 목록을 확인하고 **소개** 페이지에서 강좌를 살펴본 후 신청을 한다. 학습자는 대시보드에서 개강일과 종강일을 확인할 수 있다.
+
 
 .. only:: Partners
 
-   .. note:: Only edX staff members can define the enrollment dates for
-    courses on edx.org.
+   .. note:: K-​MOOC 관리자만이 개강일과 종강일을 설정할 수 있다.
+
 
 .. _Determine Start and End Dates:
 
 *******************************************
-Determining Start and End Dates
+개강일과 종강일 설정하기
 *******************************************
 
-EdX recommends that you consider your course start and end dates, and its
-enrollment start and end dates, carefully. After you determine the dates for
-your course, you set these dates and times on the **Schedule & Details** page
-in Studio. EdX recommends that you verify all important dates in Studio one
-week before you plan to start the course.
+개강일, 종강일, 등록 시작일, 등록 종료일과 같은 강좌 일정은 **강좌 기본 설정** 페이지에서 설정할 수 있다. 
+중요한 일정이 있다면, 강좌가 시작되기 1주일 전에 미리 설정해 둘 것을 권장한다.
 
 .. contents::
   :local:
   :depth: 1
 
 ============================
-Course Start Date and Time
+강좌 개강일
 ============================
 
-The course start date and time specify when learners can access published
-course content. By default, the course start date and time are set to
-**01/01/2030** at **00:00 UTC** to ensure that your course does not start
-before you intend it to. You must change this setting to the correct date and
-time for your course.
 
-EdX recommends that you set the start time of your course early in the day,
-generally 00:00 UTC or earlier. Learners often expect the course to be
-available on the start date in their own time zones and try to access course
-content during the day. If you do not specify a start time for your course,
-learners see the default start time, 00:00 Coordinated Universal Time (UTC).
+강좌 개강일과 시작 시간은 학습자가 수강을 시작할 수 있는 일정을 의미한다. 강좌 운영팀이 계획한 일정 이전에 강좌가 시작되지 않도록 개강 일정은 **UTC 기준 01/01/2030 00:00** 으로 기본 설정되어 있다. 강좌 개설을 위해서는 반드시 개강 일정을 정확한 날짜와 시간으로 변경해야 한다.
 
-Learners can see some parts of the course before the course start date. For
-example, they can see your **Home** page and course-wide discussion
-topics as soon as they enroll in your course. For more information, see
-:ref:`Create CourseWide Discussion Topics`.
+
+강좌 시작 시간은 일반적으로 UTC 기준 00:00 또는 이보다 이른 시간으로 설정할 것을 권장한다. 학습자는 자신의 시간대 기준으로 개강일이 시작되며, 낮 시간 동안 강좌에 접속하기를 기대하기 때문이다. 만약 별도로 강좌 시작 시간을 설정하지 않는다면 강좌는 기본 설정인 UTC 00:00 로 표시된다. 학습자는 수강신청을 하면 개강일 전에 강좌 소개 페이지 또는 토의 주제 등과 같은 강좌의 일부분을 확인할 수 있다. 자세한 내용은 주요 :ref:`Create CourseWide Discussion Topics` 를 참고하면 된다.
+
 
 .. note::
-  You can set a different advertised start date for your course. You might do
-  this if the exact start date is uncertain. For example, you could advertise
-  the start date as "Coming Soon". For more information, see
-  :ref:`Advertise a Different Start Date`.
+  개강일이 확정되지 않을 경우 “개강 예정” 과 같은 메시지가 표시되도록 설정할 수 있다. 자세한 내용은  :ref:`Advertise a Different Start Date` 를 참고하면 된다.
 
 ============================
-Course End Date and Time
+강좌 종강일
 ============================
 
-The course end date and time specify when learners can no longer earn credit
-toward certificates. Learners can continue to complete coursework, but cannot
-earn credit after the course ends. Learners who have earned certificates can
-view the certificates soon after the course end date.
+강좌 종강일과 종료 시간은 학습자가 더 이상 강좌를 수강할 수 없는 시점을 나타낸다. 학습자는 종강 이후에 강좌는 계속 볼 수 있지만 이수는 할 수 없다. 이수자는 종강일 이후에 이수증을 확인할 수 있다.
+
 
 .. important::
-  If you do not set a course end date, learners cannot access earned
-  certificates.
+ 강좌 종강일을 설정하지 않으면 학습자는 이수증을 발급받을 수 없다.
+
 
 ===============================
-Enrollment Start Date and Time
+등록 시작일
 ===============================
 
 .. only:: Partners
 
-  Only edX staff members can define the enrollment dates for
-  courses on edx.org.
+K-MOOC 관리자만이 kmooc.kr 에서 강좌 수강신청 날짜를 정할 수 있다. 
 
-The enrollment start date and time specify when learners can start to enroll
-in the course. Ensure that the enrollment start date is early enough to allow
-learners to both enroll in and prepare for the course.
+등록 시작일은 수강신청 시작일을 의미하며, 학습자가 충분한 시간을 가지고 수강신청을 할 수 있도록 등록 시작일을 미리 설정하는 것이 중요하다.
+
 
 .. _Enrollment End Date and Time:
 
 ===============================
-Enrollment End Date and Time
+등록 종료일
 ===============================
 
 .. only:: Partners
 
-  Only edX staff members can define the enrollment dates for
-  courses on edx.org.
+ K-MOOC 관리자만이 kmooc.kr 강좌 수강신청 날짜를 정할 수 있다.
 
-The enrollment end date and time specify when learners can no longer enroll in
-the course. Ensure that the enrollment end date is late enough to allow
-learners adequate time to enroll. The enrollment end date cannot be later than
-the course end date.
+등록 종료일은 수강신청 마감일을 의미하며, 학습자가 수강신청을 충분히 할 수 있도록 날짜에 여유를 두는 것이 중요하다. 등록 종료일은 종강일보다 늦은 날짜로 설정할 수 없다.
+
 
 .. only:: Partners
 
-  .. important::
-    For partner courses running on edx.org, when the enrollment end date
-    passes, the course is no longer listed in the course catalog. EdX
-    encourages you to keep enrollment open as long as possible.
 
 .. _Set Start and End Dates:
 
 *******************************************
-Set Course and Enrollment Dates and Times
+개강일, 종강일 및 등록일 설정하기
 *******************************************
 
-To set dates and times for the course and for course enrollment in Studio,
-follow these steps.
+Studio에서 개강일, 종강일, 등록 시작일 및 등록종료일 날짜와 시간을 설정하는 방법은 다음과 같다.
 
-#. From the **Settings** menu, select **Schedule & Details**.
+#. **설정** 메뉴에서 **강좌 기본 설정** 을 클릭한다.
 
-#. In the **Course Schedule** section, replace the placeholder dates and times
-   with your own information.
+#. **강좌 일정** 에서 원하는 날짜와 시간을 입력한다.
 
-   When you make changes on this page, a panel with options to save or cancel
-   your work appears.
 
-#. Select **Save Changes**.
+   이 페이지에서 수정을 하면 변경사항 저장 또는 취소를 선택하는 창이 뜬다.
 
-.. note:: The times that you set, and the times that learners see, are in
- Coordinated Universal Time (UTC). You might want to verify that you have
- specified the times that you intend by using a time zone converter such as
- `Time and Date Time Zone Converter`_.
 
-EdX recommends that you verify that all important dates are correct one week
-before you plan to start the course.
+#. **저장하기** 를 클릭하면 수정사항이 저장된다.
+
+
+.. note:: 모든 날짜는 UTC를 기준으로 표기되며 `Time and Date Time Zone Converter`_ 를 이용해 다시 한번 확인하는 것이 좋다.
+
+
+중요한 일정이 있다면, 최소 강좌 개강일 1주일 전에 그 일정들이 맞게 설정되어 있는지 확인하는 것을 권장한다.
+
 
 .. _Advertise a Different Start Date:
 
@@ -153,50 +121,41 @@ before you plan to start the course.
 Advertise a Different Start Date
 ====================================
 
-You can advertise a start date for your course that is different from the
-course start date you set in the **Schedule & Details** page. You might want
-to do this if the exact start date is uncertain.
+실제 개강일이 아닌 대략적인 개강 시기만을 화면에 나오게 할 수도 있다. 강좌의 정확한 개강일이 불확실할 때 쓸 수 있는 유용한 방법이다.
 
-You can enter a specific date or a description. For example, you could
-advertise the start date as either "15 Oct 2016" or "Anytime, self-paced".
+“2016년 10월 15일”과 같이 구체적인 날짜를 설정할 수도 있으며 “언제든지”처럼 추상적으로 날짜를 설정할 수 있다. 
 
-To set an advertised start date in Studio, follow these steps.
+이를 위해서는,
 
-#. From the **Settings** menu, select **Advanced Settings**.
+#. Studio의 **설정** 메뉴에서, **고급 설정** 을 클릭한다.
 
-#. Locate the **Course Advertised Start Date** field. The default value is
-   ``null``.
+#. 대략적인 개강 시기 영역을 찾아 내려간다. 기본값은 ``null`` 로 되어 있다.
 
-#. Enter the start date that you want learners to see for your course in
-   MM/DD/YYYY format.
+#. 월/일/연도 형태로 개강일을 설정한다.
 
-   A date value entered in MM/DD/YYYY format appears to learners in DD Mon YYYY
-   format. For example, 10/15/2016 appears as 15 Oct 2016.
+   월/일/연도 형태로 입력된 날짜는 일/월/연도 순으로 보이게 된다. 예를 들어 10/15/2016은 15일 10월 2016년으로 보이게 된다.
 
-#. Add quotation marks (``" "``) before and after the start date value. An
-   example follows.
+#. 개강일 값 전후에 큰따옴표(``" "``)  를 넣는다.
 
    ::
 
      "Anytime, self-paced"
 
-#. Select **Save Changes**.
+#. 페이지 하단에서 **변경 사항 저장** 을 클릭한다
 
-   A message lets you know whether your changes were saved successfully.
 
-.. note:: If you do not change the default course start date (01/01/2030),
- and the **Course Advertised Start Date** policy value is ``null``, then no
- start date appears for the course. Learners just see that the course has not
- yet started.
+   변경 사항이 제대로 저장되었는지 메시지가 나올 것이다.
+
+.. note:: 만약 강좌 운영팀이 기본적으로 설정된 시작일(01/01/2030)과 대략적인 개강 시기 를 변경하지 않는다면, 학습자 대시보드에서 개강일이 **준비중입니다.** 로 표시될 것이다.
 
 .. _View Start and End Dates:
 
 ***************************************
-View Start and End Dates as a Learner
+학습자 개강일 및 종강일 조회
 ***************************************
 
-Learners can view the start date for a course on the course **About** page,
-and, after they enroll in the course, on their dashboards.
+학습자는 **강좌 소개** 페이지에서 개강일을 확인할 수 있으며 수강신청 이후에는 내강의실에서 확인할 수 있다.
+
 
 .. image:: ../../../shared/images/about-page-course-start.png
  :alt: The course About page, showing the start date.
@@ -207,9 +166,8 @@ and, after they enroll in the course, on their dashboards.
   To find the URL of your course's **About** page in Studio, select
   **Settings** and then **Schedule & Details**.
 
-After learners enroll in your course, the course appears on their course
-dashboards. To access the dashboard, learners select their usernames and then
-**Dashboard**.
+수강신청 후, 신청한 강좌는 **내강의실** 에 나타난다. 학습자는 자신의 아이디와 내강의실을 선택하면, 내강의실에 접속할 수 있다.
+
 
 .. image:: ../../../shared/images/dashboard-course-start-and-end.png
  :alt: The learner dashboard with a course in progress, one that has ended, one
@@ -217,14 +175,12 @@ dashboards. To access the dashboard, learners select their usernames and then
   started.
  :width: 800
 
-For a course that is in progress or has not yet started, the start date is
-shown. For a course that has ended, the course end date is shown.
+현재 진행중이거나 개강하지 않은 강좌의 경우 개강일이 표시되며 종강한 강좌는 강좌 종료일이 표시된다.
+
 
 .. only:: Partners
 
-  .. note:: These sample images are from the edX Edge website. They show
-   an **About** page and a learner dashboard on an instance powered by Open
-   edX. On the `edx.org`_ website these pages present the same information, but
-   are styled differently.
+  .. note:: 모든 이미지는 개발서버 사진이며 소개 페이지와 내 강의실을 나타낸다. 
+운영서버에서는 같은 내용을 나타내지만, 다른 디자인으로 표시된다.
 
 .. include:: ../../../links/links.rst

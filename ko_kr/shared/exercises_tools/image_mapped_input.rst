@@ -1,130 +1,99 @@
 .. _Image Mapped Input:
 
 ###########################
-Image Mapped Input Problem
+이미지맵 입력 문제
 ###########################
 
-.. note:: EdX offers provisional support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 부분적인 지원을 제공한다.
 
-In an image mapped input problem, also known as a "pointing on a picture"
-problem, students click inside a defined region in an image. You define this
-region by including coordinates in the body of the problem.
+“이미지 클릭 문제”라고도 부르는 이미지맵 입력 문제에서, 학습자는 이미지에 정의된 영역 내부를 클릭한다. 문제 내 좌표를 포함하여 이 영역을 정의할 수 있다.
 
 .. image:: ../../../shared/images/ImageMappedInput-Simple.png
  :width: 500
  :alt: Problem that asks learners to click inside Egypt on a map of Africa.
 
-You can specify the following types of regions.
+다음과 같은 영역을 지정할 수 있다.
 
-* One rectangular region. For more information, see :ref:`Specify a
-  Rectangular Region`.
-* Multiple rectangular regions. For more information, see :ref:`Specify
-  Multiple Rectangular Regions`.
-* One non-rectangular region. For more information, see :ref:`Specify an
-  Irregular Region`.
+* 하나의 직사각형 영역. 자세한 사항은 :ref:`Specify a Rectangular Region` 를 참고하면 된다.
+* 다수의 직사각형 영역들. 자세한 사항은 :ref:`Specify Multiple Rectangular Regions` 를 참고하면 된다.
+* 하나의 사용자 정의 영역. 자세한 사항은 :ref:`Specify an Irregular Region` 를 참고하면 된다.
 
-.. note:: When you create a problem that contains an image, you must include
- alt text for your image to make the image accessible. For more information
- about alt text, see :ref:`Best Practices for Describing Images`.
+.. note:: 이미지를 포함한 문제를 만들 때 반드시 접근성을 위해 대체 텍스트를 입력해야 한다. 자세한 사항은 :ref:`Best Practices for Describing Images` 을 참고하면 된다.
 
 ****************************************
-Create an Image Mapped Input Problem
+이미지맵 문제 만들기
 ****************************************
 
-To create an image mapped input problem, follow these steps.
+이미지맵 입력 문제를 만들기 위해.
 
-#. :ref:`Collect the information that you need for the image<Determine
-   Coordinates>`.
+#. :ref:`Collect the information that you need for the image<Determine Coordinates>`.
 
 #. :ref:`Create the problem in Studio<Create an IMI Problem in Studio>`.
 
 .. _Determine Coordinates:
 
 ============================
-Collect Image Information
+이미지 정보 모으기
 ============================
 
-To create an image mapped input problem, you need the following elements.
+이미지맵 입력 문제를 만들기 위해 다음 요소가 필요하다.
 
-   * The height and width of the image in pixels.
-   * Coordinate pairs that define the region or regions where you want
-     learners to click.
+   * 픽셀 단위의 이미지 높이 및 너비.
+   * 학습자가 클릭할 영역 혹은 영역들의 좌표 조합.
 
-To collect the information you need about your image, use an image editing
-tool such as Microsoft Paint.
+이미지 정보를 모으기 위해 Microsoft Paint와 같은 이미지 편집 도구를 사용하면 된다.
 
-.. note:: The coordinate pairs for all images start with (0,0) in the
- upper-left corner of the image and increase in value toward the lower-right
- corner, similar to the progression of reading English.
+.. note:: 이미지의 좌표는 좌측 상단을 (0,0)에 두고 우측 하단으로 갈수록 숫자가 크게 한다.
 
-* To specify a rectangular region, you need two coordinate pairs: the
-  upper-left corner and the lower-right corner.
+* 직시각형 영역을 지정하기 위해 좌측 상단 구석과 우측 하단 구석의 좌표 2개가 필요하다.
 
-* To specify more than one rectangle, you need the coordinate pairs for the
-  upper-left and lower-right corners of each rectangle.
+* 다수의 직사각형 영역을 지정하기 위해 각 직사각형에 대한 좌측 상단 구석과 우측 하단 구석의 좌표 2개씩이 필요하다.
 
-* To specify an irregular region, you need three or more coordinate pairs.
-  Studio creates the simplest possible shape based on these coordinate
-  pairs. You can enter the coordinate pairs in any order.
+* 사용자 정의 영역을 지정하기 위해 3개 이상의 좌표가 필요하다. Studio는 이 좌표를 바탕으로 가장 간단한 도형을 그리며 좌표 입력 순서는 상관없다.
 
-  For example, for a triangle, you need three coordinate pairs. For an
-  octagon, you need eight coordinate pairs.
+  예를 들어 삼각형을 그리고 싶다면 좌표가 3개 필요하며 팔각형엔 8개 필요하다.
 
 .. _Create an IMI Problem in Studio:
 
 ================================================
-Create an Image Mapped Input Problem in Studio
+Studio에서 이미지맵 입력 문제 만들기
 ================================================
 
-#. In Studio, upload your image to the **Files & Uploads** page, and make a
-   note of the file path for the image. For more information, see :ref:`Add
-   Files to a Course`.
-#. In the unit where you want to create the problem, click **Problem**
-   under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Image Mapped Input**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, replace the example problem text with your own
-   text.
-#. In the ``<imageinput>`` element, follow these steps.
+#. Studio에서 이미지를 **파일 및 업로드** 페이지에 업로드하고 파일 경로를 적어놓는다. 자세한 사항은 :ref:`Add Files to a Course` 를 참고하면 된다.
+#. 문제를 만들고자 하는 학습 활동의 문제, **새 구성요소 추가** 를 클릭하고 고급 탭을 선택한다.
+#. **이미지맵 입력** 을 클릭한다.
+#. 나타나는 구성요소에서 **편집** 을 클릭한다.
+#. 구성요소 편집기에서 예제 문제 텍스트를 지우고 새 텍스트를 입력한다.
+#. ``<imageinput>`` 요소에서.
 
-   #. Replace the example file path in the ``src`` attribute with the file
-      path for your image.
+   #. ``src`` 속성의 예제 파일 경로를 새 파일 경로로 바꾼다.
 
-   #. Include alt text for your image to make the image accessible. For more
-      information about alt text, see :ref:`Best Practices for Describing
-      Images`.
+   #. 이미지 접근성을 높이기 위해 대체 텍스트를 추가한다. 자세한 사항은 :ref:`Best Practices for Describing Images` 를 참고하면 된다.
 
-   #. Replace the example values for the ``width`` and ``height`` attributes
-      with the dimensions for your image.
+   #. ``width`` 와  ``height`` 속성의 예제 값을 추가하는 이미지에 맞게 바꾼다.
 
-   #. Modify the example ``rectangle`` attribute to reflect the shape and size
-      of the region that you want to specify. For more information, see
-      :ref:`Specify a Rectangular Region`, :ref:`Specify Multiple Rectangular
-      Regions`, or :ref:`Specify an Irregular Region`.
+   #. ``rectangle`` 예제 속성을 지정하기 원하는 영역의 크기와 모양에 맞게 바꾼다. 자세한 사항은 :ref:`Specify a Rectangular Region` , :ref:`Specify Multiple Rectangular Regions` , 와 :ref:`Specify an Irregular Region` 를 참고하면 된다.
 
-#. Click **Save**.
+#. **저장** 을 클릭한다.
 
 .. _Specify a Rectangular Region:
 
-Specify a Rectangular Region
+직사각형 영역 지정하기
 ****************************************
 
-To specify a rectangular region, edit the ``rectangle`` attribute in the
-``<imageinput>`` element.
+직사각형 영역을 지정하기 위해 ``<imageinput>`` 요소의 ``rectangle`` 속성을 바꾼다.
 
-* Specify the coordinate pair for the upper-left and lower-right corners of
-  the rectangle, separating the x and y values with a comma.
-* Surround each coordinate pair with parentheses.
-* Use a hyphen to separate the coordinate pairs.
-* Surround the set of coordinate pairs with quotation marks (").
+* 직사각형 좌측 상단 구석과 우측 하단 구석의 좌표를 (x,y) 형태로 지정한다.
+* 각 좌표를 괄호 안에 입력한다.
+* –를 이용해 좌표를 구분한다.
+* 좌표들을 따옴표 안에 입력한다.
 
 
-For example, the following ``rectangle`` attribute creates one rectangle from
-two coordinate pairs:
+예를 들어 다음  ``rectangle`` 속성은 두 좌표를 이용해 직사각형을 하나 만든다.
 
 ``rectangle="(338,98)-(412,168)"``
 
-**Problem Code**:
+**문제코드**:
 
 .. code-block:: xml
 
@@ -153,30 +122,28 @@ two coordinate pairs:
 
 .. _Specify Multiple Rectangular Regions:
 
-Specify Multiple Rectangular Regions
+다수의 직사각형 영역 지정하기
 ****************************************
 
-You can specify more than one rectangular region in an image.
+이미지에서 하나 이상의 직사각형 영역을 지정할 수 있다.
 
 .. image:: ../../../shared/images/ImgMapInput_Mult.png
  :width: 350
  :alt: Problem that asks learners to click inside one of three rectangles
 
-To specify multiple rectangular regions, edit the ``rectangle`` attribute in
-the ``<imageinput>`` element.
+다수의 직사각형 영역 을 지정하기 위해 ``<imageinput>`` 요소의 ``rectangle`` 속성을 바꾼다.
 
-* Specify the coordinate pair for the upper-left and lower-right corners of
-  each rectangle, separating the x and y values with a comma.
-* Surround each coordinate pair with parentheses.
-* Use a hyphen (-) to separate the coordinate pairs.
-* Separate each rectangle with a semicolon (;).
-* Surround the entire set of coordinates with quotation marks (").
+* 각 직사각형의 좌측 상단 구석과 우측 하단 구석의 좌표를 (x,y) 형태로 지정한다.
+* 각 좌표를 괄호 안에 입력한다.
+* – 를 이용해 좌표를 구분한다.
+* 각 직사각형을 ; 로 구분한다.
+* 모든 좌표들을 따옴표 안에 입력한다.
 
-For example, the following ``rectangle`` attribute creates three rectangles:
+예를 들어 다음  ``rectangle`` 속성은 두 좌표를 이용해 직사각형을 세개 만든다.
 
 ``rectangle="(62,94)-(262,137);(306,41)-(389,173);(89,211)-(187,410)"``
 
-**Problem Code**:
+**문제코드**:
 
 .. code-block:: xml
 
@@ -196,30 +163,29 @@ For example, the following ``rectangle`` attribute creates three rectangles:
 
 .. _Specify an Irregular Region:
 
-Specify an Irregular Region
+사용자 지정 영역 지정하기
 ****************************************
 
-You can specify one non-rectangular region.
+하나의 사용자 지정 영역을 지정할 수 있다.
 
 .. image:: ../../../shared/images/ImgMapInput_Irreg.png
   :width: 500
   :alt: Problem that asks learners to click inside a pentagon.
 
-To specify an irregular region, edit the ``rectangle`` attribute in the
-``<imageinput>`` element.
+하나의 사용자 지정 영역을 지정하기 위해  ``<imageinput>`` 요소의 ``rectangle`` 속성을 바꾼다.
 
-* Change ``rectangle`` to ``region``.
-* Specify three or more coordinate points in any order.
-* Enter each coordinate pair in brackets ([]). **Do not use parentheses**.
-* Separate each set of points with a comma (,) and a space.
-* Enclose the whole list of coordinate points in brackets ([]).
-* Surround the outer brackets with quotation marks (").
+* ``rectangle`` 을 ``region`` 로 바꾼다.
+* 순서 상관없이 3개 이상의 좌표를 입력한다.
+* 각 좌표를 **괄호가 아닌** 대괄호([])에 입력한다.
+* ,와 띄어쓰기로 각 점들을 구분한다.
+* 모든 좌표를 대괄호 안에 작성한다.
+* 대괄호를 따옴표 안에 입력한다.
 
-For example, the following ``regions`` attribute creates a pentagon.
+예를 들어 다음  ``regions`` 속성은 오각형을 만든다.
 
 ``regions="[[219,86], [305,192], [305,381], [139,381], [139,192]]"``
 
-**Problem Code**:
+**문제코드**:
 
 .. code-block:: xml
 
@@ -241,11 +207,11 @@ For example, the following ``regions`` attribute creates a pentagon.
 .. _Image Mapped Input Problem XML:
 
 ******************************
-Image Mapped Input Problem XML
+이미지맵 입력 문제 XML
 ******************************
 
 ==========
-Template
+템플릿
 ==========
 
 .. code-block:: xml
@@ -265,21 +231,19 @@ Template
   </problem>
 
 =====
-Tags
+태그
 =====
 
-* ``<imageresponse>``: Indicates that the problem is an image mapped input
-  problem.
-* ``<imageinput>``: Specifies the image file and the region in the file that
-  the learner must click.
+* ``<imageresponse>``: 문제가 이미지맵 입력 문제임을 나타낸다.
+* ``<imageinput>``: 학습자가 클릭해야 하는 파일에서 이미지 파일 및 영역을 지정한다.
 
 **Tag:** ``<imageresponse>``
 
-Indicates that the problem is an image mapped input problem.
+문제가 이미지맵 입력 문제임을 나타낸다.
 
-  Attributes
+  속성
 
-  (none)
+  (없음)
 
   Children
 
@@ -287,28 +251,27 @@ Indicates that the problem is an image mapped input problem.
 
 **Tag:** ``<imageinput>``
 
-Specifies the image file and the region in the file where learners must click.
+학습자가 클릭해야 하는 파일에서 이미지 파일 및 영역을 지정한다.
 
-  Attributes
+  속성들
 
    .. list-table::
       :widths: 20 80
 
-      * - Attribute
-        - Description
-      * - ``src`` (required)
-        - The URL of the image
-      * - ``height`` (required)
-        - The height of the image, in pixels
-      * - ``width`` (required)
-        - The width of the image, in pixels
-      * - ``rectangle`` (required) (or, for irregular regions, ``region``)
-        - An attribute with two or more coordinate pairs that define the region
-          where learners should click
-      * - ``alt`` (required)
-        - A description of the image, used for accessibility
+      * - 속성
+        - 설명
+      * - ``src`` (필수)
+        - 이미지의 URL
+      * - ``height`` (필수)
+        - 픽셀 단위로 이미지의 높이
+      * - ``width`` (필수)
+        - 픽셀 단위로 이미지의 너비
+      * - ``rectangle`` (필수)
+        - 학습자가 클릭해야 할 지역을 의미하는 좌표 조합
+      * - ``alt`` (필수)
+        - 접근성을 위한 이미지 설명
 
   Children
 
-  (none)
+  (없음)
 

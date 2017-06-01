@@ -1,8 +1,8 @@
 ====================================
-Configure Hints in the Simple Editor
+간편 편집기에서 힌트 설정하기
 ====================================
 
-In the simple editor, you configure hints with the following syntax.
+간편 편집기에서 다음과 같이 힌트를 설정할 수 있다.
 
 ::
 
@@ -11,10 +11,10 @@ In the simple editor, you configure hints with the following syntax.
   ||Hint n||
 
 .. note:: 
-  You can configure any number of hints. The learner views one hint at a time
-  and views the next one by selecting **Hint** again.
+  힌트 수에 제한은 없으며 학습자는 한번에 하나의 힌트를 보고 힌트를 다시 눌러서 다음 힌트를 볼 수 있다.
 
-For example, the following problem has two hints.
+
+예를 들어 다음 문제는 힌트가 두 개 있다.
 
 ::
 
@@ -22,11 +22,10 @@ For example, the following problem has two hints.
   ||A fruit contains seeds of the plant.||
 
 ======================================
-Configure Hints in the Advanced Editor
+고급 편집기에서 힌트 설정하기
 ======================================
 
-In the advanced editor, you configure each hint in the ``<hint>`` element
-within the ``<demandhint>`` element.
+고급 편집기에서 ``<demandhint>`` 요소 내의 ``<hint>`` 요소에서 힌트를 설정한다.
 
 .. code-block:: xml
 
@@ -36,7 +35,7 @@ within the ``<demandhint>`` element.
     <hint>Hint 3</hint>
   </demandhint>
 
-For example, the following XML shows two hints.
+예를 들어 다음 XML은 힌트를 두 개 보여준다.
 
 .. code-block:: xml
 

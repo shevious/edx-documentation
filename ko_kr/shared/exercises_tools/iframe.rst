@@ -1,133 +1,86 @@
 .. _IFrame:
 
 ##################
-Iframe Tool
+Iframe 도구
 ##################
 
-.. note:: EdX offers provisional support for this tool.
+.. note:: K-MOOC은 이 도구에 대해 부분적인 지원을 제공한다.
 
-The iframe tool allows you to integrate ungraded exercises and tools from any
-Internet site into the body of your course. It places an iframe inside an HTML
-component, and then the exercise or tool appears inside the iframe. The iframe
-can include your own tools or third-party tools.
+IFrame은 모든 인터넷 사이트에 있는 채점되지 않은 연습 및 도구를 강좌의 본문에 통합할 수 있도록 한다. IFrame은 HTML 구성 요소 내에서 나타나고, 연습 및 도구는 IFrame 내에 나타난다. IFrame 은 직접 만든 도구 또는 제 3자 도구를 포함할 수 있다.
 
 .. image:: ../../../shared/images/IFrame_1.png
   :alt: Iframe tool showing a Euler line exercise.
   :width: 500
 
-Before you make content or a tool from an external site available through your
-course, be sure to review the content or tool to ensure that it is accessible
-to people with disabilities. For example, in addition to testing the iframe
-components that you add to your course, you can ask third party providers to
-confirm that a tool is accessible, and, if available, contact your on campus
-accessibility support services for additional guidance. For more information,
-see :ref:`Accessibility Best Practices for Course Content Development`.
+외부 사이트에서 만든 콘텐츠나 도구를 강좌에 추가하기 전에 장애가 있는 학습자가 사용할 수 있는지 반드시 확인해야 한다. 예를 들어 iframe 구성요소를 테스트하면서 외부 제공자에게 도구의 접근성에 대해 확인하고, 가능하다면 추가 지침을 위해 학교 접근성 지원 서비스에 연락해야 한다. 자세한 사항은 :ref:`Accessibility Best Practices for Course Content Development` 를 참고하면 된다.
 
-Iframes are well-suited for tools that demonstrate a concept, but that are not
-graded or used to store student data. If you want to add a graded tool or
-exercise, add the tool as a :ref:`custom JavaScript problem<Custom JavaScript>`
-or an :ref:`LTI component<LTI Component>`.
+IFrame은 개념을 설명하는데 적절한 도구이지만, 채점되지 않으며 학습자 데이터를 저장하는 데는 적절하다. 채점되는 도구 및 연습을 추가하려면, :ref:`custom JavaScript problem<Custom JavaScript>` (사용자 지정 JavaScript 문제) 또는  :ref:`LTI component<LTI Component>` (LTI 구성 요소)와 같은 도구를 추가하도록 한다.
 
-For more information about iframes, see the `HTML/Elements/iframe specification
-<http://www.w3.org/wiki/HTML/Elements/iframe>`_.
+IFrame에 대한 자세한 내용은 `HTML/Elements/iframe specification <http://www.w3.org/wiki/HTML/Elements/iframe>`_ (IFrame 사양)을 참조하도록 한다.
 
 ****************************
-Create an IFrame Tool
+Iframe 도구 만들기
 ****************************
 
-To add an exercise or tool in an iframe, you create an iframe HTML component
-and add the URL of the page that contains the exercise or tool to the
-component. You can also add text and images both before and after the iframe.
+IFrame에서 연습 또는 도구를 추가하려면, IFrame HTML 구성 요소를 만들고, 연습 또는 도구를 포함하는 페이지의 URL을 구성 요소에 추가해야 할 것이다. 또한 IFrame 전과 후에 텍스트와 이미지를 모두 추가할 수 있다.
 
-.. note:: The URL of the page that contains the exercise or tool must start
- with ``https`` instead of ``http``. If the URL starts with ``http``, work with
- the owner of that page to find out if an ``https`` version is available. Some
- websites do not allow their content to be embedded in iframes.
+.. note:: IFrame에서 연습 또는 도구를 추가하려면, IFrame HTML 구성 요소를 만들고, 연습 또는 도구를 포함하는 페이지의 URL을 구성 요소에 추가해야 할 것이다. 또한 IFrame 전과 후에 텍스트와 이미지를 모두 추가할 수 있다.
 
-#. Under **Add New Component**, select **HTML**, and then select **IFrame
-   Tool**.
+#. **신규 구성요소 추가** 에서, html 을 클릭한 다음, **IFrame Tool** 을 클릭한다.
 
-#. In the new component, select **Edit**.
+#. 표시되는 신규 구성요소에서, **편집** 을 클릭한다.
 
-#. In the visual editor toolbar, select **HTML**.
+#. 구성요소 편집기의 도구 모음에서, **HTML** 을 클릭한다.
 
-#. In the HTML source code editor, locate the following HTML (line 7). This
-   HTML includes the ``<iframe>`` element.
+#. HTML 소스 코드 편집기에서, 다음의 HTML (26번째 줄)을 찾는다. 이 HTML은  ``<iframe>`` 요소를 포함한다.
 
    .. code-block:: html
 
       <p><iframe src="https://studio.edx.org/c4x/edX/DemoX/asset/eulerLineDemo.html" width="402" height="402" marginwidth="0" marginheight="0" frameborder="0" scrolling="no">You need an iFrame capable browser to view this.</iframe></p>
 
-#. Replace the default URL in the ``src`` attribute
-   (``https://studio.edx.org/c4x/edX/DemoX/asset/eulerLineDemo.html``) with the
-   URL of the page that contains the exercise or tool. **This URL must start
-   with https**. Make sure that you do not delete the quotation marks that
-   surround the URL.
+#. ``src`` 속성에 있는 기본 URL(``https://studio.edx.org/c4x/edX/DemoX/asset/eulerLineDemo.html``) 을 연습문제 및 도구를 포함하는 페이지의 URL로 바꾼다. 이 URL는 https로 시작 해야 한다. URL을 둘러싼 인용 부호를 삭제하지 않아야 한다.
 
-#. Change the attributes in the iframe element to specify any other settings
-   that you want. For more information about these settings, see :ref:`IFrame
-   Settings`. You can also change the text between the opening and closing
-   ``<iframe>`` tags. Learners see this text only when they use a browser that
-   does not support iframes.
+#. 원하는 다른 설정을 지정 하려면 IFrame 요소에 있는 속성을 변경한다. 이러한 설정에 대한 더 자세한 내용은, :ref:`IFrame Settings` (IFrame 설정)을 참조하도록 한다. 열기 및 닫기 ``<iframe>`` 태그 사이에 텍스트를 변경할 수 있다. 학습자가 IFrame을 지원하지 않는 브라우저를 사용하는 경우에만 이 텍스트를 보게 된다.
 
-#. Select **OK** to close the HTML source code editor and return to the
-   :ref:`visual editor<The Visual Editor>`.
+#. HTML 소스 코드 편집기를 닫고 :ref:`visual editor<The Visual Editor>` 돌아가기 위해 **확인** 을 클릭한다.
 
-#. In the visual editor, replace the default text with your own text.
+#. 시각편집기에서, 기본 텍스트를 자신의 텍스트로 바꾼다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
 .. _IFrame Settings:
 
 ======================
-Iframe Settings
+Iframe 설정
 ======================
 
-To specify settings for your iframe, you add, remove, or change the
-attributes inside the opening ``<iframe>`` tag. The ``<iframe>`` tag **must**
-contain a ``src`` attribute and a ``title`` attribute. Other attributes are
-optional.
+IFrame 설정을 하려면, 열기  ``<iframe>`` 태그 내부에 해당 속성을 추가, 제거 또는 변경해야 할 것이다. ``<iframe>`` 태그는 원하는 웹 페이지의 URL을 지정하는 src 속성을 반드시 포함해야 한다. 다른 속성은 선택 사항이다.
 
-You can add these attributes in any order you want.
+원하는 순서대로 이러한 속성을 추가할 수 있다.
 
 .. list-table::
    :widths: 20 80
    :header-rows: 1
 
-   * - Attribute
-     - Description
-   * - ``src`` (required)
-     - Specifies the URL of the page that contains the exercise or tool,
-       beginning with https.
-   * - ``title`` (required)
-     - Describes the content or its purpose in the context of the course.
-   * - ``width`` and ``height`` (optional)
-     - Specify the width and height of the iframe, in pixels or as a
-       percentage. To specify the value in pixels, enter numerals. To specify a
-       percentage, enter numerals followed by a percent sign.
+   * - 속성
+     - 설명
+   * - ``src`` (필수)
+     - 연습 및 도구를 포함하는 페이지의 https로 시작하는 URL을 지정한다.
+   * - ``title`` (필수)
+     - 강좌에서 어떤 콘텐츠나 목적을 다룰 지 나타낸다.
+   * - ``width`` 및 ``height`` (선택)
+     - 픽셀 또는 백분율로 IFrame의 너비 및 높이를 지정한다. 픽셀 단위로 값을 지정 하려면 숫자를 입력한다. 백분율로 값을 지정 하려면 숫자 뒤에 백분율 기호를 입력한다.
 
-       If you do not specify the width and height, the iframe uses the
-       dimensions that the linked page has set. These dimensions vary by
-       website. If you change the width and height of the iframe, the content
-       from the linked page might be resized, or only part of the content may
-       appear.
+       너비 및 높이를 지정하지 않으면, IFrame은 연결된 페이지가 설정한 수치를 사용한다. 이 수치는 웹사이트에 따라 다르다. IFrame의 너비 및 높이를 변경하려면, 연결된 페이지의 콘텐츠에서 크기를 조정할 수 있다. 그렇지 않으면 콘텐츠 중 일부만 표시 될 수 있다.
 
-   * - ``marginwidth`` and ``marginheight`` (optional)
-     - Specify the size of the space between the edges of the iframe and your
-       exercise or tool, in pixels.
-   * - ``frameborder`` (optional)
-     - Specifies whether a border appears around your iframe. If the value is
-       0, no border appears. If the value is any positive number, a border
-       appears.
-   * - ``scrolling`` (optional)
-     - For an iframe that is smaller than the exercise or tool it contains,
-       specifies whether a scrollbar appears to help users access all of the
-       iframe's content. For example, if the content in your iframe is very
-       tall, you can set the iframe's height to a smaller number and add a
-       vertical scroll bar for users, as in the first image below.
+   * - ``marginwidth`` 및  ``marginheight`` (선택)
+     - IFrame의 가장자리와 픽셀 단위의 연습문제 및 도구 사이의 공간 크기를 지정한다.
+   * - ``frameborder`` (선택)
+     - 주위에 테두리 표시 여부를 지정한다. 값이 0 이면 아무 테두리가 나타나지 않는다. 값이 임의의 양수이면, 테두리가 나타난다.
+   * - ``scrolling`` (선택 사항)
+     - IFrame이 포함하고 있는 연습문제 및 도구보다 더 작으면, 이용자가 IFrame의 콘텐츠 전부를 볼 수 있도록 스크롤 막대가 표시 되는지 여부를 지정한다. 예를 들어, IFrame에 있는 콘텐츠가 매우 긴 경우, IFrame의 높이를 더 작은 숫자로 설정하고 첫 번째 이미지 아래와 같이 이용자를 위해 세로 스크롤 막대를 추가 수 있다.
 
-For example, compare how the different settings in each of the ``<iframe>``
-elements below affect the iframe.
+예를 들어, 아래  ``<iframe>`` 요소 각각에서 서로 다른 설정들이 IFrame에 어떻게 영향을 미치는지 비교한다.
 
 .. code-block:: html
 
@@ -146,5 +99,4 @@ elements below affect the iframe.
    :alt: Iframe with only the top half showing but no scroll bar available.
    :width: 500
 
-For more information about iframe attributes, see the `HTML/Elements/iframe
-specification <http://www.w3.org/wiki/HTML/Elements/iframe>`_.
+IFrame 속성에 대한 더 자세한 내용은  `HTML/Elements/iframe specification <http://www.w3.org/wiki/HTML/Elements/iframe>`_ 를 참조하도록 한다.

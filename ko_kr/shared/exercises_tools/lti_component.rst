@@ -3,131 +3,84 @@
 .. _LTI Component:
 
 ###############
-LTI Component
+LTI 구성요소
 ###############
 
-.. note:: EdX offers full support for this tool.
+.. note:: K-MOOC은 이 도구에 대해 전체 지원을 제공한다.
 
-You can integrate remote learning tools, such as applications and textbooks,
-into your course with the learning tools interoperability (LTI) component. The
-LTI component is based on the `IMS Global Learning Tools Interoperability`_
-version 1.1.1 specifications.
+상호 호환성 학습 도구 (LTI, learning tools interoperability) 구성 요소를 사용하여 외부 학습 응용 프로그램 또는 교과서를 스튜디오에 추가할 수 있다. LTI 구성 요소는 IMS 글로벌 상호 호환성 학습 도구 `IMS Global Learning Tools Interoperability`_ 버전 1.1.1 규격을 기반으로 한다.
 
 .. contents::
    :local:
    :depth: 2
 
-Before you make tools from an external site available through your course, be
-sure to review the tools to ensure that they are accessible to people with
-disabilities. For example, in addition to testing the LTI components that you
-add to your course, you can ask third party providers to confirm that a tool is
-accessible, and, if available, contact your on campus accessibility support
-services for additional guidance. For more information, see :ref:`Accessibility
-Best Practices for Course Content Development`.
+외부 사이트에서 만든 콘텐츠나 도구를 강좌에 추가하기 전에 장애가 있는 학습자가 사용할 수 있는지 반드시 확인해야 한다. 예를 들어 LTI 구성요소를 테스트하면서 외부 제공자에게 도구의 접근성에 대해 확인하고 가능하다면 추가 지침을 위해 학교 접근성 지원 서비스에 연락해야 한다. 자세한 사항은  :ref:`Accessibility Best Practices for Course Content Development` 를 참고하면 된다.
 
 *********************
-Overview
+개관
 *********************
 
-You can use an LTI component in several ways.
+여러 가지 방법으로 LTI 구성 요소를 사용할 수 있다.
 
-* You can add remote LTI tools that display content only, and that do
-  not require a learner response. An example is a digital copy of a textbook in
-  a format other than PDF.
+* 교과서 콘텐츠와 같이 학습자 응답을 요구 하지 않고 단지 표시만 되는 외부 LTI 콘텐츠를 추가할 수 있다. 예를 들어 PDF 형식이 아닌 다른 형태의 교과서가 있다.
 
-* You can add remote LTI tools that do require a learner response. A remote
-  LTI tool provider grades the responses.
+* 학습자 응답을 필요로 하는 외부 LTI 콘텐츠를 추가할 수 있다. 외부 공급자는 학습자 응답을 채점할 것이다.
 
-* You can use the LTI component as a placeholder for synchronizing with a
-  remote grading system.
+* 외부 채점 시스템과 동기화 되도록 플레이스홀더로서 구성 요소를 입력할 수 있다.
 
-For example, the following LTI component integrates a Cerego tool that learners
-interact with into the LMS for a course.
+예를 들어, 다음 LTI 구성 요소는 학습자가 상호작용 하는 Cerego 도구를 통합한다.
 
 .. image:: ../../../shared/images/LTIExample.png
    :alt: A page in the LMS showing the Cerego music player and a question for
     learners to answer about it.
 
-When you add an LTI component to your course, the edX Learning Management
-System (LMS) is the LTI tool consumer, and the external tool or content is the
-LTI tool provider.
+강좌에 LTI 구성요소를 추가할 때 K-MOOC 학습 관리 시스템이 LTI 도구 소비자가 되며 외부 도구나 콘텐츠가 LTI 도구 제공자가 된다.
 
-Be sure to review all supplemental materials to ensure that they are accessible
-before making them available through your course. For more information, see
-:ref:`Accessibility Best Practices for Course Content Development`.
+모든 자료의 접근성을 사전에 검토해야 한다. 자세한 사항은 :ref:`Accessibility Best Practices for Course Content Development` 를 참고하면 된다.
 
-You can also integrate content from a course into a remote learning management
-system such as Canvas or Blackboard.
+Canvas나 Blackboard 등의 외부 학습 관리 시스템에 강좌의 콘텐츠를 추가할 수도 있다.
 
 .. only:: Partners
 
-  For more information about how to use Studio as an LTI tool provider, see
-  :ref:`partnercoursestaff:Using edX as an LTI Tool Provider`.
+  Studio를 LTI 도구 제공자로 사용하는 방법은 :ref:`partnercoursestaff:Using edX as an LTI Tool Provider` 를 참고하면 된다.
 
 .. only:: Open_edX
-
-  For more information about how to use Studio as an LTI tool provider, see
-  :ref:`opencoursestaff:Using Open edX as an LTI Tool Provider`.
 
 .. note the slightly different destination links ^. Alison 23 Nov 2015
 
 .. _LTI Information:
 
 ******************************
-LTI Authentication Information
+LTI 인증 정보
 ******************************
 
-Some LTI tools require users to provide authentication credentials. If the LTI
-tool you are including in your course requires authentication, you must add an
-LTI passport for that tool to your course configuration.
+일부 LTI 도구는 인증이 필요하다. 만약 사용하는 LTI가 인증을 필요로 한다면 강좌 설정을 위해 도구에 LTI passport를 추가해야 한다.
 
-An LTI passport is a string of text that contains the authentication key and
-shared secret for one LTI tool. A passport also contains the LTI ID for the
-tool. When you add an LTI component to your course, assign it a matching LTI ID
-so that it can use the LTI passport that it requires.
-
-For more information about creating and registering LTI passports, see the
-following sections.
+LTI passport는 텍스트로서 인증키와 단일 LTI 도구의 공유 비밀, 도구의 LTI ID를 담고 있다. LTI 구성요소를 강좌에 추가할 때 올바른 LTI passport를 사용할 수 있도록 LTI ID를 확인한다.
 
 .. contents::
    :local:
    :depth: 1
 
 =========================================
-Creating an LTI Passport String
+LTI passport 문자열 만들기
 =========================================
 
-Each LTI passport includes three component text strings that are separated by
-colon characters. The component strings are: the LTI ID, the client key, and
-the client secret.
+각 LTI passport는 :로 구분되는 텍스트 문자열 3개를 포함한다. 구성요소 문자열은 LTI ID, 클라이언트 키, 클라이언트 비밀이다.
 
--  The **LTI ID** is a value that you create to refer to the remote LTI tool
-   provider. You should create an LTI ID that you can remember easily.
+-  **TLTI ID** 는 외부 LTI 도구 제공자가 부르게 되는 값이다. 쉽게 기억할 수 있도록 만드는 것이 좋다.
 
-   The LTI ID can contain uppercase and lowercase alphanumeric characters, as
-   well as underscore characters (_). It can be any length. For example, you
-   can create an LTI ID that is as simple as ``test_lti_id``, or your LTI ID
-   can be a string of numbers and letters such as  ``id_21441`` or
-   ``book_lti_provider_from_new_york``.
+   LTI ID엔 대문자 및 소문자 알파벳과 _를 사용할 수 있으며 길이에 제한은 없다. 예를 들어  ``test_lti_id`` 와 같이 간단하게도 ``id_21441`` 또는 ``book_lti_provider_from_new_york`` 와 같이 복잡하게도 만들 수 있다.
 
--  The **client key** is a sequence of characters that you obtain from the LTI
-   tool provider. The client key is used for authentication and can contain any
-   number of characters. For example, your client key might be
-   ``b289378-f88d-2929-ctools.school.edu``.
+-  클라이언트 키는 LTI 도구 제공자로부터 받게 되는 문자열이다. 이는 인증 과정에서 사용되며 길이에 제한은 없다. 예를 들어 ``b289378-f88d-2929-ctools.school.edu`` 와 같이 만들 수 있다.
 
--  The **client secret** is a sequence of characters that you obtain from the
-   LTI tool provider. The client secret is used for authentication and can
-   contain any number of characters. For example, your client secret can be
-   something as simple as ``secret``, or it might be a string of numbers and
-   letters such as ``23746387264`` or ``yt4984yr8``.
+-  클라이언트 비밀은 LTI 도구 제공자로부터 받게 되는 문자열이다. 클라이언트 비밀은 인증 과정에서 사용되며 길이에 제한은 없다. 예를 들어  ``secret`` 만큼 간단할 수도, ``23746387264`` 나 ``yt4984yr8`` 만큼 복잡할 수도 있다.
 
-To create an LTI passport, combine the LTI ID, client key,
-and client secret in the following format (be sure to include the colons).
+LTI passport를 만들기 위해 LTI ID, 클라이언트 키, 클라이언트 비밀을 괄호를 포함하여 다음 형식에 입력한다.
 
 ``{your_lti_id}:{client_key}:{client_secret}``
 
-The following example LTI passports show the format of the
-passport string.
+다음 LTI passport 예제는 문자열 형식을 보여준다.
 
 ``test_lti_id:b289378-f88d-2929-ctools.school.edu:secret``
 
@@ -139,28 +92,24 @@ passport string.
 .. _adding_an_lti_passport:
 
 ==================================================
-Adding an LTI Passport to the Course Configuration
+강좌 설정에 LTI passport 추가하기
 ==================================================
 
-To add an LTI passport for an LTI tool to the configuration for your course, follow these steps.
+강좌 설정을 위해 LTI 도구의 LTI passport를 추가하기 위해.
 
-#. From the Studio **Settings** menu, select **Advanced Settings**.
+#. Studio **설정** 메뉴에서 **고급 설정** 을 선택한다.
 
-#. In the **LTI Passports** field, place your cursor between the
-   brackets.
+#. **LTI Passports** 필드에서 대괄호 사이에 마우스를 둔다.
 
-#. Enter the LTI passport string surrounded by quotation marks.
+#. 따옴표 사이에 LTI passport 문자열을 입력한다.
 
-   The following example shows an LTI passport string.
+   다음은 LTI passport 문자열 예제다.
 
    ``"test_lti_id:b289378-f88d-2929-ctools.umich.edu:secret"``
 
-   For more information about creating your key, see :ref:`LTI Information`.
+   키 생성과 관련된 자세한 사항은  :ref:`LTI Information` 를 참고하면 된다.
 
-#. If you use more than one LTI provider in your course, separate each LTI
-   passport string with commas. Make sure to surround each entry with quotation
-   marks. The following example shows multiple LTI passports in the **LTI
-   Passports** field.
+#. 강좌에 LTI 제공자를 하나 이상 사용한다면 각 제공자를 ,로 구분한다. 반드시 모든 값을 따옴표 사이에 입력해야 한다. 다음은 다수의 **LTI passport** 를 사용한 예제다.
 
    .. code-block:: json
 
@@ -170,190 +119,136 @@ To add an LTI passport for an LTI tool to the configuration for your course, fol
         "book_lti_provider_from_new_york:b289378-f88d-2929-ctools.company.com:yt4984yr8"
       ]
 
-#. Select **Save Changes**.
+#. **저장** 을 클릭한다.
 
-The page refreshes automatically, reformats your entry in the **LTI Passports**
-field, and displays a notification that your changes have been saved.
+페이지는 자동으로 새로고침되며 LTI passport 필드의 입력 값을 다시 포맷하고 혹은 (재포맷하고) 저장이 완료되었다는 메시지를 표시한다.
 
 .. _enable_lti_components:
 
 ******************************************
-Enabling LTI Components for a Course
+강좌에 LTI 구성요소 설정하기
 ******************************************
 
-Before you can add LTI components to your course, you must enable the LTI tool
-in Studio.
+강좌에 LTI 구성요소를 추가하기 전에 Studio에서 LTI 도구를 설정해야 한다.
 
-To enable the LTI tool in Studio, add the ``"lti_consumer"`` module to the
-**Advanced Module List** on the **Advanced Settings** page. For more
-information, see :ref:`Enable Additional Exercises and Tools`.
+Studio에서 LTI 도구를 설정하기 위해  ``"lti_consumer"`` 모듈을 **고급 설정** 페이지의 **고급 모듈 목록** 에 추가한다. 자세한 사항은  :ref:`Enable Additional Exercises and Tools` 를 참고하면 된다.
 
 .. note::
-  The ``lti_consumer`` module replaces a previous version of the LTI component.
-  The name of the module for the previous LTI component is ``lti`` and it may
-  appear in the **Advanced Module List** for older courses.
+  ``lti_consumer`` 모듈은 LTI 구성요소의 이전 모듈을 대체한다. 기존 LTI 구성요소 이름은  ``lti`` 였으며 이전 강좌의 **고급 모듈 목록** 에 나타날 수도 있다.
 
-  The ``lti_consumer`` module includes all of the functionality of the previous
-  LTI component and it should be used for all new courses. Courses that include
-  the previous LTI component will continue to work correctly, even if the
-  ``lti`` module is no longer present in the **Advanced Module List**.
+  모듈은 기존 LTI 구성요소의 모든 기능을 포함하고 새로운 강좌에 사용된다.  ``lti`` 모듈이 더 이상 고급 모듈 목록에 존재하지 않아도 기존 LTI 구성요소를 포함하는 강좌의 실행에는 문제가 없다.
 
 ******************************************
-Adding an LTI Component to a Course Unit
+강좌 학습활동에 LTI 구성요소 추가하기
 ******************************************
 
-To add an LTI component to a course unit, follow these steps.
+강좌 학습활동에 LTI 구성요소를 추가하기 위해.
 
-#. If the LTI tool requires authentication, register the key and shared secret
-   for the LTI tool in the configuration for your course. For more information
-   about registering authentication credentials, see :ref:`LTI Information`.
+#. LTI 도구가 인증이 필요하다면 강좌 설정의 LTI 도구 키와 공유 비밀을 입력한다. 자세한 사항은  :ref:`LTI Information` 를 참고하면 된다.
 
-#. Edit the unit in which you want to add the remote LTI tool and select
-   **Advanced** from the **Add New Component** section. Select **LTI
-   Consumer**.
+#. 외부 LTI 도구를 추가할 학습활동을 고르고 **새 구성요소 추가하기** 에서 **고급** 을 선택한다. 그 후 LTI Consumer를 클릭한다.
 
-   If the **Advanced** component type is not available, make sure you have
-   enabled LTI components. To do this, see :ref:`enable_lti_components`.
+   만약 고급 구성요소 형식을 사용할 수 없다면 LTI 구성요소가 설정되었는지 확인한다. 자세한 사항은 :ref:`enable_lti_components` 를 참고하면 된다.
 
-#. Select **Edit** in the component that appears.
+#. 구성요소의 **편집** 을 선택한다.
 
-#. Configure the LTI component in the component editor. For more information
-   about each setting, see :ref:`LTI Component settings`.
+#. 구성요소 편집기에서 LTI 구성요소 설정을 선택한다. 자세한 사항은  :ref:`LTI Component settings` 을 참고하면 된다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-To test an LTI component, use the **Preview** feature or view the live version
-in the LMS. For more information, see :ref:`Testing Your Course Content`.
+LTI 구성요소 테스트를 위해 학습 관리 시스템에서 미리보기 기능을 사용하거나 실시간 보기를 한다. 자세한 사항은  :ref:`Testing Your Course Content` 를 참고하면 된다.
 
 .. _LTI Component settings:
 
 **********************
-LTI Component Settings
+LTI 구성요소 설정
 **********************
 
 .. list-table::
    :widths: 20 80
    :header-rows: 1
 
-   * - Setting
-     - Description
+   * - 설정
+     - 설명
 
-   * - Display Name
-     - Specifies the name of the component. This name appears as a heading
-       above the problem. Unique, descriptive display names help you
-       identify problems quickly and accurately for analysis.
+   * - 표시될 이름
+     - 구성 요소 이름을 지정한다. 이 이름은 구성 요소 위에 그리고 강좌 내용 페이지의 상단에 강좌 리본에 나타난다. 독특한, 기술적인 이것은 문제를 분석하는데 있어 신속하고 정확하게 식별하는데 도움을 준다.
 
-   * - LTI Application Information
-     - The description of the remote LTI application. If the application
-       requires a username or email address, use this field to inform learners
-       that their information will be forwarded to the external application.
+   * - LTI 응용 프로그램 정보
+     - 외부 LTI 프로그램의 설명이다. 만약 프로그램이 사용자명이나 이메일 주소를 필요로 한다면 이 필드를 사용해 학습자 정보가 외부 프로그램에 제공될 것이라는 것을 알려야 한다.
 
    * - LTI ID
-     - Specifies the LTI ID for the remote LTI tool provider. This value must
-       match the LTI ID that you entered as part of the LTI passport string for
-       the LTI tool. For more information about LTI passports, see :ref:`LTI
-       Information`.
+     - 외부 LTI 공급자에 대한 LTI ID를 지정한다. 이 값은 LTI 도구에 입력한 LTI passport 문자열과 동일한 :ref:`LTI Information` 여야 한다.
 
    * - LTI URL
-     - Specifies the URL of the remote LTI tool that this component launches.
+     - 해당 구성 요소가 실행하는 외부 도구의 URL을 지정한다.
 
-   * - Custom Parameters
-     - Sends additional parameters that are required by the remote LTI tool.
-       The parameters that you send depend on the specific LTI tool you are
-       using.
+   * - 사용자 정의 매개변수
+     - 외부 LTI 도구가 필요로 하는 추가 매개변수를 보낸다. 보내는 매개변수는 LTI 도구에 따라 다르다.
 
-       Supply a key and value for each custom parameter. The key is an
-       identifier for the parameter. Use the following format.
+       각 매개변수에 키와 값을 입력한다. 매개변수는 키에 의해 정의되며 다음과 같은 형식을 갖는다.
 
        ``{key}={value}``
 
-       For example, an LTI tool that displays an e-book might accept a ``page``
-       parameter to control which page the e-book opens to by default. The
-       following example sends a ``page`` parameter to an LTI tool.
+       예를 들어, e-book(전자책)을 추가하는 경우, 전자책이 특정 페이지로 열리도록 사용자 지정 매개변수를 설정할 수 있다. 다음 예제는 ``page`` 매개변수를 LTI 도구에 보낸다.
 
        ::
 
           ["page=144"]
 
-   * - LTI Launch Target
-     - Controls the way that the course page will open and display the remote
-       LTI tool.
+   * - LTI 시작 지점
+     - 강좌 페이지가 외부 LTI 도구를 열고 표시하는 방법을 설정한다.
 
-       Options are:
+       옵션에는:
 
-       * **Inline** - the LTI tool will appear directly in the course page.
+       * **Inline** - LTI 도구가 강좌 페이지에 바로 나타나게 한다.
 
-       * **Modal** - the LTI tool will appear in a separate display window in
-         front of the course page. The modal display window prevents learners
-         from interacting with the course page until they dismiss the LTI tool.
+       * **Modal** - LTI 도구를 강좌 페이지 앞 새 창에 나오게 한다. 모달 표시 창은 학습자가 LTI 도구에서 나가기 전에 강좌 페이지에서 작업할 수 없게 한다.
 
-       * **New Window** - the LTI tool will appear in a new web browser window.
-         Depending on the configuration of the web browser, it may appear in a
-         new tab or in a separate browser window. Learners can interact with
-         both the course page and the LTI tool.
+       * **새 창** - LTI 도구를 새 브라우저 창에서 본다. 브라우저의 설정에 따라 새 탭에 보일 수도 있고 새 창에서 보일 수도 있다. 학습자는 강좌 페이지와 LTI 도구에서 동시에 작업할 수 있다.
 
-   * - Button Text
-     - Enter a custom label for the button that opens the external LTI tool.
+   * - 버튼 텍스트
+     - 외부 LTI 응용 프로그램을 실행하는 버튼에 대한 사용자 지정 레이블을 입력한다.
 
-   * - Inline Height
-     - Specifies the on-screen height of the LTI tool in pixels.
+   * - 인라인(Inline) 높이
+     - 픽셀 단위로 LTI 도구 화면의 크기를 정한다.
 
-       This setting is only applied if the **LTI Launch Target** is set to
-       **Inline**.
+       이 설정은 LTI 시작 지점이 인라인(Inline)으로 설정되었을 때만 적용된다.
 
    * - Modal Height
-     - Specifies the on-screen height of the LTI content window as a percentage
-       of the visible web browser window height. Enter the percentage in whole numbers.
+     - 브라우저 창 높이의 %로 단위로 LTI 도구 화면의 크기를 정한다. 정수 단위로 %를 입력한다.
 
-       This setting is only applied if the **LTI Launch Target** control is set
-       to **Modal**.
+       이 설정은 LTI 시작 지점이 Modal로 설정되었을 때만 적용된다.
 
    * - Modal Width
-     - Specifies the on-screen width of the LTI content window as a percentage
-       of the web browser window width. Enter the percentage in whole numbers.
+     - 브라우저 창 너비의 %로 단위로 LTI 도구 화면의 크기를 정한다. 정수 단위로 %를 입력한다.
 
-       This setting is only applied if the **LTI Launch Target** control is set
-       to **Modal**.
+       이 설정은 LTI 시작 지점이 Modal로 설정되었을 때만 적용된다.
 
    * - Scored
-     - Indicates whether the LTI component receives a numerical score from the
-       remote LTI tool provider. By default, this value is set to **False**.
+     - LTI 구성 요소가 외부 LTI 시스템으로부터 수치화된 점수를 받는지 여부를 나타낸다. 기본적으로, 이 값은 False로 설정된다.
 
-   * - Weight
-     - Specifies the number of points possible for a problem. By default, if a
-       remote LTI tool provider grades the problem, the problem is worth one
-       point, and a learner's score can be any value between zero and one.
+   * - 가중치
+     - 문제에 대한 가능한 점수의 수를 지정한다. 기본적으로, 외부 LTI 공급자가 문제를 채점하는 경우, 문제는 1 포인트 점수를 가지며, 학습자의 점수는 0과 1 사이의 어떤 값도 될 수 있다. 이 설정은 득점 이 True로 설정된 경우 적용될 수 있다.
 
-       This setting is only applied if **Scored** is set to **True**.
+       문제 가중치 및 포인트 점수를 계산하는 것에 관한 더 자세한 내용은 :ref:`Problem Weight` 를 참조하도록 한다.
 
-       For more information about problem weights and computing point scores,
-       see :ref:`Problem Weight`.
+   * - 외부 도구 숨기기
+     - LTI 구성요소가 외부 LTI 도구를 강좌 페이지에 표시할 것인지 여부를 나타낸다.
 
-   * - Hide External Tool
-     - Controls whether the LTI component will display the remote LTI tool on
-       the course page.
+       값을 True로 설정하여 강좌에 외부 LTI 도구가 표시되지 않도록 한다. 예를 들어 LTI 구성요소를 외부 채점 시스템 동기화를 위해 사용할 수 있다. 이때 LTI 구성요소는 강좌 페이지에 나타나선 안 된다.
 
-       Set the value to **True** to prevent the course page from displaying the
-       remote LTI tool. For example, you might use an LTI component to
-       synchronize with a remote grading system. In that situation, the LTI
-       component should not appear on the course page.
+       값을 False로 설정하여 외부 LTI 도구를 표시하고 학습자가 사용할 수 있도록 한다.
 
-       Set the value to **False** to display the remote LTI tool and allow
-       learners to interact with it.
+   * - 마감 이후 평가 수락
+     - 외부 시스템의 마감 이후 성적을 게시하는 것을 허용할지 여부를 지정한다. 기본적으로 True로 설정되어 있다.
 
-   * - Accept grades past deadline
-     - Specifies whether third party systems are allowed to post grades after
-       the deadline. By default, this value is set to **True**.
+   * - 이용자 이메일 요청하기
+     - 외부 LTI 도구에 학습자 이메일 주소를 보낸다.
 
-   * - Request user's email
-     - Sends the learner's email address to the remote LTI tool.
+       LTI 구성요소는 LTI 시작 지점이 새 창으로 설정되었을 때만 학습자의 이메일 주소를 보낸다.
 
-       An LTI component will only send learners' email addresses if the **LTI
-       Launch Target** control is set to **New Window**.
+   * - 이용자의 아이디를 요청하기
+     - 외부 LTI 도구에 사용자 이름을 보낸다. 이는 학습자가 강좌를 등록할 때 작성한 사용자 이름이다.
 
-   * - Request user's username
-     - Sends the learner's username to the remote LTI tool. This is the
-       username that the learner used to register for the course.
-
-       An LTI component will only send learners' usernames if the **LTI Launch
-       Target** control is set to **New Window**.
+       LTI 구성요소는 LTI 시작 지점이 새 창으로 설정되었을 때만 학습자의 사용자 이름을 보낸다.

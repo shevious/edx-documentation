@@ -1,66 +1,61 @@
 .. _Conditional Module:
 
 ####################
-Conditional Module
+조건 모듈
 ####################
 
-.. note:: EdX offers provisional support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 부분적 지원을 제공함
 
-A conditional module controls the content that learners see after a response
-that they make meets a certain condition. For example, learners who answer
-"Yes" to a poll question see a different block of text from the learners who
-answered "No" to the same question.
+조건 모듈은 학습자가 어느 특정 조건을 만족하는 답변을 했을 때에만 문구가 보이도록 하는 기능이다. 예를 들어 어느 설문 조사 질문에 “예”라고 답한 학습자에겐 보이지만 “아니오”라고 답한 학습자는 볼 수 없는 것이다.
 
 ********************
-Format description
+양식 설명
 ********************
 
-The main tag of conditional module input is ``conditional``.
+조건 모듈 입력의 주요 태그는
 
 .. code-block:: xml
 
     <conditional> ... </conditional>
 
-``conditional`` can include any number of any Xmodule tags (``html``,
-``video``, ``poll``, etc.) or ``show`` tags.
+``conditional`` 은 모든 xmodule 태그 ( ``html``, ``video`` , ``poll`` 등) 또는 ``show`` 태그를 포함할 수 있다.
 
 ====================
-``conditional`` Tag
+``conditional`` 태그
 ====================
 
-The main container for a single instance of a conditional module. The
-following attributes can be specified for this tag.
+``conditional`` 태그는 상태 모듈의 단일 객체를 위한 주 컨테이너(container)이다. 이 태그는 다음의 속성을 지정할 수 있다
+
 
 .. code-block:: xml
 
-    sources - location id of required modules, separated by ';'
-    [message | ""] - message for case, where one or more are not passed. Here you can use variable {link}, which generate link to required module.
+    sources - 필수모듈의 id 위치로, ';'로 분리
+    [message | ""] - 하나 혹은 그 이상 통과하지 못한 경우 메시지. 필수 모듈에 링크를 만들 수 있는{link} 변수를 이용할 수 있다.
 
-    [submitted] - map to `is_submitted` module method.
-    (pressing RESET button makes this function to return False.)
+    [submitted] - map to `is_submitted` 모듈 방법에 맵핑
+    (RESET 버튼을 누르면 이 함수에서 False로 되돌아가게 한다)
 
-    [correct] - map to `is_correct` module method
-    [attempted] - map to `is_attempted` module method
-    [poll_answer] - map to `poll_answer` module attribute
-    [voted] - map to `voted` module attribute
+    [correct] - map to `is_correct` 모듈 방법에 맵핑
+    [attempted] - map to `is_attempted` 모듈 방법에 맵핑
+    [poll_answer] - map to `poll_answer` 모듈 속성에 맵핑
+    [voted] - map to `voted` 모듈 속성에 맵핑
 
 ============
-``show`` Tag
+``show`` 태그
 ============
 
-Symlink to some set of Xmodules. The following attribute can be specified for
-this tag.
+Xmodule의 몇 가지 세트에 대한 Symlink이다. 이 태그에 대하여 다음과 같은 속성을 지정할 수 있다.
 
 .. code-block:: xml
 
-    sources - location id of modules, separated by ';'
+    sources - 모듈 id의 위치로 ';' 로 분리된다
 
 *********
-Examples
+예시
 *********
 
 ========================================
-Example: conditional depends on poll
+예시 : 설문 조사에 의존하는 조건
 ========================================
 
 .. code-block:: xml
@@ -73,7 +68,7 @@ Example: conditional depends on poll
     </conditional>
 
 ========================================================
-Example: conditional depends on poll (use <show> tag)
+예시 : 설문 조사에 의존하는 조건 (<show> 태그 사용하기)
 ========================================================
 
 .. code-block:: xml
@@ -86,7 +81,7 @@ Example: conditional depends on poll (use <show> tag)
     </conditional>
 
 ================================================
-Examples of conditional depends on problem
+예시 : 문제에 의존하는 조건
 ================================================
 
 .. code-block:: xml

@@ -1,19 +1,18 @@
 .. _Setting Up Course Certificates:
 
 ################################
-Setting Up Course Certificates
+강좌 이수증 설정
 ################################
 
 .. This file is now for partners and open edx, with differences in conditions
 
-This section describes how to configure certificates for your course in
-Studio.
+Studio에서 강좌 이수증 만들 수 있다.
 
 .. contents::
    :local:
    :depth: 1
 
-For more information about certificates, see these additional topics.
+이수증과 관련된 자세한 사항은 다음을 참고하면 된다.
 
 * :ref:`Reporting Certificate Data`
 * :ref:`Checking Student Progress and Issuing Certificates`
@@ -26,10 +25,10 @@ For more information about certificates, see these additional topics.
 .. _Overview:
 
 ***********
-Overview
+개요
 ***********
 
-Using Studio, you create certificates that learners can earn in your course.
+Studio를 이용해서 학습자가 받을 수 있는 이수증을 만들 수 있다.
 
 .. Course start date not published for partners at this time, pending review.
 
@@ -47,175 +46,121 @@ Using Studio, you create certificates that learners can earn in your course.
     End Dates`.
 
 **********************
-Certificate Design
+이수증 디자인
 **********************
 
 .. only:: Open_edX
 
-  The design of certificates for your course, including your institution's
-  logo, are configured on your instance of Open edX. For more information, see
-  :ref:`installation:Enable Certificates` in *Installing, Configuring, and
-  Running the Open edX Platform*.
-
-.. only:: Partners
-
-  The design of certificates for your course, including your institution's
-  logo, are configured by edX. Contact your partner manager for
-  more information.
+  K-MOOC는 기관 로고를 포함한 이수증을 제작한다. 자세한 사항은 K-MOOC 관리자와 상담하면 된다. 
 
 
 *******************
-Enable Certificates
+이수증 활성화
 *******************
 
-Before you can create certificates, you must enable certificates for your
-course.
+이수증을 만들기 전에 우선 이수증을 활성화하여야 한다.
 
-#. From the **Settings** menu, select **Advanced Settings**.
+#. **설정** 메뉴에서 **고급 설정** 을 클릭한다.
 
-#. In the **Certificate Web/HTML View Enabled** field, enter ``true``.
+#. 이수증 웹/HTML 보기 활성화 탭에서 ``true`` 를 입력한다 .
 
-#. At the bottom of the page, select **Save Changes**.
+#. 페이지 하단에서 **저장하기** 를 클릭한다.
+
 
 .. _Create a Certificate:
 
 *********************
-Create a Certificate
+이수증 만들기
 *********************
 
-You create one certificate for each course mode, or track. For example, if your
-course has an "honor code" track and a "verified track", you must create two
-certificates.
+각 강좌 마다 하나의 이수증을 만들 수 있다. 
 
-To create a certificate for your course, follow these steps.
+이수증을 만드는 방법은 다음과 같다.
 
-#. In Studio, from the **Settings** menu, select **Certificates**.
+#. Studio의 **설정** 메뉴에서 **이수증** 을 클릭한다.
 
-#. On the Certificates page, select **Add your first certificate** or **Add a
-   new certificate**.
+#. 이수증 페이지에서 **이수증 만들기** 를 클릭한다.
 
-#. Optionally, specify an alternative course title to use on the certificate
-   in the **Course Title Override** field.
+#. 이수증에 표시될 강좌명 변경이 필요한 경우, **강좌 제목 바꾸기** 에서 다른 강좌명을 입력할 수 있다.
 
-   You might want to use a different title on your course certificates if, for
-   example, the official course name is too long to fit on the certificate.
+   만약 강좌명이 이수증에 표시되기에 너무 길다면 다른 강좌명을 사용할 수도 있다.
 
-   To specify an alternative course number, see `Set a Course Number
-   Override`_.
+   다른 강좌 번호를 사용하기 위해선 `Set a Course Number Override`_ .을 참고하면 된다.
 
-#. Add a signatory for each person associated with the course or organization
-   whose name and title you want to appear on the certificate. You must specify
-   at least one signatory. You can add as many signatories as needed.
+#. 이수증에 기입하고 싶은 강좌나 기관 관련자를 서명인으로 추가한다. 서명인 수의 제한은 없으나 반드시 1명 이상이어야 한다.
 
 .. only:: Partners
 
-   5. For verified certificates, you must upload an image file showing the
-      signature of each signatory.
+   5. 공식적인 이수증 발급을 위해, 각 서명인의 서명을 담고 있는 이미지 파일을 업로드 해야 한다.
 
-      The image file must be a transparent .PNG file, 450px by 150px.
+      이미지 파일은 PNG 형식으로서 450x150의 크기이어야 한다.
 
-.. only:: Open_edX
+6. 이수증을 만들었다면 **만들기** 를 클릭한다.
 
-   5. Optionally, upload an image file showing the signature of each signatory.
-
-      The image file must be a transparent .PNG file, 450px by 150px.
-
-
-6. When you have finished creating your certificate, select **Create**.
-
-   You can :ref:`preview the certificate<Preview a Certificate>` to see how it
-   will appear to a learner taking the course in the selected mode.
-
-   Your course certificate is not available for issuing to learners until it is
-   :ref:`activated<Activate a Certificate>`.
+   :ref:`preview the certificate<Preview a Certificate>` 를 통해 학습자에게 이수증이 어떻게 보이는지 조회할 수 있으며, 이수증이 :ref:`activated<Activate a Certificate>` 되기 전까지 학습자들은 이수증을 발급받을 수 없다.
 
 
 .. _Edit a Certificate:
 
 ********************
-Edit a Certificate
+이수증 편집
 ********************
 
-You can edit a certificate before it is activated.
-
-.. only:: Open_edX
-
-  After a certificate is activated, only a course team member with the Admin
-  role can edit the certificate. As a best practice, the administrator should
-  `deactivate <Deactivate a Certificate>`_ the certificate before making edits.
-
-.. only:: Partners
-
-  Contact your edX partner manager if you need to edit an activated
-  certificate.
+이수증이 활성화되기 전에는 이수증을 편집할 수 있다. 이미 활성화된 이수증을 편집해야 할 경우에는 K-MOOC 관리자에게 문의해야 한다.
 
 .. caution::
-  As a best practice, do not make changes to certificates in a running course
-  if it is possible that certificates have already been issued to learners,
-  because different learners might be awarded certificates with different
-  details for the same course.
+  만약 이미 이수증을 발급받은 학습자가 있을 경우 이수증 내용을 변경하지 않는 것이 좋다. 왜냐하면 다른 학습자들은 같은 강좌인데 다른 내용의 이수증을 발급받게 되기 때문이다.
 
-To edit a certificate, follow these steps.
+이수증 편집 방법은 다음과 같다.
 
-#. In Studio, from the **Settings** menu, select **Certificates**.
+#. Studio의 **설정** 메뉴에서 **이수증** 를 클릭한다.
 
-#. On the Certificates page, at the top right corner of the certificate
-   form, select the **Edit** icon.
+#. 이수증 페이지에서 이수증 양식의 우측 상단에 위치한 **편집** 을 클릭한다.
 
-#. When you have finished editing the certificate, select
-   **Save**.
+#. 이수증 편집 후 **저장** 을 클릭한다.
 
-   After you save your changes, you can :ref:`preview the certificate<Preview
-   a Certificate>` to make sure it appears as you want it to. You then need to
-   :ref:`activate the certificate configuration<Activate a Certificate>`
-   before certificates can be issued.
+   편집 저장 후 이수증 미리보기를 통해 수정사항이 반영되었는지 확인할 수 있으며, 이수증 발급 전에 :ref:`activate the certificate configuration<Activate a Certificate>` 해야 한다.
 
 .. _Set a Course Number Override:
 
 ******************************
-Set a Course Number Override
+강좌 번호 재지정
 ******************************
 
-Optionally, you can specify an alternative course number to use on the
-certificate.
+이수증에 사용할 강좌 번호를 따로 지정할 수 있다.
 
-You might want to use a different number on your course certificates if, for
-example, the official course number is meaningful only within your institution.
+공식 강좌 번호가 해당 기관 내에서만 의미 있는 번호라면, 강좌 이수증에는 다른 번호를 사용할 수 있다.
 
-#. In Studio, select **Settings**, and then **Advanced Settings**.
+#. Studio에서 **설정** 을 선택하고 **고급 설정** 을 클릭한다.
 
-#. Locate the **Course Number Display String** field. This field contains the
-   course number you set to override the official course number on
-   certificates.
+#. **강좌 번호 설정하기** 에서 이수증에 사용될 공식 강좌 번호를 확인한다.
 
-#. Between quotation marks (``" "``), enter the course number you want
-   displayed on certificates.
+#. 큰따옴표 (``" "``) 사이에 이수증에 사용할 강좌 번호를 입력한다.
 
-#. Select **Save Changes**.
+#. **저장하기** 를 클릭한다.
 
-   A message lets you know whether your changes were saved successfully.
+   저장 완료 메시지를 확인한다.
 
 
 .. _Delete a Certificate:
 
 ***********************************
-Delete a Certificate
+이수증 삭제
 ***********************************
 
-You can delete a certificate that is not activated.
+활성화되지 않은 이수증은 삭제할 수 있다.
 
 .. caution::
-  Do not delete a certificate after the course has started. A learner who has
-  already earned a certificate will no longer be able to access it.
+  개강 후 이수증은 삭제하지 않는 것이 좋다. 이미 이수증을 발급받은 학습자가 더 이상 이수증을 보지 못하기 때문이다.
 
-To delete a certificate, follow these steps.
+이수증 삭제 방법은 다음과 같다.
 
-#. In Studio, from the **Settings** menu, select **Certificates**.
+#. Studio에서 **설정** 을 선택하고 **이수증** 을 클릭한다.
 
-#. On the Certificates page, at the top right corner of the certificate
-   form, select the "Delete" icon.
+#. 이수증 페이지에서 이수증 양식의 우측 상단에 위치한 **삭제** 를 클릭한다.
 
-#. In the confirmation dialog, confirm that you want to delete the certificate.
+#. 최종 확인 메시지가 보이면 삭제한다.
+
 
 .. image:: ../../../shared/images/CertificateDeleteIcon.png
    :width: 500
@@ -225,144 +170,66 @@ To delete a certificate, follow these steps.
 .. _Preview a Certificate:
 
 ************************
-Preview Certificates
+이수증 미리보기
 ************************
 
-After you have finished editing your certificate, you can
-preview a certificate for verification purposes. You select from the available
-course modes (such as "honor code" or "verified") to see how a certificate
-will appear to a learner taking the course in the selected mode.
+이수증을 편집한 후에도 학습자에게 나타나는 이수증을 미리 볼 수 있다. 
 
-#. In Studio, from the **Settings** menu, select **Certificates**.
+#. Studio에서 **설정** 을 선택하고 **이수증** 을 클릭한다.
 
-#. On the Certificates page, select the course mode of the certificate you
-   want to preview, then click **Preview Certificate**.
+#. 이수증 페이지에서 **이수증 미리보기** 를 클릭한다
 
-   You see the web view for the certificate, as a learner in the selected
-   course mode would see it.
+   웹 상에서 학습자가 보게 될 이수증을 확인할 수 있다. 
+
 
    .. image:: ../../../shared/images/PreviewCertificate.png
      :width: 350
      :alt: The Preview button on the Certificates page in Studio.
 
-After previewing the certificate, you can :ref:`edit the certificate<Edit a
-Certificate>` further or :ref:`activate your certificate configuration<Activate
-a Certificate>`.
+이수증 미리보기 이후, 이수증은 :ref:`edit the certificate<Edit a Certificate>` 하거나 :ref:`activate your certificate configuration<Activate a Certificate>` 할 수 있다.
 
 
 .. _Activate a Certificate:
 
 ***********************
-Activate a Certificate
+이수증 활성화
 ***********************
 
 .. only:: Partners
 
-  When you have verified your certificates, contact your edX partner manager to
-  activate your certificates.
-
-.. only:: Open_edX
-
-  When you have verified your certificate, a course team member with the Admin
-  role must activate the certificate.
-
-  .. note:: Course team members without the Admin role cannot activate a
-     certificate.
-
-  The course team administrator must complete the following steps.
-
-  #. In Studio, from the **Settings** menu, select **Certificates**.
-
-  #. On the Certificates page, select **Activate**.
+  이수증을 확인한 후 이수증을 활성화하기 위해서는 K-MOOC 관리자에게 이수증 생성 신청을 해야 한다.
 
      .. image:: ../../../shared/images/ActivateCertificate.png
        :width: 350
        :alt: The Activate button on the Certificates page in Studio.
 
-After certificates are activated, learners in your course who attain a passing
-grade or otherwise qualify receive certificates.
+이수증이 활성화되면, 이수조건을 충족한 학습자는 이수증을 발급받을 수 있다.
+
 
 
 .. _Deactivate a Certificate:
 
 ********************************************
-Deactivate a Certificate
+이수증 비활성화
 ********************************************
 
-In some situations, after having made a certificate active, you
-might need to deactivate the certificate to make changes.
+활성화된 이수증을 비활성화 해야 할 경우, 이미 활성화된 이수증은 K-MOOC 관리자에게 문의해야 한다. 
 
-As a best practice, do not make changes to certificates in a running course if
-it is possible that certificates have already been issued to learners.
+활성화된 이수증은 이미 학습자에게 발급되었을 수 있기 때문에 가급적 수정하지 않기를 권장한다.
 
 .. only:: Partners
 
-  Contact your edX partner manager if you need to modify an activated
-  certificate.
-
 .. only:: Open_edX
 
-  A course team member with the Admin role must deactivate the certificate.
-
-  .. note:: Course team members without the Admin role cannot deactivate a
-     certificate.
-
-  The course team administrator must complete the following steps.
-
-  #. In Studio, from the **Settings** menu, select **Certificates**.
-
-  #. On the Certificates page, select **Deactivate**.
-
-The certificate is no longer active and the course team can edit it. No new
-certificates can be issued to learners while it is deactivated. Learners who
-have already been issued certificates can continue to access them.
-
+  인증서가 비활성화되면 강좌 운영팀이 수정할 수 있으며, 이때 이수증은 학습자들에게 신규 발급되지 않는다. 이미 이수증을 발급받은 학습자는 기존 이수증을 조회할 수 있다.
 
 .. _Manage Certificate Images:
 
 **************************
-Manage Certificate Images
+이수증 이미지 관리
 **************************
 
-When you add signatory image files to a certificate, the uploaded files are
-listed in Studio on the **Files & Uploads** page.
+이수증에 서명인 이미지를 업로드하면, 그 이미지는 Studio의 **파일 업로드** 페이지에도 저장된다.
 
-When you delete a certificate, images that you uploaded for use with that
-certificate are also deleted. However, if you edit a certificate and replace
-images, the unused image files remain on the **Files & Uploads** page. You can
-manually remove unused images. For information, see
-:ref:`Delete a File`.
+이수증을 삭제하게 되면 동시에 업로드된 이미지도 삭제된다. 그러나 이수증 편집 시 다른 이미지로 교체한 경우 기존 이미지는 파일 업로드 페이지에서 삭제되지 않는다. 사용되지 않은 이미지를 직접 삭제할 수 있는데 자세한 사항은 :ref:`Delete a File` 를 참고하면 된다.
 
-
-.. only:: Open_edX
-
- .. _Enable Badges in Course:
-
- *****************************************
- Enable or Disable Badges for Your Course
- *****************************************
-
- Badges provide a way for learners to share their course achievements. For
- courses that have course completion badges enabled, learners receive a badge  at
- the same time as they receive a course certificate, and have the option of
- sharing their badges to a badging site such as Mozilla Backpack.
-
- The Open edX platform supports Open Badges, an open standard developed by the
- Mozilla Foundation. For more information about Open Badges, see the
- `Open Badges web site <http://openbadges.org/>`_.
-
- If badging is enabled for your platform, course completion badges are enabled by
- default for your course. If you are unsure whether badging is enabled for your
- platform, or if you need help with configuring your course badges, contact your
- platform administrator.
-
- To stop issuing badges in your course, follow these steps.
-
- #. In Studio, from the **Settings** menu, select **Advanced Settings**.
-
- #. Locate the **Issue Open Badges** policy key. The default value is ``True``.
-
- #. Change the setting to ``False`` and save your changes.
-
- To enable badging for your course if it was previously disabled, change the
- value of the key to ``True``.

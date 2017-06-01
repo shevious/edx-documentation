@@ -1,119 +1,67 @@
 .. _completion:
 
 ##################
-Completion Tool
+완료 도구(신규 기능)
 ##################
 
-.. note:: EdX offers full support for this tool.
+.. note:: K-MOOC은 이 도구에 대해 전체 지원을 제공한다.
 
-The completion tool provides learners with a way to mark sections of the
-course as completed. It helps learners to track their progress through
-sections of the course, including for ungraded activities such as reading
-text, watching video, or participating in course discussions.
+완료 도구는 학습자에게 강좌를 부분별로 표시할 수 있는 기능을 제공한다. 이를 통해 학습자는 강좌의 각 부분의 어디까지 학습을 완료했는지 기억하기 용이하며, 자료 읽기, 동영상 시청 혹은 게시판 토의 참여 등 채점되지 않는 부분도 표시할 수 있다.
 
 .. contents::
   :local:
   :depth: 1
 
 ***********
-Overview
+개요
 ***********
 
-The completion tool provides learners with a way to indicate both to themselves
-and to the course team that they have completed an activity.
+이 완료 도구는 학습자와 강좌 운영팀에게 학습자들이 어떤 활동을 완료했는지 정보를 제공해준다
 
-The completion tool is itself a graded component and is therefore always
-included on the learner **Progress** page. However, depending on whether it is
-used in a graded or ungraded section of the course, it appears either as a
-part of the learner's final grade or as a practice score, respectively.
+완료 도구 자체는 채점 되는 구성요소이기 때문에 학습자 **진행상황** 페이지에 나오게 된다. 그러나 표시되는 강좌의 부분 채점 여부에 따라 최종 성적에 포함되는지 여부가 결정된다.
 
-If you use the completion tool in an ungraded section of the course, the score
-for completing the activity that it is associated with is listed as a practice
-score on the **Progress** page. Practice scores are not included in the
-learner's final grade for the course.
+채점되지 않는 부분에 완료 도구를 사용한다면 활동 완료 여부가 연습 점수의 일부로 **진행상황** 페이지에 포함된다. 연습 점수는 최종 성적에 포함되지 않는다.
 
-You can also use the completion tool in graded sections of the course. If you
-do so, a score for completing the activity is included in learners' final
-grades. For example, if you include a completion component in a particular unit
-of the course content, learners who use the component to mark the unit as
-complete receive 1/1 points, while learners who do not mark the unit as
-complete receive 0/1 points. These scores are included in learners' final
-grades on the **Progress** page.
+완료 도구를 채점이 되는 부분에도 사용할 수 있다. 이 때 활동 완료 여부는 최종 성적에 포함된다. 예를 들어 한 학습활동의 활동 완료 여부가 성적에 포함된다면 해당 부분에서 표시를 했다면 1/1점을, 안했다면 0/1점을 받게 된다. 이 점수는 **성과** 페이지의 최종 성적에 반영된다.
 
-.. note:: EdX recommends using the completion tool primarily to track progress
-   for ungraded activities such as reading assigned texts, watching videos,
-   or participating in course discussions.
+.. note:: K-MOOC은 완료 도구를 주로 자료 읽기, 동영상 시청 혹은 게시판 토의 참여 등 채점되지 않는 부분에 활용하는 것을 권장한다.
 
 
 =========================
-The Completion Control
+완료 도구 사용
 =========================
 
-When you add a completion component to a unit, learners see a control that is
-labeled **Mark as complete**. In this example, the completion component follows
-an HTML component.
+학습활동에 완료 도구를 사용하면 **완료 표시** 라는 버튼을 볼 수 있다. 이 예시에서 완료 도구는 HTML 구성요소에서 사용되었다.
+
 
 .. image:: ../../../shared/images/completion_markcomplete.png
   :alt: The completion component in an incomplete state.
   :width: 400
 
-After a learner selects this control, the label changes to **Unmark**. Learners
-who revisit their work in a unit and want to change the completion status can
-select this control as many times as needed.
+학습자가 이 버튼을 클릭하면 **표시하지 않기** 로 바뀌게 된다. 학습활동에 돌아오기 위해 완료 도구 상태를 바꾸고 싶다면 언제든지 바꿀 수 있다.
+
 
 .. image:: ../../../shared/images/completion_unmark.png
   :alt: The completion component in a complete state.
 
 
 ******************************************
-Enable the Completion Tool
+완료 도구 설정하기
 ******************************************
 
-Before you can add a completion component to your course, you must enable the
-completion tool in Studio.
+강좌에 완료 도구를 추가하기 위해 Stuido에서 완료 도구를 설정해야 한다.
 
-To enable the completion tool in Studio, add the ``"done"`` key to the
-**Advanced Module List** on the **Advanced Settings** page, then select **Save
-Changes**. (Be sure to include the quotation marks around the key value.) For
-more information, see :ref:`Enable Additional Exercises and Tools`.
+Studio에서 완료 도구를 설정하기 위해 ``"done"`` 키를 **고급 설정** 의 **고급 모듈 목록** 에 추가한 후 **저장** 을 클릭한다, (키 값은 “ “ 사이에 입력해야 한다.) 자세한 사항은 :ref:`Enable Additional Exercises and Tools` 를 참고하면 된다.
+
 
 *************************************
-Add a Completion Component
+완료 도구 추가하기
 *************************************
 
-After you have enabled the completion tool in Studio, to add a completion
-component to a unit in a course, follow these steps.
+Studio에서 완료 도구를 설정했다면 완료 도구를 추가하기 위해
 
-#. In the course outline in Studio, locate the unit to which you want to add
-   the completion component.
-#. Under **Add New Component**, select **Advanced**.
-#. Select **Completion**.
-   The completion component is added to the unit.
+#. Studio의 강좌 개요에서 완료도구를 추가할 학습활동을 선택한다.
+#. **새 구성요소 추가** 아래의 **고급** 을 선택한다.
+#. **완료** 를 선택하면 학습활동에 완료 도구가 추가된다.
 
-.. note:: Select **Edit** in the completion component for information about the
-   tool.
-
-
-.. only:: OLX
-
- ****************************************
- Add the Completion Tool to an OLX Course
- ****************************************
-
- To add the completion tool to a unit in an OLX course, it is sufficient to add
- the ``<done>`` tag to the OLX.
-
- EdX recommends that you also explicitly specify a ``url_name`` within the
- ``<done>`` tag, as shown in the following example. If you do not explicitly
- specify a ``url_name``, a value is automatically assigned, which can be
- problematic if the same course is imported several times. For example, if the
- ``url_name`` value is automatically generated each time you import your
- course, and if you import your course more than once, the learner state for
- the associated problems is lost each time a new ``url_name`` value is
- assigned.
-
- .. code-block:: xml
-
-    <done url_name="video_3_completion"/>
-
-
+.. note:: 도구에 대해 알아보기 위해 **편집** 을 선택한다.

@@ -1,16 +1,13 @@
 .. _Annotation:
 
 ###################
-Annotation Problem
+주석 문제
 ###################
 
-.. note:: EdX offers provisional support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 부분적 지원을 제공한다.
 
-In an annotation problem, you highlight specific text inside a larger text
-block and then ask questions about that text. The questions appear when
-learners move their cursors over the highlighted text. The questions also
-appear in a section below the text block, along with space for learners'
-responses.
+주석 문제에서 교수자는 텍스트 블록내의 특정 텍스트를 강조 표시한 다음, 강조된 텍스트에 대한 질문을 한다. 학습자가 강조 표시된 텍스트 위로 마우스를 움직일 때 질문이 나타난다. 또한 질문은 학습자의 응답 칸과 함께 텍스트 블록 아래 부분에 나타난다.
+
 
 .. image:: ../../../shared/images/AnnotationExample.png
   :alt: An example annotation problem.
@@ -20,54 +17,47 @@ responses.
   :depth: 1
 
 *****************************
-Enable Annotation Problems
+주석 문제 설정
 *****************************
 
-Before you can add annotation problems to your course, you must enable
-annotation problems in Studio.
+주석 문제를 추가하기 전에 Studio에서 주석 문제를 설정해야 한다.
 
-To enable annotation problems in Studio, you add the ``"annotatable"`` key to
-the **Advanced Module List** on the **Advanced Settings** page. (Be sure to
-include the quotation marks around the key value.) For more information, see
-:ref:`Enable Additional Exercises and Tools`.
+Studio에서 주석 문제를 설정하기 위해 **고급 설정** 페이지에서 ``"annotatable"`` 키를 **고급 모듈 목록** 에 추가한다. (키 값은 반드시 “ “ 사이에 입력해야 한다) 자세한 사항은 :ref:`Enable Additional Exercises and Tools` 을 참고하면 된다.
+
 
 ****************************
-Create an Annotation Problem
+주석 문제 만들기
 ****************************
 
-To create an annotation problem, you add the **Instructions** and **Guided
-Discussion** segments of the problem, and then the **Annotation problem**
-segment of the problem.
+주석 문제를 만들려면 주석 고급 구성 요소를 강좌에 추가하고, **문제의 지침** 및 **토의 안내** 부분을 추가한 다음, 문제의 **주석 문제** 부분을 추가해야 한다.
 
 ============================================
-Add Instructions and Guided Discussion
+지침 및 토의 안내 추가하기
 ============================================
 
-To add the **Instructions** and **Guided Discussion** segments of the problem,
-follow these steps.
+**문제의 지침 및 토의 안내** 부분을 추가하려면,
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Advanced**.
 
-#. In the list of problem types, select **Annotation**.
+#. 문제를 만들려고 하는 학습활동에서 신규 구성요소 추가 아래에 **고급** 을 클릭한다.
 
-#. In the component that appears, select **Edit**.
+#. 문제 유형 목록에서 **주석** 을 클릭한다
 
-#. In the component editor, replace the example code with your own code.
+#. 표시되는 구성 요소에서 **편집** 을 클릭한다.
 
-#. Select **Save**.
+#. 구성요소 편집기에서, 예제 코드를 본인의 코드로 바꾼다.
+
+#. **저장** 을 클릭한다.
+
 
 =================================
-Add Annotation Problem
+주석 문제 추가
 =================================
 
-To add the **Annotation problem** segment of the problem, follow these steps.
+**주석 문제** 부분 추가를 위해
 
-#. Under the annotation component, create a new blank advanced problem
-   component.
+#. 주석 구성요소에서, 새로운 빈 고급 문제 구성 요소를 만든다.
 
-#. Paste the following code in the advanced problem component, replacing
-   placeholders with your own information.
+#. 고급 문제 구성요소에서 다음 코드를 붙여 넣고 본인의 정보로 직접 대체한다.
 
    .. code-block:: xml
 
@@ -91,4 +81,4 @@ To add the **Annotation problem** segment of the problem, follow these steps.
            </solution>
          </problem>
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.

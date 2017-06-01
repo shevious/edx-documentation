@@ -1,47 +1,37 @@
 .. _Enable Additional Exercises and Tools:
 
 #########################################
-Enable Additional Exercises and Tools
+추가 연습문제 및 도구 설정
 #########################################
 
-Studio offers the same set of core exercises and tools for every course. You
-can expand the default set by enabling additional exercises and tools. After
-you enable an exercise or tool in Studio, you can add components of that type
-to your course.
+Studio는 모든 강좌에 대해 동일한 연습문제 및 도구 모음을 제공한다. 이 기본 모음을 추가 연습문제 및 도구를 설정하여 확장할 수 있다. Studio에서 연습문제나 도구를 설정하면 강좌에 구성요소를 추가할 수 있다.
 
-To enable additional exercises and tools, follow these steps.
+연습문제 및 도구 설정을 위해 아래의 단계를 따라야 한다.
 
-#. In Studio, select **Settings**, and then **Advanced Settings**.
+#. Studio에서 **설정** 을 선택하고 **고급 설정** 을 클릭한다.
 
-#. Locate the **Advanced Module List** field. This field lists any exercises
-   and tools that have been added to your course.
+#. **고급 모듈 목록** 필드를 찾는다. 이 필드에서 강좌에 추가된 연습문제와 도구를 확인할 수 있다.
 
-#. If the **Advanced Module List** field is empty, place your cursor between
-   the brackets (``[ ]``).
+#. **고급 모듈 목록** 필드가 비어있다면 (``[ ]``) 사이에 마우스를 올려놓는다.
 
-   If the list already contains one or more keys, place your cursor after the
-   first bracket (``[``).
+   만약 하나 이상의 키를 담고 있다면 첫 (``[``) 뒤로 마우스를 옮긴다.
 
-#. Enter the key for the exercise or tool that you want to add.
+#. 추가하고 싶은 연습문제나 도구의 키를 입력한다.
 
-#. Add quotation marks (``" "``) before and after the key.
+#. 키는 (``" "``) 사이에 입력한다.
+ 
+   여러 가지 키를 입력한다면 각 키를 쉼표 (``,``) 로 구분한다.
 
-   If you are adding the key to a list of keys, follow the
-   closing quotation mark with a comma character (``,``).
+#. 정확한 키가 " " 사이에 입력되었는지 다시 한번 확인한다. 여러 키가 있다면 쉼표 (``,``) 로 구분해야 한다.
+    
 
-#. Review your entry to verify that the key is accurate and that it is
-   surrounded by quotation marks. If there is a list of keys, they must be
-   comma separated.
-
-   * In this example, the key for the annotation problem tool is the only value
-     in the list.
+   * 다음 예시에서 주석 문제에 대한 키는 목록의 유일한 값이다.
 
      ::
 
        ["annotatable"]
 
-   * In this example, the key for the annotation problem tool is added at
-     the beginning of a list of other keys.
+   * 다음 예시에서 주석 문제에 대한 키는 다른 키의 앞에 추가되어 있다.
 
      ::
 
@@ -50,10 +40,8 @@ To enable additional exercises and tools, follow these steps.
            "split_test"
        ]
 
-#. Select **Save Changes**.
+#. **저장** 을 클릭한다.
 
-   Studio checks the syntax of your entry and reformats your entry to add line
-   feeds and indentation. A message lets you know whether your changes were
-   saved successfully.
+   Studio는 키가 정확한지 확인한 후 줄 정리와 들여쓰기를 통해 입력 값을 간추린다. 저장이 잘 되었는지 메시지를 통해 알려준다.
 
 

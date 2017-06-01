@@ -1,140 +1,98 @@
 .. _Multiple Choice:
 
 ########################
-Multiple Choice Problem
+선다형 문제
 ########################
 
-.. note:: EdX offers full support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 전체 지원을 제공한다.
 
 .. contents::
   :local:
   :depth: 1
 
 **********
-Overview
+개관
 **********
 
-In multiple choice problems, learners select one option from a list of answer
-options. Unlike :ref:`dropdown<Dropdown>` problems, whose answer choices
-do not appear until the learner clicks the dropdown arrow, answer choices for
-multiple choice problems are always visible directly below the question.
+선다형 문제(multiple choice problem)에서는 학습자가 선택지 가운데 하나를 선택한다. 학습자가 드롭다운(dropdown) 화살표를 클릭하기 전까지 선택지가 표시되지 않는 :ref:`dropdown<Dropdown>` 문제와 달리, 선다형 문제에서는 해당 질문지 아래에서 선택지를 가시적으로 직접 확인할 수 있다 .
 
 .. image:: ../../../shared/images/MultipleChoiceExample.png
  :alt: A multiple choice problem.
  :width: 600
 
-Multiple choice problems can also have several advanced options, such as
-presenting a random set of choices to each learner. For more information about
-these options, see :ref:`Multiple Choice Advanced Options`.
+또한, 선다형 문제에는 각 학습자에게 일련의 선택지를 무작위로 제시하는 등, 몇 가지 고급 선택 조건이 있다.  :ref:`Multiple Choice Advanced Options` 에서 이들 선택 조건에 관한 보다 자세한 정보를 확인할 수 있다.
 
 **************************************************
-Analyzing Performance on Multiple Choice Problems
+선다형 문제 성과 분석하기
 **************************************************
 
-For the multiple choice problems in your course, you can use edX Insights to
-review aggregated learner performance data and examine the submitted answers.
-For more information, see :ref:`insights:Using edX Insights`.
+강좌의 선다형 문제에 Insights를 사용해 학습자 성과 데이터 및 답안을 분석할 수 있다. 자세한 사항은  :ref:`insights:Using edX Insights` 를 참고하면 된다.
 
 ********************************************************
-Pedagogical Considerations for Multiple Choice Questions
+선다형 문제에 대한 교육학적 고려사항
 ********************************************************
 
-EdX recommends the use, whenever possible, of authentic assessments rather than
-multiple choice questions for graded problems. Authentic assessments in online
-courses tend to lead to better learning outcomes. In addition, authentic
-assessments allow for infinite attempts, mastery learning, and more
-intellectual risk taking, which lead to substantially better learning outcomes.
+K-MOOC은 채점 문제에 대해 선다형 문제가 아닌 참평가를 사용할 것을 권장한다. 온라인 강좌에서 참평가를 사용할 때 더욱 좋은 결과를 보이기 때문이다. 또한, 참평가는 시도의 수에 제한이 없고 완전학습이 가능하며 도전적으로 학습할 수 있어서 더욱 좋은 결과가 나온다.
 
-Multiple choice questions do have these helpful uses.
+선다형 문제는 다음과 같은 장점을 갖는다.
 
-* Ungraded multiple choice questions can help students think about a concept in
-  the context of knowledge transfer.
+* 채점되지 않는 선다형 문제는 학습자가 지식 전달 측면에서 그 개념을 생각해 볼 수 있도록 돕는다.
 
-* For many subject areas, authentic assessments are either unavailable or
-  prohibitively complex to use. In such courses, multiple choice questions can
-  act as the only available fallback.
+* 많은 분야에서 참평가의 사용이 어렵거나 불가능하다. 이러한 강좌에서 선다형 문제가 유일한 대안이 될 수도 있다.
 
-Fortunately, multiple choice questions are among the best studied in assessment
-literature. A few guidelines for the creation of such questions follow.
+다행히도 선다형 문제는 평가 분석에서 가장 연구가 활발하다. 문제를 만드는 방법에 대한 가이드라인은 다음과 같다.
 
-* Organize the set of answers logically. Use consistent phrasing for the
-  answers, and when possible, parallel structure.
+* 답안 보기 조합을 논리적으로 짠다. 일관적인 어조로 작성하고 길이를 비슷하게 한다.
 
-* Place as many of the words in the stem as possible, and keep the answers as
-  concise as possible.
+* 어간에 최대한 많은 단어를 배치하고 간결하게 작성한다.
 
-* The distractors should not be substantially shorter, longer, or use different
-  structure than the correct answer. The answer options should be as consistent
-  in structure, length, and phrasing as possible.
+* 함정 보기는 정답과 비교해 압도적으로 짧거나 길거나 구조가 달라선 안 된다. 모든 보기는 구조, 길이 및 어조가 비슷해야 한다.
 
-* Avoid using negatives (and especially double negatives) in the question and
-  the answers.
+* 부정형 (특히 이중 부정)의 사용을 피한다.
 
-* Test higher order thinking (comprehension and critical thinking). Avoid
-  simple recall.
+* 단순 암기를 테스트하는 것이 아닌 이해와 비판적 사고를 시험한다.
 
-* If you specify a finite number of attempts, avoid trick questions and try to
-  keep wording clear and unambiguous.
+* 만약 풀이 횟수에 제한이 있다면 함정 문제를 내지 말고 보기를 최대한 간단하고 명료하게 한다.
 
-* Make all distractors plausible.
+* 모든 함정 보기는 타당하게 작성한다.
 
-* Use "All of the above" and "None of the above" answer options with caution.
-  If a learner can identify at least two correct answers, it can give away the
-  answer with only partial comprehension.
+* “모든 보기가 정답이다”나 “정답이 없다” 는 주의하여 사용해야 한다. 만약 학습자가 보기를 2개만 알아도 정답을 유추해낼 수 있기 때문이다.
 
 ****************************************
-Creating a Multiple Choice Problem
+선다형 문제 만들기
 ****************************************
 
-You can create multiple choice problems in the simple editor or in the
-advanced editor. You can set up a problem in the simple editor, and then
-switch to the advanced editor to add more configuration options in XML.
-However, you cannot switch back to the simple editor from the advanced editor.
-Therefore, you might want to format the problem as completely as possible
-before you begin to use the advanced editor.
+간편 편집기 또는 고급 편집기에서 선다형 문제를 만들 수 있다. 우선 간편 편집기에서 문제를 만든 후 고급 편집기로 넘어가 XML의 다양한 설정을 사용할 수도 있다. 그러나 고급 편집기 사용 후 간편 편집기로 되돌아 올 수는 없다. 따라서 고급 편집기 사용 전에 문제 형식을 완벽히 만드는 것이 좋다.
 
 .. _Use the Simple Editor to Create a Multiple Choice Problem:
 
 ================================================================
-Use the Simple Editor to Create a Multiple Choice Problem
+간편 편집기로 선다형 문제 만들기
 ================================================================
 
-To use the :ref:`simple editor<Simple Editor>` to create a checkbox problem,
-follow these steps.
+ :ref:`simple editor<Simple Editor>` 로 선다형 문제를 만들기 위해
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Problem**.
-#. Select one of the two multiple choice problem templates.
+#. **신규 구성요소 추가** 에서 문제 를 클릭한다.
+#. 두가지 선다형 문제 템플릿에서 하나를 고른다.
 
-  * From the list of **Common Problem Types**, select **Multiple Choice**.
+  * **공통 문제 유형** 탭에서 **선다형 문항** 을 클릭한다.
 
-  * From the list of **Common Problems with Hints and Feedback**, select
-    **Multiple Choice with Hints and Feedback**. For more information, see `Use
-    Feedback in a Multiple Choice Problem`_.
+  * 피드백과 힌트가 있는 공통 문제 유형 탭에서 피드백과 힌트가 있는 선다형 문항 을 클릭한다. 자세한 사항은  `Use Feedback in a Multiple Choice Problem`_ 를 참고하면 된다.
 
-    Studio adds the problem to the unit.
+    Studio는 학습활동에 문제를 추가한다.
 
-#. Select **Edit**. The simple editor opens.
-#. Replace the sample problem text with your own text.
-#. Determine the text that describes the question you want learners to answer,
-   and surround that text with two pairs of angle brackets (``>>question<<``).
-   This text identifies the question for screen readers, reports, and Insights.
-#. Edit your text to place each answer option on a separate line.
-#. Select your set of answer options, and then select **Multiple Choice** from
-   the toolbar. A pair of parentheses appears next to each answer choice.
-#. To identify the correct answer, add an **x** between the parentheses for
-   that option.
-#. To provide an explanation, select the explanation text and then select
-   **Explanation** from the toolbar. ``[explanation]`` appears before
-   and after the explanation text.
-#. Select **Settings** and provide an identifying **Display Name** for the
-   problem.
-#. Define additional settings for the problem. For more information, see
-   :ref:`Problem Settings`.
-#. Select **Save**.
+#. **편집** 을 선택하면 간편 편집기가 열린다.
+#. 예제 문제 텍스트를 바꾼다.
+#. 표시로 사용할 문제의 텍스트를 결정한 후 해당 텍스트를 꺾쇠괄호 (``>>question<<``) 로 묶는다. 이 텍스트는 화면 판독기, 보고 및 Insights에서 활용된다.
+#. 새로운 줄에 답안 보기 별로 텍스트를 바꾼다.
+#. 선택지를 모두 선택한 후 **선다형 문제** 단추를 클릭한다. 이제 구성 요소 편집기가 각 정답 옆에 한 쌍의 괄호를 추가한다.
+#. 정답 옆의 괄호 사이에 “x”를 입력한다.
+#. 설명을 추가하기 위하여 설명 텍스트를 선택하고 도구 모음에서 **설명** ``[explanation]`` 을 클릭한다 
+#. 설정을 선택하고 문제에 대한 **표시 이름** 을 추가한다.
+#. 기타 설정을 지정한다. 자세한 사항은 :ref:`Problem Settings` 을 참고하면 된다
+#. **저장** 을 클릭한다.
 
-For the example problem illustrated above, the following text is displayed in
-the problem component.
+상기 예제에 대한 문제 구성요소 내부의 텍스트는 다음과 같다.
 
 ::
 
@@ -161,16 +119,13 @@ the problem component.
     [Explanation]
 
 ========================================================================
-Use the Advanced Editor to Edit a Multiple Choice Problem
+고급 편집기로 선다형 문제 만들기
 ========================================================================
 
-To use the :ref:`advanced editor<Advanced Editor>` to edit a multiple choice
-problem, follow these steps.
+:ref:`advanced editor<Advanced Editor>` 로 선다형 문제를 만들기 위해
 
-#. Follow the steps for creating the problem in the :ref:`simple editor<Use
-   the Simple Editor to Create a Multiple Choice Problem>`.
-#. Select **Advanced Editor**, and then edit the XML to add the tags and
-   attributes you want. An example follows.
+#. :ref:`simple editor<Use the Simple Editor to Create a Multiple Choice Problem>` 에서 문제를 만든다.
+#. 고급 편집기를 선택하고 XML을 수정해 다음 예제와 같이 태그와 속성을 추가한다.
 
 .. code-block:: xml
 
@@ -207,41 +162,30 @@ problem, follow these steps.
 .. _Use Feedback in a Multiple Choice Problem:
 
 ********************************************
-Using Feedback in a Multiple Choice Problem
+선다형 문제에서 피드백 사용하기
 ********************************************
 
-You can add feedback in a multiple choice problem using the simple editor
-or the advanced editor. For an overview of feedback in problems, see
-:ref:`Adding Feedback and Hints to a Problem`.
+간편 편집기나 고급 편집기를 사용해 선다형 문제에 피드백을 추가할 수 있다. 자세한 사항은 :ref:`Adding Feedback and Hints to a Problem` 를 참고하면 된다.
 
-In multiple choice problems, you can provide feedback for each option that a
-learner can select. Use the following guidelines when providing feedback.
+선다형 문제에서 학습자가 선택할 수 있는 각 보기에 대해 피드백을 추가할 수 있다. 피드백을 추가할 때 권장사항은 다음과 같다.
 
-* Use feedback for the incorrect answers to target common misperceptions and
-  mistakes.
+* 오답을 선택했을 때 흔한 오개념 및 실수에 대한 피드백을 추가한다.
 
-* Ensure feedback provides some guidance to the learner about how to arrive at
-  the correct answer.
+* 정답을 유추할 수 있는 내용을 포함한 피드백을 추가한다.
 
-* Use feedback for the correct answer as an opportunity to reinforce why the
-  answer is correct. Because learners are able to guess, ensure that feedback
-  provides a reason why the answer is correct for learners who might have
-  selected that answer by chance.
+* 정답을 선택했을 때 정답인 이유를 설명하는 피드백을 추가한다. 학습자는 문제를 찍어서 맞출 수도 있기 때문에 정답인 이유를 설명하는 피드백을 추가하는 것이 좋다.
 
 =======================================
-Configure Feedback in the Simple Editor
+간편 편집기로 피드백 설정하기
 =======================================
 
-In the :ref:`simple editor<Simple Editor>`, you configure answer feedback with
-the following syntax.  When you create a new multiple choice problem, select
-the template **Multiple Choice with Hints and Feedback**. This template has
-example feedback syntax that you can replace.
+:ref:`simple editor<Simple Editor>` 에서 다음과 같이 피드백을 설정할 수 있다. 새로운 선다형 문제를 만들 때 힌트와 피드백이 있는 선다형 문제 템플릿을 고른다. 이 템플릿엔 예제가 포함되어 있다.
 
 ::
 
   ( ) Answer {{Feedback for learners who select this answer.}}
 
-For example, the following problem has feedback for each possible answer.
+다음 예제는 각 보기에 대해 피드백이 있다.
 
 ::
 
@@ -257,11 +201,10 @@ For example, the following problem has feedback for each possible answer.
   seeds it is classified as a fruit.}}
 
 =========================================
-Configure Feedback in the Advanced Editor
+고급 편집기에서 피드백 설정하기
 =========================================
 
-In the :ref:`advanced editor<Advanced Editor>`, you configure answer feedback
-with the following syntax.
+:ref:`advanced editor<Advanced Editor>` 에서 다음과 같이 피드백을 설정할 수 있다.
 
 .. code-block:: xml
 
@@ -272,7 +215,7 @@ with the following syntax.
       </choicehint>
     </choice>
 
-For example, the following problem has feedback for each answer.
+다음 예제는 각 보기에 대해 피드백이 있다.
 
 .. code-block:: xml
 
@@ -305,41 +248,34 @@ For example, the following problem has feedback for each answer.
   </multiplechoiceresponse>
 
 =========================
-Customize Feedback Labels
+사용자 지정 피드백 라벨 설정하기
 =========================
 
-By default, the feedback labels shown to learners are **Correct** and
-**Incorrect**. If you do not define feedback labels, learners see these terms
-when they submit an answer, as in the following example.
+학습자는 기본적으로 **정답** 과 **오답** 피드백 라벨을 보게 된다. 만약 피드백 라벨 설정을 안하면 다음 예제와 같은 화면을 보게 된다.
 
 .. image:: ../../../shared/images/multiple_choice_feedback.png
  :alt: Multiple choice feedback with the standard label.
  :width: 600
 
-You can configure the problem to override the default labels. For example, you
-can configure a custom label for a specific wrong answer.
+이런 기본 피드백 라벨을 수정할 수 있다. 예를 들어 특정 오답에 대해 다음과 같이 사용자 지정 피드백 라벨을 사용할 수 있다.
 
 .. image:: ../../../shared/images/multiple_choice_feedback_custom_label.png
  :alt: Multiple choice feedback with a custom label.
  :width: 600
 
 .. note::
-  The default labels **Correct** and **Incorrect** are displayed in the
-  learner's requested language. If you provide custom labels, they are
-  displayed to all users as you configure them and are not translated into
-  different languages.
+  **정답** 과 **오답** 기본 라벨은 학습자의 언어로 보이게 된다. 그러나 사용자 지정 라벨을 사용하면 모두 설정 언어로 보이게 되며 번역되지 않는다.
 
-Customize Feedback Labels in the Simple Editor
+간편 편집기에서 사용자 지정 피드백 라벨 설정하기
 ***********************************************
 
-In the :ref:`simple editor<Simple Editor>`, you configure custom feedback
-labels with the following syntax.
+:ref:`simple editor<Simple Editor>` 에서 다음과 같이 사용자 지정 피드백 라벨을 설정한다.
 
 ::
 
   ( ) Answer {{Label:: Feedback for learners who select this answer.}}
 
-For example, the following feedback is configured to use a custom label.
+다음 예제는 사용자 지정 피드백 라벨을 사용하고 있다.
 
 ::
 
@@ -347,11 +283,10 @@ For example, the following feedback is configured to use a custom label.
   vegetable. However, because a tomato is the fertilized ovary of a tomato
   plant and contains seeds, it is a fruit.}}
 
-Customize Feedback Labels in the Advanced Editor
+고급 편집기에서 사용자 지정 피드백 라벨 사용하기
 *************************************************
 
-In the :ref:`advanced editor<Advanced Editor>`, you configure custom feedback
-labels with the following syntax.
+:ref:`advanced editor<Advanced Editor>` 에서 다음과 같이 사용자 지정 피드백 라벨을 설정한다.
 
 .. code-block:: xml
 
@@ -361,7 +296,7 @@ labels with the following syntax.
       </choicehint>
     </choice>
 
-For example, the following feedback is configured to use a custom label.
+다음 예제는 사용자 지정 피드백 라벨을 사용하고 있다.
 
 .. code-block:: xml
 
@@ -377,71 +312,50 @@ For example, the following feedback is configured to use a custom label.
 .. _Use Hints in a Multiple Choice Problem:
 
 ********************************************
-Using Hints in a Multiple Choice Problem
+선다형 문제에서 힌트 사용하기
 ********************************************
 
-You can add hints in a multiple choice problem, using the simple editor
-or the advanced editor. For an overview of hints in problems, see
-:ref:`Adding Feedback and Hints to a Problem`.
+간편 편집기와 고급 편집기를 사용해 선다형 문제에 힌트를 추가할 수 있다. 자세한 사항은 :ref:`Adding Feedback and Hints to a Problem` 를 참고하면 된다.
+
 
 .. include:: ../../../shared/exercises_tools/Subsection_configure_hints.rst
 
 .. _Awarding Partial Credit in a Multiple Choice Problem:
 
 ****************************************************
-Awarding Partial Credit in a Multiple Choice Problem
+선다형 문제에서 부분점수 사용하기
 ****************************************************
 
-You can configure a multiple choice problem so that specific incorrect answers
-award learners partial credit for the problem. You must use the `advanced
-editor <Use the Advanced Editor to Edit a Multiple Choice Problem>`_ to
-configure partial credit.
+선다형 문제에서 특정 오답을 골랐을 때 학습자에게 부분점수를 부여할 수 있다. 반드시 `advanced editor <Use the Advanced Editor to Edit a Multiple Choice Problem>`_ 를 사용해야 한다.  
 
 .. only:: Partners
 
  .. note::
-    Support for partial credit problems in courses on edx.org and edX
-    Edge is provisional. Ensure that you test such problems thoroughly before
-    releasing them to learners. For more information, contact your edX partner
-    manager.
+    테스트서버와 kmooc.kr에서 부분점수를 사용하는 기능은 아직 개발 중이다. 사용 전에 확실히 테스트를 거쳐야 한다. 자세한 사항은 K-MOOC 운영팀에게 문의하면 된다.
 
-In the following example, the learner selected a wrong answer and received
-partial credit.
+다음 예제에서 학습자는 오답을 선택했으며 부분점수를 받았다.
 
 .. image:: ../../../shared/images/partial_credit_multiple_choice.png
  :alt: A multiple choice problem with partial credit for an incorrect answer.
  :width: 600
 
-You can specify what percentage of the points for the problem a learner
-receives for an incorrect answer. If you do not specify the percentage, the
-system uses the default of 50%.
+오답에 대해 몇%의 점수를 얻게 되는지 설정할 수 있다. 만약 %를 설정하지 않으면 기본적으로 50%를 부여한다.
 
-For an overview of partial credit in problems, see
-:ref:`Awarding Partial Credit for a Problem`.
+자세한 사항은 :ref:`Awarding Partial Credit for a Problem` 를 참고하면 된다.
 
 =================================================================
-Configure a Multiple Choice Problem to Award Partial Credit
+선다형 문제에서 부분점수 설정하기
 =================================================================
 
-To configure a multiple choice problem to award partial credit for a specific
-answer, you add the following attributes to the problem XML.
+선다형 문제에서 부분점수를 설정하려면 문제 XML에 다음과 같은 속성을 추가해야 한다.
 
-* Add the ``partial_credit="points"`` attribute to the
-  ``<multiplechoiceresponse>`` element.
+* ``<multiplechoiceresponse>`` 요소에  ``partial_credit="points"`` 속성을 추가한다.
 
-* For each answer that you intend to award partial credit, add the
-  ``correct="partial"`` attribute to the ``<choice>`` element.
+* 부분점수를 부여할 각 보기마다  ``<choice>`` 요소에  ``correct="partial"`` 속성을 추가한다.
 
-* Optionally, define the percentage of the problem score to award for each
-  answer. In the ``point_values`` attribute for the ``<choice>`` element, enter
-  the value as a decimal. For example, you can add ``point_value="0.25"`` to
-  award 25% of the points to learners who select that answer. The percentage
-  awarded should reflect how close the learner has gotten to a full
-  understanding of the concept. If you do not add the ``point_value``
-  attribute, the system uses a value of 50%.
+* 선택사항으로 각 보기마다 점수의 몇 %를 부여할지 선택할 수 있다.  ``<choice>`` 요소의 ``point_values`` 속성에서 십진법 숫자를 입력한다. 예를 들어 25%를 부여하기 위해 ``point_value="0.25"`` 를 추가할 수 있다. 부여되는 점수는 정답에 얼마나 근접했는지에 따라 다를 것이다. 만약  ``point_value`` 속성을 추가하지 않으면 기본적으로 50%의 점수를 부여한다.
 
-For example, the following XML shows the multiple choice problem template
-updated to provide partial credit for the first answer.
+다음 예제의 XML은 선다형 문제 템플릿에서 부분 점수 설정을 끝낸 것이다.
 
 .. code-block:: xml
 
@@ -459,11 +373,11 @@ updated to provide partial credit for the first answer.
 .. _Multiple Choice Problem XML:
 
 ******************************
-Multiple Choice Problem XML
+선다형 문제 XML
 ******************************
 
 ================
-Template
+템플릿
 ================
 
 .. code-block:: xml
@@ -500,58 +414,55 @@ Template
   </problem>
 
 ================
-Tags
+태그
 ================
 
-* ``<multiplechoiceresponse>`` (required): Indicates that the problem is a
-  multiple choice problem.
+* ``<multiplechoiceresponse>`` (필수): 해당 문제가 선다형 문제임을 나타낸다.
 
-* ``<choicegroup>`` (required): Indicates the beginning of the list of
-  options.
+* ``<choicegroup>`` (필수): 선택지 목록의 시작을 나타낸다.
 
-* ``<choice>`` (required): Lists an answer option.
+* ``<choice>`` (필수): 선택지를 나열한다.
 
-* ``<demandhint>`` (optional): Specifies hints for the learner.
+* ``<demandhint>`` (선택): 힌트를 나타낸다.
 
 **Tag:** ``<multiplechoiceresponse>``
 
-Indicates that the problem is a multiple choice problem.
+해당 문제가 선다형 문제임을 나타낸다.
 
-  Attributes
+  속성
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - partial_credit (optional)
-       - Specifies that the problem can award partial credit. If used, must be
-         set to "points".
+     * - 속성
+       - 설명
+     * - 부분점수 (선택)
+       - 부분점수를 나타낸다. 사용될 경우 “점수(points)”로 설정되어야 한다.
 
   (none)
 
   Children
 
   * ``<choicegroup>``
-  * All standard HTML tags (can be used to format text).
+  * 모든 표준 HTML 태그 (텍스트 포맷에 사용) .
 
 **Tag:** ``<choicegroup>``
 
-Indicates the beginning of the list of options.
+선택지 목록의 시작을 나타낸다.
 
-  Attributes
+  속성
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - label (required)
-       - Specifies the name of the response field.
-     * - type (required)
-       - Must be set to "MultipleChoice".
+     * - 속성
+       - 설명
+     * - 라벨  (필수)
+       - 답변 필드의 명칭을 지정한다.
+     * - 유형 (필수)
+       - 반드시 “선다형”으로 설정해야 한다.
 
   Children
 
@@ -561,32 +472,27 @@ Indicates the beginning of the list of options.
 
 Lists an answer option.
 
-  Attributes
+  속성
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - correct (at least one required)
-       - Indicates a correct, incorrect, or partially correct answer.
+     * - 속성
+       - 설명
+     * - 정답 (최소 1개 필수)
+       - 정답 혹은 오답임을 나타낸다.
 
-         * When set to "true", the choice is a correct answer.
-         * When set to "false", the choice is an incorrect answer.
-         * When set to "partial", the learner receives partial credit for
-           selecting the answer.
+         * “true”로 지정할 경우 해당 선택지는 정답이 된다.
+         * “false”로 지정할 경우 해당 선택지는 오답이 된다.
+         * “부분(parital)”으로 지정할 경우 해당 선택지는 부분점수를 주게 된다.
 
-         You can specify more than one correct or partially correct answer,
-         but learners can select only once choice to submit as their answer.
+         하나 이상의 정답이나 부분 정답을 지정할 수 있지만 학습자는 정답으로 하나의 보기만 선택할 수 있다.
 
-     * - point_value
-       - When ``correct="partial"``, indicates the percentage, as a decimal, of
-         the points the learner receives for selecting this option. If
-         ``point_value`` is not specified for a partial credit answer, 50% is
-         used by default.
-     * - name
-       - A unique name that is used internally to refer to the choice.
+     * - 점수 값
+       - ``correct="partial"`` 는 십진법으로 학습자가 얻게 될 부분점수를 나타낸다. 만약 ``point_value`` 가 설정되지 않으면 50%를 부분점수로 부여받게 된다.
+     * - 명칭
+       - 최종 사용자가 선택지를 지칭하는 데 사용하는 고유한 명칭이다.
 
   Children
 
@@ -594,11 +500,11 @@ Lists an answer option.
 
 **Tag:** ``<choicehint>``
 
-Specifies a hint for the answer.
+정답에 대한 힌트를 나타낸다.
 
 **Tag:** ``<demandhint>``
 
-Specifies hints available to the learner.
+학습자가 보게 될 힌트를 나타낸다.
 
   Children
 
@@ -606,7 +512,7 @@ Specifies hints available to the learner.
 
 **Tag:** ``<hint>``
 
-Specifies a hint available to the learner.
+학습자가 보게 될 힌트를 나타낸다.
 
   Children
 
@@ -615,13 +521,10 @@ Specifies a hint available to the learner.
 .. _Multiple Choice Advanced Options:
 
 *********************************************
-Advanced Options for Multiple Choice Problems
+선다형 문제 고급 선택 조건
 *********************************************
 
-Multiple choice problems have several advanced options. You can change the
-order of answers in the problem, include explanations that appear when a
-learner selects a specific incorrect answer, or present a random set of
-choices to each learner. For more information, see the following sections.
+선다형 문제에는 다양한 고급 선택 조건이 있다. 문제 안에 있는 선택지의 순서를 변경할 수 있고 학습자가 특정 오답을 선택할 경우 나타나는 설명을 삽입하거나 학습자별로 선택지 집합을 무작위로 제시할 수도 있다. 보다 자세한 정보가 필요할 경우 다음을 참조한다.
 
 * :ref:`Shuffle Answers in a Multiple Choice Problem`
 * :ref:`Targeted Feedback in a Multiple Choice Problem`
@@ -630,13 +533,12 @@ choices to each learner. For more information, see the following sections.
 .. _Shuffle Answers in a Multiple Choice Problem:
 
 =============================================
-Shuffle Answers in a Multiple Choice Problem
+선다형 문제의 선택지 순서 변경하기
 =============================================
 
-Optionally, you can configure a multiple choice problem so that it shuffles
-the order of possible answers.
+선택 조건의 하나로, 선다형 문제의 구성을 변경하여 선택지 순서를 바꿀 수 있다.
 
-For example, one view of a geography problem could be as follows.
+가령, 어떤 학습자가 보는 문제 화면은 다음과 같을 수 있다.
 
 ::
 
@@ -647,8 +549,7 @@ For example, one view of a geography problem could be as follows.
  ( ) The iPod
  ( ) The vegetable peeler
 
-Another view of the same problem, for a different learner or for the same
-learner on a subsequent view of the unit, could be as follows.
+동일한 문제에 대하여 다른 학습자 또는 위의 학습자가 보는 문제 화면을 다음과 같이 구성할 수 있다.
 
 ::
 
@@ -659,23 +560,17 @@ learner on a subsequent view of the unit, could be as follows.
  ( ) The vegetable peeler
  ( ) Napster
 
-You can also have some answers shuffled, but not others. For example, you might
-want to include the answer "All of the Above" and have it always appear at the
-end of the list, but shuffle the other answers.
+또한, 선택지 중 일부의 순서를 바꾸되 나머지는 그대로 둘 수도 있다. 이를테면 원래의 선택지 순서를 그대로 유지한 채 선택지 가장 아래에 “위의 모든 답(All of the Above)”이라는 항목을 둘 수 있다.
 
-You can configure the problem to shuffle answers using the simple editor or
-advanced editor. To shuffle the answers, you also edit the problem to set
-**Randomization** to a value other than **Never**. For more information, see
-:ref:`Randomization`.
+선택지 순서 변경과 관련한 문제 구성은 간편 편집기 또는 고급 편집기 로 가능하다. 또한 무작위 변수를 사용 안함이 아닌 다른 값으로 설정해야 한다. 자세한 사항은 :ref:`Randomization` 를 참고하면 된다. 
 
-Use the Simple Editor to Shuffle Answers
+
+간편 편집기로 선택지 순서 변경하기
 *********************************************
 
-You can configure the problem to shuffle answers in the
-:ref:`simple editor<Simple Editor>`.
+:ref:`simple editor<Simple Editor>` 에서 선택지 순서를 변경할 수 있다.
 
-For example, the following text defines a multiple choice problem before
-shuffling is enabled. The ``(x)`` indicates the correct answer.
+예를 들어, 선택지 순서 변경에 앞서 다음 텍스트로 정의되는 선다형 문제가 있다고 가정한다. 이때,  ``(x)`` 는 정답을 의미한다.
 
 ::
 
@@ -685,8 +580,7 @@ shuffling is enabled. The ``(x)`` indicates the correct answer.
      (x) The iPod
      ( ) The vegetable peeler
 
-To add shuffling to this problem, add ``!`` between the parentheses of the
-first answer.
+이 문제의 선택지 순서를 바꾸려면 첫 번째 선택지의 괄호 사이에 느낌표 ``!`` 를 입력한다.
 
 ::
 
@@ -696,8 +590,7 @@ first answer.
      (x) The iPod
      ( ) The vegetable peeler
 
-To fix an answer's location in a shuffled list, add ``@`` between the
-parentheses of that answer.
+선택지 중 하나의 위치를 고정하려면 해당 선택지의 괄호 사이에 앳d ``@`` 을 삽입한다.
 
 ::
 
@@ -708,25 +601,20 @@ parentheses of that answer.
      ( ) The vegetable peeler
      (@) All of the above
 
-You can combine symbols within the parentheses as necessary. For example, to
-show the correct answer in a fixed location, you can use both ``x`` and ``@``.
+필요에 따라 복수의 기호를 삽입할 수 있다. 이를테면 정답의 위치를 고정하고자 하는 경우 다음과 같이 할 수 있다.
 
 ::
 
   (x@) The iPod
 
-When you complete problem setup in the simple editor, select **Edit** and then
-**Settings** to specify an option other than **Never** for the
-**Randomization** setting.
+간편 편집기에서 설정이 끝나면 **편집** 을 선택하고 **설정** 으로 들어가 **무작위** 설정을 **절대 안함** 이 아닌 다른 것임을 확인한다.
 
-Use the Advanced Editor to Shuffle Answers
+고급 편집기로 선택지 순서 변경하기
 *********************************************
 
-You can configure the problem to shuffle answers by editing XML in the
-:ref:`advanced editor<Advanced Editor>`.
+:ref:`advanced editor<Advanced Editor>` 의 XML을 통해 선택지 순서를 변경할 수 있다.
 
-For example, the following XML defines a multiple choice problem before
-shuffling is enabled.
+예를 들어, 선택지 순서 변경에 앞서 다음 XML로 선다형 문제를 정의할 수 있다.
 
 .. code-block:: xml
 
@@ -743,8 +631,7 @@ shuffling is enabled.
  </problem>
 
 
-To add shuffling to this problem, add ``shuffle="true"`` to the
-``<choicegroup>`` element.
+이 문제의 선택지 순서를 변경하려면 ``<choicegroup>``  에  ``shuffle="true"`` 를 추가한다.
 
 .. code-block:: xml
 
@@ -761,8 +648,7 @@ To add shuffling to this problem, add ``shuffle="true"`` to the
  </problem>
 
 
-To fix an answer's location in the list, add ``fixed="true"`` to the
-``choice`` element for the answer.
+선택지 가운데 하나의 위치를 고정하려면 해당 선택지에 해당하는 ``choice`` 에   ``fixed="true"`` 를 추가한다.
 
 .. code-block:: xml
 
@@ -779,44 +665,32 @@ To fix an answer's location in the list, add ``fixed="true"`` to the
   </multiplechoiceresponse>
  </problem>
 
-You can set value randomization as an attribute of the ``problem`` element, as
-shown in this example, or select **Edit** and then **Settings** to specify an
-option other than **Never** for the **Randomization** setting.
+예제와 같이 무작위 값을  ``problem`` 요소로 하거나 **편집** 아래 **설정** 을 들어가 **무작위 설정** 을 **절대 안함** 이 아님을 확인한다.
 
 .. _Targeted Feedback in a Multiple Choice Problem:
 
 ===============================================
-Targeted Feedback in a Multiple Choice Problem
+선별적 피드백을 제공하는 선다형 문제
 ===============================================
 
-You can configure a multiple choice problem so that explanations for incorrect
-answers are automatically shown to learners. You can use these explanations to
-guide learners towards the right answer. Therefore, targeted feedback is most
-useful for multiple choice problems for which learners are allowed multiple
-attempts.
+오답에 대한 설명을 학습자에게 자동 제시하여 학습자가 정답을 찾는 데 안내가 되도록 선다형 문제를 구성할 수 있다. 따라서, 학습자가 정답을 찾을 때까지 답을 반복적으로 선택할 수 있는 선다형 문제에서는 선별적 피드백이 가장 유용한다.
 
 
-Use the Advanced Editor to Configure Targeted Feedback
+고급 편집기로 선별적 피드백 구성하기
 ********************************************************
 
-You configure the problem to provide targeted feedback by editing XML in the
-:ref:`advanced editor<Advanced Editor>`.
+:ref:`advanced editor<Advanced Editor>` 의 XML을 통해 선별적 피드백을 제공하는 문제를 구성한다.
 
-Follow these XML guidelines.
+다음 XML 가이드라인을 따른다.
 
-* Add a ``targeted-feedback`` attribute to the ``<multiplechoiceresponse>``
-  element, with no value: ``<multiplechoiceresponse targeted-feedback="">``.
-* Add a ``<targetedfeedbackset>`` element before the ``<solution>`` element.
-* Within ``<targetedfeedbackset>``, add one or more ``<targetedfeedback>``
-  elements.
-* Within each ``<targetedfeedback>`` element, enter your explanation for the
-  incorrect answer in HTML as markup described below.
-* Connect the ``<targetedfeedback>`` element with a specific incorrect answer
-  by using the same ``explanation-id`` attribute value for each.
-* Use the ``<solution>`` element for the correct answer, with the same
-  ``explanation-id`` attribute value as the correct ``<choice>`` element.
+* ``<multiplechoiceresponse>`` 에  ``targeted-feedback`` 속성을 추가한다. 값은 주지 않는다.
+* ``<solution>`` 앞에 ``<targetedfeedbackset>`` 을 추가한다.
+* ``<targetedfeedbackset>`` 내부에  ``<targetedfeedback>`` 을 1개 이상 추가한다.
+* 아래의 설명과 같이 각 ``<targetedfeedback>`` 내부에 오답에 대한 설명을 HTML 마크업으로 입력한다.
+* 각 오답에 대한 동일한 ``explanation-id`` 속성값을 이용하여 ``<targetedfeedback>`` 을 해당 오답에 연결한다.
+* 정답에는  ``<solution>`` 을 이용한다. 이 때, 정답의  ``<choice>`` 와 동일한  ``explanation-id`` 속성값을 사용한다.
 
-For example, the XML for the multiple choice problem follows.
+이를테면 선다형 문제에 대한 XML은 다음과 같다.
 
 .. code-block:: xml
 
@@ -832,7 +706,7 @@ For example, the XML for the multiple choice problem follows.
    </multiplechoiceresponse>
    ...
 
-This is followed by XML that defines the targeted feedback.
+이 뒤에 선별적 피드백을 정의하는 XML이 온다.
 
 .. code-block:: xml
 
@@ -869,48 +743,29 @@ This is followed by XML that defines the targeted feedback.
 .. _Answer Pools in a Multiple Choice Problem:
 
 =============================================
-Answer Pools in a Multiple Choice Problem
+선택지 풀을 제공하는 선다형 문제
 =============================================
 
-You can configure a multiple choice problem so that a random subset of choices
-are shown to each learner. For example, you can add 10 possible choices to the
-problem, and each learner views a set of five choices.
+선택지를 무작위로 조합한 하위 집합을 각 학습자에게 제시하는 선다형 문제를 구성할 수 있다. 가령, 해당 선다형 문제에 잠재적 정답 10가지를 부여한 후 5개의 선택지로 구성한 집합 1개를 각 학습자에게 제시할 수 있다.
 
-The answer pool must have at least one correct answer. It can have more than
-one correct answer. In each set of choices shown to a learner, one correct
-answer is included. For example, you can configure two correct answers in the
-set of choices. One of the two correct answers is included in each set that a
-learner views.
+전체 선택지(선택지 풀) 중에는 반드시 최소 1가지의 정답이 있어야 하며 그 개수는 2개 이상일 수도 있다. 1명의 학습자에게 제시되는 각 선택지 집합에는 1개의 정답이 포함된다. 이를테면, 10개로 구성된 선택지 집합에 2개의 정답이 있도록 문제를 구성할 수 있다. 각 학습자에게 제공되는 선택지 각각에 이 2가지 정답 가운데 하나가 포함된다.
 
-Use the Advanced Editor to Configure Answer Pools
+고급 편집기로 선택지 풀 구성하기
 **************************************************
 
-You configure the problem to provide answer pools by editing XML in the
-:ref:`advanced editor<Advanced Editor>`.
+:ref:`advanced editor<Advanced Editor>` 의 XML을 통해 선택지 풀(answer pool)을 제공하는 문제를 구성한다.
 
-Follow these XML guidelines.
+다음 XML 지침을 따른다.
 
-* In the ``<choicegroup>`` element, add the ``answer-pool`` attribute, with
-  the numerical value indicating the number of possible answers in the set.
-  For example, ``<choicegroup answer-pool="4">``.
+* ``<choicegroup>`` 에서  ``answer-pool`` 속성을 부여한다. 이 때, 숫자로 된 값은 해당 선택지 집합에 포함된 선택지의 개수를 나타낸다. 이를테면  ``<choicegroup answer-pool="4">`` 과 같이 구성할 수 있다.
 
-* For each correct answer, to the ``<choice>`` element, add an ``explanation-
-  id`` attribute and value that maps to a solution. For example, ``<choice
-  correct="true" explanation-id="iPod">The iPod</choice>``.
+* 각 정답의  ``<choice>`` 에 ``explanation-id`` 속성과 풀이에 해당하는 값을 부여한다. 이를테면,  ``<choice correct="true" explanation-id="iPod">The iPod</choice>`` 와 같이 구성할 수 있다.
 
-* For each ``<solution>`` element, add an ``explanation-id`` attribute and
-  value that maps back to a correct answer. For example, ``<solution
-  explanation-id="iPod">``.
+* 각  ``<solution>`` 에  ``explanation-id`` 속성과 정답으로 되돌리는 값을 부여한다. 이를테면,  ``<solution  explanation-id="iPod">`` 와 같이 구성할 수 있다.
 
-.. note:: If the choices include only one correct answer, you do not have to
- use the ``explanation-id`` in either the ``choice`` or ``<solution>``
- element. You do still use the ``<solutionset>`` element to wrap the
- ``<solution>`` element.
+.. note:: 전체 선택지 가운데 정답이 단 1가지인 경우 ``choice`` 나  ``<solution>`` 에  ``explanation-id`` 속성을 부여할 필요가 없다. 그러나 이 경우에도  ``<solution>`` 을  끝내기 위해서  ``<solutionset>`` 속성을 부여해야 한다.
 
-For example, for the following multiple choice problem, a learner will see
-four choices. In each set, one of the choices will be one of the two correct
-choices. The explanation shown for the correct answer is the one with the same
-explanation ID.
+이를테면 다음 선다형 문제에서는 각 학습자에게 4가지 선택지로 구성된 선택지 집합이 제시되며 각 집합에 속한 선택지 가운데 1개가 전체 2가지 정답 가운데 하나가 된다. 정답에 표시되는 설명에는 동일한 설명 ID(explanation ID)가 부여된다.
 
 .. code-block:: xml
 

@@ -1,34 +1,30 @@
 .. _Circuit Schematic Builder:
 
 ##################################
-Circuit Schematic Builder Problem
+회로도 문제
 ##################################
 
-.. note:: EdX offers provisional support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 부분적 지원을 제공함.
 
-In circuit schematic builder problems, students can arrange circuit elements
-such as voltage sources, capacitors, resistors, and MOSFETs on an interactive
-grid. They then submit a DC, AC, or transient analysis of their circuit to the
-system for grading.
+회로도 문제에서 학습자는 인터랙티브 그리드(interactive grid) 위에 전압, 축전기(capacitors), 저항, MOSFETs 등 회로 요소를 원하는 대로 이동하여 나열할 수 있다. 그런 다음, 채점을 위해 회로에 대한 DC, AC, 또는 과도상태 분석 결과를 시스템에 제출한다. 
 
 .. image:: ../../../shared/images/CircuitSchematicExample.png
  :alt: Image of a circuit schematic builder.
 
 *********************************************
-Create a Circuit Schematic Builder Problem
+회로도 문제 만들기
 *********************************************
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Problem**, and then select **Advanced**.
-#. Select **Circuit Schematic Builder**.
-#. In the component that appears, select **Edit**.
-#. In the component editor, replace the example code with your own code.
-#. Select **Save**.
+#. 문제를 만들려는 학습활동에서 **신규 구성 요소 추가** 에서 **문제** 를 클릭한 다음 **고급 탭** 을 클릭한다.
+#. **회로도 작성 도구** 를 클릭한다.
+#. 표시되는 구성 요소에서 **편집** 을 클릭한다.
+#. **구성 요소 편집기** 에서 예제 코드를 본인의 코드로 대체한다.
+#. **저장** 을 클릭한다.
 
-**Problem Code**
 
-To create the problem in the image above, paste the following code into the
-advanced editor.
+**문제 코드**
+
+위의 이미지에서 문제를 만들려면, 다음의 코드를 고급 편집기로 붙여 넣는다.
 
 .. code-block:: xml
 

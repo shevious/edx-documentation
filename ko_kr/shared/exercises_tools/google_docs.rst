@@ -1,57 +1,47 @@
 .. _Google Drive Files Tool:
 
 ########################
-Google Drive Files Tool
+구글 드라이브 파일 도구
 ########################
 
-.. note:: EdX offers full support for this tool.
+.. note:: K-MOOC은 이 도구에 대해 전체 지원을 제공한다.
 
-This topic describes how to embed Google Drive files, such as documents,
-spreadsheets, and images, in your course.
+이 장에서는 강좌에 문서, 스프레드시트 및 이미지 등의 구글 드라이브 파일을 포함하는 방법을 설명한다.
 
 .. contents::
    :local:
    :depth: 2
 
-Before you make content from an external site available through your course, be
-sure to review the content to ensure that it is accessible to people with
-disabilities. For more information, see :ref:`Accessibility Best Practices for
-Course Content Development`.
+외부 사이트의 콘텐츠를 강좌에 사용하기 전에 반드시 장애가 있는 학습자에게 제공할 수 있는지 확인해야 한다. 자세한 사항은 :ref:`Accessibility Best Practices for Course Content Development` 를 참고하면 된다.
 
-You can also use :ref:`Google calendars<Google Calendar Tool>` in the course
-body. For more information, see :ref:`Google Calendar Tool`.
+또한 강좌 내용에  :ref:`Google calendars<Google Calendar Tool>` 를 사용할 수 있다. 더 자세한 내용은 :ref:`Google Calendar Tool` 를 참조하도록 한다.
 
-.. note:: Google services are not available in some regions and countries. If
-  Google services are not available in a learner's area, the learner might see
-  an "image unavailable" message in the place of the Google Drive file or
-  calendar. EdX strongly suggests that you provide alternative resources for
-  learners in these areas.
+.. note:: 구글은 일부 지역 및 국가에서 사용이 불가능하다. 만약 학습자의 지역에서 구글을 사용할 수 없다면 구글 드라이브 파일이나 구글 캘린더 자리에 “이미지 사용 불가” 메시지가 나올 수도 있다. K-MOOC은 이런 지역의 학습자를 위해 대체 방안을 마련할 것을 강력하게 권고한다.
+
 
 *********
-Overview
+개관
 *********
 
-You can embed a Google Drive file in your course so that learners see the file
-in the course body. For example, you can share a Google spreadsheet with
-learners.
+학습자 강좌 내용에서 파일을 볼 수 있도록 강좌에 구글 드라이브 파일을 포함할 수 있다. 예를 들어, 학습자와 구글 스프레드시트를 공유할 수 있다.
 
 .. image:: ../../../shared/images/google-spreadsheet.png
   :width: 600
   :alt: A Google spreadsheet in the course body.
 
-You can embed the following types of Google Drive files.
+다음과 같은 유형의 구글 드라이브 파일을 포함할 수 있다.
 
-* Google Docs (text documents)
-* Google Drawings (images)
-* Google Forms (forms or surveys)
-* Google Slides (presentations)
-* Google Sheets (spreadsheets)
+* 구글 문서 도구 (텍스트 문서)
+* 구글 그림 (이미지)
+* 구글 양식 (양식 또는 설문 조사)
+* 구글 슬라이드 (프레젠테이션)
+* 구글 시트 (스프레드시트)
 
 ********************************************
-Embedding a Google Drive File in Your Course
+강좌에 구글 드라이브 파일 포함하기
 ********************************************
 
-To embed a Google Drive file in your course, follow these steps.
+강좌에 구글 드라이브 파일을 포함하려면 다음 3 단계가 있다: 구글 드라이브 가져올 파일 소스 코드.
 
 .. contents::
    :local:
@@ -60,30 +50,23 @@ To embed a Google Drive file in your course, follow these steps.
 .. _Enable the Google Drive Files Tool:
 
 ==================================================
-Enable the Google Drive Files Tool
+구글 드라이브 파일 도구 설정하기
 ==================================================
 
-Before you can add Google Drive files to your course, you must enable the
-Google Drive tool in Studio or OLX.
+강좌에 구글 드라이브 파일을 추가하기 전에 반드시 Studio나 OLX에서 구글 드라이브 도구를 설정해야 한다.
 
-To enable the Google Drive tool in Studio, you add the ``"google-document"``
-key to the **Advanced Module List** on the **Advanced Settings** page. For
-more information, see :ref:`Enable Additional Exercises and Tools`.
+Studio에서 구글 드라이브 도구를 설정하기 위해 ``"google-document"`` 키를 **고급 설정** 페이지의 **고급 모듈 목록** 에 추가해야 한다. 자세한 사항은 :ref:`Enable Additional Exercises and Tools` 를 참고하면 된다.
 
 Alternatively, you can use OLX to enable the Google Drive tool.
 
 .. _Enable Google Drive Files in OLX:
 
-Enable Google Drive Files in OLX
+OLX에서 구글 드라이브 파일 활용하기
 ********************************
 
-To enable Google Drive files in your course, you edit the XML file that
-defines the course structure. You locate the ``course`` element's
-``advanced-modules`` attribute, and add the string ``google-document``
-to it.
+강좌에서 구글 드라이브 파일을 활용하려면, 강좌 구조를 정의하는 XML 파일을 편집할 수 있다. 당신은  ``course`` (강좌) 요소의 ``advanced-modules`` (고급 모듈) 속성을 찾아서, 그곳에 문자열 ``google-document`` 를 추가한다.
 
-For example, the following XML code enables Google Drive files in a course. It
-also enables Google calendars.
+예를 들어, 다음 XML 코드는 강좌에서 구글 드라이브 파일을 활용할 수 있게 한다. 또한 구글 캘린더를 활용할 수 있게 한다.
 
 .. code-block:: xml
 
@@ -93,105 +76,87 @@ also enables Google calendars.
       ...
   </course>
 
-For more information, see :ref:`olx:OLX Course Building Blocks` in the
-*EdX Open Learning XML Guide*.
+더 자세한 사항은 :ref:`olx:OLX Course Building Blocks` 를 참고하면 된다.
 
 .. _Obtain the Google Drive File Embed Code:
 
 =======================================================
-Publish the Google Drive File and Obtain the Embed Code
+구글 드라이브 파일 게시하기 및 포함된 소스 코드 얻기
 =======================================================
 
-Before you can add a Google Drive file to your course, you must publish the
-file to the web and obtain the embed code for the file.
+구글 드라이브 파일을 강좌에 추가하기 전에, 웹에 그 파일을 먼저 게시해야 하고 파일에 대한 소스 코드를 얻어야 한다.
 
 .. important::
- The task described in this section relies on the use of third-party software.
- Because the software is subject to change by its owner, the steps provided
- here are intended as guidelines and not as an exact procedure.
+ 이 주제에 설명된 작업은 제 3 자 소프트웨어의 사용에 의존한다. 이 소프트웨어는 소유자에 의해 변경될 수 있기 때문에, 여기에 제공된 단계들은 지침일 뿐이며, 정확한 절차를 위한 것이 아니다.
 
-#. Open the Google Drive file.
-#. From the **File** menu, select **Publish to the web**.
+#. 구글 드라이브 파일을 연다.
+#. **파일** 메뉴에서 **웹에 게시하기** 를 선택한다.
 
    .. image:: ../../../shared/images/google-publish-to-web.png
     :alt: The Google Drive file Publish to the web dialog box.
 
-#. Select **Publish**, and then select **OK** to confirm the action.
-#. Select the **Embed** tab.
+#. **게시** 를 클릭한 다음, 동작을 확인하려면 **확인** 을 선택한다.
+#. **소스** 탭을 클릭한다
 
    .. image:: ../../../shared/images/google-embed.png
     :alt: The Google Drive file Publish to web Embed tab
 
-#. Copy the complete string in the **Embed** field, including the ``<iframe>``
-   tags.
+#. **소스** 입력 필드에  ``<iframe>`` 태그를 포함한 전체 문자열을 복사한다.
 
    .. note::
-    Google images do not have an ``<iframe>`` tag. To embed an image, you copy
-    the complete ``img`` tag.
+    구글 이미지는  ``<iframe>`` 태그가 없다. 이미지를 포함하려면, 완전한  ``img`` 태그를 복사하도록 한다.
 
-   You use that string to configure the Google Drive file component.
+   이 문자열을 사용하여 구글 드라이브 파일 구성 요소를 설정할 수 있다.
 
 .. _Add a Google Drive File to Your Course:
 
 ========================================
-Add a Google Drive File to Your Course
+구글 드라이브 파일을 강좌에 추가하기
 ========================================
 
-To add a Google Drive file in the course body, you create an advanced
-component in Studio or create a Google Document XBlock in OLX.
+강좌 내용에 구글 드라이브 파일을 추가 하려면, Studio에서 고급 구성요소를 만들거나 또는 OLX에서 Google 문서 Xblock를 만든다.
 
 .. _Add a Google Drive File Component in edX Studio:
 
-Add a Google Drive File Component in edX Studio
+스튜디오에서 구글 드라이브 파일 구성 요소 추가하기    
 ******************************************************
 
-Ensure you :ref:`enable Google Drive files<Enable the Google Drive Files Tool>`
-before you add the component.
+구성요소를 추가하기 전에,  :ref:`enable Google Drive files<Enable the Google Drive Files Tool>` 하는지 확인한다.
 
-To add a Google Drive file component, follow these steps.
+구글 드라이브 파일 구성 요소를 추가 하려면.
 
-#. On the Course Outline page, open the unit where you want to add the Google
-   Drive component.
+#. 강좌 개요 페이지에서, 추가 하려는 구글 드라이브 구성요소가 있는 학습활동을 연다.
 
-#. Under **Add New Component**, select **Advanced**, and then select **Google
-   Document**.
+#. **신규 구성요소 추가** 에서, **고급** 을 클릭하고 **구글 문서** 를 선택한다.
 
-   The new component is added to the unit, with the default Google presentation
-   embedded.
+   새 구성 요소는 포함된 기본 구글 프레젠테이션 과 함께 학습활동에 추가된다.
 
    .. image:: ../../../shared/images/google-document-studio.png
     :alt: The Google Drive file component in a unit page
 
-#. In the new component, select **Edit**.
+#. 신규 구성요소에서 **편집** 을 선택한다.
 
    .. image:: ../../../shared/images/google-document-edit-studio.png
     :alt: The Google Drive file editor.
 
-#. In the **Display Name** field, enter the name for the component.
+#. **표시 이름** 입력 필드에, 구성요소의 이름을 입력한다.
 
-#. In the **Embed Code** field, paste the embed code that you copied in the
-   `Obtain the Google Drive File Embed Code`_ task.
+#. **소스 코드** 입력 필드에,  `Obtain the Google Drive File Embed Code`_  작업에서 복사한 소스 코드를 붙여 넣는다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-You can then :ref:`Preview Course Content` to see how the unit with the Google
-drive file will appear to learners.
+그런 다음 구글 드라이브 파일이 있는 학습활동이 학습자에게 어떻게 표시되는지 보기 위해  :ref:`Preview Course Content` 를 할 수 있다.
 
 .. _Add a Google Drive File XBlock in OLX:
 
-Add a Google Drive File XBlock in OLX
+OLX에서 구글 드라이브 파일 XBlock 추가하기
 *******************************************
 
-To add a Google Drive file XBlock in OLX, you create the
-``google-document`` element. You can embed the ``google-document``
-element in the ``vertical`` element, or you can create the
-``google-document`` element as a stand-alone file that you reference
-in the vertical.
+OLX에서 구글 드라이브 파일 XBlock을 추가하려면, ``google-document`` (구글 문서) 요소를 만든다. ``vertical`` (수직) 요소에 ``google-document`` (구글 문서) 요소를 포함시킬 수 있거나 또는 ``vertical`` (수직) 에서 참조하는 독립 실행형 파일로써 ``google-document`` (구글 문서) 요소를 만들 수 있다.
 
-For more information, see :ref:`olx:OLX Course Building Blocks` in the
-*EdX Open Learning XML Guide*.
+더 자세한 내용은  :ref:`olx:OLX Course Building Blocks` 를 참조하도록 한다.
 
-For example:
+예를 들면:
 
 .. code-block:: xml
 
@@ -201,19 +166,14 @@ For example:
     ?key=0AuZ_5O2JZpH5dGVUVDNGUE05aTFNcEl2Z0ZuTUNmWUE&amp;output=html&amp;widge
     t=true&quot;&gt;&lt;/iframe&gt;" display_name="Google Document"/>
 
-The value of the ``embed_code`` attribute is the embed code you copied in the
-`Obtain the Google Drive File Embed Code`_ task.
+ ``embed_code`` 속성의 값은 `Obtain the Google Drive File Embed Code`_  작업에서 복사한 소스 코드이다.
 
 .. note::
-  The edX Learning Management System sets the height and width values for
-  Google Drive files. If you add these attributes, the LMS overrides your
-  changes.
+  K-MOOC 학습 관리 시스템은 구글 드라이브 파일에 대한 높이 및 너비 값을 설정한다. 이러한 속성을 추가하면, LMS는 값을 무시한다.
 
 **************************
-Editing Google Drive Files
+구글 드라이브 파일 변경하기
 **************************
 
-When you edit and save a Google Drive file that is embedded in your course,
-learners see the updates immediately. You make changes to files with the
-Google user interface. You do not need to edit the Google Document component.
+강좌에 포함된 구글 드라이브 파일을 변경하고 저장하는 경우, 학습자는 즉시 업데이트를 볼 수 있게 된다. 구글 사용자 인터페이스를 가지고 파일을 변경한다. 구글 문서 구성요소를 편집할 필요는 없다.
 

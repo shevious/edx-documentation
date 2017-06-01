@@ -1,92 +1,56 @@
 .. _Setting Details About Your Course:
 
 ######################################################
-Setting Details About Your Course
+강좌 세부사항 설정하기
 ######################################################
 
-This topic describes how to set details about your course in Studio. The
-details you set determine the information that learners see about the course on
-their dashboards and on the course **About** page. For more information,
-see :ref:`SFD Dashboard Settings Profile`.
-
-.. only:: Open_edX
-
-  You configure these course details in Studio.
-
-.. only:: Partners
-
-  For courses running on edX Edge, you configure these course details in
-  Studio. For courses running on edx.org, you work directly with your partner
-  manager to configure some of these course details.
+강좌의 세부사항은 Studio에서 설정할 수 있다. 학습자는 내강의실과 강좌 소개 페이지에서 상세정보를 볼 수 있다. 자세한 사항은 :ref:`SFD Dashboard Settings Profile` 을 참고하면 된다.
 
 .. contents::
   :local:
   :depth: 1
 
-For information about setting important dates for the course, see
-:ref:`Scheduling Your Course`.
+강좌의 주요 일자 설정에 관해선 :ref:`Scheduling Your Course` 를 참고하면 된다.
 
-For information about setting the licensing for the course, see
-:ref:`Licensing a Course`.
+강좌 라이센스에 관해선 :ref:`Licensing a Course` 라이센스를 참고하면 된다.
+
 
 .. _The Learner Dashboard:
 
 ***********************************
-The Learner Dashboard
+내 강의실(학습자 대시보드)
 ***********************************
 
-After a learner enrolls in a course, the course is listed on that learner's
-dashboard. From the dashboard, a learner can open a course
-that has started. If the course has not started, or has already ended, the
-dashboard shows the start or end date.
+학습자가 강좌 수강신청을 하면 그 강좌는 내 강의실에 나타나며, 학습자들은 신청한 강좌를 확인할 수 있다. 
+아직 개강 전이거나 종강 후라면 대시보드는 개강일. 또는 종강일이 표시된다.
+
 
 .. image:: ../../../shared/images/dashboard-course-start-and-end.png
  :width: 800
  :alt: An image of two courses in the dashboard, with the start dates and
      times.
 
-For more information, see :ref:`View Start and End Dates`.
+자세한 사항은 :ref:`View Start and End Dates` 를 참고하면 된다.
 
 .. _The Course About Page:
 
 ***********************************
-The Course About Page
+강좌 소개 페이지
 ***********************************
 
-The course **About** page, sometimes called the course summary page, provides
-information about your course to learners. In addition to the course
-:ref:`start and end dates<Scheduling Your Course>` and an overview of course
-objectives, the **About** page can include information such as a course
-description with course prerequisites, requirements, and team biographies.
-Learners can see the **About** page before they enroll in the course, and
-might decide to enroll based on the content of the page.
+학습자에게 필요한 대부분의 정보는 강좌 요약 페이지라고 할 수 있는 강좌 소개 페이지에 나와 있다. 
+이 페이지에서 학습자는 강좌 목표, :ref:`start and end dates<Scheduling Your Course>` , 주간 학습 권장 시간, 강좌 운영팀 등에 대한 정보를 확인할 수 있다. 
+학습자는 수강신청을 하기 전에 강좌 소개 페이지를 볼 수 있으며, 이 내용을 토대로 수강신청 여부를 결정할 수 있다.
+
 
 .. image:: ../../../shared/images/about_page.png
  :alt: An image of the course About page.
  :width: 600
 
-.. only:: Open_edX
-
-  If the CourseTalk widget is enabled for your instance of the Open edX
-  platform, the **About** page for every course also includes the CourseTalk
-  widget. Learners who have enrolled in your course use this widget to write
-  reviews of your course on the **Home** page in the LMS. These reviews are
-  then visible on the course **About** page. For more information, see
-  :ref:`installation:Add CourseTalk`.
 
 ===========================================
-Adding Information to the Course About Page
+강좌 소개 페이지에 정보 추가하기
 ===========================================
-
-.. only:: Open_edX
-
-  You configure the contents of this page in Studio.
-
-.. only:: Partners
-
-  For courses running on edX Edge, you configure the contents of this page in
-  Studio, as described in this topic. For courses running on edx.org, you work
-  directly with your partner manager to configure the contents of this page.
 
 
 .. contents::
@@ -95,12 +59,10 @@ Adding Information to the Course About Page
 
 .. _Describe Your Course:
 
-Describe Your Course
+강좌 안내하기
 *********************
 
-Learners see the description of your course on the course **About** page. For
-example, the course description is circled in the following course **About**
-page.
+학습자는 강좌 소개 페이지에서 강좌에 대한 상세정보를 확인할 수 있다.
 
 .. image:: ../../../shared/images/about-page-course-description.png
  :alt: A course About page with the description circled.
@@ -108,262 +70,136 @@ page.
 
 .. only:: Partners
 
-  .. note:: For courses running on edx.org, you must communicate the course
-   description to your edX partner manager to ensure that the information
-   on the course **About** page is accurate.
+  .. note:: Kmooc.kr 의 강좌인 경우 K-MOOC관리자와 논의하여 소개 페이지에 기술되어 있는 정보가 정확한지 확인하여야 한다
 
-Given the diversity of online learners, be sure to review your course
-description to ensure that it clearly communicates the target audience, level,
-and prerequisites for your course. Use concrete, unambiguous phrasing, such as
-a prerequisite of "understand eigenvalue decomposition" rather than
-"intermediate linear algebra".
+온라인 학습자의 다양성을 고려하여 강좌 대상, 수준 및 선수 학습 수준에 대한 설명을 명확하게 작성해야 한다. 예를 들어 “중급 선형 대수학(intermediate linear algebra)” 대신 “고유값 분해 이해(understand eigenvalue decomposition)”와 같은 구체적이고 모호하지 않은 용어를 사용해야 한다. 
 
-To provide a description for your course, follow these steps.
 
-#. From the **Settings** menu, select **Schedule & Details**.
+강좌 설명을 제공하기 위한 방법은 다음과 같다.
 
-#. Scroll down to the **Introducing Your Course** section, then locate the
-   **Course Overview** field.
+#. **설정** 메뉴에서 **강좌 기본 설정** 을 선택한다
+
+#. **강좌 소개** 가 보일 때까지 스크롤을 내린 후, **강좌 개요** 영역을 찾는다.
+
 
    .. image:: ../../../shared/images/course_overview.png
     :alt: Image of the HTML course description.
     :width: 600
 
-#. Overwrite the content as needed for your course, following the directions in
-   the boilerplate text. Do not edit HTML tags. For a template that includes
-   these placeholders, see the :ref:`A Template For Course Overview`.
+#. 다음의 안내에 따라 표준 텍스트에서 강좌에 필요한 내용을 수정한다. HTML 태그는 수정하면 안 되며, 양식은 :ref:`A Template For Course Overview` 에서 확인할 수 있다.
 
-#. To test how the description will appear to learners, from the text that
-   follows the **Course Overview** field select **your course summary page**.
+#. 학습자에게 보이는 화면을 확인하기 위해선 강좌 개요 하단에 위치한 안내 문구의 강좌 개요 페이지를 클릭한다.
 
-#. Select **Save Changes**.
+#. **저장하기** 를 클릭한다.
+
 
 .. _Add a Course Image:
 
-Add a Course Image
+강좌 이미지 추가하기
 *********************
 
-The course image that you add in Studio appears on the **About** page for the
-course and on the learner dashboard. It must be a minimum of 378 pixels in
-width by 225 pixels in height, and in .jpg or .png format. Make sure the image
-that you upload maintains the aspect ratio of those dimensions so that the
-image appears correctly on the dashboard.
+Studio에 추가하려는 강좌 이미지는 강좌 개요 페이지와 학습자 대시보드에 나타난다. 최소 378x225크기사이즈여야 하며 jpg 혹은 png 형식이어야 한다. 이미지의 비율에 맞춰 대시보드에 알맞게 나타나도록 해야 한다.
 
-An example of a course on the dashboard with a course image follows.
+대시보드에서 강좌 이미지는 다음과 같이 나타난다.
 
 .. image:: ../../../shared/images/dashboard-course-image.png
  :alt: Image of the course image in the dashboard.
  :width: 600
 
-To add a course image, follow these steps.
+강좌 이미지를 추가하기 위한 방법은 다음과 같다.
 
-#. From the **Settings** menu, select **Schedule & Details**.
+#. **설정** 메뉴에서 **강좌 기본 설정** 을 클릭한다.
 
-#. In the **Course Image** section, select **Upload Course Image**, and then
-   follow the prompts to find and upload your image. To specify an image that
-   has already been :ref:`added to the course<Add Files to a Course>`, select
-   **files & uploads**.
+#. **강좌 카드 이미지** 에서 **강좌 카드 이미지 업로드** 를 선택하고 안내사항에 따른다. 이미 강좌에 이미지가 추가되어 있을 경우 강좌 카드 이미지 하단에 :ref:`added to the course<Add Files to a Course>` 을 클릭하면 파일 업로드 페이지로 이동하며 파일을 업로드할 수 있다.
 
-   When you make changes on this page, a panel with options to save or cancel
-   your work appears.
+   이 페이지에서 강좌 카드 이미지를 수정하면, 변경사항 저장 또는 취소 창이 나타난다.
 
-#. Select **Save Changes**.
+#. **저장하기** 를 선택한다.
 
-#. View your dashboard to test how the image will appear to learners.
+#. 업로드가 되었는지 확인하기 위해 대시보드에 접속하면 학습자에게 보이는 이미지를 확인할 수 있다.
 
 .. only:: Partners
 
-  .. note::
-    For courses running on edx.org, the course image that you add in Studio is
-    used on the learner dashboard, but does not automatically appear on the
-    course **About** page. Work directly with your edX partner manager to set
-    up the **About** page assets and course image.
 
 .. _Add a Course Video:
 
-Adding a Course About Video
+강좌 소개 동영상 추가하기
 ****************************
 
-The course "about" video should excite and entice potential learners to enroll,
-and reveal some of the personality that the course team brings to the course.
+강좌 소개 동영상은 학습자들이 이 강좌에 흥미를 느껴 수강신청을 할 수 있도록 다음의 내용을 포함하여 제작해야 한다.
 
-This video should answer these key questions.
+* 누가 이 강좌를 가르치는가?
+* 어떤 대학이 이 강좌를 제공하는가?
+* 강좌가 어떤 주제 및 개념을 포함하고 있는가?
+* 왜 학습자가 이 강좌를 수강해야 하는가?
 
-* Who is teaching the course?
-* What university or institution is the course affiliated with?
-* What topics and concepts are covered in your course?
-* Why should a learner enroll in your course?
+강좌 소개 동영상은 강좌에 관한 내용을 간결하게 담고 있어야 하며, 재생 시간은 2분 이하로 만들어야 한다.
 
-This video should deliver your message as concisely as possible and have a run
-time of less than 2 minutes.
-
-Before you upload a course about video, make sure that it follows the same
-:ref:`Compression Specifications` and :ref:`Video Formats` guidelines as your
-course content videos.
+강좌 운영팀은 강좌 소개 동영상이 강좌 콘텐츠 동영상과 같은 :ref:`Compression Specifications` 및 :ref:`Video Formats` 지침을 따르고 있는지 확인해야 한다.
 
 .. note::
 
-  * If you upload both a course image and a course about video, the course
-    image appears on learner dashboards with a **play** icon superimposed on
-    it. If you upload only a course video, the first frame of the the video
-    file appears with the **play** icon.
+  * 강좌 이미지와 강좌 소개 동영상을 동시에 업로드하면 강좌 소개 동영상으로 연결되는 **재생** 버튼이 강좌 이미지에 추가되게 된다. 강좌 소개 동영상만 추가할 경우 **재생** 버튼과 함께 첫 프레임이 나타나게 된다.
 
-  * The process for adding a course about video is different than the process
-    for including videos as part of the content of your course. For more
-    information about including video content, see :ref:`Working with Video
-    Components`.
+  * 강좌 콘텐츠로 동영상을 추가하는 것과 강좌 소개 동영상을 추가하는 방식은 상이하다. 자세한 내용은 :ref:`Working with Video Components` 를 참고하면 된다.
 
 .. the "only" directives between these comments introduce the instructions that all open edX sites, and that partners adding a video to Edge, must complete. - Alison 1 Feb 2016
 
-.. only:: Open_edX
 
-  To upload a course about video, follow these steps.
 
-.. only:: Partners
-
-  Add a Course About Video to Edge
-  ================================
-
-  To upload a course about video for the edX Edge website only, follow these
-  steps.
-
-.. the following procedure applies to both the open edX and partner-Edge audiences.
-
-#. Upload the video file to YouTube. Make note of the code that appears
-   between **watch?v=** and **&feature** in the URL. This code appears in
-   the green box below.
-
-   .. image:: ../../../shared/images/youtube_vequals_URL.png
-    :alt: A YouTube video with the code between watch?v= and &feature
-     indicated.
-
-#. From the **Settings** menu, select **Schedule & Details**.
-
-#. Scroll down to the **Course Introduction Video** section.
-
-#. In the field below the video box, enter the YouTube video ID (the code you
-   copied in step 1). When you add the code, the video automatically loads in
-   the video box.
-
-#. When you make changes, a **Save Changes** option appears at the bottom
-   right of the page. Select **Save Changes** after you add the course
-   video.
-
-#. View your course **About** page to test how the video will appear to
-   learners.
-
-.. only:: Partners
-
-  Add a Course About Video to edx.org
-  ===================================
-
-  To add an about video for a course that is running on edx.org only, follow
-  these steps.
-
-  #. Locate the video file on your computer. For example, if you use a
-     Mac® computer, open Finder and go to the directory that contains the
-     video file.
-
-  #. In your browser, go to the edX/Veda video upload page at
-     http://veda.edx.org/upload/.
-
-  #. Enter a title for the video that includes the course number and name. For
-     example, ``edx101: Creating an edX Course``.
-
-     You can abbreviate the full name of the course. However, the information
-     that you enter should clearly identify your course.
-
-  #. Enter the Studio URL for the course. For example,
-     ``https://studio.edx.org/course/course-v1:edX+edX101x+2015``.
-
-     If you are adding an about video for an XSeries, or to any other page that
-     does not have a Studio URL, see :ref:`XSeries About Video`.
-
-  #. Select **Submit**.
-
-  #. Drag the video file from the local directory into the **Drop files here to
-     upload** field. You can also click inside this field to browse to the
-     file.
-
-     The file upload process begins immediately.
-
-     .. important:: Do not close the browser tab or window, or use it to go to
-      another URL while the file is uploading. When the upload process is
-      complete, the message "File Upload Complete" appears.
-
-  .. _XSeries About Video:
-
-  Add an XSeries About Video to edx.org
+  kmooc.kr에 강좌 소개 동영상 추가하기
   =====================================
 
-  To add an about video for an XSeries that is running on edx.org only, follow
-  these steps.
+  Kmooc.kr에서만 운영되는 강좌 소개 동영상을 추가하는 방법은 다음과 같다.
 
-  #. Locate the video file on your computer. For example, if you use a Mac
-     computer, open Finder and go to the directory that contains the video
-     file.
+  #. 컴퓨터에서 강좌 소개 동영상을 선택한다.
 
-  #. In your browser, go to the edX/Veda video upload page at
-     http://veda.edx.org/upload/.
+  #. http://veda.edx.org/upload/ 업로드 페이지에 접속한다.
 
-  #. Enter a title for the video that includes the XSeries name. For
-     example, ``edx VideoX XSeries: Creating Video for the edX Platform``.
+  #. 강좌 번호와 이름이 있는 영상 제목을 추가한다.
+      ``edx VideoX XSeries: Creating Video for the edX Platform``.
 
-     You can abbreviate the full name of the XSeries. However, the information
-     that you enter should clearly identify the XSeries.
+     강좌명은 줄일 수 있지만, 입력한 정보는 강좌를 명확하게 나타낼 수 있어야 한다.
 
-  #. In the **edX Studio Course URL** field, add identifying information
-     about the XSeries to the Studio URL that is provided. For example,
-     ``https://studio.edx.org/course/XSeries_edX_VideoX``.
+  #. 강좌 Studio URL에 접속한다.
+     ``https://studio.edx.org/course/course-v1:edX+edX101x+2015``.
 
-     The value that you enter in this field does not need to resolve to an
-     actual URL, but it must begin with ``https://studio.edx.org/course/``.
+  #. **제출** 을 클릭한다.
 
-  #. Select **Submit**.
+  #. 로컬 디렉터리에서 영상을 선택해 추가한다.
 
-  #. Drag the video file from the local directory into the **Drop files here to
-     upload** field. You can also click inside this field to browse to the
-     file.
+     업로드는 자동으로 진행된다.
 
-     The file upload process begins immediately.
+     .. important:: 업로드 중 브라우저를 닫거나 다른 URL에 접속하면 안된다. 업로드가 끝나면 “파일 업로드 완료” 메시지가 나온다.
 
-     .. important:: Do not close the browser tab or window, or use it to go to
-      another URL while the file is uploading. When the upload process is
-      complete, the message "File Upload Complete" appears.
 
 .. _Set Course Effort Expectations:
 
-Set Course Effort Expectations
+주간 학습 권장 시간 설정하기
 ******************************
 
-The estimated effort that the course requires appears in the course **About**
-page.
+강좌 소개 페이지에 주간 학습 권장 시간이 표시된다.
 
-To set the hours and minutes a week estimate in Studio, follow these steps.
+다음 순서대로, 학습자가 매주 강좌의 학습을 위해 필요한 권장 학습시간을 설정할 수 있다.
 
-#. From the **Settings** menu, select **Schedule & Details**.
+#. **설정** 메뉴에서, **강좌 기본 설정** 을 클릭한다.
 
-#. In the **Requirements** section, locate the **Hours of Effort per Week**
-   field.
+#. **학습 시간 및 선수 강좌** 의 **주간 학습 권장 시간** 을 클릭한다.
 
-#. Enter the number of hours you expect learners to work on this course each
-   week.
+#. **주간 학습 권장 시간** 에 매주 학습자가 강좌 학습에 필요한 시간을 입력한다.
 
-   When you make changes on this page, a panel with options to save or cancel
-   your work appears.
+   이 페이지를 수정하고자 한다면, 수정 혹은 취소를 할 수 있다.
 
-#. Select **Save Changes**.
+#. **변경 사항 저장하기** 를 누른다.
 
-#. View your course **About** page to test how the requirements will appear to
-   learners.
+#. 강좌 소개 페이지에서 학습 권장 시간 등의 수강 조건이 어떻게 나오는지 확인할 수 있다.
 
 .. _A Template For Course Overview:
 
-Course Overview Template
+강좌 개요 탬플릿
 *************************
 
-Replace the placeholders in the following template with information for your
-course.
+다음 탬플릿의 해당 영역에 강좌 정보를 입력한다. 
 
 .. code-block:: html
 

@@ -1,153 +1,125 @@
 .. _Course_Staffing:
 
 ##########################
-Staffing
+강좌 운영팀 지정하기
 ##########################
 
-You can designate a team of people to help you run your course.
+강좌 운영을 위해 팀 구성원을 지정할 수 있다.
 
 .. contents::
   :local:
   :depth: 1
 
 **************************************
-About the Course Team Roles
+강좌 운영팀의 역할
 **************************************
 
-To give team members access to Studio, the Instructor Dashboard in the LMS, and
-Insights, you assign one of these course team roles to them.
+팀 구성원이 Studio, LMS 상의 교수자 대시보드, 그리고 Insights에 접근할 수 있도록, 그들에게 다음과 같은 역할을 부여할 수 있다.
 
-* Staff
+* 운영자
 
-* Admin
+* 교수자
 
-You can assign these privileged roles when you work in either the LMS or
-Studio. The people who have these roles can work on your course in Studio, the
-LMS, and Insights. For more information about assigning roles to team members
-in Studio, see :ref:`Add Course Team Members`.
+LMS나 Studio 상에서 모두 모든 강좌와 관련된 작업을 할 수 있는 권한을 부여할 수 있다. 이 권한을 부여 받은 구성원들은 Studio, LMS, Insight에서 작업이 가능하다. 더 자세한 사항은  :ref:`Add Course Team Members` 를 참고하면 된다.
 
-You can also designate teams of people to beta test your course or to moderate
-and manage its discussions by assigning other roles in the LMS. Beta testers
-and discussion team members must be enrolled in your course, but they do not
-need to have the Staff or Admin role. For more information, see
-:ref:`Beta_Testing` and :ref:`Assigning_discussion_roles`.
+또한, 강좌 베타 테스트를 위한 베타테스터를 배정할 수 있고 토의를 진행하도록 LMS 상에서 다른 역할을 부여할 수 있다. 베타 테스트 및 토의 진행자는 수강신청을 해야 하지만 그들에게 운영자나 관리자 교수자 권한은 필요하지 않다. 자세한 사항은 :ref:`Beta_Testing` 와  :ref:`Assigning_discussion_roles` 를 참고하면 된다. 
+
 
 ****************************
-Administrative Team Roles
+운영팀 역할
 ****************************
 
-To provide access to features on the LMS Instructor Dashboard, you assign the
-Staff role or the Admin role.
+LMS 교수자 대시보드 상의 권한을 부여하기 위해선 운영자나 교수자 역할을 부여해야 한다.
 
-Team members with the **Staff** role can complete these tasks.
+운영자 권한을 갖는 구성원은 다음과 같은 역할을 수행할 수 있다.
 
-* View the course before the Course Start Date.
+* 강좌 시작 전 강좌 콘텐츠 확인
 
-* Enroll and unenroll learners.
+* 학습자 등록 및 등록 취소
 
-* Access learner grades.
+* 학습자 성적 데이터 접근
 
-* See course HTML errors.
+* 강좌 HTML 오류
 
-* Send email messages to course participants.
+* 강좌 참여자에게 이메일 발송
 
-Team members with the **Admin** role have access to all of the same options for
-running the course as team members with the Staff role. They can also complete
-these tasks.
+**교수자** 권한을 갖는 구성원은 운영자와 동일한 역할을 수행할 수 있으나 다음과 같은 역할을 추가적으로 수행할 수 있다.    
 
-* Reset learner attempts to answer a question correctly.
+* 학습자의 문제 풀이 횟수 초기화
 
-* Add and remove Staff.
+* 강좌 운영팀 추가와 삭제
 
-* Add and remove other Admins.
+* 다른 교수자 추가와 삭제
 
-* Add and remove Beta Testers.
+* 베타테스터의 추가와 삭제
 
-* Add and remove Discussion Admins, Discussion Moderators, and Discussion
-  Community TAs.
+* 게시판 관리자, 토의 진행자, 게시판 커뮤니티 조교 추가와 삭제
 
-  .. note:: To moderate course discussions, team members must have one
-   of these discussion roles assigned to them *in addition to* the Staff or
-   Admin role. For more information, see :ref:`Assigning_discussion_roles`.
+  .. note:: 강좌 토의를 진행하기 위해선 운영자 혹은 교수자 권한 이외에 토의 진행자 역할이 필요하다. 자세한 사항은  :ref:`Assigning_discussion_roles` 를 참고하면 된다.
 
 *************************
-Assign Course Team Roles
+강좌 운영팀 역할 부여
 *************************
 
-Before you can assign the Staff or Admin role to a team member, you must meet
-these prerequisites.
+운영자 혹은 교수자 역할을 부여하기 전에,
 
-* You must have the Admin role.
+* 교수자 권한이 있어야 한다.
 
-* You need the email address or username of each team member you want to add.
+* 팀 구성원의 이메일 주소 또는 아이디가 필요하다.
 
-* Each of those team members must register a user account for that email
-  address or username, activate the account, and enroll in your course.
+* 각 팀원은 해당 이메일 주소 및 아이디로 가입해야 하고, 계정을 활성화하며, 강좌에 수강신청을 해야 한다.
 
-To assign a privileged role to a course team member, follow these steps.
+강좌 운영팀 권한을 부여하기 위해 다음의 단계를 따라야 한다.
 
-#. View the live version of your course.
+#. 적용 결과 보기 를 클릭한다.
 
-#. Select **Instructor**, and then select **Membership**.
+#. 교수자 대시보드에서 **교수자** 를 클릭하고, **등록 관리** 를 클릭한다.
 
-#. In the **Course Team Management** section, select **Staff** or **Admin**.
+#. **강좌 운영팀 관리** 의 드롭다운 목록에서 **강좌 운영팀 역할** 을 선택한 후, 
 
-#. Under the list of users who currently have that role, enter an email
-   address or username, and then select **Add** for the role type.
+#. 현재 역할이 부여된 사용자 목록 아래에 이메일 주소 또는 아이디를 입력하고 **추가** 를 클릭한다.
 
-To remove an assigned role, view the list of users and then select **Revoke
-access**.
+
+구성원의 특정 역할을 삭제하기 위해서, **접근 권한 취소** 를 클릭한다.
 
 
 .. _Add Course Team Members:
 
 ************************
-Add Course Team Members
+강좌 운영자 추가하기
 ************************
 
-Course team members are users who help you build your course. Before you can
-assign Staff or Admin access to a team member, you must meet these
-prerequisites.
+강좌 운영자는 강좌 제작을 지원하는 팀원이다. 다음과 같은 조건 하에 운영자나 교수자 권한을 부여할 수 있다.
 
-* You must be an Admin.
+* 교수자 이어야 한다.
 
-* The team member that you want to add must register a user account and
-  activate the account.
+* 추가할 강좌 운영자는 가입 및 계정 활성화가 되어 있는 회원이어야 한다.
 
-* You need the same, registered email address for the team member you want to
-  add.
+* 추가할 강좌 운영자의 가입 이메일 주소가 필요하다.
 
-Other course team members can edit the course and perform all tasks except
-adding and removing other team members and granting Admin access.
+강좌 운영자는 다른 운영팀과 교수자 권한을 부여 또는 취소하는 작업 외에 강좌를 편집하거나 운영하는 모든 작업을 할 수 있다.
 
-.. note::  Any course team member can delete content created by other team
- members.
+.. note::  모든 강좌 운영자는 다른 강좌 운영자가 만든 내용을 삭제할 수 있다.
 
-To add a course team member:
 
-#. Ensure you have Admin access.
-#. Ensure that the new team member has registered and activated an account.
-#. In Studio, from the **Settings** menu, select **Course Team**.
-#. Select **Add a New Team Member**.
-#. Enter the new team member's email address, then select **ADD USER**.
+강좌 운영자를 추가하기 위해서:
 
-The new team member can now work on the course in Studio.
+#. 교수자 권한이 있어야 한다.
+#. 새 강좌 운영자는 가입 및 계정 활성화가 되어 있는 회원이어야 한다.
+#. Studio 상 **설정** 메뉴에서 **강좌 운영팀** 을 클릭한다.
+#. **신규 구성원 추가** 를 클릭한다.
+#. 새 강좌 운영자의 이메일 주소를 입력하고 **구성원 추가** 를 클릭한다.
 
-* To preview the course in the LMS, the team member must enroll in the course.
+이제 새 강좌 운영자는 Studio상에서 작업을 수행할 수 있다.
 
-* To moderate course discussions, the team member must also have one of the
-  discussion roles. For more information, see
-  :ref:`Assigning_discussion_roles`.
+* LMS에서 강좌를 미리보기 위해, 강좌 운영자는 해당 강좌를 수강 중이어야 한다.
 
-You can also assign privileged roles to users when you work in the LMS.
+* 강좌 토의 진행을 위해 강좌 운영자는 토의 역할 중 하나를 가지고 있어야 한다. 자세한 사항은 :ref:`Assigning_discussion_roles` 를 참고하면 된다.
 
-Regardless of where the role is assigned, these administrative team members can
-work on your course in Studio immediately, and use the LMS and Insights after
-enrollment. For more information about assigning roles while you run your
-course, see :ref:`Course_Staffing`.
 
-You can also designate teams of people to beta test your course and to
-moderate and manage its discussions by assigning other LMS roles. The beta
-testers and discussion administrators must be enrolled in your course, but
-they do not need to have Staff or Admin access. For more information, see
-:ref:`Beta_Testing` and :ref:`Assigning_discussion_roles`.
+LMS상에서도 역할을 부여할 수 있다.
+
+역할이 어디서 부여되었는가와 관계 없이, 운영팀 구성원은 Studio 상에서 강좌와 관련된 작업을 수행할 수 있고, 등록 후에 LMS와 Insights에서도 작업을 진행할 수 있다. 자세한 사항은 :ref:`Course_Staffing` 를 참고하면 된다.
+
+다른 LMS 역할을 부여함으로써, 베타 테스트 및 토의를 진행할 구성원을 배정할 수도 있다. 베타 테스터와 토의 진행자는 반드시 강좌에 등록되어 있어야 하지만 운영자나 교수자의 권한이 필요하진 않다. 자세한 사항은 :ref:`Beta_Testing` 와 :ref:`Assigning_discussion_roles` 를 참고하면 된다.
+

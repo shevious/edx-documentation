@@ -1,24 +1,20 @@
 .. _Dropdown:
 
 #####################
-Dropdown Problem
+드롭다운 문제
 #####################
 
-.. note:: EdX offers full support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 전체 지원을 제공한다.
 
 .. contents::
   :local:
   :depth: 1
 
 **********
-Overview
+개관
 **********
 
-Dropdown problems allow learners to choose from a collection of answer options
-that are presented in a dropdown list. Unlike :ref:`multiple choice<Multiple
-Choice>` problems, which have answers that are always visible directly below
-the question, dropdown problems do not show answer choices until the learner
-clicks the dropdown arrow.
+드롭다운(Dropdown) 문제는 학습자가 드롭다운 목록으로 표시된 답안 옵션 모음에서 답안을 선택할 수 있도록 한다. 답안이 항상 질문 바로 아래 표시되는 다중 선택형 문제와는 달리, 드롭다운 문제는 학습자가 드롭다운 화살표 클릭 때까지 답안 선택안을 보여주지 않는다.
 
 .. image:: ../../../shared/images/DropdownExample.png
  :alt: A problem component with 3 dropdown problems, 2 marked correct and 1
@@ -26,68 +22,50 @@ clicks the dropdown arrow.
  :width: 600
 
 **************************************************
-Analyzing Performance on Dropdown Problems
+드롭다운 문제 성과 분석하기
 **************************************************
 
-For the dropdown problems in your course, you can use edX Insights to review
-aggregated learner performance data and examine submitted answers. For
-more information, see :ref:`insights:Using edX Insights`.
+강좌의 드롭다운 문제에 대해 K-MOOC Insights를 사용하여 학습자 성과 데이터 및 제출된 답안을 분석할 수 있다. 자세한 사항은  :ref:`insights:Using edX Insights` 를 참고하면 된다.
+
 
 ********************************
-Creating a Dropdown Problem
+드롭다운 문제 만들기
 ********************************
 
-You can create dropdown problems in the simple editor or in the advanced
-editor. You can set up a problem in the simple editor, and then switch to the
-advanced editor to add more configuration options in XML. However, you cannot
-switch back to the simple editor from the advanced editor. Therefore, you
-might want to format the problem as completely as possible before you begin to
-use the advanced editor.
+간편 편집기 또는 고급 편집기에서 드롭다운 문제를 만들 수 있다. 우선 간편 편집기에서 문제를 만든 후 고급 편집기로 넘어가 XML의 다양한 설정을 사용할 수도 있지만 고급 편집기 사용 후 간편 편집기로 되돌아 올 수는 없다. 따라서 고급 편집기 사용 전에 문제 형식을 완전히 만드는 것이 좋다.
+
 
 .. _Use the Simple Editor to Create a Dropdown Problem:
 
 ========================================================================
-Use the Simple Editor to Create a Dropdown Problem
+간편 편집기
 ========================================================================
 
-To use the :ref:`simple editor<Simple Editor>` to create a dropdown problem,
-follow these steps.
+드롭다운 문제를 만들기 위해 다음 단계를 따르도록 한다.
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Problem**.
-#. Select one of the two dropdown problem templates.
+#. 신규 구성요소 추가 에서 **문제** 를 클릭한다.
 
-  * From the list of **Common Problem Types**, select **Dropdown**.
+#. 두 드롭다운 문제 템플릿 중 하나를 선택한다.
 
-  * From the list of **Common Problems with Hints and Feedback**, select
-    **Dropdown with Hints and Feedback**. For more information, see `Use
-    Feedback in a Dropdown Problem`_.
+  * **일반적인 문제 유형** 에서 **드롭다운** 을 선택한다.
 
-    Studio adds the problem to the unit.
+  *힌트와 피드백이 있는 일반적인 문제 유형에서 힌트와 피드백이 있는 드롭다운을 선택한다. 자세한 사항은 `Use Feedback in a Dropdown Problem`_ 를 참고하면 된다.
 
-#. Select **Edit**. The simple editor opens.
-#. Replace the sample problem text with your own text.
-#. Determine the text that describes the question you want learners to answer,
-   and surround that text with two pairs of angle brackets (``>>question<<``).
-   This text identifies the question for screen readers, reports, and Insights.
-#. Edit your text to place all of the possible answers on the same line,
-   separated by commas.
-#. Select all of the answer options, and then select **Dropdown** from
-   the toolbar. A double set of brackets ([[ ]]) appears to surround
-   the answer options.
-#. To identify the problem's answer, locate that answer inside the brackets
-   and surround the correct answer with parentheses.
-#. To provide an explanation, select the explanation text and then select
-   **Explanation** from the toolbar. ``[explanation]`` appears before
-   and after the explanation text.
-#. Select **Settings** and provide an identifying **Display Name** for the
-   problem.
-#. Define additional settings for the problem. For more information, see
-   :ref:`Problem Settings`.
-#. Select **Save**.
+    Studio는 문제를 학습활동에 추가한다.
 
-For the example problem illustrated above, the following text is displayed in
-the problem component.
+#. **편집** 을 클릭하면 간편 편집기가 열린다.
+#. 예제 텍스트를 문제에 대한 텍스트로 대체한다.
+#. 라벨로 사용할 문제의 텍스트를 결정한 다음, 꺾쇠 괄호 두 세트(``>>question<<``)로 해당 텍스트를 둘러싼다. 이 텍스트가 화면 판독기, 보고, Insights 등에서 사용된다.
+#. 쉼표로 구분하여 같은 줄에 각각의 가능한 답안을 입력한다.
+#. 모든 답안 옵션을 선택한 다음, 드롭다운 버튼을 클릭한다. 이 작업을 수행하는 경우 대괄호 ([[])의 이중 세트가 나타나고 답안 옵션을 둘러싼다.
+#. 대괄호 내에서, 괄호로 정답을 둘러싼다.
+#. 설명을 첨부하려면 텍스트를 선택하고 도구 모음에서 설명을 클릭한다.  ``[explanation]`` 가 설명 텍스트 주변에 나타난다.
+#. **설정** 을 선택하고 문제의 메뉴명을 작성한다.
+#. 기타 고급 설정을 정한다. 자세한 사항은 :ref:`Problem Settings` 을 참고하면 된다.
+#. **저장** 을 클릭한다.
+
+
+위의 예제 문제에 대하여, 문제 구성요소에서 텍스트는 다음과 같다.
 
 ::
 
@@ -101,17 +79,17 @@ the problem component.
     [[(Nominal), Discrete, Continuous]]
 
 ========================================================================
-Use the Advanced Editor to Edit a Dropdown Problem
+고급 편집기
 ========================================================================
 
-To use the advanced editor to edit a dropdown problem, follow these steps.
+고급 편집기로 드롭다운 문제를 편집하기 위해
 
-#. Follow the steps for creating the problem in the :ref:`simple editor<Use
-   the Simple Editor to Create a Dropdown Problem>`.
-#. Select **Advanced Editor**, and then edit the XML to add the tags and
-   attributes you want. An example follows.
+#. :ref:`simple editor<Use the Simple Editor to Create a Dropdown Problem>` 에 나와 있는 대로 문제를 만든다.
+ 
+#. **고급 편집기** 를 선택하고 XML을 편집하여 태그와 속성을 추가한다. 예를 들어
 
-**Problem Code**:
+
+**문제 코드**:
 
 .. code-block:: xml
 
@@ -142,42 +120,33 @@ To use the advanced editor to edit a dropdown problem, follow these steps.
 .. _Use Feedback in a Dropdown Problem:
 
 ********************************************
-Using Feedback in a Dropdown Problem
+드롭다운 문제에서 피드백 사용하기
 ********************************************
 
-You can add feedback in a dropdown problem using the simple editor
-or the advanced editor. For an overview of feedback in problems, see
-:ref:`Adding Feedback and Hints to a Problem`.
+간편 편집기나 고급 편집기를 사용해 드롭다운 문제에 피드백을 추가할 수 있다. 문제 피드백의 개관을 보기 위해선 :ref:`Adding Feedback and Hints to a Problem` 를 참고하면 된다.
 
-In dropdown problems, you can provide feedback for each option that a
-learner can select. Use the following guidelines when providing feedback.
+드롭다운 문제에서 학습자가 고를 수 있는 선택지 마다 피드백을 추가할 수 있다. 다음은 피드백과 관련된 지침이다.
 
-* Use feedback for the incorrect answers to target common misperceptions and
-  mistakes.
+* 흔히 틀리는 오답에 피드백을 추가한다.
 
-* Ensure feedback provides some guidance to the learner about how to arrive at
-  the correct answer.
+* 어느정도 정답을 유추할 수 있게 하는 피드백을 추가한다.
 
-* Use feedback for the correct answer as an opportunity to reinforce why the
-  answer is correct. Because learners are able to guess, ensure that feedback
-  provides a reason why the answer is correct for learners who might have
-  selected that answer by chance.
+* 정답인 이유를 설명하는 피드백을 추가한다. 학습자는 찍어서 문제를 맞출 수도 있기 때문에 그 이유를 설명하는 것은 중요하다.
+
 
 =======================================
-Configure Feedback in the Simple Editor
+간편 편집기에서 피드백 설정하기
 =======================================
 
-In the :ref:`simple editor<Simple Editor>`, you configure answer feedback with
-the following syntax. When you create a new dropdown problem, select the
-template **Dropdown with Hints and Feedback**. This template has example
-feedback syntax that you can replace.
+:ref:`simple editor<Simple Editor>` 에서 다음과 같이 답안 피드백을 설정할 수 있다. 새 드롭다운 문제를 만들 때 힌트와 피드백이 있는 드롭다운 템플릿을 선택한다. 그 후 원하는 내용으로 예제를 바꾸면 된다.
+
 
 ::
 
   Wrong Answer {{Feedback for learners who select this answer.}}
   (Correct Answer) {{Feedback for learners who select this answer.}}
 
-For example, the following problem has feedback for each possible answer.
+예를 들어 다음 문제는 각 보기에 대해 피드백이 있다.
 
 ::
 
@@ -196,11 +165,10 @@ For example, the following problem has feedback for each possible answer.
   ]]
 
 =========================================
-Configure Feedback in the Advanced Editor
+고급 편집기에서 피드백 설정하기
 =========================================
 
-In the :ref:`advanced editor<Advanced Editor>`, you configure answer feedback
-with the following syntax.
+:ref:`advanced editor<Advanced Editor>` 에서 다음과 같이 피드백을 설정할 수 있다.
 
 .. code-block:: xml
 
@@ -211,7 +179,7 @@ with the following syntax.
       </optionhint>
     </option>
 
-For example, the following problem has feedback for each answer.
+예를 들어 다음 문제는 각 보기에 대해 피드백이 있다.
 
 .. code-block:: xml
 
@@ -250,41 +218,36 @@ For example, the following problem has feedback for each answer.
   </optionresponse>
 
 =========================
-Customize Feedback Labels
+사용자 정의 피드백 라벨
 =========================
 
-By default, the feedback labels shown to learners are **Correct** and
-**Incorrect**. If you do not define feedback labels, learners see these terms
-when they submit an answer, as in the following example.
+기본적으로 학습자가 보는 피드백 라벨은 **정답** 과 **오답** 이다. 만약 피드백 라벨을 수정하지 않으면 학습자는 다음 예시와 같은 문구를 보게 된다.
+
 
 .. image:: ../../../shared/images/dropdown_feedback.png
  :alt: Image of multiple choice feedback with the standard label.
  :width: 600
 
-You can configure the problem to override the default labels. For example, you
-can configure a custom label for a specific wrong answer.
+기본 라벨을 바꿀 수 있다. 다음은 사용자 정의 라벨을 사용한 예시다.
 
 .. image:: ../../../shared/images/dropdown_feedback_custom_label.png
  :alt: Image of multiple choice feedback with a custom label.
  :width: 600
 
 .. note::
-  The default labels **Correct** and **Incorrect** are displayed in the
-  learner's requested language. If you provide custom labels, they are
-  displayed to all users as you configure them and are not translated into
-  different languages.
+  기본 라벨 **정답** 과 **오답** 은 학습자의 언어에 따라 다르게 나타난다. 만약 사용자 정의 라벨을 사용한다면 설정한 언어로 나오게 되며 번역되지 않는다.
 
-Customize Feedback Labels in the Simple Editor
+
+간편 편집기에서 사용자 정의 피드백 라벨 사용하기
 ***********************************************
 
-In the :ref:`simple editor<Simple Editor>`, you configure custom feedback
-labels with the following syntax.
+:ref:`simple editor<Simple Editor>` 에서 다음과 같이 사용자 정의 피드백 라벨을 설정할 수 있다.
 
 ::
 
   ( ) Answer {{Label:: Feedback for learners who select this answer.}}
 
-For example, the following feedback is configured to use a custom label.
+예를 들어 다음 피드백은 사용자 정의 라벨을 사용하고 있다.
 
 ::
 
@@ -292,11 +255,10 @@ For example, the following feedback is configured to use a custom label.
   vegetable. However, because a tomato is the fertilized ovary of a tomato
   plant and contains seeds, it is a fruit.}}
 
-Customize Feedback Labels in the Advanced Editor
+고급 편집기에서 사용자 정의 피드백 라벨 설정하기
 *************************************************
 
-In the :ref:`advanced editor<Advanced Editor>`, you configure custom feedback
-labels with the following syntax.
+:ref:`advanced editor<Advanced Editor>` 에서 다음과 같이 사용자 정의 피드백 라벨을 설정할 수 있다.
 
 .. code-block:: xml
 
@@ -307,7 +269,7 @@ labels with the following syntax.
      </optionhint>
    </option>
 
-For example, the following feedback is configured to use a custom label.
+예를 들어 다음 피드백은 사용자 정의 라벨을 사용하고 있다.
 
 .. code-block:: xml
 
@@ -323,12 +285,10 @@ For example, the following feedback is configured to use a custom label.
 .. _Use Hints in a Dropdown Problem:
 
 ********************************************
-Using Hints in a Dropdown Problem
+드롭다운 문제에서 힌트 사용하기
 ********************************************
 
-You can use hints in a dropdown problem, using the simple editor
-or the advanced editor. For an overview of hints in problems, see
-:ref:`Adding Feedback and Hints to a Problem`.
+간편 편집기나 고급 편집기를 통해 드롭다운 문제에서 힌트를 사용할 수 있다. 자세한 사항은 :ref:`Adding Feedback and Hints to a Problem` 를 참고하면 된다.
 
 .. include:: ../../../shared/exercises_tools/Subsection_configure_hints.rst
 
@@ -336,11 +296,11 @@ or the advanced editor. For an overview of hints in problems, see
 .. _Dropdown Problem XML:
 
 ************************
-Dropdown Problem XML
+드롭다운 문제 XML
 ************************
 
 ========
-Template
+템플릿
 ========
 
 .. code-block:: xml
@@ -375,24 +335,24 @@ Template
   </problem>
 
 ========
-Tags
+태그
 ========
 
-* ``<optionresponse>`` (required): Indicates that the problem is a dropdown
+* ``<optionresponse>`` (필수 사항): 문제가 드롭다운 문제임을 나타낸다.
   problem.
 
-* ``<option>`` (required): Lists an answer option.
+* ``<option>`` (필수 사항): 답안 옵션을 나열한다.
 
-* ``<demandhint>`` (optional): Specifies hints for the learner.
+* ``<demandhint>`` (선택 사항): 힌트를 나타낸다.
 
 
 **Tag:** ``<optionresponse>``
 
-Indicates that the problem is a dropdown problem.
+문제가 드롭다운 문제임을 나타낸다.
 
-  Attributes
+  속성
 
-  (none)
+  (없음)
 
   Children
 
@@ -400,18 +360,17 @@ Indicates that the problem is a dropdown problem.
 
 **Tag:** ``<option>``
 
-Lists the answer options.
+답안 옵션을 나열한다.
 
-  Attributes
+  속성
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
-     * - correct (required)
-       - Indicates whether an answer is correct. Possible values are "true"
-         and "false". Only one **correct** attribute can be set to "true".
+     * - 속성
+       - 설명
+     * - correct (필수)
+       - 정답인지 여부를 나타낸다. 가능한 값은 “true” 및 “false”이다. 단 하나의 올바른 속성을 “true”로 설정할 수 있다.
 
   Children
 
@@ -419,11 +378,11 @@ Lists the answer options.
 
 **Tag:** ``<optionhint>``
 
-Specifies a hint for the answer.
+답안의 힌트를 나타낸다.
 
 **Tag:** ``<demandhint>``
 
-Specifies hints available to the learner.
+학습자가 볼 수 있는 힌트를 나타낸다.
 
   Children
 
@@ -431,7 +390,7 @@ Specifies hints available to the learner.
 
 **Tag:** ``<hint>``
 
-Specifies a hint available to the learner.
+학습자가 볼 수 있는 힌트를 나타낸다.
 
   Children
 
