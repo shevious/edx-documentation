@@ -1,39 +1,33 @@
 .. _Survey Tool:
 
 ###################
-Survey Tool
+설문 도구
 ###################
 
-.. note:: EdX offers full support for this tool.
+.. note:: K-MOOC은 이 도구에 대해 전체 지원을 제공한다.
 
-This section describes how to include surveys in your course.
+이 장에서 강좌에 설문을 추가하는 법을 알아보도록 하자.
 
 .. contents::
    :local:
    :depth: 2
 
 *********
-Overview
+개관
 *********
 
-You can include surveys in your course to collect learner responses to multiple
-questions.
+여러 질문에 학습자가 어떠한 답변을 했는지 알아보기 위해 강좌에 설문을 추가할 수 있다.
 
-For a survey, you configure multiple question and multiple possible answers.
-The set of answers is used for each question in the survey. If you need to ask
-only one question, use the :ref:`Poll Tool`.
+설문에서 다양한 질문과 그에 대한 선택지를 설정할 수 있으며 각 질문에 대해 설문지 모음이 있게 된다. 질문이 하나라면  :ref:`Poll Tool` 를 참고하면 된다.
 
-The following example survey has three questions, each with the same three
-possible answers.
+다음 예제는 각각 3개의 선택지를 갖는 문제 3개다.
 
 .. image:: ../../../shared/images/survey.png
     :alt: A survey asking multiple questions about the learner's view of the
      course.
     :width: 600
 
-After learners submit their answers to the survey, they see the survey
-results that have been gathered at this time, unless the survey has been
-configured to hide results.
+답안 제출 결과를 비공개 하지 않았다면, 학습자는 설문에 답안을 제출한 후 그 시점의 결과를 조회할 수 있다.
 
 .. image:: ../../../shared/images/survey_results.png
     :alt: The results of a survey asking multiple questions about the
@@ -43,30 +37,24 @@ configured to hide results.
 .. _Enable the Survey Tool:
 
 *********************************************
-Enable the Survey Tool
+설문 도구 설정하기
 *********************************************
 
-Before you can add a survey to your course, you must enable the survey tool in
-Studio or OLX.
+강좌에 설문을 추가하기 전에 Studio나 OLX에서 설문 도구를 설정해야 한다.
 
-To enable the survey tool in Studio, you add the ``"survey"`` key to the
-**Advanced Module List** on the **Advanced Settings** page. (Be sure to
-include the quotation marks around the key value.) For more information, see
-:ref:`Enable Additional Exercises and Tools`.
+Studio에서 콘텐츠 보관함 도구를 설정하기 위해  ``"survey"`` 키를 고급 설정 페이지의 고급 모듈 목록에 추가한다. 반드시 키 값을 “ “ 사이에 입력한다. 자세한 사항은  :ref:`Enable Additional Exercises and Tools` 를 참고하면 된다.
 
-Alternatively, you can use OLX to enable the survey tool.
+또는 OLX를 사용해 설문 도구를 설정할 수 있다.
 
 ======================================
-Enable the Survey Tool in OLX
+OLX에서 설문 도구 설정하기
 ======================================
 
-To enable the survey tool, you edit the XML file that defines the course
-structure.
+설문 도구를 설정하기 위해 강좌 구조 XML 파일을 편집해야 한다.
 
-Open the XML file for the course in the ``course`` directory. In the ``course``
-element's ``advanced-modules`` attribute, add the string ``survey``.
+``course`` 디렉토리에서 강좌 XML 파일을 연다.  ``course`` 요소의 ``advanced-modules`` 속성에 ``survey`` 스트링을 추가한다.
 
-For example, the following XML code enables the survey tool.
+예를 들어 다음 XML 코드는 설문 도구를 설정한다.
 
 .. code-block:: xml
 
@@ -77,90 +65,65 @@ For example, the following XML code enables the survey tool.
   </course>
 
 ***************************
-Add a Survey in edX Studio
+Studio에서 설문 추가하기
 ***************************
 
-You must :ref:`enable the survey tool <Enable the Survey Tool>` before you add
-the component.
+구성요소를 추가하기 전에 반드시 설문 도구를 고급 설정에서 추가해야 한다.
 
-#. On the Course Outline page, open the unit where you want to add the survey.
+#. 강좌 개요 페이지에서 설문을 추가할 학습활동을 연다.
 
-#. Under **Add New Component** click **Advanced**, and then select **Survey**.
+#. **새 구성요소 추가하기** 아래 고급으로 들어가 **설문** 을 클릭한다.
 
-   The new component is added to the unit, with the default survey that
-   contains three answer fields and three questions.
+   학습활동에 새 구성요소가 추가되며 3개의 답변 필드와 3개의 질문이 있는 기본 설문이 나오게 된다.
 
    .. image:: ../../../shared/images/survey_studio.png
     :alt: The survey component in Studio.
     :width: 600
 
-#. In the new component, select **Edit**.
+#. 새 구성요소에서 **편집** 을 선택한다.
 
-#. In the **Display Name** field, enter the name for the component.
+#. **메뉴 이름** 필드에 구성요소 이름을 입력한다.
 
-#. In the **Feedback** field, enter text that learners see after they submit
-   responses.
+#. **피드백** 필드에 답변 제출 이후 학습자가 볼 텍스트를 입력한다.
 
-#. In the **Private Results** field, to hide survey results from learners,
-   select **True**. If you leave the default value, **False**, learners see
-   survey results after they submit responses.
+#. **개별 결과** 필드에서 **True** 를 선택하면 학습자에게 설문 조사 결과를 숨길 수 있다. 만약 기본값인 **False** 로 놔두면 학습자는 답안 제출 후 결과를 조회할 수 있다.
 
-#. In the **Maximum Submissions** field, to allow learners to submit responses
-   more than once, change the value. Enter **0** to allow unlimited
-   responses.
+#. **최대 제출** 필드에서 학습자가 답변을 제출할 수 있는 횟수를 정할 수 있다. 0을 입력하면 제출 제한이 없게 된다.
 
    .. note::
-    If you allow learners to submit responses more than once, you should set
-    **Private Results** to **True**. Otherwise, learners will be able to change
-    their responses after seeing others' responses.
+    학습자에게 답변 제출 기회를 여러 번 준다면 개별 결과를 True(비공개)로 설정하는 것이 좋다. 그렇지 않으면 학습자가 다른 학습자의 답변을 보고 바꿀 수도 있다.
 
-#. Configure answers for the survey. Each answer is displayed to learners as a
-   column, with a radio button they can select. Each answer is used for each
-   survey question.
+#. 설문의 선택지를 설정한다. 각 선택지는 선택할 수 있는 버튼과 함께 하나의 열로 학습자에게 공개된다.
 
-   #. In each **Answer** field, enter the text for the column heading that
-      learners will see.
+   #. 각 선택지 필드에 학습자가 볼 열 이름을 입력한다.
 
-   #. To add answers, select **Add answer** at the bottom of the editor. New
-      answers are added at the bottom of the list.
+   #. 선택지를 추가하려면 편집기 하단의 선택지 추가를 선택한다. 목록 하단에 새로운 선택지가 추가된다.
 
-   #. The top answer in the list is displayed to learners as the left-most
-      answer column in the survey, and the bottom answer is displayed in the
-      right-most column.  To change the order of answers, select the up and
-      down buttons next to each answer.
+   #. 목록 가장 위의 선택지는 학습자에게 설문지의 맨 좌측 열에 표시되고 목록 아래 선택지는 맨 우측 열에 표시된다. 선택지 순서를 바꾸기 위해 각 선택지 옆의 위, 아래 버튼을 클릭한다.
 
-   #. To remove an answer, select **Delete** next to the answer.
+   #. 선택지를 삭제하려면, 삭제를 클릭한다.
 
-#. Configure questions for the survey. Each question is displayed to learners
-   in the left-most column.
+#. 설문 질문을 설정한다. 각 질문은 학습자에게 맨 좌측 열에 표시된다.
 
-   #. You must enter either text or an image path, or both, for each question.
-      To enter an image, use the :ref:`Studio URL <File URLs>` for the image.
+   #. 텍스트나 이미지를 입력해야 하며 이미지를 사용한다면 이미지 :ref:`Studio URL <File URLs>` 을 사용하면 된다.
 
-   #. The survey template contains three questions. To add questions, select
-      **Add question** at the bottom of the editor. New questions are added at
-      the bottom of the list.
+   #. 설문 템플릿엔 3개 질문이 포함된다. 질문을 추가하기 위해 편집기 하단의 질문 추가하기를 선택한다. 새 질문이 목록 하단에 추가된다.
 
-   #. If you use an image, you must enter useful alternative text in the
-      **Image alternate text** field for non-sighted users.
+   #. 이미지를 사용한다면 시각 장애가 있는 학습자를 위해 이미지 대체 텍스트 필드에 이미지에 대한 설명을 입력해야 한다.
 
-   #. Questions are displayed to learners as rows in the order you configure
-      them. To change the order of questions, select the up and down buttons
-      next to each question.
+   #. 질문은 설정한 순서대로 표시된다. 질문 순서를 바꾸기 위해선 질문 옆의 위, 아래 버튼을 클릭하면 된다.
 
-   #. To remove a question, select **Delete** next to the question.
+   #. 질문을 삭제하려면 **삭제** 를 클릭한다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
 ***************************
-Add a Survey in OLX
+OLX에 설문 추가하기
 ***************************
 
-To add a survey XBlock in OLX, you create the ``survey`` element. You can embed
-the ``survey`` element in the ``vertical`` element, or you can create the
-``survey`` element as a stand-alone file that you reference in the vertical.
+OLX에 설문 XBlock을 추가하기 위해  ``survey`` 요소를 생성한다.  ``survey`` 요소를  ``vertical`` 요소에 포함시킬 수 있고 ``survey`` 를 단독 요소로 할 수도 있다.
 
-The following example shows the OLX definition for a survey with two questions.
+다음 예제는 4개의 답안이 있는 설문 조사를 보여준다.
 
 .. code-block:: xml
 
@@ -200,80 +163,64 @@ The following example shows the OLX definition for a survey with two questions.
   />
 
 ==========================
-survey Element Attributes
+survey 요소 속성
 ==========================
 
-The following table describes the attribute of the ``survey`` element.
+다음은 ``survey`` 요소의 속성이다.
 
 .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
+     * - 속성
+       - 설명
      * - ``url_name``
-       - The unique identifier of the survey.
+       - 설문 이름.
      * - ``xblock-family``
-       - The XBlock version used. Must be ``xblock.v1``.
+       - XBlock 버전. 반드시  ``xblock.v1`` 이어야 한다.
      * - ``questions``
-       - An array of questions in the survey. Each question has a unique
-         identifier, and a dictionary that defines values for the following
-         names.
+       - 질문 목록. 각 질문은 이름과 다음 이름에 대한 값 설명이 포함되어 있다.
 
-         * ``img``, the static URL of the question image.
-         * ``img_alt``, the alternative text for the image.
-         * ``label``, the question text.
+         * ``img``, 질문 이미지 URL.
+         * ``img_alt``, 이미지 대체 설명.
+         * ``label``, 질문 텍스트.
 
-         Each question must have a value for ``img`` or ``label``, or both.
+         각 질문은  ``img`` 이나  ``label`` 중 하나 이상이 포함되어야 한다.
      * - ``answers``
-       - An array of answers in the survey. Each answer has a unique
-         identifier, and a dictionary that defines values for the following
-         names.
+       - 답변 목록. 각 답변은 이름과 다음 이름에 대한 값 설명이 포함되어 있다.
 
-         * ``img``, the static URL of the answer image.
-         * ``img_alt``, the alternative text for the image.
-         * ``label``, the answer text.
+         * ``img``, 답변 이미지 URL.
+         * ``img_alt``, 이미지 대체 설명.
+         * ``label``, 답변 텍스트.
 
-         Each answer must have a value for ``img`` or ``label``, or both.
+         각 답변은 ``img`` 이나  ``label`` 중 하나 이상이 포함되어야 한다.
      * - ``feedback``
-       - The text shown to learners after they submit a response.
+       - 답변을 제출했을 때 학습자에게 보여지는 텍스트.
      * - ``private_results``
-       - Whether the survey results are shown to learners (``true``) or not
-         (``false``).
+       - 학습자에게 설문 조사 결과 공개 여부. (``true``) 는 공개, (``false``) 는 미공개.
      * - ``block_name``
-       - The display name for the survey.
+       - 설문 조사 메뉴 이름.
      * - ``max_submissions``
-       - The number of times a learner can submit survey answers.  Use ``0`` to
-         allow unlimited submissions. If you use a value other than ``1``, set
-         ``private_results`` to ``true``. Otherwise, learners will be able to
-         change their responses after seeing others' responses.
+       - 학습자 답변 제출 가능 횟수. 0을 입력하면 학습자는 답변을 무제한 제출할 수 있다. 1이 아닌 값을 입력한다면 학습자가 다른 학습자 답변을 본 후 다른 답변을 입력하는 것을 방지하기 위해 ``private_results`` 를  ``true`` 로 설정한다.
 
 ***************************
-Editing Published Surveys
+공개된 설문 편집하기
 ***************************
 
-Do not publish a survey until you have completed and tested it. You should
-avoid changing a survey after learners have begun using it.
+설문을 생성하고 충분히 테스트하기 전까지는 공개하지 않는 것이 좋다. 공개된 이후 설문을 바꾸는 것은 최대한 피하는 것이 좋다.
 
-If you must edit a survey after learners have submitted answers, take into
-account the following implications.
+만약 학습자가 이미 답변을 제출했다면 다음과 같은 사항을 고려해야 한다.
 
-* If you edit the value of a question or answer, previous submissions are
-  associated with the new question or answer value. This change can result in
-  an inaccurate picture of the responses.
+* 답변 값을 바꾸게 되면 기존 제출된 답변은 변경된 값에 대한 답변으로 인식된다. 이는 부정확한 결과로 이어질 수 있다.
 
-* If you change the survey so that previous submissions are invalid, by
-  removing a question or answer, those submissions are deleted when learners
-  next view the unit. Learners with invalid submissions are permitted to submit
-  new responses.
+* 선택지 하나를 삭제하면 그 선택지를 고른 기존 답변들은 삭제되며 학습자는 새 답변을 제출할 수 있다.
 
 ***************************
-View Survey Results
+설문 결과 조회하기
 ***************************
 
-When you view the survey as a course staff member, you can view results of the
-survey inside the course.
+강좌 운영자가 설문을 조회할 때 강좌 내 설문의 결과를 볼 수 있다.
 
-Select **View results** in the survey.
+설문의 **결과 조회** 를 선택한다
 
 .. image:: ../../../shared/images/survey_view_results.png
     :alt: A survey with the View Results button for course staff.
