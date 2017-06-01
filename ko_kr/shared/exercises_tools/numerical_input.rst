@@ -1,139 +1,97 @@
 .. _Numerical Input:
 
 ########################
-Numerical Input Problem
+수치 입력 문제
 ########################
 
-.. note:: EdX offers full support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 전체 지원을 제공한다.
 
 .. contents::
   :local:
   :depth: 1
 
 **********
-Overview
+개관
 **********
 
-In numerical input problems, learners enter numbers or specific and relatively
-simple mathematical expressions to answer a question. The text that the
-learners enter is converted to a symbolic expression that appears below the
-response field.
+이 유형의 문제에서는 학습자가 질문에 대한 답변으로 숫자 또는 비교적 단순한 특정 수식을 입력한다. 학습자가 입력한 문자열은 기호식으로 변환되어 답변 필드 아래에 표시된다.
 
 .. image:: ../../../shared/images/NumericalInputExample.png
  :alt: A problem with two questions, one answered correctly and one
      incorrectly.
 
-Responses for numerical input problems can include integers, fractions, and
-constants such as pi and *g*. Responses can also include text representing
-common functions, such as square root (sqrt) and log base 2 (log2), as well as
-trigonometric functions and their inverses, such as sine (sin) and arcsine
-(arcsin). For these functions, learners enter text that is converted into
-mathematical symbols. The following example shows a response entered by a
-learner and the numerical expression that results.
+수식 입력 문제에 대한 답변은 정수, 분수, 그리고 원주율(pi)이나 중력 가속도(g) 등의 상수를 포함할 수 있다. 제곱근(sqrt)이나 10을 밑으로 하는 로그 등의 간단한 함수, 그리고 사인(sin), 아크사인(arcsin)과 같은 삼각함수 및 역삼각함수를 나타내는 문자열도 가능하다. 학습자가 이들 함수를 나타내는 문자열을 입력하면 해당 문자열이 수학 기호로 변환된다. 수식 입력 문제에서 학습자의 문자열을 수식으로 변환하는 장면을 아래의 예에 제시한다.
 
 .. image:: ../../../shared/images/Math5.png
  :alt: A learner typed n*x^(n-1) to enter the symbolic expression n times x to
      the n minus 1 power.
 
-For more information about how learners enter expressions, see
-:ref:`openlearners:Math Formatting`.
+학습자가 입력할 수 있는 문자에 관한 보다 구체적인 정보를 :ref:`openlearners:Math Formatting` 에서 확인할 수 있다.
 
-You can specify a margin of error, or tolerance, for the answers to these
-problems so that learners' responses do not have to be exact. You can
-specify a correct answer explicitly or use a Python script.
+학습자가 작성한 정답이 정확할 필요 없게 오차범위를 설정할 수도 있다. Python 스크립트를 사용하거나 정확한 정답을 설정할 수 있다.
 
 .. note::
-  You can make a calculator available to your learners on every unit
-  page. For more information, see :ref:`Calculator`.
+  모든 학습활동 페이지에서 계산기를 활용할 수 있다. 자세한 사항은  :ref:`Calculator` 를 참고하면 된다.
 
 **************************************************
-Analyzing Performance on Numerical Input Problems
+수치 입력 문제 성과 분석하기
 **************************************************
 
-For the numerical input problems in your course, you can use edX Insights to
-review aggregated learner performance data and examine submitted answers. For
-more information, see :ref:`insights:Using edX Insights`.
+강좌의 수식 입력 문제에 Insights를 사용해 학습자 성과 데이터 및 답안을 분석할 수 있다. 자세한 사항은  :ref:`insights:Using edX Insights`  를 참고하면 된다.
 
 ***********************************
-Creating a Numerical Input Problem
+수치 입력 문제 생성하기
 ***********************************
 
-You can create numerical problems in the simple editor or in the advanced
-editor.
+간편 편집기나 고급 편집기로 수식 입력 문제를 생성할 수 있다.
 
-* If the text of your problem does not include any italics, bold formatting,
-  or special characters, you can create the problem in the simple editor.
-* If the text of your problem contains special formatting or characters, or if
-  your problem contains a Python script, you use the advanced editor.
+* 지문에 이탤릭체, 볼드체, 특수 문자가 없는 경우라면 간편 편집기로 생성 가능하다.
+* 문제 지문에 특수 포맷이나 특수 문자, 또는 Python 스크립트가 포함되는 경우 고급 편집기를 사용한다.
 
-For example, you must use the advanced editor to define the following problems.
+이를 테면, 아래의 예제를 생성하려면 고급 편집기를 사용해야 한다.
 
 .. image:: ../../../shared/images/NumericalInput_Complex.png
  :alt: A problem that requires a square root as the answer.
 
-In this example, the question uses a Python script to compute the square root.
+이 예제에서 문제는 Python 스크립트를 사용하였다.
 
-For more information about including a Python script in your problem, see
-:ref:`Write Your Own Grader`.
+문제 지문에 Python 스크립트를 입력하는 방법에 대한 보다 구체적인 정보는 :ref:`Write Your Own Grader` 을 참조한다.
 
 .. _Use the Simple Editor to Create a Numerical Input Problem:
 
 ========================================================================
-Use the Simple Editor to Create a Numerical Input Problem
+간편 편집기를 이용해 수식 입력 문제 생성하기
 ========================================================================
 
-To the :ref:`simple editor<Simple Editor>` to create a numerical input
-problem, follow these steps.
+:ref:`simple editor<Simple Editor>`  로 수식 입력 문제를 생성하기 위해.
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Problem**.
-#. Select one of the two numerical input problem templates.
+#. **신규 구성요소 추가** 에서 **문제** 를 클릭한다.
+#. 두가지 문제 템플릿 중 하나를 선택한다.
 
-   * From the list of **Common Problem Types**, select **Numerical Input**.
+   * **일반문제유형** 탭의 **수치 입력** 을 클릭한다.
 
-   * From the list of **Common Problems with Hints and Feedback**, select
-     **Numerical Input with Hints and Feedback**. For more information, see
-     `Use Feedback in a Numerical Input Problems`_.
+   * 일반문제유형탭에서 힌트가 있는 수치 입력을 클릭한다. 자세한 사항은  `Use Feedback in a Numerical Input Problems`_  를 참고하면 된다.
 
-     Studio adds the problem to the unit.
+     Studio는 학습활동에 문제를 추가한다.
 
-#. Select **Edit**. The simple editor opens.
-#. Replace the sample problem text with your own text.
-#. Determine the text that describes the question you want learners to answer,
-   and surround that text with two pairs of angle brackets (``>>question<<``).
-   This text identifies the question for screen readers, reports, and Insights.
+#. **편집** 을 선택하면 간편 편집기가 열린다.
+#. 구성요소 편집기의 예제 문자열을 원하는 문자열로 바꾼다.
+#. 질문으로 사용할 문제 텍스트를 결정한 후 해당 텍스트를 두 쌍의 (``>>question<<``) 로 묶는다. 이 텍스트가 화면 판독기, 보고, Insights에서 질문을 나타낸다 .
+#. 정답 텍스트를 선택한 후 수식 입력 단추를 클릭하면 = 표시가 답 옆에 나타난다.
+#. (선택 사항) 오차 범위 또는 허용 한계를 지정한다. 백분율, 숫자 또는 범위를 지정할 수 있다.
 
-#. To identify the problem's answer, select the answer text and then select
-   **Numerical Input** from the toolbar. An equals sign appears
-   next to the answer.
-#. Optionally, specify a margin of error, or tolerance. You can specify a
-   percentage, number, or range.
+   * 정답 양측(±)으로 허용 한계를 지정하려면 해당 정답 뒤에 +-숫자%를 입력한다. 가령 2%의 허용 오차를 두고자 하는 경우 +-2%를 입력한다.
 
-   * To specify a percentage on either side of the correct answer, after the
-     answer add **+-{number}%**. For example, to include a 2% tolerance, add
-     **+-2%**.
+   * 정답 양측(±)으로 숫자를 지정하려면 해당 정답 뒤에 +-숫자를 입력한다. 가령 허용 한계 5를 두고자 하는 경우 +-5를 입력한다.
 
-   * To specify a number on either side of the correct answer, after the answer
-     add **+-{number}**. For example, to include a tolerance of 5, add **+-5**.
+   * 범위를 지정하려면 시작 값과 끝 값은 ,로 나뉘며 대괄호([]) 또는 괄호(())를 이용한다. 대괄호는 해당 대괄호에 인접한 숫자를 포함한다는 의미이며 괄호는 해당 괄호에 인접한 숫자를 포함하지 않는다는 뜻이다. 이를테면, 범위를 [5, 8)로 지정할 경우 5, 6, 7은 정답이나 8은 정답이 아니다. 범위를 (5, 8]로 지정할 경우 6, 7, 8은 정답이나 5는 정답이 아니다.
 
-   * To specify a range, you provide the starting and ending values separated
-     by a comma and then surround the range with brackets [] or parentheses ().
-     A bracket includes the number next to it in the range, and a parenthesis
-     excludes the number from the range. For example, if you specify **[5,8)**,
-     correct answers can be 5, 6, and 7, but not 8. Likewise, if you specify
-     **(5,8]**, correct answers can be 6, 7, and 8, but not 5.
+#. 구성요소 편집기에서 설명용 텍스트를 선택한 후 설명 단추를 눌러 해당 텍스트에 설명 태그를 추가한다. ``[explanation]`` 가 설명용 텍스트 전후에 나타난다.
+#. **설정** 을 선택하고 **표시 이름** 을 정한다.
+#. 기타 설정을 지정한다. 자세한 사항은  :ref:`Problem Settings` 을 참고하면 된다.
+#. **저장** 을 클릭한다.
 
-#. To provide an explanation, select the explanation text and then select
-   **Explanation** from the toolbar. ``[explanation]`` appears before
-   and after the explanation text.
-#. Select **Settings** and provide an identifying **Display Name** for the
-   problem.
-#. Define additional settings for the problem. For more information, see
-   :ref:`Problem Settings`.
-#. Select **Save**.
-
-For the first example problem illustrated above, the text in the problem
-component appears as follows.
+상기 첫 번째 예제 가운데 문제 구성요소의 텍스트는 다음과 같다.
 
 ::
 
@@ -151,15 +109,12 @@ component appears as follows.
 Use the Advanced Editor to Create a Numerical Input Problem
 ========================================================================
 
-For a more complex problem, such as the one that follows, you use the advanced
-editor.
+고급 편집기로 수식 입력 문제를 만들기 위해.
 
-#. Follow the steps for creating the problem in the :ref:`simple editor<Use
-   the Simple Editor to Create a Numerical Input Problem>`.
-#. Select **Advanced Editor**, and then edit the XML to add the tags and
-   attributes you want. An example follows.
+#. :ref:`simple editor<Use the Simple Editor to Create a Numerical Input Problem>` 에서 문제를 만들었던 절차들을 따른다.
+#. **고급 편집기** 를 선택하고, 입력되지 않은 고급 문제를 선택하여 XML을 수정해 다음 예제와 같이 태그와 속성을 추가한다.
 
-**Problem Code**:
+**문제 코드**:
 
 .. code-block:: xml
 
