@@ -3,116 +3,78 @@
 .. _UBC Peer Instruction:
 
 ##########################
-Peer Instruction Tool
+상호 설명 도구
 ##########################
 
-.. note:: EdX offers full support for this tool.
+.. note:: K-MOOC은 이 도구에 대해 전체 지원을 제공한다.
 
-The Peer Instruction learning system provides students with in class
-opportunities to discuss questions and arrive at a deeper understanding of
-concepts. The peer instruction tool emulates this classroom experience for the
-learners in an online course.
+상호 설명 학습 시스템은 학습자가 토의를 통해 개념 이해도를 높일 수 있는 기회를 학습자에게 제공한다. 상호 설명 도구는 온라인 강좌를 수강중인 학생에게 실제 교실에서 학습하는 것 같은 경험을 제공한다.
 
 .. contents::
   :local:
   :depth: 2
 
-For more information about the Peer Instruction learning system, consult the
-resources of the `Mazur Group`_ or the `Turn to Your Neighbor`_ blog.
+상호 설명 학습 체계에 관한 자세한 내용은  `Mazur Group`_ 과 상담하거나  `Turn to Your Neighbor`_ 블로그를 참고하면 된다.
 
 *********************
-Assignment Overview
+과제 개관
 *********************
 
-Assignments created with the peer instruction tool present learners with a
-multiple choice question, and then guide the learners through these stages of
-the exercise.
+상호 설명 도구를 통해 만든 과제는 학습자에게 우선 선다형 문제를 제시하고 다음과 같은 단계로 이어진다.
 
-#. An initial response, which includes both an answer choice and a written
-   explanation for that choice.
+#. 답을 선택하고 그에 대한 이유를 덧붙인 최초 답변.
 
-#. Review of responses submitted by several other course participants.
+#. 강좌를 수강중인 다른 학습자가 제출한 답변에 대한 반응.
 
-#. A final response, which also includes an answer choice and revised
-   explanation.
+#. 답을 선택하고 그에 대한 수정된 이유를 덧붙인 최종 답변.
 
-Learners also receive an explanation for the correct answer choice. After 10
-learners complete the assignment, class breakdown histograms show the
-percentage of responding learners who selected each of the answer choices, both
-initially and after reviewing peer responses.
+학습자는 올바른 선택지에 대해 설명을 들을 수 있다. 10명의 학습자가 과제를 완료하면 강좌 히스토그램을 통해 최초 및 최종 답변의 각 선택지를 고른 학습자의 비율을 보여준다.
 
 .. _Designing a Peer Instruction Assignment:
 
 ===============================================
-Designing an Online Peer Instruction Assignment
+온라인 상호 설명 과제 만들기
 ===============================================
 
-Before you use the peer instruction tool in Studio, you design the assignment.
-You prepare the assignment question and its answer choices in the same way that
-you would for classroom students. The question and the answer choices can
-include text, images, or both.
+Studio에서 상호 설명 도구를 사용하기 전에 먼저 과제를 만들어야 한다. 과제 문제와 선택지를 준비하면 된다. 문제와 선택지는 텍스트와 이미지를 포함할 수 있다.
 
-For your online learners, you also prepare the following additional elements
-for the exercise.
+온라인 학습자를 위해 다음과 같은 추가 요소를 준비해야 한다.
 
-* A text explanation of the correct answer choice.
+* 정답과 그에 대한 텍스트 설명.
 
-* An example text explanation for each answer choice.
+* 각 선택지에 대한 예제 텍스트 설명.
 
-  These example explanations ensure that all learners, including the first few
-  to attempt the assignment, have other responses to review in the second stage
-  of the exercise. As the number of responses received from learners increases,
-  the likelihood that your examples will be shown to any given learner
-  decreases.
+  이 예제 설명은 모든 학습자, 특히 초반에 과제를 수행하는 학습자가 연습의 두번째 단계에서 참고할 반응이 있도록 보장한다. 학습자가 반응의 수를 늘릴수록 학습자는 이 예제를 읽지 않을 것이다.
 
-* The number of responses for learners to review in the second stage of the
-  exercise.
+* 연습 두번째 단계에서 참고할 수 있는 반응 수.
 
-* The logic for selecting the responses to show.
+* 공개되는 반응을 선별하는 논리.
 
-  * The random algorithm presents the specified number of responses without
-    regard to the associated answer choices. The responses shown to a learner
-    might include explanations for each of the answer choices, or it might
-    include several explanations for one choice and none for another choice.
+  * 무작위 알고리즘은 선택지와 관계 없이 반응의 숫자를 사용한다. 학습자가 보는 반응은 모든 선택지 설명을 포함할 수도 있고 아닐 수도 있다.
 
-  * The simple algorithm includes an additional step to minimize repeated and
-    missed responses for the different answer choices. Explanations are
-    presented for as many different answer choices as possible for the number
-    of responses specified.
+  * 간편 알고리즘은 반복되거나 빠지는 선택지가 없도록 한다. 반응의 숫자에 따라 각 선택지 별로 나눠 설명을 제시한다.
 
-After your design is complete, you use Studio to add the assignment to your
-course.
+알고리즘을 만들면 Studio를 사용해 강좌에 과제를 추가할 수 있다.
 
-.. note:: You might consider including an HTML component before the peer
- instruction component to describe the workflow that learners will experience
- in this assessment type. You might also consider including a content-specific
- discussion component after the peer instruction component to give learners an
- opportunity to continue the conversation.
+.. note:: 상호 설명 도구 전에 HTML 구성요소를 포함해 학습자가 이 평가 유형에서 경험할 작업 흐름을 다루는 것이 좋을 수 있다. 또 상호 설명 도구 이후 주제 토의 구성요소를 추가해 토의를 이어갈 수 있도록 하는 것이 좋다.
 
- For more information about how learners experience peer instruction
- assignments, see :ref:`learners:interactive_multiple_choice` in the *EdX
- Learner's Guide* or :ref:`openlearners:interactive_multiple_choice` in the
- *Open edX Learner's Guide*.
+ 자세한 사항은 선다형 문제 설명하기를 참고하면 된다.
+
 
 .. _Enable the Peer Instruction Tool:
 
 ==================================
-Enable the Peer Instruction Tool
+상호 설명 도구 설정하기
 ==================================
 
-Before you can add a component to your course structure for a peer instruction
-assignment, you must enable the peer instruction tool for your course.
+상호 설명 도구를 구성요소로서 강좌에 추가하기 전에 우선 설정을 해야 한다.
 
-To enable the peer instruction tool in Studio, you add the ``"ubcpi"`` key to
-the **Advanced Module List** on the **Advanced Settings** page. (Be sure to
-include the quotation marks around the key value.) For more information, see
-:ref:`Enable Additional Exercises and Tools`.
+Studio에서 오피스 믹스 도구를 설정하기 위해  ``"ubcpi"`` 키를 고급 설정 페이지의 고급 모듈 목록에 추가한다. 반드시 키 값을 “ “ 사이에 입력한다. 자세한 사항은 :ref:`Enable Additional Exercises and Tools` 를 참고하면 된다.
 
-.. note:: This tool was developed and contributed to the edX platform by the
- University of British Columbia.
+.. note:: 이 도구는 University of British Columbia가 개발해 K-MOOC 플랫폼에 제공하였다.
 
 ************************************************
-Adding a Peer Instruction Assignment in Studio
+Studio에 상호 설명 과제 추가하기
 ************************************************
 
 .. contents::
@@ -122,151 +84,99 @@ Adding a Peer Instruction Assignment in Studio
 .. _Upload PI Images:
 
 =================================
-Upload Images (Optional)
+이미지 업로드하기 (선택사항)
 =================================
 
-If the question or an answer choice in an assignment includes an image, you
-:ref:`upload the image file<Upload a File>` on the **Files & Uploads** page.
-The **Studio URL** for the image can then be added to the question or
-answer choice in the peer instruction component.
+만약 과제의 질문이나 선택지가 이미지를 포함한다면 파일 및 업로드 페이지에서 이미지를 업로드할 수 있다. 이미지의 Studio URL이 그 후 상호 설명 구성요소의 질문이나 선택지에 추가될 수 있다.
 
 ============================================
-Add a Peer Instruction Component
+상호 설명 구성요소 추가하기
 ============================================
 
-After you :ref:`enable the peer instruction tool <Enable the Peer Instruction
-Tool>` for your course, you can add the component for a peer instruction
-assignment.
+강좌에 상호 설명 도구를 설정한 후에 상호 설명 과제를 구성요소에 추가할 수 있다.
 
-#. On the **Course Outline** page, locate the subsection where you want to add
-   the assignment and add or open a unit.
 
-#. Under **Add New Component**, select **Advanced**, and then select **Peer
-   Instruction**. Studio adds the new component to the unit and uses a template
-   to supply a sample question, answers, and so on.
+#. **강좌 개요** 페이지에서 과제를 추가할 소주제를 선택하거나 새 학습활동을 연다.
+
+#. **새 구성요소 추가하기** 아래 **고급** 에서 **상호 설명** 을 선택한다. Studio는 새 구성요소를 학습활동에 추가해 예제 질문 및 답안이 포함된 템플릿을 제공한다.
 
    .. image:: ../../../shared/images/peer_instruction_studio.png
      :alt: A peer instruction assignment in Studio that uses the template.
      :width: 600
 
-#. Select **Edit**.
+#. **편집** 을 클릭한다.
 
-#. In the component editor, replace the default component display name with an
-   identifying name. In the LMS, this name appears as a heading above the
-   assignment.
+#. 구성요소 편집기에서 기본 구성요소 메뉴 이름을 바꾼다. 학습 관리 시스템에는 이 이름이 제목으로 표시된다.
 
-   Unique, descriptive display names can help you identify individual
-   assignments quickly and accurately for analysis.
+   학습자가 메뉴 이름을 보고 바로 과제에 대해 떠올릴 수 있게끔 이름을 짓는다.
 
-#. Select **Save**, or continue on to replace the template information with the
-   details for this assignment.
+#. **저장** 을 선택하거나 이 과제에 대한 정보를 예제 템플릿에 입력한다.
 
 ============================================
-Add the Assignment Details
+과제 세부사항 추가하기
 ============================================
 
-Before you add the details of the assignment to a peer instruction component,
-you :ref:`design the assignment<Designing a Peer Instruction Assignment>` by
-preparing a question, answer choices, and other required elements. If the
-question or any of the answer choices includes an image, you also
-:ref:`upload<Upload PI Images>` the image file and obtain its Studio
-URL so that you can add it to the assignment.
+상호 설명 구성요소에 과제 세부사항을 추가하기 전에 질문, 선택지와 기타 요소를 준비해 과제를 만들어야 한다. 만약 질문이나 선택지가 이미지를 포함한다면 이미지 파일을 업로드하고 Studio URL을 준비해 과제에 추가한다.
 
-To enter all of the assignment details into the component editor, follow these
-steps.
+구성요소 편집기에 모든 과제 세부사항을 입력하기 위해.
 
-#. In the new component, select **Edit**.
+#. 새 구성요소에서 편집을 선택한다.
 
-#. For the assignment question, enter text, add an image, or both.
+#. 과제 질문에 대해 텍스트나 이미지를 추가한다.
 
-   * To add text, enter the question that you want learners to consider in the
-     **Question Text** field.
+   * 질문 텍스트 필드에 학습자에게 낼 질문을 입력한다.
 
-   * To add an image, follow these steps.
+   * 이미지 추가를 위해.
 
-     #. Select **Add Image to Question**. Additional fields appear.
+     #. 질문에 이미지 추가하기를 선택한다.
 
-     #. In the **Image URL** field, paste or enter the Studio URL from the
-        **Files & Uploads** page.
+     #. **이미지 URL** 필드에 **파일 및 업로드** 페이지의 Studio URL 붙여넣기 하거나 입력한다.
 
-     #. Specify the **Image Position**. If your question does not include text,
-        **Appears above** and **Appears below** have the same result.
+     #. **이미지 위치** 를 지정한다. 만약 질문에 텍스트가 포함되지 않으면 **위에 표시** 와 **아래에 표시** 는 의미가 없다.
 
-     #. Provide a description of the image. This description should provide
-        enough detail so that learners who cannot see the image, and who rely
-        on screen readers to complete your course, can understand the question.
+     #. 이미지 설명을 추가한다. 이미지를 보지 못하는 학습자가 화면 판독기를 사용해 봤을 때 충분히 이해할 수 있도록 설명을 추가한다.
 
-#. Select a minimum and maximum length for the written explanations your
-   learners supply for their answer choices.
+#. 학습자가 선택지에 입력할 설명의 최소 및 최대 길이를 설정한다.
 
-   You can change the supplied default values as needed to require explanations
-   that are longer than 1 character, or limit explanations to less than
-   32,000 characters (approximately 12 pages).
+   최소 길이는 1자 최대 길이는 32000자 이내 범위에서 길이에 대한 기본값을 변경할 수 있다.
 
-#. Enter each answer choice. You can enter text, add an image, or both.
-   For information on how to add an image, see step 2.
+#. 각 선택지를 입력한다. 텍스트와 이미지를 모두 활용할 수 있다. 이미지 추가에 대해선 2단계를 참고하면 된다.
 
-   The template for this component has three sample answer choices.
+   이 구성요소 템플릿은 예제 선택지가 3개 있다.
 
-   * If your question has more than three answer choices, select **Add New
-     Answer** and then enter the answer. You can include up to 10 answer
-     choices.
+   * 질문에 선택지가 3개 이상이면 **새 선택지 추가하기** 를 클릭해 추가한다. 최대 10개의 선택지를 사용할 수 있다.
 
-   * To delete an answer choice, select the **X** next to the text field for
-     that answer.
+   * 선택지를 지우기 위해 선택지 텍스트 필드 옆의 **X** 를 클릭한다.
 
-#. Specify which of the answer choices is the correct answer. You identify the
-   correct answer choice by its assigned number: to indicate Answer 1 you
-   select **Option 1**, for Answer 2 you select **Option 2**, and so on.
+#. 선택지 중 정답을 고른다. 선택지 중 정답을 번호로 고른다. 선택지 1을 정답으로 하려면 **옵션 1** , 선택지 2라면 **옵션 2** 를 고르면 된다.
 
-#. Enter a text explanation that describes why the specified answer choice is
-   correct.
+#. 해당 선택지가 정답인 이유에 대해 텍스트 설명을 추가한다.
 
-#. Configure how, and how many, peer responses to show to learners after
-   they submit an initial response.
+#. 학습자가 최초 답변을 제출했을 때 몇 개의 반응을 공개할지 설정한다.
 
-   * To guide selection of the responses to show, select either **Random** or
-     **Simple**. For more information, see :ref:`Designing a Peer Instruction
-     Assignment`.
+   * 반응 선별 방법을 무작위나 간편 중에 선택한다. 자세한 사항은  :ref:`Designing a Peer Instruction Assignment` 를 참고하면 된다.
 
-   * Specify how many responses learners should be given to review. The
-     default, **#**, shows learners the same number of responses as there are
-     answer options.
+   * 학습자가 봐야 할 반응의 숫자를 정한다. 기본 설정으로 학습자는 선택지 숫자만큼 반응을 작성하도록 되어있다.
 
-#. Enter your example explanations. For each of the answer choices you enter in
-   step 4, you must supply an example explanation. You identify each answer
-   choice by its assigned number: to indicate Answer 1 you select **Option 1**,
-   for Answer 2 you select **Option 2**, and so on.
+#. 예제 설명을 입력한다. 4단계에서 입력하는 각 선택지 마다 예제 설명을 첨부해야 한다. 선택지를 번호로 구분하여 선택지 1에 대해 **옵션 1** , 선택지 2에 **옵션 2** 로 하면 된다.
 
-   The template for this component includes three example explanations.
+   이 구성요소의 템플릿은 3개의 예제 설명을 포함한다.
 
-   * If your question has more than three answer choices, you select **Add New
-     Example**, and then identify the answer choice and enter the example
-     explanation for each of the other answer choices.
+   * 만약 질문에 선택지가 3개 이상이라면 **새 예제 추가하기** 를 선택해 선택지에 예제 설명을 추가한다.
 
-   * To delete an example explanation, select the **X** next to the list of
-     numbered choices.
+   * 예제 설명을 지우기 위해 **X** 를 클릭한다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-   If **Save** is not available, an edit check has detected incomplete or
-   invalid information in the component editor. Review your entries to make
-   sure that each field has an entry, and that you have provided an example
-   explanation for each answer choice. For information about the error found,
-   move your cursor over the question mark that appears next to **Save**.
+   만약 **저장** 을 사용할 수 없다면 이는 입력하지 않았거나 잘못된 정보가 구성요소 편집기에서 발견되었다는 뜻이다. 입력한 정보를 재확인해서 모든 빈칸이 채워졌고 각 선택지 마다 예제 설명을 추가한 것을 확인한다. 발견된 오류에 대해선 **저장** 옆의 물음표로 마우스를 이동하면 된다.
 
 ************************************************
-Reviewing a Histogram of Learner Responses
+학습자 반응 히스토그램 검토하기
 ************************************************
 
-When learners submit their final answer choices and revised explanations, the
-peer instruction tool displays the correct answer and its explanation. The
-learner's initial answer and response, and final answer and response, follow.
+학습자가 최종 선택지와 수정 설명을 제출할 때 상호 설명 도구는 정답과 설명을 표시해준다. 학습자의 최초 답변, 반응, 최종 답변과 반응이 같이 나온다.
 
-As soon as 10 learners complete the assignment, the peer instruction tool
-displays a pair of class breakdown histograms. These histograms show how
-frequently learners selected each of the options, before and after they
-reviewed the responses submitted by other class participants.
+10명의 학습자가 과제를 완료하면 상호 설명 도구는 히스토그램을 보여준다. 이 히스토그램에 몇 명의 학습자가 각 선택지를 골랐는지 나온다.
 
    .. image:: ../../../shared/images/peer_instruction_histogram.png
      :alt: Class breakdown histograms showing an increase in correct answer

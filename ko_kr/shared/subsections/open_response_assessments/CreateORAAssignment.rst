@@ -1,90 +1,71 @@
 .. _PA Create an ORA Assignment:
 
 #############################################
-Create an Open Response Assessment Assignment
+개방형 응답 평가를 위한 과제 생성하기
 #############################################
 
-Creating an open response assessment is a multi-step process. This section
-covers each step in detail.
+다음과 같은 단계를 거쳐 개방형 응답 평가를 생성할 수 있다.
 
 .. contents::
   :local:
   :depth: 1
 
-In addition, see these other topics about different aspects of open response
-assessments.
+또한 개방형 응답 평가의 다른 측면에 대한 주제 역시 다룬다.
 
-* Components of an open response assessment: :ref:`Open Response Assessments 2`
+* :ref:`Open Response Assessments 2`
 
-* Viewing metrics and learner responses for released open response assessments:
+* 공개된 개방형 응답 평가의 학습자 답변 및 통계 조회:
   :ref:`Accessing ORA Assignment Information`
 
-* Actions you can take for an active ORA assignment: :ref:`Managing ORA
-  Assignments`
+* :ref:`Managing ORA Assignments`
 
 
 .. _PA Create Component:
 
 ******************************
-Step 1. Create the Component
+1단계: 구성요소 생성
 ******************************
 
-To create the component for your open response assessment, complete these
-steps.
+개방형 응답 평가의 구성요소를 생성하는 절차는 다음과 같다.
 
-.. note:: Do not add more than one ORA component in a course unit. Multiple ORA
-   assignments in a unit cause errors when learners submit their assessments.
+.. note:: 각 강좌 학습활동 당 하나 이상의 개방형 응답 평가를 포함해선 안 된다. 학습활동 내 다수의 개방형 응답 평가 과제는 오류로 이어지기 때문이다.
 
-#. In Studio, open the unit where you want to create the open response
-   assessment.
+#. Studio에서 개방형 응답 평가를 생성하고자 하는 학습활동을 연다.
 
-#. Under **Add New Component**, select **Problem**.
+#. **신규 구성요소 추가** 에서 **문제** 를 선택한다.
 
-#. Select **Advanced**, and then select **Peer Assessment**.
+#. **고급** 탭, **상호 평가** 를 차례로 클릭한다.
 
-#. In the problem component that appears, select **Edit**.
+#. 문제 구성요소가 화면에 표시된다. **편집** 을 클릭한다.
 
-   You use this component editor to add prompts and the rubric, and to specify
-   other settings for the open response assessment component.
+   이 구성요소 편집기를 사용해 프롬프트와 지표를 추가하고 개방형 응답 평가 구성요소의 기타 설정을 다룬다.
 
-#. Select **Save** each time you complete an editing session. You can continue
-   to edit the problem until you publish the unit.
+#. 편집을 끝낼 때마다 **저장** 을 클릭한다. 학습활동을 공개할 때까지 계속 문제를 편집할 수 있다.
 
-.. note:: After you publish an ORA assignment, you can no longer change the
-   structure of the rubric or the point values associated with each criterion
-   in the rubric. If you correct typographical errors in the text of the
-   rubric, only learners who have not yet started the assignment will see the
-   corrections. However, you can modify due dates and the weight of the ORA
-   assignment after you publish an ORA assignment.
+.. note:: 개방형 응답 평가 과제를 공개하고 나면 더 이상 채점 기준표 틀이나 항목별 값을 수정할 수 없다. 만약 오탈자를 수정한다면 과제를 시작하지 않은 학습자만이 수정사항을 본다. 그러나 개방형 응답 평가 과제 공개 후 제출 기한이나 개방형 응답 평가 과제의 가중치를 변경할 수 있다.
 
 
 .. _PA Add Prompt:
 
 ******************************
-Step 2. Add Prompts
+2단계: 프롬프트 추가
 ******************************
 
-To add prompts, or questions, complete these steps.
+프롬프트를 입력하는 절차는 다음과 같다.
 
-.. note:: If you want to add text formatting to the prompt, or include an
- image, see :ref:`Add Formatting or Images to a Prompt`.
+.. note:: 프롬프트에 텍스트나 이미지를 추가하려면 :ref:`Add Formatting or Images to a Prompt` 를 참고하면 된다.
 
-#. In the open response assessment component editor, select **Prompt**.
-#. Add the text of your question in the text field. Replace any default text if
-   necessary.
-#. Select **Add a Prompt** to add another prompt in the problem.
+#. 개방형 응답 평가 구성요소 편집기에서 **프롬프트** 탭을 클릭한다.
+#. 작성한 질문지 텍스트를 텍스트 필드에 입력한다. 기존 텍스트가 존재하는 경우, 필요하다면 해당 텍스트를 지우고 질문지 텍스트를 입력한다.
+#. 문제에 다른 프롬프트를 추가하려면 **문제추가** 를 선택한다.
 
 .. _Add Formatting or Images to a Prompt:
 
 ========================================
-Add Formatting or Images to a Prompt
+프롬프트에 서식 또는 이미지 추가하기
 ========================================
 
-Currently, you cannot format text or add images inside the Peer Assessment
-component. To include formatting or images in a prompt, you can add an HTML
-component that contains your text above the Peer Assessment component, and
-leave the text field in the **Prompt** tab blank. The instructions for the peer
-assessment still appear above the **Your Response** field.
+현재로서는 상호 평가 구성요소에 텍스트 서식 또는 이미지를 삽입할 수 없다. 프롬프트 텍스트에 서식 또는 이미지를 삽입하고자 하는 경우 해당 텍스트를 포함하는 HTML 구성요소를 동료 평가 구성요소 위에 추가하고 프롬프트 탭의 텍스트 필드를 공란으로 남겨둔다. 동료 평가 관련 교수법은 **나의 응답** 필드에 계속 표시된다.
 
 .. image:: ../../../../shared/images/PA_HTMLComponent.png
       :alt: A peer assessment that has an image in an HTML component.
@@ -93,343 +74,243 @@ assessment still appear above the **Your Response** field.
 .. _PA Allow Images:
 
 ============================================
-Allow Learners to Submit Files (optional)
+이미지 응답 제출 설정 (선택 사항)
 ============================================
 
-Before you enable this feature for your open response assessment, be sure to
-read about its limitations and best practices. For more information, see
-:ref:`Asking Learners to Upload Other Files in Responses`.
+개방형 응답 평가를 위해 이 기능을 설정하기 전에 제한사항 및 활용법에 대해 숙지해야 한다. 자세한 사항은 :ref:`Asking Learners to Upload Other Files in Responses` 를 참고하면 된다.
 
-To allow learners to submit a file along with their text responses, follow
-these steps.
+다음 절차에 따라 학습자가 자신의 응답에 이미지를 첨부하여 제출하도록 설정할 수 있다.
 
-#. In the open response assessment component editor, select **Settings**.
+#. 구성요소 편집기에서 **설정** 탭을 클릭한다.
 
-#. Set **Allow File Upload** to one of these options.
+#. **이미지 응답 설정** 을 다음 옵션 중 하나에 대해 설정한다.
 
    * **Image File**
    * **PDF or Image File**
    * **Custom File Types**
 
-#. If you select **Custom File Types**, the **File Types** field appears. Enter
-   the file extensions, separated by commas, of the types of files that
-   you want learners to submit.
+#. **사용자 지정 파일** 을 선택하면 **파일 형식** 필드가 나타난다. 학습자에게 제출 시키고 싶은 파일 확장자를 ,로 구분하여 입력한다.
 
-   .. note:: To reduce the potential for problems from files with malicious
-    content, learners cannot upload certain file types. For more information,
-    see :ref:`Asking Learners to Upload Other Files in Responses`.
+   .. note:: 바이러스 등의 문제를 방지하기 위해 사용할 수 없는 파일 확장자가 있다. 자세한 사항은 :ref:`Asking Learners to Upload Other Files in Responses` 를 참고하면 된다.
 
-#. Verify that the text of the prompt describes the file type or types that
-   learners can upload.
+#. 프롬프트의 텍스트가 업로드 가능한 파일 형식을 보여주는 것을 확인한다.
 
 .. _PA Add Rubric:
 
 ******************************
-Step 3. Add the Rubric
+3단계. 채점기준표 추가하기
 ******************************
 
-In this step, you add your rubric to provide guidance for assessing responses
-within the assignment. You add one rubric for each problem, regardless of the
-number of prompts in the problem.
+이 단계에서 채점 기준표를 삽입하여 과제 내 답변을 평가하는 지침을 알려준다. 문제 프롬프트의 수와 관계없이 각 문제에 대해 하나의 채점 기준표를 추가한다.
 
-For each step below, replace any default text with your own text.
+아래의 각 단계에서 기존 텍스트를 삭제하고 텍스트를 입력한다.
 
-.. note:: All open response assessments include a feedback field below the
-   rubric so that learners can provide written feedback on a peer's overall
-   response. You can also allow or require learners to provide feedback for
-   individual criteria. See step 6 below for instructions. For more
-   information, see :ref:`Feedback Options`.
+.. note:: 모든 개방형 평가에는 채점 기준표 아래에 피드백 필드가 있다. 따라서 학습자는 동료의 전체 응답에 대한 피드백을 기입할 수 있다. 또한 평가 항목 각각에 대한 피드백을 제출하도록 학습자에게 요청하거나 이를 의무화할 수 있다. 아래의 단계6에서 해당 방법을 확인한다.  :ref:`Feedback Options` 에서 보다 구체적인 정보를 확인할 수 있다.
 
-To add the rubric, follow these steps.
+다음 절차에 따라 채점 기준표를 넣을 수 있다.
 
-#. In the open response assessment component editor, select the **Rubric** tab.
+#. 개방형 평가 구성 요소 편집기에서 **채점 기준표** 탭을 클릭한다.
 
-#. In the first **Criterion** section, enter the name and prompt text of your
-   first criterion.
+#. **첫 번째 평가** 항목 에서 첫 번째 평가 항목에 해당하는 제목과 프롬프트 텍스트를 입력한다.
 
-#. In the first **Option** section, enter the name, explanation, and point
-   value for the first option.
+#. **첫 번째 평가** 기준 에서 첫 번째 평가 등급에 해당하는 제목, 설명, 포인트값을 입력한다.
 
-#. In the next **Option** section, enter the name, explanation, and point value
-   for the next option.
+#. 다음 평가 등급에 해당하는 제목, 설명, 소수점 값을 입력한다.
 
-#. Repeat step 4 for each option. If you need to add more options, select **Add
-   Option**.
+#. 각 평가 등급에서 앞 단계를 반복한다. 보다 많은 평가 등급을 추가해야 할 경우 **평가 등급 추가** 를 클릭한다.
 
-#. Next to **Feedback for This Criterion**, select a value in the dropdown list.
+#. 본 평가 항목에 대한 피드백 옆의 드롭다운 목록에서 값 하나를 선택한다.
 
-   * If you do not want to allow feedback for this individual criterion,
-     select **None**.
-   * If you want to require feedback, select **Required**.
-   * If you want to allow feedback, but not require it, select **Optional**.
+   * 해당 1개 평가 항목에 대한 학습자 피드백 제출이 필요하지 않을 경우 **없음** 을 선택한다.
+   * 학습자 피드백 제출을 의무화하고자 하는 경우 **필수** 를 선택한다.
+   * 학습자 피드백 제출을 설정하되 의무화하지는 않을 경우 **선택** 을 선택한다.
 
-#. Repeat steps 2-6 to add your remaining criteria. If you need to add more
-   criteria, select **Add Criterion** at the end of the list of criteria.
+#. 단계2-6의 지시에 따라 잔여 평가 항목을 추가한다. 더 많은 평가 항목을 추가하고자 하는 경우 평가 항목 목록 끝의 **평가 항목 추가** 를 클릭한다.
 
-#. Include instructions for learners to provide overall written feedback on
-   their peers' responses. You can leave the default text in the **Feedback
-   Instructions** field or replace it with your own text.
+#. 학습자가 동료 응답에 대한 종합 피드백을 기입, 제출하는 데 필요한 지시 사항을 입력한다. 피드백 지시 사항 필드의 기존 텍스트를 그대로 두거나 텍스트로 갈음할 수 있다.
 
-.. note:: After you publish an ORA assignment, you can no longer change the
-   structure of the rubric or the point values associated with each criterion
-   in the rubric. If you correct typographical errors in the text of the
-   rubric, only learners who have not yet started the assignment will see the
-   corrections. However, you can modify due dates and the weight of the ORA
-   assignment after you publish an ORA assignment.
+.. note:: 개방형 응답 평가 과제를 공개하고 나면 더 이상 채점 기준표 틀이나 항목별 값을 수정할 수 없다. 만약 오탈자를 수정한다면 과제를 시작하지 않은 학습자만이 수정사항을 본다. 그러나 개방형 응답 평가 과제 공개 후 제출 기한이나 개방형 응답 평가 과제의 가중치를 변경할 수 있다.
 
 
 .. _PA Criteria Comment Field Only:
 
 ==========================================================
-Provide Only Comment Fields for Individual Criteria
+각 평가 항목에서 의견 필드만 제공하기
 ==========================================================
 
-When you add a comment field to a criterion, the comment field appears below
-the options for the criterion. You can also provide a comment field, but no
-options.
+평가 항목에 의견 필드를 추가하면 해당 의견 필드가 해당 평가 항목에 대한 선택 조건 아래에 표시된다. 평가 등급 없이 의견 필드만 제공할 수 있다.
 
-In the following image, the first criterion has a comment field but no
-options. The second criterion includes options, but does not have a comment
-field.
+다음 이미지에서 첫 번째 평가 항목에 의견 필드는 있으나 평가 등급은 없는 것을 확인할 수 있다. 두 번째 평가 항목에는 평가 등급이 있으나 의견 필드가 없다.
 
 .. image:: ../../../../shared/images/PA_0_Option_Criteria.png
   :alt: Examples of criteria with and without a comment field.
 
-To provide a comment field without options, complete these steps.
+평가 등급 없이 의견 필드만 제공하는 방법은 다음과 같다.
 
-#. In the criterion, select **Remove** to remove, or delete, all the options.
-#. Next to **Feedback for This Criterion**, select **Required** in the dropdown
-   list.
+#. 해당 평가 항목에서 제거 를 클릭하여 모든 평가 등급을 제거, 즉 삭제한다.
+#. 본 평가 항목에 대한 피드백 옆 드롭다운 목록에서 **필수** 를 선택한다.
 
 
 .. _PA Specify Name and Dates:
 
 ************************************************************
-Step 4. Specify the Assignment Name and Response Dates
+4단계: 과제명 및 응답일 지정
 ************************************************************
 
-Before you specify the start and due dates and times for a response, be sure
-that you consider these aspects of, and best practices for, the open response
-assessment feature.
+답변에 대한 시작 및 기한을 정하기 전에 다음과 같은 개방형 응답 평가 과제의 특징을 고려해야 한다.
 
-* Unlike other problem types, ORA assignments are not governed by the
-  subsection due date. Due dates for each ORA assignment are set in the
-  assignment's settings.
+* 다른 문제 형식과 달리 개방형 응답 평가 과제는 소주제 제출 기한에 영향을 받지 않는다. 각 개방형 응답 평가 과제의 기한은 과제 설정에서 정한다.
 
-* The :ref:`grace period <Set the Grace Period>` that you can set for the
-  course does not apply to ORA assignments.
+* 강좌에 설정한  :ref:`grace period <Set the Grace Period>`은 개방형응답평가 과제에 적용되지 않는다.
 
-* EdX recommends that you set the response due date at least one week before
-  the peer assessment due date and time, to allow enough time for peer
-  assessments to be performed after learners have submitted their own
-  responses. If the response due time and peer assessment due time are close
-  together, and a learner submits a response just before responses are due,
-  other learners may not have time to perform peer assessments before peer
-  assessments are due. For details, see :ref:`Best Practices for ORA`.
+* 개방형 응답 평가 과제에서 제출 이후 상호 평가 채점 시간을 충분히 제공하기 위해 제출 기한과 채점 기한의 차이를 1주일 이상 둔다. 만약 제출 기한과 채점 기한이 너무 붙어있으면 상호 평가 채점을 위한 시간이 충분하지 않을 수 있다. 자세한 사항은  :ref:`Best Practices for ORA` 를 참고하면 된다.
 
-* The times that you set, and the times that learners see, are in Coordinated
-  Universal Time (UTC). You might want to verify that you have specified the
-  times that you intend by using a time zone converter such as `Time and Date
-  Time Zone Converter <http://www.timeanddate.com/worldclock/converter.html>`_
+* 설정하는 시간과 학습자가 보는 시간은 모두 UTC를 기준으로 한다. 만약 특정 시간대를 원한다면  `Time and Date Time Zone Converter <http://www.timeanddate.com/worldclock/converter.html>`_ 를 사용해야 한다.
 
-To specify a name for the assignment as well as start and due dates for all
-learner responses, complete these steps.
+과제명과 학습자 응답 전부에 대한 시작일 및 제출 기한은 다음 절차로 지정한다.
 
-#. In the component editor, select the **Settings** tab.
+#. 구성요소 편집기에서 **설정** 탭을 클릭한다.
 
-#. Next to **Display Name**, type the name you want to give the assignment.
+#. 메뉴 이름 옆에 원하는 **과제명** 을 기입한다.
 
-#. Next to **Response Start Date** and **Response Start Time**, enter the date
-   and time when you want learners to be able to begin submitting responses.
+#. **답변** 시작일 및 **답변** 시작 시간 옆에 원하는 학습자 응답 제출 시작일 및 시작 시간을 입력한다.
 
-#. Next to **Response Due Date** and **Response Due Time**, enter the date and
-   time by which all learner responses must be submitted.
+#. **답변 마감일** 및 **답변 마감 시간** 옆에 학습자의 응답이 모두 제출 완료돼야 하는 날짜와 시간을 입력한다.
 
 
 .. _PA Select Assignment Steps:
 
 ****************************************
-Step 5. Select Assignment Steps
+5단계. 과제 단계 선택하기
 ****************************************
 
-Open response assessment assignments can include learner training, peer
-assessment, self assessment, and staff assessment steps.
+개방형 응답 평가 과제는 평가 연습, 상호 평가, 자기 평가 단계를 포함할 수 있다.
 
-The component editor provides the steps in a sequence that works well for most
-courses. While you can change the order of the peer, self, and staff assessment
-steps, edX recommends that you include them in this order.
+구성요소 편집기가 제공하는 단계는 대부분 강좌에서 사용할 수 있다. 상호, 자기 및 운영팀 평가 순서를 바꿀 수 있지만 K-MOOC은 바꾸지 않는 것을 권장한다.
 
-.. note:: If you include a learner training step, you must also include a peer
-   assessment step. The learner training step must come before peer or self
-   assessment steps.
+.. note:: 평가 연습 단계를 포함할 경우 상호 평가 단계를 반드시 포함해야 한다. 평가 연습 단계는 동료 평가 단계 및 자기 평가 단계에 반드시 선행해야 한다.
 
-   If you include both peer and self assessment steps, edX recommends that you
-   place the peer assessment before the self assessment.
+   만약 상호 및 자기 평가가 모두 포함된다면 K-MOOC은 상호 평가를 먼저 실행하는 것을 권장한다.
 
-   If you include a staff assessment step, it should be the final step in the
-   assignment.
+   만약 운영팀 평가가 포함된다면 마지막에 해야 한다.
 
-To add steps to the open response assignment, complete these actions.
+과제에 단계를 추가하는 방법은 다음과 같다.
 
-#. In the component editor, select the **Settings** tab.
+#. 구성요소 편집기에서 **설정** 탭을 클릭한다.
 
-#. Scroll down past the **Allow Image Responses** and **Allow Latex
-   Responses** fields.
+#. 이미지 응답 허용과 **LaTeX 답변 혀용** 이 보일 때까지 스크롤바를 내린다.
 
-#. Locate the following headings.
+#. 다음 제목을 찾는다.
 
-   * **Step: Learner Training**
-   * **Step: Peer Assessment**
-   * **Step: Self Assessment**
-   * **Step: Staff Assessment**
+   * **단계: 학습자 안내**
+   * **단계: 상호 평가**
+   * **단계: 자기 평가**
+   * **단계: 운영팀 평가**
 
-   Select the check boxes for the steps that you want the assignment to
-   include.
+   과제에 포함하고자 하는 단계의 체크박스를 선택한다.
 
-#. (optional) To change the order of the steps, drag the steps into the order
-   that you want.
+#. (선택) 단계의 순서를 변경하려면 해당 단계를 드래그하여 원하는 순서(장소)로 이동한다.
 
 
 .. _PA Specify Step Settings:
 
 ******************************
-Step 6. Specify Step Settings
+6단계: 단계 설정 지정
 ******************************
 
-After you select the steps that you want, you can specify settings for those
-steps.
+포함하고자 하는 단계를 선택한 후 단계의 설정을 구성한다.
 
-.. note:: If you make changes to a step, but then you clear the check box for
-   that step, the step will no longer be part of the assignment and your
-   changes will not be saved.
+.. note:: 어떤 단계를 변경하더라도 해당 단계의 체크박스 내부 표시를 없애면 그 단계는 더 이상 해당 과제의 일부가 되지 않으며 변경사항 역시 저장되지 않는다.
 
 .. _PA Student Training:
 
 ========================
-Learner Training
+평가 연습 단계
 ========================
 
-For the learner training step, you enter one or more responses that you have
-created, then select an option for each criterion in your rubric.
+평가 연습 단계에서는 1가지 이상의 응답에 대해 채점 기준표의 각 평가 항목에 따라 평가한다.
 
-.. note:: You must enter your complete rubric on the **Rubric** tab before you
-   can select options for the learner training responses. If you later change
-   one of your criteria or any of its options, you must also update the learner
-   training step.
+.. note:: 이를 위해 반드시 채점 기준표 탭에 있는 채점 기준표가 빠짐없이 입력되어 있어야 한다. 평가 항목 가운데 하나 혹은 평가 항목의 평가 등급 가운데 어떤 것이라도 추후 변경하는 경우, 평가 연습 단계 역시 반드시 수정되어야 한다.
 
-To add and score learner training responses, follow these steps.
+평가 연습 단계의 응답을 추가하고 채점하는 절차는 다음과 같다.
 
-#. Under **Step: Learner Training**, locate the first **Scored Response**
-   section.
-#. In the **Response** field, enter the text of your example response.
-#. Under **Response Score**, for each criterion, select the option that you
-   want.
+#. **단계** : **평가 연습** 단계 에서 첫 번째 채점한 응답 을 찾는다.
+#. **응답** 필드에서 텍스트를 입력한다.
+#. **응답 점수** 에서 각 평가 항목에 대해 원하는 평가 등급을 선택한다.
 
-For more information about learner training steps, see :ref:`PA Student
-Training Step`.
+이에 관한 보다 구체적인 안내는  :ref:`PA Student Training Step` 에 있다.
 
 
 ============================
-Peer Assessment
+상호 평가 단계
 ============================
 
-For the peer assessment step, you specify the number of responses that each
-learner must grade, the number of learners who must grade each response, and
-start and due dates. All fields are required.
+상호 평가 단계에서는 각 학습자가 반드시 채점해야 하는 응답의 개수, 각 응답을 반드시 채점해야 하는 학습자의 수, 시작일 및 마감일을 지정해야 한다. 이때 모든 필드를 필수적으로 입력해야 한다.
 
-To specify peer assessment settings, follow these steps.
+상호 평가 설정을 지정하는 절차는 다음과 같다.
 
-#. Locate the **Step: Peer Assessment** heading.
+#. **단계** : **상호 평가** 제목을 찾는다.
 
-#. Next to **Must Grade**, enter the number of responses that each learner must
-   grade.
+#. 반드시 채점해야 할 응답 옆에 각 학습자가 반드시 채점해야 할 응답의 개수를 입력한다.
 
-#. Next to **Graded By**, enter the number of learners that must grade each
-   response.
+#. 채점자 옆에 각 응답을 반드시 채점해야 할 학습자의 수를 입력한다.
 
-#. Next to **Start Date** and **Start Time**, enter the date and time when
-   learners can begin assessing their peers' responses.
+#. 시작일 및 시작 시간 옆에 학습자가 상호 평가를 시작할 수 있는 날짜와 시간을 기입한다.
 
-#. Next to **Due Date** and **Due Time**, enter the date and time by which all
-   peer assessments must be completed.
+#. 마감일 및 마감 시간 옆에 상호 평가가 반드시 모두 종료돼야 하는 날짜와 시간을 입력한다.
 
-  .. note:: The times that you set, and the times that learners see, use
-   Coordinated Universal Time (UTC). You might want to verify that you have
-   specified the times that you intend by using a time zone converter such as
-   `Time and Date Time Zone Converter
-   <http://www.timeanddate.com/worldclock/converter.html>`_
+  .. note:: 설정하는 시간과 학습자가 보는 시간은 모두 UTC를 기준으로 한다. 만약 특정 시간대를 원한다면 `Time and Date Time Zone Converter <http://www.timeanddate.com/worldclock/converter.html>`_  를 사용해야 한다.
 
-For more information about peer assessment steps, see :ref:`Peer Assessment
-Step`.
+상호 평가에 관한 자세한 사항은  :ref:`Peer Assessment Step` 를 참고하면 된다.
 
 ============================
-Self Assessment
+자기 평가 단계
 ============================
 
-For the self assessment step, you specify when the step starts and ends.
+다음 절차에 따라 자기 평가 단계의 시작 및 종료 시점을 지정한다.
 
-#. Locate the **Step: Self Assessment** heading.
+#. 단계: 자기 평가 제목을 찾는다.
 
-#. Next to **Start Date** and **Start Time**, enter the date and time when
-   learners can begin assessing their peers' responses.
+#. 시작일 및 시작 시간 옆에 학습자가 동료 반응 평가를 시작할 수 있는 날짜와 시간을 입력한다. 모든 시간은 국제 표준시로 한다.
 
-#. Next to **Due Date** and **Due Time**, enter the date and time by which all
-   peer assessments must be complete.
+#. 마감일 및 마감 시간 옆에 동료 평가가 반드시 모두 종료돼야 하는 날짜와 시간을 입력한다. 모든 시간은 국제 표준시로 한다.
 
-  .. note:: The times that you set, and the times that learners see, use
-   Coordinated Universal Time (UTC). You might want to verify that you have
-   specified the times that you intend by using a time zone converter such as
-   `Time and Date Time Zone Converter
-   <http://www.timeanddate.com/worldclock/converter.html>`_
+  .. note:: 설정하는 시간과 학습자가 보는 시간은 모두 UTC를 기준으로 한다. 만약 특정 시간대를 원한다면  `Time and Date Time Zone Converter <http://www.timeanddate.com/worldclock/converter.html>`_  를 사용해야 한다.
 
-For more information about self assessment steps, see :ref:`Self Assessment
-Step`.
+자기 평가에 대한 자세한 사항은  :ref:`Self Assessment Step` 를 참고하면 된다.
 
 ================
-Staff Assessment
+운영팀 평가 단계
 ================
 
-For the staff assessment step, there are no additional settings after you have
-selected the step for inclusion in the assignment.
+운영팀 평가 단계는 추가적인 설정 사항이 없다.
 
-For more information about staff assessment steps, see :ref:`Staff Assessment
-Step`.
+운영팀 평가에 대한 자세한 사항은  :ref:`Staff Assessment Step`  를 참고하면 된다.
 
 
 .. _PA Show Top Responses:
 
 ******************************
-Step 7. Show Top Responses
+7단계: 우수 응답 공개
 ******************************
 
-To allow learners to see the top scoring responses for the assignment, you
-specify a number on the **Settings** tab.
+학습자가 해당 과제에 대한 최상위 점수를 볼 수 있게 하려면 다음 절차에 따라 설정 탭에서 그 개수를 지정해야 한다.
 
-#. In the component editor, select the **Settings** tab.
+#. 구성 요소 편집기에서 **설정** 탭을 클릭한다.
 
-#. In the **Top Responses** field, specify the number of responses that you
-   want to appear in the **Top Responses** section below the learner's final
-   score. If you do not want this section to appear, set the number to 0. The
-   maximum number is 100.
+#. **우수 응답** 필드에서, 학습자 최종 점수 아래의 **우수 응답** 에 공개하고자 하는 응답의 개수를 지정한다. 공개를 원하지 않을 경우 0을 입력한다. 최대 100개까지 공개 가능하다.
 
-.. note:: Because each response can be up to 300 pixels in height, we recommend
-   that you set the number of top responses to 20 or lower, to prevent the page
-   from becoming too long.
+.. note:: 각 응답의 높이는 최대 300픽셀이다. 따라서 게시물의 수를 20이하로 설정하여 해당 페이지가 지나치게 길어지지 않게 할 것을 권한다.
 
-For more information about the **Top Responses** section that you can include
-for an ORA assignment, see :ref:`PA Top Responses`.
+보다 구체적인 안내는 :ref:`PA Top Responses` 에 있다.
 
 
 .. _PA Test Assignment:
 
 ******************************
-Step 8. Test the Assignment
+8단계: 과제 베타 테스트
 ******************************
 
-To test your ORA assignment, you can set up the assignment in your course, set
-the section or subsection date in the future, publish the unit, and ask one or
-more beta testers to submit responses and grade each other. The beta testers
-can then let you know if they found the question and the rubric easy to
-understand or if they had any problems with the assignment.
+강좌에 과제를 개설하고 향후의 주제 및 소주제 날짜를 정한 후 베타 사용자에게 요청하여 응답을 제출하고 서로의 응답을 평가하게 함으로써 해당 과제를 베타 테스트한다. 베타 테스터는 프롬프트 및 채점 기준표가 이해하기 쉬운지 및 과제와 관련한 문제가 있는지를 보고할 수 있다.
 
-For more information about beta testing, see :ref:`Beta_Testing`.
+베타 테스트에 대한 자세한 안내는  :ref:`Beta_Testing` 에 있다.

@@ -1,88 +1,63 @@
 .. _Managing ORA Assignments:
 
 ##############################################
-Managing Open Response Assessment Assignments
+개방형 응답 평가 과제 관리
 ##############################################
 
-After you publish an open response assessment and learners start to submit
-responses and perform assessments, there are various actions you can take as a
-member of the course staff.
+개방형 응답 평가를 공개한 후 학습자가 답변을 제출하고 평가가 시작되면 강좌 운영자로서 몇 가지 조치를 취할 수 있다.
 
 .. contents::
   :local:
   :depth: 1
 
-In addition, see these other topics about different aspects of open response
-assessments.
+추가적으로 개방형 응답 평가에 대한 다음 주제들을 숙지한다.
 
-* Components of an open response assessment: :ref:`Open Response Assessments 2`
+* :ref:`Open Response Assessments 2`
 
-* Instructions for creating an open response assessment: :ref:`PA Create an ORA
-  Assignment`
+* 개방형 응답 평가 생성에 대한 설명: 개방형 응답 평가 생성하기
 
-* Viewing metrics and learner responses for released open response assessments:
+* 공개된 개방형 응답 평가의 학습자 답변 및 통계 조회:
   :ref:`Accessing ORA Assignment Information`
 
 
 .. _Access Information for a Specific Learner:
 
 ****************************************************
-View a Specific Learner's Response and Assessments
+특정 학습자의 답변 및 평가 조회하기
 ****************************************************
 
-You can view the following information about an individual learner's
-performance in the open response assessment assignment.
+개방형 응답 평가 과제에서 학습자 성과에 대한 다음과 같은 정보를 조회할 수 있다.
 
-* The text of the learner's response, including any files that the learner
-  uploaded.
-* The peer assessments that other learners performed on the learner's
-  response, including feedback on individual criteria and on the overall
-  response.
-* The peer assessments that the learner performed on other learners'
-  responses, including feedback on individual criteria and on the overall
-  responses.
-* The learner's self assessment.
-* The learner's grade for the assignment.
-* An override grade provided by course staff.
+* 학습자가 업로드한 파일을 포함한 응답 텍스트.
+* 전체적인 응답과 개별 항목에 대한 피드백을 포함한 학습자 응답에 대한 상호 평가.
+* 전체적인 응답과 개별 항목에 대한 피드백을 포함한 학습자가 다른 학습자의 응답에 대해 올린 상호 평가.
+* 학습자의 자기 평가.
+* 학습자 과제 성적.
 
-For more details about accessing information for a specific learner, and for an
-example that shows a learner's response with peer assessments, see :ref:`Access
-Learner Information`.
+특정 학습자에 대해 정보를 조회하는 방법과 학습자 응답을 상호 평가와 동시에 보는 예제에 대한 자세한 정보는 :ref:`Access Learner Information` 를 참고하면 된다.
 
-To determine whether a learner has received the required number of assessments
-from other learners and has completed the required number of assessments for
-other learners, refer to the **Graded By** and **Must Grade** values that were
-set for the open response assessment assignment in Studio. For more
-information about these settings, see :ref:`Specify Step Settings<PA Specify
-Step Settings>`.
+학습자가 다른 학습자로부터 충분한 평가를 받았고 다른 학습자에 대해 충분히 평가했다는 것을 확인하기 위해 채점자와 반드시 채점해야 할 응답을 확인한다. 자세한 사항은  :ref:`Specify Step Settings<PA Specify Step Settings>` 를 참고하면 된다.
 
 
 .. _Access Learner Information:
 
 =======================================
-Access a Specific Learner's Information
+특정 학습자 정보 조회하기
 =======================================
 
-Before you can access information about a specific learner's assignment, you
-need the learner's username or email address. For more information, see
-:ref:`View and download student data`.
+특정 학습자의 과제에 대한 정보를 조회하기 전에 학습자의 사용자 이름이나 이메일 주소가 필요하다. 자세한 사항은 :ref:`View and download student data` 를 참고하면 된다.
 
-#. In the course, go to the ORA assignment.
+#. 강좌에서 개방형 응답 평가 과제에 접속한다.
 
-#. Scroll to the bottom of the problem, then select **Manage Individual
-   Learners**.
+#. 문제의 최하단으로 스크롤해서 **개별 학습자 관리** 를 선택한다.
 
-#. Enter the learner's username or email address, then select **Submit**.
+#. 학습자의 사용자 이름이나 이메일 주소를 입력하고 **제출** 을 클릭한다.
 
-   The **Manage Individual Learners** dialog updates with expandable sections
-   for each of the assessment steps in the assignment and other actions you
-   can take on the learner's response. Only the types of assessment steps
-   (self, peer, or staff) that are included in the assignment are shown.
+   **개별 학습자 관리** 다이얼로그는 과제의 각 평가 단계의 섹션과 학습자 응답에 대해 취할 수 있는 기타 조치에 대한 정보를 담는다. 과제에 포함된 평가 단계 (자기, 상호, 운영팀)만이 보인다.
 
-   If the learner uploaded a file along with her response, select **View
-   the file associated with this submission** to review or download it.
+   만약 학습자가 응답과 함께 파일을 업로드했다면 **제출 파일 조회하기** 를 통해 해당 파일을 조회하거나 다운로드 받을 수 있다.
 
-#. Select any of the section headings to expand that section.
+#. 섹션 제목을 클릭해 섹션을 본다.
 
 .. image:: ../../../../shared/images/ORA_ManageIndivLearner.png
    :alt: The expandable sections on the Manage Individual Learners page.
@@ -91,186 +66,118 @@ need the learner's username or email address. For more information, see
 .. _Perform a Staff Assessment:
 
 *************************************************
-Perform Staff Assessments in an ORA Assignment
+개방형 응답 평가 과제 운영팀 평가하기
 *************************************************
 
-When a staff assessment step is included in an open response assessment
-assignment, course team members see a **Grade Available Responses** button at
-the bottom of the assignment in the course, and learners see a **Staff
-Assessment** step in their assignment.
+개방형 응답 평가 과제에 운영팀 평가가 포함되어 있으면 강좌 운영자는 과제 하단의 **채점 가능 응답** 버튼을 볼 수 있고 학습자는 과제에서 **운영팀 평가** 를 볼 수 있다.
 
-.. note:: The scores that you give learners in staff assessment steps override
-   scores from any other assessment type in the assignment, including peer
-   assessments that are completed after the staff assessment.
+.. note:: 운영팀 평가 단계에서 부여하는 점수는 운영팀 평가 단계 이후 시행되는 상호 평가를 포함한 기타 모든 평가 단계의 성적을 뒤집는다.
 
-To perform staff assessments in an assignment, complete these steps.
+과제에 운영팀 평가를 하기 위해.
 
-#. In the course, go to the ORA assignment.
+#. 강좌에서 개방형 응답 평가 과제에 접속한다.
 
-#. Scroll to the bottom of the problem, then select **Grade Available
-   Responses**.
+#. 문제 하단으로 스크롤해 **채점 가능 응답** 을 선택한다.
 
-   In the dialog that opens, the number of available and checked out responses
-   is shown. Checked out responses are responses that are currently being
-   graded by you or another course team member.
+   열리는 다이얼로그에서 확인 되었거나 할 수 있는 응답들을 볼 수 있다. 확인된 응답은 현재 강좌 운영자에게 채점되고 있는 응답이다.
 
-#. Select the **Staff Assessment** heading to open a response that is
-   available for grading.
+#. 채점할 수 있는 응답을 열기 위해 **운영팀 평가** 를 선택한다.
 
-#. Perform an evaluation of the response using the problem's rubric.
+#. 문제의 채점 기준표에 따라 평가한다.
 
-#. Select **Submit assessment** to submit the assessment and close the grading
-   dialog. Alternatively, select **Submit assessment and continue grading** to
-   submit the assessment and immediately grade another submission.
+#. **평가 제출** 을 클릭해 평가를 제출하고 다이얼로그를 닫는다. 또는 **평가 제출하고 채점 계속하기** 를 클릭해 평가를 제출하고 곧바로 다른 응답을 채점한다.
 
-   The grade that you have given this learner's response overrides scores from
-   any other assessment type in the assignment. Peer assessments performed on
-   this response after a staff grade has been given have no effect on the
-   learner's final assignment grade.
+   운영팀 평가 단계에서 부여하는 점수는 운영팀 평가 단계 이후 시행되는 상호 평가를 포함한 기타 모든 평가 단계의 성적을 뒤집는다.
 
 
 .. _Override a learner assessment grade:
 
 ************************************************
-Override a Learner's Assessment Grade
+학습자 평가 성적 수정하기
 ************************************************
 
-For any open response assessment, whether or not a staff assessment step is
-already included, you might want to override a learner's final grade for the
-assignment. The ability to override the final grade is particularly useful in
-assignments without staff assessment steps, for example, if a learner's
-submission was inappropriately or inadequately graded by peers, or if there
-are not enough peer reviewers to complete the required number of peer
-assessments.
+모든 개방형 응답 평가에 대해 운영팀 평가의 포함 유무와 관계없이 학습자 성적을 수정해야 할 때가 있다. 운영팀 평가 단계가 없을 때 학습자의 성적 수정 권한은 특히 유용하다. 예를 들어 만약 학습자 답안이 상호 평가 단계에서 잘못 채점되었거나 평가자 수가 부족할 경우 직접 성적을 수정할 수 있게 되는 것이다.
 
-Course staff can perform an assessment of an individual learner's response
-that acts as an override to the learner's existing grade. The grade given by
-staff in the override assessment immediately replaces any other calculated
-grade as the final grade for the learner.
+강좌 운영팀은 학습자 최종 성적을 개별 학습자 평가를 통해 수정할 수 있다. 이 평가의 수정은 학습자의 기타 성적을 모두 무시하고 최종 성적에 반영된다.
 
-.. note:: You can perform override assessments more than once on the same
-   response, regardless of the due date of the assignment. The learner's
-   final grade on the assessment is updated to reflect the most recent staff
-   override assessment grade.
+.. note:: 제출 기한과 관계 없이 한 답변에 대해 수정 평가를 여러 번 할 수 있다. 학습자 최종 성적은 가장 최근의 운영팀 수정 평가를 반영하게 된다.
 
-Learners who have override grades for their submissions see a **Staff
-Assessment** step in their assignments, where they can view the rubric and any
-comments provided in the staff assessments.
+수정 평가된 학습자는 **운영팀 평가** 라는 단계를 조회할 수 있으며 채점 기준표나 기타 참고사항을 열람할 수 있다.
 
 
 =======================================
-Perform an Override Assessment
+수정 평가하기
 =======================================
 
-To perform an override assessment for a particular learner, complete these steps.
+수정 평가를 위해.
 
-#. In the course, go to the ORA assignment.
+#. 강좌의 개방형 응답 평가 과제에 들어간다.
 
-#. Scroll to the bottom of the problem, then select **Manage Individual
-   Learners**.
+#. 문제 하단으로 내려가 개별 학습자 관리를 선택한다.
 
-#. Enter the learner's username or email, then select **Submit**.
+#. 학습자 사용자 이름이나 이메일을 선택하고 **제출** 을 클릭한다.
 
-   The **Manage Individual Learners** dialog updates with expandable sections
-   for each of the assessment steps in the assignment and other actions you
-   can take on the learner's response.
+   개별 학습자 관리 다이얼로그에서 평가 단계별로 답변에 대한 작업을 수행할 수 있다.
 
-#. Select **Submit Assessment Grade Override**.
+#. **수정 평가 성적 제출** 을 선택한다.
 
-#. Perform an assessment of the learner's response using the problem's rubric.
+#. 문제 채점 기준표를 사용해 학습자 답변 평가를 시작한다.
 
-#. When you have finished the assessment, select **Submit assessment**.
+#. 평가가 끝나면 **평가 제출** 을 선택한다.
 
-   The grade that you have given this learner's response becomes the learner's
-   final grade on the assignment. Peer assessments are not taken into account
-   in calculating the learner's final assignment grade when a staff override
-   grade exists.
+   학습자에게 부여한 수정 평가 성적은 곧 과제의 최종 성적이 된다. 수정 평가가 있다면 상호 평가는 최종 성적에 영향을 주지 않게 된다.
 
-   Learners who have an override grade for their submission see a **Staff
-   Assessment** step in their assignment, where they can view the rubric and
-   any comments provided in the staff assessment.
+   수정 평가된 학습자는 **운영팀 평가** 라는 단계를 조회할 수 있으며 채점 기준표나 기타 참고사항을 열람할 수 있다.
 
-.. note:: Override assessments can be performed more than once on the same
-   response, regardless of the due date of the assignment. The learner's
-   final grade on the assessment is updated to reflect the most recent staff
-   override assessment grade.
+.. note:: 제출 기한과 관계 없이 한 답변에 대해 수정 평가를 여러 번 할 수 있다. 학습자 최종 성적은 가장 최근의 운영팀 수정 평가를 반영하게 된다.
 
 
 .. _Remove a learner response from peer grading:
 
 ************************************************
-Remove a Learner's Response from Peer Grading
+상호 평가에서 학습자 답변 삭제하기
 ************************************************
 
-In a course that contains assignments with peer assessment steps, learners
-might alert you to vulgar, abusive, or otherwise inappropriate responses that
-they have seen while performing peer assessments. In such a situation you can
-:ref:`locate<Locate a specific ORA submission>` and remove the submission.
-Doing so removes the inappropriate response from peer assessments so that it
-is no longer shown to other learners.
+상호 평가 단계가 있는 과제에서 학습자는 상호 평가 중 적절하지 못한 평가에 대해 응답을 남길 수도 있다. 이런 상황에서 해당 응답을 삭제할 수 있다. 이렇게 부적절한 응답을 삭제함으로써 더 이상 다른 학습자들이 보지 않게 하는 것이다.
 
-.. note:: Removing a learner's submission is an irreversible action.
+.. note:: 학습자 답변 삭제는 되돌이킬 수 없다.
 
-When you remove an inappropriate submission, the response is immediately taken
-out of the pool of submissions available for peer assessment. If the
-inappropriate response has already been sent to other learners for peer
-assessment, it is also removed from their queue. However, if any learner has
-already graded the inappropriate response, it is counted as one of the
-submissions they have graded.
+부적절한 답변을 삭제할 경우 해당 답변은 즉시 상호 평가 제출 답변 목록에서 빠진다. 이미 다른 학습자에게 보내졌을 경우 학습자 화면에서도 삭제된다. 그러나 만약 해당 답변을 어떤 학습자가 이미 평가했을 경우 평가한 답변에 포함이 된다.
 
-.. note:: After you remove an inappropriate response from peer assessment, you
-   decide whether the learner who submitted that response is allowed to submit a
-   replacement response. If you do not want to allow the learner to submit a
-   replacement response, you do not need to take any additional action. The
-   learner receives a grade of zero for the entire submission. To allow the
-   learner to resubmit a response for a cancelled submission, you must delete
-   the learner's state for the problem. For more information, see
-   :ref:`delete_state`.
+.. note:: 상호 평가에서 부적절한 답변을 삭제한 후 해당 학습자가 다른 답변을 제출할 수 있는지 결정할 수 있다. 만약 해당 학습자가 다른 답변을 제출하지 못하게 하고 싶다면 아무것도 하지 않으면 된다. 해당 학습자는 전체 제출 답변에 대해 0점을 획득하게 된다. 학습자에게 다른 답변을 제출하게 하려면 문제의 학습자 상태를 삭제해야 한다. 자세한 사항은 :ref:`delete_state` 를 참고하면 된다.
 
-To remove a submission from peer assessment, complete these steps.
+상호 평가에서 답변을 삭제하기 위해.
 
-#. Identify the learner who submitted the inappropriate response by following
-   the steps in the :ref:`Locate a specific ORA submission` topic.
+#. :ref:`Locate a specific ORA submission` 을 참고하여 부적절한 답변을 제출한 학습자를 찾는다.
 
-#. In the course, go to the ORA assignment that contains the submission you want
-   to remove.
+#. 강좌에서 개방형 응답 평가 과제에 들어가 삭제할 답변을 확인한다.
 
-#. Scroll to the bottom of the problem, then select **Manage Individual Learners**.
+#. 문제 하단으로 내려가 **개별 학습자 관리** 를 선택한다.
 
-#. Enter the learner's username or email, and select **Submit**.
+#. 학습자 사용자 이름이나 이메일을 입력하고 **제출** 을 클릭한다.
 
-   The **Manage Individual Learners** dialog updates with expandable sections
-   for each of the assessment steps in the assignment and other actions you
-   can take on the learner's response.
+   개별 학습자 관리 다이얼로그에서 평가 단계별로 답변에 대한 작업을 수행할 수 있다.
 
-#. Select **Remove Submission from Peer Grading**.
+#. **상호 평가에서 답변 제거** 를 선택한다.
 
-#. Enter a comment to explain the removal. This comment appears to the learner
-   when she views her response in the open response assessment problem.
+#. 코멘트에 삭제 사유를 입력한다. 이 사유는 학습자가 개방형 응답 평가 문제에서 본인 답변을 확인했을 때 보여지게 된다.
 
 .. image:: ../../../../shared/images/ORA_RemoveSubmission.png
     :alt: Dialog allowing comments to be entered when removing a learner
        submission.
 
-6. Select **Remove submission**.
+6. **답변 삭제** 를 선택한다.
 
-   The inappropriate submission is removed from peer assessment. Removed
-   submissions are also removed from the list of Top Responses if they were
-   previously listed.
+   상호 평가에서 부적절한 답변은 삭제된다. 삭제된 답변은 우수 답변 목록에서도 제거된다.
 
-When you access this learner's information again by selecting **Manage
-Individual Learners**, instead of the response, you see a note showing the date
-and time that the submission was removed, and the comments that you entered.
+**개별 학습자 관리** 에 들어가 해당 학습자 정보를 다시 조회하면 입력한 사유와 함께 답변이 삭제된 날짜와 시간을 볼 수 있다.
 
 .. image:: ../../../../shared/images/ORA_StaffViewCancelledResponse.png
    :alt: In "Manage Individual Learners", the date, time and comment for removal
     of a learner response is shown instead of the original response.
 
 
-When the learner views the assignment in the course, she sees that all steps in
-the assignment have a status of "Cancelled". Under **Your Response**, instead of
-the text of their response, she sees the date and time that their response was
-cancelled, and the comments relating to the removal of their submission.
+강좌에서 학습자가 과제를 조회할 때 “취소”된 상태의 과제를 볼 수 있다. 학습자 답변 아래에 답변 텍스트 대신에 취소된 날짜와 시간 및 사유를 볼 수 있다.
 
 
 .. image:: ../../../../shared/images/ORA_LearnerViewCancelledResponse.png
@@ -282,26 +189,19 @@ cancelled, and the comments relating to the removal of their submission.
 .. _Locate a specific ORA submission:
 
 *************************************************
-Locate a Specific Submission in an ORA Assignment
+개방형 응답 평가 과제에서 특정 답변 찾기
 *************************************************
 
-If you are alerted to an inappropriate ORA submission that you want to cancel
-and :ref:`remove from peer assessment<Remove a learner response from peer
-grading>`, locate the specific submission by following these steps.
+만약 신고가 들어와 개방형 응답 평가 답변 중 상호 평가에서 삭제하고 싶은 답변이 있다면 다음과 같이 삭제하면 된다.
 
-#. Ask the person who reported the incident to send you a sample of text from
-   the inappropriate response.
+#. 신고한 학습자에게 경위를 묻고 부적절한 답변 텍스트의 일부를 보내달라고 요청한다.
 
-#. Contact your edX partner manager to request a data download of ORA
-   responses for your course.
+#. K-MOOC 파트너 매니저(관리자)에게 개방형 응답 평가 답변 자료를 요청한다.
 
-   You will receive the download as a spreadsheet or in .csv file format.
+   자료는 엑셀이나 .csv 형식으로 받게 된다.
 
-#. Search the spreadsheet for text that matches the sample text from the
-   inappropriate response.
+#. 자료가 학습자에게 받은 부적절한 답변 텍스트와 일치하는지 확인한다.
 
-#. From any matching entries in the spreadsheet, locate the username of the
-   learner who posted the submission.
+#. 일치하는 부분이 있다면 해당 부분을 작성한 사용자 이름을 확인한다.
 
-#. Make a note of the username, and follow the steps to :ref:`remove a learner
-   response from peer grading<Remove a learner response from peer grading>`.
+#. 사용자 이름을 적어 놓고  :ref:`remove a learner response from peer grading<Remove a learner response from peer grading>`  를 참고해 삭제한다.

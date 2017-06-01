@@ -3,94 +3,68 @@
 .. _Oppia Exploration Tool:
 
 ##########################
-Oppia Exploration Tool
+Oppia 탐구 도구
 ##########################
 
-.. note:: EdX offers full support for this tool.
+.. note:: K-MOOC은 이 도구에 대해 전체 지원을 제공한다.
 
-`Oppia`_ is a third-party tool that you can use to create short interactive
-tutorials, called explorations. This topic describes how to embed Oppia
-explorations in your course.
+`Oppia`_ 는 탐구라 불리는 짧은 상호작용 (혹은 쌍방향) 가이드라인을 만들 수 있는 외부 도구이다. 이번 장에서 Oppia 탐구를 강좌에 추가하는 법에 대해 알아보자.
 
 .. contents::
   :local:
   :depth: 2
 
-Before you make content from an external site available through your course, be
-sure to review the content to ensure that it is accessible to people with
-disabilities. For more information, see :ref:`Accessibility Best Practices for
-Course Content Development`.
+외부 사이트의 콘텐츠를 강좌에 추가할 때 장애가 있는 학습자가 사용할 수 있는지 확인해야 한다. 자세한 사항은  :ref:`Accessibility Best Practices for Course Content Development` 를 참고하면 된다.
 
 *********
-Overview
+개관
 *********
 
-You use the Oppia exploration tool in Studio to add interactive tutoring
-activities, created as Oppia explorations, to your course. Oppia explorations
-simulate conversations with human tutors to encourage exploration and
-experiential learning.
+Studio에서 Oppia 탐구 도구를 활용해 탐구라고 부르는 상호작용 가이드를 강좌에 추가한다. Oppia 탐구는 경험학습이 가능하도록 튜터와의 소통을 촉발시킨다.
 
-.. note:: Oppia explorations are not assessments that can be graded. At this
- time, you should not add Oppia exploration components to the graded
- subsections of your course.
+.. note:: Oppia 탐구는 채점할 수 없다. 현재 Oppia 탐구 구성요소는 채점되는 소주제에 사용해선 안 된다.
 
-The following example shows an Oppia exploration as learners see it in the edX
-LMS.
+다음 예제는 K-MOOC 학습 관리 시스템에서 학습자들이 보게 될 Oppia 탐구 화면이다.
 
 .. image:: ../../../shared/images/oppia.png
   :alt: An Oppia exploration in the course.
   :width: 800
 
-For information about how to create Oppia explorations, see the `Oppia User
-Documentation`_.
+Oppia 탐구를 만드는 방법은  `Oppia User Documentation`_  를 참고하면 된다.
 
 .. _Enable the Oppia Exploration Tool:
 
 *********************************************
-Enable the Oppia Exploration Tool
+Oppia 탐구 도구 설정하기
 *********************************************
 
-Before you can add an Oppia exploration to your course, you must enable this
-tool in Studio.
+Oppia 탐구를 먼저 Studio에서 설정한 후 강좌에 추가할 수 있다.
 
-To enable the Oppia exploration tool in Studio, you add the ``"oppia"`` key to
-the **Advanced Module List** on the **Advanced Settings** page. (Be sure to
-include the quotation marks around the key value.) For more information, see
-:ref:`Enable Additional Exercises and Tools`.
+Studio에서 오피스 믹스 도구를 설정하기 위해  ``"oppia"`` 키를 고급 설정 페이지의 고급 모듈 목록에 추가한다. 반드시 키 값을 “ “ 사이에 입력한다. 자세한 사항은  :ref:`Enable Additional Exercises and Tools` 를 참고하면 된다.
 
 ***********************************
-Add an Oppia Exploration in Studio
+Studio에 Oppia 탐구 추가하기
 ***********************************
 
-You must :ref:`enable the Oppia exploration tool <Enable the Oppia Exploration
-Tool>` before you add a component with an exploration to your course. You must
-also select the Oppia exploration that you want to add, and obtain both the URL
-of the website that hosts that exploration and its ID.
+강좌에 Oppia 탐구를 포함한 구성요소를 추가하기 전에 먼저 Oppia 탐구 도구를 설정해야 한다. 추가할 Oppia 탐구를 선택해 탐색을 호스트하는 사이트의 URL과 ID를 먼저 찾아야 한다.
 
-#. On the **Course Outline** page, open the unit in an ungraded subsection
-   where you want to add the exploration.
+#. **강좌 개요** 페이지에서 채점이 되지 않는 소주제에서 탐구를 추가할 학습활동을 연다.
 
-#. Under **Add New Component**, select **Advanced**, and then select **Oppia
-   Exploration**. The new component is added to the unit.
+#. **새 구성요소 추가** 의 **고급** 에서 Oppia 탐구를 선택한다. 새 구성요소가 학습활동에 추가된다.
 
-#. In the new component, select **Edit**.
+#. 추가된 새 구성요소에서 **편집** 을 선택한다.
 
    .. image:: ../../../shared/images/oppia_studio.png
      :alt: The Edit component dialog box for an Oppia exploration in Studio.
      :width: 600
 
-#. In the **Component Display Name** field, enter an identifying name for the
-   component. In the LMS, this name appears as a heading above the exploration.
+#. **구성요소 메뉴 이름** 필드에 구성요소 이름을 입력한다. 학습 관리 시스템에는 이 이름이 탐구의 제목으로 표시된다.
 
-#. In the **Oppia Exploration ID** field, enter the identifier assigned to the
-   exploration you want to add. For example, ``qG6kclSxlWZn`` or
-   ``gC4_ggkWar-L``.
+#. Oppia 탐구 ID 필드에 추가할 탐색 번호를 입력한다. 예를 들어  ``qG6kclSxlWZn`` 나  ``gC4_ggkWar-L`` 처럼 입력하면 된다.
 
-#. In the **Oppia Server URL** field, enter the host site of the exploration
-   you want to add. For example, ``www.oppia.org``.
+#. Oppia 서버 URL 필드에 추가할 탐구의 호스트 사이트를 입력한다. 예를 들어  ``www.oppia.org`` 처럼 입력하면 된다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-   Studio does not show the exploration on the unit page. To verify your work,
-   select **Preview**, or publish the unit and then select **View Live**.
+   Studio는 학습활동 페이지에 탐구를 표시하지 않는다. 추가한 탐구를 확인하기 위해 **미리보기** 를 클릭하거나 학습활동을 공개하고 **실시간 보기** 를 클릭한다.
 

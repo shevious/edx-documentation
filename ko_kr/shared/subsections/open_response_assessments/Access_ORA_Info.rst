@@ -1,64 +1,39 @@
 .. _Accessing ORA Assignment Information:
 
 ######################################
-Accessing Metrics for ORA Assignments
+개방형 응답 평가 과제 채점 지표 만들기
 ######################################
 
-After you release an open response assessment assignment, you can access
-various metrics for the assignment. For example, you can view the number of
-learners in each step of the assignment or in possible states such as
-"Waiting" or "Completed" within the assignment. In addition to viewing metrics
-for the assignment, you can also access assignment details for an individual
-learner, or :ref:`generate a report <Generate ORA Report>` containing learner
-and response details for ORA assignments in the course.
-
-For information about tasks that you can perform on learner responses in an
-ORA assignment, including :ref:`performing a grade override
-assessment<Override a learner assessment grade>` or :ref:`cancelling a
-learner's submission<Remove a learner response from peer grading>`, see
-:ref:`Managing ORA Assignments`.
+개방형 응답 평가 과제를 공개한 후 다양한 채점 지표를 확인할 수 있다. 예를 들어 과제의 각 단계에서 학습자 수를 조회할 수 있고 “대기 중”, “완료” 등 학습자 상태도 볼 수 있다. 과제 채점 지표를 보는 것에 더해, 개별 학습자의 과제 정보를 조회하거나 강좌 내 개방형 응답 평가 과제 정보를 담고 있는 :ref:`generate a report <Generate ORA Report>` 할 수 있다
 
 
 .. _PA View Metrics for Individual Steps:
 
 ************************************************
-View ORA Assignment Statistics
+개방형 응답 평가 과제 통계자료 조회
 ************************************************
 
-To view metrics about learners in the assignment, including the number who
-are active in each step, follow these steps.
+각 단계별 학습자 수 등 과제 내 학습자 지표를 확인하기 위해.
 
-#. Open the assignment in the course.
+#. 강좌에서 과제를 연다.
 
-#. Scroll to the bottom of the assignment and select **View Assignment
-   Statistics**.
+#. 과제 페이지 하단의 **과제 통계자료** 조회를 선택한다.
 
-   You see statistics for the assignment, including the total number of
-   responses and the location ID for the assignment.
+   총 답변 수, 과제 확인 ID 등 과제의 통계 자료를 조회할 수 있다.
 
-   In the **Learner Progress** section, for each assessment step in the
-   assignment, you can see the number of learners who are currently working
-   through (but who have not completed) that step. Only assessment types that
-   exist in the assignment are included.
+   학습자 과정 항목에서 과제의 각 평가 단계에서 현재 해당 단계를 진행 중에 있는 (하지만 완료하진 않은) 학습자를 볼 수 있다. 과제에 있는 평가 형태만 조회할 수 있다.
 
-   .. note:: If a Staff Assessment step exists in the assignment, this step
-      will always show 0 active learners, because no learner actions are
-      required for that step.
+   .. note:: 과제에 운영팀 평가 단계가 있다면 학습자가 이 단계에서 할 일이 없기 때문에 항상 진행중인 학습자 수를 0으로 보일 것이다.
 
-   In addition to learners who are active in the assessment steps of the
-   assignment, you can see the number of learners who are in the following
-   states in the assignment.
+   과제의 각 평가 단계를 진행중인 학습자와 더불어 다음과 같은 학습자 과제 상태를 볼 수 있다.
 
-     * **Waiting**: Learners who have finished the requirements for a step
-       and are waiting for their responses to be assessed by peers or staff.
+     * **대기**: 해당 과제 단계를 완료하였으나 상호 및 운영팀 평가를 기다리는 중인 상태.
 
-     * **Done**: Learners who have completed all of their required steps, and
-       have received the required number of reviews.
+     * **완료**: 모든 단계를 완료하였고 필요 평가 숫자도 모두 완료한 상태.
 
-     * **Cancelled**: Learners who have had their responses cancelled.
+     * **취소**: 답변이 취소된 상태.
 
-In the **Dates** section below **Learner Progress**, the release and due dates
-for each step in the assignment are shown.
+**학습자 과정** 아래의 **날짜** 에서 과제의 각 단계별 공개 및 제출 기한을 확인할 수 있다.
 
 .. image:: ../../../../shared/images/ORA_AssignmentStats.png
    :width: 500
@@ -68,102 +43,64 @@ for each step in the assignment are shown.
 .. _Generate ORA Report:
 
 ************************************************
-Generate a Report for ORA Assignments
+개방형 응답 평가 과제 보고 작성하기
 ************************************************
 
-To generate a report containing details of the ORA assignments in the course,
-follow these steps.
+강좌의 개방형 응답 평가 과제에 관한 보고를 작성하기 위해.
 
-#. View the live version of your course.
+#. 강좌 실시간 보기에 들어간다.
 
-#. Select **Instructor**, and then select **Data Download**.
+#. **교수자** 를 선택하고 **데이터** 를 클릭한다.
 
-#. In the **Reports** section, select **Generate ORA Data Report**.
+#. **보고** 항목에서 **개방형 응답 평가 보고 작성** 을 선택한다.
 
-   A status message indicates that the ORA data report generation is in
-   progress. This process might take some time to complete, but you can
-   navigate away from this page and do other work while it runs.
+   개방형 응답 평가 보고 작성 중이라는 상태 메시지가 나올 것이다. 이 과정은 시간이 걸릴 수 있으나 이 페이지에서 벗어나 다른 작업을 해도 된다.
 
-   To check the progress of the report generation, reload the page in your
-   browser and scroll down to the **Pending Tasks** section. The table shows
-   the status of active tasks.
+   보고 작성 상태를 확인하기 위해 브라우저에서 새로 고침을 한 후 페이지 하단의 대기중인 과제를 확인한다. 표에서 진행중인 사항들을 확인한다.
 
-   When the report is complete, a linked .csv file name becomes available above
-   the **Pending Tasks** section. File names are in the format
-   ``{course_id}_ORA_data_{datetime}.csv``. The most recently generated
-   reports appear at the top of the list.
+   보고 작성이 완료되면 .csv 파일이 대기중인 과제 항목에서 조회 가능해진다. 파일 이름은  ``{course_id}_ORA_data_{datetime}.csv`` 형태로 작성된다. 가장 최근에 작성된 보고일수록 목록의 상단에 위치하게 된다.
 
-#. To open or save the generated ORA data report, locate and select the link for
-   the grade report you requested.
+#. 보고를 열거나 저장하기 위해 보고의 링크를 열면 된다.
 
-   You can open .csv files in a spreadsheet application to sort, graph, and
-   compare data.
+   엑셀 등 스프레드시트 프로그램에서 .csv 파일을 열 수 있다.
 
 
 .. _Interpret ORA Data Report:
 
 ====================================
-Interpret the ORA Data Report
+개방형 응답 평가 보고 분석하기
 ====================================
 
-The ORA data report for your course is a time-stamped .csv file that contains
-data for all the ORA assignments in your course. For each ORA assignment in
-the course, the report provides information that includes each learner's
-anonymized ID, response, assessments details and scores, and the final score
-for the assignment. For more details about each column in the report, see the
-following descriptions.
+개방형 응답 평가 보고는 .csv파일로서 강좌 내 모든 개방형 응답 평가 과제의 정보를 담고 있다. 과제 내 각 개방형 응답 평가에 대해 보고는 학습자의 ID, 답변, 평가 내용 및 점수와 최종 성적에 관한 정보를 모두 포함한다. 자세한 사항은 다음과 같다.
 
 
 .. image:: ../../../../shared/images/ORA_Data_Report_Example.png
    :alt: An example ORA data report shown in Excel.
 
 
-The .csv file contains one row of data for each response from a learner.
+.csv 파일은 학습자의 각 답변에 대해 한 행씩 자료를 포함한다.
 
-* The IDs in the **Item ID** and **Submission ID** columns uniquely identify the
-  problem within the course content and the learner's submission for that problem.
+* **항목 ID** 와 **제출 ID** 의 ID는 강좌 내 문제와 학습자 제출 답변을 구분한다.
 
-* The **Anonymized Student ID** column lists an ID for each learner without
-  revealing confidential, personally identifiable data such as email addresses
-  and usernames.
+* **익명 학습자 ID** 열은 이메일 주소와 사용자 이름 등 학습자의 개인정보를 공개하지 않는 각 학습자의 ID를 보여준다.
 
-* The **Date/Time Response Submitted** column displays the date and time that the
-  learner submitted her response, in YYYY-MM-DD HH-MM-SS format.
+* **답변 제출 날짜/시간열** 은 학습자가 답변을 제출한 날짜와 시간을 년도-월-일 시-분-초 형식으로 보여준다.
 
-* The **Response** column displays the content of the learner's response.
+* **답변** 열은 학습자 답변 내용을 보여준다.
 
-* The **Assessment Details** column displays the following details for the
-  assessments that were performed on the response.
+* **평가 세부사항** 열은 다음과 같은 정보를 보여준다.
 
-  * The time and date that the assessment was submitted.
-  * The type of assessment: self (SE), peer (PE), staff (ST).
-  * The ID of the person who performed the assessment.
-  * Any text comments about the response that were included in the assessment.
+  * 평가 제출 시간 및 날짜.
+  * 평가 종류: 자기(SE), 상호(PE), 운영팀(ST).
+  * 평가자 ID.
+  * 평가에 포함된 추가 참고사항.
 
-* The **Assessment Scores** column lists the scores that the response received
-  in self, peer, or staff assessments.
+* **평가 점수** 열은 답변이 자기, 상호 및 운영팀 평가에서 얻은 점수를 보여준다.
 
-* The **Date/Time Final Score Given**, **Final Score Points Earned**, and the
-  **Final Score Points Possible** columns provide details of the final score
-  that the response received. If a response has not received enough
-  assessments for the assignment to be considered complete, these columns show
-  a value of "None".
+* **최종 성적 공개 날짜/시간, 획득한 최종 성적 및 최대 최종 성적** 열은 답변이 받은 최종 성적에 대한 세부 정보를 보여준다. 만약 답변이 충분한 평가를 얻지 못했다면 이 열은 “None”을 보여주게 된다.
 
-* The **Feedback Statements Selected** and **Feedback on Peer Assessments**
-  columns together show the information that learners provided in the **Provide
-  Feedback on Peer Assessments** section of their ORA assignments. This section
-  is available to learners only when all assessments for an assignment have been
-  completed, and provides an optional way for learners to comment on their
-  experience of the peer assessment process.
+* **선택한 피드백** 과 **상호 평가 피드백** 열은 개방형 응답 평가 과제의 상호 평가 피드백하기 항목에 대한 정보를 보여준다. 이 항목은 과제의 모든 평가가 완료된 이후 조회할 수 있으며 학습자가 상호 평가 과정에 대한 의견을 개진할 수 있다.
 
-  The **Feedback Statements Selected** column displays the text of the
-  feedback statements (if any) that the learner selected to describe their
-  experience of the peer assessment process. Learners can select either "These
-  assessments were useful" or "These assessments were not useful". They can
-  also select either or both of "I disagree with one or more of the peer
-  assessments of my response" and "Some comments I received were
-  inappropriate".
+  **선택한 피드백** 열은 **상호 평가** 과정에 대한 피드백을 보여준다. 학습자는 “평가가 유용했다”나 “평가가 유용하지 않았다” 중 하나를 선택할 수 있다. 또, “답변에 대한 상호 평가 중 동의하지 않는 것이 하나 이상 있다”나 “부적절한 언어가 사용되었다” 중 하나 혹은 모두 선택할 수 있다.
 
-  If a learner also provided a free-form comment in the text field below the
-  selectable feedback statements, the text appears in the **Feedback on Peer
-  Assessments** column.
+  만약 학습자가 주관식 답변을 작성했다면 객관식 피드백 아래 부분에 있으며 **상호 평가 피드백** 열에서 확인할 수 있다.
