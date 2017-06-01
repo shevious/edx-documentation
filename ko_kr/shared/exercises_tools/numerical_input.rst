@@ -162,36 +162,29 @@ Use the Advanced Editor to Create a Numerical Input Problem
 .. _Use Feedback in a Numerical Input Problems:
 
 ********************************************
-Using Feedback in a Numerical Input Problems
+수식 입력 문제에서 피드백 사용하기
 ********************************************
 
-You can add feedback in a numerical input problem using the simple editor
-or the advanced editor. For an overview of feedback in problems, see
-:ref:`Adding Feedback and Hints to a Problem`.
+간편 편집기나 고급 편집기를 사용해 수식 입력 문제에 피드백을 추가할 수 있다. 자세한 사항은 :ref:`Adding Feedback and Hints to a Problem` 를 참고하면 된다.
 
-In numerical input problems, you can provide feedback for correct answers.
+수식 입력 문제에서 정답에 대해 피드백을 추가할 수 있다.
 
 .. note::
-  You cannot provide feedback for incorrect answers in numerical input
-  problems.
+  수식 입력 문제는 오답에 대해 피드백을 추가할 수 없다.
 
-Use feedback for the correct answer to reinforce the process for arriving at
-the numerical value.
+정답에 피드백을 추가해 정답 유추 과정을 설명한다.
 
 =======================================
-Configure Feedback in the Simple Editor
+간편 편집기에서 피드백 설정하기
 =======================================
 
-In the :ref:`simple editor<Simple Editor>`, you configure answer feedback with
-the following syntax. When you create a new numerical input problem, select the
-template  **Numerical Input with Hints and Feedback**. This template has
-example feedback syntax that you can replace.
+:ref:`simple editor<Simple Editor>` 에서 다음과 같이 피드백을 설정할 수 있다. 새 수식 입력 문제를 만들 때 힌트와 **피드백이 있는 수식 입력 문제** 템플릿을 선택한다. 이 템플릿엔 예제가 포함되어 있다.
 
 ::
 
   = Numerical Answer {{Feedback for the correct answer.}}
 
-For example, the following problem has feedback for each possible answer.
+다음 예제는 각 정답에 대한 피드백을 포함하고 있다.
 
 ::
 
@@ -201,11 +194,10 @@ For example, the following problem has feedback for each possible answer.
   = 4 {{The mean for this set of numbers is 20 / 5 which equals 4.}}
 
 =========================================
-Configure Feedback in the Advanced Editor
+고급 편집기에서 피드백 설정하기
 =========================================
 
-In the :ref:`advanced editor<Advanced Editor>`, you configure answer feedback
-with the following syntax.
+:ref:`advanced editor<Advanced Editor>` 에서 다음과 같이 피드백을 설정할 수 있다.
 
 .. code-block:: xml
 
@@ -216,7 +208,7 @@ with the following syntax.
       </correcthint>
     </numericalresponse>
 
-For example, the following problem has feedback for the correct answer.
+다음 예제는 정답에 대한 피드백을 포함하고 있다.
 
 .. code-block:: xml
 
@@ -229,50 +221,43 @@ For example, the following problem has feedback for the correct answer.
   </numericalresponse>
 
 =========================
-Customize Feedback Labels
+사용자 지정 피드백 라벨
 =========================
 
-By default, the feedback label for correct answers is **Correct** . If you do
-not define a feedback label, learners see this term when they submit a correct
-answer, as in the following example.
+기본적으로 정답에 대한 피드백 라벨은 **정답** 이다. 사용자 지정 피드백을 설정하지 않으면 다음 예제와 같이 학습자는 이 라벨을 보게 된다.
 
 .. image:: ../../../shared/images/numerical_input_feedback.png
  :alt: Numerical input feedback with the standard label.
  :width: 600
 
-You can configure the problem to override the default labels. For example, you
-can configure a custom label for the answer.
+사용자 지정 라벨을 사용하여 다음 예제와 같이 보여줄 수 있다.
 
 .. image:: ../../../shared/images/numerical_input_feedback_custom_label.png
  :alt: Numerical input feedback with a custom label.
  :width: 600
 
 .. note::
-  The default label **Correct** is displayed in the learner's requested
-  language. If you provide a custom label, it is displayed to all users as you
-  configure it and is not translated into different languages.
+  **정답** 과 **오답** 기본 라벨은 학습자의 언어로 보이게 된다. 그러나 사용자 지정 라벨을 사용하면 모두 설정 언어로 보이게 되며 번역되지 않는다.
 
-Customize Feedback Labels in the Simple Editor
+편집기에서 사용자 피드백 라벨 설정하기
 ***********************************************
 
-In the :ref:`simple editor<Simple Editor>`, you configure a custom feedback
-label with the following syntax.
+:ref:`simple editor<Simple Editor>` 에서 사용자 지정 피드백 라벨을 설정할 수 있다.
 
 ::
 
   = 4 {{Label::Feedback}}
 
-For example, the following feedback is configured to use a custom label.
+다음 예제는 사용자 지정 피드백 라벨을 사용하고 있다.
 
 ::
 
   = 4 {{Good Job::The mean for this set of numbers is 20 / 5 which equals 4.}}
 
-Customize Feedback Labels in the Advanced Editor
+고급 편집기에서 사용자 지정 피드백 라벨 설정하기
 *************************************************
 
-In the :ref:`advanced editor<Advanced Editor>`, you configure custom feedback
-labels with the following syntax.
+:ref:`advanced editor<Advanced Editor>` 에서 다음과 같이 사용자 지정 피드백 라벨을 설정할 수 있다.
 
 .. code-block:: xml
 
@@ -280,7 +265,7 @@ labels with the following syntax.
       Feedback
     </correcthint>
 
-For example, the following feedback is configured to use a custom label.
+다음 예제는 사용자 지정 피드백 라벨을 사용하고 있다.
 
 .. code-block:: xml
 
@@ -291,95 +276,76 @@ For example, the following feedback is configured to use a custom label.
 .. _Use Hints in a Numerical Input Problem:
 
 ********************************************
-Using Hints in a Numerical Input Problem
+수식 입력 문제에서 힌트 사용하기
 ********************************************
 
-You can use hints in a numerical input problem, using the simple editor
-or the advanced editor. For an overview of hints in problems, see
-:ref:`Adding Feedback and Hints to a Problem`.
+간편 편집기나 고급 편집기를 사용해 수식 입력 문제에서 힌트를 사용할 수 있다. 문제의 힌트에 대한 자세한 사항은 :ref:`Adding Feedback and Hints to a Problem` 를 참고하면 된다.
 
 .. include:: ../../../shared/exercises_tools/Subsection_configure_hints.rst
 
 .. _Awarding Partial Credit in a Numerical Input Problem:
 
 *****************************************************
-Awarding Partial Credit in a Numerical Input Problem
+수식 입력 문제에서 부분 점수 부여하기
 *****************************************************
 
-You can configure a numerical input problem to award partial credit to learners
-who submit an answer that is close or related to the correct answer. You must
-use the :ref:`advanced editor<Use the Advanced Editor to Create a Numerical
-Input Problem>` to configure partial credit.
+수식 입력 문제에서 정답에 근접한 답변에 대해 부분 점수를 부여할 수 있다. 이때 반드시  :ref:`advanced editor<Use the Advanced Editor to Create a Numerical Input Problem>` 를 사용해야 한다
+
 
 .. only:: Partners
 
  .. note::
-    Support for partial credit problems in courses on edx.org and edX
-    Edge is provisional. Ensure that you test such problems thoroughly before
-    releasing them to learners. For more information, contact your edX partner
-    manager.
+    테스트서버와 kmooc.kr에서 부분점수를 사용하는 기능은 아직 개발 중이다. 사용 전 확실히 테스트를 거쳐야 한다. 자세한 사항은 K-MOOC 파트너 매니저(관리자)에게 문의하면 된다.
 
-In the following example, the learner entered an answer that was close to the
-correct answer and received partial credit.
+다음 예제에서 학습자는 정답에 근접한 답변을 제출했으며 부분점수를 받았다.
 
 .. image:: ../../../shared/images/partial_credit_numerical_input.png
  :alt: A numerical input problem with partial credit for a close answer.
  :width: 600
 
-For an overview of partial credit in problems, see
-:ref:`Awarding Partial Credit for a Problem`.
+부분점수에 대한 전체적인 개관은 :ref:`Awarding Partial Credit for a Problem` 를 참고하면 된다. 
 
-There are two ways to award partial credit in a numerical input problem.
+수식 입력 문제에 부분점수를 부여하는 방법은 두 가지 있다.
 
 .. contents::
   :local:
   :depth: 1
 
-.. Note:: You can use these ways of awarding partial credit in combination.
+.. Note:: 이 두 가지 방법을 동시에 사용할 수 있다.
 
 ==========================
-Identifying Close Answers
+정답에 근접한 답변
 ==========================
 
-You can configure a numerical input problem so that answers that are close to
-the correct answer receive partial credit.
+정답과 근접한 답변이 부분점수를 얻을 수 있도록 수식 입력 문제를 설정할 수 있다.
 
-You configure the tolerance for incorrect answers. Learners receive partial
-credit for close answers based on the tolerance. By default, the tolerance is
-multiplied by 2 and the following rules are applied.
+오답에 대한 한계를 설정한다. 학습자는 이 오차범위를 바탕으로 부분점수를 얻게 된다. 기본적으로 이 허용 한계의 두 배 수까지 답으로 인정하며 다음과 같은 규칙에 따라 부분점수를 부여한다.
 
-* An answer within the tolerance receives 100% of the points for the problem.
+* 허용 한계 내 답변은 점수의 100%를 획득한다.
 
-* An answer within or equal to 2x of the tolerance receives 50%.
+* 허용 한계의 2배 내 답변은 점수의 50%를 획득한다.
 
-* An answer more than 2x the outside of the tolerance receives 0%.
+* 허용 한계 2배 외 답변은 점수를 획득하지 못한다.
 
-You can optionally specify a different multiplier for the tolerance. For
-example, you could set the multiplier to 3. In this case, the following rules
-apply.
+허용 한계를 3배 수로 설정할 수도 있다.
 
-* An answer within the tolerance receives 100% of the points for the problem.
+* 허용 한계 내 답변은 점수의 100%를 획득한다.
 
-* An answer within or equal to 3x of the tolerance receives 50%.
+* 허용 한계의 3 배 내 답변은 점수의 50%를 획득한다.
 
-* An answer more than 3x outside of the tolerance receives 0%.
+* 허용 한계 3 배 외 답변은 점수를 획득하지 못한다.
 
-Configure Close Answers for a Numerical Input Problem
+수식 입력 문제에서 정답에 근접한 답변 설정하기
 ******************************************************
 
-To configure a numerical input problem to award partial credit for close
-answers, you add the following attributes to the problem XML.
+수식 입력 문제에서 정답에 근접한 답변에 대해 부분점수를 부여하도록 설정할 수 있다. 이 때 문제 XML에 다음 속성을 추가하면 된다.
 
-* Add the ``"partial_credit="close"`` attribute to the ``<numericalresponse>``
-  element. If you are using close answers in combination with a list, set the
-  attribute to ``partial_credit="close,list"``.
+* ``<numericalresponse>`` 요소에 ``"partial_credit="close"`` 속성을 추가한다. 만약 정답에 근접한 답변을 여러 가지 사용한다면  ``partial_credit="close,list"``  를 설정으로 한다.
 
-* Optionally, add the ``partial_range`` attribute to the ``<responseparam>``
-  element and set its value to the tolerance multiplier. If you do not set the
-  ``partial_range`` attribute, 2 is used as the tolerance multiplier.
+* (선택사항)  ``<responseparam>`` 요소에  ``partial_range`` 속성을 추가하고 허용 한계를 설정한다. 따로 허용 한계 ``partial_range`` 를 정하지 않으면 2를 사용하게 된다.
 
-For example, the following XML shows the numerical problem template
-updated to provide partial credit for close answers.
+
+다음 수식 입력 문제 템플릿에서 정답에 근접한 답변에 대해 부분점수를 사용하고 있다.
 
 .. code-block:: xml
 
@@ -390,35 +356,24 @@ updated to provide partial credit for close answers.
   </numericalresponse>
 
 =============================================
-Awarding Partial Credit for Answers in a List
+답변 목록에 대해 부분점수 부여하기
 =============================================
 
-For some numerical input problems, mistakes do not help a learner arrive at
-the correct answer. For example, a small mistake can lead to negative instead of
-positive results, or to an answer that is off by a square root or numerical
-factor.
+일부 수식 입력 문제에서 실수로 학습자의 답을 정답이 아니게 유도할 수 있다. 예를 들어 작은 실수가 부정적인 결과로 이어질 수도 있고 혹은 제곱근이나 다른 수치로 인한 결과일 수도 있다.
 
-For these types of problems, you can configure a list of wrong answers that
-receive partial credit. Learners who submit answers that are on the list
-receive 50% of the problem's points.
+이런 문제들에 대해 부분 점수를 얻을 수 있는 답변 목록을 설정할 수 있다. 이 목록의 답변을 제출한 학습자는 점수의 50%를 얻을 수 있다.
 
 
-Configure a List for a Numerical Input Problem
+수식 입력 문제에 목록 설정하기
 ************************************************
 
-To configure a numerical input problem to award partial credit for answers in a
-list, you add the following attributes to the problem XML.
+수식 입력 문제에서 답변 목록에 대해 부분점수를 부여하려면 다음 속성을 문제 XML에 추가해야 한다.
 
-* Add the ``partial_credit="list"`` attribute to the ``<numericalresponse>``
-  element. If you are a list in combination with close answers, set the
-  attribute to ``partial_credit="close,list"``.
+* ``<numericalresponse>`` 요소에  ``partial_credit="list"`` 속성을 추가한다. 만약 정답에 근접한 답변과 동시에 사용 중이라면 속성을  ``partial_credit="close,list"`` 로 한다.
 
-* Add the ``partial_answers`` attribute to the ``<responseparam>`` element. Set
-  its value to one or more answers that should earn 50% of the problem's
-  points. Separate multiple values by a comma (,).
+* ``<responseparam>`` 요소에  ``partial_answers`` 속성을 추가한다. 하나 이상의 답변이 점수의 50%를 획득할 수 있도록 설정하고 여러 값이 있을 경우 ,로 구분한다.
 
-For example, the following XML shows the numerical problem template
-updated to provide partial credit for a different answer.
+다음 수식 입력 문제 템플릿에서 답변 목록에 대해 부분점수를 사용하고 있다.
 
 .. code-block:: xml
 
@@ -429,30 +384,23 @@ updated to provide partial credit for a different answer.
   </numericalresponse>
 
 ******************************************
-Add Text after the Numeric Response Field
+수식 응답 필드에 텍스트 추가하기
 ******************************************
 
-You might want to include a word, phrase, or sentence after the answer field
-in a numerical input problem to help guide your students or resolve ambiguity.
+수식 입력 문제 답변 필드에 단어, 구문이나 문장을 추가해 문제의 헷갈리는 부분에 대해 설명할 수 있다.
 
 .. image:: ../../../shared/images/NI_trailing_text.png
  :width: 500
  :alt: Three numerical input problems with text after the response field:
      "km", a percent sign, and a symbol for meters per second squared.
 
-To do this, you must use the :ref:`advanced editor<Advanced Editor>`.
+이 기능은 반드시  :ref:`advanced editor<Advanced Editor>` 를 사용해야 한다.
 
-After you open the problem in the advanced editor, locate the
-``formulaequationinput`` element. This element creates the response field for
-the problem. The ``formulaequationinput`` element is a child of the
-``numericalresponse`` element.
+고급 편집기에서 문제를 열고 ``formulaequationinput`` 요소를 찾는다. 이 요소는 문제에 응답 필드를 만든다.  ``formulaequationinput`` 요소는 ``numericalresponse`` 요소의 하위요소이다.
 
-To add text after the answer field, add the ``trailing_text`` attribute
-together with the text that you want to use inside the
-``formulaequationinput`` element. Several examples follow.
+답변 필드에 텍스트를 추가하기 위해  ``trailing_text`` 속성을 ``formulaequationinput`` 요소 내에 사용할 텍스트와 함께 추가한다.
 
-.. note:: You can use MathJax inside the ``trailing_text`` attribute, as the
- third example shows. You cannot use HTML inside this attribute.
+.. note:: ``trailing_text`` 속성 내에서 MathJax를 3번째 예제와 같이 사용할 수 있다. 이 속성에서 HTML은 사용할 수 없다.
 
 ::
 
@@ -475,17 +423,16 @@ together with the text that you want to use inside the
 .. _Numerical Input Problem XML:
 
 ****************************
-Numerical Input Problem XML
+수식 입력 문제 XML
 ****************************
 
 =========
-Templates
+템플릿
 =========
 
-The following templates represent problems with and without a decimal or
-percentage tolerance.
+십진법 숫자 체계 또는 백분율로 나타낸 허용 한계 부여 여부에 따른 수식 입력 문제의 템플릿이다.
 
-Problem with No Tolerance
+허용 한계를 주지 않은 문제
 ***************************
 
 .. code-block:: xml
@@ -506,7 +453,7 @@ Problem with No Tolerance
     </solution>
   </problem>
 
-Problem with a Decimal Tolerance
+십진법 숫자로 허용 한계를 준 문제
 ************************************
 
 .. code-block:: xml
@@ -529,7 +476,7 @@ Problem with a Decimal Tolerance
     </solution>
   </problem>
 
-Problem with a Percentage Tolerance
+백분율 허용 한계를 준 문제
 ************************************
 
 .. code-block:: xml
@@ -552,7 +499,7 @@ Problem with a Percentage Tolerance
     </solution>
     </problem>
 
-Answer Created Using a Script
+스크립트로 생성한 정답
 ************************************
 
 .. code-block:: xml
@@ -581,57 +528,41 @@ Answer Created Using a Script
   </problem>
 
 ====
-Tags
+태그
 ====
 
-* ``<numericalresponse>`` (required): Specifies that the problem is a
-  numerical input problem.
+* ``<numericalresponse>`` (필수): 해당 문제를 수식 입력 문제로 지정한다.
 
-* ``<formulaequationinput />`` (required): Provides a response field where the
-  learner enters a response.
+* ``<formulaequationinput />`` (필수): 학습자 답변을 입력할 답변 필드를 제공한다.
 
-* ``<correcthint>`` (optional): Specifies feedback for the correct answer.
+* ``<correcthint>`` (선택사항): 정답에 대한 피드백을 나타낸다.
 
-* ``<responseparam>`` (optional): Specifies a tolerance, or margin of error,
-  for an answer. Also specifies a partial credit tolerance multiplier.
+* ``<responseparam>`` (선택): 정답에 대한 허용 한계 또는 오차 범위를 지정한다. 또 부분점수 허용 한계를 지정한다.
 
-* ``<script>`` (optional)
+* ``<script>`` (선택)
 
-.. note:: Some older problems use the ``<textline math="1" />`` tag instead
- of the ``<formulaequationinput />`` tag. However, the ``<textline math="1"
- />`` tag has been deprecated. All new problems should use the
- ``<formulaequationinput />`` tag.
+.. note:: 기존 문제 일부는 ``<formulaequationinput />`` 태그 대신  ``<textline math="1" />`` 태그를 사용하고 있다. 그러나  ``<textline math="1" />`` 태그에 대한 비판이 있기 때문에 새로 생성하는 문제에서는 ``<formulaequationinput />`` 태그를 사용한다.
 
-**Tag:** ``<numericalresponse>``
+**태그:** ``<numericalresponse>``
 
-Specifies that the problem is a numerical input problem. The
-``<numericalresponse>`` tag is similar to the ``<formularesponse>`` tag, but
-the ``<numericalresponse>`` tag does not allow unspecified variables.
+해당 문제를 수식 입력 문제로 지정한다. ``<numericalresponse>`` 태그는  ``<formularesponse>`` 와 유사하지만 지정되지 않은 변수를 허용하지 않는다는 점에서 다르다.
 
-  Attributes
+  속성
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - answer (required)
-       - The correct answer to the problem, given as a mathematical
-         expression.
-     * - partial_credit (optional)
-       - Specifies the type of partial credit given. ``close``, ``list``, or a
-         combination of both in any order separated by a comma (,).
+     * - 속성
+       - 설명
+     * - 답  (필수)
+       - 문제의 정답. 수식으로 제시된다.
+     * - 부분점수 (선택)
+       - 부분점수의 종류를 지정한다. 각 종류는 ,로 구분된다.
 
-  .. note:: If you include a variable name preceded with a dollar sign
-   ($) in the problem, you can include a script in the problem that computes
-   the expression in terms of that variable.
+  .. note:: 문제 지문에서 변수명 앞에 달러 기호($)를 붙이면 해당 수식을 해당 변수에 대해 계산하는 스크립트를 삽입할 수 있다.
 
-  The grader evaluates the answer that you provide and the learner's response
-  in the same way. The grader also automatically simplifies any numeric
-  expressions that you or a learner provides. Answers can include simple
-  expressions such as "0.3" and "42", or more complex expressions such as
-  "1/3" and "sin(pi/5)".
+  채점자는 제공하는 답과 학습자 답변을 동일한 방식으로 평가한다. 또한 채점자는 강좌 운영팀이 제공하는 또는 학습자가 제공하는 어떠한 수식에 대해 이를 자동적으로 단순화한다. 정답은 0.3이나 42처럼 단순할 수도, 1/3이나 sin(pi/5)처럼 다소 복잡할 수도 있다.
 
   Children
 
@@ -641,20 +572,20 @@ the ``<numericalresponse>`` tag does not allow unspecified variables.
 
 **Tag:** ``<formulaequationinput>``
 
-Creates a response field in the LMS where learners enter a response.
+학습자가 답변을 입력하는 LMS에 답변 필드를 생성한다.
 
-  Attributes
+  속성
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - label (required)
-       - Specifies the name of the response field.
-     * - size (optional)
-       - Defines the width, in characters, of the response field in the LMS.
+     * - 속성
+       - 설명
+     * - 라벨  (필수)
+       - 답변 필드의 이름을 지정한다.
+     * - 크기  (선택)
+       - LMS 내 답변 필드의 폭(width)을 문자(개수)로 정의한다.
 
   Children
 
@@ -662,26 +593,24 @@ Creates a response field in the LMS where learners enter a response.
 
 **Tag:** ``<responseparam>``
 
-Specifies a tolerance, or margin of error, for an answer.
+정답에 대한 허용 한계 또는 오차 범위를 지정한다.
 
-  Attributes
+  속성
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - type (optional)
-       - "tolerance": Defines a tolerance for a number.
-     * - default (optional)
-       - A number or a percentage specifying a numerical or percent tolerance.
-     * - partial_range (optional)
-       - For partial credit problems of type close, a multiplier for the
-         tolerance. Default is 2.
-     * - partial_answers (optional)
-       - For partial credit problems of type list, a comma-separated list of
-         values that are to receive 50% credit.
+     * - 속성
+       - 설명
+     * - 유형 (선택)
+       - “허용(tolerance)”: 숫자에 대한 허용 한계를 정의한다.
+     * - 기본값  (선택)
+       - 십진법 체계의 수 또는 백분율 허용 한계를 지정하는 숫자 또는 백분율.
+     * - 부분 범위 (선택)
+       - 허용 한계를 지정한다. 기본은 2로 되어있다.
+     * - 부분 답 (선택)
+       - 점수의 50%를 획득하는 목록을 지정한다.
 
   Children
 
@@ -689,28 +618,24 @@ Specifies a tolerance, or margin of error, for an answer.
 
 **Tag:** ``<correcthint>``
 
-Specifies a hint for the correct answer.
+정답에 대한 힌트를 지정한다.
 
 **Tag:** ``<script>``
 
-Specifies a script that the grader uses to evaluate a learner's response. A
-problem behaves as if all of the code in all of the script tags were in a
-single script tag. Specifically, any variables that are used in multiple
-``<script>`` tags share a namespace and can be overridden.
+채점자가 학습자 답변을 평가하기 위해 사용하는 스크립트를 지정한다. 스크립트 내 모든 코드가 하나의 스크립트 태그에 있는 것처럼 문제는 인식한다. 구체적으로 다수의 ``<script>`` 태그에 사용되는 모든 변수는 명칭 공간을 공유하며 수정이 가능하다.
 
-As with all Python, indentation matters, even though the code is embedded in
-XML.
+다른 Python과 마찬가지로 들여쓰기가 중요하다.
 
-  Attributes
+  속성
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - type (required)
-       - Must be set to "loncapa/python".
+     * - 속성
+       - 설명
+     * - 유형  (필수)
+       - “loncapa/python”으로 설정되어야 한다.
 
   Children
 
@@ -718,7 +643,7 @@ XML.
 
 **Tag:** ``<demandhint>``
 
-Specifies hints available to the learner.
+학습자가 보게 될 힌트를 지정한다.
 
   Children
 
@@ -726,7 +651,7 @@ Specifies hints available to the learner.
 
 **Tag:** ``<hint>``
 
-Specifies a hint available to the learner.
+학습자가 보게 될 힌트를 지정한다.
 
   Children
 

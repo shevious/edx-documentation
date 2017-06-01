@@ -3,179 +3,126 @@
 .. _Office Mix Tool:
 
 ##########################
-Office Mix Tool
+오피스 믹스 도구
 ##########################
 
-.. note:: EdX offers full support for this tool.
+.. note:: K-MOOC은 이 도구에 대해 전체 지원을 제공한다.
 
-`Office Mix`_ is a third-party tool that you can use to turn Microsoft®
-PowerPoint® presentations into interactive online lessons that are called
-mixes.
+`Office Mix`_ 는 외부 도구로서 이를 이용해 마이크로소프트 파워포인트 프레젠테이션을 믹스라고 부르는 온라인 강좌 형식으로 바꿀 수 있다.
 
-This topic describes how to embed PowerPoint (.ppt) format mixes in your
-course.
+다음은 .ppt 형식을 강좌에 추가하는 방법에 대한 설명이다.
 
 .. contents::
   :local:
   :depth: 2
 
-Before you make content from an external site available through your course, be
-sure to review the content to ensure that it is accessible to people with
-disabilities. For more information, see :ref:`Accessibility Best Practices for
-Course Content Development`.
+외부 사이트에서 만든 콘텐츠나 도구를 강좌에 추가하기 전에 장애가 있는 학습자가 사용할 수 있는지 반드시 확인해야 한다. 자세한 사항은  :ref:`Accessibility Best Practices for Course Content Development` 를 참고하면 된다.
 
 *********
-Overview
+개관
 *********
 
-Office Mix is an extension to PowerPoint. With Office Mix, you can create
-lessons by integrating quizzes, polls, website links, narration, screen
-recordings, and more into your PowerPoint presentations. The `Office Mix
-gallery`_ provides examples and links to more information.
+오피스 믹스는 파워포인트의 연장선이다. 오피스 믹스를 사용해 퀴즈, 설문 조사, 사이트 링크, 해설, 스크린샷 등을 파워포인트 프레젠테이션에 추가해 강좌를 만들 수 있다. 오피스 믹스 갤러리에 더 많은 예제와 링크가 있다.
 
-When you design a lesson that uses PowerPoint with Office Mix, consider that
-you can save the result in either PowerPoint (.ppt) format or export the file
-to video (.mp4 format).
+오피스 믹스와 파워포인트를 사용하는 강좌를 만들 때 .ppt 형식이나 .mp4 형식의 동영상으로 만들어야 하는 것을 명심한다.
 
-* Lessons that include interactive elements should be saved in PowerPoint
-  format as mixes.
+* 상호 작용 요소가 포함된 강좌는 .ppt 형식으로 저장되어야 한다.
 
-* Lessons that do not include interactive elements, but that do include audio
-  narration or video tablet capture, can be exported as videos in .mp4 format.
+* 상호 작용 요소는 없지만 음성 설명이나 동영상 스크린샷이 있는 강좌는 .mp4 형식으로 저장할 수 있다.
 
-.. note:: Because Office Mix is a third-party tool, its features are subject
- to change without notice. Be sure to consult the `Office Mix Knowledge Base`_
- for up to date information about this tool's features.
+.. note:: 오피스 믹스는 외부 도구이므로 별도의 사전공지 없이 기능이 변경될 수 있다. 반드시  `Office Mix Knowledge Base`_ 을 참고해 그 기능을 알아봐야 한다.
+
 
 =============================================
-Creating Interactive Mixes with Office Mix
+오피스 믹스를 사용해 상호작용 믹스 만들기
 =============================================
 
-To embed mixes that have interactive elements, including quizzes, web pages,
-and apps, in a course, you save the file in .ppt format. These files can
-include any of the other Office Mix features as well, including audio and
-video.
+퀴즈, 웹 페이지, 어플리케이션 등을 포함한 상호작용 믹스를 포함하기 위해선 강좌를 .ppt 형식으로 저장해야 한다. 이 파일은 음성과 동영상을 포함한 기타 오피스 믹스 기능을 포함할 수 있다.
 
-.. note:: While you can include questions in your mixes, these questions cannot
-  be graded. EdX recommends that you add Office Mix components only to ungraded
-  subsections in a course.
+.. note:: 오피스 믹스에 퀴즈를 포함할 수 있지만 채점될 수는 없다. K-MOOC은 강좌의 채점이 되지 않는 부분에 한해서 오피스 믹스를 사용하는 것을 권장한다.
 
-This topic describes how to embed PowerPoint (.ppt) format mixes in your
-course. The following example shows a mix as learners see it in the edX LMS.
+다음은 강좌에 .ppt 믹스를 추가하는 방법이다. 다음 예제는 학습자가 K-MOOC 학습 관리 시스템에서 보게 될 믹스 화면을 보여준다.
 
 .. image:: ../../../shared/images/office_mix.png
   :alt: An Office mix in the course.
   :width: 800
 
-For information about how to create mixes, see the `Office Mix Knowledge
-Base`_.
+자세한 사항은  `Office Mix Knowledge Base`_ 을 참고하면 된다.
 
 ======================================
-Creating Video Files with Office Mix
+오피스 믹스로 동영상 파일 만들기
 ======================================
 
-You can use Office Mix to add audio, video, or both to a PowerPoint
-presentation. These annotations can be recorded (or rerecorded) for the entire
-presentation or for individual slides within the presentation. To embed mixes
-that include audio and video only, you have the option to export the
-presentation to a video file in .mp4 format.
+오피스 믹스를 사용해 파워포인트 프레젠테이션에 음성, 동영상 혹은 둘 다 추가할 수 있다. 이 주석들은 일부 슬라이드나 전체 프레젠테이션에 기록될 수 있다. 음성과 동영상만을 포함하는 믹스를 추가하려면 프레젠테이션을 .mp4 형식으로 저장하며 된다.
 
-You then use a video component to add the resulting .mp4 file to your course,
-instead of the .ppt file. For more information about including .mp4 format
-video files in your course, see :ref:`Working with Video Components`.
+그 후 동영상 구성요소를 사용해 .ppt 파일 대신에 .mp4 파일을 강좌에 추가할 수 있다. 강좌에 .mp4 파일을 추가하는 방법에 대해선  :ref:`Working with Video Components` 를 참고하면 된다.
 
-.. note:: Interactive features, such as hyperlinks, do not function in an .mp4
-  video file. The quality of the output that is rendered by the Microsoft
-  PowerPoint web client for mixes in .ppt format can be higher than the quality
-  of a video file exported for the same presentation.
+.. note:: 하이퍼링크와 같은 상호작용 기능은 .mp4 파일에서 작동하지 않는다. 같은 프레젠테이션일 때 동영상 파일로 보내지는 것보다 .ppt 형식으로 보내지는 파일이 더 좋다.
 
 .. only:: Partners
 
-  The video files that you create with Office Mix go through the same media
-  encoding and hosting process that applies to any other video in your course.
-  This process helps assure that high quality video experiences are delivered
-  to as many learners as possible.
+  오피스 믹스로 만든 동영상 파일은 강좌의 다른 동영상과 마찬가지 과정을 거친다. 이 과정은 학습자가 충분히 높은 수준의 동영상을 감상할 수 있도록 돕는다.
 
-  For more information about video processing for courses that run on the
-  edx.org site, see :ref:`partnercoursestaff:Video Processing Overview`.
+  자세한 사항은  :ref:`partnercoursestaff:Video Processing Overview` 을 참고하면 된다.
 
 =============================================
-Adding Captions to Office Mix Presentations
+오피스 믹스 프레젠테이션에 자막 추가하기
 =============================================
 
-Typically, mixes include audio, video, or both. Mixes that include audio or
-video are likely to qualify as time-based media, and as a result, they require
-captions or a transcript to make all content accessible to all learners.
+일반적으로 믹스엔 동영상, 음성 혹은 둘 다 포함된다. 음성이나 동영상을 포함한 믹스는 모든 학습자가 접근할 수 있도록 자막을 필요로 한다.
 
-For more information about how to add captions to a mix, see the Microsoft
-documentation for Office Mix, including the `How to add Closed Captions to an
-Office Mix`_ knowledge base article.
+믹스에 자막을 추가하는 방법에 대해선 마이크로소프트 오피스 믹스 설명의  `How to add Closed Captions to an Office Mix`_  를 참고하면 된다.
 
-For more information about making time-based media accessible, see
-:ref:`Accessibility Best Practices for Course Content Development`.
+자세한 사항은 :ref:`Accessibility Best Practices for Course Content Development` 를 참고하면 된다.
 
 ******************************
-Add an Office Mix to a Course
+강좌에 오피스 믹스 추가하기
 ******************************
 
-To add .ppt format mixes to your course, you create a mix, host it at an
-external site, and then enable and use the Office Mix tool in Studio to add the
-mix into a component in your course.
+강좌에 .ppt 형식 믹스를 추가하기 위해선 믹스 생성 후 외부 사이트에 저장하고 Studio에 접속해 오피스 믹스 도구를 허용하고 사용한다.
 
-For information about how to create mixes, see the `Office Mix Knowledge
-Base`_.
+믹스 생성에 대한 자세한 사항은  `Office Mix Knowledge Base`_ 을 참고하면 된다.
 
 =================================
-Create or Identify an Office Mix
+오피스 믹스 생성하고 지정하기
 =================================
 
-#. On an external website, create or identify the mix that you want to add to
-   your course. For examples of mixes, see the `Office Mix gallery`_.
+#. 외부 사이트에서 강좌에 추가할 믹스를 생성하고 지정한다. 자세한 사항은  `Office Mix gallery`_  를 참고하면 된다.
 
-#. Save the mix in .ppt format.
+#. 믹스를 .ppt 형식으로 저장한다.
 
-#. Make a note of the URL for the mix.
+#. 믹스에 대한 URL을 작성한다.
 
 .. _Enable the Office Mix Tool:
 
 ==============================
-Enable the Office Mix Tool
+오피스 믹스 도구 설정하기
 ==============================
 
-Before you can add a mix to your course, you must enable this tool in Studio.
+강좌에 믹스를 추가하기 전에 Studio에서 설정해야 한다.
 
-To enable the Office Mix tool in Studio, you add the ``"officemix"`` key to the
-**Advanced Module List** on the **Advanced Settings** page. (Be sure to
-include the quotation marks around the key value.) For more information, see
-:ref:`Enable Additional Exercises and Tools`.
+Studio에서 오피스 믹스 도구를 설정하기 위해  ``"officemix"`` 키를 고급 설정 페이지의 고급 모듈 목록에 추가한다. 반드시 키 값을 “ “ 사이에 입력한다. 자세한 사항은 :ref:`Enable Additional Exercises and Tools`  를 참고하면 된다.
 
 ==============================
-Add a Mix in Studio
+Studio에 믹스 추가하기
 ==============================
 
-You must :ref:`enable the Office Mix tool <Enable the Office Mix Tool>` before
-you add a component with a mix to your course. You must also create or identify
-the mix that you want to add and obtain its URL.
+믹스를 사용한 구성요소를 강좌에 추가하기 위해선  :ref:`enable the Office Mix tool <Enable the Office Mix Tool>` 를 설정해야 한다. 또한, 추가할 믹스를 생성하거나 지정해 URL을 얻어야 한다.
 
-#. On the **Course Outline** page, locate the ungraded subsection where you
-   want to add the mix and add or open a unit.
+#. **강좌 개요** 페이지에서 믹스를 추가할 채점이 되지 않는 소주제를 찾고 학습활동을 추가하거나 연다.
 
-#. Under **Add New Component**, select **Advanced**, and then select **Office
-   Mix**. Studio adds the new component, which includes a sample mix, to the
-   unit.
+#. **새 구성요소 추가** 에서 **고급** 을 선택하고 **오피스 믹스** 를 클릭한다. Studio는 학습활동에 새 구성요소를 추가하며 샘플 믹스가 포함된다.
 
-#. In the new component, select **Edit**.
+#. 새 구성요소에서 **편집** 을 선택한다.
 
    .. image:: ../../../shared/images/office_mix_studio.png
      :alt: The component editor for a Mix in Studio.
      :width: 600
 
-#. In the **Component Display Name** field, enter an identifying name for the
-   component. In the LMS, this name appears as a heading above the mix.
+#. **구성요소 표시 이름** 필드에서 구성요소 이름을 입력한다. 학습 관리 시스템에 이 이름은 믹스 위 제목으로 나타난다.
 
-#. In the **Office Mix URL** field, enter the complete URL for the mix that you
-   want to add. For example, ``https://mix.office.com/watch/1otxpj7hz6kbx``.
+#. **오피스 믹스 URL** 필드에서 추가할 믹스에 대한 전체 URL을 입력한다. want to add. For example, ``https://mix.office.com/watch/1otxpj7hz6kbx`` 와 같이 입력하면 된다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-   To verify your work, select **play**.
+   작동을 확인하기 위해 **재생** 을 클릭한다.

@@ -1,56 +1,34 @@
 .. _Open Response Assessments 2:
 
 #########################
-Open Response Assessments
+개방형 응답 평가
 #########################
 
-.. note:: EdX offers full support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 전체 지원을 제공한다.
 
-The topics in this section provide an overview and details about open response
-assessments.
+다음 장에서 개방형 응답 평가에 대해 설명한다.
 
 .. contents::
    :depth: 1
    :local:
 
-For additional information, see :ref:`PA Create an ORA Assignment`,
-:ref:`Managing ORA Assignments`, and :ref:`Accessing ORA Assignment
-Information`.
+자세한 사항은  :ref:`PA Create an ORA Assignment`, :ref:`Managing ORA Assignments`, 및  :ref:`Accessing ORA Assignmen Information` 를 참고하면 된다.
 
 *****************************************
-Introduction to Open Response Assessments
+개방형 응답 평가 소개
 *****************************************
 
-Open response assessments allow the course team to assign questions that might
-not have definite answers, such as text responses or short essays. Learners
-submit responses to questions, then each learner and the learner's peers
-compare the responses to a rubric that you create. You can also allow learners
-to upload an image, a .pdf file, or another file of a type that you specify,
-to accompany their text responses.
+개방형 응답 평가에서 교수자는 정답이 정해져 있지 않은 문제를 낼 수도 한다. 학습자가 이러한 문제에 답변을 제출하면 학습자와 동료 학습자는 강좌 운영팀이 작성한 채점 기준표(rubric)를 해당 답변과 비교하며 채점할 수 있다. 학습자는 텍스트 형식의 답변을 제출하는 것이 통상적이나 해당 텍스트에 이미지나 PDF 파일을 첨부하여 업로드해 제출할 수도 있다.
 
-Open response assessments can include self assessments, peer assessments, and
-staff assessments. In self assessments, learners compare their own responses to
-a rubric that you create. In peer assessments, learners compare their peers'
-responses to the rubric. In staff assessments, a member of the course team
-evaluates the learner's responses using the rubric.
+개방형 응답 평가는 상호 평가와 자기 평가, 운영팀 평가로 구성된다. 상호 평가에서 학습자는 강좌 운영팀이 생성한 채점 기준표를 바탕으로 다른 학습자의 답변을 평가한다. 자기 평가에서도 채점 기준표를 바탕으로 평가하되, 자신의 답변을 평가한다. 운영팀 평가는 채점 기준표에 따라 강좌 운영자가 평가하게 된다.
 
-In open response assessments, learners usually only see their own responses
-and any peer responses they assess. You can also allow learners to see the top
-scoring responses that their peers have submitted. For more information, see
-:ref:`PA Top Responses`.
+개방형 응답 평가에서는 일반적으로 학습자가 자신의 답변만을 볼 수 있으며, 다른 학습자의 답변을 평가하는 경우 해당 학습자의 답변까지만 볼 수 있다. 교수자가 전체 학습자가 제출한 답변 가운데 최고점을 받은 답변을 다른 학습자들이 볼 수 있도록 설정할 수도 있다. 이에 관해 :ref:`PA Top Responses` 에서 보다 구체적인 정보를 확인할 수 있다.
 
 .. note::
-  Open response assessments that are visible to all learners do not respect
-  cohorts. In other words, it is possible for learners in one cohort to be
-  asked to grade responses for learners in another cohort. If you want to make
-  an open response assessment divided by cohort, you must create that
-  assessment in a course component that is defined as cohort-specific. For more
-  information about cohorts and creating cohort-specific course content, see
-  :ref:`Cohorts Overview` and :ref:`Cohorted Courseware Overview`.
+  개방형 응답 평가는 모든 학습자에게 공개되어 있다. 즉 한 집단 내 학습자가 다른 집단의 학습자를 평가할 수 있다는 것이다. 집단 별로 개별 응답 평가를 나누고 싶다면 집단을 사용하는 강좌 구성요소에 추가해야 한다. 자세한 사항은   :ref:`Cohorts Overview` 와  :ref:`Cohorted Courseware Overview` 를 참고하면 된다.
 
 
-For more information about creating open response assessments, including step
-by step instructions, see the following sections.
+단계별 교수 방법 등 개방형 응답 평가 생성에 관한 보다 자세한 정보가 필요할 경우 다음을 살펴보길 바란다.
 
 * :ref:`Best Practices for ORA`
 * :ref:`PA Elements`
@@ -58,202 +36,119 @@ by step instructions, see the following sections.
 * :ref:`PA Create an ORA Assignment`
 * :ref:`Accessing ORA Assignment Information`
 
-For information about viewing metrics and learner responses for released open
-response assessments, see :ref:`Accessing ORA Assignment Information`.
+학습자 통계와 답변에 대한 자세한 사항은  :ref:`Accessing ORA Assignment Information` 을 참고하면 된다.
 
-For information about the learner experience with open response assessments,
-see :ref:`learners:SFD_ORA` in the *edX Guide for Learners*.
+개방형 응답 평가와 관련된 자세한 사항은  :ref:`learners:SFD_ORA` 를 참고하면 된다.
 
 .. _Best Practices for ORA:
 
 *********************************************
-Best Practices for Open Response Assessments
+개방형 응답 평가 활용하기
 *********************************************
 
-Open response assessments can be a powerful teaching tool, but they are more
-effective in some situations than in others. In general, open response
-assessments are best suited to open-ended or project-based assignments with
-subjective essay answers and discussion. For example, open response assessments
-work well in humanities assignments where learners are encouraged to make
-subjective assessments of text, images, or other contributions, but they might
-not be the ideal tool in chemistry assignments where there are definitively
-correct or incorrect answers to questions.
+개방형 응답 평가는 강력한 학습 도구이지만 특정 상황에서 더욱 효과적이다. 일반적으로 개방형 응답 평가는 에세이와 토의가 포함된 서술형 혹은 프로젝트 기반 과제에 더 적합하다. 예를 들어 개방형 응답 평가는 텍스트, 이미지 등에 대해 주관적 평가를 내리는 인문학 과제에 더 적합하다. 그러나 정확히 옳고 그른 답이 존재하는 화학 과제에는 적합하지 않다.
 
-.. note:: Do not add more than one ORA component in a course unit. Multiple ORA
-   assignments in a unit cause errors when learners submit their assessments.
+.. note:: 강좌 학습활동에 하나 이상의 개방형 응답 평가를 추가하지 않는다. 다수의 개방형 응답 평가는 과제 제출시 오류를 일으킬 수 있기 때문이다.
 
-EdX suggests that you follow these guidelines and best practices when you use
-open response assessments in your courses.
+K-MOOC은 강좌에 개방형 응답 평가를 활용할 때 다음과 같은 방법을 권장한다.
 
-* Make sure you have a well designed and clear :ref:`rubric <PA Rubric>`. A
-  good rubric is very important in helping to eliminate ambiguity in the peer
-  grading process.
+* 명확한 채점 기준표가 있어야 한다. 상호 평가 채점을 명확하게 하기 위해 채점 기준표는 매우 중요하다.
 
-* Make ORA assignments count toward only a small percentage of the final
-  course grade, or make them ungraded.
+* 개방형 응답 평가가 최종 성적의 작은 부분만을 차지하거나 채점이 되지 않도록 한다.
 
-* In graded ORA assignments, consider setting the lowest possible score to a
-  number higher than zero, so that learners can earn some credit for the work
-  they have done, even if their peer assessors give them low grades.
+* 개방형 응답 평가를 채점한다면 낮은 비율을 배정한다. 따라서 학습자가 과제에 대한 점수는 받되 상호 평가 결과가 낮아도 영향이 없도록 한다.
 
-* Provide an ungraded practice ORA assignment prior to the first graded ORA
-  assignment in the course, so that learners can understand the peer grading
-  process and get the most out of the eventual graded ORA assignment.
+* 점수에 반영되는 첫 개방형 응답 평가 과제 전에 연습용 개방형 응답 평가 과제를 낸다. 이를 통해 학습자가 상호 평가 채점에 대해 충분히 이해할 수 있도록 돕는다.
 
-* Consider using ungraded ORA assignments to generate learner interaction and
-  feedback without affecting grades.
+* 채점이 되지 않는 개방형 응답 평가를 통해 학습자 교류를 유도하고 성적에 영향 없이 피드백을 받을 수 있도록 한다.
 
-* Be wary of including too many ORA assessments in your course. :ref:`Peer
-  assessments <Peer Assessment Step>` are hard work for learners, and having
-  to perform too many peer assessments can have a negative impact on learners'
-  course completion rates.
+* 강좌에 너무 많은 개방형 응답 평가를 추가하지 않는다. 상호 채점 평가는 학습자에게 부담이 되며 상호 채점 평가를 여러 번 하는 것은 학습자의 강좌 수료 비율을 떨어뜨린다.
 
-* For a manageable experience, use staff assessment steps only in assignments
-  that are available to a limited number of learners. For example, in courses
-  that have cohorts enabled, you make the assignment containing the staff
-  assessment step available only to members of one or more cohorts.
+* 제한된 학습자들이 푸는 과제에만 운영팀 평가를 적용한다. 예를 들어 학습 집단을 사용하는 강좌에선 하나 이상의 집단에 속해있는 사용자에 대해서만 운영팀 평가를 적용하는 것이다.
 
-* Set the **Must Grade** number higher than the **Graded By** number to
-  minimize the chance that some responses will not be peer assessed. EdX
-  recommends a setting such as **Must Grade** = 4 and **Graded By** = 3.
+* 상호 평가 시에 채점해야할 수 숫자를 채점 받야할 수 숫자보다 높게 하여 모든 답변이 상호 평가 채점될 수 있도록 한다. K-MOOC은 채점해야할 수을 4, 채점받아야할 수를 3으로 놓는 것을 권장한다.
 
-* In ORA assignments, to allow enough time for peer assessments to be
-  performed after learners have submitted their own responses, set the
-  response due date and time at least one week before the peer assessment due
-  date and time. If the response due time and peer assessment due time are
-  close together, and a learner submits a response just before responses are
-  due, other learners may not have time to perform peer assessments before
-  peer assessments are due.
+* 개방형 응답 평가 과제에서 제출 이후 상호 평가 채점 시간을 충분히 제공하기 위해 제출 기한과 채점 기한의 차이를 1주일 이상 둔다. 만약 제출 기한과 채점 기한이 너무 붙어있으면 상호 평가 채점 시간이 충분하지 않을 수 있다.
 
-* In discussion posts, provide guidance for peer grading of ORA assignments.
+* 게시판 글에 개방형 응답 평가 상호 평가 채점 기준을 올린다.
 
-* Consider extending due dates to allow the discussion moderation team to
-  monitor course discussions for questions about, or reactions to, peer
-  grading, and to address issues when necessary.
+* 필요 시 게시판 관리자가 상호 평가 채점과 관련된 질문을 받고 문제를 해결할 수 있도록 기한을 늘리는 것을 고려한다.
 
-  If learners raise concerns about ORA assignments in course discussions,
-  course team members can perform actions such as :ref:`deleting a learner's
-  history, or "state" <Adjust_grades>` for a problem so that he can submit his
-  assignment again, :ref:`overriding a learner's grade<Override a learner
-  assessment grade>`, or :ref:`removing a learner response <Remove a learner
-  response from peer grading>` from peer grading. If there are more widespread
-  issues with peer grading, the course team can reduce the weight of the peer
-  assessment within the final course grade or allow learners to drop the
-  lowest graded assignment from their grades.
+  만약 게시판에서 개방형 응답 평가에 대해 문제가 생긴다면 강좌 운영팀은 :ref:`deleting a learner's history, or "state" <Adjust_grades>` 를 수행해 학습자가 다시 과제를 제출하도록 할 수 있으며 :ref:`overriding a learner's grade<Override a learner assessment grade>`, :ref:`removing a learner response <Remove a learner response from peer grading>` 등을 수행할 수 있다. 만약 상호 평가 채점과 관련된 문제가 지속 발생한다면 강좌 운영팀은 최종 성적 반영 비율을 낮추거나 학습자의 가장 낮은 과제 성적을 제외할 수도 있다
 
 
 .. _PA Elements:
 
 ******************************************
-Elements of an Open Response Assessment
+개방형 응답 평가의 요소
 ******************************************
 
-When you create an open response assessment assignment, you include several
-elements.
+개방형 응답 평가 과제에는 다음과 같은 요소를 포함된다.
 
-* One or more :ref:`prompts <PA Prompts>`, or questions.
+* 1개 이상의  :ref:`prompts <PA Prompts>`, 또는 질문.
 
-* The :ref:`rubric <PA Rubric>`. One rubric is used to grade all the prompts in
-  the assessment.
+* :ref:`rubric <PA Rubric>`. 하나의 기준표로 모든 과제를 채점한다.
 
-* One or more :ref:`assessment steps <PA Assessment Steps>`. Assignments can
-  include a learner training step, a peer assessment step, a self
-  assessment step, and a staff assessment step.
+* 1가지 이상의  :ref:`assessment steps <PA Assessment Steps>`. 과제에는 학습자 평가 연습 단계, 상호 평가 단계, 자기 평가 단계가 포함될 수 있다.
 
-.. note:: If you include a learner training step, you must also include a peer
-   assessment step. The learner training step must come first, before the peer
-   and self assessment steps. If you include a staff assessment step, it should
-   be the final step in the assignment.
+.. note:: 학습자 평가 연습 단계를 포함한다면 반드시 상호 평가 채점도 포함해야 한다. 상호 평가 채점과 자기 평가 단계 이전 학습자 평가 연습 단계가 우선 시행되어야 한다. 운영팀 평가 단계를 추가한다면 마지막 순서에 넣어야 한다.
 
-For step-by-step instructions for creating an open response assessment, see
-:ref:`PA Create an ORA Assignment`.
+개방형 응답 평가를 생성하기 위한 단계별 교수 방법에 관해서 더 자세한 정보는 :ref:`PA Create an ORA Assignment` 에 있다.
 
 .. _PA Prompts:
 
 =======
-Prompts
+프롬프트
 =======
 
-Each **prompt**, or question, that you want your learners to answer, appears
-near the top of the page, followed by a field where the learner enters a
-response. You can require your learners to enter text as a response, or you can
-allow your learners to both enter text and upload another file, such as an
-image or document.
+**프롬프트** 는 페이지 상단에 위치하며 그 바로 밑에는 학습자가 답변을 입력하는 영역이 있다. 학습자가 텍스트 형식의 답변을 입력하도록 되어 있지만, 텍스트 답변과 이미지를 동시에 업로드 하도록 설정할 수도 있다.
 
-.. note:: Uploaded files must be smaller than 5 MB in size. If learners upload
- an image, the file must be in .jpg, .gif, or .png format.
+.. note:: 학습자가 이미지를 업로드하는 경우 해당 이미지 파일은 반드시 .jpg나 .png 포맷이어야 하며 또한 반드시 5 MB 미만이어야 한다.
 
 .. image:: ../../../../shared/images/PA_QandRField.png
    :width: 500
    :alt: Single ORA question and its corresponding blank response field.
 
-When you write each question, you can include helpful information for your
-learners, such as what they can expect after they submit responses, or the
-approximate number of words or sentences that their response should have.
+프롬프트를 작성할 때, 학습자가 답변을 제출한 후의 절차 및 개략적인 답변의 단어 또는 문장 수 등, 학습자에게 도움이 되는 정보를 함께 제시할 수 있다.
 
-.. note:: Each learner is limited to a total word count of 10,000 for all
-   responses in an ORA assignment.
+.. note:: 1개 답변문은 10,000 단어를 초과할 수 없다.
 
-For more information, see :ref:`PA Add Prompt`.
+이에 대해 더 자세한 정보는 :ref:`PA Add Prompt` 에 있다.
 
 .. _Asking Learners to Upload Other Files in Responses:
 
-Asking Learners to Upload Other Files in Responses
+학습자에게 다른 파일 업로드 추천하기
 *******************************************************
 
-For an open response assessment, you can ask your learners to upload an image,
-a .pdf file, or a file of another type as a part of their responses. Other
-learners evaluate the responses and their accompanying files during the peer
-assessment. Offering the option to upload a file in addition to a text response
-can give learners the opportunity to use tools and develop skills that are
-relevant to your course.
+개방형 응답 평가에서 학습자는 이미지, pdf 파일 혹은 기타 형식의 파일을 답변으로 올릴 수 있다. 다른 학습자는 답변과 첨부된 파일을 같이 평가한다. 텍스트 답변과 함께 파일을 업로드 할 수 있게 함으로서 학습자에게 도구를 사용할 기회를 주고 강좌와 관련된 숙련도를 높일 수 있다.
 
-Before you decide to ask learners to upload other files along with their text
-responses, however, you should be aware of the following limitations and best
-practices.
+학습자에게 텍스트 답변과 함께 다른 파일을 업로드 하도록 하기 전에 다음과 같은 사항을 명심하여야 한다.
 
-* During the peer assessment step, learners download the files that other
-  learners uploaded. To reduce the potential for problems from files with
-  malicious content, learners cannot upload files with certain file extensions.
-  For a complete list, see :ref:`Prohibited File Extensions`.
+* 상호 평가 채점 단계에서 학습자는 다른 학습자가 업로드한 파일을 다운로드 받는다. 바이러스 등의 문제를 방지하기 위해 사용할 수 없는 파일 확장자가 있다.  :ref:`Prohibited File Extensions`  에서 목록을 확인할 수 있다.
 
-* Course teams can only access uploaded files for one learner at a time.
-  Uploaded file content is not included in the reports of answer submissions
-  available from the Instructor Dashboard, and course data packages do not
-  include any of the uploaded files.
+* 강좌 운영팀은 동시에 한 명의 학습자가 업로드한 파일만 다룰 수 있다. 업로드한 파일 콘텐츠는 교수자 대시보드에서 확인할 수 있는 답안 제출 보고나 강좌 자료 패키지에 포함되지 않는다.
 
-* You cannot require your learners to upload files. You can only give them the
-  option to do so.
+* 학습자에게 의무적으로 파일을 업로드하게 할 수 없다.
 
-* All responses must include some response text. Learners cannot submit a
-  response that contains only an uploaded file.
+* 모든 답변은 무조건 텍스트가 있어야 하며 업로드한 파일 만으로 답변을 제출할 수 없다.
 
-* Learners can submit only one file with each response.
+* 학습자는 각 답변마다 하나의 파일을 제출할 수 있다.
 
-* Files must be smaller than 5MB in size.
+* 파일 용량은 5MB보다 작아야 한다.
 
-* Image files must be in .jpg, .gif, or .png format.
+* 이미지 파일 형식은 .jpg, .gif나 .png 형식이어야 한다.
 
-For more information, see :ref:`PA Allow Images`.
+자세한 사항은  :ref:`PA Allow Images` (선택사항)을 참고하면 된다.
 
 .. _Prohibited File Extensions:
 
-Prohibited File Extensions
+금지된 파일 확장자
 ***************************
 
-This topic lists the file extensions for the set of file types that learners
-are prohibited from uploading as part of an open response assessment on edx.org
-or edX Edge. When you define a set of custom file types for learners to upload
-with their responses, you cannot specify these file types. The extensions on
-this list are selected and maintained by the development operations team at
-edX, and are subject to change.
+다음으로는 학습자가 테스트서버나 kmooc.kr에서 개방형 응답 평가 답변으로 업로드 할 수 없는 확장자 목록이다. 학습자가 답변의 일부로 파일을 업로드할 때 다음 확장자는 사용할 수 없다. 이 목록의 확장자는 K-MOOC 개발 운영팀이 관리하고 있으며 변동 사항이 있을 수 있다.
 
 .. only:: Open_edX
 
-  This set of file extensions is provided as the default for Open edX
-  installations. Open edX system administrators can update this list. For more
-  information, see
-  :ref:`installation:Configuring ORA2 to Prohibit Submission of File Types`.
 
 .. list-table::
    :widths: 15 75
@@ -273,127 +168,91 @@ edX, and are subject to change.
 .. _PA Rubric:
 
 =======
-Rubric
+채점 기준표
 =======
 
-Your assignment must include a **rubric** that you design. The same rubric is
-used for all the types of assessments (self, peer, or staff). The person
-performing the assessment sees the rubric when she begins grading, and
-compares the submitted response to the rubric.
+과제에는 **채점 기준표** 가 반드시 포함되어야 한다. 상호 평가 및 자기 평가 모두에 동일한 채점 기준표를 사용하며 이러한 채점 기준표는 학습자가 채점을 시작할 때 표시된다. 학습자는 동료의 답변과 이 채점 기준표를 비교한다.
 
-Rubrics consist of *criteria* and *options*.
+채점 기준표는 **평가 항목** 과 **평가 등급** 으로 구성된다.
 
-* Each criterion has a *name*, a *prompt*, and one or more *options*.
+* 각 평가 항목은 **제목** , **프롬프트** , 그리고 1개 이상의 **선택 조건** 으로 구성된다.
 
-   * The name is a very short summary of the criterion, such as "Ideas" or
-     "Content". Criterion names generally have just one word. Because the
-     system uses criterion names for identification, **the name for each
-     criterion must be unique.** Criterion names do not appear in the rubric
-     that learners see when they are completing peer assessments, but they do
-     appear on the page that shows the learner's final grade.
+   * 제목(name)은 해당 평가 항목을 짧게 요약한 것을 말한다. 평가 항목 제목은 한 단어로 구성하는 구성하는 것이 일반적이다. 평가 시스템은 이들 평가 항목 제목을 식별자로 사용한다. 따라서 반드시 평가 항목별로 고유한 제목을 붙여야 한다. 학습자가 상호 평가를 수행하는 중 확인하는 채점 기준표에는 평가 항목 제목이 표시되지 않다. 그러나 학습자 최종 점수가 표시되는 페이지에는 평가 항목 제목이 표시된다.
 
      .. image:: ../../../../shared/images/PA_CriterionName.png
         :alt: A final score page with call-outs for the criterion names
 
-   * The prompt is a description of the criterion.
+   * **프롬프트** 는 이들 평가 항목에 대한 설명이다.
 
-   * Options describe how well the response satisfies the criterion.
+   * **평가 등급** 은 해당 답변이 이들 평가 항목에 얼마나 잘 부합하는지를 나타낸다.
 
-* Each option has a *name*, an *explanation*, and a *point value*.
+* 각 평가 등급은 **제목** , **설명** , **소수점** 값으로 구성된다.
 
   .. image:: ../../../../shared/images/PA_Rubric_LMS.png
      :alt: Image of a rubric in the LMS with call-outs for the criterion prompt
          and option names, explanations, and points.
 
-Different criteria in the same assignment can have different numbers of
-options. For example, in the image above, the first criterion has three options
-and the second criterion has four options.
+하나의 과제에 서로 다른 다수의 평가 항목이 있는 경우 각 평가 항목의 평가 등급 가짓수는 서로 다를 수 있다. 가령, 위의 그림에서 첫 번째 평가 항목에는 세 가지 평가 등급, 두 번째 평가 항목에는 네 가지 평가 등급이 있다.
 
-.. note:: You can also include criteria that do not have options, but that do
-   include a field where learners or staff can enter feedback. For more
-   information, see  :ref:`PA Criteria Comment Field Only`.
+.. note:: 평가 등급이 없는 평가 항목을 포함할 수 있다. 그러나 이 경우에도 학습자가 피드백을 입력할 수 있는 필드가 있어야 한다. 보다 구체적인 정보는  :ref:`PA Criteria Comment Field Only` 에서 확인한다.
 
-You can see both criterion and option names when you access assignment
-information for an individual learner. For more information, see
-:ref:`Accessing ORA Assignment Information`.
+개별 학습자의 과제 정보에 접근하여 평가 등급 및 평가 항목 모두를 볼 수 있다. 보다 구체적인 안내는 :ref:`Accessing ORA Assignment Information` 에 있다.
 
 .. image:: ../../../../shared/images/PA_Crit_Option_Names.png
    :width: 600
    :alt: Learner-specific assignment information with call-outs for criterion
        and option names.
 
-When you create your rubric, decide how many points each option will receive,
-and make sure that the explanation for each option is as specific as possible.
-For example, one criterion and set of options may resemble the following.
+채점 기준표를 작성할 때 각 평가 등급에 몇 포인트를 부여할지 결정하고 각 평가 등급에 대한 설명은 가능한 한 구체적으로 한다. 평가 항목 1개와 다수의 평가 등급을 구성한 경우를 아래에 예시한다.
 
-**Criterion**
+**평가 항목**
 
-Name: Origins
+제목: Origins
 
-Prompt: Does this response explain the origins of the Hundred Years' War? (5
-points possible)
+프롬프트: 이 답변은 100년 전쟁의 원인을 설명하고 있는가? (최대 5점)
 
-**Options**
+**선택 사항**
 
 .. list-table::
    :widths: 8 20 50
    :stub-columns: 1
    :header-rows: 1
 
-   * - Points
-     - Name
-     - Explanation
+   * - 포인트
+     - 제목
+     - 설명
    * - 0
-     - Not at all
-     - This response does not address the origins of the Hundred Years' War.
+     - 전혀 그렇지 않음
+     - 이 답변은 백년 전쟁의 원인을 논의하지 않았음.
    * - 1
-     - Dynastic disagreement
-     - This response alludes to a dynastic disagreement between England and
-       France, but doesn't reference Edward III of England and Philip VI of
-       France.
+     - 왕위 계승권 다툼
+     - 이 답변은 잉글랜드와 프랑스 간의 왕위 계승권 다툼을 암시하고 있으나 잉글랜드의 에드워드 3세와 프랑스의 필립 6세를 언급하지 않았음.
    * - 3
-     - Edward and Philip
-     - This response mentions the dynastic disagreement between Edward III and
-       Philip VI, but doesn't address the role of Salic law.
+     - 에드워드와 필립
+     - 이 답변은 에드워드 3세와 필립 6세 간의 왕위 계승권 다툼을 다뤘으나 살릭 법의 역할을 논의하지 않았음.
    * - 5
-     - Salic law
-     - This response explains the way that Salic law contributed to the
-       dynastic disagreement between Edward III and Philip VI, leading to the
-       Hundred Years' War.
+     - 살릭 법
+     - 이 답변은 살릭 법이 에드워드 3세와 필립 6세의 왕위 계승권 다툼에 어떤 식으로 관여하여 백년 전쟁을 촉발했는지 설명했음.
 
-.. note:: For peer grading, the most effective rubrics are as concrete
-   and specific as possible. Many novice learners will be unqualified
-   to make the types of value judgments required for more holistic
-   rubrics. In addition, edX suggests using clear, simple language in
-   rubrics.
+.. note:: 상포 평가 채점을 위해 확실하고 구체적으로 채점 기준표를 만드는 것이 중요하다. 많은 초보 학습자는 정확한 채점 기준을 세우지 못한다. 또한, K-MOOC은 채점 기준표를 간결하게 만드는 것을 권장한다.
 
-For more information, see :ref:`PA Add Rubric`.
+:ref:`PA Add Rubric` 에서 이와 관련한 보다 구체적인 정보를 확인할 수 있다.
 
 .. _PA Assessment Steps:
 
 =================
-Assessment Steps
+평가 단계
 =================
 
-In your assignment, you also specify the **assessment steps**. You can set the
-assignment to include some combination of the following steps.
+과제에서 **평가 단계** 를 지정할 수 있다. 이 때, 다음과 같은 평가 단계를 포함하도록 과제를 구성할 수 있다.
 
 .. contents::
    :depth: 1
    :local:
 
-.. note:: If you include a learner training step, you must also include a peer
-   assessment step. The learner training step must come before peer or self
-   assessment steps. If you include both peer and self assessment steps, edX
-   recommends that you place the peer assessment before the self assessment.
-   If you include a staff assessment step, it should be the final step in the
-   assignment.
+.. note:: 학습자 평가 연습 단계를 포함한다면 반드시 상호 평가 단계도 포함해야 한다. 평가 연습 단계는 반드시 상호 평가 및 자기 평가 단계 이전에 시행되어야 한다. 상호 평가와 자기 평가를 모두 포함한다면 K-MOOC은 상호 평가를 자기 평가 이전에 시행하는 것을 권장한다. 운영팀 평가를 포함한다면 이는 마지막 순서에 오는 것이 좋다.
 
-You can see the type and order of the assessments when you look at the
-assignment. In the following example, after learners submit a response, they
-complete a learner training step ("Learn to Assess Responses"), complete peer
-assessments on other learners' responses ("Assess Peers"), and then complete
-self assessments ("Assess Your Response").
+과제를 검토할 때 평가의 유형과 순서를 확인할 수 있다. 아래는 학습자가 답변을 제출한 이후의 상황에 대한 예시이다. 학습자는 평가 연습 단계를 먼저 수행한 후, 다른 학습자의 답변에 대한 상호 평가, 자기 평가 단계를 차례로 수행하게 된다.
 
 .. image:: ../../../../shared/images/PA_AsmtWithResponse.png
   :alt: A peer assessment with assessment steps and status labeled.
@@ -401,37 +260,22 @@ self assessments ("Assess Your Response").
 
 .. _PA Student Training Step:
 
-Learner Training Step
+평가 연습 단계
 *****************************
 
-Learner training steps teach learners to perform their own assessments. A
-learner training assessment contains one or more sample responses that you
-write, together with the scores that you would give the sample responses.
-Learners review these responses and try to score them the way that you scored
-them.
+평가 연습 단계는 학습자가 평가 방법을 익히는 데 도움이 되게 할 수 있다. 1개의 평가 연습 평가에는 강좌 운영팀이 작성한 예제 1개 이상과 강좌 운영팀이 이 예제에 부여한 점수를 함께 제시할 수 있다. 이를 통해, 학습자는 강좌 운영팀이 점수를 매긴 방식에 맞춰 점수를 받을 수 있도록 노력할 것이다.
 
-.. note:: If you include a learner training step, you must also include a peer
-   assessment step. The learner training step must come before any peer and self
-   assessment steps.
+.. note:: 평가 연습 단계를 포함하는 경우 상호 평가 단계도 반드시 추가해야 한다. 평가 연습 단계는 반드시 상호 평가 단계 및 자기 평가 단계에 선행해야 한다.
 
-In a learner training assessment, the **Learn to Assess Responses** step opens
-immediately after a learner submits a response. The learner sees one of the
-sample responses that you created, along with the rubric. The scores that you
-gave the response do not appear. The learner also sees the number of sample
-responses that he or she will assess.
+I평가 연습 단계에서 “답변 평가 방법 학습” 단계는 학습자가 답변을 제출한 직후에 표시된다. 학습자는 강좌 운영팀이 만든 예시 중 한 가지와 이에 해당하는 채점 기준표를 확인한다. 이 때, 강좌 운영팀이 부여한 점수는 표시되지 않는다. 학습자는 자신이 평가할 문제의 수 또한 확인할 수 있다.
 
 .. image:: ../../../../shared/images/PA_TrainingAssessment.png
    :alt: Sample training response, unscored.
    :width: 500
 
-The learner selects an option for each of the assignment's criteria, and then
-selects **Compare your selections with the instructor's selections**. If all of
-the learner's selections match the selections defined by the course team, the
-next sample response opens automatically.
+학습자는 각 과제의 평가 항목에 대한 평가 등급을 선택하고 **교수자의 평가와 비교하기** 를 클릭한다. 학습자의 선택이 교수자의 선택과 모두 일치하는 경우 다음 예시가 자동으로 열린다.
 
-If any of the learner's selections differ from those specified by the course
-team, the learner sees the response again, and the following message appears
-above the response.
+학습자의 선택 중 교수자의 선택과 상이한 것이 존재하는 경우 해당 답변이 학습자에게 다시 제시된다. 이 때, 해당 답변 위에 다음과 같은 메시지가 표시된다.
 
 .. code-block:: xml
 
@@ -440,8 +284,7 @@ above the response.
   response and consider why the instructor may have assessed it differently. Then, try
   the assessment again.
 
-For each of the criteria, the learner sees one of the following two messages,
-depending on whether the learner's selections matched those of the course team.
+평가 항목 각각에 대해, 학습자 선택과 강좌 운영팀 선택의 일치 여부에 따라 다음 두 가지 메시지 가운데 하나가 학습자에게 제시된다.
 
 
 .. code-block:: xml
@@ -454,95 +297,64 @@ depending on whether the learner's selections matched those of the course team.
   Selected Options Agree
   The option you selected is the option that the instructor selected.
 
-For example, the following learner chose one correct option and one incorrect
-option.
+아래의 예시에서 학습자는 옳은 평가 등급 하나와 옳지 않은 평가 등급 하나를 각각 선택하고 있다.
 
 .. image:: ../../../../shared/images/PA_TrainingAssessment_Scored.png
    :alt: Sample training response, with one correct and one incorrect option.
    :width: 500
 
-The learner continues to try scoring the sample response until the learner's
-scoring for all criteria matches the scoring defined by the course team.
+학습자는 모든 평가 항목에 대한 자신의 채점 결과와 강좌 운영팀의 채점 결과가 동일해질 때까지 채점을 계속한다.
 
-For more information, see :ref:`PA Student Training`.
+:ref:`PA Student Training` 에서 보다 자세한 정보를 확인한다. 
 
 .. _Peer Assessment Step:
 
 Peer Assessment Step
 *****************************
 
-In the peer assessment step, learners review the responses of other learners
-in the course. For each response, they select an option for each criterion in
-your rubric based on the response. Learners can also provide text feedback, or
-comments, on each response.
+상호 평가 단계에서 학습자는 다른 학습자의 답변을 검토하고, 해당 답변에 기반하여 제시된 채점 기준표의 각 평가 항목에 대해 평가 등급을 선택한다.
 
-If you include both peer and self assessment steps, edX recommends that you
-place the peer assessment before the self assessment.
+만약 상호 평가와 자기 평가를 모두 포함한다면 K-MOOC은 상호 평가를 우선적으로 시행하도록 권장한다.
 
-For information about how peer assessments affect a learner's assignment grade,
-see :ref:`PA Scoring`.
+상호 평가가 어떻게 학습자의 과제 성적에 영향을 주는지에 관해 :ref:`PA Scoring` 에 자세한 정보가 나와있다.
 
 
 Number of Responses and Assessments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When you include a peer assessment step, you specify the number of responses
-that each learner must assess (**Must Grade**) and the number of peer
-assessments that each response must receive (**Graded By**) before the
-step is considered complete.
+상호 평가 단계를 포함할 경우 각 학습자가 평가할 답변의 개수( **채점해야할 수** ) 와 각 답변에 대한 상호 평가의 개수( **채점받아야할 수** ) 를 지정해야 한다.
 
-.. note:: Because some learners might submit a response without performing any
-   peer assessments, some responses might not receive the required number of
-   assessments. To increase the chance that all responses receive a sufficient
-   number of assessments, you must set the number of responses that learners
-   must assess to be higher than the number of assessments that each response
-   must undergo. For example, if you require each response to receive three
-   assessments, you could require each learner to assess five responses.
+.. note:: 일부 학습자는 답변만을 제출하고 상호 평가를 수행하지 않을 수 있다. 따라서 일부 답변은 필수로 지정된 수만큼 평가를 받지 못할 수도 있다. 모든 답변이 원래 지정된 수만큼 평가받을 확률을 높이려면 학습자가 평가해야 하는 답변의 개수를 각 답변이 반드시 받아야 하는 평가의 개수보다 높도록 설정해야만 한다. 예를 들어, 각 답변이 3개의 평가를 받도록 지정한 경우 각 학습자가 5개의 답변을 평가하도록 설정할 수 있다.
 
-If all responses have received assessments, but some learners have not
-completed the required number of peer assessments, those learners can perform
-peer assessments on responses that have already been assessed by other
-learners. The learner who submitted the response sees the additional peer
-assessments when he sees his score. However, the additional peer assessments
-do not count toward the score that the response receives.
+모든 답변에 대한 평가가 완료되었으나 일부 학습자가 상호 평가를 필수 개수대로 수행하지 않은 경우 해당 학습자는 다른 학습자가 이미 평가한 답변을 평가할 수 있다. 이러한 답변을 제출한 학습자에게는 자신의 점수를 채점할 때 상호 평가가 추가 제시된다. 그러나 추가 상호 평가는 자신의 답변이 받은 점수에 가산되지 않는다.
 
 .. _Feedback Options:
 
-Feedback Options
+피드백 선택 조건
 ^^^^^^^^^^^^^^^^
 
-By default, in peer assessment steps, learners see a single comment field
-below the entire rubric. You can also add a comment field to an individual
-criterion or to several individual criteria. This comment field can contain up
-to 300 characters.
+전체 채점 기준표 아래에 하나의 학습자 의견 작성 필드가 제공되는 것이 기본 설정으로 돼 있다. 1개 혹은 여러 개의 평가 항목에 대해 이러한 학습자 의견 작성 필드를 추가할 수 있다. 의견 필드에 입력할 수 있는 문자는 최대 300자이다.
 
-The comment field appears below the options for the criterion. In the following
-image, both criteria have a comment field. There is also a field for overall
-comments on the response.
+의견 필드는 해당 평가 항목의 평가 등급 아래에 표시된다. 다음 사례의 경우 두 평가 항목 모두에 하나의 의견 필드가 있다. 답변에 대한 종합 의견을 입력할 수 있는 필드도 하나 있다.
 
 .. image:: ../../../../shared/images/PA_CriterionAndOverallComments.png
    :alt: Rubric with comment fields under each criterion and under overall
        response.
    :width: 600
 
-For more information, see :ref:`PA Add Rubric` and :ref:`PA Criteria Comment
-Field Only`.
+보다 구체적인 안내는  :ref:`PA Add Rubric` 및  :ref:`PA Criteria Comment Field Only` 에 있다.
 
 
-Assessing Additional Responses
+추가 답변 평가
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Learners can assess more than the required number of responses. After a
-learner completes the peer assessment step, the step "collapses" so that only
-the **Assess Peers** heading is visible.
+학습자는 지정된 개수를 초과하여 답변을 평가할 수 있다. 학습자가 **상호 평가** 단계를 마치면 해당 단계가 닫히고 상호 평가 라는 제목이 표시된다.
 
 .. image:: ../../../../shared/images/PA_PAHeadingCollapsed.png
    :width: 500
    :alt: The peer assessment step with just the heading visible.
 
-If the learner selects the **Assess Peers** heading, the step expands again.
-The learner can then select **Continue Assessing Peers** to perform additional
-peer assessments.
+학습자가 **상호 평가 계속하기** 를 클릭하면 해당 단계가 전개된다.
 
 .. image:: ../../../../shared/images/PA_ContinueGrading.png
    :width: 500
@@ -552,188 +364,125 @@ peer assessments.
 
 .. _Self Assessment Step:
 
-Self Assessment Step
+자기 평가 단계
 *****************************
 
-In self assessment steps, the learner sees her own response followed by the rubric.
-As with peer assessments, the learner evaluates the response using the rubric,
-selecting an option for each criterion.
+자기 평가 단계에서는 학습자 자신의 답변 뒤에 채점 기준표가 제시된다. 상호 평가와 마찬가지로 학습자는 채점 기준표와 자신의 답변을 비교하며 각 평가 항목에 대해 평가 등급을 선택한다.
 
-If you include both peer and self assessments, edX recommends that you include
-the peer assessment before the self assessment.
+상호 평가와 자기 평가를 모두 포함하는 경우 자기 평가를 상호 평가 뒤에 배치할 것을 권한다.
 
 
 .. _Staff Assessment Step:
 
-Staff Assessment Step
+운영팀 평가 단계
 *****************************
 
-In staff assessment steps, a member of the course team performs an evaluation
-of the learner's response. Course team members grade the response using the
-problem's rubric, in the same way that self and peer assessments are done, and
-can include comments in their assessment.
+운영팀 평가 단계에서 강좌 운영자는 학습자 답변에 대한 평가를 한다. 강좌 운영자는 평가에 첨언할 수 있으며 문제의 채점 기준표에 따라 평가를 하고 자기 평가 및 상호 평가 단계와 동일하게 진행된다.
 
-.. note:: If a staff assessment step is included in an assignment, learners do
-   not receive final grades until the staff assessment step has been completed.
-   The scores that you give learners in staff assessment steps override
-   scores from any other assessment type in the assignment, including peer
-   assessments that are completed after the staff assessment.
+.. note:: 만약 과제에 운영팀 평가 단계가 포함된다면 학습자는 이 단계가 끝날 때까지 최종 성적을 받지 못한다. 운영팀 평가 단계에서 부여하는 점수는 운영팀 평가 단계 이후 시행되는 상호 평가를 포함한 기타 모든 평가 단계의 성적을 뒤집는다.
 
-Including a staff assessment step in an ORA assignment is best for courses with
-smaller groups of learners. For example, in a course with cohorts, you might
-create an ORA assignment that has both peer assessment and staff assessment
-steps, and make it available only to the members of one or more specific
-cohorts. For the members of the remaining cohorts, you create an ORA assignment
-that has only the peer assessment step. For details about creating different
-course experiences for learners in different cohorts, see
-:ref:`Cohorted Courseware Overview`.
+개방형 응답 평가 과제에서 운영팀 평가 단계를 추가하는 것은 학습자 수가 적을 때 더욱 유용하다. 예를 들어 여러 집단이 있는 강좌에서 상호 평가 및 운영팀 평가가 모두 있는 개방형 응답 평가 과제를 만들어 특정 집단에게만 사용할 수 있다. 그리고 남아있는 다른 집단에게는 오직 상호 평가 과제만을 사용하게 할 수 있다. 강좌에서 다양한 집단을 활용하는 방법은 :ref:`Cohorted Courseware Overview` 를 참고하면 된다.
 
-For details about performing grading in staff assessment steps, see
-:ref:`Perform a Staff Assessment`.
+운영팀 평가 단계의 채점과 관련된 사항은 :ref:`Perform a Staff Assessment` 를 참고하면 된다.
 
 
 .. _PA Scoring:
 
 *******************************************************
-How Scores for Open Response Assessments Are Calculated
+개방형 응답 평가 점수 계산하기
 *******************************************************
 
-In open response assessments that contain staff assessments, staff assessments
-can be performed more than once, and the most recent staff assessment score is
-equivalent to the assignment's final score. Peer and self assessment scores are
-not taken into account, although learners can see scores and comments from all
-assessments that were performed on their response.
+운영팀 평가를 포함한 개방형 응답 평가에서 운영팀 평가는 한번 이상 있을 수 있으며 마지막 운영팀 평가가 과제의 최종 점수가 된다. 학습자는 모든 평가 점수를 조회할 수 있지만 상호 및 자기 평가 점수는 반영되지 않는다.
 
-In open response assessments that do not contain staff assessments but do
-contain both peer assessment and self assessments, only the peer assessment
-score counts toward the assignment's final score. The self assessment score is
-not taken into account. There is no option for weighting the peer and self
-assessment portions independently.
+운영팀 평가가 없지만 상호 및 자기 평가가 있는 개방형 응답 평가의 경우 상호 평가만이 과제의 최종 성적에 반영된다. 자기 평가는 반영되지 않는다. 자기 평가와 상호 평가를 각각 가중치를 주는 방법은 없다.
 
-In open response assessments that include only self assessments, the
-assignment's final score is equivalent to the self assessment score.
+운영팀 평가만을 포함하는 개방형 응답 평가의 경우 운영팀 평가가 곧 최종 성적이 된다.
 
-.. note:: Given the high level of subjectivity in peer assessments, edX
-   recommends that you make ORA assignments count towards only a small
-   percentage of a course's final grade.
+.. note:: 상호 평가가 갖는 주관성을 고려하여 K-MOOC은 개방형 응답 평가 과제를 강좌 최종 성적의 반영 비율을 낮게 설정하는 것을 권장한다.
 
-The following topics detail how the scores for peer assessments and self
-assessments are calculated.
+다음은 상호 및 자기 평가 점수 계산에 관한 설명이다.
 
 
 =======================
-Peer Assessment Scoring
+상호 평가 채점
 =======================
 
-.. note:: If an open response assessment includes peer and self assessments
-   but not staff assessments, only the peer assessment score counts towards
-   the assignment's final score. The self assessment score is not taken into
-   account.
+.. note:: 개방형 응답 평가에 운영팀 평가는 없고 상호 및 자기 평가만 모두 있다면 상호 평가만이 최종 성적에 반영되며 자기 평가는 반영되지 않는다.
 
-Peer assessments are scored by criteria. A number of peer assessors rate a
-learner's response by each of the required criteria. The learner's score for a
-particular criterion is the median of all scores that each peer assessor gave
-that criterion. For example, if the Ideas criterion in a peer assessment
-receives a 10 from one learner, a 7 from a second learner, and an 8 from a
-third learner, the Ideas criterion's score is 8.
+상호 평가는 평가 항목별로 채점한다. 각 평가 항목에 대한 점수는 각 상호 평가자가 해당 평가 항목에 매긴 점수의 중앙값 혹은 중간값으로 한다. 가령, 어떤 상호 평가에서 세 명의 학습자가 Ideas 평가 항목에 각각 10, 7, 8점을 부여한 경우 Idea 평가 항목의 점수는 8이 된다.
 
-The learner's final score on a response is the sum of the median scores from
-all peer assessors for all of the required criteria.
+학습자가 상호 평가에서 획득하는 최종 점수는 각 평가 항목에 대한 모든 상호 채점자 점수의 중앙값의 합으로 한다.
 
-For example, a response might have received the following scores from peer
-assessors.
+예를 들어, 어떤 답변에 대해 상호 평가자로부터 다음과 같은 점수를 획득한다고 가정할 수 있다.
 
 .. list-table::
    :widths: 25 10 10 10 10
    :stub-columns: 1
    :header-rows: 1
 
-   * - Criterion Name
-     - Peer 1
-     - Peer 2
-     - Peer 3
-     - Median
-   * - Ideas (out of 10)
+   * - 평가 항목 제목
+     - 동료  1
+     - 동료  2
+     - 동료  3
+     - 중앙값
+   * - Ideas (10점 만점)
      - 10
      - 7
      - 8
      - **8**
-   * - Content (out of 10)
+   * - Content (10점 만점)
      - 7
      - 9
      - 8
      - **8**
-   * - Grammar (out of 5)
+   * - Grammar (5점 만점)
      - 4
      - 4
      - 5
      - **4**
 
-To calculate the final score for the response, add the median scores that were
-given for each criterion, as follows.
+각 평가 항목의 점수 중앙값을 합하여 최종 점수를 계산한다.
 
-  **Ideas median (8/10) + Content median (8/10) + Grammar median (4/5) = final
-  score (20/25)**
+  **Idea** 항목의 중앙값 **(8/10)** + **Content** 중앙값 **(8/10)** + Grammar 중앙값 **(4/5)** = 최종 점수 **(20/25)**
 
-.. note:: Remember that final scores are calculated by criteria, not by
-   individual assessor. Therefore, the score for the response is not the median
-   of the scores that each individual peer assessor gave the response.
+.. note:: 다시 강조하면, 최종 점수는 평가자별이 아니라 평가 항목별로 계산한다. 따라서 어떤 답변으로 획득한 점수는 각 상호 평가자가 해당 답변에 부여한 여러 점수의 중앙값이 아니다.
 
-For information on scores for learner submissions that you have canceled and
-removed from peer assessment, refer to :ref:`Remove a learner response from
-peer grading`.
+참고로 상호 평가에서 제외한 학습자 제출 답안 점수의 경우 :ref:`Remove a learner response from peer grading` 를 참고하면 된다.
 
 =======================
-Self Assessment Scoring
+자기 평가 채점
 =======================
 
-.. note:: If an open response assessment includes both peer and self
-   assessments, the self assessment score does not count toward the final
-   grade.
+.. note:: 개방형 응답 평가에 상호 및 자기 평가가 모두 있다면 최종 성적에 자기 평가는 반영되지 않는다.
 
-If an open response assessment includes only self assessments, the
-assignment's final score is equivalent to the self assessment score.
+개방형 응답 평가에 자기 평가만이 있다면 자기 평가 성적이 곧 최종 성적이 된다.
 
-Self assessments are scored by criteria. Each learner rates herself on each
-criterion, using the rubric. The learner's final score on a response is the
-total number of earned points, out of the total possible points.
+자기 평가는 평가 항목별로 채점한다. 각 학습자는 자기 답안을 채점 기준표의 각 항목에 따라 평가한다. 학습자의 최종 성적은 획득한 총 점수로 결정된다.
 
 ========================
-Staff Assessment Scoring
+운영팀 평가 채점
 ========================
 
-If an open response assessment includes a staff assessment step, the score
-that is given in the staff assessment step overrides all other scores in the
-assignment.
+만약 개방형 응답 평가에 운영팀 평가가 포함된다면 운영팀 평가 성적은 다른 모든 성적을 뒤집는다.
 
 .. _PA Top Responses:
 
 *****************************
-Top Responses
+우수 답변
 *****************************
 
-You can include a **Top Responses** section that shows the top scoring
-responses that learners have submitted for the assignment, along with the
-scores for those responses. The **Top Responses** section appears below the
-learner's score information after the learner finishes every step in the
-assignment.
+학습자가 과제로 제출한 답변 가운데 최상위 점수를 획득한 답변을 **우수 답변** 으로 지정해 점수와 함께 공개할 수 있다. **우수 답변** 은 학습자가 해당 과제의 모든 단계를 종료한 후 학습자 점수 정보 아래에 공개된다.
 
 .. image:: ../../../../shared/images/PA_TopResponses.png
    :alt: Section that shows the text and scores of the top three responses for
        the assignment.
    :width: 500
 
-You can allow the **Top Responses** section to show between 1 and 100
-responses. Keep in mind, however, that each response might be up to 300 pixels
-in height in the list. (For longer responses, learners can scroll to see the
-entire response.) EdX recommends that you specify 20 or fewer responses to
-prevent the page from becoming too long.
+**우수 답변** 으로 최소 1개부터 최대 100개의 답변을 공개할 수 있다. 해당 목록에서 각 답변의 높이는 최대 300픽셀이다. (답변이 이보다 더 길 경우, 학습자는 페이지를 스크롤하여 전체 답변을 확인할 수 있다.) 게시하는 답변의 개수를 20개 이하로 지정하여 해당 페이지가 지나치게 길어지지 않도록 할 것을 권한다.
 
-.. note:: It can take up to an hour for a high-scoring response to appear in
- the **Top Responses** list.
+.. note:: **우수 답변** 목록에 답변이 공개되는 데에는 1시간 가량 소요될 수 있다.
 
-   If a high-scoring response is :ref:`removed from peer assessment<Remove a
-   learner response from peer grading>` it is also removed from the **Top
-   Responses** list.
+   만약 고득점 답변이 상호 평가에서 제외된다면 **우수 답변** 목록에서도 제거된다.
 
-For more information, see :ref:`PA Show Top Responses`.
+이에 관한 보다 자세한 안내는 :ref:`PA Show Top Responses` 에 있다.
+ 
