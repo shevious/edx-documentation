@@ -4,201 +4,113 @@
 Exploring Your Dashboard, Settings, and Profile
 ###################################################
 
-This topic describes your dashboard, account settings, and profile.
+대쉬보드, 계정 설정 및 프로필에 관한 ​사항은 다음과 같다.
 
 .. contents::
  :local:
  :depth: 1
 
 **********
-Overview
+개요
 **********
 
-After you create an edX account, you can view a list of your current courses,
-change your course or account settings, or create a profile. You can access
-course, account, or profile information from any edX page, whether you are in a
-course or browsing the course catalog.
+K-MOOC 계정 생성 후 수강중인 강좌를 볼 수 있고 강좌나 계정 설정을 수정할 수 있으며 프로필을 만들 수 있다. 모든 K-MOOC 페이지에서 강좌, 계정 및 프로필 정보를 볼 수 있다.
 
-* Your :ref:`dashboard<SFD Learner Dashboard>` gives you access to course
-  information, such as start and end dates, email settings, and certificates.
-  To access your dashboard, select your usernameon on any edX page.
+* :ref:`dashboard<SFD Learner Dashboard>` 시작일, 종료일과 같은 강좌 정보와 함께 이메일 설정 및 인증서를 보여준다. 대쉬보드 접속을 위해선 아무 K-MOOC 페이지에서나 아이디를 클릭하면 된다.
 
-* On your :ref:`profile page<SFD Profile Page>`, you can create a profile that
-  includes an image and biographical information. To access your profile,
-  select the arrow next to your username on any edX page, and then select
-  **Profile**.
+* :ref:`profile page<SFD Profile Page>` 에서 개인 약력과 사진이 있는 프로필을 만들 수 있다. 프로필을 보기 위해선 아이디 옆 화살표를 누른 후 프로필을 클릭하면 된다.
 
-* The :ref:`Account Settings<SFD Account Settings>` page allows you to change
-  settings such as your email address, education level, and country or region,
-  and to link your edX account to a social media or organization account. You
-  can also view a summary of any purchases you have made. To access the
-  **Account Settings** page, select the arrow next to your username on any edX
-  page, and then select **Account**.
+* :ref:`Account Settings<SFD Account Settings>` 페이지에서 이메일 주소, 학습 수준, 국적, 지역과 같은 설정을 변경할 수 있고 SNS나 소속 기관 계정과 K-MOOC 계정을 연동시킬 수 있다. 또, 어떤 것이든 구매한 적이 있다면 그 내역을 확인할 수 있다. 계정 설정을 보기 위해선 아이디 옆 화살표를 누른 후 계정을 클릭하면 된다.
 
 .. _SFD Learner Dashboard:
 
 *************************
-Exploring the Dashboard
+대쉬보드 탐색
 *************************
 
-When you create an edX account or enroll in an edX course, you automatically go
-to your dashboard. You can also access your dashboard by selecting your
-username on any edX page. You can find information about your courses and
-change course settings on your dashboard. For more information, see :ref:`Find
-or Change Course Information`.
+K-MOOC 계정을 만들거나 K-MOOC 강좌를 수강하면 자동으로 대쉬보드로 이동하게 된다. 아이디를 클릭해서 대쉬보드에 접속할 수도 있다. 대쉬보드에서 강좌에 대한 정보를 볼 수 있고 강좌 설정을 변경할 수 있다. 자세한 사항은  :ref:`Find or Change Course Information` 을 참고한다.
 
 .. only:: Partners
 
-  Your dashboard has two pages.
+  대쉬보드엔 두 페이지가 있다.
 
-  * The **Courses** page lists all the courses you have enrolled in, whether
-    the course is current or has ended. The **Courses** page provides
-    information about your courses and allows you to change course settings. By
-    default, the dashboard opens to the **Courses** page.
+  * 강좌 페이지는 종료 여부와 관계없이 현재 수강중인 모든 강좌가 표시된다. 강좌 페이지에서 강좌 정보를 볼 수 있고 강좌 설정을 변경할 수 있다. 기본 설정 상태에서 대쉬보드를 열면 자동으로 강좌 페이지가 보인다.
 
-  * The **Programs** page lists any programs, such as XSeries programs, that
-    edX offers for courses that you are enrolled in. Programs appear on this
-    page if you are enrolled in any course that is part of that program. For
-    more information, see :ref:`Programs Page`.
+  * 프로그램 페이지는 XSeries 프로그램 등 현재 수강 중인 강좌에서 사용 가능한 모든 프로그램이 보인다. 현재 수강중인 강좌와 관련된 프로그램이 모두 표시된다. 자세한 사항은  :ref:`Programs Page` 을 참고하면 된다.
 
 .. _Find or Change Course Information:
 
 ==================================
-Find or Change Course Information
+강좌 정보 보기 및 변경
 ==================================
 
 .. only:: Partners
 
-  You can complete the following actions on the **Courses** page on your
-  dashboard.
+  대쉬보드의 강좌 페이지에서 다음과 같은 작업을 할 수 있다.
 
 .. only:: Open_edX
 
-  You can complete the following actions on your dashboard.
+  대쉬보드의 강좌 페이지에서 다음과 같은 작업을 할 수 있다.
 
-* Access your current and archived courses.
+* 수강중 및 청강 중인 강좌 보기
 
-  To access a current or archived course, select **View Course** or **View
-  Archived Course** next to the name of the course. Note that archived courses
-  do not always provide access to all content.
+  현재 수강중이거나 청강 중인 강좌를 보기 위해선 강좌 이름 옆의 강좌 보기 혹은 청강 중인 강좌 보기를 선택하면 된다. 청강 중인 강좌는 모든 내용이 공개되지 않을 수 있다.
 
-* See when courses start or end.
+* 강좌 시작일 및 종료일 보기.
 
-  Course start and end dates appear below the name of the course.
+  강좌 이름 하단에서 강좌 시작일과 종료일을 확인할 수 있다.
 
-  * If a course has not yet started, you see the course start date.
-  * If a course has started but not ended, you see the course end date.
-  * If a course has ended, you see the course end date.
+  * 강좌가 아직 시작하지 않았다면 시작일을 볼 수 있다.
+  * 강좌가 시작했으나 아직 끝나지 않았다면 강좌 종료일을 볼 수 있다.
+  * 강좌가 끝났다면 강좌 종료일을 볼 수 있다.
 
-* Change your course email settings.
+* 강좌 이메일 설정을 변경할 수 있다.
 
-  #. Select the Options icon for the course, and then select **Course emails**.
-     The Options icon resembles a gear and appears next to **View Course** or
-     **View Archived Course**.
+  #. 강좌의 옵션 아이콘을 누르고 강좌 이메일을 클릭한다. 옵션 아이콘은 강좌 보기와 청강 중인 강좌 보기 옆에 있다.
 
      .. image:: ../../../shared/images/LearnDash_GearIcon.png
        :width: 125
        :alt: The Options icon next to the View Course button on the learner
            dashboard.
 
-  #. Select or clear the **Receive course emails** check box, and then select
-     **Save Settings**.
+  #. 강좌 이메일 받기 상자를 체크하거나 체크 해제한 후 설정 저장을 클릭한다.
 
-     .. note:: If you clear this check box, you will not receive any of the
-        email messages that course teams send to communicate with enrolled
-        learners in the course.
+     .. note:: 만일 상자 체크를 해제한다면 강좌 운영팀이 수강중인 학습자와의 소통을 위해 보내는 모든 이메일을 받을 수 없게 된다.
 
-* Unenroll from a course.
+* 강좌 수강 취소.
 
-  To unenroll, select the Options icon for the course, select **Unenroll**, and
-  then select **Unenroll** in the confirmation dialog box. The Options icon
-  resembles a gear and appears next to **View Course** or **View Archived
-  Course**.
+  강좌 수강 취소를 위해선 옵션 아이콘을 누르고 수강 취소를 클릭 한 뒤 확인 창에서 다시 한번 수강 취소를 클릭하면 된다. 옵션 아이콘은 강좌 보기와 청강 중 강좌 보기 옆에 있다.
 
-* View your grades in courses that you have completed.
+* 완료한 강좌에서 성적을 확인한다.
 
-  Your final grade appears under the name of the course.
+  최종 성적은 강좌 이름 하단에서 볼 수 있다.
 
-* Download a course certificate.
+* 강좌 인증서를 다운로드 받는다.
 
-  To download a course certificate, select **Download Your Certificate (PDF)**
-  or **Download Your ID Verified Certificate (PDF)**. You can then print the
-  PDF certificate.
+  이수증 다운로드 (PDF)를 클릭하면 이수증을 **다운로드** 할 수 있다.
 
 .. only:: Partners
-
-  * Find out whether your ID verification is still active.
-
-    If you have enrolled in the verified certificate track for a course, your
-    ID verification status appears with the course image for that course. For
-    more information, see :ref:`learners:SFD Verify Your Identity`.
-
-
-.. only:: Partners
-
-  .. _Programs Page:
-
-  =======================
-  Explore edX Programs
-  =======================
-
-  The **Programs** page lists all of your programs. You see a program on this
-  page if you are enrolled in any courses that are part of that program.
-
-  EdX currently offers XSeries programs, which are groups of two to ten courses
-  that explore a specific subject in depth. You can earn a certificate for the
-  XSeries program and for the individual courses in the program. For more
-  information about XSeries programs, see `XSeries Programs`_.
-
-  On the **Programs** page, you can perform the following actions.
-
-  * Access information about a program and enroll in more of the program's
-    courses.
-
-    To access information about a program, select that program. A page opens
-    that provides more information about the program, as well as links to
-    enroll in courses in that program.
-
-  * View your progress through the program.
-
-    Under the name of the program are two indications of your progress through
-    the program. First, a message specifies the number of courses for which you
-    have earned course certificates in the program. Second, a colored bar
-    indicates the number of program courses that you have enrolled in and
-    completed.
-
-  * Access any program certificates you have earned.
-
-    In the right pane, a **Program Certificates** list shows the names of
-    programs for which you have earned certificates. For more information about
-    the program, or to view the certificate, select the name of the program.
 
 
 .. _SFD Profile Page:
 
 *************************************
-Exploring the Profile Page
+프로필 페이지 탐색
 *************************************
 
-Your edX profile allows you to share information about yourself with the edX
-community. Course teams and other learners in your courses can view your
-profile. You can share either a limited profile or a full profile.
+K-MOOC 프로필은 K-MOOC 커뮤니티에서 자신에 대한 정보를 공유할 수 있도록 돕는다. 강좌 운영팀과 다른 학습자가 프로필을 볼 수 있으며 제한적 프로필과 전체 프로필 중 선택할 수 있다.
 
-Your profile always includes your username. Optionally, and if you are over 13
-years of age, you can also share a profile picture, your location, and other
-biographical information.
+프로필엔 항상 아이디가 표시되고 13세 이상일 경우 프로필 사진, 주소 및 기타 개인 정보를 공유할 수 있다.
 
-A limited profile shares only your username and an optional profile picture.
+제한적 프로필은 아이디와 프로필 사진만을 표시한다.
 
-.. note:: If you are under 13 years of age, you can only share a limited
-   profile and you cannot share a profile picture.
+.. note:: 13세 미만일 경우 제한적 프로필만을 공유할 수 있고 프로필 사진을 선택할 수 없다.
 
 .. image:: ../../../shared/images/SFD_Prof_Limited.png
  :width: 400
  :alt: A learner's limited profile showing only username and image.
 
-A full profile includes biographical information in addition to your username
-and profile image.
+전체 프로필은 아이디와 프로필 사진 외에 개인정보를 포함한다.
 
 .. image:: ../../../shared/images/SFD_Prof_Full.png
  :width: 500
@@ -209,111 +121,85 @@ and profile image.
 .. _Create or Edit a Limited Profile:
 
 ================================
-Create or Edit a Limited Profile
+제한적 프로필 작성 및 편집
 ================================
 
-A limited profile includes only your username and, optionally, an image.
+제한적 프로필은 아이디와 사진만을 포함한다.
 
-.. note:: If you are under 13 years of age, your limited profile only includes
-   your username. You cannot add a profile picture.
+.. note:: 13세 미만일 경우 제한적 프로필만을 공유할 수 있고 프로필 사진을 선택할 수 없다.
 
-To create or edit a limited profile, follow these steps.
+다음과 같이 제한적 프로필을 작성하거나 편집할 수 있다.
 
-#. On any edX page, select the arrow next to your username, and then select
-   **Profile**.
+#. K-MOOC 페이지에서 아이디 옆 화살표를 누르고 프로필을 클릭한다.
 
-#. On your profile page, locate **edX learners can see my**, and then select
-   **Limited Profile**.
+#. 프로필 페이지에서 ‘​K-MOOC ​학습자가 나에 대해 볼 수 있는 것’을 찾아서 제한적 프로필을 선택한다.
 
-#. (optional) Add an image that you want to associate with your edX username.
-   Your image must be a .gif, .jpg, or .png file. The image must be between
-   100 bytes and 1 MB in size. If you do not add an image, the placeholder
-   image appears as your profile image.
+#. (선택) 아이디와 함께 추가하고 싶은 사진을 고른다. 사진은 반드시 gif, jpg 혹은 png 형태의 파일이어야 하고 100바이트~1MB 사이의 용량이어야 한다. 사진을 추가하지 않는다면 프로필 사진을 기본 사진이 선택된다.
 
-   #. Move your cursor over the placeholder image, and then select **Upload
-      Image**.
+   #. 기본 사진 위에 마우스를 놓고 사진 업로드를 선택한다.
 
-   #. In the dialog box, select the image file that you want, and then select
-      **Open**.
+   #. 원하는 사진을 고르고 열기를 선택한다.
 
-   To change or remove your profile image, move your cursor over your image,
-   and then select either **Change Image** or **Remove**. When you remove your
-   profile image, the placeholder image appears as your profile image.
+   프로필 사진을 수정하거나 제거하기 위해선 이미지 위에 마우스를 놓고 사진 수정 혹은 사진 제거를 클릭한다. 프로필 사진을 제거하면 기본 사진이 다시 자동으로 설정된다.
 
-EdX saves your changes automatically.
+K-MOOC은 수정 사항을 자동으로 저장한다.
 
 ================================
-Create or Edit a Full Profile
+전체 프로필 작성 및 편집
 ================================
 
-.. note:: You must specify your year of birth on the **Account Settings** page
-   before you share a full profile. If you are under 13 years of age, you
-   can share only a :ref:`limited profile <Create or Edit a Limited Profile>`.
+.. note:: 전체 프로필 작성 전 반드시 계정 설정에서 출생연도를 입력해야 한다. 13세 미만의 경우  :ref:`limited profile <Create or Edit a Limited Profile>`  만을 공유할 수 있다.
 
-A full profile can include the following information. Your username and
-country or region are required.
+전체 프로필은 다음과 같은 정보를 포함할 수 있다. 아이디, 국적 및 지역은 필수 입력 정보이다.
 
-* Your username.
+* 아이디.
 
-* An image that you select to identify you on the edX site.
+* 프로필 사진.
 
-* Your country or region.
+* 국적 및 지역.
 
-* Your preferred language.
+* 선호 언어.
 
-* A paragraph about yourself. You might include your interests, goals, or
-  other information that you want to share. This paragraph can contain up to
-  3000 characters.
+* 자기소개. 자기소개에는 관심사, 목표 혹은 기타 내용이 포함될 수 있으며 3000자 미만으로 작성되어야 한다.
 
-To create or edit your profile, follow these steps.
+프로필 작성과 편집은 다음과 같이 한다.
 
-#. On any edX page, select the arrow next to your username, and then select
-   **Profile**.
+#. K-MOOC 페이지에서 아이디 옆 화살표를 선택하고 프로필을 클릭한다.
 
-#. Locate **edX learners can see my**, and then select **Full Profile**.
+#. ‘​K-MOOC ​학습자가 나에 대해 볼 수 있는 것’을 찾아서 전체 프로필을 선택한다.
 
-#. On your profile page, move your cursor over the information that you
-   want to add or change.
+#. 프로필 페이지에서 추가하거나 수정하고 싶은 정보로 마우스를 옮긴다.
 
-   If you have not added information to the field, the field appears
-   highlighted and surrounded by a dashed line.
+   만일 정보를 추가하지 않았다면 해당 입력창은 점선으로 표시된다.
 
    .. image:: ../../../shared/images/SFD_Prof_Add_Info.png
     :width: 300
     :alt: A profile page with the "Add language" field highlighted and
         surrounded by a dashed line.
 
-   If the field already has information, the field appears highlighted, and a
-   pencil icon appears.
+   이미 정보를 입력했다면 해당 입력창에 연필 아이콘이 나타난다.
 
    .. image:: ../../../shared/images/SFD_Prof_Edit_Info.png
     :width: 500
     :alt: A profile page with the "About Me" field highlighted.
 
-#. Move your cursor inside the field, and then either enter text in the field
-   or select a different option from a list.
+#. 마우스를 입력창으로 가져가고 내용을 입력하거나 다른 사항을 선택한다.
 
-EdX saves your changes automatically.
+K-MOOC은 수정사항을 자동으로 저장한다.
 
-.. note:: If you change the profile type selection from **Full Profile**
- to **Limited Profile**, your location, language, and descriptive paragraph
- are not visible on your profile page. However, this information is saved. To
- make this information visible again, select **Full Profile**.
+.. note:: 만일 전체 프로필 설정을 제한적 프로필 설정으로 바꾼다면 위치, 선호하는 언어와 자기소개는 공개되지 않는다. 그러나, 이 정보는 저장되어 있으므로 다시 전체 프로필로 설정을 바꾸면 공개되게 된다.
 
 ================================
-View Another Learner's Profile
+다른 학습자 프로필 보기
 ================================
 
-You view other learners' profiles through the course discussions.
+강좌 토의 중 다른 학습자의 프로필을 보게 된다.
 
-#. On the **Discussion** page, select the username of any learner in a post, a
-   response, or a comment.
+#. 토의 페이지에서 다른 학습자의 글이나 답변 혹은 답글에서 아이디를 선택한다.
 
-#. When the **Active Threads** page for that learner opens, select the
-   learner's username.
+#. 학습자의 활성화된 글타래 페이지가 열리면 아이디를 선택한다.
 
-The following image shows a learner's username in a post, the learner's
-username on the **Active Threads** page, and the learner's profile page.
+다음 사진은 작성된 글에서의 학습자 아이디, ​활성화된 글타래 페이지의 학습자 아이디와 학습자 프로필 페이지를 보여주고 있다.
 
 .. image:: ../../../shared/images/SFD_Prof_from_Disc.png
   :width: 600
@@ -324,141 +210,114 @@ username on the **Active Threads** page, and the learner's profile page.
 .. _SFD Account Settings:
 
 ****************************************
-Exploring the Account Settings Page
+계정 설정 페이지 탐색
 ****************************************
 
-Your **Account Settings** page has three tabs.
+계정 설정 페이지엔 세가지 탭이 있다.
 
-* The **Account Settings** tab includes basic, required information, such as
-  your username, as well as optional information, such as the level of
-  education you have completed.
-* The **Linked Accounts** tab lists social media and other accounts that you
-  can connect to your edX account.
-* The **Order History** tab lists information about payments you have made,
-  such as the fee for a verified certificate.
+* 계정 설정 탭은 아이디 등 필수 정보와 함께 학력 등의 선택 정보가 표시된다.
+* 연결 계정 탭은 K-MOOC 계정과 연동한 SNS 및 기타 계정이 표시된다.
+* 주문 내역 탭은 이수증 발급 비용 등 지금까지 결제한 내역이 표시된다.
 
-You can view this information at any time. You can also add or change some of
-this information.
+이 정보는 언제든지 볼 수 있으며 일부 정보는 추가 및 수정이 가능하다.
 
 .. _SFD Basic Information:
 
 ==========================================
-View or Change Basic Account Information
+기본 계정 정보 보기 및 수정
 ==========================================
 
-Basic account information includes the following information. This information
-is required for every account on edX.
+기본 계정 정보는 필수로 입력되어야 하며 다음과 같다.
 
-* **Username**: The name that identifies you on edx.org. Note that you cannot
-  change your edX username.
+* **아이디**: K-MOOC에서 이름과 같은 역할을 하며 바꿀 수 없다.
 
-* **Full Name**: The name that appears on your edX certificates. Other learners
-  cannot see your full name.
+* **이름**: K-MOOC 이수증에 사용되며 다른 학습자는 볼 수 없다.
 
-* **Email Address**: The email address you use to sign in to edX. You may
-  receive communications from edX and your courses at this address.
+* **이메일**: K-MOOC에 로그인할 때 사용되며 강좌 운영팀과 K-MOOC으로부터 소식을 받을 수 있다.
 
-* **Password**: Your password on edx.org. To reset your password, select
-  **Reset Password**. EdX then sends a message to the email address in the
-  **Email Address** field. You select the link in the message to finish
-  resetting your password.
+* **비밀번호**: K-MOOC에 로그인할 때 사용되며 비밀번호 재설정을 클릭하면 재설정 할 수 있다. 이때 저장된 이메일 주소로 메시지가 발송되며 메시지 안내에 따라 비밀번호를 재설정 할 수 있다.
 
-* **Language**: The language that the edX site uses during your visits. The edX
-  site is currently available in a limited number of languages.
+* **언어**: K-MOOC에서 표시될 언어이며 현재 몇 가지 언어를 선택할 수 있다.
 
 * **Country or Region**: The country or region that you live in.
 
-To view or change this information, follow these steps.
+정보를 보거나 수정하기 위한 방법은 다음과 같다.
 
-.. note:: You cannot change your edX username.
+.. note:: K-MOOC 아이디는 바꿀 수 없다.
 
-#. On any edX page, select the arrow next to your username, and then select
-   **Account**.
+#. K-MOOC 페이지에서 아이디 옆 화살표를 선택하고 계정을 클릭한다.
 
-#. On the **Account Settings** page, select **Account Information**.
+#. 계정 설정 페이지에서 계정 정보를 클릭한다.
 
-#. On the **Account Information** page, locate the **Basic Account
-   Information** section, and then make your changes.
+#. 계정 정보 페이지에서 기본 계정 정보 페이지에 접속해 수정한다.
 
-EdX saves your changes automatically.
+K-MOOC은 수정 사항을 자동으로 저장한다.
 
 .. _SFD Additional Info:
 
 ==========================================
-Specify Additional Information
+추가 정보 입력
 ==========================================
 
-Additional account information is optional and includes the following
-information.
+추가 계정 정보 입력은 선택사항이며 다음과 같다.
 
-* **Education Completed**: The highest level of education that you have
-  completed.
+* **학력**: 졸업한 최종 학교.
 
-* **Gender**: The gender you identify as.
+* **성별**: 본인의 성별.
 
-* **Year of Birth**: The year that you were born.
+* **출생연도**: 태어난 해.
 
-* **Preferred Language**: The language that you prefer to communicate in.
+* **선호 언어**: K-MOOC에서 사용하고 싶은 언어.
 
-To view or change this information, follow these steps.
+정보를 보거나 수정하기 위한 방법은 다음과 같다.
 
-#. On any edX page, select the arrow next to your username, and then select
-   **Account**.
+#. **K-MOOC** 페이지에서 아이디 옆 화살표를 선택하고 계정을 클릭한다.
 
-#. On the **Account Settings** page, select **Account Information**.
+#. **계정 설정** 페이지에서 계정 정보를 클릭한다.
 
-#. On the **Account Information** page, locate the **Additional Information**
-   section, and then make your changes.
+#. **계정 정보** 페이지에서 추가 정보 페이지에 접속해 수정한다.
 
-EdX saves your changes automatically.
+K-MOOC은 수정 사항을 자동으로 저장한다.
 
 .. _Link Accounts:
 
 ==========================================
-Link or Unlink a Social Media Account
+SNS 계정 연동 및 해제
 ==========================================
 
-You can link your edX account to social media and other accounts, including
-Facebook, Google, school, and company accounts. When your accounts are linked,
-you can sign in to edX automatically by signing in to your other account.
+페이스북, 구글 등 SNS 계정과 회사, 학교 등 외부 계정과 K-MOOC 계정을 연동할 수 있다. 계정이 연동된다면 다른 계정에 로그인함으로써 자동으로 K-MOOC에 로그인할 수 있게 된다.
 
-To link your edX account with another account, follow these steps.
+K-MOOC 계정을 다른 계정과 연동시키는 방법은 다음과 같다.
 
-#. On any edX page, select the arrow next to your username, and then select
-   **Account**.
+#. K-MOOC 페이지에서 아이디 옆 화살표를 선택하고 계정을 클릭한다.
 
-#. On the **Account Settings** page, select the **Linked Accounts** tab.
+#. 계정 설정 화면에서 연동 계정을 클릭한다.
 
-#. Under **Linked Accounts**, select **Link Your Account** under the name of
-   the account that you want to link to your edX account.
+#. 연동 계정 화면에서 계정 연동시키기를 클릭해 원하는 계정을 연동시킨다.
 
-   If you want to unlink your edX account from another social media account,
-   select **Unlink This Account** under that account name.
+   계정을 연동 해제시키고 싶다면 계정 연동 해제를 클릭한다.
 
 .. _View Order History:
 
 ===========================
-View Your Order History
+주문 내역 보기
 ===========================
 
-The **Order History** tab contains information about any purchases you have
-made on edX. This information includes the following details.
+주문 내역 화면은 K-MOOC에서 구입한 내역을 보여주고 다음과 같은 정보를 포함한다.
 
-* The name of your course.
-* The date you placed your order.
-* The total charge for your order, in US dollars (USD).
-* The edX order number.
-* A link to a receipt for each order.
+* 강좌 이름.
+* 주문 날짜.
+* 결제 금액 (단 달러로 표시된다).
+* 주문 번호.
+* 영수증.
 
-To view information about your edX purchases, follow these steps.
+K-MOOC 구매 내역을 보기 위한 방법은 다음과 같다.
 
-#. On any edX page, select the arrow next to your username, and then select
-   **Account**.
+#. K-MOOC 페이지에서 아이디 옆 화살표를 선택하고 계정을 클릭한다.
 
-#. On the **Account Settings** page, select **Order History**.
+#. **계정 설정** 화면에서 주문 내역을 클릭한다.
 
-To view information about a specific purchase, locate the transaction that you
-want, and then select **Order Details**.
+특정 주문에 관한 정보를 열람하고 싶다면 주문을 선택하고 **상세히** 를 클릭한다.
 
 
 .. include:: ../../../links/links.rst

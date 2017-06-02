@@ -1,11 +1,10 @@
 .. _Getting Started with Studio:
 
 ###########################
-Getting Started with Studio
+K-MOOC 시작하기
 ###########################
 
-This topic describes the tools you use to build an Open edX course, and how
-to create your first course.
+다음 항목을 통해 K-MOOC에 대한 소개와 K-MOOC을 시작하는 방법을 알아볼 수 있다.
 
 .. contents::
   :local:
@@ -18,28 +17,24 @@ Running an edX Course* guide.
 .. _What is Studio?:
 
 ***************
-What is Studio?
+Studio란?
 ***************
 
-Studio is the edX tool you use to build your courses.
+K-MOOC 교수자 및 강좌 운영팀은 Studio에서 강좌를 만들 수 있다.
 
-You use Studio to create a course structure, and then add problems, videos, and
-other resources for learners.
+Studio를 이용하여 강좌 콘텐츠, 문제, 동영상 및 기타 자료를 업로드할 수 있다.
 
-With Studio, you can also manage the course schedule, identify members of the
-course team, set the grading policy, publish your course, and more.
+또한 Studio에는 운영팀의 일정 관리, 성적 규정 설정 등 다양한 기능이 있다.
 
-You use Studio directly through your browser. You do not need any additional
-software.
+원활한 작업을 위해 Chrome 브라우저 사용을 권장하며, 다른 소프트웨어는 전혀 필요 없다.
 
 .. _Create Your First Course:
 
 ***************************
-Create Your First Course
+첫 강좌 만들기
 ***************************
 
-When you log in to Studio, you see the following page, which is your **My
-Courses** dashboard.
+원활한 작업을 위해 Chrome 브라우저 사용을 권장하며, 다른 소프트웨어는 전혀 필요 없다.
 
 .. image:: ../../../shared/images/first_course.png
  :width: 600
