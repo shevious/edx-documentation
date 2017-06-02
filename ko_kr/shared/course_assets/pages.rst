@@ -1,12 +1,10 @@
 .. _Adding Pages to a Course:
 
 ###########################
-Adding Pages to a Course
+강좌 메뉴 추가하기
 ###########################
 
-This topic describes the pages, or tabs, that are included in your course by
-default, how you can modify them, and how you can add more pages to your
-course.
+이 장은 강좌에 기본으로 포함되어 있는 페이지 및 탭에 관한 설명과 이를 수정하는 방법, 강좌에 메뉴를 추가하는 방법에 대해 서술한다.
 
 .. contents::
   :local:
@@ -15,133 +13,100 @@ course.
 .. _Default Pages:
 
 *******************
-Default Pages
+기본 메뉴
 *******************
 
-By default, your course includes these pages.
+기본적으로 강좌에는 다음과 같은 메뉴가 있다.
 
-* Home
-* Course
-* Discussion
-* Wiki
-* Progress
+* 홈
+* 강좌
+* 게시판
+* 위키
+* 진행 상황
 
-You can :ref:`change the order<Reorder Pages>` of the **Discussion**, **Wiki**,
-and **Progress** pages, and you can :ref:`hide<Show or Hide the Course Wiki
-Page>` the **Wiki** and **Progress** pages. You can also add more pages.
+홈, 강좌는 필수 메뉴로 순서를 바꿀 수 없다. 하지만 게시판, 위키 및 진행 상황 메뉴는 순서를 바꿀 수 있고 위키와 진도 메뉴는 숨길 수 있으며 더 많은 메뉴를 추가할 수 있다.
 
 .. _Add Page:
 
 ****************
-New Pages
+새 메뉴
 ****************
 
-You can add pages to your course. Each page appears for learners in the
-navigation bar for your course.
+강좌에 새 메뉴를 추가할 수 있다. 각 메뉴는 학습자의 탐색 바에 추가된다.
 
-For example, the following navigation bar includes the default pages as well as
-the additional **Introduction to Music Theory**, **Course Schedule**, and
-**Supplements** pages.
+예를 들어 다음 탐색 바는 기본 메뉴와 함께 음악 이론 입문, 강좌 일정 및 보조자료 메뉴가 추가되어 있다.
 
 .. image:: ../../../shared/images/page_bar_lms.png
  :width: 600
  :alt: Image of the navigation bar in the LMS.
 
-You can create other pages for the grading policy, course slides, or any other
-purpose. More examples of pages you can add follow.
+강좌 운영팀은 성적 규정, 강좌 슬라이드, 또는 그 밖의 다른 목적으로 다른 메뉴를 만들 수 있다.
 
-* A dynamic HTML calendar, using the template in :ref:`Code for Dynamic HTML
-  Schedule`.
+* HTML calendar:  :ref:`Code for Dynamic HTML Schedule` 에 있는 템플릿을 활용해서 만들 수 있다.
 
-* An instant hangout. See :ref:`Google Instant Hangout` for more information.
+* Hangout: :ref:`Google Instant Hangout` 를 참고하라.
 
 ==============
-Add a Page
+강좌 메뉴 추가하기
 ==============
 
-To add a page, follow these steps.
+메뉴를 추가하기 위해.
 
-#. In Studio, from the **Content** menu, select **Pages**. A page titled
-   **Pages** opens. This page contains a list of the pages that appear in the
-   navigation bar in your course.
+#. Studio의 **콘텐츠** 에서 **강좌 메뉴** 를 선택한다.
 
-#. Select **Add a New Page**. A page with the title **Empty** is added to the
-   list.
+#. **신규 메뉴** 를 클릭한다. **Empty** 제목을 가지는 페이지가 목록에 추가된다.
 
-#. In the row for the new page, select **Edit**. The HTML editor opens.
+#. 새 메뉴의 행에서 **편집** 을 클릭하면 HTML 편집기가 열린다.
 
-#. Enter content for your page.
+#. 사용자가 해당 메뉴를 누르면 보여주고 싶은 내용을 입력한다.
 
-   For more information about using the editor, see :ref:`Options for Editing
-   HTML Components`.
+   편집기 사용에 관해선  :ref:`Options for Editing HTML Components` 에 자세히 나와있다.
 
    .. note::
-    If you copy text from another source and paste it into the HTML editor, be
-    sure to proofread the result carefully. Some applications automatically
-    change quotation marks and apostrophes from the "straight" version to the
-    "smart" or "curly" version. The HTML editor requires "straight" quotation
-    marks and apostrophes.
+    외부에서 텍스트를 복사하여 HTML 편집기에 붙여넣기를 한다면 반드시 검토를 해야 한다. 일부 어플리케이션은 자동으로 따옴표나 ’를 바꾸기 때문에 재확인이 필요하다.
 
-#. Select **Settings** to edit the **Display Name**. The display name is the
-   name of the page visible to learners in the course.
+#. **설정** 을 클릭해서 **메뉴명** 을 수정한다. 이 메뉴명이 강좌에서 학습자에게 보이게 된다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-The new page is immediately available to learners if the course has started.
+강좌가 시작되면 학습자는 즉시 새 메뉴를 이용할 수 있다.
 
 .. _Show or Hide the Course Wiki Page:
 
 ********************************************
-Hiding or Showing the Wiki or Progress Page
+위키 공개 설정하기
 ********************************************
 
-By default, your course includes a **Wiki** page and a **Progress** page. For
-more information about how you can use these pages in a course, see
-:ref:`Course_Wiki` or :ref:`A Students View`.
+기본적으로 강좌는 위키 및 진도 메뉴를 포함한다. 이 메뉴를 강좌에서 사용하는 방법은 :ref:`Course_Wiki` 와 :ref:`A Students View` 에 자세히 나와있다.
 
-As part of your course design, you can decide whether you want to learners to
-have access to these pages. You can hide the pages, and if you change your
-mind, you can show the pages again.
+강좌를 만들 때 이 메뉴를 학습자에게 공개할지 여부를 결정할 수 있다. 만약 이 메뉴를 숨긴 후 생각이 바뀐다면 언제든지 다시 공개할 수 있다.
 
-.. note:: The information on the **Progress** page can be motivating for
-  learners, particularly in courses that include graded subsections, but also
-  for courses that include only ungraded exercises. Before choosing to hide the
-  **Progress** page for your course, consider the possible effect on learner
-  engagement.
+.. note:: **진도** 메뉴의 정보는 채점 반영 소주제가 있는 강좌에선 물론, 연습 문제만 있는 강좌에서도 학습자에게 학습 의욕을 고취시킬 수 있다. **진도** 메뉴를 숨기기 전에 학습자에게 줄 수 있는 긍정적인 효과를 고려해야 한다.
 
-As a best practice, you should avoid changing the visibility of these pages
-after your course starts. For example, your course includes the **Wiki** page
-when it starts. A learner adds a page to the course wiki, and bookmarks the new
-page. If you then hide the **Wiki** page, the learner's bookmark will continue
-to provide access to the course wiki.
+강좌 시작 이후 이 메뉴를 숨기거나 다시 공개하는 것은 최대한 피하는 것이 좋다. 예를 들어 학습자가 **위키** 항목을 북마크했는데, 강좌 운영팀이 위키 메뉴를 숨긴 경우, 학습자는 북마크를 통해 해당 **위키** 에 여전히 접근할 수 있다.
 
 =======================================
-Hide or Show the Wiki or Progress Pages
+위키 및 진도 메뉴 숨기거나 공개하기
 =======================================
 
-To hide or show the **Wiki** or **Progress** pages, follow these steps.
+**위키** 나 **진도** 메뉴를 숨기거나 공개하려면.
 
-#. Select **Content**, and then **Pages**.
+#. **강좌** 를 선택하고 **메뉴** 를 클릭한다.
 
-   On the list of pages, each page that you can hide includes a **Show/hide
-   page** icon.
 
    .. image:: ../../../shared/images/pages_wiki_on.png
     :alt: The list of default course pages, with a show/hide icon for the Wiki
       and Progress pages only.
 
-   .. note:: The options to show or hide a page are available only for the
-     **Wiki** and **Progress** pages.
+   .. note:: **위키** 와 **진도** 메뉴만이 숨기거나 공개할 수 있다.
 
-#. Select the **Show/hide page** icon to hide a page. The appearance of the
-   icon changes to indicate that the page is now hidden, as shown in this
-   example.
+#. **공개/숨기기** 아이콘을 클릭해 메뉴를 숨긴다. 다음 예와 같이 아이콘 모양이 메뉴가 숨김 상태임을 나타낸다.
 
    .. image:: ../../../shared/images/pages_wiki_off.png
     :alt: The default wiki page on the list of course pages, with the show/hide
      icon indicating that the page is currently hidden.
 
-#. Select the **Show/hide page** icon again to make the page visible.
+#. **공개/숨기기** 아이콘을 다시 클릭해 메뉴를 공개한다.
 
 .. _Reorder Pages:
 
@@ -149,42 +114,31 @@ To hide or show the **Wiki** or **Progress** pages, follow these steps.
 Reorder Pages
 ****************
 
-To reorder the pages in your course you can drag a page to different location
-in the list of pages and drop it there.
+메뉴를 정렬하려면, 메뉴 오른쪽 끝 끌어서 재정렬하기 아이콘 위에 마우스 커서를 올린 후 원하는 위치로 메뉴를 클릭하여 끌어 옮긴다.
 
-To move a page, move your pointer over the **Drag to reorder** icon for the
-page. Your pointer changes to a four-headed arrow. Then select and drag the
-page to the location that you want.
-
-.. note:: You cannot change the order of the **Home** or **Course** pages.
+.. note:: 기본적으로 강좌에 포함된 홈 및 강좌 메뉴는 재배열할 수 없다.
 
 .. _Delete a Page:
 
 ****************
-Delete a Page
+메뉴 삭제하기
 ****************
 
-You can only delete a page that the course team added to the course. To delete
-a page, select the **Delete** icon for the page. You are prompted to confirm
-the deletion.
+강좌 운영팀이 추가한 메뉴는 삭제 가능하다. 메뉴를 삭제하기 위해 **휴지통** 아이콘을 클릭한다. 삭제를 확인하라는 메시지가 표시된다.
 
 .. note::
-  You cannot delete any of the :ref:`default pages<Default Pages>`. However,
-  you can :ref:`hide<Show or Hide the Course Wiki Page>` the **Wiki** and the
-  **Progress** pages.
+  :ref:`default pages<Default Pages>` 는 삭제할 수 없다. 단, 위키와 진도 메뉴는 :ref:`hide<Show or Hide the Course Wiki Page>` 있다.
 
 .. _Code for Dynamic HTML Schedule:
 
 ********************************
-Code for a Dynamic HTML Schedule
+HTML Schedule 코드
 ********************************
 
-You can use the following code in a page to provide a dynamic HTML schedule in
-your course.
+강좌에서 HTML schedule을 제공하고 싶다면, 다음의 코드를 Raw HTML 편집기에 붙여넣으면 된다.
 
 .. note::
-  To paste the following code into a page, use the :ref:`raw HTML editor <The
-  Raw HTML Editor>`. Do not paste the code directly into the visual editor.
+  :ref:`raw HTML editor <The Raw HTML Editor>` 가 아닌 비주얼 편집기에 붙여넣기 하면 안된다.
 
 .. code-block:: html
 

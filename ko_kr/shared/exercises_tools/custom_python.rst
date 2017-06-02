@@ -1,34 +1,28 @@
 .. _Write Your Own Grader:
 
 ##############################
-Write-Your-Own-Grader Problem
+사용자정의 Python 계산 문제
 ##############################
 
-.. note:: EdX offers provisional support for this problem type.
+.. note:: K-MOOC은 이 도구에 대해 부분적인 지원을 제공한다.
 
-This section provides information about writing your own grader directly in a
-problem component.
+다음 장은 문제 구성요소에서 맞춤형 Python 평가 채점기를 활용하는 법에 대해 다룬다.
 
 .. contents::
    :local:
    :depth: 1
 
 **********
-Overview
+개관
 **********
 
-In custom Python-evaluated input (also called "write-your-own-grader"
-problems), the grader uses a Python script that you create and embed in the
-problem to evaluate a learner's response or provide hints. These problems can
-be any type. Numerical input and text input problems are the most common
-write-your-own-grader problems.
+맞춤형 Python 평가 입력(혹은 “write-your-own-grader(직접 채점하기?)” 문제)에서, 채점자가 학습자의 응답을 평가하거나 힌트를 제공하기 위해 문제에 Python 스크립트를 만들어서 넣을 수 있다. Python 스크립트가 사용된 문제는 어떠한 유형이든 가능하다. 맞춤형 Python 평가 입력 문제이 많이 이용되는 것은 수식 입력 및 텍스트 입력 문제이다.
 
 .. image:: ../../../shared/images/CustomPythonExample.png
  :alt: An image of a write-your-own-grader problem.
 
 
-Custom Python-evaluated input problems can include the following advanced
-problem types.
+맞춤형 Python 평가 입력 문제는 다음을 포함할 수 있다.
 
 * :ref:`Chemical Equation`
 * :ref:`Custom JavaScript`
@@ -37,77 +31,59 @@ problem types.
 * :ref:`Protein Builder`
 
 *****************************************************
-Create a Custom Python-Evaluated Input Problem Studio
+사용자 정의 Python 계산 문제 생성하기
 *****************************************************
 
-#. In the unit where you want to create the problem, select **Problem** under
-   **Add New Component**, and then select the **Advanced** tab.
+#. 문제를 생성하고자 하는 학습 활동에서 **신규 구성요소 추가** 의 문제 를 클릭한 후 고급 탭을 클릭한다.
 
-#. Select **Custom Python-Evaluated Input**.
+#. **맞춤형 Python 평가 입력(Custom Python-Evaluated Input)** 을 클릭한다.
 
-#. In the component that appears, select **Edit**.
+#. 구성요소가 표시되면 **편집** 을 클릭한다.
 
-#. In the component editor, edit the problem in :ref:`Script Tag Format`.
+#. 구성요소 편집기에서  :ref:`Script Tag Format`  의 문제를 편집한다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
 
 .. _Script Tag Format:
 
 **************************
-Script Tag Format
+스크립트 태그 포맷
 **************************
 
-The script tag format encloses a Python script that contains a "check function"
-in a ``<script>`` tag, and adds the ``cfn`` attribute of the
-``<customresponse>`` tag to reference that function.
+스크립트 태그 포맷은  ``<script>`` 태그 안에서 “check function” 을 포함하는 Python 스크립트를 둘러싼다. 또, ``<customresponse>`` 태그의   ``cfn`` 속성을 추가하여 해당 함수를 참조한다.
 
-This section contains the following information about using the ``<script>``
-tag.
+다음 장은  ``<script>`` 태그를 사용하는 방법에 대해 다룬다.
 
 .. contents::
    :local:
    :depth: 1
 
 =======================
-The ``check`` Function
+``check`` 함수
 =======================
 
-The ``check`` function in a ``<script>`` tag accepts two arguments.
+``check`` 함수는 두 가지 인자(argument)를 수용한다.
 
-* ``expect`` is the value of the ``expect`` attribute of ``<customresponse>``.
-  If ``expect`` is not provided as an argument, the function must have another
-  way to determine if the answer is correct.
+*  ``expect``  ``<customresponse>``  의  ``expect``  속성값. (규정된 경우). ``expect`` 속성값이 없다면 정답을 판별할 다른 방식이 필요하다.
+  
+* ``answer`` .
 
-* ``answer`` is one of the following two options.
+    * 문제에 단 1개의 응답 필드가 있는 경우, 학습자가 제공하는 답의 값.
 
-    * The value of the answer the learner provided, if the problem only has one
-      response field.
+    * 문제에 복수의 응답 필드가 있는 경우, 학습자가 제공하는 답의 순서 목록.
 
-    * An ordered list of answers the learner provided, if the problem has
-      multiple response fields.
+ ``check`` 함수는 다음 항목 중 어떤 값이라도 다시 되돌려서 학습자의 답이 옳은지 여부를 나타낸다.
 
-The ``check`` function can return any of the following values to indicate
-whether the learner's answer is correct.
+* ``True``: 학습자가 모든 응답 필드에 옳게 답했음을 나타낸다.
 
-* ``True``: Indicates that the learner answered correctly for all response
-  fields.
+* ``False``: 학습자가 옳지 않게 답했음을 나타낸다. 모든 응답 필드가 옳지 않음으로 표시된다.
 
-* ``False``: Indicates that the learner answered incorrectly. All response
-  fields are marked as incorrect.
+* ``"Partial"``: 학습자의 정답이 일부만 옳았다는 것을 나타낸다. 기본 설정으로 학습자는 문제 총점의 50%를 획득한다. 자세한 사항은  `Award Half Credit`_ 를 참고하면 된다.
 
-* ``"Partial"``: Indicates that the learner's answer was partially correct. By
-  default, the learner receives 50% of the points for the problem. For more
-  information, see `Award Half Credit`_.
+* 형태(form) 라이브러리 : ``{ 'ok': True, 'msg': 'Message' }``  ``ok`` 에 대한 라이브러리값이  ``True`` 로 설정된 경우 모든 응답 필드가 옳음으로 표시된다. 같은 값이  ``False`` 로 설정된 경우 모든 응답 필드가 옳지 않음으로 표시된다. ``msg`` 는 모든 응답 필드 아래에 표시되며 XHTML 마크업을 포함할 수 있다.
 
-* A dictionary of the form ``{ 'ok': True, 'msg': 'Message' }``. If the
-  dictionary's value for ``ok`` is set to ``True``, all response fields are
-  marked correct. If it is set to ``False``, all response fields are marked
-  incorrect. If it is set to ``"Partial"``, the learner receives 50% of the
-  problem points. The ``msg`` is displayed below all response fields, and it
-  can contain XHTML markup.
-
-* A dictionary of the form
+* 형태 라이브러리
 
   .. code-block:: xml
 
@@ -118,21 +94,16 @@ whether the learner's answer is correct.
             { 'ok': 'Partial', 'msg': 'Feedback for input 3'}
             ... ] }
 
-The last form is useful for responses that contain multiple response fields. It
-allows you to provide feedback for each response field individually, as well as
-a message that applies to the entire response.
+마지막 형태는 복수의 응답 필드를 포함하는 응답에 유용하다. 이를 통해 각 응답 필드에 개별적으로 피드백을 제공할 수 있으며 전체 응답에 적용될 메시지를 제공할 수 있다.
 
 ===========================
-Example with the Script Tag
+스크립트 태그 예제
 ===========================
 
-In the following example, ``<customresponse>`` tags reference the
-``test_add_to_ten`` and ``test_add`` functions that are in the ``<script>``
-tag.
+다음 예제에서  ``<customresponse>`` 태그는 스크립트 태그 내 ``test_add_to_ten`` 와  ``test_add`` 기능을 나타낸다.
 
 .. Important::
- Python honors indentation. Within the ``<script>`` tag, the ``def
- check_func(expect, ans):`` line must have no indentation.
+Python은 들여쓰기를 준수한다.  ``<script>`` 태그 내부의 스크립트는 반드시 들여쓰기 없이 시작해야 한다.
 
 
 .. code-block:: xml
@@ -180,10 +151,10 @@ tag.
 
 
 ========================================================
-Example of the ``check`` Function Returning a Dictionary
+라이브러리 리턴 ``check`` 함수 예제
 ========================================================
 
- The following example shows a ``check`` function that returns a dictionary.
+다음 예제는 라이브러리를 다시 되돌리는  ``check`` 함수를 보여준다.
 
 .. code-block:: python
 
@@ -197,47 +168,38 @@ Example of the ``check`` Function Returning a Dictionary
                         { 'ok': check2, 'msg': 'Feedback 2'},
                         { 'ok': check3, 'msg': 'Feedback 3'} ] }
 
-The function checks that the user entered ``1`` for the first input, ``2`` for
-the  second input, and ``3`` for the third input. It provides feedback messages
-for each individual input, as well as a message displayed below the entire
-problem.
+이 함수는 사용자가 첫 번째 입력으로 ``1`` 을, 두 번째 입력으로 ``2`` 를, 세 번째 입력으로 ``3`` 을 기입했다는 사실을 확인한다. 각 개별 입력에 대한 피드백 메시지와 전체 문제 아래에 표시되는 메시지를 제공한다.
 
 ======================
-Script Tag Attributes
+스크립트 태그 속성
 ======================
 
-The following table explains the important attributes and values in the
-preceding example.
+다음 표는 이전 예제의 주요 속성 및 값에 대한 설명이다.
 
 .. list-table::
    :widths: 20 80
 
    * - ``<script type="loncapa/python">``
-     - Indicates that the problem contains a Python script.
+     - 문제가 Python 스크립트를 포함하는 것을 나타낸다.
    * - ``<customresponse cfn="test_add_to_ten">``
-     - Indicates that the function ``test_add_to_ten`` is called when the
-       learner checks the answers for this problem.
+     - 학습자가 문제 답안을 확인할 때  ``test_add_to_ten`` 함수를 사용한다는 것을 나타낸다.
    * - ``<customresponse cfn="test_add" expect="20">``
-     - Indicates that the function ``test_add`` is called when the learner
-       checks the answers for this problem and that the expected answer is
-       ``20``.
+     - 학습자가 이 문제 답변을 확인하고 예상 답이 20일 때  ``test_add`` 함수를 사용한다는 것을 나타낸다.
    * - <textline size="10" correct_answer="3"/>
-     - This tag includes the ``size``, ``correct_answer``, and ``label``
-       attributes. The ``correct_answer`` attribute is optional.
+     - 태그가 ``size``, ``correct_answer``, 와  ``label`` 속성을 포함한다. ``correct_answer`` 속성은 선택사항이다.
 
 
 ========================================================================
-Create a Custom Python-Evaluated Input Problem in Script Tag Format
+스크립트 태그 포맷으로 맞춤형 Python 평가 입력 문제 생성하기
 ========================================================================
 
-To create a custom Python-evaluated input problem using a ``<script>`` tag,
-follow these steps.
+``<script>`` 태그를 이용하여 맞춤형 Python 평가 입력 문제를 생성하는 절차는 다음과 같다.
 
-#. In the component editor, modify the example as needed.
+#. 구성요소 편집기에서 필요한대로 예제를 수정한다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-**Problem Code**:
+**문제 코드**:
 
 .. code-block:: xml
 
@@ -286,10 +248,9 @@ follow these steps.
   </solution>
   </problem>
 
-**Templates**
+**템플릿**
 
-The following template includes answers that appear when the learner selects
-**Show Answer**.
+다음 템플릿은 학습자가 **정답 보기(Show Answer)** 를 클릭하면 표시되는 정답을 포함하고 있다.
 
 .. code-block:: xml
 
@@ -316,9 +277,7 @@ The following template includes answers that appear when the learner selects
       </solution>
   </problem>
 
-The following template does not return answers when the learner selects **Show
-Answer**. If your problem does not include answers for the learner to see, make
-sure to set **Show Answer** to **Never** in the problem component.
+다음 템플릿은 학습자가 정답 보기를 클릭해도 답을 되돌려 주지 않다. 그 문제가 학습자가 볼 수 있는 답을 포함하지 않는 문제일 경우 문제 구성요소에서 **정답 보기(Show Answer)** 를 **아님(Never)** 으로 설정한다.
 
 .. code-block:: xml
 
@@ -348,13 +307,10 @@ sure to set **Show Answer** to **Never** in the problem component.
 .. _Award Partial Credit:
 
 ====================
-Award Partial Credit
+부분 점수 부여하기
 ====================
 
-You can configure a custom Python-evaluated input problem so that learners
-who give a partially correct answer receive partial credit for the problem.
-You can award 50% of the points for the problem, or you can award a different
-percentage of points. For more information, see the following sections.
+맞춤형 Python 평가 입력 문제를 설정해 학습자가 문제에 대해 부분 점수를 획득할 수 있도록 할 수 있다. 문제 총점의 50%를 부여할 수도 있고 다른 %를 설정할 수도 있다. 자세한 사항은 다음과 같다.
 
 * :ref:`Award Half Credit`
 * :ref:`Award a Percentage of Credit`
@@ -362,31 +318,24 @@ percentage of points. For more information, see the following sections.
 .. only:: Partners
 
  .. note::
-    Support for partial credit problems in courses on edx.org and edX
-    Edge is provisional. Ensure that you test such problems thoroughly before
-    releasing them to learners. For more information, contact your edX partner
-    manager.
+    이 문제에 대해 K-MOOC은 부분적인 지원을 제공한다. 학습자에게 공개하기 전에 확실히 테스트해야 하며 자세한 사항은 운영팀에게 문의하면 된다.
 
 .. _Award Half Credit:
 
-Award Half Credit
+절반 점수 부여하기
 *********************
 
-You can configure a problem to award 50% of the possible points. To provide a
-learner with a more granular score, see `Award a Percentage of Credit`_.
+총점의 50%를 부분 점수로 부여하도록 설정할 수 있다. 다른 점수를 부여하기 위해선  `Award a Percentage of Credit`_ 를 참고하면 된다.
 
-The ``check`` function must return the value ``"Partial"`` in one of the
-following ways.
+``check`` 함수는  ``"Partial"`` 값을 다음 방법 중 한가지로 되돌려 놓아야 한다.
 
-* Return the value ``"Partial"`` directly.
+* 직접  ``"Partial"`` 값을 되돌린다.
 
-* Return the value ``"Partial"`` in the dictionary that is returned, in the
-  following form.
+* 라이브러리에 ``"Partial"`` 값을 다음과 같은 형태로 되돌린다.
 
   ``{ 'ok': 'Partial', 'msg': 'Message' }``
 
-* Return the value ``"Partial"`` as part of the input list for multi-part
-  problems.
+* 다수-부분 문제의 입력 목록 일부로 ``"Partial"`` 값을 되돌린다.
 
   .. code-block:: xml
 
@@ -397,28 +346,24 @@ following ways.
             { 'ok': 'Partial', 'msg': 'Feedback for input 3'}
             ... ] }
 
-With all of these options, ``True`` awards learners with 100% of the available
-points for the problem, ``'Partial'`` with 50%, and ``False`` with 0%.
+모든 옵션에서 True는 학습자에게 문제 총점의 100%를 부여하고 ‘Partial’은 50%, False는 0%를 부여한다.
 
-For more information about ``check`` function return values, see `The check
-Function`_.
+Check 함수에 대한 자세한 사항은 Check 함수에 대한 자세한 사항은  `The check Function`_ 를 참고하면 된다.
 
 .. _Award a Percentage of Credit:
 
-Award a Percentage of Credit
+부분 점수 % 설정하기
 ******************************
 
-You can configure a problem to return a percent value as a grade. This method
-provides greater flexibility in assigning the learner a score than
-:ref:`awarding half credit<Award Half Credit>`.
+일정 %를 부분 점수로 부여하도록 설정할 수 있다. 이 방법은 :ref:`awarding half credit<Award Half Credit>` 에 비해 유연하게 학습자에게 점수를 줄 수 있다.
 
-In the following example, the learner's score equals the answer divided by 100.
+다음 예제에서 학습자의 성적은 정답을 100으로 나눈 숫자이다.
 
 .. image:: ../../../shared/images/partial-credit-python-problem.png
  :alt: An image of a write-your-own-grader problem that provides partial
      credit.
 
-The following code shows the configuration of this problem.
+다음 코드는 문제의 설정을 나타낸다.
 
 .. code-block:: xml
 
@@ -448,47 +393,37 @@ The following code shows the configuration of this problem.
   </customresponse>
   </problem>
 
-This example illustrates the following points.
+이 예제는 다음과 같은 점을 시사한다.
 
-* The ``points`` attribute of the ``<customresponse>`` element specifies that
-  the question is worth 100 points.
+* ``<customresponse>`` 요소의  ``points`` 속성은 문제의 총점이 100점임을 의미한다.
 
-* The ``give_partial_credit`` function checks that the answer is between 0 and
-  100, and if so divides the learner's answer by 100 to determine the grade.
+* ``give_partial_credit`` 함수는 정답이 0과 100 사이임을 나타내며 그렇다면 학습자들의 성적을 결정하기 위해 답을 100으로 나눈다.
 
-* The ``input_list`` that is returned specifies that:
+* 되돌려진  ``input_list`` 는:
 
-  * The answer is acceptable and can receive partial or full credit, with the
-    item ``'ok': True``.
+  * 답안이 점수를 받을 만 하다고 생각되면  ``'ok': True`` 을 작성한다.
 
-  * The learner receives the message ``Your grade is`` followed by the percent
-    grade, with the item ``'msg': 'Your grade is ' + str(ans) + '%'``.
+  * ``'msg': 'Your grade is ' + str(ans) + '%'`` 형태로 학습자가 %가 함께 표시되는 ``Your grade is``  메시지를 받는다.
 
-  * The grade assigned is the learner's answer divided by 100, with the item
-    ``'grade_decimal':grade``.
+  * ``'grade_decimal':grade`` 항목을 사용하면 학습자의 답안을 100으로 나눈 값이 점수가 된다.
 
-You can enhance and apply this example for your own partial credit problems.
+부분 점수 문제에 이런 예제를 응용하여 직접 활용할 수 있다.
 
 .. _Create a Randomized Custom Python-Evaluated Input Problem:
 
 ===========================================================
-Create a Randomized Custom Python-Evaluated Input Problem
+무작위 맞춤형 Python 평가 입력 문제 생성하기
 ===========================================================
 
-You can create a custom Python-evaluated input problem that randomizes
-variables in the Python code.
+Python 코드에서 변수를 무작위 추출하는 맞춤형 Python 평가 입력 문제를 생성할 수 있다.
 
 .. note::
-  In the problem settings, you must set the **Randomization** value to
-  something other than **Never** to have Python variables randomized. See
-  :ref:`Randomization` for more information.
+  문제 설정에서 반드시 무작위 추출(Randomization) 값을 아님(Never) 을 제외한 다른 값으로 지정함으로써 Python 변수를 무작위 추출할 수 있게 해야 한다.  :ref:`Randomization` 에서 보다 구체적인 정보를 확인한다.
 
-The following example demonstrates using randomization with a Python-evaluated
-input problem.
+Python 평가 입력 문제에서 무작위 추출을 시행하는 방법을 다음 예시에서 확인할 수 있다.
 
 .. note::
- This example uses the method ``random.randint`` to generate random numbers.
- You can use any standard Python library for this purpose.
+ 아래의 예시는 ``random.randint`` 방법으로 무작위 수를 만든다. Python 표준 라이브러리를 사용한다.
 
 .. code-block:: xml
 

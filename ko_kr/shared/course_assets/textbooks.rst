@@ -1,99 +1,80 @@
 .. _Adding Textbooks:
 
 ###########################
-Textbooks
+교재
 ###########################
 
-You can add PDF textbooks to your course.
+PDF 교재를 추가할 수 있다.
 
 .. note::
- Do not use image files (for example, .png files) as textbooks for your course,
- as they are not accessible to screen readers. For more information, review
- :ref:`Creating Accessible PDFs`.
+ 이미지 파일(예를 들어, .PNG 파일)을 사용하면 스크린 리더로 접근이 불가능하기에 사용하지 않도록 한다. :ref:`Creating Accessible PDFs` 에 자세한 내용이 나와있다.
 
-Each textbook that you add is displayed to learners as a page, or tab, in the
-course navigation bar.
+추가한 각 교재는 강좌 메뉴 바에서 학습자에게 탭으로 표시된다.
 
-EdX recommends that you upload a separate PDF for each chapter of your
-textbook.
+강좌 운영팀은 교재의 각 챕터 별로 PDF파일을 업로드하는 것이 좋다.
 
-When learners open the textbook page in the course, they can navigate
-the textbook by chapter.
+학습자가 강좌에서 교재 탭을 열 경우, 챕터별로 교재를 볼 수 있다.
 
 .. image:: ../../../shared/images/textbook_chapters.png
  :alt: Image of a textbook in a course.
  :width: 600
 
 *****************
-Add a Textbook
+교재 추가하기
 *****************
 
 .. note::
-   When you add a textbook to your course, Studio automatically adds each PDF
-   file that you upload to the **Files & Uploads** page.
+   강좌에 교재를 추가하면, Studio는 자동으로 파일 업로드 메뉴에 해당 파일을 추가한다.
 
-#. Prepare PDFs of your textbook on your computer.
+#. PDF 파일을 준비한다.
 
-#. On the **Content** menu, select **Textbooks**.
+#. **콘텐츠** 메뉴에서, **교재** 를 선택한다.
 
-#. Select either **Add your first textbook** or **New Textbook**.
+#. **첫 교재 추가하기** 또는 **신규 교재** 를 클릭한다.
 
-#. On the page that opens, enter the **Textbook Name**.
+#. **교재명** 을 입력한다.
 
-#. Enter the **Chapter Name**.
+#. **챕터 이름** 을 입력한다*.
 
-#. Next to **Chapter Asset**, select **Upload PDF** to upload a PDF from your
-   computer, and then follow the prompts to upload your file.
+#. 챕터 자료 옆의 PDF 업로드 를 클릭한다. 파일을 업로드 하라는 메시지를 따른다.
 
-#. To add more chapters, select **Add a Chapter** and repeat steps 5 and 6.
+#. 더 많은 챕터를 추가하려면, **챕터 추가하기** 를 클릭하고 앞 단계를 반복한다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
 .. _Delete a Textbook:
 
 *****************
-Delete a Textbook
+교재 삭제하기
 *****************
 
 .. note::
-   This method deletes the entire textbook. To delete an individual chapter,
-   see :ref:`Delete a Chapter`.
+   이 과정은 교재 전체를 삭제한다. 각 챕터별로 교재를 삭제하기 위해서는  :ref:`Delete a Chapter` 를 참고하면 된다.
 
-#. On the **Content** menu, select **Textbooks**.
+#. **콘텐츠** 메뉴에서, **교재** 를 선택한다.
 
-#. On the **Textbooks** page, hover the cursor over the textbook that you want
-   to delete, and then select the trash can icon.
+#. **교재** 페이지에서 삭제할 교재 위에 마우스를 올리고 휴지통 아이콘을 선택한다.
 
-#. In the confirmation dialog box, select **Delete**.
+#. 삭제 확인 메시지가 뜨면 **삭제** 를 선택한다.
 
 .. note::
-   When you add a textbook to your course, Studio adds each PDF file that you
-   upload to the **Files & Uploads** page. After you delete your textbook on
-   the **Textbooks** page, edX strongly recommends that you :ref:`lock<Lock a
-   File>` or :ref:`delete<Delete a File>` the PDF files for the textbook on
-   the **Files & Uploads** page to avoid copyright issues.
+   강좌에 교재를 추가하면, Studio는 자동으로 파일 업로드 메뉴에 해당 파일을 추가한다. 저작권 문제를 방지하기 위해, 교재 페이지에서 교재를 삭제할 때는 파일 업로드 페이지에서 또한 교재 PDF 파일을 숨기거나 지우는 것을 강력히 권장한다.
 
 .. _Delete a Chapter:
 
 *****************
-Delete a Chapter
+챕터 삭제하기
 *****************
 
-#. On the **Content** menu, select **Textbooks**.
+#. **콘텐츠** 메뉴에서, **교재** 를 선택한다.
 
-#. On the **Textbooks** page, hover the cursor over the textbook that contains
-   the chapter that you want to delete, and then select **Edit**.
+#. **교재** 페이지에서 삭제할 챕터가 있는 교재 위에 마우스를 올리고 편집을 선택한다.
 
-#. On the textbook editing page, locate the chapter that you want to delete,
-   and then select the X icon next to that chapter.
+#. 교재 편집 페이지에서 삭제할 챕터를 선택하고 X 아이콘을 클릭한다.
 
    .. image:: ../../../shared/images/DeleteChapter.png
 	:width: 500
 	:alt: Textbook editing page with a callout for the X icon
 
 .. note::
-   When you add a textbook to your course, Studio adds each PDF file that you
-   upload to the **Files & Uploads** page. After you delete a chapter on the
-   **Textbooks** page, edX strongly recommends that you :ref:`lock<Lock a
-   File>` or :ref:`delete<Delete a File>` the PDF file for the chapter on the
-   **Files & Uploads** page to avoid copyright issues.
+   강좌에 교재를 추가하면, Studio는 자동으로 파일 업로드 메뉴에 해당 파일을 추가한다. 저작권 문제를 방지하기 위해, 교재 페이지에서 교재를 삭제할 때는 파일 업로드 페이지에서 또한 교재 PDF 파일을 숨기거나 지우는 것을 강력히 권장한다.

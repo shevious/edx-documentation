@@ -1,62 +1,51 @@
 .. _MathJax in Studio:
 
 ############################################
-A Brief Introduction to MathJax in Studio
+Studio에서 MathJax 사용하는 방법 간략 소개
 ############################################
 
-To write clear and professional-looking symbols and equations, edX uses a
-LaTeX-like language called
-`MathJax <http://www.google.com/url?q=http%3A%2F%2Fwww.mathjax.org%2F&sa=D&sntz=1&usg=AFQjCNGef2H-mZCdmCo7-kWHfu9fUGVCfg>`_.
-Your MathJax equations can appear with other text in the paragraph (inline
-equations) or on their own lines (display equations).
+LaTex와 유사한 언어인 `MathJax <http://www.google.com/url?q=http%3A%2F%2Fwww.mathjax.org%2F&sa=D&sntz=1&usg=AFQjCNGef2H-mZCdmCo7-kWHfu9fUGVCfg>`_ 를 이용하여 깔끔하고 전문적으로 보이는 기호와 수식을 입력할 수 있다. MathJax로 작성한 수식은 한 문단에서 텍스트와 함께 표시되거나(내부 수식), 별도의 문단으로 표시할 수도 있다.
 
-- For inline equations, you can do either of the following.
+- 다음 두 가지 방법 가운데 하나를 이용하여 내부 수식을 생성할 수 있다.
 
-  - Surround your Mathjax expression with backslashes and **parentheses**.
+  - MathJax 수식을 백슬래시(역 슬래쉬)와 **괄호(parentheses)** 로 묶는다.
 
     ``\( equation \)``
 
-  - Surround your Mathjax expression with [mathjaxinline] tags. Note that these
-    tags use square brackets ([]).
+  - [mathjaxinline] 태그로 MathJax 수식을 묶는다. 태그에서 ([]) 를 사용한다.
 
     [mathjaxinline] equation [/mathjaxinline]
 
-- For display equations, you can do either of the following.
+- 다음 두 가지 방법 가운데 어느 하나를 이용하여 별도 수식을 생성할 수 있다.
 
-  - Surround your Mathjax expression with backslashes and **brackets**.
+  - MathJax 수식을 역슬래시와 대괄호 로 묶는다.
 
     ``\[ equation \]``
 
-  - Surround your Mathjax expression with [mathjax] tags. Note that these tags
-    use square brackets ([]).
+  - mathjax] 태그로 Mathjax 표현을 묶는다. 태그는 ([]) 를 사용한다.
 
     [mathjax] equation [/mathjax]
 
-You can use MathJax in HTML (text) components and in problem components.
+HTML (텍스트) 구성요소 및 문제 구성요소에서도 MathJax를 사용할 수 있다.
 
-.. note:: Complete MathJax documentation (together with a testing tool) can be
-          found at `http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm <http://www.google.com/url?q=http%3A%2F%2Fwww.onemathematicalcat.org%2FMathJaxDocumentation%2FTeXSyntax.htm&sa=D&sntz=1&usg=AFQjCNEV8PtCX6Csp0lW7lDKOLIKCOCkHg>`_.
+.. note:: `http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm <http://www.google.com/url?q=http%3A%2F%2Fwww.onemathematicalcat.org%2FMathJaxDocumentation%2FTeXSyntax.htm&sa=D&sntz=1&usg=AFQjCNEV8PtCX6Csp0lW7lDKOLIKCOCkHg>`_ 상세한 MathJax 문서와 활용 도구를 확인할 수 있다.
 
 ****************************
-HTML (Text) Components
+HTML (텍스트) 구성요소
 ****************************
 
-In the HTML component editor, you can use MathJax both in Visual view and in HTML view.
+HTML 구성요소 편집기의 경우 비주얼(Visual) 보기 및 HTML 보기 모두에서 MathJax를 사용할 수 있다.
 
 .. image:: ../../../shared/images/MathJax_HTML.png
  :alt: Image of an HTML component with MathJax in both the Visual and HTML views.
 
 *********************
-Problem Components
+문제 구성요소
 *********************
 
-In the problem component editor, you can use MathJax both in the Simple Editor
-and in the Advanced Editor.
+문제 구성요소 편집기의 경우 기본 편집기 및 고급 편집기 모두 MathJax를 사용할 수 있다.
 
-In the example problem below, note that the Einstein equation in the
-explanation is enclosed in backslashes and parentheses, so it appears inline
-with the text. The Navier-Stokes equation is enclosed in backslashes and
-brackets, so it appears on its own line.
+아래의 예시에서, 설명 내부의 아인슈타인 방정식이 역슬래시와 괄호로 묶인 것에 주목한다. 해당 텍스트는 문단 내부(inline)에 표시된다. 나비에-스톡스 방정식은 역슬래시와 대괄호로 묶여 있으므로 별도로 표시된다.
 
 .. image:: ../../../shared/images/MathJax_Problem.png
  :alt: Image of a problem component with MathJax in both the Visual and HTML views.

@@ -1,13 +1,10 @@
 .. _Add Files to a Course:
 
 ###########################
-Adding Files to a Course
+강좌에 파일 추가하기
 ###########################
 
-To use images and other files in your course, you upload the files to your
-course by using Studio, and then you add links to the files in the course
-content. You can also use uploaded files in the bulk email messages that you
-send from the LMS using the instructor dashboard.
+강좌 내에서 이미지 또는 다른 소프트웨어로 작성한 문서를 사용하거나, 교수자 대시보드에서 보내는 이메일에 파일을 첨부하려면, Studio에서 해당 파일을 업로드한 후, 해당 링크를 이용해야 한다..
 
 .. contents::
   :local:
@@ -16,161 +13,127 @@ send from the LMS using the instructor dashboard.
 .. _File Size:
 
 *******************
-File Size
+파일 크기
 *******************
 
-The maximum size for an uploaded file is 50 MB.
+PDF, 이미지 등 학습 자료가 많을 경우 파일 크기를 줄이기 위해 압축을 권장한다.
 
-We recommend that you use standard compression tools to reduce PDF and image
-file sizes before you add the files to your course. If you have to use files
-that are larger than 50 MB after compression, contact your edX partner manager.
+만약 강좌에 꼭 필요한 파일들이 파일 압축 후에도 20 MB 보다 큰 경우, 플랫폼 관리자에게 문의해야 한다.
 
-If you have video or audio files or large data sets to share with your
-students, use YouTube or another hosting service to host these files. Do not
-use the Files & Uploads page to add these files to your course. If you are an
-edX partner and you need to store large data sets, contact your edX partner
-manager.
+강좌에 필요한 멀티미디어 파일(영상, 음성 파일)은 “CDN Uploads” 메뉴 또는 YouTube 등의 타 호스팅 서비스를 사용해야 한다.
 
 .. _Upload a File:
 
 *******************
-Upload a File
+파일 올리기
 *******************
 
-You upload files on the **Files & Uploads** page in Studio.
+Studio의 **파일 업로드** 페이지에서 파일을 올린다.
 
 .. note::
- Ensure that you obtain copyright permissions for files and images you upload
- to your course, and that you cite sources appropriately.
+ 강좌에 업로드하는 파일과 이미지에 대한 저작권을 사전에 확보하고 출처를 명확하게 밝혀야 한다.
 
-To upload a file, follow these steps.
+파일을 업로드하려면.
 
-#. Create or locate the file on your computer.
-
-   .. note::
-    When URLs are generated for uploaded files, the file name becomes part of
-    the URL and is visible to students when they access the file. Avoid using
-    file names that contain information about the file contents that you do not
-    want to share, such as "Answerkey.pdf".
-
-#. From the **Content** menu, select **Files & Uploads**.
-
-#. Select **Upload New File**.
-
-#. Select **Choose File**, and then select the file or files that you want to
-   upload.
+#. 컴퓨터에서 업로드할 파일을 찾는다.
 
    .. note::
-      If you upload a file that has the same name as an existing course file,
-      the original file is overwritten without warning.
+    업로드된 파일에 대한 URL이 생성되면 파일 이름은 URL의 일부가 되고 학습자가 파일에 접근할 때 볼 수 있게 된다.
 
-#. To upload additional files, select **Load Another File** and repeat the
-   previous step.
+#. 콘텐츠 메뉴에서 **파일 업로드** 선택.
 
-   When you are finished, select the **X** to close the window.
+#. **파일 업로드** 를 클릭한다.
 
-The **Files & Uploads** page refreshes to show the uploaded file.
+#. 업로드할 1개 이상의 파일을 선택하고 **열기** 를 클릭한다.
+
+   .. note::
+      Control키를 누른 상태에서 파일을 여러 개 선택하면, 한 번에 여러 파일을 업로드 할 수 있다. 기존의 강좌 파일과 이름이 같은 파일을 업로드 하는 경우, 다른 알림 없이 기존 파일을 덮어쓴다.
+
+#. 추가 파일을 업로드하려면, **추가 파일 업로드** 를 클릭하고 이전 단계를 반복한다.
+
+   업로드가 끝났으면 오른쪽 상단에 있는 **X** 를 클릭한다.
+
+**파일 업로드** 페이지에서 업로드한 파일을 볼 수 있다.
 
 .. _File URLs:
 
 ********************************************
-Use File URLs to Reference Uploaded Files
+업로드가 완료된 파일의 URL 사용하기
 ********************************************
 
-To use an uploaded file for your course, you add a reference to one of the URLs
-that is assigned to it. On the **Files & Uploads** page, the **URL** column
-lists a **Studio** URL and a **Web** URL for each file you upload.
+파일 업로드를 완료한 후, **파일 업로드** 페이지에서 생성된 **URL** 을 사용하여 파일을 연결할 수 있다.
 
-* To add a file or image to a component, a course update, or a course handout,
-  you use the **Studio** URL.
+* 구성요소, 공지, 강좌 자료 등에 파일이나 이미지 추가하기 위해 Studio URL을 사용해야 한다.
 
-  For more information, see :ref:`Add an Image to an HTML Component`.
+  자세한 사항은  :ref:`Add an Image to an HTML Component` 를 참고하면 된다.
 
-* To provide a link to the file or image from outside the course, including in
-  the body of an email message that you send to course participants from the
-  LMS, you use the **Web** URL. Be sure that you do not use the ``/static/``
-  URL in an email message.
+* 학습 관리 시스템에서 보내는 이메일 등을 포함해 강좌 외부에서 파일 또는 이미지에 대한 링크를 제공하려면 ``/static/`` URL가 아닌 웹 URL을 해야 한다.
 
-  For more information about sending email messages, see
-  :ref:`Send_Bulk_Email`.
+  이메일 발송에 대한 자세한 사항은 :ref:`Send_Bulk_Email` 를 참고하면 된다.
 
 .. note::
-  You can lock a file if you do not want to allow access to that file from
-  outside your course. When you lock a file, the web URL only allows file
-  access to learners who are signed in and enrolled in your course. For more
-  information, see :ref:`Lock a File`.
+  강좌 운영팀이 파일 접근을 제한한 경우, 파일을 이용하려는 사람이 수강중인 강좌에 로그인하지 않는다면 웹 URL을 통해 외부로부터 파일로 접근이 불가능하다. 자세한 사항은  :ref:`Lock a File` 를 참고하면 된다.
 
-To copy a URL from the file list, select the URL in the **URL** column and copy
-it.
+파일 목록에서 URL을 복사 하려면 URL 열에서 해당 URL을 선택하여 선택한 다음 그것을 복사한다.
 
 .. _Sort Files:
 
 *********************
-Sort Uploaded Files
+파일 정렬하기
 *********************
 
-On the **Files & Uploads** page, you can sort your files by any column that has
-a blue column header. For example, to sort the list by name, select the
-**Name** column header.
+이름, 종류, 추가된 날짜를 기준으로 파일을 정렬할 수 있다. 
 
-Change the sort order by selecting a sortable column header. The direction of
-the arrow in the column header indicates whether the order is ascending or
-descending. Each time you select the column header, the sort order reverses.
+파란색으로 표시된 단어를 클릭하여 정렬 순서를 변경한다. 단어에 있는 화살표의 방향은 오름차순인지 내림차순인지를 나타낸다. 단어를 클릭할 때마다, 정렬 순서를 반대로 바꾼다.
 
-The current sort order is shown at the top of the file list, and the active
-sort column header is underlined.
+현재 정렬 순서는 파일 목록 상단에 표시된다.
 
 .. _Filter Files:
 
 *********************
-Filter Listed Files
+파일 유형에 따라 필터링하기
 *********************
 
-You can filter the list of files by type so that only a selected type of file
-is visible. The list remains in the current sort order.
+강좌 운영팀이 선택한 파일 종류만 표시 되도록, 필터링할 수 있다.
 
 .. list-table::
    :widths: 10 20
 
-   * - **Type**
-     - **File Types Include**
-   * - Images
+   * - **파일**
+     - **형식**
+   * - 이미지
      - .gif, .ico, .jpg, .jpeg, .png, .tif, or .tiff
-   * - Documents
+   * - 문서
      - .pdf, .txt, Microsoft Office and Open Office documents, presentations,
        or spreadsheets
-   * - Other
-     - Files not included in the other types, such as .html, .js, or .sjson
+   * - 기타
+     -  .html, .js, .sjson 과 같은 그외 파일들
 
-To filter the list of files by type, follow these steps.
+필터링 하려면.
 
-#. On the **Files & Uploads** page, select the **Type** column header.
+#. **파일 업로드** 페이지에서, **파란색으로 표시된 종류** 를 클릭한다.
 
-#. In the drop-down list, select the type of file that you want to view.
+#. 드롭다운 목록에서, 보려는 파일의 종류을 선택한다.
 
-The list refreshes to show only the type of file you selected, and the column
-header changes to reflect the type of file that you have filtered by.
+목록은 새로 고쳐지면서 선택한 파일 종류만을 표시하고, 열의 머리글도 필터링한 파일 형식으로 변경된다.
 
-To reset the list and view files of all types, select **Show All** in the
-**Type** drop-down list.
+목록을 재설정하고 모든 종류의 파일을 보려면, 유형 드롭다운 목록에서 **Show All(모두 보여주기)** 를 클릭한다.
 
 .. _Find Files:
 
 *******************
-Find a File
+파일 찾기
 *******************
 
-The **Files & Uploads** page lists up to 50 files.  If your course has more
-than 50 files, additional files are listed on other pages.
+파일 업로드는 한 페이지 당 50개 파일을 나열한다. 강좌에 50개 이상의 파일이 있으면 여러 페이지로 표시된다.
 
-The range of the files listed on the page, and the total number of files, are
-shown at the top of the page.
+페이지에 나열되는 파일의 범위 및 전체 파일의 개수는 페이지의 상단에 표시된다.
 
-You can navigate through the pages in these ways.
+다음과 같은 방법으로 페이지를 탐색할 수 있다.
 
-* Select the **<** or **>** control to navigate to the previous or next page.
+* 이전 및 다음 페이지를 탐색하기 위해 화살표 버튼 **< , >** 을 클릭한다.
 
-* Specify the number of the page you want to view.
+* 이동 하려는 페이지 번호를 입력한다.
 
   .. image:: ../../../shared/images/file_pagination.png
    :width: 250
@@ -179,26 +142,20 @@ You can navigate through the pages in these ways.
 .. _Lock a File:
 
 *******************
-Lock a File
+파일 접근 제한하기
 *******************
 
-By default, anyone can access a file you upload if they know the web URL, even
-if they are not enrolled in your course. You can prevent outside access to a
-file by locking the file. When you lock a file, the web URL only allows
-learners who are enrolled in your course and signed in to edX to access the
-file.
+강좌에 등록되어 있지 않더라도 URL을 안다면, 강좌 운영팀이 업로드한 파일에 접근할 수 있다. 수강하지 않는 학습자 또는 수강신청을 했더라도 로그인하지 않은 학습자가 파일을 볼 수 없도록 하려면, 잠금 아이콘을 클릭한다.
 
-To lock a file, select the lock icon in the right column.
+파일 접근 제한을 위해 우측 열의 자물쇠 아이콘을 선택한다.
 
 .. _Delete a File:
 
 *******************
-Delete a File
+파일 삭제하기
 *******************
 
-To delete a file, select the **X** in the row for file.  You are prompted to
-confirm the deletion.
+파일을 삭제 하려면 파일 옆에 있는 **X** 아이콘을 클릭한다. 삭제하는 것이 맞는지 확인하는 메시지가 표시될 것이다.
 
 .. warning::
-  After you delete a file, links to the file from course content will be
-  broken. You must update links to files that you need to delete.
+  강좌 구성 요소에서 연결된 파일을 삭제하면, 해당 링크는 깨진다. 강좌에 사용된 파일을 삭제하기 전에 강좌 내에서 해당 파일 링크가 사용되고 있는지 반드시 확인하고 수정하도록 한다.

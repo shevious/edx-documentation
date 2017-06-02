@@ -1,20 +1,14 @@
 .. _Word Cloud:
 
 ##################
-Word Cloud Tool
+Word Cloud 도구
 ##################
 
-.. note:: EdX offers provisional support for this tool.
+.. note:: K-MOOC은 이 도구에 대해 부분적인 지원을 제공한다.
 
-In a word cloud, students enter words into a field in response
-to a question or prompt. The words that all of the students enter then
-appear instantly as a colorful graphic, with the most popular responses
-appearing largest. The graphic becomes larger as more students answer.
-Students can both see the way their peers have answered and contribute
-their thoughts to the group.
+워드 클라우드 도구에서 학습자는 질문지 또는 프롬프트에 대한 응답으로 어떤 필드에 단어를 입력한다. 학습자 모두가 입력한 단어들은 형형색색의 그래픽으로 즉시 나타나며 입력 빈도가 가장 큰 응답이 가장 크게 표시된다. 응답하는 학습자가 많아질수록 그래픽도 커진다. 학습자는 동료들이 응답하는 방식을 확인하며 자신의 생각을 동료 집단에 제공할 수도 있다.
 
-For example, the following word cloud was created from students'
-responses to a question in a HarvardX course.
+다음의 워드 클라우드는 HarvardX 강좌의 질문지에 대한 학습자 응답을 바탕으로 생성한 것이다.
 
 .. image:: ../../../shared/images/WordCloudExample.png
   :alt: Image of a word cloud problem.
@@ -24,37 +18,27 @@ responses to a question in a HarvardX course.
    :depth: 2
 
 ************************************************
-Enable the Word Cloud Tool
+워드 클라우드 도구 설정하기
 ************************************************
 
-Before you can add a word cloud to your course, you must enable the word cloud
-tool.
+강좌에 word cloud를 설정한 후에 강좌에 추가할 수 있다.
 
-To enable the word cloud tool in Studio, you add the ``"word_cloud"`` key to
-the **Advanced Module List** on the **Advanced Settings** page. (Be sure to
-include the quotation marks around the key value.) For more information, see
-:ref:`Enable Additional Exercises and Tools`.
+Studio에서 콘텐츠 보관함 도구를 설정하기 위해  ``"word_cloud"`` 키를 고급 설정 페이지의 고급 모듈 목록에 추가한다. 반드시 키 값을 “ “ 사이에 입력한다. 자세한 사항은 :ref:`Enable Additional Exercises and Tools` 를 참고하면 된다.
 
 ****************************
-Create a Word Cloud
+워드 클라우드 추가하기
 ****************************
 
-To create a word cloud, follow these steps.
+Word cloud를 추가하기 위해.
 
-#. In the unit where you want to create the problem, select **Advanced**
-   under **Add New Component**.
-#. In the list of problem types, select **Word Cloud**.
-#. In the component that appears, select **Edit**.
-#. In the component editor, specify the settings that you want. You can
-   leave the default value for everything except **Display Name**.
+#. 문제를 만들고자 하는 학습 활동에서 **신규 구성요소 추가** 하단의 **고급** 을 클릭한다.
+#. **고급 유형** 목록에서 **Word Cloud** 를 클릭한다.
+#. 구성요소가 나타나면 **편집** 을 클릭한다.
+#. 구성요소 편집기에서 여러분이 원하는 설정을 지정한다. **표시명** 을 제외한 모든 항목의 초기값을 그대로 유지할 수도 있다.
 
-   * **Display Name**: This name appears as a heading above the problem.
-   * **Inputs**: The number of text boxes into which students can enter words,
-     phrases, or sentences.
-   * **Maximum Words**: The maximum number of words that the word cloud
-     displays. If students enter 300 different words but the maximum is set to
-     250, only the 250 most commonly entered words appear in the word cloud.
-   * **Show Percents**: The number of times that students have entered a given
-     word as a percentage of all words entered appears near that word.
+   * **표시될 이름 **: 강좌 리본 및 문제 상단 제목으로 표시되는 명칭.
+   * **입력**: 학습자가 단어, 구 또는 문장을 입력하는 텍스트 박스의 갯수.
+   * **최대 단어 수**: 해당 워드 클라우드가 표시하는 단어의 최대 갯수. 학습자가 300개의 단어를 중복 없이 입력하고 최대 단어수가 250인 경우 가장 빈번하게 입력된 단어 250개만 워드 클라우드에 나타난다.
+   * **퍼센트 보이기**: 학습자들이 주어진 한 단어를 입력한 횟수. 입력한 모든 단어의 퍼센트는 해당 단어 부근에 표시된다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
