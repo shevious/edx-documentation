@@ -1,135 +1,76 @@
 .. _Discussions:
 
 ##################################
-Managing Course Discussions
+강좌 게시판 관리하기
 ##################################
 
-Discussions, or discussion forums, foster interaction among learners and
-between learners and the course team. You can set up different topics to guide
-these interactions when you create your course, and then run and moderate
-discussions throughout the course to encourage participation and develop course
-community. Discussions are also excellent sources of feedback and ideas for the future.
+게시판은 학습자와 강좌 운영팀의 상호작용을 높인다. 강좌 개설 시, 강좌 참여를 높이고 강좌 내 커뮤니티를 활성화 하기 위하여 다양한 주제를 설정하여 토의를 진행하는 것이 좋다.
 
-For information about running and moderating discussions, see the following
-sections.
+게시판은 향후 강좌 개선을 위한 피드백이나 아이디어를 얻을 수 있는 중요한 자원이 될 것이다.
+
+게시판 운영에 관해 항목별 구체적인 안내는 아래 링크에 있다
 
 .. contents::
  :local:
  :depth: 1
 
-.. note:: Some features of discussions are available when discussions are
-   accessed in a web browser, but not when accessed in the edX mobile apps.
-   For information about the differences between discussions on the edx.org
-   site and in the mobile apps, see :ref:`Discussions on Mobile Apps`.
+.. note:: 게시판 일부 기능은 브라우저에서만 접속 가능하고 모바일 환경에서 사용할 수 없다. :ref:`Discussions on Mobile Apps` 에 더 자세한 안내가 나와있다.
 
-For information about how using cohorts in your course affects how your course
-team might moderate course discussions, see :ref:`Moderating Discussions for
-Cohorts`.
+학습집단이 학습자의 게시판 활용에 주는 영향에 대해선  :ref:`Moderating Discussions for Cohorts` 에 자세한 안내가 나와있다.
 
-.. note:: The :ref:`Discussions for Students and Staff` section describes
-   features that are available to all discussion participants, and might be
-   useful to learners who are new to online discussion forums. You can share
-   the section with your learners by, for example, adding a "Never Used a
-   Discussion Forum Before?" post that includes the information you think will
-   be most useful to them.
+.. note:: :ref:`Discussions for Students and Staff`는 학습자가 활용할 수 있는 모든 기능에 관해 설명하고 있어서, 온라인 토의에 익숙하지 않은 학습자들에게 유용할 것이다.
 
 .. _Overview_discussions:
 
 ************
-Overview
+개관
 ************
 
-Learners and the course team use course discussions to share ideas, exchange
-views, consider different viewpoints, and ask questions. In a discussion, there
-are three hierarchical levels of interaction.
+학습자와 강좌 운영팀은 문제 해결 방법과 의견을 공유하고, 다른 관점을 살펴보고, 질문하기 위해 게시판을 사용할 수 있다. 게시판에는 3가지 상호작용 단계가 있다.
 
-* A post is the first level of interaction. A post opens a new subject. Posts
-  can be made as questions, to solicit a concrete answer, or as discussions,
-  to start a conversation. When you add a post, you decide whether to add it
-  as a **Question** or as a **Discussion**.
+* 게시판에 글을 남기는 것은 상호작용의 첫 번째 단계이다. 첫번째 글 은 질문으로 시작되곤 한다. 대화가 시작되거나, 어떤 행동이 필요한 이슈를 다루는 정도에 그치기도 한다. 게시판에 글을 올릴때, 글을 질문 이나 게시판 중 하나로 분류한다.
 
-* A response is the second level of interaction. A response is a reply made
-  directly to a post to provide a solution or continue the conversation.
+* 답글 은 상호작용의 두 번째 단계이다. 답글은 해결방법을 제안하거나 대화를 이어가기 위해 바로 답글을 남기는 것이다.
 
-* A comment is the third level of interaction. A comment is often a
-  clarification or side note made to a specific response, rather than to the
-  post as a whole.
+* 댓글 은 상호작용의 세 번째 단계이다. 댓글은 하나의 독립된 글로 게시되지 않고 특정 답글을 남기기 위한 메모형태로 남기는 글이다.
 
-The dialog created by a post, its responses, and the comments on those
-responses is sometimes called a thread. Discussion threads are saved as part
-of the course history.
+게시판에 남긴 글, 답글, 댓글로 이루어진 대화를 스레드(thread)로 부른다. 게시판 스레드는 강의 기록의 일부로써 저장된다.
 
-All course team members and enrolled learners can add posts, responses, and
-comments, and view all of the posts, responses, and comments made by other
-course participants.
+강좌 운영팀과 학습자는 게시판에 글을 남기고, 답글을 작성하고, 댓글을 달 수 있으며, 다른 학습자에 의해서 남긴 글과 답글, 댓글을 볼 수 있다. 
 
-Members of the course community, learners as well as the course team, can be
-given permission to moderate or administer course discussions through a set of
-discussion administration roles.
+강좌 운영팀과 학습자 모두 게시판의 운영이나 관리 권한을 부여 받을 수 있다.
 
-.. note:: The course team members that you set up in Studio or on the
-   Instructor Dashboard in the LMS are not granted discussion administration
-   roles automatically. Only people who have a discussion administration role
-   can view all of the discussion contributions, for example in courses using
-   cohorts.
+.. note:: Studio에서 설정한 강좌 운영팀(또는 교수자 대시보드에 추가한 강좌 운영팀과 교수자)은 자동으로 게시판 관리자 역할이 배정되는 것은 아니다. 게시판 관리자 역할은 강좌 게시판을 운영하고 관리할 수 있는 강좌 운영팀 일원에게 명시적으로 부여된다. 관리자 접근 권한(Studio)을 가진 강좌 개설자와 강좌 운영팀은 게시판 관리자 역할을 부여 받을 수 있다.
 
-   Discussion administration roles must be explicitly granted to members of
-   the course team for them to moderate or administer course discussions. The
-   course author, and any team members with the Admin role, can grant
-   discussion administration roles. For information about assigning discussion
-   privileges, see :ref:`Assigning_discussion_roles`.
-
-.. note:: Not all options for moderating discussions are available when
-   discussions are accessed using the edX mobile apps. For information about
-   the differences between discussions on the edx.org site and in the mobile
-   apps, see :ref:`Discussions on Mobile Apps`.
+.. note:: 게시판 일부 기능은 브라우저에서만 접속 가능하고 모바일 환경에서 사용할 수 없다. :ref:`Discussions on Mobile Apps` 에 더 자세한 안내가 나와있다.
 
 .. _Organizing_discussions:
 
 *************************************************
-Creating Discussion Topics for Your Course
+강좌에 맞는 토의 주제 만들기
 *************************************************
 
-Discussions in an edX course include both broad topics on course-wide areas of
-interest such as "Feedback", "Troubleshooting", or "Technical Help", and the
-content-specific topics that you add to course units as discussion components.
-You create both types of discussion topics in Studio.
+온라인 공개 강좌 게시판은 “피드백”, “문제 해결”, “기술적 도움말”과 같이 강좌 전반에 걸쳐 관심이 생기는 폭넓은 주제와 학습활동의 구성요소로 강좌 학습활동에 추가하는 특정 주제를 포함하고 있다. Studio에서 이러한 두 가지 유형의 게시판 주제를 만들 수 있다.
 
-For more information about creating discussion topics, see :ref:`Create
-CourseWide Discussion Topics` and :ref:`Create ContentSpecific Discussion
-Topics`. For information about configuring discussion topics in courses that
-use cohorts, see :ref:`Set up Discussions in Cohorted Courses`.
+게시판 주제 만들기에 관한 자세한 정보는 :ref:`Create CourseWide Discussion Topics` 와  :ref:`Create ContentSpecific Discussion Topics` 에 있다. 학습 집단과 함께 강좌에 맞는 게시판 주제 만들기에 관한 자세한 정보는 :ref:`Set up Discussions in Cohorted Courses`  에 있다.
 
 .. _Create CourseWide Discussion Topics:
 
 =====================================
-Create Course-Wide Discussion Topics
+강좌 일반 주제 만들기
 =====================================
 
-All courses include a page named **Discussion**. When you create a course, a
-course-wide discussion topic named "General" is already included by default.
+모든 강좌에는 게시판 이라고 불리는 메뉴가 포함되어 있다. 강좌를 개설하면, “일반”이라 불리는 게시판 주제가 기본적으로 따라온다. 학습자에게 수강 중에 정보를 공유하고 검색하는 방법을 지도하기 위해 더 많은 강좌 일반 주제를 추가할 수 있다. 이러한 강좌 일반 주제에는 피드백, 문제 해결이나 기술적 도움말이 포함될 수 있다. 이러한 게시판은 강좌를 이용하는 즉시 시작할 수 있다.
 
-You can add additional course-wide discussion topics to guide how learners
-share and find information during your course. Such course-wide topics might
-include Introduction and Announcements, Feedback, or Troubleshooting.
-Discussions in these topics can begin as soon as your course is available.
+.. note:: 게시판 종류와 관계 없이 강좌의 모든 게시판 주제의 이름은 서로 달라야 한다. 만약 서로 다른 게시판 주제의 이름이 같다면 학습자에게 혼동을 줄 수 있다. 예를 들어 “일반”이라 불리는 게시판 주제는 이미 일반 게시판 주제로 모든 강좌에 있기 때문에 추가해선 안 된다.
 
-.. note:: Make sure each discussion topic in your course has a unique name,
-   whether it is a course-wide topic or a content-specific discussion topic
-   that you add as a discussion component. If different discussion topics
-   share the same name, learners might be confused as to which discussion
-   topic they are participating in. For example, do not add a content-specific
-   discussion topic named "General", because a course-wide discussion topic
-   named "General" already exists in every course.
+강좌 일반 주제를 만드려면.
 
-To create a course-wide discussion topic, follow these steps.
+#. Studio에서 강좌를 연다.
 
-#. Open your course in Studio.
+#. **설정** 을 선택한 후 고급 설정 을 선택한다.
 
-#. Select **Settings**, then **Advanced Settings**.
-
-#. Scroll down to the **Discussion Topic Mapping** policy key. By default, its
-   value looks like this.
+#. **게시판 주제 도표화** 까지 화면을 내린다. 기본값은 다음과 같다.
 
    ::
 
@@ -139,8 +80,7 @@ To create a course-wide discussion topic, follow these steps.
          }
      }
 
-4. Copy the three lines provided for the General topic and paste
-   them above the closing brace character (``}``).
+4. “일반” 제목에 제공되는 3줄을 복사한 후 닫힌 중괄호 문자(}) 위에 복사한 내용을 붙여 넣는다.
 
 
    ::
@@ -155,8 +95,7 @@ To create a course-wide discussion topic, follow these steps.
      }
 
 
-5. Replace the second "General" with the quoted name of your new topic. For
-   example, name the new topic "Questions about the Course".
+5. 두 번째 “일반”을 새로운 이름(주제)으로 바꾼다. 예를 들어 새 주제를 “강좌에 대한 질문”이라는 이름으로 바꾼다.
 
    ::
 
@@ -169,8 +108,7 @@ To create a course-wide discussion topic, follow these steps.
         }
      }
 
-6. Change the value for the second "id" to a unique identifier. For example,
-   append a reference to the name of the topic.
+6. 고유 식별자로 두 번째 “id”를 바꾼다. 예를 들어, 새로운 이름(주제)에 대한 언급을 덧붙여도 좋다.
 
    ::
 
@@ -183,10 +121,9 @@ To create a course-wide discussion topic, follow these steps.
         }
      }
 
-   .. note:: In discussion topic IDs, you can use only alphanumeric characters
-     and these special characters: underscore, hyphen, and period.
+   .. note:: 게시판 주제 ID로 알파벳, _, -, .만을 사용할 수 있다.
 
-7. Add a comma after the first closing brace (``},``).
+7. 첫 번째 닫힌 중괄호 뒤에 쉼표를 추가한다 (``},``).
 
    ::
 
@@ -199,61 +136,34 @@ To create a course-wide discussion topic, follow these steps.
         }
      }
 
-#. Select **Save Changes**.
+#. **저장** 을 선택한다.
 
-   Studio checks the syntax of your entry and reformats your entry to add line
-   feeds and indentation.
+   저장이 완료되면, 재배열되고 입력 값은 새로운 줄에 들여쓰기가 된다.
 
-#. Scroll back to the **Discussion Topic Mapping** field to verify that your
-   entry was saved as you expect. Entries that do not contain all of the
-   required punctuation characters revert to the previous value when you save,
-   and no warning is presented.
+#. 원하는 대로 입력 사항이 저장되었는지 확인하기 위해 다시 ** “ 게시판 주제 도표화(Discussion Topic Mapping) ” ** 를 확인한다. 변경 사항 저장 시 필요한 문장 부호를 입력하지 않은 경우에는 입력 이전 값으로 돌아가고, 경고창은 뜨지 않는다.
 
-When learners select the **Discussion** page for your course, the drop-down
-Discussion list now includes the topic you added.
+학습자가 **게시판** 메뉴를 클릭하면, 추가한 주제가 아래에 펼쳐진다.
 
  .. image:: ../../../shared/images/NewCategory_Discussion.png
   :alt: Image of a new topic named Course Q&A in the list of discussions.
 
-.. note:: In courses that use cohorts, the course-wide discussion topics that
-   you add are unified. All posts can be read and responded to by every
-   learner, regardless of the cohort that they belong to. You can optionally
-   configure these topics to be divided by cohort. For more information, see
-   :ref:`Coursewide Discussion Topics and Cohorts`.
+.. note:: 학습집단을 활용하는 강좌는 일반 게시판 주제는 모두 모든 학습자에게 공개되어 있다. 속한 학습집단과 관계 없이 모든 학습자는 글을 조회하고 답글을 달 수 있다.  :ref:`Coursewide Discussion Topics and Cohorts` 에 자세한 안내가 나와있다.
 
 .. _Create ContentSpecific Discussion Topics:
 
 ============================================
-Create Content-Specific Discussion Topics
+주제별 게시판 만들기
 ============================================
 
-To create a content-specific discussion topic, you add a discussion component
-to a unit. Typically, you do this while you are designing and creating your
-course in Studio. Follow the instructions in :ref:`Working with Discussion
-Components`. The result is a discussion topic associated with a unit and its
-content.
+주제별 게시판을 만들기 위해, 학습활동에 게시판 구성요소를 추가한다. Studio에 자신의 강좌를 설계하고 제작하면서, 이것을 할 수 있다.  :ref:`Working with Discussion Components` 에 가이드라인을 따르도록 한다. 그 결과 학습 활동과 이것의 콘텐츠와 관련 있는 게시판 주제가 생긴다.
 
-.. note:: When learners access courses using the edX mobile apps, content-
-   specific discussion topics cannot currently be viewed "inline" as part of
-   the course content, although they can be viewed along with course-wide
-   discussions on the **Discussion** page.
+.. note:: 학습자가 모바일 환경에서 강좌에 접속하면 주제별 게시판은 게시판 페이지의 일반 게시판과 함께 볼 수밖에 없다.
 
-.. warning:: Follow the recommended steps to add discussion components. Do not
-   create discussion topics by using the **Duplicate** button in Studio, and do
-   not reference the same discussion ID in more than one place in your course.
-   Duplicated discussion components result in discussion topics that contain the
-   same conversations, even if learners post in different discussion topics.
+.. warning:: 게시판 구성요소를 추가할 때 올바른 절차에 따라야 한다. 스튜디오의 중복 버튼을 클릭해서 만들면 안되고 하나 이상의 곳에 동일한 게시판 ID를 사용하면 안 된다. 중복된 게시판 구성요소는 학습자가 서로 다른 게시판 주제에 글을 작성하더라도 같은 대화를 담는 게시판 주제를 만들게 된다.
 
-For information about the visibility of content-specific discussion
-topics, see :ref:`Visibility of Discussion Topics`.
+:ref:`Visibility of Discussion Topics`  에 자세한 안내가 나와있다.
 
-.. note:: In courses with cohorts enabled, all content-specific discussion
-   topics are divided by cohort when you first add them. Posts by learners to
-   divided discussion topics can only be read and responded to by members of
-   the same cohort and course team members who have a discussion administration
-   role. You can change the configuration of content-specific discussion topics
-   to make them unified and available to all learners in the course. For more
-   information, see :ref:`Content Specific Discussion Topics and Cohorts`.
+.. note:: 활성화된 학습 집단과 함께하는 강좌에서 처음 주제별 게시판을 추가할 때, 모든 주제별 게시판은 학습집단 별로 나뉜다. 분류된 게시판 주제에 추가한 학습자 게시글은 같은 학습 집단 구성원만이 읽고 회신할 수 있다. 강좌를 수강하는 모든 학습자가 이용할 수 있도록 주제별 게시판 설정을 바꿀 수 있다.
 
 
 
@@ -263,276 +173,157 @@ topics, see :ref:`Visibility of Discussion Topics`.
 Assign Discussion Administration Roles
 *************************************************
 
-You can designate a team of people to help you run course discussions. Team
-members who have a discussion administration role have additional options for
-working with posts, responses, and comments.
+강좌 게시판을 운영하는 데 도움을 줄 수 있는 운영팀을 지정할 수 있다. 게시판 관리 역할을 부여 받은 운영팀은 글, 답글 및 답변과 관련해 추가적인 권한이 있다.
 
 
-.. important:: The course team members that you set up in Studio or on the
-   Instructor Dashboard are not automatically granted discussion
-   administration roles.
+.. important:: Studio에서 설정한 강좌 운영팀(또는 교수자 대시보드에 추가한 강좌 운영팀과 교수자)은 자동으로 게시판 관리자 역할이 배정되는 것은 아니다. 게시판 관리자 역할은 강좌 게시판을 운영하고 관리할 수 있는 강좌 운영팀 일원에게 명시적으로 부여된다. 관리자 접근 권한(Studio)을 가진 강좌 개설자와 강좌 운영팀은 게시판 관리자 역할을 부여 받을 수 있다.
 
-   Discussion administration roles must be explicitly granted to members of
-   the course team for them to be able to moderate or administer course
-   discussions. The course author and any team members who have the Admin role
-   can grant discussion administration roles.
+게시판을 효율적으로 운영하고 관리할 수 있는 권한은 아래와 같은 역할을 통해 부여받을 수 있다.
 
-Different options for working with discussions are available through
-the following roles.
+.. note:: 아래 기술된 게시판 관리 역할은 브라우저에서만 사용할 수 있다. 현재 모바일 환경에선 조정 역할을 수행할 수 없다.  :ref:`Discussions on Mobile Apps` 에 자세한 안내가 나와있다.
 
-.. note:: The options for moderating discussions described below are only
-    available when members of the discussion administration team work in a web
-    browser. The edX mobile apps do not currently offer moderation options.
-
-   For more information about differences between discussions on the edx.org
-   site and on the mobile apps, see :ref:`Discussions on Mobile Apps`.
-
-* Discussion moderators can edit and delete messages at any level, review
-  messages flagged for misuse, close and reopen posts, pin posts, and endorse
-  responses.
-
-  Posts made by moderators are marked as "By: Staff" in the list of
-  posts. Responses and comments made by moderators have a colored "Staff"
-  identifier. This role is often given to course team members who already have
-  the Staff role.
+* 게시판 관리자는 메시지를 편집하고 삭제할 수 있으며, 잘못 쓰인 게시글, 닫히거나 다시 연 게시글뿐만 아니라 고정된 게시글과 승인한 답글에 포함된 내용을 검토할 수 있다. 게시판 관리자가 남긴 게시물은 “운영팀”으로 표시된다. 게시판 관리자가 남긴 답글과 댓글은 “운영팀” 글자에 색을 입혀 표기한다. 이미 강좌 운영팀으로서 역할을 하는 강사 운영팀에게 이 역할을 준다.
 
 .. removed this clause from 1st sentence per JAAkana and MHoeber: , and, if the
 .. course is cohorted, see posts from all cohorts
 
-* Discussion community TAs have the same options for working with discussions
-  as moderators.
+* 게시판 커뮤니티 조교는 게시판을 운영하고 관리하는 게시판 관리자와 같은 선택권을 가진다. 커뮤니티 TA가 작성한 게시물은 게시판 메뉴에 있는 게시물 목록에 “작성자: 커뮤니티 TA”로 표시된다. 커뮤니티 TA가 작성한 답글과 댓글은 “커뮤니티 TA” 글자에 색을 입혀 표시한다. 종종 학습자에게도 이 역할을 준다.
 
-  Posts made by community TAs are marked as "By: Community TA" on the
-  **Discussion** page in the discussion navigation pane. Responses and comments
-  made by community TAs have a colored "Community TA" identifier. This role is
-  often given to learners.
+* 교수자는 게시판을 운영하는 게시판 관리자와 같은 선택권을 가진다. 게시판 관리자와 같은 방식으로 게시물, 답글과 댓글에 “강좌 운영팀”이라 표시된다. 교수자 역할만 하는 강좌 운영팀에게 이 역할을 할당할 수 있다. 게시판 교수자는 게시판을 운영할 수 있고 필요하면 언제든지 다른 사람에게 게시판 관리자 역할을 부여할 수 있다.
 
-* Discussion admins have the same options for working with discussions as
-  moderators, and their posts, responses, and comments have the same "Staff"
-  identifiers.
-
-  This role can be reserved for assignment to course team members
-  who have the Admin role only: the discussion admins can then both
-  moderate discussions and give other users discussion management roles
-  whenever necessary.
-
-Before you can assign roles to your discussion team, you need their email
-addresses or usernames.
-
-* To get this information for a course team member, on the Instructor Dashboard
-  select **Membership**, and then select either **Staff** or **Admin**.
-
-* To get this information for an enrolled learner, on the Instructor Dashboard
-  select **Data Download**, and then **Download profile information as a CSV**.
+게시판 운영팀의 역할을 부여하기 전에, 게시판 운영팀의 메일 주소와 사용자 이름이 필요하다. 교수자 대시보드에서 등록 관리 를 클릭한 후, 강좌 운영팀 또는 관리팀 을 선택하여 강좌 운영팀의 정보를 얻는다. 교수자 대시보드에서 데이터 를 클릭한 후, **개인 정보를 CSV 파일로 다운로드** 를 클릭한다.
 
 
 ====================================
-Assign Roles
+역할 배정하기
 ====================================
 
-You can assign a course team role to any user who is already enrolled in your
-course. To assign a discussion administration role, you must be the course
-author or an Admin.
+이미 강좌를 수강중인 사용자 중 아무에게나 강좌 운영팀 역할을 부여할 수 있다. 강좌 개설자 또는 교수자만이 게시판 관리자 역할을 배정받을 수 있다.
 
-#. View the live version of the course.
+#. **적용 결과 보기** 를 클릭한다.
 
-#. Select **Instructor**, and then select **Membership**.
+#. **교수자** 에서 **등록 관리** 를 클릭한다.
 
-#. In the **Course Team Management** section, select **Discussion Admins**,
-   **Discussion Moderators**, or **Discussion Community TAs**.
+#. 관리 에서 역할을 선택한다.
 
-#. Under the list of users who currently have that role, enter an email address
-   or username, and then select **Add** for the role type.
+#. 각 역할을 맡고 있는 사용자 목록에 이메일 주소 혹은 아이디를 입력하고, 역할 유형에서 **운영팀 추가** 를 클릭한다.
 
 
 ==============
-Remove Roles
+역할 삭제하기
 ==============
 
-To remove a role from a user, you must be the course author or an Admin.
+역할을 삭제하기 위해선 강좌 개설자 혹은 관리자 권한이 있어야 한다.
 
-#. View the live version of the course.
+#. 강좌 실시간 보기를 선택한다.
 
-#. Select **Instructor**, and then select **Membership**.
+#. 교수자 아래의 등록 관리를 클릭한다.
 
-#. In the **Course Team Management** section, select **Discussion Admins**,
-   **Discussion Moderators**, or **Discussion Community TAs**.
+#. 강좌 운영팀 관리에서 게시판 관리자, 게시판 관리자나 게시판 커뮤니티 조교를 선택한다.
 
-#. From the list of users who currently have that role, select the user you
-   want to remove, and then select **Revoke access**.
+#. 이미 역할을 부여받은 사용자 목록에서 원하는 학습자를 선택해 접근 권한 취소 를 클릭한다.
 
 
 .. _Visibility of Discussion Topics:
 
 **********************************
-Visibility of Discussion Topics
+게시판 주제 공개 설정
 **********************************
 
-The names that you specify as the category and subcategory names for discussion
-components are not visible on the **Discussion** page in the LMS until after
-the course has started and the unit is released.
+강좌가 시작되고 학습활동이 공개될 때까지 학습 관리 시스템의 게시판 페이지에서 입력한 주제 및 소주제 이름은 공개되지 않는다.
 
-However, "seed" posts that you create in content-specific discussion topics
-before a course starts, or before the unit is released, are immediately visible
-on the **Discussion** page, even though the containing category or subcategory
-names are not visible. EdX recommends that you do not create posts in
-content-specific discussion topics before a unit is released. For more
-information about release dates and the visibility of components, see
-:ref:`Controlling Content Visibility`.
+그러나 주제별 게시판에 “배정”한 글은 즉시 게시판 페이지에 공개되나 주제 및 소주제 이름은 공개되지 않는다. K-MOOC은 학습활동 공개 이전 주제별 게시판에 글을 작성하는 것을 권장하지 않는다. :ref:`Controlling Content Visibility`.에 자세한 안내가 나와있다.
 
-In contrast, :ref:`course-wide discussion topics<Create CourseWide Discussion
-Topics>` that you create on the **Advanced Settings** page in Studio,
-including the default "General" discussion topic, are immediately visible,
-regardless of whether the course has started. They are not associated with any
-particular section or subsection of the course, and are not subject to
-release dates.
+반대로 스튜디오 고급 설정 페이지에서 생성하는 기본 “일반” 게시판 주제를 포함한 일반 게시판 주제는 강좌 시작 여부와 관계없이 즉시 공개된다. 이는 특정 주제나 소주제와 관계가 없으며 공개 날짜에 영향을 받지 않는다.
 
 
 .. _Running_discussions:
 
 *********************
-Run a Discussion
+게시판 운영하기
 *********************
 
-On an ongoing basis, the members of your discussion team run the course
-discussion by making contributions, endorsing responses, marking answers as
-correct, and guiding learner messages into pertinent threads. Techniques that
-you can use throughout your course to make discussions successful follow.
+게시판 운영팀은 게시판에 참여하기, 답글에 동의하기, 적절한 해답을 제공하기, 질문에 맞는 답변하기, 학습자를 적절한 게시물로 인도하기 등 지속해서 강좌 게시판을 운영한다. 게시판을 효율적으로 활용하기 위해서 사용할 수 있는 기술은 다음과 같다.
 
 ==========================================
-Use Conventions in Discussion Subjects
+게시판 주제에 규제 적용하기
 ==========================================
 
-To identify certain types of messages and make them easier to find, you can
-define a set of standard tags to include in the subject of a post or in the
-body of a response or comment. Examples follow.
+메시지 유형을 파악하고 쉽게 검색할 수 있도록 게시물 주제나 답글 본문, 또는 댓글에 기본 태그를 설정할 수 있다. 그 예는 다음과 같다.
 
-* Use "[OFFICIAL]" at the start of announcements about changes to the course.
+* 강좌 변경 안내를 시작할 때, 태그에 “[공식]”을 사용한다.
 
-* Provide information about corrected errors with a subject that begins
-  "[CORRECTIONS]" or "[ERRORS]".
+* 수정한 오류에 대한 정보는 “[수정]” 또는 “[오류]”로 시작하는 태그를 사용한다.
 
-* Ask learners to use "[STAFF]" in the subject of each post that needs the
-  attention of a course team member.
+* 학습자는 강좌 운영팀이 주의 깊게 살펴봐야 하는 게시물에 “[강좌 운영팀]” 태그를 사용한다.
 
-Both the discussion team and your learners can use tags like these to search
-the discussions more effectively.
+강좌 운영팀과 학습자 모두 게시판을 더 효율적으로 검색하기 위해 이와 같은 태그를 사용할 수 있다.
 
-When a post is created its type must be selected: either "question" or
-"discussion". Members of the discussion team should be thoughtful when
-selecting the type for their posts, and encourage learners to do the same. For
-more information, see :ref:`Find Question Posts and Discussion Posts`.
+게시글을 작성할 때, “질문”이나 “게시판” 중의 하나의 유형을 선택해야 한다. 게시판 운영팀은 게시물 유형을 선택할 때, 주의를 기울여야 하고, 학습자들에게도 그렇게 하도록 권장한다.  :ref:`Find Question Posts and Discussion Posts` 를 참고하길 바란다.
+
 
 .. future: changing the type of a post, maybe resequence or separate  conventions from post types
 
 ========================
-Seed Discussion Topics
+게시판 주제 배정하기
 ========================
 
-To help learners learn how to get the most out of course discussions, and find
-the best discussion topic to use for their questions and conversations, you can
-seed discussion topics in course-wide discussion topics before the course starts.
-Some examples follow.
+학습자가 게시판을 최대한 활용하는 방법을 터득할 수 있고 자신의 질문과 토의에 필요한 가장 좋은 토의 주제를 찾기 위해 강좌가 시작되기 전에 게시글을 작성하여 게시판 주제를 배정할 수 있다. 예시는 다음과 같다.
 
-* In the General topic (which is included in every course by default), add an
-  [INTRO] post to initiate a thread for learner and course team introductions.
+* 학습자와 강좌 운영팀을 소개하는 게시글을 작성하기 위해 (모든 강좌에 기본적으로 포함된) “일반” 주제에 [소개] 게시글을 올린다.
 
-* For each course-wide discussion topic that you create, add an initial post
-  to describe the way you intend that discussion to be used. In addition to
-  providing guidance, these initial messages can act as models for learners to
-  follow when they create their own posts.
+* 생성한 각 일반 게시판 주제가 어떻게 사용될 것인지 그 의도를 설명하기 위해 [소개]에 첫 번째 게시글을 올린다. 이러한 게시글은 가이드라인을 제공할 뿐만 아니라, 학습자가 게시글을 작성할 때 따를 수 있는 가이드라인 역할을 할 수 있다.
 
-EdX strongly recommends that you do not create seed posts in content-specific
-discussion topics before the course starts or before the containing unit is
-released. The category and subcategory names for content-specific discussion
-topics are subject to the release visibility of their containing unit, and are
-not visible until the unit is released. For more details, see :ref:`Visibility
-of Discussion Topics`.
+-MOOC은 강좌 시작 혹은 학습활동 공개 이전에 주제별 게시판에 글을 작성하는 것을 권장하지 않는다. 주제별 게시판의 주제 및 소주제 이름은 학습활동 공개 전에는 공개되지 않는다.  :ref:`Visibility of Discussion Topics` 에 자세한 안내가 나와있다.
 
 
 ======================================
-Minimize Thread Proliferation
+급증하는 게시물 최소화하기
 ======================================
 
-To encourage longer, threaded discussions rather than many similar, separate
-posts, the discussion team can use these techniques. However, be aware that
-long threads (with more than 200 responses and comments) can be difficult to
-read, and can therefore result in an unsatisfactory experience in the
-discussion.
+게시판 운영팀은 비슷한 게시물을 여러 개 작성하는 것보다 한 게시물에 많은 콘텐츠를 담을 수 있도록 장려하기 위해 이러한 기능을 이용할 수 있다. 하지만, (200개 이상의 답글과 댓글이 달린) 콘텐츠가 많은 게시물은 읽기가 어려우므로 결과적으로 사람들이 선호하지 않음을 알아야 한다.
 
-.. note:: You can only pin or close posts and mark questions as answered when you
-      work in a web browser. You cannot complete these activities when you work
-      in an edX mobile app.
+.. note:: 브라우저에서 접속 중일 때만 글을 고정하거나 닫을 수 있고 질문에 대답 표시할 수 있다. 모바일 환경에선 이러한 작업을 수행할 수 없다.
 
-* Pin a post. Pinning a post makes it appear at the top of the list of posts in
-  the discussion navigation pane on the **Discussion** page. As a result, it is
-  more likely that learners will see and respond to pinned posts. You can write
-  your own post and then pin it, or pin a post by any author. Select the "More"
-  icon and then **Pin**.
+* 게시글 고정하기 : 고정한 게시물은 게시글 상단에 나타난다. 학습자들은 고정된 게시글을 보고 답변할 가능성이 크다. 자신만의 게시글을 작성한 후 이것을 고정할 수 있으며, 강좌 개설자가 게시글을 고정할 수 있다. “ 더보기 ” 아이콘을 클릭한 후 “ Pin ” 아이콘을 클릭한다.
 
     .. image:: ../../../shared/images/Pin_Discussion.png
      :alt: Image of the pin icon for discussion posts.
 
-* Endorse a response. Endorsing a response indicates that it provides value to
-  the discussion. Select the "check mark" (or tick mark) icon for the response.
+* 답글 승인하기 : 답글 승인하기는 해당 게시글이 가치가 있는 글임을 나타낸다. 회신을 위해 “체크 표시”(또는 눈금 표시)를 클릭한다.
 
     .. image:: ../../../shared/images/Endorse_Discussion.png
      :alt: Image of the Endorse button for discussion posts.
 
-* Mark a question as answered. You use the same procedure to mark a response as
-  the correct answer to a question as you do to endorse contributions to a
-  discussion: select the "check mark" (or tick mark) icon for correct answers.
+* 대답한 질문에 표시하기: 정확한 답을 제시하는 답글에는 “체크 표시”(또는 눈금 표시)를 한다. 질문에 정확한 대답을 하는 답글에 표시하기 위해, 토의에 참여한 게시글을 표시하는 것과 같은 방법으로 진행한다.
 
-* Close a post. You can respond to a redundant post by (optionally) pasting in
-  a link to the post that you prefer learners to contribute to, and prevent
-  further interaction by closing the post. Select the "More" icon and then
-  **Close** to close it.
+* 게시글 닫기 : 학습자가 선호하는 게시글에 (선택적으로) 링크를 붙여 중복된 게시글에 답변할 수 있으며, 게시글을 폐쇄하여 추가 상호작용을 막을 수 있다. 게시물을 닫기 위해 “ 더보기 ” 아이콘을 선택한 후 “ 닫기 ”를 클릭한다.
 
-* Provide post/response/comment guidelines. You can post information from the
-  :ref:`overview<Overview_discussions>` in this section, or the :ref:`anatomy
-  of edX discussions<Anatomy of edX Course Discussions>` in the next section,
-  in a course-wide discussion topic (such as General) to provide guidance about
-  when to start a new thread by adding a post, responding to an existing post,
-  or commenting on a response.
+* 게시글/답글/댓글에 필요한 가이드라인을 제공한다. 이번 장에서 설명하는 게시판 개관부터 게시글 추가, 기존의 게시글에 답글을 추가하거나 답글에 댓글 추가하기 등으로 새로운 게시물을 시작하는 방법에 관해 설명하는 강좌 일반 주제나 다음 장에서 설명하는 온라인 공개강좌 게시판 구조 에서 얻을 정보를 올릴 수 있다.
 
 
 .. _Moderating_discussions:
 
 ***********************
-Moderate Discussions
+게시판 관리하기
 ***********************
 
-The members of a course discussion team monitor discussions and keep them
-productive. They can also collect information, such as areas of particular
-confusion or interest, and relay it to the course team.
+강좌 게시판 운영팀은 게시판을 지속해서 모니터하면서 효율적으로 운영할 수 있도록 노력한다. 또한, 게시판 운영팀은 궁금한 분야나 관심 있는 분야의 정보를 수집하여 강좌 운영팀에게 정보를 전달한다. 성숙한 토의 문화를 도모하고 유지하기 위해서는 게시판 관리자가 게시판을 검토하고 응답할 충분한 시간이 있어야 한다. 온라인공개강좌(MOOC)에 대한 최신 정보를 유지하기 위해서는 매주 5시간 이상의 노력이 필요하다. 게시물을 읽고, 게시글에 답글을 남기거나 글을 편집하며, 나머지 게시판 운영팀뿐만 아니라 강좌 운영팀과 소통해야 한다.
 
-Developing and sustaining a positive discussion culture requires that
-sufficient moderator time is dedicated to reviewing and responding to
-discussions. Keeping up-to-date with a large MOOC forum requires a commitment
-of 5 or more hours per week, and involves reading threads, replying to and
-editing posts, and communicating with the rest of the discussion administration
-team and other members of the course team.
-
-For information on setting up moderators for your course, see
-:ref:`Assigning_discussion_roles`.
+강좌에 게시판 관리자를 배정하기 위한 정보는 :ref:`Assigning_discussion_roles` 를 참고하길 바란다.
 
 ====================================================
-View Profile Information for Discussion Participants
+게시판 참여자에게 프로필 공개하기
 ====================================================
 
-If you want to find out more about a specific discussion participant, you can
-view that learner's edX profile. Learners can have either a limited profile or
-a full profile.
+특정 게시판 참여자에 관해 자세한 사항을 알고 싶으면 학습자 K-MOOC 프로필에서 조회할 수 있다. 학습자는 부분 프로필과 전체 프로필이 있다.
 
-To view a learner's profile, follow these steps.
+학습자 프로필 조회를 위해.
 
-#. On the **Discussion** page, select a username in a post,
-   response, or comment.
-#. On the **Active Threads** page for that learner, select the
-   learner's username.
+#. 게시판 페이지에서 글, 답글, 답변에서 사용자 이름을 선택한다.
+#. 활성화 스레드 페이지에서 학습자 사용자 이름을 클릭한다.
 
-The following image shows a learner's username in a post, the learner's
-username on the **Active Threads** page, and the learner's profile page.
+다음 이미지는 글 및 활성화 스레드 페이지에서의 학습자 사용자 이름과 학습자 프로필 페이지를 보여준다.
 
 .. image:: ../../../shared/images/SFD_Prof_from_Disc.png
   :width: 600
@@ -540,22 +331,15 @@ username on the **Active Threads** page, and the learner's profile page.
       that learner's active threads page in the course discussions, and an
       image of the learner's profile.
 
-For more information, or to create your own profile, see
-:ref:`openlearners:SFD Dashboard Settings Profile`.
+자세한 사항은 :ref:`openlearners:SFD Dashboard Settings Profile` 에 자세히 안내되어 있다.
 
 ========================================
-Provide Guidelines for Learners
+학습자에게 가이드라인 제공하기
 ========================================
 
-You can develop a set of best practices for discussion participation and make
-them available to learners as a course handout file or on a defined page in
-your course. These guidelines can define your expectations and optionally
-introduce features of edX discussions.
+가이드라인을 통해 게시판을 최대한 활용할 수 있으며, 학습자가 학습 자료 파일이나 수업 중에 규정된 메뉴에서 가이드라인을 활용할 수 있다. 이러한 가이드라인은 K-MOOC 게시판 기능을 선택적으로 소개할 수 있다.
 
-You can also share the :ref:`Discussions for Students and Staff` section with
-your learners. It describes features that are available to all discussion
-participants, and may be useful to learners who are new to online discussion
-forums.
+:ref:`Discussions for Students and Staff` 장을 학습자와 공유할 수 있습니다. 게시판을 이용하는 모든 참여자가 활용이 가능하다는 것을 보여주며, 온라인 토의 게시판이 처음인 학습자에게 유용할 것이다.
 
 .. For a template that you can use to develop your own guidelines, see
 .. :ref:`Discussion Forum Guidelines`.
@@ -563,305 +347,218 @@ forums.
 .. _Develop a Positive Discussion Culture:
 
 ========================================
-Develop a Positive Discussion Culture
+성숙한 토론 문화 만들기
 ========================================
 
-Discussion monitors can cultivate qualities in their own discussion
-interactions to make their influence positive and their time productive.
+모니터요원은 시간을 효율적으로 활용하며, 토론 문화에 긍정적인 영향을 미치는 게시판 관리자로서, 자신만의 자질을 기른다.
 
-* Encourage quality contributions: thank learners whose posts have a positive
-  impact and who answer questions.
+* 게시판 품질 기여도를 판단하여 장려한다. 게시글에 긍정적인 영향을 미치는 학습자와 질문에 대답하는 학습자에게 감사를 표한다.
 
-* Check links, images, and videos in addition to the text of each message. Edit
-  offensive or inappropriate posts quickly, and explain why.
+* 각 게시글에 담긴 텍스트뿐만 아니라 링크, 이미지와 동영상을 확인한다. 부적절한 게시물은 즉시 편집하고 그 이유에 관해서 설명한다.
 
-* Review posts with a large number of votes and recognize "star posters"
-  publicly and regularly.
+* 많은 공감을 받은 게시물을 정기적으로 검토하여 공개적으로 “스타 포스터”로 선정한다.
 
-* Stay on topic yourself: before responding to a post, be sure to read it
-  completely.
+* 주제에 맞게 적절한 답글을 남긴다. 게시글에 답글을 작성하기 전에, 해당 게시글을 꼼꼼히 읽는다.
 
-* Maintain a positive attitude. Acknowledge problems and errors without
-  assigning blame.
+* 긍정적인 태도를 유지한다. 책임을 돌리지 않고 문제와 오류를 인정한다.
 
-* Provide timely responses. More time needs to be scheduled for answering
-  discussion questions when deadlines for homework, quizzes, and other
-  milestones approach.
+* 적시에 회신한다. 숙제, 퀴즈 마감일이나 기타 중요한 시점이 다가올 때, 질문에 답글을 남기는 데 더 많은 시간이 필요하다.
 
-* Discourage redundancy: before responding to a post, search for similar posts.
-  Make your response to the most pertinent or active post and then copy its URL
-  and use it to respond to the redundant threads.
+* 중복 게재를 막는다. 게시글에 답글을 작성하기 전에 유사한 게시물이 있는지 검색한다. 가장 적절한 게시물에 답글을 작성한 후, URL을 복사하여, 중복된 게시물에 답글을 붙여 넣는다.
 
-* Publicize issues raised in the discussions: add questions and their answers
-  to an FAQ topic, or announce them on the **Home** page.
+* 게시판에 제기된 문제를 알린다. 질문과 답변에 학습자의 질문과 그 해답을 기재하거나 강좌 정보 메뉴에 문제를 공고한다.
 
-For a template that you can use to develop guidelines for your course
-moderators, see :ref:`Guidance for Discussion Moderators`.
+강좌 게시판 관리자를 위한 가이드라인을 개발하는 데 사용하는 양식은 :ref:`Guidance for Discussion Moderators` 을 참고하길 바란다.
 
 .. _Find Question Posts and Discussion Posts:
 
 ==========================================
-Find Questions and Discussions
+질문과 게시판 찾기
 ==========================================
 
-When learners create posts, they specify the type of post to indicate whether
-they are asking for concrete information (a question) or starting an open-ended
-conversation (a discussion).
+학습자는 게시글을 작성할 때, 게시글의 의도가 구체적인 정보를 요청(질문)하는 것인지, 토론을 시작하는 것인지를 표시하기 위해 게시글 유형을 지정한다.
 
-On the **Discussion** page, a question mark image identifies posts that ask
-questions, and a conversation bubble image identifies posts that start
-discussions. When an answer is provided and marked as correct for a question, a
-check or tick mark image replaces the question mark image. For more
-information, see :ref:`Answer Questions`.
+게시판 메뉴에서 물음표 이미지는 질문하는 게시글이고, 말풍선 이미지는 토의를 시작하는 게시글을 말한다. 질문에 정확한 대답을 했을 때, 물음표 이미지는 체크 표시 또는 눈금 표시로 바뀐다.  :ref:`Answer Questions` 를 참고하길 바란다.
 
-In addition to these visual cues, filters can help you find questions and
-discussions that need review. In the discussion navigation pane on the
-**Discussion** page, the **Show all** filter is selected by default. You can
-also select:
+필터는 시각적 표시뿐만 아니라 학습자가 검토할 필요가 있는 게시판과 질문을 찾는 데 도움을 준다. 게시판 메뉴에 게시물 목록 위에 모두 보기 필터가 기본적으로 선택되어 있다. 다음을 선택할 수 있다:
 
-* **Unread**, to list only the discussions and questions that you have not yet
-  viewed.
+* **읽지 않음** , 아직 보지 못한 게시판과 질문만을 나열한다.
 
-* **Unanswered**, to list only questions that do not yet have any responses
-  marked as answers.
+* **답글 없음** , 아직 답글이 없는 질문만을 나열한다.
 
 ==================
-Edit Messages
+메시지 편집하기
 ==================
 
-Discussion moderators, community TAs, and discussion admins can edit the
-content of posts, responses, and comments. Messages that include spoilers or
-solutions, or that contain inappropriate or off-topic material, should be
-edited quickly to remove text, images, or links.
+게시판 관리자, 커뮤니티 TA와 교수자는 게시글, 답글, 댓글 내용을 편집할 수 있다. 스포일러나 해결책을 포함하는 내용이나, 주제에 벗어난 부적절한 내용은 텍스트, 이미지 또는 링크를 삭제함으로써 빠르게 편집할 수 있다.
 
 .. removed note for open edx re edit behavior in mobile apps. Posts can
 .. now be edited in the mobile apps (though ability depends on permissions)
 .. CT April 25, 2016
 
-#. Log in to the site and then select the course on your **Current Courses**
-   dashboard.
+#. 사이트에 로그인한 후, 수강중인 강좌 대시보드에서 강좌를 선택한다.
 
-#. Open the **Discussion** page and then open the post with the content that
-   requires editing. You can select a single topic from the drop-down list of
-   discussion topics, apply a filter, or search to locate the post.
+#. 게시판 메뉴를 연 다음 편집이 필요한 내용이 담긴 게시물을 연다. 게시판 주제 목록에서 하나의 주제를 선택할 수 있으며, 필터를 적용할 수 있고, 게시물 위치를 찾기 위해 검색할 수 있다.
 
-#. For the post or for the response or comment that you want to edit, select
-   the "More" icon and then **Edit**.
+#. 편집하길 원하는 게시글, 답글, 댓글에 “ 더보기 ” 아이콘을 클릭한 다음 “ 편집하기 ” 아이콘을 클릭한다.
 
-#. Remove the problematic portion of the message, or replace it with standard
-   text such as "[REMOVED BY MODERATOR]".
+#. 문제가 있는 일부 내용을 삭제하거나 “[관리자에 의한 삭제]”와 같이 문제가 있는 일부 내용을 표준 텍스트로 바꾼다.
 
-#. Communicate the reason for your change. For example, "Posting a solution
-   violates the honor code."
+#. 변경 이유를 알린다. 예시: “답을 게시하는 것은 학습자 선서를 위반하는 것입니다.”
 
 ==================
-Delete Messages
+메시지 삭제하기
 ==================
 
-Discussion moderators, community TAs, and discussion admins can delete the
-content of posts, responses, and comments. Posts that include spam or abusive
-language may need to be deleted, rather than edited.
+게시판 관리자, 커뮤니티 TA와 교수자는 게시글, 답글, 댓글 내용을 삭제할 수 있다. 스팸이나 욕설을 포함한 게시글은 편집하는 것보다 삭제하는 것이 필요할 수 있다.
 
 .. removed note for open edx re deletion behavior in mobile apps. Posts can
 .. now be deleted in the mobile apps (though ability depends on permissions)
 .. CT April 25, 2016
 
-#. Log in to the site and then select the course on your **Current Courses**
-   dashboard.
+#. 사이트에 로그인한 후 수강중인 강좌 대시보드에서 강좌를 선택한다.
 
-#. Open the **Discussion** page and then open the post with the content that
-   requires deletion. You can select a single topic from the drop-down list of
-   discussion topics, apply a filter, or search to locate the post.
+#. 게시판 메뉴를 연 다음 삭제가 필요한 내용이 담긴 게시물을 연다. 게시판 주제 목록에서 하나의 주제를 선택할 수 있으며, 필터를 적용할 수 있고, 게시물 위치를 찾기 위해 검색할 수 있다.
 
-#. For the post or for the response or comment that you want to delete, select
-   the "More" icon and then **Delete**.
+#. 삭제하길 원하는 게시글, 답글, 댓글에 “ 더보기 ” 아이콘을 클릭한 다음 “ 삭제하기 ” 아이콘을 클릭한다.
 
-#. Select **OK** to confirm the deletion.
+#. ” 확인 “을 눌러 삭제를 확인한다.
 
 .. how to communicate with the poster?
 
-.. important:: If a message is threatening or indicates serious harmful
- intent, contact campus security at your institution. Report the incident
- before taking any other action.
+.. important:: 게시글의 내용이 위협적이거나 심각하게 유해하다고 판단되면, 해당 강좌 운영팀에서 조치한다.
 
 ==================================
-Respond to Reports of Misuse
+잘못된 신고에 대응하기
 ==================================
 
-Learners have the option to report contributions that they find inappropriate.
-Moderators, community TAs, and admins can check for messages that have been
-flagged in this way and edit or delete them as needed.
+학습자는 부적절한 메시지를 신고할 수 있다. 게시판 관리자, 커뮤니티 TA와 교수자는 신고된 메시지를 확인한 후 필요에 따라 그 내용을 편집하거나 삭제할 수 있다.
 
 .. removed note for open edx re flag behavior in mobile apps. Posts can
 .. now be flagged in the mobile apps. CT April 25, 2016
 
-#. View the live version of your course and select **Discussion** at the top of
-   the page.
+#. 강좌의 라이브 버전을 확인하고 페이지 상단에 게시판 을 클릭한다.
 
-#. In the discussion navigation pane at the side of the page, use the filter
-   drop-down list (set to **Show all** by default) to select **Flagged**.
+#. 메뉴 좌측 게시글 목록에서 “ 깃발 표시 ”를 선택하려면, (기본적으로 모두 보기 로 설정) 필터 드롭다운 목록을 사용한다.
 
-#. Review listed posts. A post is listed if it or any of its responses or
-   comments has been reported. The reported contribution includes a
-   **Reported** identifier.
+#. 나열된 게시글을 검토한다. 게시글, 답글, 댓글을 찾았다면, 게시글이 나열된다. “신고된 글”은 신고된 식별자를 포함한다.
 
-#. Edit or delete the post, response, or comment. Alternatively, remove the
-   flag: select the "More" icon and then **Unreport**.
+#. 게시글, 답글, 댓글을 편집하거나 삭제한다. 또한, 깃발 표시를 제거한다. “ 더보기 ” 아이콘을 클릭한 후 “ 신고되지 않음 ”을 클릭한다.
 
 ===============
-Block Users
+사용자 차단하기
 ===============
 
-For a learner who continues to misuse the course discussions, you can unenroll
-the learner from the course. For more information, see :ref:`unenroll_student`.
-If the enrollment period for the course is over, the learner cannot re-enroll.
+강좌 게시판에 계속해서 악용하는 학습자에 한해서 수강 과정을 취소할 수 있다.  :ref:`unenroll_student` 를 참고하길 바란다. 수강 등록 기간이 지난 후에는 재등록할 수 없다.
 
 .. _Close_discussions:
 
 ******************************
-Close Discussions
+학습자 게시 중단하기
 ******************************
 
-You can close the discussions for your course so that learners cannot add
-messages. Course discussions can be closed temporarily, such as during an exam
-period, or permanently, such as when a course ends.
+학습자가 메시지를 게시할 수 없도록 수강 중에 게시판을 닫을 수 있다. 시험 기간이나 영구적으로 수업과정이 종료된 경우, 강좌 게시판은 임시로 닫을 수 있다.
 
-.. note:: You can only close discussions when you work in a web browser. You
-   cannot close discussions when you work in an edX mobile app.
+.. note:: 모바일 환경이 아닌 브라우저에서만 학습자 게시를 중단할 수 있다.
 
-When you close the discussions for a course, all of the discussion topics in
-course units and all of the course-wide topics are affected.
+수업과정에서 게시판을 닫으면 모든 학습활동 주제와 일반 강좌 주제는 영향을 받는다.
 
-* Existing discussion contributions remain available for review.
+* 기존의 게시판 참여도는 검토하기 위해 남겨둬야 한다.
 
-* Learners cannot add posts, respond to posts, or comment on responses.
-  However, learners can continue to vote on existing threads, follow threads,
-  or report messages for misuse.
+* 학습자는 게시글, 답글, 댓글을 남길 수 없다. 하지만 학습자는 계속해서 기존의 게시물에 공감을 표시하거나, 게시물을 사용할 수 있으며, 잘못 사용된 게시물을 신고할 수 있다.
 
-* Course team members with the Staff, Admin, Discussion Admins, Discussion
-  Moderators, and Discussion Community TAs roles are not affected when you
-  close the discussions for a course. Users with these roles can continue to
-  add to discussions.
+* 강좌 게시판을 닫아도 강좌 운영팀, 교수자, 게시판 교수자, 게시판 관리자와 게시판 커뮤니티 조교는 영향을 받지 않는다. 이러한 역할을 맡은 사용자는 계속해서 게시판을 추가할 수 있다.
 
-.. note:: To make sure your learners understand why they cannot add to
-  discussions, you can add the dates that discussions are closed to the
-  **Home** page and post them to a General discussion.
+.. note:: 그들이 게시판을 추가할 수 없는 이유를 학습자가 이해할 수 있도록 게시판이 닫힌 날짜를 홈 메뉴에 추가하고 “ 일반 ” 게시판에 게시한다.
 
 .. _Start-End Date Format Specification:
 
 =====================================
-Start-End Date Format Specification
+시작-종료 날짜 형식
 =====================================
 
-To close course discussions, you supply a start date and time and an end date
-and time in Studio. You enter the values in the following format.
+강좌 게시판을 닫을 때, Studio에 시작 일자와 시간, 종료 일자와 시간을 입력한다. 이 형식에 값을 입력한다.
 
 ``["YYYY-MM-DDTHH:MM", "YYYY-MM-DDTHH:MM"]``
 
-where:
+위의 의미는 다음과 같다:
 
-* The dates and times that you enter are in Coordinated Universal Time (UTC),
-  not in your local time zone. You might want to verify that you have specified
-  the times that you intend by using a time zone converter such as `Time and
-  Date Time Zone Converter`_.
+* 입력하는 날짜와 시간은 현지 시간대가 아니라 UTC(협정 세계시간)를 기준으로 한다. 시간 및 날짜 변환기를 사용하여 시간대를 확인하는 것이 좋다.
 
-* You enter an actual letter **T** between the numeric date and time values.
+* 숫자 날짜와 시간 값 사이의 실제 문자 T를 입력한다.
 
-* The first date and time indicate when you want course discussions to close.
+* 첫 번째 날짜와 시간은 강좌 게시판을 종료하고 싶은 날짜와 시간을 나타낸다.
 
-* The second date and time indicate when you want course discussions to reopen.
+* 두 번째 날짜와 시간은 강좌 게시판을 다시 하고 싶은 날짜와 시간을 나타낸다.
 
-* If you do not want the discussions to reopen, enter a date that is far in the
-  future.
+* 만약 게시판을 다시 열고 싶지 않다면, 먼 미래의 날짜를 입력한다.
 
-* Quotation marks enclose each date-time value.
+* 따옴표는 각 날짜-시간을 한 묶음으로 묶는다.
 
-* A comma and a space separate the start date-time from the end date-time.
+* 쉼표와 공백은 시작 날짜-시간과 종료 날짜-시간을 분리한다.
 
-* Square brackets enclose the start-end value pair.
+* 대괄호는 시작-종료 값을 한 쌍으로 묶는다.
 
-* You can supply more than one complete start and end value pair. A comma and a
-  space separate each pair.
+* 많은 시작과 종료 값 쌍을 제공할 수 있다. 쉼표와 공간은 각 쌍을 구분한다.
 
-For example, to close course discussions temporarily for a final exam period in
-July, you enter these start and end dates.
+예를 들어, 7월 시험 기간에 강좌 게시판을 임시로 닫기 위해 다음을 입력한다.
 
 ``["2016-07-22T08:00", "2016-07-25T18:00"]``
 
-To add a blackout date that closes course discussions permanently on 9 August
-2016, you add these start and end dates.
+2014년 8월 9일에 영구적으로 닫고자 할 때, 다음과 같이 입력한다.
 
 ``["2016-07-22T08:00", "2016-07-25T18:00"], ["2016-08-09T00:00", "2099-08-09T00:00"]``
 
-You enter these values between an additional pair of square brackets which are
-supplied for you in Studio.
+Studio에서 제공되는 추가된 대괄호 사이에 이 값을 입력한다.
 
 ============================================
-Define When Discussions Are Closed
+게시판 중단하기
 ============================================
 
-To define when discussions are closed to new contributions and when they
-reopen, follow these steps.
+게시판을 중단할 때와 게시판을 다시 열 때.
 
-#. Open your course in Studio.
+#. Studio에서 강좌를 연다.
 
-#. Select **Settings**, and then select **Advanced Settings**.
+#. **설정** 을 선택한 후 **고급 설정** 을 선택한다.
 
-#. Locate the **Discussion Blackout Dates** field.
+#. “게시판 중단 날짜 ”까지 화면을 내린다.
 
-#. If the **Discussion Blackout Dates** field is empty, place your cursor
-   between the brackets ``([ ])``.
+#. 게시판 중단 날짜가 비어있다면  ``([ ])`` 사이에 마우스를 올려놓는다.
 
-   If the field already contains one or more blackout dates, place your cursor
-   before the final bracket ``(])``.
+   게시판 중단 날짜가 하나 이상 있다면 값을 넣은 필드에서 커서를 대괄호 사이에 놓는다.
 
-#. Enter the start and end date for the time period during which you want
-   discussions to be closed. Be sure to use the required :ref:`date format
-   specification <Start-End Date Format Specification>`.
+#. 시작 및 종료 날짜를 형식에 맞게 입력한다.
 
-  * To define the temporary blackout period in the example above, the field
-    contains start and end dates in the following format.
+  * 위 예에서 일시적 중단 시기를 정의하기 위해 필드에 다음 형식으로 시작 및 종료 날짜가 나온다.
 
     ``[["2016-07-22T08:00", "2016-07-25T18:00"]]``
 
-  * To add the dates that close the discussions permanently, the field contains
-    a second pair of start and end dates in the following format.
+  * 게시판을 영구적으로 종료하게 되는 날짜를 추가하기 위해 필드에 다음 형식으로 두번째 시작 및 종료 날짜가 나온다.
 
     ``[["2016-07-22T08:00", "2016-07-25T18:00"], ["2016-08-09T00:00", "2099-08-09T00:00"]]``
 
-#. Select **Save Changes**.
+#. **변경사항 저장하기** 를 클릭한다.
 
-   Studio checks the syntax of your entry and reformats your entry to add line
-   feeds and indentation. A message lets you know whether your changes were
-   saved successfully.
+   Studio는 라인 필드와 들여쓰기를 추가하여 입력 서식을 다시 설정한다. 저장이 성공적으로 되었다면 메시지가 나온다.
 
-For examples of email messages that you can send to let learners know when the
-course discussions are closed (or open), see :ref:`Example Messages to
-Students`.
+예를 들어, 강좌 게시판을 닫을 때(또는 열 때)를 학습자에게 알리기 위해 전송하는 전자 메일 서식은  :ref:`Example Messages to Students`  를 참고하길 바란다.
 
 
 .. _Discussions on Mobile Apps:
 
 ***************************************
-Discussions in the edX Mobile Apps
+모바일 환경에서 게시판 활용하기
 ***************************************
 
-Learners can participate in course discussions using the edX mobile apps as
-they do on the edX site, but there are some differences in the actions that
-moderators can take in discussions using the mobile apps. To perform
-moderation or administrative tasks for your course discussions, you need to
-work in a web browser.
+학습자는 브라우저와 동일하게 모바일 환경에서 게시판에 접속할 수 있지만 관리자가 할 수 있는 일에 차이가 있다. 게시판 조율이나 관리를 위해선 웹 브라우저를 사용해야 한다.
 
-* When learners access courses using the edX mobile apps, content-specific
-  discussion topics cannot currently be viewed "inline" as part of the course
-  content, although they can be viewed along with course-wide discussions on
-  the **Discussion** page.
+* 학습자가 모바일 환경에서 강좌에 접속하면 주제별 게시판은 게시판 페이지의 일반 게시판과 함께 볼 수밖에 없다.
 
-* The following actions are not supported on the edX mobile apps.
-  * Pinning posts
-  * Marking questions as answered
-  * Endorsing discussions
-  * Closing discussions or posts
+* 다음 기능은 모바일 환경에서 제공되지 않는다.
+  * 게시글 고정하기
+  * 답변 완료 표시하기
+  * 게시판 인도하기
+  * 게시판이나 글 닫기
 
 
 .. include:: ../../../links/links.rst

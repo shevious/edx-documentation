@@ -1,29 +1,22 @@
 .. _Launch:
 
 ##############################
-Course Launching Activities
+개강 준비
 ##############################
 
-This topic describes steps to launch your course.
+다음 장은 개강 준비 방법에 대해 다룬다.
 
 .. contents::
   :local:
   :depth: 1
 
 ****************************
-Overview
+개관
 ****************************
 
-To launch a course, you prepare the course itself, the course team, and the
-learners. This topic includes a :ref:`course launch checklist<Course Launch
-Checklist>` to use as a model for your schedule of activities.
+이 장에서는 개강에 대비해 준비 상태를 점검하기 위해  :ref:`course launch checklist<Course Launch Checklist>` 를 다룬다.
 
-To help you communicate to the course team or to all course participants
-before the course launches and while it is running, you can send email messages
-from the Instructor Dashboard. See :ref:`Bulk Email`. The topic on bulk email
-also includes a set of :ref:`example messages to learners<Example Messages to
-Students>` that you can use as guidelines when you write your own email
-messages.
+(강좌 시작 전후로 강좌 운영팀과 학습자의 의사소통을 돕기 위해 교수자 대시보드에서 이메일 메시지를 보낼 수 있다.  :ref:`Bulk Email` 을 확인한다. 여기에서  :ref:`example messages to learners<Example Messages to Students>` 를 확인할 수 있다.
 
 .. _Course Launch Checklist:
 
@@ -31,76 +24,37 @@ messages.
 Course Launch Checklist
 ****************************
 
-As the start date for your course approaches, a checklist or time line of
-activities can help you make sure that your course, and your learners, are
-ready to begin. Suggestions for activities to complete before your course
-starts follow.
+개강 전, 준비 점검표를 보면서 강좌의 준비 상태를 점검할 수 있다.
 
-**Verify Course Settings**
+**강좌 준비 확인하기**
 
-* Check the course start date and time in Studio. See :ref:`Scheduling Your
-  Course`.
-* Review the grading policy, and set a grace period for homework assignment
-  due dates. See :ref:`Grading Index`.
-* Confirm that any optional features that you want your course to include, such
-  as learner cohorts, are enabled and configured. See :ref:`Cohorts Overview`.
+* Studio에서 강좌 시작 날짜와 시간을 확인한다.  :ref:`Scheduling Your Course` 에 자세한 안내가 있다.
+* 채점 규정과 과제 제출 기한을 점검한다.  :ref:`Grading Index` 에 자세한 안내가 있다.
+* 학습 집단 만들기 처럼 강좌에 포함되었으면 하는 선택 사항을 확인하고 설정한다.  :ref:`Cohorts Overview` 에 자세한 안내가 있다.
 
-**Verify Certificates**
+**이수증 확인하기**
 
-* Make sure that certificates are correctly configured and ready to be issued.
-  See :ref:`Setting Up Course Certificates`.
+* 이수증 설정이 올바로 되어있는지 확인한다.  :ref:`Setting Up Course Certificates` 를 참고하면 된다.
 
-**Review First Week Content**
+**내용 검토하기**
 
-* Verify that all units are present and published. See :ref:`Developing Course
-  Units`.
-* Verify that videos, transcripts, and download links are in place and
-  working. See :ref:`Working with Video Components`.
-* Check all assignments for completeness and verify their due dates. See
-  :ref:`Working with Problem Components`.
-* Use edX Insights to review the answers that beta testers submitted for
-  problems, and to proofread your display names, accessible labels, and answer
-  text.
-* Review feedback from the course team and beta testers to be sure that the
-  content has been thoroughly reviewed and tested.
+* 게시된 모든 학습활동을 확인한다.  :ref:`Developing Course Units` 에 자세한 안내가 있다.
+* 동영상, 자막, 다운로드 링크등이 제 위치에서 잘 작동하는지 확인한다. :ref:`Working with Video Components` 에 자세한 안내가 있다.
+* 모든 과제의 완성도와 제출일을 확인한다.   :ref:`Working with Problem Components` 에 자세한 안내가 있다.
+* K-MOOC Insights를 사용해 베타테스터가 문제에 입력한 답안을 확인하고 메뉴 이름, 라벨 및 답안 테스트를 점검한다.
+* 강좌의 콘텐츠가 충분히 검토되고 테스트 되었는지 확인하기 위해 강좌 운영팀과 베타 테스트에게서 받은 피드백을 확인한다.
 
 **Welcome Learners**
 
-* Two months before the course start date, prepare and send a welcome email
-  message to currently enrolled learners. See :ref:`Prelaunch Reminder` and
-  :ref:`Send_Bulk_Email`.
-* Compose a welcome message and add it to the **Home** page. See
-  :ref:`Add a Course Update`.
-* Verify that a syllabus and other references are available on the **Course
-  Handouts** page. See :ref:`Add Course Handouts`.
-* One month before the course start date, prepare and send a welcome email
-  message to currently enrolled learners.
-* One week before the course start date, prepare and send a welcome email
-  message to currently enrolled learners.
-* Add an "Introduce Yourself" post to a discussion topic. For a MOOC, you may
-  want to manage the size of the thread by distributing learner responses
-  across multiple threads. For example, you can start different threads for
-  introductions based on geographical location, such as "Introduce Yourself:
-  Europe", "Introduce Yourself: North America", etc. See
-  :ref:`Running_discussions`.
-* On the course start date, prepare and send a launch email message to
-  currently enrolled learners. See :ref:`Launch Day Welcome`.
+* 강좌 시작 두 달 전, 한 달 전, 일주일 전에, 수강하는 학습자들에게 환영 메세지를 보낸다.  :ref:`Prelaunch Reminder` 및  :ref:`Send_Bulk_Email` 확인 .
+* 환영 메세지를 작성하고 강좌 안내 에 추가 한다.  :ref:`Add a Course Update` 에 자세한 안내가 있다.
+* 강좌 계획서와 참고 자료는 학습 자료 에서 이용가능한지 확인한다.  :ref:`Add Course Handouts` 학습 자료 추가하기 에 자세한 안내가 있다.
+* 게시판에 “자기 소개를 하세요”라는 주제를 추가 한다. 여러 경로로 학습자의 응답이 분산되도록 하여 학습자의 응답 수를 관리할 필요가 있다.  :ref:`Running_discussions`  에 자세한 안내가 있다..
+* 강좌가 시작되면 현재 등록된 학습자들에게 환영 메시지를 보낸다.  :ref:`Launch Day Welcome`  에 자세한 안내가 있다.
 
-**Prepare the Course Team**
+**운영팀 준비하기**
 
-* Define communication methods for all course contributors, including team
-  members with the Staff, Admin, and discussion moderation team roles. For
-  example, set up a course-specific email address.
-* Verify that all course contributors know how to record their work, report
-  issues, and collaborate on tasks.
-* Verify that the people who will be Admins or Staff for your course
-  have the correct role assignments in the LMS. See :ref:`Course_Staffing`.
-* Verify that the people you have given the Discussion Admin, Discussion
-  Moderator, and Discussion Community TA roles have registered and activated
-  their user accounts and enrolled in the course. See
-  :ref:`Assigning_discussion_roles`. Note that team members with the Admin and
-  Staff roles must also be given one of these roles to have discussion
-  moderation privileges.
-* Define methods for managing discussions and guidance for discussion
-  moderators, and distribute to the discussion team. See
-  :ref:`Moderating_discussions` and :ref:`Guidance for Discussion Moderators`.
+* 강좌 운영팀, 교수자, 게시판 관리팀 등 모든 강좌 관계자와 연락하는 방법을 확정한다. 예를 들어 강좌별 이메일 주소를 설정한다. 모든 강좌 관계자가 업무를 기록하고, 문제를 보고하고 협력해서 일을 진행하는 방법을 확인한다.
+* 교수자와 강좌 운영팀이 LMS에서 제대로 역할이 할당되어 있는지 확인한다.  :ref:`Course_Staffing` 에 자세한 안내가 있다.
+* 게시판 관리자, 게시판 운영자, 커뮤니티 조교가 등록되었고 계정이 활성화 되어져 있는지 확인한다. :ref:`Assigning_discussion_roles` 에 자세한 안내가 있다. 참고로 관리자 및 운영자는 이 역할 중 하나를 부여 받아야 게시판 관리 권한이 주어진다.
+* 게시판을 관리하는 방법과 게시판 운영자를 위한 방법을 정하고, 게시판 관리 팀에게 제공한다.  :ref:`Moderating_discussions` 및  :ref:`Guidance for Discussion Moderators` 에 자세한 안내가 있다.

@@ -1,18 +1,12 @@
 .. _Enrollment:
 
 ##########################
-Enrollment
+수강신청
 ##########################
 
-Learners can enroll themselves in a course during its defined enrollment
-period. For a course running on `edx.org`_, enrollment is publicly available to
-anyone who registers an edX account. For other courses, such as those on
-`edx Edge`_, enrollment is limited to learners who know the course URL
-and learners you explicitly enroll.
+수강 신청 기간 동안 학습자는 직접 수강 신청 할 수 있다. `kmoocs.kr`_ 의 강좌는 K-MOOC 계정으로 등록한 모든 사람들이 공개적으로 수강신청할 수 있다.
 
-The course creator and course team members with the Staff and Admin roles can
-enroll learners in a course. These course team members can also unenroll
-learners.
+강좌 운영팀과 관리팀은 강좌에 학습자를 수강 등록하거나 수강 신청한 인원을 확인할 수 있으며, 필요에 따라 학습자 수강 신청을 취소할 수 있다.
 
 .. contents::
   :local:
@@ -23,123 +17,79 @@ learners.
 
 .. only:: Open_edX
 
-  Data about course enrollment is available from the Instructor Dashboard and
-  from Insights. For more information, see :ref:`Report Learners Not Yet
-  Enrolled`.
+  수강신청에 관한 통계는 K-MOOC Insights에 나와있다. 실시간 강좌의 교수자 대시보드에서 Insights에 접속할 수 있으며 교수자를 클릭한 후 페이지 상단의 링크를 클릭하면 된다.  :ref:`insights:Using edX Insights` 에 자세한 안내가 나와있다.
 
 .. Feature has been turned off for edx.org and Edge (the data is available in Insights instead).
 .. DOC-2218 A. Hodges 24 Aug 2015
 
 .. only:: Partners
 
-  Data about course enrollment is available from edX Insights. You can access
-  Insights from the Instructor Dashboard for your live course: after you select
-  **Instructor**, follow the link in the banner at the top of each page. For
-  more information, see :ref:`insights:Using edX Insights`.
 
 .. _registration_enrollment:
 
 *********************************
-Registration and Enrollment
+가입과 수강신청
 *********************************
 
-Before a learner can enroll in a course, he or she must complete these steps.
+강좌에 등록하려면 다음 사항이 우선 이루어져야 한다    .
 
-#. Register a user account, which includes supplying a valid email address, on
-   ``www.edx.org``, ``edge.edx.org``, or your implementation of the edX
-   platform. Each platform requires a separate user account.
+#. www.kmoocs.kr 에 가입해야 한다.
 
-#. Activate the registered account by following the emailed instructions.
+#. 이메일 안내에 따라 등록된 계정을 활성화한다.
 
-As long as the course **Enrollment End Date** has not passed, learners who
-have registered and activated user accounts can enroll themselves in
-``www.edx.org`` courses, or can enroll in other courses if they know the URL.
+수강 신청 종료 날짜가 지나지 않은 한, 위 사항이 이루어지면 학습자 스스로 수강 신청할 수 있으며, 학습자가 알고 있는 URL에서 다른 강좌를 수강할 수 있다.
 
-Course creators, Admins, and Staff, however, can enroll learners in a course
-either before or after the learners register their user accounts.
+그러나, 강좌 개설자와 교수자가 학습자가 등록하기 전이나 후에도 학습자를 등록할 수 있다.
 
-.. important:: Course team members are not automatically enrolled in courses,
-   although they can access content in Studio, the LMS, and Insights. To work
-   on a course, every course team member must register, activate a user
-   account, and enroll in the course.
+.. important:: 강좌 운영팀은 자동으로 강좌에 추가되지 않는다. 모든 강좌 운영자는 등록을 끝내고 계정을 활성화한 후 강좌에 수강신청 해야한다.
 
 .. _enroll_student:
 
 *******************************************
-Options for Enrolling Learners in a Course
+학습자 수강 등록 처리하기
 *******************************************
 
-You enroll learners, and other course team members, in your course by
-supplying their email addresses. After the **Enrollment End Date** for a
-course learners can no longer enroll themselves; however, you can still
-explicitly enroll learners.
+이메일 주소를 입력하는 것으로 학습자와 다른 강좌 운영팀을 강좌에 등록 시킬 수 있다.  
 
-When you enroll people in a course, you have the following options.
+수강 신청 종료일 후에는 학습자 스스로가 더 이상 등록할 수 없지만 다음과 같은 방법으로 학습자를 등록할 수 있다.
 
-* **Auto Enroll**. When you choose this option, the people who you enroll do
-  not need to complete an explicit course enrollment step. Of the list of email
-  addresses that you supply, those that correspond to a registered user account
-  are immediately enrolled in the course, and your course displays on the
-  **Current Courses** dashboard for those users on log in. Email addresses on
-  the list that do not match a registered user account are enrolled as soon as
-  that account is registered and activated.
+* 자동 등록 을 선택할 경우 강좌 운영팀이 등록한 학습자는 정식 수강 신청 단계를 거치지 않아도 된다. 단, 강좌 운영팀이 입력한 이메일 주소가 정확하게 입력되어야 한다. 그러면 해당 학습자는 즉시 강좌에 등록되어 수강중인 강좌 대시보드에서 강좌를 볼 수 있을 것이다.
 
-  You can track the enrollment status of the learners who you auto enroll. For
-  more information, see :ref:`Report Learners Not Yet Enrolled`.
+  자동 등록한 학습자의 수강 상태를 조회할 수 있는데 :ref:`Report Learners Not Yet Enrolled` 에 자세한 안내가 나와있다.
 
-  If you do not select **Auto Enroll**, the people who you enroll must also
-  actively locate your course and enroll themselves in it. These learners see
-  the course on their dashboards after they have done so.
+  자동 등록을 선택하지 않으면 수강 등록하는 인원은 직접 강좌를 찾아 등록해야 한다. 이 학습자는 이런 절차를 밟은 후 대시보드에서 강좌를 확인할 수 있다.
 
-* **Notify learners by email**. When you choose this option, an email message
-  is automatically sent to each of the email addresses that you supply. The
-  message includes the name of the course and, for learners who are not already
-  enrolled, a reminder to use that same email address to enroll.
+* **메일로 학습자에게 공지** 를 선택할 경우, 입력된 각 이메일 주소로 이메일이 자동 발송된다. 이 메세지는 아직 수강신청하지 않은 학습자를 위해 강좌명과 등록처리를 위해 이 이메일 주소를 사용하라는 안내가 포함된다.
 
-  An example of the email message that a learner received when this option was
-  selected during enrollment follows. In this example, the learner already had
-  a registered and activated edx.org account, and both **Auto Enroll** and
-  **Notify students by email** were selected.
+  발송되는 이메일은 아래와 같다. 아래는 학습자가 K-MOOC 플랫폼에 가입했으며, 강좌 운영팀이 자동 등록 및 메일로 학습자에게 공지 를 선택한 경우다.
 
   .. image:: ../../../shared/images/Course_Enrollment_Email.png
         :alt: Email message inviting a student to enroll in an edx.org course.
 
 *********************************
-Enroll Learners in a Course
+강좌에 학습자 수강 등록하기
 *********************************
 
-To enroll learners or course team members, follow these steps.
+학습자 또는 관리자를 등록 시키려면.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Membership**.
+#. 교수자 대시보드의 교수자 탭에서 **등록 관리** 를 클릭한다.
 
-#. In the **Batch Enrollment** section of the page, enter the username or email
-   address of the learner, or enter multiple names or addresses separated by
-   commas or new lines.
+#. 일괄 등록 에서 아이디 또는 학습자 이메일 주소를 입력한다. 여러 명을 입력할 경우, 쉼표나 다른 줄 사용을 통해 학습자를 구분해야 한다.
 
-   You can copy and paste data from a CSV file of email addresses. However,
-   note that this feature is better suited to courses with smaller enrollments,
-   rather than courses with massive enrollments.
+   등록 시킬 학습자가 많은 경우에는 이메일 주소 CVS 파일에서 데이터를 복사하거나 붙여넣기를 하는 것이 좋다. 위의 방법은 소규모 인원을 등록시켜야 하는 강의에 적합하다.
 
-#. To streamline the course enrollment process, leave **Auto Enroll** selected.
+#. 강좌의 수강 신청 과정을 간소화 하려면 자동 등록 을 선택한다.
 
-#. To send learners an email message, leave **Notify students by email**
-   selected.
+#. 학습자에게 메일을 보내 등록 사실을 확인 받으려면 메일로 학습자에게 공지 를 선택한다.
 
-#. Select **Enroll**.
+#. **등록** 을 클릭한다.
 
-You can view or download a list of the people who are enrolled in the course.
-See :ref:`Student Data`.
+강좌에 수강중인 학습자의 목록을 조회하거나 다운로드하는 방법에 대해선 :ref:`Student Data` 에 자세한 안내가 나와있다.
 
 .. only:: Open_edX
 
-  .. note:: If your course has a fee, and an organization wants to purchase
-    enrollment for multiple seats in your course at one time, you can create
-    enrollment codes for the organization. The organization then distributes
-    these enrollment codes to its learners to simplify the enrollment process.
-    You can also create coupon codes to give learners a discount when they
-    enroll in your course. For more information, see :ref:`Manage Course Fees`.
 
   .. include:: ../../../shared/manage_live_course/Section_view_enrollment_count.rst
 
@@ -147,69 +97,47 @@ See :ref:`Student Data`.
 .. _Report Learners Not Yet Enrolled:
 
 ********************************
-Report Learners Not Yet Enrolled
+아직 등록하지 않은 학습자 보고서
 ********************************
 
-After you enroll learners in a course using the **Auto Enroll** option, any
-learner who does not yet have a user account must register and activate an
-account to complete the enrollment process. In addition, the learner must
-register the account using the same email address that was used for auto
-enrollment. You can download a report of auto enrolled email addresses that do
-not yet correspond to an enrolled learner.
+자동 등록을 통해 학습자를 강좌에 수강 등록했지만 아직 계정이 없는 학습자는 수강 등록을 완료하기 위해 등록 후 활성화 절차를 밟아야 한다. 또한 학습자는 자동 등록에 사용된 것과 동일한 이메일 주소를 사용해야 한다. 자동 등록되었으나 아직 수강 등록이 끝나지 않은 학습자의 이메일 주소 보고를 다운로드 받을 수 있다.
 
-To download this report, follow these steps.
+다운로드 하기 위해서.
 
-#. View the live version of your course.
+#. 강좌의 실시간 보기를 조회한다.
 
-#. Select **Instructor**, and then select **Data Download**.
+#. **교수자** 아래 **자료 다운로드** 를 선택한다.
 
-#. In the **Reports** section of the page, select **Download a CSV of learners
-   who can enroll**.
+#. 화면의 보고 부분에서 등록 가능한 학습자 목록 CSV 파일 다운로드를 선택한다.
 
-  A status message indicates that report generation is in progress. This
-  process can take some time to complete, but you can navigate away from this
-  page and do other work while it runs.
+  보고를 생성 중이라는 메시지가 나올 것이다. 이 과정엔 시간이 걸릴 수 있으나 페이지에서 벗어나 다른 작업을 수행할 수 있다.
 
-  To track the progress of the report process, reload the page in your browser
-  and scroll down to the **Pending Tasks** section.
+  보고 생성 과정을 보려면 브라우저에서 새로고침 하고 화면 하단의 대기중인 작업을 본다.
 
-4. To open or save the report, select the
-   ``{org}_{course_id}_may_enroll_info_{date}.csv`` file name at the bottom of
-   the page.
+4. 보고를 열거나 저장하려면 페이지 하단의  ``{org}_{course_id}_may_enroll_info_{date}.csv`` 파일을 선택한다.
 
 .. _unenroll_student:
 
 *********************************
-Unenroll Learners from a Course
+학습자 등록 취소하기
 *********************************
 
-You can remove learners from a course by unenrolling them. To prevent learners
-from re-enrolling, course enrollment must also be closed. You use Studio to set
-the **Enrollment End Date** for the course to a date in the past. For more
-information, see :ref:`Scheduling Your Course`.
+학습자의 등록을 취소함으로써 해당 학습자를 전체 수강 인원에서 삭제할 수 있다. 학습자가 다시 등록 하는 것을 방지하려면 수강 신청이 종료되어야 한다. Studio에서 현재 보다 이전 시점으로 수강 신청 종료 날짜 를 설정한다. 이에 관해선  :ref:`Scheduling Your Course`  에 더 자세히 안내되어 있다.
 
-.. note:: Unenrollment does not delete data for a learner. An unenrolled
-   learner's state remains in the database and is reinstated if the learner
-   does re-enroll.
+.. note:: 등록 취소는 학습자의 데이터를 삭제하지 않는다. 등록 취소된 학생의 상태는 데이터베이스에 남아 있고, 재 등록시 저장된 정보를 활용하게 된다.
 
-To unenroll learners, you supply the email addresses of enrolled learners.
+등록된 학습자의 등록을 취소하려면, 이메일 주소를 입력해야 한다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Membership**.
+#. 교수자 대시보드의 교수자 탭에서 **등록 관리** 를 클릭한다.
 
-#. In the **Batch Enrollment** section of the page, enter a username or an
-   email address, or multiple names or addresses separated by commas or new
-   lines.
+#. **일괄 등록** 에서 아이디 또는 학습자 이메일 주소를 입력한다. 여러 명을 입력할 경우, 쉼표나 다른 줄 사용을 통해 학습자를 구분해야 한다.
 
-#. To send learners an email message, leave **Notify students by email**
-   selected.
+#. 학습자에게 메일을 보내 등록 사실을 확인 받으려면 메일로 **학습자에게 공지** 를 선택한다.
 
-   .. note:: The **Auto Enroll** option has no effect when you select
-     **Unenroll**.
+   .. note:: **등록 취소** 를 클릭하면, **자동 등록** 할 수 없다.
 
-#. Select **Unenroll**. The course is no longer listed on the learners'
-   **Current Courses** dashboards, and the learners can no longer access the
-   course content or contribute to discussions or the wiki.
+#. **등록 취소** 를 클릭한다. 그러면 수강중인 강좌 대시보드에 강좌가 나타나지 않을 것이며, 해당 학습자는 **게시판이나 위키** 등 강좌 내용에 접근할 수 없다.
 
 .. include:: ../../../links/links.rst

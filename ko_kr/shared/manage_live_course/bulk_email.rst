@@ -1,29 +1,17 @@
 .. _Bulk Email:
 
 ##############################
-Bulk Email
+전체 이메일
 ##############################
 
-For courses on edx.org, you can send bulk email messages to course
-participants directly from the instructor dashboard. Messages can use HTML
-styling, and can include links to videos, social media pages for the course,
-and other material. All course team members who have the Staff or Admin role
-can use bulk email messages to communicate with course participants before,
-during, and after the course run.
+교수자 대시보드에서 강좌 수강생에게 전체 이메일을 보낼 수 있다. 메시지는 HTML 형식을 사용할 수 있으며, 강좌에 관한 비디오, 소셜 미디어 페이지와 기타 자료를 링크로 걸어둘 수 있다. 강좌 운영팀이나 교수자로 역할을 부여 받은 모든 강좌 참가자들은 강좌를 운영하기 전/중/후에 강좌 수강생과 소통하기 위해서 전체 메일을 사용할 수 있다.
 
-Learners are less likely to read and respond to email messages from courses
-when they receive too many of them. As a best practice, do not send more than
-one email message per week to course participants, unless there is good reason
-to do so.
+학습자는 너무 다수의 이메일 받았을 때 그것을 읽지 않는 경향이 있다. 한 주에 하나 이상의 이메일을 보내지 않는 것이 좋다.
 
-.. note:: Some courses use third party services such as MailChimp to send bulk
-   email. Do not use both a third party service and the edX bulk email
-   service. If you use more than one service to send email message, your
-   messages are more likely to be marked as spam, and learners might not read
-   them.
+.. note:: 일부 강좌는 MailChimp 등의 외부 프로그램을 사용해 전체 이메일을 보낸다. K-MOOC 전체 이메일 서비스와 외부 프로그램을 동시에 사용하면 안된다. 하나 이상의 서비스를 사용해 발송하면 스팸 이메일로 분류될 가능성이 높기 때문이다.
 
 
-This section contains the following topics.
+이 장은 다음과 같은 주제를 다룬다.
 
 .. contents::
   :local:
@@ -35,229 +23,168 @@ This section contains the following topics.
 Message Addressing
 *************************
 
-When you send a bulk email message from the instructor dashboard, you choose
-its recipients by selecting a **Send to** option. You can select one or more
-recipient groups for each message. For details about who is included in each
-of the preset recipient groups, see :ref:`Bulk Email Who Is Included or
-Excluded`.
+교수자 대시보드에서 이메일을 보낼 때,  ~에게 옵션을 선택해 수신자를 선택한다. 하나 이상의 수신자를 선택할 수 있다. :ref:`Bulk Email Who Is Included or Excluded` 에 더 자세한 안내가 나와있다.
 
-When you send a message to more than one recipient group, duplicate recipients
-are filtered out, so that someone who belongs to more than one of the
-recipient groups (for example, a course team member who is also enrolled in
-the course) only receives one copy of the message.
+하나 이상의 수신자 그룹에 메시지를 보낼 때 중복 수신자는 자동으로 걸러지므로 하나 이상의 그룹에 소속되어 있어도 (강좌에 수강 신청한 강좌 운영자 등) 메시지는 한 통만 받게 된다.
 
-The following preset recipient groups are available.
+다음과 같이 미리 정의된 그룹이 있다.
 
-* **Myself**. Send an email message only to yourself, to test and review the
-  message before sending it to a larger group.
+* **나** 는 전체에 이메일을 보내기 전에 테스트하기 위한 목적으로 사용한다.
 
-* **Staff and Administrators**. Send an email message to members of the course
-  team who have Staff or Admin privileges. For information about course
-  team member privileges, see :ref:`Course_Staffing`.
+* **운영팀과 교수자** 는 다른 강좌 운영팀 구성원에게 연락하기 위한 목적으로 사용한다. :ref:`Course_Staffing` 에 자세한 안내가 나와있다.
 
-* **All Learners**. Send an email message to all currently enrolled learners,
-  including course team members who are enrolled in the course. This group
-  does not include learners who have not activated their accounts, or who
-  have opted out of receiving email communications.
+* **모든 학습자** 현재 수강 중인 학습자뿐만 아니라 관리팀에게 연락하기 위한 목적으로 사용한다. 이 그룹은 계정을 활성화하지 않았거나 이메일을 수신하지 않기로 선택한 학습자는 포함하지 않는다.
 
-In addition, if you have cohorts enabled in your course, each cohort is
-available as a separate recipient group. For more information, see :ref:`Bulk
-Email Cohorts`.
+추가적으로 만약 강좌에서 학습집단을 활용하고 있다면 각 집단을 수신자로 지정할 수 있다.  :ref:`Bulk Email Cohorts` 에 더 자세한 안내가 나와있다.
 
 
 .. _Bulk Email Who Is Included or Excluded:
 
 =========================================
-Who Is Included in Each Recipient Group?
+각 수신자 그룹에는 누가 포함되나?
 =========================================
 
-When you send a bulk email message to one of the preset recipient groups, you
-should be aware of who is included in each group.
+이메일을 미리 정의된 그룹에 보낼 때 각 그룹에 누가 포함되는지 알아야 한다.
 
 
 .. list-table::
    :widths: 30 40 40
    :header-rows: 1
 
-   * - Recipient Group
-     - Includes
-     - Does Not Include
-   * - Staff and Administrators
-     - * Any course team member who has the **Staff** role.
-       * Any course team member who has the **Admin** role.
-     - * Beta testers who do not also have the **Staff** or **Admin** role.
-       * Discussion moderators who do not also have the **Staff** or **Admin** role.
-       * Discussion administrators who do not also have the **Staff** or **Admin**
-         role.
-       * Discussion community TAs.
-   * - All Learners
-     - * All currently enrolled learners in your course, including those who
-         have enrolled but have not yet accessed the course.
-       * Course team members who are enrolled in your course.
-     - * Learners who have not replied to the account activation email message
-         that they received when they registered on edx.org.
-       * Learners who have opted out of receiving email messages through the
-         **Email Settings** link for the course on the learner's dashboard.
+   * - 수신자 그룹
+     - 포함되는 인원
+     - 포함되지 않는 인원
+   * - 운영팀과 관리자
+     - * 운영자.
+       * 관리자.
+     - * **운영자** 또는 **관리자** 역할이 없는 베타테스터.
+       * **운영팀** 이나 **관리팀** 역할이 없는 토의진행자.
+       * **운영팀** 이나 **관리팀** 역할이 없는 게시판 관리자.
+       * 게시판 커뮤니티 조교.
+   * - 모든 학습자
+     - * 전체 수강신청자(수강 신청을 했지만 아직 강좌페이지에 접속하지 않은 학습자 포함).
+       * 강좌를 수강중인 강좌 운영팀.
+     - * 계정 활성화 이메일 메시지에 응답하지 않은 학습자.
+       * 학습자 대시보드의 이메일 설정에서 이메일을 받지 않기로 설정한 학습자.
 
-.. note:: To send an email message to all course team members as well as all
-   learners, select both **Staff and Administrators** and **All Learners**.
-   Recipients who are in both groups will receive only one copy of the email
-   message.
+.. note:: 그룹 복수 선택도 가능하다. 이 경우 복수 그룹에 속해 있는 사용자일지라도 이메일은 한 통만 받게 된다.
 
 
 .. _Bulk Email Cohorts:
 
 ===================================================
-Sending Email Messages to Learners in Cohorts
+학습집단의 학습자에게 이메일 보내기
 ===================================================
 
-If you enable cohorts in your course, each cohort is available as a separate
-recipient group. The recipient groups for individual cohorts only include
-enrolled learners who have been assigned to a cohort, whether they were
-automatically assigned when they accessed the course or manually assigned to a
-cohort by a member of the course team.
+강좌에서 학습집단을 사용 중이라면 각 학습집단을 수신자 그룹으로 지정할 수 있다. 개별 학습집단이 수신자 그룹으로 지정되면 집단에 배정된 수강중인 학습자만을 포함하게 된다.
 
-The recipient groups for cohorts do not include enrolled learners who have not
-been added to a cohort. This might be the case if they have not accessed the
-course or have not been manually added to a cohort by a member of the course
-team. To make sure such learners are included in email messages that are
-intended for all enrolled learners, select the **All Learners** recipient
-group instead of selecting all of the cohort recipient groups.
+학습집단에 배정되지 않은 학습자는 포함되지 않는다. 아직 강좌 수강을 시작하지 않았거나 강좌 운영팀이 학습집단에 직접 배치하지 않았을 경우 발생할 수 있다. 이런 학습자가 확실하게 이메일을 받을 수 있도록 하려면 전체 학습자를 선택하면 된다.
 
-If a default cohort exists in your course, a recipient group named **Cohort:
-Default Group** is also available.
+기본 학습집단이 있다면 학습집단: 기본 그룹이라는 이름의 수신자 그룹도 가능하다.
 
-.. note:: The default cohort is created only if you have not created at least
-   one automated assignment cohort in your course by the time the first
-   learner accesses course content. If learners access the course before you
-   have created any automated cohorts, they are automatically placed in the
-   default cohort, to ensure that all learners in the course belong to a
-   cohort. You can manually reassign learners from the default cohort to
-   another cohort. For more information, see :ref:`Default Cohort Group`.
+.. note:: 학습자가 수강을 시작했을 때 아직 자동으로 배치된 학습집단이 존재하지 않는다면 기본 학습집단이 만들어진다. 자동으로 배치된 학습집단을 생성하기 전에 학습자가 수강을 시작한다면 자동으로 기본 학습집단에 배치된다. 직접 학습자를 기본 학습집단에서 다른 집단으로 옮길 수 있다. 모든 학습자 배치하기:  :ref:`Default Cohort Group` 에 더 자세한 안내가 나와있다.
 
 
 .. _Options for Email Message Text:
 
 *******************************
-Composing Email Messages
+이메일 구성하기
 *******************************
 
-When you compose an email message, you can use the following options.
+다음과 같이 이메일을 구성할 수 있다.
 
 .. contents::
   :local:
   :depth: 1
 
 =======
-Styling
+디자인
 =======
 
-Messages can include HTML styling, including text formatting and links. The
-email message editor offers the same formatting options as the HTML component
-editor in Studio.
+이메일은 텍스트 형식과 링크를 포함한 HTML 디자인을 넣을 수 있다. 이메일 편집기는 스튜디오의 HTML 구성요소 편집기와 동일한 기능을 제공한다.
 
-For more information, see :ref:`Working with HTML Components`.
+:ref:`Working with HTML Components`  에 더 자세한 안내가 나와있다.
 
 ======
-Images
+이미지
 ======
 
-Messages can include images. To include an image, you must first add the file
-to your course on the **Files & Uploads** page. For an email message, you copy
-the **Web** URL that the system assigns to the image. Then, in the email
-message editor, you select the **Insert/edit image** icon to add the web URL.
+이메일엔 이미지가 포함될 수 있다. 이미지를 추가하기 위해 먼저 강좌 파일 업로드 페이지에 이미지 파일을 올려야 한다. 이메일에 시스템이 이미지에 배정하는 웹 URL을 복사해서 넣어야 한다. 그 후 이메일 편집기에서 이미지 추가/편집 아이콘을 클릭해 웹 URL을 추가한다.
 
-To ensure that your course assets are transmitted securely, add the
-``https://`` preface to the web URL. An example follows.
+https:// 을 웹 URL에 다음 예제와 같이 추가해야 한다.
 
 ::
 
     https://courses.edx.org/asset-v1:{course}.x+{run}+type@asset+block@{image}.jpg
 
-For more information, see :ref:`Add Files to a Course`.
+:ref:`Add Files to a Course` 에 더 자세한 안내가 나와있다.
 
 =========
-Keywords
+키워드
 =========
 
-Messages can include variables that represent values that are specific to each
-message recipient, such as learner name or user ID. The LMS substitutes these
-variables, called keywords, with actual values when it sends a message.
+이메일에는 각 이메일 수신자를 지칭하는 학습자 이름이나 ID와 같은 값이 포함될 수 있다. 학습 관리 시스템은 이러한 정보를 키워드로 대체하여 이메일을 보낸다.
 
-For more information, see :ref:`Use Keywords in Messages`.
+:ref:`Use Keywords in Messages` 에 더 자세한 안내가 나와있다.
 
 .. _Send_Bulk_Email:
 
 **************************************************
-Send an Email Message to Course Participants
+이메일 보내기
 **************************************************
 
-.. Important:: You cannot cancel bulk email messages after you send them.
+.. Important:: 전체 이메일 보내기는 발송 후 취소할 수 없다.
 
-   Before you send a message to a wide audience, send the message only to
-   yourself to test and review it. Make sure it displays as you intend it to,
-   and that any links or media function correctly.
+   많은 대상에게 이메일을 보내기 전에 자신에게만 이메일을 보내 테스트한다. 원하는 대로 이메일이 작성되었고 링크나 미디어 기능이 작동하는지 확인한다.
 
-To send an email message to course participants, follow these steps.
+강좌 수강생에게 이메일을 보내기 위해.
 
-#. View the live version of your course.
+#. **적용 결과 보기** 를 클릭한다.
 
-#. Select **Instructor**, and then select **Email**.
+#. **교수자** 를 클릭한 후 이메일(EMAIL) 을 클릭한다.
 
-#. From the **Send to** option, select one or more groups of email recipients.
+#. **수신자** 드롭다운 목록에서 하나 이상의 대상을 선택한다.
 
-   .. note:: Make sure you understand who is included or excluded when you
-      send a message to one, or a combination, of the recipient groups. For
-      details, see :ref:`Bulk Email Who Is Included or Excluded`
+   .. note:: :ref:`Bulk Email Who Is Included or Excluded` 를 참고하여 수신자 그룹을 지정한다.
 
-#. In the **Subject** field, enter a subject for the message.
+#. 이메일 제목을 입력한다.
 
-#. In the **Message** box, enter the text for the message.
+#. 이메일의 본문을 입력한다.
 
-   For details about options for composing your message, see
-   :ref:`Options for Email Message Text`.
+   :ref:`Options for Email Message Text` 에 이메일 작성에 관한 자세한 안내가 나와있다.
 
-#. Select **Send Email**. A bulk email task is queued for processing.
+#. **이메일 발신** 을 클릭한다.
 
-Multiple courses use the same queue to complete these tasks, so it can take
-some time for your message to be sent to all of its recipients. You can
-perform other tasks on the instructor dashboard or navigate to other pages
-while you wait for your message to be sent.
+여러 강좌가 이메일을 동시에 발송했다면, 모든 수신자에게 이메일을 전송하는 데 약간의 시간이 걸릴 수 있다. 이메일 발신 버튼을 눌렀다면, 교수자 대시보드에서 벗어나 다른 작업을 수행하다가 나중에 돌아와서 확인해도 된다.
 
 
 .. _Use Keywords in Messages:
 
 ****************************
-Use Keywords in Messages
+이메일에 키워드 활용하기
 ****************************
 
-You can include keywords in your messages. A keyword is a variable: when you
-send the message, a value that is specific to the each recipient is substituted
-for the keyword. For example, when you use the ``%%USER_FULLNAME%%`` keyword,
-each message contains the name of the recipient.
+이메일에 키워드를 포함할 수 있다. 키워드는 하나의 값으로서 이메일을 보낼 때 각 수신자를 지칭하는 값을 대체하는 것이다. 예를 들어  ``%%USER_FULLNAME%%`` 키워드를 사용하면 각 이메일에 수신자 이름이 포함된다.
 
 .. note::
-  Do not use keywords in the Subject line of a message. The keyword in the
-  subject will not be assigned a value, and the recipient will see the keyword
-  text.
+  이메일 제목에는 키워드를 사용하지 않는다. 제목에 포함된 키워드는 값이 배정되지 않으며 수신자에게 키워드 텍스트가 그대로 보이게 된다.
 
 ===================
-Supported Keywords
+키워드 종류
 ===================
 
-You can use the following keywords in your messages.
+다음 키워드를 사용할 수 있다.
 
-* ``%%USER_ID%%`` - the anonymous user ID of the message recipient
-* ``%%USER_FULLNAME%%`` - the full name of the message recipient
-* ``%%COURSE_DISPLAY_NAME%%`` - the display name of the course
-* ``%%COURSE_END_DATE%%`` - the end date of the course
+* ``%%USER_ID%%`` - 수신자 ID
+* ``%%USER_FULLNAME%%`` - 수신자 이름
+* ``%%COURSE_DISPLAY_NAME%%`` - 강좌명
+* ``%%COURSE_END_DATE%%`` - 강좌 종료일
 
 ===================
-Keyword Formatting
+키워드 형식
 ===================
 
-You format keywords as: ``%%Keyword%%``.  You can include keywords in any HTML
-tags in an email message. An example follows.
+``%%Keyword%%`` 로 키워드를 설정한다. 모든 HTML 태그의 키워드를 이메일에 다음과 같이 쓸 수 있다.
 
 ::
 
@@ -270,105 +197,81 @@ tags in an email message. An example follows.
 .. _Email_queuing:
 
 ****************************
-Message Workflow States
+이메일 발송 절차
 ****************************
 
-When you select **Send Email** for a message, the server begins to process a
-bulk email task. The server assigns a series of different workflow states to
-the task.
+이메일 발신 을 클릭하면, 서버는 전체 이메일 발송 작업을 시작한다. 서버는 일련의 여러 작업 단계를 최소 작업 단위(task)에 대입한다.
 
 .. image:: ../../../shared/images/Bulk_email_states.png
        :alt: Flowchart of the possible states of a bulk email task.
 
-Bulk email tasks can have the following workflow states.
+전체 메일 전송 작업을 위한 작업 흐름 상태는 다음과 같다.
 
-* Queuing: The bulk email task is created and being queued for background
-  processing.
-* Pending: The task is queued and is waiting to run.
-* Started: Background processing is in progress to create emailing subtasks.
-* Progress: The emailing subtasks are in progress.
-* Success: All emailing subtasks are complete. Note that the bulk email task
-  can be in this state even if some or all of its emailing subtasks failed.
-* Failure: An error occurred and task processing did not complete successfully.
+* 대기 행렬(Queuing): 전체 이메일 발송 작업이 실행되고, 백그라운드 처리를 위해 대기한다.
+* 보류(Pending): 작업이 대기 되어 실행을 기다리고 있다.
+* 시작(Started): 메일 전송 작업을 수행하기 위해 사전 작업이 진행된다.
+* 진행(Progress): 메일 전송 작업이 진행된다.
+* 성공(Success): 모든 메일 전송 하위 작업이 완료된다. 전체 메일 전송 작업은 일부 메일 전송 하위 작업이 실패하더라도 이 상태에서 있을 수 있음에 주목한다.
+* 실패(Failure): 오류가 발생하고, 작업 처리가 성공적으로 완료되지 않았다.
 
-While the bulk email task is in progress, you can find out how far it has
-gotten in the workflow by checking the **Pending Tasks** section on
-the **Email** page.
+전체 메일 전송 작업이 진행되는 동안 이메일(EMAIL) 페이지에서 **대기중인 작업 목록** 를 확인함으로써, 작업 흐름에 도달하는 데 걸리는 시간을 알아볼 수 있다.
 
 .. image:: ../../../shared/images/Bulk_email_pending.png
        :alt: Information about an email message, including who submitted it
              and when, in tabular format
 
-When the bulk email task is complete, you can find its final state by checking
-the Email Task History report. For more information, see :ref:`Email Task
-History Report`.
+전체 메일 전송 작업이 완료되면, 이메일 발신 기록 을 확인하여 최종 상태를 확인할 수 있다.  :ref:`Email Task History Report` 을 참고하길 바란다.
 
 .. _Review Sent Messages:
 
 ********************************
-Review Sent Messages
+보낸 이메일 확인하기
 ********************************
 
-You can review a list of all of the messages that have been sent for the
-course. For any listed message, you can review the subject, the username of the
-person who sent it, the date and time sent, its selected recipients, and the
-message text.
+강좌와 관련해서 전송된 모든 이메일 목록을 검토할 수 있다. 나열된 이메일은 제목, 보낸 사람, 보낸 날짜와 시간, 받은 사람 그리고 메일 내용까지 검토할 수 있다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Email**.
+#. **교수자** 를 클릭한 후 **이메일(EMAIL)** 을 클릭한다.
 
-#. In the **Email Task History** section of the page, select **Sent Email
-   History**. The list of sent messages displays.
+#. 이메일 발신 기록 항목에 이메일 발송 내역 확인을 클릭한다. 보낸 이메일 목록이 뜬다.
 
    .. image:: ../../../shared/images/Bulk_email_list.png
     :alt: A tabular list of sent messages, with columns for subject, sent by,
           time sent, and number sent.
 
-#. To review additional information for a message, select its subject. The
-   message opens in a dialog box.
+#. 메시지의 추가 정보를 검토하기 위해 이메일 제목을 클릭한다. 대화 상자에서 메시지가 열린다.
 
    .. image:: ../../../shared/images/Bulk_email_sent.png
     :alt: A dialog box with the subject, sent by, date and time sent, sent to,
           and message for an email message, and an option to Copy Email
           to Editor.
 
-#. Optionally, use the message as the basis for a new message: select **Copy
-   Email to Editor**. The dialog box closes and you can edit the text, links,
-   and formatting that were duplicated into the **Subject** and **Message**
-   fields.
+#. **새로운 이메일** 을 위해 기존의 메일을 선택적으로 사용할 경우, 편집기로 **이메일 복사하기** 를 클릭한다. 대화상자는 닫히고, **제목** 과 본문 필드에서 복사한 텍스트, 링크, 서식을 편집할 수 있다.
 
-   When you create a message by copying a previously-sent message, be sure to
-   review and test it thoroughly before you send it to all course participants.
+   이전에 보낸 메일을 복사하여 새로운 메일을 작성할 때, 모든 강좌 수강생에게 보내기 전에 철저히 검토하고 테스트해야 한다.
 
 .. _Email Task History Report:
 
 ********************************
-Email Task History Report
+이메일 작업 이력
 ********************************
 
-The Email Task History report can help you keep track of who sent messages,
-when, and to how many people. For each message sent, the report includes the
-username of the requester, the date and time it was submitted, the duration and
-state of the entire task, the task status, and the task progress.
+이메일 작업 이력 보고서는 메일을 전송한 사람, 시간과 전송한 사람의 수를 추적할 수 있다. 전송된 각 이메일에 대한 보고서에는 요청자 이름, 전송 날짜와 시간, 작업 진행 기간과 상태, 작업 등이 포함된다.
 
-You can use this history to investigate questions relating to bulk email
-messages that have been sent, such as these examples.
+전송된 메일과 관련된 다음과 같은 질문에 답하기 위해 이 기록을 사용할 수 있다.
 
-* How frequently learners are sent course-related email messages.
-* Whether a message was sent successfully.
-* The change in the number of people who were sent course-related messages over
-  time.
+* 학습자가 강좌와 관련된 메일을 받은 빈도.
+* 이메일이 성공적으로 전송되었는지 여부.
+* 시간 경과에 따라 강좌와 관련된 메일을 받은 사람의 수의 변화.
 
-To produce the Email Task History report, follow these steps.
+이메일 발신 기록 보고서를 제출하려면.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Email**.
+#. **교수자** 를 클릭한 후 **메일** 을 클릭한다.
 
-#. In the **Email Task History** section of the page, select **Show Email Task
-   History**. A report like the following example displays on the instructor
-   dashboard.
+#. **이메일 발신 기록** 에서 **이메일 작업 이력 나타내기** 를 클릭한다. 다음 예시와 같은 보고서는 교수자 대시보드에 나타난다.
 
 .. image:: ../../../shared/images/Bulk_email_history.png
        :width: 800
@@ -377,41 +280,28 @@ To produce the Email Task History report, follow these steps.
         task progress.
 
 ===========================
-Review Email Task History
+이메일 작업 이력 확인하기
 ===========================
 
-For tasks with a **State** of Success, the **Task Progress** column shows an
-informational message. These messages can have a format such as "Message
-successfully emailed for 13457 recipients (skipping 29) (out of 13486)". To
-interpret this message, note that:
+상태가 성공일 경우, 작업 진행 열에 정보를 제공하는 메시지가 나타난다. 이 메시지는 “13,457명의 수신자에게 성공적으로 전달된 메시지(29명 읽지 않음) (13,486명 중)”와 같은 형식을 가질 수 있다. 이 메시지를 해석하기 위해서 다음을 알아야 한다:
 
-* The first number ("recipients") indicates the number of messages sent to the
-  selected recipients.
+* 첫 번째 숫자(“수신자”)는 선택한 수신자에게 보낸 메시지의 수를 나타낸다.
 
-* The second number ("skipping") indicates the number of enrolled and activated
-  users who were not sent the message. This count is of learners who have opted
-  not to receive course email messages.
+* 두 번째 숫자(“읽지 않음”)는 강좌에 등록되어 있으며, 계정이 활성화된 사용자 중 메시지를 받지 않은 사용자의 수를 나타낸다. 이 수는 강좌와 관련된 메일 수신을 거부한 학생의 수이다.
 
-* The final number ("out of") indicates the number of users in the set of
-  recipients you selected who were enrolled in the course (and had activated
-  their user accounts) when you sent the email message.
+* 마지막 숫자(“총 사람 수”)는 메일을 전송할 때 (그들의 사용자 계정이 활성화되었으며) 강좌에 등록되어 있어 선택한 수신자에 있는 사용자의 수를 나타낸다.
 
-  Note that the **Total number of enrollees** shown on the **Home** page
-  includes all currently enrolled learners, regardless of account activation
-  status, and as a result can be different than this number.
+  강좌 정보 페이지에 나타난 총 등록자 수는 계정 활성화 상태와 상관없이 현재 등록된 모든 학습자를 말하며, 결과적으로 위의 사람들의 총 수와 다를 수 있다.
 
-If the "recipients" and "out of" numbers are the same, the message reads
-"Message successfully emailed for 13457 recipients" instead.
+만약 “수신자”와 “총 사람 수”가 같다면, “13,457명의 수신자에게 성공적으로 전달된 메시지”라는 메시지를 읽을 수 있을 것이다.
 
-Other **Task Progress** messages for tasks with a **State** of Success indicate
-that some or all of the emailing subtasks did not successfully send email:
+상태가 성공일 경우, 위의 메시지가 아닌 아래와 같이 다른 메시가 나타난다면  메일 전송의 전체 또는 일부 작업이 성공적이지 않음을 의미한다:
 
-* "Message emailed for {number succeeded} of {number attempted} recipients"
-* "Message failed to be emailed for any of {number attempted} recipients"
-* "Unable to find any recipients to be emailed"
+* “{메일 전송 시도한 수}의 수신자 중 {메일 전송 성공한 수}의 수신자에게 메일을 전송했습니다.”
+* “{메일 전송 시도한 수}의 수신자에게 메일 전송에 실패했습니다.” 
+* “메일을 전송할 수신자를 찾을 수 없습니다.”
 
-No **Task Progress** messages display for tasks that have a **State** of
-Failure.
+**작업 진행** 메시지는 실패한 상태 인 작업에서 보이지 않는다.
 
 .. _Example Messages to Students:
 
@@ -419,52 +309,31 @@ Failure.
 Example Messages to Learners
 *********************************
 
-You can use these example messages, prepared for delivery before typical course
-milestones, as models for your own course communications.
+강좌 내의 소통을 위해 일반적인 강좌 일정보다 미리 강좌를 준비하면서, 다음 메일 예시를 사용할 수 있다.
 
 .. contents::
   :local:
   :depth: 1
 
-These messages are styled as email messages, but you could also post this
-information in a course discussion topic or on the **Home** page. To use
-:ref:`keywords <Use Keywords in Messages>`, you must send email messages;
-keywords are not supported in discussion topics or the **Home** page.
+이러한 메시지는 메일 형태로 되어 있지만, 강좌 게시판 주제나 홈 페이지에 이러한 정보를 게시할 수 있다. 키워드는 사용할 수 없으며 키워드 사용을 위해선 반드시 이메일을 보내야 한다.
 
 .. important::
- Revise these message templates carefully to include facts for
- your own course, meet the needs of your learners, and reflect your own
- objectives and personality. Search for the "{" and "}" characters to locate
- prompts and replace them with course-specific values.
+ 자신이 수강하는 강좌의 정보를 포함하고 학습자의 요구사항을 충족하며 각자의 목표와 성향을 반영하기 위해 이러한 메시지 서식을 수정한다. 프롬프트(지시 메시지)를 찾기 위해 {“and”} 문자를 검색하고, 그들을 각 강좌에 해당하는 값으로 바꾼다.
 
- Some of these messages also contain :ref:`keywords <Use Keywords in
- Messages>`. Values specific to your course and the recipients will be
- substituted for the keywords when you send the messages. Ensure you are using
- keywords appropriately for your course and objectives.
+ 이 메시지의 일부는 키워드를 포함한다. 강좌와 수신자를 특정하는 값은 키워드로 대체된다.
 
 .. _Prelaunch Reminder:
 
 ====================
-Pre-launch Reminder
+개강 전 알림 메일
 ====================
 
-Pre-launch reminders raise awareness of the course start date, publicize the
-course, and generate excitement. In addition to the course start date and time,
-the example that follows also lets learners know that:
+개강 전 알림 메일은 강좌 시작 날짜를 상기시키고, 강좌를 알리며 흥미를 유발시킨다. 메일 예시에서 강좌 시작 일자와 시간뿐만 아니라 학습자는 다음의 사항을 알아야 한다:
 
-* UTC is used in edX courses. Alternatively, you could include information
-  about your course or the edX platform that will contribute to your learners'
-  success.
+* 강좌와 함께 운영하는 소셜 미디어 사이트가 있다. 학습모임등의 모임 조직이나 다른 학습 커뮤니티 구축 기회를 제공할 수 있다.
 
-* The course has a companion social media site. Alternatively, you might
-  include information about planned meetups or other community-building
-  opportunities.
 
-You may want to send out more than one message before the course launches: use
-this template as a starting point for crafting the different messages you want
-to deliver. Replace values enclosed by {braces} with information that applies
-to your course. In addition, check that you are using :ref:`keywords <Use
-Keywords in Messages>` appropriately.
+강좌가 시작되기 전에 하나 이상의 메시지를 보낼 수 있다. 전송하고 싶은 다른 메시지를 작성하기 위해 아래의 내용으로 시작해 볼 수 있다. {중괄호} 안에 들어간 부분은 각 강좌에 적용되는 정보로 바꾼다. 또한, 키워드를 적절하게 활용해야 한다.
 
 ::
 
@@ -493,14 +362,10 @@ Keywords in Messages>` appropriately.
 .. _Launch Day Welcome:
 
 ===================
-Launch Day Welcome
+개강일 인사 메일
 ===================
 
-On your course start date, you can send an email message that both welcomes
-learners and gives them specific actions to accomplish. This example directs
-learners to two of the course pages to encourage exploration and discovery, and
-personally introduces the course team leader. Search for the values enclosed by
-{braces} in this template and replace them with information for your course.
+개강일과 관련하여 학습자를 환영하고 해야 할 일들을 담은 이메일을 보낸다. 아래의 예문은 학습자에게 두 강좌를 소개하고 궁금하였던 점에 대한 답을 찾거나 강좌 운영팀원을 소개한다. 본 예문에서 괄호{ }안에 있는 내용을 검색하여 해당 강좌 정보로 변경한다.
 
 ::
 
@@ -527,15 +392,10 @@ personally introduces the course team leader. Search for the values enclosed by
 .. _Verified Registration Reminder:
 
 ==============================================
-Reminder to Register for Verified Certificate
+이수증 안내 이메일
 ==============================================
 
-After your course has launched, you can send an email to remind learners that
-the last day to register for a verified certificate is approaching. You can use
-this template as a starting point for your own message; search for the values
-enclosed by {braces} and replace them with information for your course. In
-addition, check that you are using :ref:`keywords <Use Keywords in Messages>`
-appropriately.
+개강을 하고 나면, 이메일을 보내 학습자들에게 이수 등록 마지막 일이 다가오고 있음을 알린다. 아래 예문를 활용하여 안내 메일 작성의 초안을 생각해보도록 한다. 괄호 {}안의 수치를 검색하여 자신 강좌에 맞는 정보로 교체하도록 한다. 반드시 키워드를 적절하게 활용하도록 한다.
 
 ::
 
@@ -560,22 +420,12 @@ appropriately.
 .. _Weekly Highlights:
 
 ==================
-Weekly Highlights
+주별 학습 주요 사항 안내 메일
 ==================
 
-Sending a weekly email to learners can be a great way to keep them engaged and
-provide encouragement. At the end of each week you might send learners an email
-that summarizes the content covered, and reminds learners about upcoming
-assessments or milestones in the course. Optionally, to encourage participation
-in the discussion forums, you might also highlight particularly interesting or
-important discussions, and provide links to the discussion topics.
+일주일에 한번씩 학습자에게 이메일을 보내는 것은 학습을 보다 적극적으로 하도록 하는 좋은 방법이다. 매 주말마다 학습자에게 이메일을 보내어 강좌에서 다루었던 내용을 요약하고 학습자에게 앞으로 제출해야 하는 과제 및 강좌의 전반적인 주요 쟁점을 정리해 준다. 또한, 게시판 토의를 활성화시키기 위하여, 흥미롭거나 중요한 게시물에 대해 강조를 할 수도 있고 해당 주제와 관련된 링크를 제공할 수도 있다.
 
-You can use this template as a starting point for designing your own message,
-omitting the discussion highlights if they are not appropriate for your course
-(the example discussion highlights are from a course about urban solutions to
-the global water crisis). Search for the values enclosed by {braces} and
-replace them with information for your course. In addition, check that you are
-using :ref:`keywords <Use Keywords in Messages>` appropriately.
+이메일을 처음 작성할 때 아래 예시를 활용한다. 단, 자신의 강좌에 적절하지 않다고 생각되면 토의가 이루어지는 게시글에 대한 부분은 생략할 수 있다. 괄호 {}안의 내용을 자신 강좌에 맞게 수정한다. 반드시 키워드를 적절하게 활용하도록 한다.
 
 ::
 
@@ -607,19 +457,12 @@ using :ref:`keywords <Use Keywords in Messages>` appropriately.
 .. _Midcourse Encouragement:
 
 ========================
-Mid-Course Encouragement
+참여 독려 메일
 ========================
 
-While your course is running, you can send messages to promote community,
-remind learners of upcoming due dates, and address any recurring issues.
+강좌가 진행 중일 때, 학습자에게 메시지를 보내 학습 공동체를 활성화시킬 수 있고 학습자에게 마감일을 상기시키며 앞으로 진행될 주요 사항에 대해 다룰 수 있다.
 
-This example gives learners guidance on how to keep up with the course schedule
-and encourages contributions to the discussions. You may want to send out more
-than one message while the course is running. You can use this template as a
-starting point for your own messages; search for the values enclosed by
-{braces} and replace them with information for your course. In
-addition, check that you are using :ref:`keywords <Use Keywords in Messages>`
-appropriately.
+아래 예시는 학습자들이 어떻게 강좌 일정을 따르고 게시판의 토의에 참여할 수 있는지를 나타내고 있다. 강좌가 진행 중일 때 여러 메시지를 보낼 수도 있다. 메시지를 처음 보낼 경우 아래의 예시를 활용할 수도 있다. 괄호 {}안의 내용을 자신 강좌에 맞게 수정한다. 반드시 키워드를 적절하게 활용하도록 한다.
 
 ::
 
@@ -653,31 +496,22 @@ appropriately.
 .. _Midcourse Events:
 
 ========================
-Mid-Course Event
+주요 일정 안내 메일
 ========================
 
-Before an exam or other significant course event, messages can provide
-practical information about the exam, communicate expectations regarding
-conduct, and also encourage learners to continue working toward course
-completion. This example lets learners know:
+시험이나 다른 강좌의 주요 일정 이전에 메시지를 보내 시험에 대한 정보를 제공하고 규칙에 대해 이야기해 볼 수 있고, 학습자로 하여금 성공적으로 강좌를 이수할 수 있도록 격려할 수 있다:
 
-* How long they have to complete the exam, and when they can see answers to
-  questions.
+* 시험 시간은 얼마나 되고 문제에 대한 해답은 언제 받을 수 있는가.
 
-* How to communicate any errors or other issues found during the exam to the
-  course staff.
+* 시험 시간 동안 오류나 다른 기타 쟁점에 대해 감독관과 어떻게 소통할 수 있는가.
 
-* Whether the course discussions will be open or closed during the exam. (In
-  the example that follows, the discussions will remain **open**.)
+* 시험 시간 동안 강좌 게시판 이용 가능 여부 (아래에 제시되는 예시에서는 게시판 이용이 가능하다.)
 
-* What constitutes an honor code violation.
+* 학습자 서약 위반은 어떻게 구성이 되는가.
 
-* What technical limitations, if any, are imposed by external tools such as
-  graders.
+* 채점자와 같이 외부인들이 겪을 수 있는 기술적인 한계가 있다면 어떤 것이 있는가.
 
-Be sure to search for the values enclosed by {braces} and replace them with
-information for your course. In addition, check that you are using
-:ref:`keywords <Use Keywords in Messages>` appropriately.
+괄호 {}안의 내용을 자신 강좌에 맞게 수정한다. 반드시 키워드를 적절하게 활용하도록 한다.
 
 ::
 
@@ -731,19 +565,12 @@ information for your course. In addition, check that you are using
 .. _Technical Issue:
 
 ========================
-Technical Issue
+기술적 문제 관련 이메일
 ========================
 
-In the event of an unanticipated system failure, a message can both alert
-learners to the problem and reassure them that the issue is either resolved or
-being addressed. The message can also provide information about any changes
-made to the course as a result.
+예상하지 못한 시스템 장애가 발생할 경우, 이메일을 보내서 학습자들에게 해당 문제에 대한 위험을 알리고 해당 장애가 현재 처리 중이거나 해결 중이라는 상황을 알려서 안심시킨다. 이메일에는 장애 발생으로 강좌에 영향을 줄 경우, 관련 정보를 제공할 수 있다.
 
-Technical issues can arise during a course for many different reasons, so this
-example is likely to need revision to apply to an issue that you encounter.
-Keep in mind that to reassure the learners who are affected by the problem, the
-message should have a positive tone, and calmly and briefly identify the
-problem, the status of its solution, and any after effects.
+강좌가 진행 중일 동안 여러 가지 이유로 기술적인 문제가 발생한다. 그러므로 아래 예시는 현재 겪고 있는 문제가 어떤 것이냐에 따라 다르게 변경하여 적용해야 할 것이다. 주의해야 할 점은 해당 문제에 영향을 받는 학습자들을 안심시키도록 긍정적인 어조, 문제, 해결 방안의 상황, 그리고 다른 영향에 관련된 사항을 차분하고 간결하게 다루어야 한다는 점이다.
 
 ::
 
@@ -763,13 +590,10 @@ problem, the status of its solution, and any after effects.
 .. _Course Farewell and Certificates:
 
 =================================
-Course Farewell and Certificates
+종강 안내 및 이수증 안내 메일
 =================================
 
-In the last few days before your course ends, a message can direct learners to
-a course survey, answer questions about certificates, and provide information
-about future access to course materials. Be sure to replace values enclosed by
-{braces} with information for your course.
+종강하기 며칠 전쯤, 메시지를 보내 학습자들에게 강좌 설문조사, 이수에 관한 질문의 답변에 대한 안내를 함으로써 강좌 교재를 차후 활용할 수 있도록 해당 정보를 제공하도록 한다. 반드시 괄호 {}안에 있는 내용을 자신 강좌의 것으로 수정한다.
 
 ::
 
@@ -811,26 +635,14 @@ about future access to course materials. Be sure to replace values enclosed by
 .. _New Course Run Announcement:
 
 =================================
-New Course Run Announcement
+신규 강좌 개설 안내 메일
 =================================
 
-When you prepare a course for a new run, you can use the bulk email feature in
-its previous run (or runs) to inform an engaged and knowledgeable audience:
-your former learners. Announcing a new run to learners of an earlier run gives
-you the opportunity to highlight key aspects of the course, such as the quality
-and variety of its discussions, or the global interest and relevance of the
-subject, as demonstrated by past enrollment. You can also reveal new features
-or content that have been added to the new course run. By emphasizing the
-value of the course, you get people thinking and talking about their
-experiences, build excitement, and encourage re-enrollment.
+신규 강좌를 개설 할 때, 기존 운영 (혹은 여러 운영) 상태의 전체 이메일 활용하기를 선택하여 현재 수강중인 기존 학습자들에게 정보를 전달할 수 있다. 기존 운영상태에서 신규 강좌에 대해 학습자들에게 알리는 것은 토의의 질과 다양성 혹은 전세계적 관심사 및 기존 등록자수로 증명이 된 주제의 적절성과 같은, 강좌의 주요 측면에 대해 강조할 수 있는 기회를 부여한다. 또한 신규 강좌를 통해 추가된 새로운 특징들이나 내용에 대해서 공개할 수도 있다. 강좌가 얼마나 가치 있는지 강조함으로써 학습자들이 자신의 경험에 대해 다시 생각해보고 이에 대해 공유하며 흥미를 가지고 재등록을 할 수 있게 유도할 수 있는 것이다.
 
-This message template offers learners who did not complete the course, or who
-did not previously choose the verified certificate track, the opportunity to do
-so. It also invites learners to share the course with colleagues and and
-friends.
+본 메시지 예시는 강좌를 이수하지 않은 학습자들 혹은 이수증 확인 및 기회를 가지지 못했던 학습자들에게 이를 위한 기회를 제공한다. 특히 학습자들로 하여금 동료 학습자들과 친구들을 통해 해당 강좌를 공유할 수 있도록 해준다.
 
-When preparing a message from this template, search for values enclosed by
-{braces} and replace them with information that applies to your course.
+본 예시를 통해 메시지를 작성할 때는 괄호 {}안의 내용을 자신 강좌에 맞게 수정한다.
 
 ::
 

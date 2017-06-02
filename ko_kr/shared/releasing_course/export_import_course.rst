@@ -1,140 +1,106 @@
 .. _Exporting and Importing a Course:
 
 #####################################
-Exporting and Importing a Course
+강좌 내보내기 및 가져오기
 #####################################
 
-When you have released your course, you can use the course export and import
-tools in Studio to save a backup copy of the course, and optionally re-import
-your course for editing. For more information, see :ref:`Export a Course` and
-:ref:`Import a Course` through Studio.
+강좌를 공개한 이후 스튜디오에서 강좌 내보내기 및 가져오기 도구를 사용해 강좌 백업을 만들고 편집을 위해 강좌를 다시 가져오기 할 수도 있다.  :ref:`Export a Course` 및 :ref:`Import a Course` 에 더욱 자세한 안내가 있다.
 
-When you import and export a course, you work with :ref:`.tar.gz files <Work
-with the targz file>`.
+강좌 가져오기 및 내보내기를 할 때 .tar.gz 파일 형식을 사용한다.
 
-To duplicate an existing course for a new run, course creators can use the
-course re-run option. See :ref:`Rerun a Course`.
+새로운 강좌 운영을 위해 기존의 강좌를 복제하려면 강좌 개설자는 강좌를 재개강할 수 있다.  :ref:`Rerun a Course` 에 자세한 안내가 있다.
 
 .. caution::
-  Before exporting and importing a course, ensure that links in the course to
-  other course content use the ``/jump_to_id/<unit identifier>`` syntax. If a
-  link does not use the ``/jump_to_id/<unit identifier>`` syntax, the link will
-  be broken if you export then import the course. For more information, see
-  :ref:`Add a Link to a Course Unit`.
+  강좌 내보내기 및 가져오기를 하기 전에 다른 강좌 콘텐츠로의 링크가  ``/jump_to_id/<unit identifier>`` 형식인지 확인한다. 만약 링크가  ``/jump_to_id/<unit identifier>`` 형식이 아니라면 내보내기 이후 가져오기를 했을 때 링크를 사용할 수 없게 될 것이다. :ref:`Add a Link to a Course Unit` 에 링크 추가하기에 대한 자세한 안내가 나와있다
 
 .. _Export a Course:
 
 ***************
-Export a Course
+강좌 내보내기
 ***************
 
-There are several reasons you might want to export your course. Examples
-follow.
+다음과 같은 목적으로, 강좌 내보내기 기능을 사용할 수 있다.
 
-* To save your work.
-* To edit the XML in your course directly.
-* To create a backup copy of your course, which you can import if you want to
-  revert the course back to a previous state.
-* To share with the team members of another course.
-* To create a copy of your course that you can later import into another course
-  instance and customize.
+* 작업을 저장하기 위해.
+* 강좌의 XML을 직접 편집하기 위해 .
+* 강좌를 이전의 상태로 복귀하려는 경우 가져오기를 할 수 있는 강좌의 백업 복사본을 만들기 위해.
+* 다른 강좌의 다른 교수자와 공유하기 위해.
+* 나중에 다른 강좌에서 이를 가져와서 사용자 맞춤 지정을 할 때 필요한 강좌 복사본을 만들기 위해.
 
-When you export your course, Studio creates a **.tar.gz** file that includes
-the following course data.
+강좌를 내보내는 경우, Studio 는 다음의 강좌 데이터를 포함하는 .tar.gz 파일을 만든다.
 
-* Course content (all Sections, Subsections, and Units)
-* Course structure
-* Individual problems
-* Pages
-* Course assets
-* Course settings
+* 강좌 콘텐츠 (모든 주제, 소주제, 및 학습활동)
+* 강좌 구조 
+* 개별 문제 
+* 메뉴
+* 강좌 자료 
+* 강좌 설정 
 
-The following data is not exported with your course.
+다음의 데이터는 강좌와 함께 내보내기가 되지 않는다.
 
-* User data
-* Course team data
-* Discussion data
-* Certificates
+* 학습자 데이터 
+* 강좌 운영팀 데이터 
+* 게시판 데이터 
+* 이수증
 
-To export your course, follow these steps.
+강좌를 내보내려면.
 
-#. From the **Tools** menu, select **Export**.
-#. Select **Export Course Content**.
+#. **도구** 메뉴에서, **내보내기** 를 선택한다.
+#. **강좌 콘텐츠 내보내기** 를 클릭한다.
 
-When the export completes you can then access the .tar.gz file on your
-computer.
+내보내기가 완료되고 나면 컴퓨터에서 .tar.gz파일에 접근할 수 있을 것이다.
 
 .. _Import a Course:
 
 ***************
-Import a Course
+강좌 가져오기
 ***************
 
 .. warning::
-	Content of the imported course replaces all the content of this course.
-	**You cannot undo a course import**. We recommend that you first export the
-	current course, so you have a backup copy of it.
+	가져온 강좌의 콘텐츠는 현재 강좌의 모든 콘텐츠를 대체한다. 강좌 가져오기 실행은 취소할 수 없음에 유의한다. 따라서 먼저 현재 강좌를 내보내고, 그 강좌의 백업 복사본을 가지고 있는 것이 좋다.
 
-There are several reasons you may want to import a course. Some examples
-follow.
+다음과 같은 목적으로, 강좌 가져오기 기능을 사용할 수 있다.
 
-* To load a course you developed outside of Studio.
-* To run a new version of a course that was not created in Studio.
-* To prepare course content for reuse in another learning system.
+* Studio 외부에서 개발한 강좌를 가져오기 위해.
+* Studio에서 만들어지지 않은 강좌의 새 버전을 실행하기 위해.
+* 다른 학습 시스템에서 재사용할 수 있도록 준비하기 위해.
 
-The course that you import must be in a .tar.gz file (that is, a .tar file
-compressed with GNU Zip). This .tar.gz file must contain a course.xml file in a
-course data directory. The tar.gz file must have the same name as the course
-data directory. It may also contain other files.
+가져온 강좌는 .tar.gz 파일 형식이어야 한다 (즉, GNU Zip으로 압축된 .tar 파일). 이 .tar.gz 파일은 강좌 데이터 디렉터리에서 강좌 .xml 파일을 포함해야 하며, tar.gz 파일은 강좌 데이터 디렉터리와 이름이 같아야 한다. 또한 .tar.gz 파일은 다른 파일을 포함할 수 있다.
 
-If your course uses legacy layout structures, you may not be able to edit the
-course in Studio. To make sure that your course is completely editable, ensure
-that all components are embedded in a unit.
+기존 레이아웃 구조를 사용하는 경우 Studio에서는 강좌를 편집하지 못할 수도 있다. 강좌를 완전히 편집 가능하게 하려면, 강좌의 모든 자료가 학습활동에 포함되어 있는지 확인해야 한다.
 
-The import process has five stages. During the first two stages, you must stay
-on the Course Import page. You can leave this page after the Unpacking stage
-has completed. EdX recommends, however, that you don't make important changes
-to your course until the import operation has completed.
+5 단계가 있다. 처음 두 단계 동안에는 강좌 가져오기 페이지에 머물러야 한다. 분리(Unpacking) 단계가 완료되면 이 페이지를 벗어날 수 있다. 그러나, 가져오기 작업이 완료될 때까지는, 강좌의 설정을 변경하지 않는 것이 좋다.
 
-To import a course, follow these steps.
+강좌를 가져오려면.
 
-#. From the **Tools** menu, select **Import**.
-#. Select **Choose a File to Import**.
-#. Locate the file that you want, and then Select **Open**.
-#. Select **Replace my course with the one above**.
+#. **도구** 메뉴에서, **가져오기** 를 선택한다.
+#. **가져올 파일 선택하기** 를 클릭한다.
+#. 원하는 파일을 찾은 다음, **열기** 를 클릭한다.
+#. 위 강좌와 내 강좌 **바꾸기** 를 클릭한다.
 
 .. note::
- When you import a course, important dates, such as the course start date and
- time, are overwritten. After the import is complete, you should check dates to
- ensure they are set as intended. For more information, see
- :ref:`Scheduling Your Course`.
+ 강좌 가져오기를 할 때 강좌 개강일 및 시간 등의 중요 날짜가 덮어써지게 된다. 가져오기가 끝난 후 날짜를 재확인해야 한다.  :ref:`Scheduling Your Course`  에 자세한 안내가 나와있다.
 
 .. _Work with the targz File:
 
 ******************************
-Work with the .tar.gz File
+.tar.gz 파일 사용하기
 ******************************
 
-Courses are exported and imported in .tar.gz files containing OLX, an edX
-format for open course exchange. For more information about OLX, see the `edX
-OLX Documentation <http://edx.readthedocs.org/projects/edx-open-learning-
-xml/en/latest/>`_.
+강좌는 OLX를 포함해 .tar.gz 파일 형식으로 내보내지고 가져와진다. K-MOOC OLX에 자세한 안내가 나와있다.
 
-To extract and compress .tar.gz files, you use a third-party program.
+.tar.gz 파일 압축을 위해 외부 프로그램을 사용해야 한다.
 
-If you are using Microsoft Windows, see the following resources.
+마이크로소프트 윈도우를 사용 중이라면 다음 자료를 활용할 수 있다.
 
-* `How to Unpack a tar File in Windows
-  <http://www.haskell.org/haskellwiki/How_to_unpack_a_tar_file_in_Windows>`_
+* `How to Unpack a tar File in Windows  <http://www.haskell.org/haskellwiki/How_to_unpack_a_tar_file_in_Windows>`_
 
 * `How to Extract a Gz File <http://www.wikihow.com/Extract-a-Gz-File>`_
 
 * `The gzip Home Page <http://www.gzip.org/>`_
 
-* The `Windows <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#windows>`_ section of the `How to Open .tar.gz Files
-  <http://www.ofzenandcomputing.com /how-to-open-tar-gz-files/>`_ page
+* `How to Open .tar.gz Files <http://www.ofzenandcomputing.com /how-to-open-tar-gz-files/>`_  의 `Windows <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#windows>`_ 부분
 
-If you are using a Macintosh computer, see the following resource.
+맥 PC를 사용 중이라면 다음 자료를 활용할 수 있다.
 
-* The `Mac OS X <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#mac-os-x>`_ section of the `How to Open .tar.gz Files
-  <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ page.
+* `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_  의 `Mac OS X <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#mac-os-x>`_  부분
