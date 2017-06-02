@@ -1,42 +1,23 @@
 .. _Graded Subsections:
 
 **********************************************
-Graded Subsections
+성적 반영 소주제 지정하기
 **********************************************
 
-After you configure assignment types, as you are organizing your course, you
-set the assignment type for subsections that contain problems that are to be
-graded.
+소주제에 문제를 추가하고 과제 유형을 지정한다.
 
-You can only set assignment types and due dates at the subsection level. You
-cannot set assignment types or due dates for entire sections or for individual
-units within subsections. Additionally, you can designate a subsection as one,
-and only one, of the assignment types you configured.
+소주제 수준에서만 과제 유형 및 마감 날짜를 설정할 수 있다. 전체 주제 또는 소주제 내 개별 학습활동에 대한 과제 유형 또는 마감 날짜를 설정할 수는 없다. 또한, 한 과제 유형에 대해선 오직 하나의 소주제만 지정할 수 있다.
 
-.. note:: You can create problems in Studio without specifying an assignment
-   type for the subsection. Scores for such problems are listed as "practice
-   scores" on the learner's **Progress** page and do not count toward the
-   learner's grade.
+.. note:: 소주제 과제 유형을 설정하지 않고 스튜디오에서 문제를 만들 수 있다. 이런 문제의 점수는 학습자 성과 페이지에서 “연습 점수”로 분류되며 성적에 반영되지 않는다.
 
-   Hidden sections, subsections, or units that contain graded content are not
-   included in grading and also do not count toward a learner's grade. For
-   more information, see :ref:`Hiding Graded Content`.
+   성적에 반영되는 콘텐츠이지만, 숨김 상태인 주제, 소주제 및 학습활동은 최종 성적에 포함되지 않는다. 자세한 사항은  :ref:`Hiding Graded Content`  를 참고하면 된다.
 
-Within a graded subsection, you create problems of the type designated for that
-subsection. You cannot not mix problems of different assignment types in the
-same subsection.
+채점된 소주제 내에서, 해당 소주제에 대해 지정된 유형의 문제를 만든다. 같은 소주제에서 다른 과제 유형의 문제가 동시에 출제될 수 없다.
 
-For example, if you want to create a homework assignment and a lab for a
-specific topic, create two subsections. Set one subsection as the Homework
-assignment type and the other as the Lab assignment type. Both subsections can
-contain other content as well as the actual homework or lab problems.
+예를 들어 특정 주제에 대한 과제와 실험을 만들려는 경우, 두 개의 소주제를 만들도록 한다. 하나의 소주제는 과제 유형으로, 다른 하나의 소주제는 실험 과제 유형으로 설정한다. 두 소주제는 실제 과제 또는 실험 문제뿐 아니라 다른 콘텐츠를 포함할 수 있다.
 
-For more information about creating problems and developing subsections, see
-:ref:`Working with Problem Components` and :ref:`Developing Course
-Subsections`.
+문제 생성과 소주제 개발과 관련해 :ref:`Working with Problem Components` 및  :ref:`Developing Course Subsections`  를 참고하면 된다.
 
-For more information about designating a subsection as a graded assignment,
-see :ref:`Set the Assignment Type and Due Date for a Subsection`.
+소주제를 성적 반영 과제로 지정하는 방법에 대해선 :ref:`Set the Assignment Type and Due Date for a Subsection`  를 참고하면 된다.
 
-For more information about how to designate a subsection as a timed exam, see
-:ref:`Timed Exams`.
+소주제를 시간 제한 시험으로 지정하기 위해선 :ref:`Timed Exams`  을 참고하면 된다.

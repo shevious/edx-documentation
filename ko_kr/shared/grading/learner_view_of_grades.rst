@@ -1,26 +1,17 @@
 .. _The Learner View of Grades:
 
 **************************
-The Learner View of Grades
+성적 열람하기
 **************************
 
-After a grading policy is in place, learners can view both their problem scores
-and the percent completed and current grade in the **Progress** tab for the
-course.
+성적 규정이 준비된 후, 학습자는 강좌의 진도 탭에서 문제에 대한 점수와 백분율 및 현재 성적을 볼 수 있다.
 
   .. image:: ../../../shared/images/Progress_tab.png
     :alt: Image of the student Progress tab.
 
-Each item in the X axis of the chart is for a graded subsection. Graded
-problems in units are not broken out in the chart; the score from each problem
-in the subsection is added to that vertical bar.
+차트 X 축의 각 항목은 채점에 반영되는 소주제 단위로 나타나며, 소주제 내 문제 단위로는 나타나지 않는다.
 
-Graded subsections are grouped in the chart by assignment type rather than
-listed in chronological order. For example, all homework exercises are grouped
-together, followed by labs, then exams.
+채점에 반영되는 소주제는 시간 순서대로 나열되지 않고 과제 유형에 따라 차트에 그룹화 된다. 예를 들어, 모든 연습문제는 실험과 시험에 이어 함께 그룹화 된다.
 
 .. note::
- The **x** for an assignment in the Progress tab indicates that the grade for
- that assignment is currently dropped. You configure how many assignments are
- dropped when you :ref:`configure assignment types <Configure the Assignment
- Types>`.
+ 진도 탭에서 x표시는 그 과제에 대한 점수가 반영되지 않는 것으로 결정되었음을 나타낸다. 과제 유형을 설정할 때 얼마나 많은 최저 점수 과제를 반영하지 않을 것인지 설정해야 한다.

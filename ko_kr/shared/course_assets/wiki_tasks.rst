@@ -1,6 +1,6 @@
 .. _Course_Wiki_Shared_Tasks:
 
-This section describes how you can contribute to the course wiki.
+이 장에서 강좌 위키에 내용을 추가하는 법에 대해 다룬다.
 
 .. contents::
    :depth: 2
@@ -9,144 +9,109 @@ This section describes how you can contribute to the course wiki.
 .. _Adding a Wiki Article:
 
 *********************************
-Adding a Wiki Article
+위키 문서 추가하기
 *********************************
 
-When you add an article to the wiki, be aware of what level you are currently
-viewing, to make sure that you add your new article to the correct level in the
-course wiki.
+문서를 위키에 추가할 때, 현재 작업하고 있는 단계가 어떤 수준인지 파악하고  올바른 단계 수준에 새로운 문서를 올리도록 한다.
 
-To move down a level in the wiki, select **See all children**; to move
-up, select the appropriate level in the wiki breadcrumb trail links at the top
-of the page.
+위키의 단계를 내리려면 모든 하위 링크를 클릭하여 단계를 올리고 페이지 상단에 사이트 이동경로상의 위키에 적절한 단계를 클릭한다.
 
 ===============================
-Add Articles at the Same Level
+동일한 등급에서 문서 추가
 ===============================
 
-To add a wiki article at your current level, follow these steps. If you do not
-have permissions to add an article, when you select **Add Article**, a message
-indicates "Permission Denied" .
+아래와 같은 절차를 따라 현재 단계에 적용되는 위키 문서를 추가하도록 한다.
+문서 권한을 받지 않은 경우 문서 추가 버튼을 누르게 되면 “불가”라는 메시지가 뜬다.
 
-#. In your course, select **Wiki**.
-#. Navigate to the level where you want to add a new article.
-#. Select the **Add Article** button near the top right of the page.
-#. On the new article page, add a title for the page, and optionally a few
-   keywords to create a "slug" that provides a more specific location
-   identifier for your article.
-#. Add contents to the article. You can enter plain text and use Markdown
-   syntax to add formatting. For help with Markdown syntax, select the link to
-   the cheat sheet at the upper right corner of the **Contents** field.
-#. When you have finished entering content for your wiki article, select
-   **Create Article**.
+#. 강좌에서 위키를 클릭한다.
+#. 새로운 문서를 추가하고자 하는 단계를 검색한다.
+#. 페이지 상단에 글쓰기 버튼을 클릭한다.
+#. 새로운 문서 페이지상에서 페이지 제목을 추가하고 선택적으로 문서의 상세한 위치 정보를 제공하는 “경로명” 을 생성하여 몇 가지 키워드를 수정요약에 추가한다.
+#. 문서에 본문의 내용을 추가한다. 텍스트로만 된 내용을 추가할 수도 있고 포맷을 추가할 경우 마크다운(Markdown)을 활용할 수도 있다. 마크다운에 사용을 위해 도움말를 클릭한다.
+#. 위키 문서에 내용 추가를 완료한 뒤 **저장** 을 클릭한다.
 
 =====================================
-Add Articles Below the Current Level
+현재 등급보다 아래 등급에서 문서 추가
 =====================================
 
-To add a child article to your current article, follow these steps. If you do
-not have permissions to add an article, when you select **Add Article**, a
-message indicates "Permission Denied" .
+아래에 나오는 절차를 따라 현재 문서에 대한 하위 문서를 추가한다.
+문서를 추가할 수 있는 권한이 없을 경우 문서 추가 버튼을 클릭하면 “불가”라는 메시지가 뜬다.
 
-#. In your course, select **Wiki**.
-#. Navigate to the level above where you want to add the new child article.
-#. Select **See all children**.
-#. Select the **Add Article** button under the wiki title.
-#. On the new article page, add a title for the page, and optionally a few
-   keywords to create a "slug" that provides a more specific location
-   identifier for your article.
-#. Add contents to the article. You can enter plain text and use Markdown
-   syntax to add formatting. For help with Markdown syntax, select the link to
-   the cheat sheet at the upper right corner of the **Contents** field.
-#. When you have finished entering content for your wiki article, select
-   **Create Article**.
+#. 강좌에서 위키를 클릭한다.
+#. 새로운 하위 문서를 추가하고자 하는 단계를 검색한다.
+#. 모든 하위 문서 보기를 클릭한다.
+#. 위키 제목 밑에 글쓰기 버튼을 클릭한다.
+#. 새로운 문서 페이지상에서 페이지 제목을 추가하고 선택적으로 문서의 상세한 위치 정보를 제공하는 “경로명”을 생성하고 수정 내용을 몇 가지 키워드로 수정요약에 추가한다.
+#. 본문에 내용을 추가한다. 텍스트로만 된 내용을 추가할 수도 있고 포맷을 추가할 경우 마크다운을 활용할 수도 있다. 마크다운에 대한 사용을 위해 도움말을 클릭한다.
+#. 위키 문서에 내용 추가를 완료한 뒤, 저장을 클릭한다.
 
 .. _Editing a Wiki Article:
 
 ********************************
-Editing a Wiki Article
+위키 문서 편집하기
 ********************************
 
-If you have permissions to edit an article, you see an **Edit** button and icon
-to the right of the article content.
+문서를 편집할 수 있는 권한이 있다면 문서영역 편집 버튼 및 아이콘이 보일 것이다.
 
-To make changes to a wiki article, follow these steps.
+다음의 절차를 따라서 위키 문서에 변경사항을 적용한다.
 
-#. In your course, select **Wiki**.
-#. Navigate to the article you want to edit.
-#. Select **Edit**.
-#. Make your changes. For help with Markdown syntax, select the link to the
-   cheat sheet at the upper right corner of the **Contents** field.
-#. In the **Summary** field at the bottom left, below the **Contents** field,
-   enter a short description of the changes you made. This description appears
-   in the **Changes** list, and helps other users of the wiki understand what
-   changes you made to the article.
-#. When you have finished making edits, select **Save changes**.
+#. 강좌에서 위키를 클릭한다.
+#. 편집하고자 하는 문서를 검색한다.
+#. 편집을 클릭한다.
+#. 변경사항을 적용한다. 마크다운 사용은 도움말을 클릭한다.
+#. 내용 영역 아래 수정요약에서 적용한 변경사항에 대한 짧은 설명을 추가한다. 이 설명은 변경사항 목록에 나타나고 다른 위키 사용자들이 해당 문서에 어떤 내용이 적용되었는지 이해할 수 있도록 해준다.
+#. 변경사항 저장을 클릭한다.
 
 .. _Searching for Wiki Articles:
 
 ********************************
-Searching for Wiki Articles
+위키 문서 탐색
 ********************************
 
-A **Filter** field is available only if any level of the wiki contains multiple
-articles.
+위키에 다수의 문서가 포함되어 있다면 **필터** 필드를 사용할 수 있다.
 
-Enter a text string in the **Filter** field to find a list of all articles with
-that text string in their titles.
+**필터** 필드에 텍스트 스트링을 입력하면 제목에 그 텍스트 스트링을 포함한 모든 문서 목록을 볼 수 있다.
 
 .. _Managing Versions of a Wiki Article:
 
 ***********************************
-Managing Versions of Wiki Articles
+위키 문서 버전 관리하기
 ***********************************
 
-The wiki includes a change history for each article. You can view each past
-version of the article, roll back to a selected earlier version of the article,
-or merge the current version of the article with a selected earlier version.
+위키는 각 문서의 변경 내역을 저장하고 있다. 문서의 이전 버전을 조회할 수 있고 이전 버전으로 돌아가거나 기존 버전과 현재 버전을 합칠 수도 있다.
 
 =====================================================
-View a List of Previous Versions of a Wiki Article
+위키 문서 이전 버전 목록 조회하기
 =====================================================
 
-#. In your course, select **Wiki**.
-#. Navigate to the wiki article for which you want to see the change history.
-#. Select **Changes**. Previously saved versions of the current article are
-   listed, with the most recent at the top.
+#. 강좌에서 위키를 선택한다.
+#. 보고 싶은 기존 위키 문서로 이동한다.
+#. **변경사항** 을 선택한다. 선택한 문서의 이전 버전이 뜨고 가장 최신 버전이 목록 맨 위에 위치한다.
 
 =====================================================
-View a Previous Version of a Wiki Article
+위키 문서 이전 버전 조회하기
 =====================================================
 
-#. On the **Changes** page for your wiki, select the revision of the article
-   that you want to view.
-#. Select **Preview this revision** to see the article as it appeared after the
-   revision was made.
+#. 위키의 **변경사항** 페이지에서 보고 싶은 문서를 선택한다.
+#. **이전 버전 보기** 를 선택해 수정하기 전의 문서를 조회한다.
 
 =====================================================
-See Line by Line Changes in a Previous Version
+이전 버전 수정사항 조회하기
 =====================================================
 
-#. On the **Changes** page for your wiki, select the revision of the article
-   that you want to view.
-#. Select the linked date, time, and author information to see the line-by-line
-   changes made in that revision. Text that is highlighted in red has been
-   replaced by the text that is highlighted in green below it.
+#. 위키의 **변경사항** 페이지에서 보고 싶은 문서를 선택한다.
+#. 문서의 수정사항을 보기 위해 날짜, 시간 및 작성자 정보를 선택한다. 빨간색으로 표시된 텍스트는 녹색으로 표시된 텍스트로 대체되었다는 의미다.
 
 =====================================================
-Replace a Current Version with a Previous Version
+현재 버전 이전 버전으로 대체하기
 =====================================================
 
-#. On the **Changes** page for your wiki, select the revision of the article
-   that you want to roll back to.
-#. Select **Switch to selected version** to replace the current version with
-   the selected one.
+#. 위키의 **변경사항** 페이지에서 현재 버전을 대체할 문서를 선택한다.
+#. **이 버전으로 대체하기** 를 선택해 현재 버전을 바꾼다.
 
 =====================================================
-Combine a Current Version with a Previous Version
+현재 버전과 이전 버전 합치기
 =====================================================
 
-#. On the **Changes** page for your wiki, select the revision of the article
-   that you want to merge with the current version.
-#. Select **Merge selected with current** to combine the current and the
-   selected versions.
+#. 위키의 **변경사항** 페이지에서 현재 버전과 합칠 문서를 선택한다.
+#. **현재 버전과 합치기** 를 선택해 현재 버전과 이전 버전을 합친다.

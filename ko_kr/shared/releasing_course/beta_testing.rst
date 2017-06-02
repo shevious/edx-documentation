@@ -1,174 +1,118 @@
 .. _Beta_Testing:
 
 #############################
-Beta Testing a Course
+강좌 베타 테스트하기
+    
 #############################
 
-This topic describes how to beta test your course.
+다음 장은 강좌 베타 테스트 하는 법에 대해 설명한다.
 
 .. contents::
   :local:
   :depth: 1
 
 ****************************
-Overview
+개관
 ****************************
 
-When you are designing a course in Studio, you can select **View Live** to test
-your work, find gaps and errors, and mimic the learner experience. To
-gather information about the overall experience of taking a course, you can
-also conduct a beta test of the course.
+Studio에서 강좌를 만들 때, 강좌 운영팀은 강좌의 설계 진행 상황을 평가하고, 작업을 테스트하여, 빠진 부분과 오류를 찾고, 학습자의 경험을 살펴보기 위해 적용결과 보기 를 선택할 수 있다. 강좌를 수강할 때 전반적 경험에 관한 정보를 수집하기 위해, 강좌의 베타 테스트를 해볼 수 있다.
 
 .. _Beta_Process:
 
 ******************************************
-The Beta Testing Process
+베타 테스트 과정
 ******************************************
 
-During a beta test, you gather information about the experience of taking your
-course in an effort to improve its quality. The phases of the beta testing
-process, and some questions that you may find useful to consider as you prepare
-for each phase, follow.
+베타 테스터를 하면서, 학습자의 강좌 참여 경험의 질적 향상을 위해 관련 정보를 수집한다. 베타 테스트 단계와 각 단계별 준비하면서 살펴볼 질문은 다음과 같다.
 
-#. **Planning**: What are your objectives for the test? What is the schedule
-   for testing?
+#. **계획**: 테스트하는 목적이 무엇인가? 테스팅 일정은? 
 
-#. **Recruitment**: How many testers do you need? How much time do you expect
-   testers to spend? When do you need them to complete their feedback?
+#. **모집**: 몇 명의 테스터가 필요한가? 테스터들이 어느 정도의 시간을 들여야 하는가? 언제 피드백을 완료해야 하는가?
 
-#. **Provide access to your course**: Can testers access your entire course
-   immediately, or are its sections and subsections available at different
-   times? How will that affect the schedule?
+#. **강좌 접근 권한 제공**: 테스터들이 즉각 전체 강좌에 접근할 수 있는지, 혹은 다른 시기에 주제나 소주제에 접근하게 할것인지? 일정에 영향을 미치는지?
 
-#. **Collect feedback**: How do you want testers to provide feedback? Who
-   checks for feedback, and how often?
+#. **피드백 수합**: 테스터들이 피드백을 어떻게 제공하길 원하는지? 누가 얼마나 자주 피드백을 확인하는지?
 
-#. **Evaluate feedback**: How is feedback evaluated? Who decides what changes
-   to make as a result, and on what schedule?
+#. **피드백 평가**: 피드백을 어떻게 평가하는가? 그 결과로 누가 변경여부를 결정하고 일정은 어떤가?
 
-#. **Conclusion**: How do you acknowledge the efforts of your testers? What do
-   you share with them about the results of their efforts?
+#. **마무리**: 테스터의 노력을 어떻게 인정할 것인가? 테스터의 노력의 결과에 대해 무엇을 공유할 것인지?
 
-There is no one answer to any of these questions. They are included here as
-background on the role that beta testing can play in the preparation of your
-course.
+위의 질문에 정해진 답은 없으며, 강좌 준비과정에서 해볼 수 있는 베타테스터의 역할을 참고하도록 하기 위해 제시한 것이다.
 
 .. _Qualities_Testers:
 
 ***************************************
-The Beta Testing Role
+베타 테스팅의 역할
 ***************************************
 
-Beta testers have early access to the course. Beta testers are not members of
-the course team: they do not have information about "how it is supposed
-to work". They use their own computers and Internet connections to view
-videos, follow links, and complete problems. They interact with the course as
-learners will to find, and make, mistakes.
+베타 테스터는 강좌에 개강 전에 미리 접근할 수 있다. 베타 테스터는 운영팀이 아니므로 “어떻게 해야 하는지”에 대해 모르고 있을 것이다. 테스터들은 자신의 컴퓨터에서 인터넷에 접속하여 동영상을 보고, 링크를 따라가보고, 문제 풀기를 수행한다. 테스터들은 일반 학습자들처럼 검색하고, 학습하고, 실수하며 강좌를 이용해 본다.
 
-However, beta testers are not the same as other learners in the course,
-either. They have privileged access to the course and have more time to review
-and complete the course materials than the enrolled learners do. Course
-discussions are not open before the course start date, so beta testers cannot
-participate in community conversations. As a result of these differences, beta
-testers do not receive certificates when they complete a course.
+그러나 베타 테스터는 실제 학습자와 다르다. 테스터들은 강좌에 접근할 권한을 갖고 있고 강좌 자료를 살펴보고 완료할 시간을 학습자 보다 더 갖게 된다. 강좌 게시판은 강좌 시작일 전에 공개 되지 않으므로 베타 테스터는 커뮤니티의 대화에 참여할 수 없다. 이런 차이로 인해, 베타 테스터는 강좌를 이수할 때 이수증을 받지 못한다.
 
-.. note:: If one of your beta testers wishes to earn a certificate for the
- course, she must create a separate user account with a different username and
- email address. She can then use that separate, non-privileged user account to
- enroll in the course and repeat the work, completing assignments and exams
- when they are available to all learners.
+.. note:: 베타 테스터가 강좌에서 이수증을 받고 싶어할 때, 별도의 사용자명과 이메일 주소로 계정을 만들어야 한다. 이 테스터는 일반적인 사용자 계정을 이용하게 되고, 다른 모든 학습자들이 수행하는 것처럼 참여하고, 과제를 완료하고, 평가를 수행하여야 한다.
 
 ==================================
-Qualities of Good Beta Testers
+좋은 베타 테스터의 자질
 ==================================
 
-A beta test is valuable in part because it is unscripted. Your beta testers are
-not following a predetermined series of steps, or using a particular computer
-environment, when they access your course. When you recruit beta testers,
-however, you may find these skills and characteristics to be helpful.
+베타 테스트는 정해지지 않은 대로 작업을 진행하기 때문에 도움이 되는 작업이다. 베타 테스터들은 강좌를 이용할 때, 정해진 단계를 따르지 않으며, 특정한 컴퓨터 환경에서 이용하지도 않는다. 단, 베타 테스터를 선발할 때, 다음과 같은 기술이나 성격을 가진 사람을 고려한다면 도움이 될 것이다.
 
-* Curiosity.
+* 호기심.
 
-* Attention to detail for identifying problems and inconsistencies.
+* 문제점과 일관되지 않는 것을 확인하기 위해 집중하기.
 
-* Solid communication skills for reporting problems to the course team.
+* 강좌 운영팀에게 문제를 잘 보고하기 위한 의사소통 기술.
 
-Your beta testers should also have varying levels of knowledge about the course
-content:
+또한, 베타테스터는 강좌 콘텐츠에 대해 다른 수준의 지식을 갖고 있어야 한다.:
 
-* To recognize when material is wrong or missing, at least one tester should
-  know the content well.
+* 강좌의 자료가 틀렸거나 빠졌는지 확인하도록 하기 위해, 최소 1 명의 테스터는 콘텐츠를 잘 아는 사람이라야 한다.
 
-* To identify material that is unclear, at least one tester should be less
-  familiar with the content.
+* 강좌의 자료가 명확하지 않은 것이 있는지 확인하기 위해 최소 1명의 테스터는 콘텐츠에 덜 익숙한 사람이라야 한다.
 
-Depending on the objectives you set for your beta test, you might want to
-consider recruiting testers who use assistive technologies, who have different
-native languages, or who have varying levels of familiarity with computer
-software.
+베타 테스트 목적에 따라, 장애인을 위한 보조 도구를 사용하거나, 모국어가 한국어가 아니거나, 컴퓨터 소프트웨어에 대한 다양한 익숙함을 지닌 테스터가 고려되어야 한다.
 
 =========================================
-Using Course Team Members as Beta Testers
+베타 테스터로 강좌 운영팀 활용하기
 =========================================
 
-The course team can provide valuable feedback about your course. However, they
-are typically stakeholders in the success of your course and have a significant
-amount of knowledge about it. As a result, they can be too close to the course
-to interact with it in the same way as learners will. They can also be either
-reluctant to provide feedback, or overly zealous.
+강좌 운영자는 강좌에 대해 도움이 되는 피드백을 제공할 수 있다. 그러나 운영자는 관계자이면서, 강좌에 대해 많은 부분을 알고 있다. 그러므로 강좌 운영자는 학습자가 하는 것과 같은 방법으로 강좌에서 활동하기에는 너무 익숙한 사람이다. 또한 이들은 피드백을 제공하길 꺼리거나 지나치게 열정적일 수 있다.
 
-If you do want a team member to be a beta tester, note that the privileges of
-the Staff or Admin role override those of a beta tester. The team member must
-use a different, second email address to create an additional edX account and
-enroll in the course, and the course team must assign only the beta tester role
-to that edX account. The course team member experiences the course as a learner
-only when she signs in to edX using the beta tester account.
+베타 테스터를 하고 싶은 운영자가 있다면, 강좌운영진의 권한이 베타테스터의 권한보다 우선시 된다는 것을 알아야 한다. 그래서 강좌운영팀은 추가적인 역할을 수행하기 위해 다른 이메일 주소를 이용해야 한다. 사이트 등록, 활성화, 강좌 등록에 다른 이메일을 이용한 별도의 계정이 필요하다. 운영자가 학습자로서 강좌를 경험하고 싶다면, 새로 등록한 이메일로 (베타테스터 역할을 위해) 접속해야 한다.
 
 .. _What_Test:
 
 *********************************
-What to Test
+테스트 항목
 *********************************
 
-Beta testers should interact with everything in the course.
+베타 테스터는 강좌의 모든 것을 다루어 보아야 한다.
 
-* Select all links.
+* 모든 링크 클릭하기.
 
-* Watch all videos.
+* 모든 동영상 시청하기.
 
-* Download video transcripts and other files.
+* 동영상 자막 및 다른 파일 다운로드하기.
 
-* Complete all problems.
+* 모든 문제 풀기.
 
-Beta testers can use a desktop computer to access an edX website, the edX
-mobile app on a smartphone, or both to complete their tests. As they work,
-beta testers log issues and questions for the course team.
+베타테스터는 데스크탑 컴퓨터와 스마트폰을 모두 이용할 수 있다. 베타테스터들은 위의 작업을 하면서, 강좌 운영팀을 위해 발생한 이슈와 질문을 기록해야 한다.
 
 .. _How_Testers_See_Course:
 
 ******************************************
-How Beta Testers See Course Content
+베타 테스트 가능 시점
 ******************************************
 
-To beta test a course, you:
+강좌를 베타 테스트하기 위해 :
 
-* Define a number of days before content releases for testing to begin.
+* 주제와 소주제가 공개되기 전에 테스팅할 시간을 정한다.
 
-    * For instructor-paced courses, this number applies to the release date for
-      each section and subsection. Beta testers can only access course content
-      the number of days you specify before each section or subsection is
-      released.
+    * 베타테스터들은 주제 및 소주제 공개 전 입력한 숫자의 날 전에 강좌 콘텐츠에 접속할 수 있다.
 
-    * For self-paced courses, this number applies to the course start date.
-      Because sections and subsections for self-paced courses do not have
-      individual release dates, beta testers can access all course content when
-      the beta test begins.
 
-* Identify beta testers.
+* 베타 테스터가 누구인지 확인한다.
 
-Designated beta testers see course content before learners can. The matrix
-that follows shows the course content that beta testers can access earlier
-than other learners in an example instructor-paced course.
+정해진 베타 테스터는 학습자가 보기 전에 먼저 강좌 콘텐츠를 볼 수 있다. 다음 표는 고정 일정 강좌의 예에서 베타 테스터가 학습자보다 미리 접속해서 볼 수 있는 강좌 콘텐츠이다.
 
 .. list-table::
    :widths: 60 20 20
@@ -177,197 +121,142 @@ than other learners in an example instructor-paced course.
    * -
      - Yes
      - No
-   * - Before the course enrollment date
+   * - 강좌 등록일 전
      - X
      -
-   * - Before the course start date
+   * - 강좌 시작일 전
      - X
      -
-   * - Before the section release day
+   * - 주제 공개일 전
      - X
      -
-   * - Before the subsection release day
+   * - 소주제 공개일 전
      - X
      -
-   * - Before the unit is published
+   * - 학습활동이 공개되기 전
      -
      - X
-   * - Before a draft replaces a live unit
+   * - 운영되고 있는 학습활동을 대체하기 전
      -
      - X
 
-The course team can continue to add content in Studio after the beta test
-begins. When new content is ready for testing, be sure to :ref:`publish the
-unit<Publish a Unit>`.
+강좌 운영팀은 베타테스트가 시작되어도 Studio에서 콘텐츠를 계속 추가할 수 있다. 새로운 콘텐츠가 테스팅을 위해 준비되었다면 :ref:`publish the unit<Publish a Unit>`  을 살펴 본다.
 
-.. important:: When you set up the beta test and define when it starts, verify
- that the first section, subsection, and unit in your course are available to
- be tested. If that first unit is not available, an error occurs when testers
- attempt to access any other content in the course.
+.. important:: 베타테스트를 설정하고 시작 날짜를 정할 때 강좌 내 첫 주제, 소주제 및 학습활동이 테스트 가능하도록 확인한다. 만약 첫 학습활동이 테스트가 안되면 베타테스터가 강좌 내 다른 콘텐츠에 접속할 때 오류가 발생한다.
 
 ================================
-Define When the Beta Test Starts
+베타 테스터 시작일 정하기
 ================================
 
-To define the start of the beta test, you use Studio to specify a number of
-days before the course start date for self-paced courses or before the section
-and subsection release dates for instructor-paced courses. For more
-information, see :ref:`How_Testers_See_Course`.
+베타 테스트 시작일을 정하기 위해, 강좌에서 각 주제와 소주제의 공개일 전까지 남은 날을 설정하기 위해 Studio를 이용한다. 자세한 사항은  :ref:`How_Testers_See_Course`  을 참고한다.
 
-#. In Studio, from the **Settings** menu, select **Advanced Settings**.
+#. Studio의 **설정** 메뉴에서 **고급 설정** 을 선택한다.
 
-#. In the field for the **Days Early for Beta Users** policy key, enter the
-   number of days before content releases for beta testers to have access.
+#. 베타 사용자들에게 공개할 조기 기간 칸에서, 베타 테스터가 이용할 수 있는 각 주제와 소주제가 공개되는 날까지 남은 날을 입력한다.
 
-#. Select **Save Changes**.
+#. **변경 사항을 저장** 한다.
 
 ===========
-Example
+예시
 ===========
 
 .. Is this example helpful? how can we assess whether it is frightening/confusing to course team, or helpful?
 
-Beta tester access to course content for an instructor-paced course with **Days
-Early for Beta Users** = 20 and 2 sections:
+베타 테스터는 베타 사용자들에게 공개할 조기 기간 = 20과 2개 주제로 강좌 내용을 이용할 수 있다:
 
 
 .. list-table::
    :widths: 60 40
 
-   * - Course enrollment date = 31 August
-     - 31 August; earlier if enrolled by course team
-   * - Course start date = 15 September
-     - 26 August
-   * - Section 1 release day = 15 September
-     - 26 August
-   * - section 2 release day = 22 September
-     - 2 September
-   * - Subsection 1 release day = 22 September
-     - 2 September
-   * - Subsection 2 release day = 24 September
-     - 4 September
-   * - Subsection 2, unit 1 visibility = public
-     - 4 September
-   * - Subsection 2, unit 2 visibility = public; draft in progress
-     - 4 September for public version; no access to draft
-   * - Subsection 2, unit 3 visibility = private
-     - No access
+   * - 등록시작일 = 8월 31일
+     - 8월31일; 강좌관리자가 등록하면 더 일찍도 가능
+   * - 개강일 = 9월 15일
+     - 8월 26일
+   * - 주제1 공개일 = 9월 15일
+     - 8월 26일
+   * - 소주제2 공개일 = 9월 22일
+     - 9월 2일
+   * - 소주제1 공개일 = 9월 22일
+     - 9월 2일
+   * - 소주제2 공개일 = 9월 24일
+     - 9월 4일
+   * - 소주제2, 학습활동1 공개설정=공개
+     - 9월 4일
+   * - 소주제2, 학습활동2 공개설정=공개; 수정안 진행중
+     - 9월 4일 게시된 버전만; 수정안은 접근 불가
+   * - 소주제2, 학습활동3 공개설정=감추기
+     - 접근 불가
 
-In this example, the beta testers cannot access all of the content on the
-**Course** page when the beta test starts on 26 August: they can access section
-1 but not section 2. You may want to provide a schedule of section availability
-to your testers so that they can plan their time appropriately. Future release
-dates do not display to the beta testers in the course.
+위의 예에서, 베타 테스터는 8월 26일까지 모든 강좌 내용에 접근할 수 없고, 주제1을 이용할 수 있지만, 주제2는 아니다. 베타테스터들이 적절한 시간 계획을 세울 수 있도록 주제별 이용 가능한 일정을 제공하는 것이 좋을 것이다. 강좌 내용에서 현재 이후의 공개 일은 베타 테스터에게 보여지지 않는다.
 
 .. _Add_Testers:
 
 *********************************
-Adding Beta Testers
+베타 테스터 추가하기
 *********************************
 
-Before you can add beta testers:
+베타 테스터를 추가하기 전에	:
 
-* You need the email address or username of each beta tester.
+* 각 베타 테스터의 이메일 주소와 아이디가 필요하다.
 
-* Each beta tester must register and activate a user account for that email
-  address/username.
+* 각 베타 테스터는 계정을 등록한 후 이메일/아이디의 계정을 활성화 해야만 한다.
 
-When you add beta testers, note the following.
+베타 테스터를 추가할 때, 다음을 유의한다.
 
-* If the beta test starts before the course **Enrollment Start Date**, testers
-  cannot enroll themselves in your course. However, you can enroll the beta
-  testers prior to the **Enrollment Start Date**.
+* 베타 테스트를 강좌 등록 시작일 전에 시작한다면, 테스터는 강좌에 스스로 등록할 수 없기에 강좌 운영팀에서 베타 테스터를 직접 등록해야 한다.
 
-* If you add the beta testers after the defined start of the beta test, and
-  they are enrolled in the course, they see your course on their **Current
-  Courses** dashboards when they log in.
+* 베타 테스터를 베타 테스트 시작일 후에 추가한다면, 그리고 강좌에 등록되어 있다면, 베타 테스터들은 수강중인 강좌 대시보드에서 강좌를 볼 수 있다.
 
-* If you add beta testers before the test starts, or if they are not enrolled,
-  they do not see your course on their dashboards. You can enroll the beta
-  testers in the course yourself, and you may want to send an email message to
-  remind them when the test begins.
+* 테스트 시작 전에 베타 테스터를 추가한다면, 혹은 테스터가 등록이 되어 있지 않다면, 대시보드에서 강좌를 볼 수 없다. 강좌 운영팀에서 베타 테스터를 등록해 줄 수 있고, 테스트가 시작될 때 베타 테스터들에게 이메일 메세지를 보내어 알린다.
 
 .. _Add_Testers_Bulk:
 
 ================================
-Add Multiple Beta Testers
+여러 명의 베타 테스터 추가하기
 ================================
 
-If you have a number of beta testers that you want to add, you can use the
-"batch add" option to add them all at once, rather than individually. With this
-feature, you have options to enroll the beta testers in the course (before or
-after the **Enrollment Start Date**) and send an email message to notify the
-beta testers that they have been added.
+추가해야 하는 베타 테스터가 많을 경우, 한번에 전부 추가하기 위해 “베타테스터 추가” 옵션을 이용할 수 있다. 이 기능은, 강좌의 베타 테스터 등록을 위한 옵션들이 있고 (등록 시작일 전 후), 베타 테스터들에게 추가되었음을 알리는 이메일 메세지를 보낸다.
 
-To add multiple beta testers:
+여러 명의 베타 테스터를 추가하기 위해:
 
-#. View the live version of your course.
+#. 강좌의 적용결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Membership**.
+#. **교수자** 를 클릭하고, **등록 관리** 를 클릭한다.
 
-#. In the **Batch Beta Tester Addition** section of the page, enter one or more
-   addresses or usernames separated by commas or line feeds (the Enter key).
-   You can also copy data from a CSV file of email addresses and paste it here.
+#. 베타테스터 추가 영역에서, 하나 이상의 이메일 주소 혹은 사용자명을 콤마 혹은 줄바꿈(엔터)으로 구분하여 입력한다. 또한 이메일 주소가 담긴 CSV 파일에서 데이터를 복사해서 붙여 넣기 할 수 있다.
 
-#. To enroll the beta testers in your course, leave **Auto Enroll** selected.
-   If the beta test starts before the course **Enrollment Start Date**, testers
-   cannot enroll themselves in your course.
+#. 강좌에서 베타 테스터를 등록하기 위해, 자동 등록 선택으로 남긴다. 베타 테스트가 강좌 등록 시작일 전에 시작한다면, 베타 테스터는 강좌에 스스로 등록할 수 없다.
 
-#. To send an email message to the beta testers, leave **Notify users by
-   email** selected. An example of the message that is sent to a beta tester
-   who is not enrolled in the course follows.
+#. 베타 테스터에게 이메일 메세지를 보내기 위해, 이메일로 등록에 대해 알려줍니다. 를 선택한다. 강좌에 등록되지 않은 베타 테스터 (혹은 자동 등록) 에게 보내는 메세지 예는 다음과 같다.
 
-   ::
-      Dear betatester,
+#. **베타 테스터 추가** 를 클릭한다.
 
-      You have been invited to be a beta tester for *course* at edge.edx.org
-      by a member of the course team.
+1명 이상 이용자의 베타 테스터 역할을 제거하기 위해, 베타 테스터 추가 칸에서 이메일들을 입력하고, **베타 테스터 제거** 를 클릭한다.
 
-      Visit https://edge.edx.org/courses/course-name/about to join the course
-      and begin the beta test.
-
-#. Select **Add beta testers**.
-
-To remove the Beta Tester role from one or more users, enter their email
-addresses in the **Batch Add Beta Testers** field and then select **Remove beta
-testers**.
-
-.. note:: The **Auto Enroll** option has no effect when you select **Remove
- beta testers**. The user's role as a beta tester is removed; course
- enrollment is not affected.
+.. note:: 자동 등록은 베타 테스터 제거 를 클릭할 때는 관계 없는 옵션이다.
 
 ================================
-Add Beta Testers Individually
+개별 베타 테스터 추가하기
 ================================
 
-#. View the live version of your course.
+#. 강좌의 적용결과 보기를 선택한다.
 
-#. Select **Instructor** then **Membership**.
+#. **교수자** 를 클릭하고, **등록 관리** 를 클릭한다.
 
-#. In the **Administration List Management** section, use the drop-down list to
-   select **Beta Testers**.
+#. **관리** 에서, 드롭다운 목록을 사용하여 **베타 테스터** 를 선택한다.
 
-#. Under the list of users who currently have that role, enter an email address
-   or username and click **Add Beta Tester**.
+#. 현재 베타테스터 역할을 수행하는 사용자 목록에, 이메일 주소 혹은 사용자 명을 입력하고 **베타 테스터 추가** 를 클릭한다. .
 
-   If the beta test starts before the **Enrollment Start Date** of your course,
-   you can also enroll the beta tester. See :ref:`Enrollment`.
-
-To remove the Beta Tester role from users individually, find the user in the
-list of beta testers, and then select **Revoke access** to the right of that
-user's email address.
+   베타 테스트가 강좌의 등록 시작일 전에 시작한다면, 베타 테스터를 강좌에 수강등록할 수 있다.  :ref:`Enrollment` 을 살펴 본다.
 
 .. _Issue_Reporting_During_Course:
 
 *********************************
-Reporting Issues During a Course
+문제점 보고하기
 *********************************
 
-Despite the efforts of the course team and the beta testers, additional
-problems, questions, and issues can occur while a course is running.
+강좌가 운영되는 동안 강좌 운영팀과 베타 테스터의 노력에도 불구하고 추가적인 문제, 질문, 이슈가 발생할 수 있다.
 
-* Often, learners report issues by asking questions in a discussion. Your
-  discussion moderation team can watch for posts that indicate problems.
+* 학습자들은 게시판에 질문하여 이슈를 보고할 수 있다. 그러면 게시판 관리팀이 그 게시물을 보게 된다.
 
-* To let learners know the best way to report problems, you can post
-  information on the **Home** page or post it in a discussion.
+* 학습자에게 문제 보고 방법에 대해 알려주기 위해 **홈** 화면이나 게시판에 글을 작성할 수 있다.

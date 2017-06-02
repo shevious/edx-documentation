@@ -2,16 +2,12 @@
 .. _Set the Grace Period:
 
 *************************
-Set the Grace Period
+추가 제출 기간 설정하기
 *************************
 
-You can set a grace period that extends homework due dates for your learners.
-The grace period applies to the whole course; you cannot set different grace
-periods for individual assignments.
+과제 제출 날짜를 연장하는 추가 제출 기간을 설정할 수 있다. 추가 제출 기간은 강좌 전체에 적용되며 개별 과제에 대해 서로 다른 추가 제출 기간을 설정할 수는 없다.
 
-.. note:: The grace period setting does not apply to open response assessments.
-   For details about setting the response date for an ORA assignment, see
-   :ref:`Specify Assignment Names and Dates <PA Specify Name and Dates>`.
+.. note:: 추가 제출 기간 설정은 개방형 응답 평가에는 사용할 수 없다. 개방형 응답 평가 과제 응답 날짜 설정은  :ref:`Specify Assignment Names and Dates <PA Specify Name and Dates>` 를 참고하면 된다
 
-On the Grading page, under **Grading Rules & Policies**, enter a value in the
-**Grace Period on Deadline** field. Enter the value in Hours:Minutes format.
+
+성적 페이지의 성적 규정 밎 정책 페이지 아래에, 추가 제출 기간 필드에 값을 시간:분 형식을 입력한다.

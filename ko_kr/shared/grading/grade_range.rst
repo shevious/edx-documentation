@@ -2,65 +2,53 @@
 .. _Set the Grade Range:
 
 *******************
-Set the Grade Range
+성적 범위 설정하기
 *******************
 
-You must set the grade range for the course.  For example, your course can be
-pass/fail, or can have letter grades A through F.
+강좌의 성적 범위를 설정해야 한다. 예를 들어, 통과/낙제로 나누거나 A부터 F까지 등급을 나눌 수도 있다.
 
-To set the grade range, from the **Settings** menu, select **Grading**.
+성적 범위를 설정하려면 설정 메뉴에서 **과제 평가** 를 선택한다.
 
-The control for the grade range is at the top of the Grading page.
+페이지 상단의 바를 마우스로 움직이면 성적 범위를 조정할 수 있다.
 
 .. image:: ../../../shared/images/grade_range.png
   :alt: Image of the Grade Range control.
   :width: 600
 
-The above example shows that you have a pass/fail grade range, with a score of
-50 as the cutoff. This is the default setting for a new course.
+위의 예제는 컷오프 50점으로 통과/낙제 범위를 보여준다. 50점이 기본값이며, 성적바를 마우스로 움직이면 성적 범위를 조정할 수 있다.
 
-You can adjust the grade range as needed.
+다음 설정을 변경하기 위해 점수 범위 제어를 이용할 수 있다.
 
-* To add a grade in the range, select the **+** icon.
+* 범위에서 등급을 추가하기 위해 + 아이콘을 클릭한다.
 
-  A new grade is added to the range between the existing grades. For example,
-  if you add a grade in the default setting, the grade range changes to **F**
-  (0 to 50), **B** (50 to 75), and **A** (75 to 100):
+  새로운 등급이 기존 등급 사이의 범위에 추가된다. 예를 들어 기본 설정에서 등급을 추가 하는 경우, 점수 범위는 F (0 ~ 50), B (50 75 ~), 그리고 A (75 ~ 100)로 변경된다:
 
   .. image:: ../../../shared/images/grade_range_b.png
     :alt: Image of an altered Grade Range control.
     :width: 600
 
-* To change the score range, move the cursor over the line dividing two grades
-  and then select and drag the line left or right.
+* 점수 범위를 변경 하려면 점수 경계선 위로 커서를 이동 후 클릭하고 왼쪽이나 오른쪽으로 움직인다.
 
-  You can see the range numbers of the two grades adjacent to the line change.
-  Unselect the line when it is where you want it.
+  선이 원하는 곳에 있을 때 마우스 단추를 놓는다.
 
-* To change the name of the grade, select the current name of the grade
-  and start typing the name of the new grade. For example,
-  if the original name of the grade is "Pass", you can select "Pass" and
-  then type "Excellent" to replace the name.
+* 등급명을 변경하려면, 변경하고 싶은 현재 등급명을 두 번 클릭하고, 새 이름을 입력한다. 예를 들어, 원래 등급명이 “통과”인 경우, “통과”를 선택한 다음, “Excellent (우수)”를 입력할 수 있다.
 
-  You cannot change **F** or **Fail**.
+  F 또는 낙제 는 변경할 수 없다.
 
-* To remove a grade, move the cursor so that it is over the grade.
+* 등급을 삭제하려면 점수 위에 있도록 커서를 이동한다.
 
-  A **remove** link appears above the grade. Select the link.
+  삭제 버튼이 점수 위에 나타나면 클릭한다.
 
-  You cannot remove F or A.
+  F 또는 A는 제거할 수 없다.
 
-After you make any changes to the grade range, you must select **Save Changes**
-at the bottom of the page.
+범위를 변경한 후 페이지 하단에 있는 변경 사항 저장 을 클릭해야 한다.
 
 .. _Grade Ranges and Certificates:
 
 ==============================
-Grade Ranges and Certificates
+성적 범위와 이수증
 ==============================
 
-If you plan for your course to offer certificates, note that a learner will
-qualify for a certificate by earning any grade over the F, or Fail, threshold.
-This is true regardless of how many grade levels you add in the grade range.
+강좌 이수증을 발급할 경우, 학습자가 F나 Fail이상의 성적을 받아야 이수증을 취득할 수 있다. 이는 얼마나 많은 등급이 성적 범위에 추가되는지에 상관없이 적용된다.
 
-For more information, see :ref:`Setting Up Course Certificates`.
+자세한 사항은  :ref:`Setting Up Course Certificates` 를 참고하면 된다.

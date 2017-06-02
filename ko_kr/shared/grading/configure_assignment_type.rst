@@ -1,78 +1,62 @@
 .. _Configure the Assignment Types:
 
 ******************************
-Configure the Assignment Types
+과제 유형 설정하기
 ******************************
 
-You must create assignment types for your course and determine the weight of
-the total grade for each assignment type.
+과제의 유형을 설정해야 하고, 각 과제 형식에 대해 학습자의 전체 성적에서의 비중(weight)을 결정해야 한다.
 
-For example, you might have the following assignment types.
+예를 들어, 다음의 과제 유형들을 가질 수 있다.
 
-* 10 homework assignments, worth a total of 50% of the grade;
-* A midterm exam, worth a total of 20% of the grade;
-* A final exam, worth 30% of the grade.
+* 점수의 50%에 해당하는 10가지 과제;
+* 점수의 20%에 해당하는 중간 평가;
+* 점수의 30%에 해당하는 기말 평가.
 
-By default, a new course has the following four assignment types.
+기본적으로, 개설하는 신규 강좌는 4개의 과제 유형을 가진다.
 
-* Homework
-* Lab
-* Midterm Exam
-* Final Exam
+* 과제
+* 실험
+* 중간 평가
+* 기말 평가
 
-You can use these assignment types, modify or remove them, and create new
-assignment types.
+이러한 과제 유형을 이용, 수정 또는 삭제할 수 있고, 새로운 과제 유형을 만들 수 있다.
 
-To create a new assignment type, in the bottom of the Grading page, select
-**New Assignment Type**, then configure the fields described below.
+새로운 과제 유형을 만들려면 성적 페이지의 하단에서 **과제 추가하기** 를 클릭한 다음, 아래에 설명된 입력 필드를 설정한다.
 
-.. note:: In a MOOC, some number of learners will experience personal
-  emergencies, technical problems (such as power blackouts or loss of
-  internet access), or other issues. You will not be able to grant
-  individual extensions to such learners, but can provide some amount
-  of flexibility for managing such issues by designing longer deadlines
-  and allowing droppable assignments.
+.. note:: K-MOOC에서 학습자는 기술적 오류 (정전, 인터넷 접속 오류 등) 등의 상황을 경험할 수 있다. 이 학습자에게 개별 추가 제출 기간을 줄 수는 없지만 기한을 늘리는 등의 방법을 통해 일부 도움을 줄 수는 있다.
 
 
 ==========================
-Assignment Type Fields
+과제 유형 입력 필드
 ==========================
 
-You configure the following fields for each assignment type.
+각 과제 유형에 대해 다음의 입력 필드를 설정한다.
 
-* **Assignment Type Name:**
+* **과제명:**
 
-  The general category of the assignment. This name will be visible to
-  learners.
+  중간평가, 기말평가 등 과제명을 입력한다. 입력된 과제명은 학습자에게 나타난다.
 
   .. note::
-   All assignments of a particular type count the same toward the weight of
-   that category. As a result, a homework assignment that contains 10 problems
-   is worth the same percentage of a student's grade as a homework assignment
-   that contains 20 problems.
+   한 과제 유형에 속하는 모든 하위 과제는 그 유형의 비중과 동일하게 계산된다. 즉, 문제의 갯수가 10개든 20개든, 문제를 포함하는 과제는 동일한 비율로 성적에 반영된다.
 
-* **Abbreviation:**
+* **성적 기록부 표시용 약자:**
 
-  This is the short name that appears next to an assignment on a learner's
-  **Progress** tab.
+  학습자의 진도 탭과 성적 기록부 에 사용되며, 공간의 문제상 과제명의 약자가 필요하다. 예를 들어 중간 평가의 경우, ‘중간’으로 입력하면 된다.
 
-* **Weight of Total Grade:**
+* **점수 가중치:**
 
-  The assignments of this type together account for the percent value set in
-  **Weight of Total Grade**.
+  해당 유형에 속하는 전체 과제가 합쳐져서 과목 전체 성적에, 점수 가중치에 맞춰 반영된다.
 
-  The total weight of all assignment types must equal 100.
+  모든 과제 유형의 비중을 합치면 100이 되어야 한다.
 
-  .. note:: Do not include the percent sign (%) in this field.
+  .. note:: 이 입력 필드에 백분율 기호 (%)를 포함하지 않도록 한다.
 
-* **Total Number:**
+* **합계:**
 
-  The total number of subsections in your course that contain problems of this
-  assignment type.
+  해당 과제 유형의 개수를 의미한다.
 
-* **Number of Droppable**
+* **삭제 횟수**
 
-  The number of assignments of this type that the grader will drop. The grader
-  will drop the lowest-scored assignments first.
+  해당 유형의 과제 중최종 성적에 반영하지 않을 과제 수이다. 최저 득점부터 반영이 되지 않게 된다.
 
 

@@ -1,73 +1,46 @@
 .. _Course_Wiki:
 
 ########################
-Using the Course Wiki
+위키 활용하기
 ########################
 
-Wikis provide a way for the course team and learners to access, share, and
-collaboratively edit information both about, and for, your course.
+위키는 강좌 운영팀 및 학습자들이 강좌에서 다루는 정보에 대해 접근, 공유 및 수정할 수 있도록 해준다.
 
 .. contents::
    :depth: 1
    :local:
 
 ***********************
-About the Course Wiki
+강좌 위키
 ***********************
 
-Every course has a wiki that you can set up in a way appropriate for your
-course. If you have specific expectations for how the wiki should be
-used, communicate these expectations to your learners and staff. You can
-:ref:`seed the wiki<Seeding the Wiki>` with specific content and provide a
-skeleton structure and some exemplars. At the beginning of the course, explain
-how you want the course wiki to be used, and provide clear instructions and
-guidelines for its use.
+:ref:`seed the wiki<Seeding the Wiki>` 를 시작으로, 강좌 초반에 위키를 어떻게 사용할 것인지 학습자 및 강좌 운영팀이 정하면 된다.
 
-Common uses for the course wiki might include the following activities.
+강좌 위키를 이용하여 다음과 같은 활동을 할 수 있다.
 
-* Sharing answers to course FAQs and collecting new FAQs.
-* Sharing editable course information, such as download and installation
-  instructions for software required for the course
-* Providing shared access to learner-created resources, perhaps as part of a
-  collaborative exercise.
-* Sharing errata for the course.
-* Collecting suggestions for future runs of the course.
-
-As learners and course team members create and edit wiki articles, they
-contribute to a repository of information about your course that can be
-immediately useful to other learners, or useful for you and your course team as
-you develop other courses or future runs of the same course.
-
-The wiki for each course is a "child" wiki of the edX-wide wiki. From within
-any course wiki, select the top level **Wiki** link in the breadcrumb trail
-at the top of the page to visit the edX-wide wiki.
+* 강좌에서 자주 묻는 질문(FAQ)에 대한 답변을 공유하고 새로운 자주 묻는 질문들을 취합한다.
+* 강좌를 위해 필요한 소프트웨어 다운로드 및 설치 방법 등과 같은 정보를 공유한다.
+* 학습자가 만든 자료에 대한 접근권을 공유한다.
+* 강좌의 오류를 공유한다.
+* 강좌의 후속 운영에 대한 의견을 취합한다.
 
 .. Some courses have linked wikis, which can be useful for course re-runs or for course series. You link a wiki with another course's wiki by...?
 
 .. _Wikis Overview:
 
 ********************************
-Managing the Course Wiki
+강좌 위키 관리하기
 ********************************
 
-Keep these points in mind as you design the wiki for your course.
+위키를 만들 때에는 다음과 같은 항목을 염두에 두도록 한다.
 
-* Be clear about the purpose for the wiki or for different parts of the wiki.
-  For example, are some parts of the wiki only for disseminating information?
-  If that is the case, then make sure that only your course team has write
-  access for those articles.
+* 위키의 사용 목적에 대해 분명히 한다. 예를 들면, 위키의 특정 부분이 정보 확산을 위한 것인가? 그렇다면, 반드시 강좌 운영팀만이 문서작성을 할 수 있도록 해야 한다.
 
-* Decide whether some parts of the wiki are intended for learner collaboration
-  or learner input. Make sure that learners are able to create and edit wiki
-  articles in those sections, and use text to clearly indicate to learners that
-  these pages can be edited.
+* 위키의 특정 부분이 학습자들의 협동작업을 위한 것인지 학습자 참여를 위한 것인지 결정한다. 학습자들이 해당 부분에 위키 문서를 작성하고 편집할 수 있게 해주어야 하고 문서를 활용하여 이러한 페이지들의 편집이 가능하다는 사실을 학습자들에게 알린다.
 
-* Think about the different tasks that will be performed by people in different
-  roles. Typically you want your course team to have some privileges that
-  learners do not have. For example, course team members can delete wiki
-  articles, but learners cannot.
+* 각기 다른 역할을 하는 사람들이 수행하게 될 각기 다른 작업에 대해 생각해본다. 일반적으로 자신의 강좌 운영팀이 학습자들이 가지고 있지 못한 특권을 가지길 원할 것이다. 예를 들면, 강좌 운영팀의 경우 위키 문서를 삭제할 수 있지만 학습자들은 그렇게 하지 못한다.
 
-Members of the course team can perform these tasks to manage the wiki.
+강좌 운영팀은 아래와 같은 작업을 수행하며 위키를 관리한다.
 
 * :ref:`Show or Hide the Wiki<Showing or Hiding the Wiki>`
 * :ref:`Control Wiki Access<Controlling Wiki Access>`
@@ -77,8 +50,7 @@ Members of the course team can perform these tasks to manage the wiki.
 * :ref:`Purge a Wiki Article<Purging a Wiki Article>`
 * :ref:`Restore a Deleted Wiki Article<Restoring a Deleted Wiki Article>`
 
-All users, including learners, can perform the following tasks, depending on
-the permissions that you set for an article.
+학습자들을 포함하여 모든 사용자들은 문서에 설정해놓은 권한에 따라 다음의 작업을 수행할 수 있다.
 
 * :ref:`Add a Wiki Article<Adding a Wiki Article>`
 * :ref:`Edit a Wiki Article<Editing a Wiki Article>`
@@ -88,186 +60,137 @@ the permissions that you set for an article.
 .. _Showing or Hiding the Wiki:
 
 ********************************
-Showing or Hiding the Wiki
+위키 보이거나 감추기
 ********************************
 
-When you create a course, a wiki is included by default, and a **Wiki** page is
-visible at the top of the course page. If you do not want to use the course
-wiki, you can hide the **Wiki** page at the top of the course.
+강좌를 개설할 때, 위키는 기본적으로 포함되어 있고 강좌 페이지 가장 상단에 표시된다. **강좌 위키** 를 사용하지 않을 경우 강좌 위에 위키를 감출 수 있다.
 
-To show or hide the wiki in the course tabs, follow these steps.
+다음의 절차를 따라 강좌 탭에 있는 위키를 보이게 하거나 감출 수 있다.
 
-#. Open your course in Studio.
-#. Select **Content**, then **Pages**.
-#. Select the eye icon in the **Wiki** row. The **Wiki** page is hidden when
-   the eye icon has a slash through it. You can show the **Wiki** page again by
-   selecting the eye icon.
+#. Studio에서 강좌를 연다.
+#. **콘텐츠** 에서 **강좌 메뉴** 를 선택한다.
+#. 위키 줄에 있는 눈 아이콘을 클릭한다. 눈 아이콘에 줄이 그어져 있을 경우 위키 탭은 감춰지게 된다. 눈 아이콘을 다시 클릭하면 위키 탭이 다시 보인다.
 
-When you hide the wiki in your course, any existing articles remain in the edX-
-wide wiki, but the **Wiki** page is removed from your course pages.
 
 .. In XML authoring, remove the `{"type": "wiki"}` entry in your `/policies/TERM/policy.json` file.
 
 .. _Controlling Wiki Access:
 
 ********************************
-Controlling Access to the Wiki
+위키 접근권한 관리하기
 ********************************
 
-You can control access to the wiki in various ways: by changing access to the
-wiki as a whole, by changing the read/write permissions settings of articles
-within the wiki, or by locking articles.
+여러 방법을 통해 위키에 대한 접근권을 통제할 수 있다. 전체 위키의 접근권을 변경하거나 위키 문서상의 열람/작성 권한 설정의 변경, 혹은 문서 잠금을 통해 통제할 수 있다.
 
-To change access to the course wiki, follow these steps.
+강좌 위키의 접근권에 대한 변경을 하려면 다음을 수행한다.
 
-#. Open your course in Studio.
-#. Select **Settings**, then **Advanced Settings**.
-#. Scroll down to the **Allow Public Access to Wiki** field. This Boolean
-   setting is set to False by default, meaning that only course team members
-   and enrolled learners can see the course wiki. If you change the value of
-   this field to True, then any registered edX user can access the course wiki,
-   even if they are not enrolled in your course. However, public users would
-   have to explicitly navigate to your wiki via the edX-wide wiki structure, or
-   a link that has been provided to them.
+#. Studio에서 강좌를 개설한다.
+#. **설정** 을 선택한 후 **고급 설정** 을 선택한다.
+#. **모두에게 위키 접근 허용하기** 영역으로 스크롤을 내린다. 이 설정은 기본값으로 “아니오”로 설정이 되어 있는데 이는 오직 강좌 운영팀 회원들과 등록된 학습자들만이 강좌 위키를 열람할 수 있다는 것을 의미한다. 이를을 “예”로 바꾸게 되면, 강좌에 등록되지 않았다 하더라도 등록된 모든 사용자들이 강좌 위키를 사용할 수 있다. 하지만, 일반 사용자들은 위키 구조나, 제공된 링크를 통하여 위키를 먼저 분명하게 살펴볼 필요가 있다.
 
-To modify viewing or editing permissions for specific groups of users by
-article, see :ref:`Setting Permissions for Wiki Articles`.
+문서의 열람 및 편집 권한 수정에 관한 자세한 안내는  :ref:`Setting Permissions for Wiki Articles` 에 있다.
 
-To lock an article and prevent further editing, see :ref:`Locking
-a Wiki Article`.
+문서 편집을 잠그고 이후 편집에 관한 자세한 안내는  :ref:`Locking a Wiki Article` 에 있다.
 
 .. _Setting Permissions for Wiki Articles:
 
 ***************************************
-Setting Permissions for Wiki Articles
+위키 문서 권한 설정하기
 ***************************************
 
-To prevent certain groups of users from being able to add or edit articles, you
-need to modify the read/write permissions for articles. For example, as a
-member of the course team, you likely want to prevent learners from creating
-wiki articles at the top level, so you should remove write access to course-
-level wiki articles for most users. (Top-level wiki articles are children of
-the edX-wide wiki, and cannot be found within the course wiki).
+특정 사용자 집단이 문서를 추가하거나 편집하지 못하게 하려면 문서에 대한 열람/작성 권한 설정을 수정해야 한다. 예를 들어, 학습자들이 상위 단계에서 위키 문서를 작성하지 못하게 하려면 대부분의 사용자를 위하여 강좌 위키 문서에 대한 작성 권한 설정을 없애야 한다.
 
-To modify the permissions for wiki articles, follow these steps.
+위키 문서 권한 설정을 수정하려면.
 
-#. View the live version of your course.
-#. Select **Wiki**.
-#. Navigate to the article whose permissions you are modifying, and then select
-   **Settings**.
-#. In the **Permissions** section of the **Settings** page, select or clear the
-   checkboxes for read or write access for **Group** or **Other**.
-#. At the bottom of the page, select the **Save changes** button for the
-   **Permissions** section.
+#. 적용 결과 보기를 클릭한다.
+#. **위키** 를 클릭한다.
+#. 권한 설정을 수정하기 위해 문서를 찾은 다음 설정 을 클릭한다.
+#. **설정 페이지의 권한 설정** 부분에서 단체 혹은 다른 사용자 를 위한 열람 및 작성 권한에 대한 체크박스를 선택한 후 빈칸으로 남겨놓는다.
+#. 페이지 하단의 **변경사항 저장** 버튼을 누른다.
 
-Note that there are two different **Save changes** buttons, one near the top of
-the page for the **Notifications** section, and one at the bottom of the page
-for the **Permissions** section. If you are modifying permissions, make sure
-you select the **Save changes** button at the bottom of the page for your
-changes to be saved.
+알아 두어야 할 점은 두 가지 다른 변경사항 저장 버튼이 있다는 사실이다. 하나는 페이지의 윗부분 알림 에 있고 다른 하나는 페이지 하단의 권한 부분에 있다. 권한 설정을 수정할 경우 변경사항을 저장하기 위하여 페이지 아래에 있는 변경사항 저장 버튼을 누르도록 한다.
 
 ===============================
-Groups Used in Wiki Permissions
+단체 위키 허가 사용
 ===============================
 
-There are three groups for each course, managed by adding users to these groups
-on the **Membership** page of the Instructor Dashboard.
+각 강좌엔 다음과 같은 세 특수 집단이 있다. 이를 교수자 대시보드의 등록 관리 메뉴에서 관리할 수 있다.
 
-	* Beta Testers (by default there are no beta testers until you add them)
-	* Admins (by default, the course author is always in this group)
-	* Staff (these are course team members)
+	* 베타 테스터 (추가하기 전까지는 베타테스터가 없는 상태가 기본값이다)
+	* 관리자 (강좌 개설자가 이 그룹에 포함된 상태가 기본값이다)
+	* 강좌 운영팀
 
-The permissions for the **Others** group apply to users who are not in the
-three course groups, including learners.
+‘기타’ 집단에는 학습자를 포함하여 위에 명시된 세 집단 이외 다른 집단도 포함된다.
 
 .. If permissions are unchanged from the default wiki, students can create articles at the course level (children of the edX-wide wiki). This is easy to do accidentally due to the prominence of the Add article button for the top level.
 
 .. _Seeding the Wiki:
 
 ********************************
-Seeding the Wiki
+위키 초안 작성해두기
 ********************************
 
-To ensure that learners get the most out of your course wiki, design the wiki
-space before the course starts by seeding the course wiki with articles that
-give it the desired structure.
+위키를 통해 많은 것을 배워갈 수 있도록, 강좌를 시작하기 전에 위키 초안을 작성해두면 좋다.
 
-For example, you could create wiki articles to mirror the course outline. At
-the top level, you could provide a course outline, FAQs, and links to the main
-articles for each section. In the child articles for each section, you could
-provide information specific to the units and components in that section, and a
-page for learners to share their feedback and experiences.
+예를 들어, 위키 문서를 작성하여 강좌 개요를 작성할 수 있다. 상위 단계에서 강좌 개요, 자주 묻는 질문들, 그리고 강좌의 링크를 통하여 각 분야의 주요 문서들을 제공할 수 있다. 각 주제의 하위 문서에서, 해당 주제 내용에 대해 제시할 수도 있고 학습자들이 피드백 및 경험을 서로 공유할 수 있는 페이지를 제공할 수도 있다.
 
 .. include:: ../../../shared/course_assets/wiki_tasks.rst
 
 .. _Locking a Wiki Article:
 
 ********************************
-Locking a Wiki Article
+위키 문서 편집 잠금
 ********************************
 
-Locking a wiki article prevents further changes from being made to it. To lock
-a wiki article either after you create it, or after you make specific edits,
-follow these steps.
+위키 문서 편집을 잠그게 되면 차후 변경사항을 적용할 수 없다. 아래에 나오는 절차를 따라 문서를 작성한 이후, 혹은 편집을 하고 난 이후에 위키 문서 편집을 잠글 수 있다.
 
 .. If you only lock an article without modifying the read/write permissions,
 .. other users can still create wiki articles at the top level. They also appear
 .. still to have an Edit button at the top level, but they get Permission Denied
 .. when they click Edit.
 
-#. View the live version of your course.
-#. Select **Wiki**.
-#. Navigate to the article you want to lock, and then select **Settings**.
-#. In the **Permissions** section of the **Settings** page, select the **Lock
-   article** checkbox.
-#. At the bottom of the page, select the **Save changes** button for the
-   **Permissions** section.
+#. 강좌의 적용 결과 보기를 클릭한다.
+#. **위키** 를 클릭한다.
+#. 문서 편집을 잠그고자 하는 문서를 검색하고 **설정** 을 클릭한다.
+#. **설정** 페이지상의 권한 부분에서, 문서 편집 잠금 체크박스를 선택한다.
+#. **페이지** 아래쪽에 **변경사항** 저장 버튼을 클릭한다.
 
 .. _Deleting a Wiki Article:
 
 ********************************
-Deleting a Wiki Article
+위키 문서 삭제하기
 ********************************
 
-Only course team members can delete articles. In addition, you can only delete
-an article if you have permissions to edit that article. If you have the
-required permissions, you see a **Delete article** button at the bottom of the
-**Edit** page.
+오직 강좌 운영팀 구성원만이 문서를 삭제할 수 있다. 해당 문서에 대한 편집 허가가 있을 경우 해당 문서를 삭제할 수 있다.
 
-To delete an article, follow these steps.
+아래의 절차를 따라 문서를 삭제한다.
 
-#. View the live version of your course.
-#. Select **Wiki**.
-#. Navigate to the article you want to delete, and then select **Edit**.
-#. Select **Delete article**.
-#. On the deletion confirmation page, select **Yes, I am sure**.
-#. Optionally, also select the **Purge** checkbox. For details, see
-   :ref:`Purging a Wiki Article`.
-#. Select **Delete article** to confirm the deletion.
+#. 강좌의 적용 결과 보기를 클릭한다.
+#. **위키** 를 클릭한다.
+#. 삭제하고자 하는 문서를 검색하고 **편집** 을 클릭한다.
+#. 글 **삭제** 버튼을 클릭하여 문서를 삭제 한다.
+#. 삭제 확인 페이지에서 **네, 삭제합니다.** 를 선택한다.
+#. 선택적으로, 전체 삭제 체크박스를 선택한다. 보다 상세한 설명은 :ref:`Purging a Wiki Article` 에 있다.
+#. 문서 삭제를 확인하기 위하여 **글 삭제** 를 클릭한다.
 
 
 .. _Purging a Wiki Article:
 
 ========================
-Purging a Wiki Article
+위키 문서 전체 삭제
 ========================
 
-When you delete and purge an article, it is completely removed from the wiki,
-with no option to undo the deletion. Select this option only if you are sure
-you will not want to restore the content.
+문서를 삭제하거나 전체 삭제를 할 경우, 위키에서 완전히 없어지게 되며 삭제를 되돌릴 다른 방법은 없다. 본 선택사항은 해당 내용을 다시 되살릴 의향이 전혀 없을 경우에만 사용한다.
 
-To purge an article as you delete it, select the **Purge** checkbox on the
-deletion confirmation page.
+삭제된 문서에 대해 전체 삭제를 하려면 삭제 확인 페이지에서 전체 삭제 체크박스를 선택한다.
 
 
 .. _Restoring a Deleted Wiki Article:
 
 =================================
-Restoring a Deleted Wiki Article
+삭제된 위키 문서 복원
 =================================
 
-Articles that have been deleted but not purged can be restored. A link to the
-article remains visible at the level at which it was created.
+삭제되었지만 전체 삭제되지 않은 문서는 다시 되살릴 수 있다. 생성되었던 단계에서 문서에 대한 링크를 볼 수 있다.
 
-To restore a deleted article, select the link to the article and select
-**Restore**.
+삭제된 문서를 되살리려면, 문서의 링크를 클릭하여 **되살리기** 를 클릭한다.
