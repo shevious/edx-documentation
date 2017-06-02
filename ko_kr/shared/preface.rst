@@ -9,454 +9,218 @@ Other edX Resources
 .. edx-platform/docs/en_us/shared
 .. Alison 19 Aug 14
 
-Course teams, researchers, developers, learners: the edX community includes
-groups with a range of reasons for using the platform and objectives to
-accomplish. To help members of each group learn about what edX offers, reach
-goals, and solve problems, edX provides a variety of information resources.
+이 도움말은 강좌 운영팀, 연구자, 개발자, 학습자 등 K-MOOC 이용자가 K-MOOC가 무엇을 제공하는지 알고, 각자의 목표를 성취하며 문제의 해결을 돕기 위해 만들어졌다.
 
-To help you find what you need, browse the edX offerings in the following
-categories.
+아래 링크에서 필요한 사항을 찾아볼 수 있다.
 
 .. contents::
  :local:
  :depth: 1
 
-All members of the edX community are encouraged to make use of the
-resources described in this preface. We welcome your feedback on these edX
-information resources. Contact the edX documentation team at `docs@edx.org`_.
+K-MOOC에 대한 건의사항은 `docs@edx.org`_ 로 보내면 된다.
 
-.. _The edX Partner Portal:
-
-***********************
-The edX Partner Portal
-***********************
-
-The `edX Partner Portal`_ is the destination for partners to learn, connect,
-and collaborate with one another. Partners can explore rich resources and share
-success stories and best practices while staying up-to-date with important news
-and updates.
-
-To use the edX Partner Portal, you must register and request verification as an
-edX partner. If you are an edX partner and have not used the edX Partner
-Portal, follow these steps.
-
-#. Visit `partners.edx.org`_, and select **Create New Account**.
-#. Select **Request Partner Access**, then fill in your personal details.
-#. Select **Create New Account**. You will receive a confirmation email with
-   your account access within 24 hours.
-
-After you create an account, you can sign up to receive email updates about edX
-releases, news from the product team, and other announcements. For more
-information, see :ref:`Release Announcements through the Open edX Portal`.
-
-===============================================
-Course Team Support in the edX Partner Portal
-===============================================
-
-EdX partner course teams can get technical support in the `edX Partner
-Portal`_. To access technical support, submit a support ticket, or review any
-support tickets you have created, go to `partners.edx.org`_ and select **Course
-Staff Support** at the top of the page. This option is available on every page
-in the Partner Portal.
 
 .. _The Open edX Portal:
 
 ***********************
-The Open edX Portal
+Open edX포털
 ***********************
 
-The `Open edX Portal`_ is the destination for all edX users to learn about the
-edX roadmap, as well as hosting, extending the edX platform, and contributing
-to Open edX. In addition, the Open edX Portal provides product announcements,
-the Open edX blog, and other rich community resources.
+`Open edX Portal`_ Open edX 로드맵을 알아보고 Open edX 플랫폼을 확장시키고, 이에 기여할 뿐만 아니라, open edx 로드맵에 관해 알아볼 수 있다. 또한, Open edX 포털은 제품 소식, Open edX 블로그와 여러 인터넷 커뮤니티를 제공한다..
 
-All users can view content on the Open edX Portal without creating an account
-and logging in.
+모든 사람은 Open edX 포털에 아이디를 만들고 로그인을 할 필요가 없다.
 
-To comment on blog posts or the edX roadmap, or subscribe to email updates, you
-must create an account and log in. If you do not have an account, follow these
-steps.
+블로그나 Open edX 로드맵에 댓글을 달거나 이메일 소식을 받기 위해선 아이디를 만들고 로그인해야 한다. 아이디가 없다면 다음과 같이 아이디를 만들 수 있다.
 
-#. Visit `open.edx.org/user/register`_.
-#. Fill in your personal details.
-#. Select **Create New Account**. You are then logged in to the `Open edX
-   Portal`_.
+#. `open.edx.org/user/register`_ 에 접속한다.
+#. 개인정보를 입력한다.
+#. 새 아이디 생성을 누르고 `Open edX Portal`_ 에 로그인한다.
 
-.. _Release Announcements through the Open edX Portal:
-
-===============================
-Release Announcements by Email
-===============================
-
-To receive and share product and release announcements by email, you can
-subscribe to announcements on one of the edX portal sites.
-
-#. Create an account on the `Open edX Portal`_ or the  `edX Partner Portal`_ as
-   described above.
-#. Select **Community** and then **Announcements**.
-#. Under **Subscriptions**, select the different types of announcements that
-   you want to receive through email. You might need to scroll down to see
-   these options.
-#. Select **Save**.
-
-You will now receive email messages when new announcements of the types you
-selected are posted.
-
-***********************
-System Status
-***********************
-
-For system-related notifications from the edX operations team, including
-outages and the status of error reports. On Twitter_, you can follow
-@edxstatus.
-
-Current system status and the uptime percentages for edX servers, along with
-the Twitter feed, are published on the `edX Status`_ web page.
 
 .. _Resources for Course Teams:
 
 **************************
-Resources for Course Teams
+강좌 운영팀을 위한 자료
 **************************
 
-Course teams include faculty, instructional designers, course staff, discussion
-moderators, and others who contribute to the creation and delivery of courses
-on edx.org or edX Edge.
+강좌 운영팀은 교수자, 교수설계자, 운영 관리자, 게시판 관리자 등 강좌 개발에 기여할 수 있는 사람들이다.
 
 ======================================
-The edX Learning Series
+. edx 학습시리즈
 ======================================
 
-The courses in the edX Learning Series provide foundational knowledge about
-using the edX platform. These courses are available on edx.org.
+edx학습 시리즈의 과목들은 edx 플랫폼 활용에 관한 기초 지식을 제공한다. 이 과목들은 edx.org에서 확인이 가능하다.
 
-edX101: Overview of Creating a Course
+edX101: 강좌 만들기 개관
 **************************************
 
-The `edX101`_ course is designed to provide a high-level overview of the course
-creation and delivery process using Studio and the edX LMS. It also highlights
-the extensive capabilities of the edX platform.
+`edX101`_ 강좌는 Studio와 LMS를 이용하여 강좌를 만들고 제공하는 대략적 방법을 소개하기 위한 것이다. 또한 edX 101에는 edX 플랫폼의 기능에 중점을 두고 있다.
 
-StudioX: Creating a Course with edX Studio
+StudioX: edX Studio로 강좌 만들기
 *************************************************
 
-After you complete edX101, `StudioX`_ provides more detail about using Studio
-to create a course, add different types of content, and configure your course
-to provide an optimal on-line learning experience.
+edX101을 수강 후 `StudioX`_  를 통해 강좌 생성, 다양한 내용 추가, 그리고 최적의 온라인 학습 환경을 제공하기 위한 강좌구성 방법을 더 배울 수 있다.
 
-VideoX: Creating Video for the edX Platform
+VideoX: K-MOOC 플랫폼을 위한 영상 만들기
 *************************************************
 
-`VideoX`_ presents strategies for creating videos for course content and course
-marketing. The course provides step-by-step instructions for every stage of
-video creation, and includes links to exemplary sample videos created by edX
-partner institutions.
+`VideoX`_  는 강좌의 내용과 홍보동영상 제작 방법을 소개한다. 이 강좌는 동영상 제작 과정을 각각 단계별로 소개하고 있고 edX 협력 기관이 만든 샘플 영상을 제공한다.
+
 
 ==============
-Documentation
+도움말
 ==============
 
-Documentation for course teams is available on the `docs.edx.org`_ web page.
+강좌 운영팀을 위한 도움말은 http://kmooc.readthedocs.org/ko/latest/ 에서 이용할 수 있다.
 
-* `Building and Running an edX Course`_ is a comprehensive guide with concepts
-  and procedures to help you build a course in edX Studio, and then use the
-  Learning Management System (LMS) to run a course.
+* `Building and Running an edX Course`_ 는 교수자 및 강좌 운영팀이Studio 에서의 강좌 개발과 강좌운영을 돕는 학습 관리 시스템 (LMS)을 활용하기 위한 개념 및 절차를 포함한 종합적인 도움말이다.
 
-  When you are working in edX Studio, you can access relevant sections of this
-  guide by selecting **Help** on any page.
+  Studio 에서 작업하는 동안, 모든 페이지에서 도움말 을 클릭하면, 그 작업에 해당하는 세션에 적절한 도움을 얻을 수 있다.
 
-* `Using edX Insights`_ describes the metrics, visualizations, and downloadable
-  .csv files that course teams can use to gain information about student
-  background and activity.
+* `Using edX Insights`_ 에는 강좌 운영팀이 학습자의 배경 및 활동에 대한 정보를 얻는데 이용할 수 있도록 지표, 시각 자료, 및 다운로드 가능한 .csv 파일이 있다.
 
-* The `edX Release Notes`_ summarize the changes in each new version of
-  deployed software.
+* `edX Release Notes`_ Studio 는 학습 관리 시스템의 각 최신 버전에 대한 변경 사항을 제공한다.
 
-These guides open in your web browser. The left side of each page includes a
-**Search docs** field and links to the contents of that guide. To open or save
-a PDF version, select **v: latest** at the lower right of the page, then select
-**PDF**.
+이 도움말은 웹 브라우저에서 열린다. 각 페이지의 왼쪽에는 검색 필드 와 목차의 링크가 포함되어 있다. PDF 버전을 열거나 저장 하려면, 페이지의 오른쪽 아래에서 v: latest 를 클릭한 다음 PDF 를 클릭하면 된다.
 
-.. note:: If you use the Safari browser, be aware that it does not support the
- search feature for the HTML versions of the edX guides. This is a known
- limitation.
+.. note:: 만일 Safari를 사용중이라면 K-MOOC 도움말의 HTML 버전을 사용할 수 없다.
 
-======
-Email
-======
-
-To receive and share information by email, course team members can:
-
-* Subscribe to announcements and other new topics in the edX Partner
-  Portal or the Open edX Portal. For information about how to subscribe, see
-  `Release Announcements through the Open edX Portal`_.
-
-* Join the `openedx-studio`_ Google group to ask questions and participate in
-  discussions with peers at other edX partner organizations and edX staffers.
 
 ====================
-Wikis and Web Sites
+위키피디아 및 기타 사이트
 ====================
 
-The edX product team maintains public product roadmaps on :ref:`the Open edX
-Portal<The Open edX Portal>` and :ref:`the edX Partner Portal<The edX Partner
-Portal>`.
+:ref:`the Open edX Portal<The Open edX Portal>` 과 :ref:`the edX Partner Portal<The edX Partner Portal>` 에서 제작 로드맵에 관한 지침을 제공한다.
 
-The `edX Partner Support`_ site for edX partners hosts discussions that are
-monitored by edX staff.
+Open edX파트너 지원 사이트에서 의견을 올릴 수 있고 edX운영자가 모니터링한다.
 
-.. _Resources for Researchers:
-
-**************************
-Resources for Researchers
-**************************
-
-At each partner institution, the data czar is the primary point of contact
-for information about edX data. To set up a data czar for your institution,
-contact your edX partner manager.
-
-Data for the courses on edx.org and edX Edge is available to the data czars
-at our partner institutions, and then used by database experts, statisticians,
-educational investigators, and others for educational research.
-
-Resources are also available for members of the Open edX community who are
-collecting data about courses running on their sites and conducting research
-projects.
-
-==============
-Documentation
-==============
-
-The `edX Research Guide`_ is available on the docs.edx.org web page. Although
-it is written primarily for data czars and researchers at partner institutions,
-this guide can also be a useful reference for members of the Open edX
-community.
-
-The *edX Research Guide* opens in your web browser, with a **Search docs**
-field and links to sections and topics on the left side of each page. To open
-or save a PDF version, select **v: latest** at the lower right of the page, and
-then select **PDF**.
-
-.. note:: If you use the Safari browser, be aware that it does not support the
- search feature for the HTML versions of the edX guides. This is a known
- limitation.
-
-==============================
-Discussion Forums and Email
-==============================
-
-Researchers, edX data czars, and members of the global edX data and analytics
-community can post and discuss questions in our public research forum: the
-`openedx-analytics`_ Google group.
-
-The edX partner portal also offers community `forums`_, including a Research
-and Analytics topic, for discussions among edX partners.
-
-.. important:: Please do not post sensitive data to public forums.
-
-Data czars who have questions that involve sensitive data, or that are
-institution specific, can send them by email to data.support@edx.org
-with a copy to your edX partner manager.
-
-======
-Wikis
-======
-
-The edX Analytics team maintains the `Open edX Analytics`_ wiki, which includes
-links to periodic release notes and other resources for researchers.
-
-The `edx-tools`_ wiki lists publicly shared tools for working with the edX
-platform, including scripts for data analysis and reporting.
 
 .. _Resources for Developers:
 
 **************************
-Resources for Developers
+개발자 자료
 **************************
 
-Software engineers, system administrators, and translators work on extending
-and localizing the code for the edX platform.
+많은 소프트웨어 개발자, 시스템 관리자와 번역자들이 edX 플랫폼의 다국어화에 참여하고 있다.
 
 =============
-Documentation
+도움말
 =============
 
-Documentation for developers is available on the `docs.edx.org`_ web page.
+개발자를 위한 도움말은 `docs.edx.org`_ 에 있다.
 
-* The `edX Platform Developer's Guide`_ includes guidelines for
-  contributing to Open edX, options for extending the Open edX platform, using
-  the edX public sandboxes, instrumenting analytics, and testing.
+* `edX Platform Developer's Guide`_ 에는 Open edX에 참여하여 이 플랫폼 확대에 기여하며, Open edx 샌드박스(각주: 보호된 영역안에서 사용자 마음대로 프로그램을 작동시킬 수 있는 보안 소프트웨어)를 활용하고, 도구분석 및 시험 도구를 활용하기 위한 안내를 제공한다.
 
-* `Installing, Configuring, and Running the Open edX Platform`_ provides procedures
-  for getting an edX developer stack (devstack) and production stack
-  (fullstack) operational.
+* `Installing, Configuring, and Running the Open edX Platform`_  은 데이터 기억장치와 제작을 위한 전체 데이터 기억장치를 찾을 수 있도록 그 절차를 제공한다.
 
-* `Open edX XBlock Tutorial`_ guides developers through the process of
-  creating an XBlock, and explains the concepts and anatomy of XBlocks.
+* `Open edX XBlock Tutorial`_  은 개발자에게 XBlock을 만드는 방법과 개념에 대해 알려준다.
 
-* `Open edX XBlock API Guide`_ provides reference information about the XBlock
-  API.
+* `Open edX XBlock API Guide`_  엔 XBlock API에 관한 참고사항이 있다.
 
-* `edX Open Learning XML Guide`_ provides guidelines for building edX courses
-  with Open Learning XML (OLX). Note that this guide is currently an alpha
-  version.
+* K-MOOC 오픈 러닝 XML 가이드는 오픈 러닝 XML을 탑재한 K-MOOC 강좌 생성에 관한 안내사항을 알려준다. 현재 알파 버전 단계에 있다. 
 
-* `edX Data Analytics API`_ provides reference information for using the data
-  analytics API to build applications to view and analyze learner activity in
-  your course.
+* K-MOOC 데이터 분석 API는 강좌에서 학습자들의 활동을 분석하는 프로그램을 만드는데 데이터 분석 API의 활용법을 알려주고 있다.
 
-* `edX Platform APIs`_ provide reference information for building applications
-  to view course information and videos and work with user and enrollment
-  data.
+* K-MOOC 플랫폼 API는 강좌 정보, 동영상, 사용자의 작업상태 및 수강 상태에 관한 강좌 정보를 볼 수 있는 프로그램을 만드는 법을 알려주고 있다.
 
-.. note:: If you use the Safari browser, be aware that it does not support the
- search feature for the HTML versions of the edX guides. This is a known
- limitation.
+.. note:: 만일 Safari를 사용중이라면 K-MOOC 도움말의 HTML 버전을 사용할 수 없다.
 
 ======
 GitHub
 ======
 
-These are the main edX repositories on GitHub.
+Github은 K-MOOC 의 주된 저장소이다.
 
-* The `edx/edx-platform`_ repo contains the code for the edX platform.
+* `edx/edx-platform`_ 저장소는 edX 플랫폼을 위한 코드가 저장되어 있다.
 
-* The `edx/edx-analytics-dashboard`_ repo contains the code for edX Insights.
+* `edx/edx-analytics-dashboard`_ 저장소는 edX Insights를 위한 코드가 저장되어 있다.
 
-* The `edx/configuration`_ repo contains scripts to set up and operate the edX
-  platform.
+* `edx/configuration`_ 저장소는 edX 플랫폼 설치와 운영을 위한 스크립트가 저장되어 있다.
 
-Additional repositories are used for other projects. Our contributor agreement,
-contributor guidelines and coding conventions, and other resources are
-available in these repositories.
+추가적인 저장소는 다른 프로젝트를 위해 사용된다. 이 저장소엔 협력 동의서, 협력 가이드라인, 코딩 컨벤션과 기타 자료가 저장되어 있다.
 
 ======================
-Community Discussions
+커뮤니티 토의
 ======================
 
-The `Community Discussions`_ page in the Open edX Portal lists different
-ways that you can ask, and answer, questions.
+Open edX 포털의 커뮤니티 토의 화면엔 질문하고 답변할 수 있는 다양한 방법들이 소개되어 있다.
 
 .. _Community Discussions: https://open.edx.org/resources/community-discussions
 
 ====================
-Wikis and Web Sites
+위키와 웹사이트
 ====================
 
-The `Open edX Portal`_ is the entry point for new contributors.
+`Open edX Portal`_  은 새로운 협력 기관이 가입할 수 있는 곳이다.
 
-The edX Engineering team maintains an `open Confluence wiki`_, which
-provides insights into the plans, projects, and questions that the edX Open
-Source team is working on with the community.
+K-MOOC 개발자 팀은 열린, 융합이 되는 위키를 운영하여 K-MOOC 오픈 소스 팀이 커뮤니티와 관련하여 진행하고 있는 계획, 프로젝트 및 질문을 공개하고 있다.
 
-The `edx-tools`_ wiki lists publicly shared tools for working with the edX
-platform, including scripts and helper utilities.
+K-MOOC 도구 위키는 스크립트와 도움을 주는 지원 프로그램을 포함하여 edX 플랫폼에서 작업하는데 필요한 도구를 담고 있다.
 
 .. _Resources for Open edX:
 
 **************************
-Resources for Open edX
+Open edX을 위한 자료
 **************************
 
-Hosting providers, platform extenders, core contributors, and course staff all
-use Open edX. EdX provides release-specific documentation, as well as the
-latest version of all guides, for Open edX users. The following documentation
-is available.
+호스트 제공자, 플랫폼 확장자, 핵심 협력 기관 및 강좌 운영팀은 모두 Open edX을 사용하고 있고 이를 통해 구체적인 도움말과 최신 가이드를 Open edX 유저에게 제공한다. 다음과 같은 도움말을 확인할 수 있다.
 
-* `Open edX Release Notes`_ provides information on the contents of Open edX
-  releases.
+* `Open edX Release Notes`_ 은 Open edX에 관한 새로운 정보를 담고 있다.
 
-* `Building and Running an Open edX Course`_ is a comprehensive guide with
-  concepts and procedures to help you build a course in Studio, and then
-  use the Learning Management System (LMS) to run a course.
+* `Building and Running an Open edX Course`_ 는 Studio에서 강좌를 만들고 LMS를 통해 강좌를 관리하는데 도움을 주는 개념과 절차를 안내하며, 이는 종합적인 가이드 역할을 한다.
 
-  When you are working in Studio, you can access relevant sections of this
-  guide by selecting **Help** on any page.
+  Studio를 통해 작업 중일 때, 모든 화면에서 도움을 클릭해 관련 가이드를 참고할 수 있다.
 
-* `Open edX Learner's Guide`_ helps students use the Open edX LMS to take
-  courses. This guide is available on the docs.edx.org web page. Because
-  learners are currently only guided to this resource through the course,
-  we encourage course teams to provide learners with links to this guide as
-  needed in course updates or discussions.
+* `Open edX Learner's Guide`_ 는 학습자들이 강좌를 수강신청하기 위해 Open edx LMS를 활용하는 방법을 알려주고 있다. 이 가이드는 docs.edx.org에서 확인할 수 있다. 학습자는 현재 강좌를 통해서만 해당 자료에 대해 알 수 있기 때문에 강좌 업데이트나 토의 과정에 이 링크를 추가하는 것이 좋다.
 
-* `Installing, Configuring, and Running the Open edX Platform`_ provides
-  information about installing and using devstack and fullstack.
+* `Installing, Configuring, and Running the Open edX Platform`_ 는 데이터기억장치(devstack, fullstack)의 설치와 활용에 관한 정보를 담고 있다.
 
-* The `edX Platform Developer's Guide`_ includes guidelines for
-  contributing to Open edX, options for extending the Open edX platform, using
-  the edX public sandboxes, instrumenting analytics, and testing.
+* K-MOOC 플랫폼 개발자 가이드는 Open edX에 참여하여 이 플랫폼 확대에 기여하며, Open edx 샌드박스(각주: 보호된 영역안에서 사용자 마음대로 프로그램을 작동시킬 수 있는 보안 소프트웨어)를 활용하고, 도구분석 및 시험 도구를 활용하기 위한 안내를 제공한다. Open edX에 도움을 주고 확장할 수 있는 방법, 공개 K-MOOC 샌드박스, 도구 분석과 시험 사용법에 관한 내용을 담고 있다.
 
-* `Open edX XBlock Tutorial`_ guides developers through the process of
-  creating an XBlock, and explains the concepts and anatomy of XBlocks.
+* Open edX XBlock 입문과정은 개발자에게 XBlock을 만드는 방법과 개념에 대해 알려준다.
 
-* `Open edX XBlock API Guide`_ provides reference information on the XBlock
-  API.
+* Open edX XBlock API 가이드엔 XBlock API에 관한 참고사항이 있다
 
-* `EdX Open Learning XML Guide`_ provides guidelines for building edX courses
-  with Open Learning XML (OLX). Note that this guide is currently an alpha
-  version.
+* K-MOOC 오픈 러닝 XML 가이드는 오픈 러닝 XML을 탑재한 K-MOOC 강좌 생성에 관한 안내사항을 알려준다. 현재 알파 버전 단계에 있다.
 
-* `EdX Data Analytics API`_ provides reference information for using the data
-  analytics API to build applications to view and analyze learner activity in
-  your course.
+* K-MOOC 데이터 분석 API는 강좌에서 학습자들의 활동을 분석하는 프로그램을 만드는데 데이터 분석 API의 활용법을 알려주고 있다.
 
-* `EdX Platform APIs`_ provide reference information for building applications
-  to view course information and videos and work with user and enrollment
-  data.
+* K-MOOC 플랫폼 API는 강좌 정보, 동영상, 사용자의 작업상태 및 수강 상태에 관한 강좌 정보를 볼 수 있는 프로그램을 만드는 법을 알려주고 있다.
 
-.. note:: If you use the Safari browser, be aware that it does not support the
- search feature for the HTML versions of the edX guides. This is a known
- limitation.
+
+.. note:: 만일 Safari를 사용 중이라면 K-MOOC 도움말의 HTML 버전을 사용할 수 없다.
 
 .. _Resources for Students:
 
 **************************
-Resources for Learners
+학습자 자료
 **************************
 
 ==============
-Documentation
+도움말
 ==============
 
-The `EdX Learner's Guide`_ and the `Open edX Learner's Guide`_ are available
-on the docs.edx.org web page. Because learners are currently only guided to
-this resource through the course, we encourage course teams to provide
-learners with links to these guides as needed in course updates or discussions.
+edX 학습자 가이드와 Open edX학습자 가이드는 docs.dex.org에서 확인할 수 있다. 학습자는 현재 강좌를 통해서만 해당 자료에 대해 알 수 있기 때문에 강좌 운영팀은 강좌 업데이트나 토의 과정에 이 링크를 추가하는 것을 권장한다.
 
 ==============
-In a Course
+강좌에서
 ==============
 
-All edX courses have a discussion forum where you can ask questions and
-interact with other students and with the course team: select **Discussion**.
-Many courses also offer a wiki for additional resources and materials: select
-**Wiki**.
+모든 K-MOOC 강좌는 토의를 클릭하여 강좌 운영팀 및 학습자들과 질문을 하고 교류할 수 있는 토의 포럼이 마련되어 있다. 많은 강좌는 위키를 클릭하여 추가 자료를 열람할 수 있도록 하고 있다.
 
-Other resources might also be available, such as a course-specific Facebook
-page or Twitter feed, or opportunities for Google Hangouts. Be sure to check
-the **Home** page for your course as well as the **Discussion** and
-**Wiki** pages.
+특정 강좌에 한해서는 페이스북, 트위터나 구글 행아웃을 통한 추가 자료가 있을 수 있다. 반드시 홈, 토의, 위키를 클릭하여 확인하는 것이 좋다.
 
-From time to time, the course team might send email messages to all students.
-While you can opt out of these messages, doing so means that you can miss
-important or time-sensitive information. To change your preferences for course
-email, select **edX** or **edX edge** at the top of any page. On your dashboard
-of current courses, locate the course and then select **Email Settings**.
+때때로 강좌 운영팀은 학습자에게 이메일을 보낼 수 있다. 이메일을 거부할 수 있지만, 이는 중요하거나 급한 정보를 받지 못한다는 것을 의미한다. 강좌 이메일 상태를 바꾸기 위해선 모든 화면 상단에 있는 K-MOOC 혹은 K-MOOC 엣지를 클릭하고 강좌를 선택해 이메일 설정을 클릭하면 된다.
 
 ==========
-From edX
+K-MOOC으로부터
 ==========
 
-To help you get started with the edX learning experience, edX offers a course
-(of course!). You can find the edX Demo_ course on the edX web site. EdX also
-maintains a list of `frequently asked questions`_  and answers.
+K-MOOC 작업의 시작을 돕기 위해 K-MOOC 시작하기 강좌가 마련되어 있다. 이 강좌는 K-MOOC 사이트에 FAQ와 함께 있다.
 
-If you still have questions or suggestions, you can get help from the edX
-support team: select **Contact** at the bottom of any edX web page or send an
-email message to info@edx.org.
+만일 추가적인 질문이나 건의사항이 있다면 K-MOOC 홈페이지 하단의 문의를 클릭하거나 info@edx.org로 이메일을 보내면 된다.
 
-For opportunities to meet others who are interested in edX courses, check the
-edX Global Community meetup_ group.
+K-MOOC 강좌에 관심이 있는 다른 사람을 만나기 위해선 K-MOOC 글로벌 커뮤니티 그룹을 확인하면 된다.
 
 .. _Building and Running an edX Course: http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/
 .. _Building and Running an Open edX Course: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/latest/

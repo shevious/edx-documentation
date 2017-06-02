@@ -3,7 +3,7 @@
 .. _Browsers:
 
 ####################
-edX Browser Support
+K-MOOC 이용을 위한 브라우저
 ####################
 
 The edX platform runs on the following browsers.
@@ -13,11 +13,8 @@ The edX platform runs on the following browsers.
 * `Firefox`_
 * `Microsoft Edge`_ and `Microsoft Internet Explorer`_ 11
 
-The edX platform is routinely tested and verified on the current version and
-the previous version of each of these browsers. We generally encourage the use
-of, and fully support only, the latest version.
+K-MOOC 플랫폼은 다음 브라우저에서 실행되며 정기적으로 각 브라우저에서의 실행 상태를 점검한다.
 
-.. note:: If you use the Safari browser, be aware that it does not support the
- search feature for the guides on `docs.edx.org`_. This is a known limitation.
+.. note:: 만일 Safari를 사용중이라면 K-MOOC 도움말의 HTML 버전을 사용할 수 없다.
 
 .. include:: ../../../links/links.rst
