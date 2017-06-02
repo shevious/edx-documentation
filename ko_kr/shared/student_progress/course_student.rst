@@ -1,240 +1,163 @@
 .. _Student Data:
 
 ############################
-Learner Data
+학습자 데이터
 ############################
 
-You can access data about the individuals who are enrolled in your course at
-any time after you create the course.
+강좌 개설 후, 강좌에 등록한 학습자의 정보를 조회할 수 있다.
 
 .. contents::
   :local:
   :depth: 2
 
-To supplement the learner data that is available from the Instructor Dashboard,
-you can use the charts and reports that are available from edX Insights. With
-Insights, you can review demographic and geographic distributions for enrolled
-learners. You can also monitor learner activity and review the number of
-learners who, each week, interacted with your course. For more information, see
-:ref:`Using edX Insights<insights:Overview>`.
+교수자 대시보드에 있는 학습자 데이터를 보충하기 위해 K-MOOC Insights의 차트와 보고를 사용할 수 있다. Insights를 활용해 인구학적 정보, 지리학적 분포를 알 수 있다. 또한 학습자 활동과 매주 몇 명의 학습자가 강좌를 활용했는지 알 수 있다.  :ref:`Using edX Insights<insights:Overview>` 에 자세한 안내가 나와있다.
 
 .. _PII:
 
 ***************************************************************
-Guidance for Working with Personal Information
+학습자 개인 정보 이용 안내
 ***************************************************************
 
-The information that edX collects from site registrants includes personal
-information that can be used to identify, contact, and locate individuals. This
-information is available to course team members with the Admin or Staff role
-for the learners who are enrolled in their courses.
+강좌 운영팀은 학습자의 특성을 파악하기 위해 학습자 개인 정보를 이용할 수 있다.
 
-Members of the course team should follow the policies established by their
-organizations and comply with the legal requirements of their locales to
-prevent public distribution or misuse of this information.
+강좌 운영팀은 기관의 개인 정보 관리 정책을 따르고 법적 조건을 준수하여 본 정보가 공개되지 않도록 한다.
 
 .. _Access_student_data:
 
 ****************************
-Accessing Learner Data
+학습자 데이터 조회
 ****************************
 
-From the Instructor Dashboard, you can download data about the individuals who
-are currently enrolled in your course in a .csv (comma-separated values) file.
-For courses that have fewer than 200 learners enrolled, you can also view data
-for enrolled learners on the Instructor Dashboard.
+교수자 대시보드에서 강좌에 현재 등록되어 있는 학습자들의 데이터는 CSV (콤마-분리 형식)의 파일로 다운받을 수 있다. 200명 이하의 학습자들이 등록되어 있는 강좌의 경우, 교수자 대시보드에서 바로 데이터를 확인할 수 있다.
 
-For information about course enrollment, see :ref:`Enrollment`.
+:ref:`Enrollment` 에 수강신청에 관한 자세한 안내가 나와있다.
 
 ======================
-Learner-Reported Data
+등록된 학습자 데이터
 ======================
 
-When learners create, or register, their user accounts, they select a public
-username and supply their full names and email addresses. Learners also have
-the option to provide personal demographic information, including highest
-level of education completed, gender, year of birth, and preferred language.
-Because this information is optional, not all of the learners who are enrolled
-in your course provide it.
+학습자가 사용자 계정을 생성 및 등록할 때 아이디, 실명, 이메일 주소와 더불어 국가, 성별, 출생연도를 필수적으로 입력해야 한다. 단 거주지, 최종 학력, 가입목적 등은 이는 선택사항이므로 강좌 수강중인 모든 학습자가 이러한 정보를 입력하진 않았을 수도 있다.
 
-After learners create an account, they can enroll in as many individual courses
-as they choose.
+학습자가 계정을 생성한 뒤 원하는 만큼 강좌에 수강신청 할 수 있다.
 
-* The learner data that is available from the Instructor Dashboard reflects the
-  set of live, current enrollments. Data for the course team, wha are also
-  enrolled in the course, is included.
+* 교수자 대시보드에서 확인 가능한 학습자 데이터는 현재 수강 중인 내역을 보여준다. 이에 강좌 운영팀을 위한 데이터도 포함된다.
 
-* Learners can enroll in your course throughout the defined enrollment period,
-  and they can unenroll from a course at any time.
+* 학습자는 수강신청 기간 내에 수강신청을 할 수 있으며, 종강일이 지나기 이전에는 수강신청을 취소 할 수 있다. 종강일이 지나면 수강신청 취소를 할 수 없게 된다.
 
-* Learners can update their personal information at any time on the
-  :ref:`Account Settings<SFD Account Settings>` page.
+* :ref:`Account Settings<SFD Account Settings>` 에서 언제든지 개인정보 업데이트를 할 수 있다.
 
-As a result, you might want to download learner data periodically to gain an
-understanding of how the learner population changes over time.
+즉 학습자 정보가 계속 바뀔 수 있으므로 주기적으로 학습자 데이터를 다운로드 받는 것이 좋다.
 
 .. _Columns in the Student Profile Report:
 
 ============================================
-Columns in the Student Profile Report
+학습자 프로필 보고서
 ============================================
 
-The student profile report includes a row for each enrolled learner or course
-team member and the following columns.
+학습자 프로필 보고는 수강 중인 학습자나 강좌 운영자에 대한 정보를 담는다.
 
 .. only:: Open_edX
-
- The descriptions of columns in the following table apply to edx.org. Required
- or optional fields shown to learners during registration and available for
- editing in **Account Settings** might vary for Open edX sites.
 
 
 .. list-table::
    :widths: 30 70
    :header-rows: 1
 
-   * - Column
-     - Description
+   * - 칼럼
+     - 설명
    * - id
-     - The user account ID number that the system assigns to each registrant.
-   * - username
-     - The public username entered by the learner. Usernames are required and
-       cannot be changed.
-   * - name
-     - The full name entered by the learner. A name is required. Learners can
-       update this value on the **Account Settings** page.
-   * - email
-     - The email address entered by the learner. An email address is required.
-       Learners can update this value on the **Account Settings** page.
-   * - language
-     - This column is included for backward compatibility only. This data is
-       no longer collected during account creation. The selection that a
-       learner makes for language on the **Account Settings** page is not
-       included in this report.
-   * - location
-     - This column is included for backward compatibility only. The selection
-       that a learner makes for **Country** during registration or for
-       **Country or Region** on the **Account Settings** page is displayed in
-       the "country" column of this report.
-   * - year_of_birth
-     - This value is optional and can be updated on the **Account Settings**
-       page.
-   * - gender
-     - This value is optional and can be updated on the **Account Settings**
-       page.
-   * - level_of_education
-     - This value is optional and can be updated on the **Account Settings**
-       page. For a list of the possible values, see the description of the
-       :ref:`data:auth_userprofile` table's level_of_education column in the
-       *EdX Research Guide*.
-   * - mailing_address
-     - No longer collected during registration. Previously, this value was
-       optional and was supplied only at registration.
-   * - goals
-     - This value is optional and is supplied only at registration.
-   * - cohort
-     - This column is included only if the course has cohorts enabled. For
-       courses that include learner cohorts, shows the name of the cohort group
-       that is assigned to the learner. If a learner is not assigned to a
-       cohort, the value is ``[unassigned]``.
-   * - team
-     - This column is included only if the course has teams enabled. For courses
-       that include teams, shows the name of the team that the learner belongs
-       to. If a learner has not joined a team, the value is ``[unavailable]``.
-   * - city
-     - Data for this column is not currently collected on edx.org.
-   * - country
-     - Learners are required to specify **Country** during registration, and can
-       update this value on the **Account Settings** page.
+     - 각 등록자에 시스템이 배정하는 계정 ID 번호.
+   * - 사용자 이름
+     - 학습자가 입력한 사용자 이름. 필수 입력 사항이고 바꿀 수 없다.
+   * - 실명
+     - 학습자가 입력한 실명. 필수 입력 사항이고 계정 설정에서 수정할 수 있다.
+   * - 이메일 주소
+     - 학습자가 입력한 이메일 주소. 필수 입력 사항이고 계정 설정에서 수정할 수 있다.
+   * - 언어
+     - 이 칼럼은 호환성을 위해서만 존재하는 것으로 무시해도 된다. 학습자가  계정 설정 페이지에서 선택하는 언어 값은 이 보고서에 나오지 않는다.
+   * - 장소
+     - 이 칼럼은 호환성을 위해서만 존재하는 것으로 무시해도 된다. 등록 때 학습자가 국가에서 고르는 값이나 계정 설정에서 국가 또는 지역에서 고르는 값은 이 보고에선 “국가”에 표기된다.
+   * - 출생연도
+     - 필수값이며 계정 설정 페이지에서 수정할 수 있다.
+   * - 성별
+     - 필수값이며 계정 설정 페이지에서 수정할 수 있다.
+   * - 최종 학력
+     - 선택사항이며 계정 설정 페이지에서 수정할 수 있다. 이 부분에 대한 테이블 명세는 ​**EdX Research​가이드** 를 참조하십시오.
+   * - 우편 주소
+     - 현재는 사용되지 않는 칼럼으로 무시해도 된다.
+   * - 목표
+     - 선택사항으로서 등록 과정에서 “K-MOOC 가입목적”에 입력한 값이다.
+   * - 학습집단
+     - 이 칼럼은 강좌에서 학습집단을 사용할 때만 입력한다. 학습집단이 있는 강좌에서 학습자가 배치된 집단의 이름을 나타낸다. 배치된 집단이 없으면  ``[unassigned]`` 값으로 표기된다.
+   * - 팀
+     - 이 칼럼은 강좌에서 팀을 사용할 때만 입력한다. 팀이 있는 강좌에서 학습자가 배치된 팀의 이름을 나타낸다. 배치된 팀이 없으면  ``[unavailable]`` 값으로 표기된다.
+   * - 거주지
+     - 선택사항으로서 등록 과정에서만 입력 가능한 값이다.
+   * - 국가
+     - 학습자는 등록 때 국가를 골라야 하며 계정 설정 페이지에서 수정할 수 있다.
 
 
 .. _View and download student data:
 
 ==========================================
-Download or View Learner Data
+학습자 데이터 다운로드하거나 열람하기
 ==========================================
 
-You can download a report of learner data to gain more information about the
-individuals who are enrolled in your course. For courses with fewer than 200
-learners enrolled, you also have the option to view learner data on the
-Instructor Dashboard.
+강좌에 등록된 학습자에 대해 알기 위해 학습자 데이터 보고서를 다운 받을 수 있다. 200명 이하의 학습자들이 등록된 강좌에서는 교수자 대시보드에 있는 학습자 데이터를 열람할 수 있다.
 
-Download Learner Data
+학습자 데이터 다운로드
 ***********************
 
-To download learner data, follow these steps.
+학습자 데이터를 다운 받으려면.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Data Download**.
+#. **교수자** 에서 **데이터** 를 클릭한다.
 
-#. To download data about enrolled learners in a .csv file, select **Download
-   profile information as a CSV**.
+#. CSV파일로 등록된 학습자의 데이터를 다운 받으려면, 개인정보를 CSV 파일로 **다운로드** 를 클릭한다.
 
-   A status message indicates that report generation is in progress. The number
-   of learners enrolled in your course, and whether your course has the cohort
-   feature enabled, affect how long this process takes. This process can take
-   some time to complete, but you can navigate away from this page and do other
-   work while it runs.
+   보고서가 현재 생성 중이라는 상태 메시지가 뜨게 된다. 수강중인 학습자 수, 강좌 학습집단 활용 여부 등이 강좌 처리 과정 시간에 영향을 준다. 처리 과정이 완료되기 전, 다른 페이지에서 다른 작업을 수행할 수 있다.
 
-   To track the progress of the report process, reload the page in your browser
-   and scroll down to the **Pending Tasks** section.
+   보고서 처리과정의 진행단계를 보려면, 페이지를 **새로고침해** 대기중인 작업 목록 을 보면 된다.
 
-#. To open or save a student profile report, select the
-   ``{course_id}_student_profile_info_{date}.csv`` file name at the bottom of
-   the page.
+#. 학습자 데이터 보고서를 열거나 저장하려면 페이지 아래에 있는 {강좌 아이디} 학습자 프로필 정보 {날짜}.csv 파일을 클릭한다.
 
-   All learner-supplied data is included in this file without truncation. For
-   more information, see :ref:`Columns in the Student Profile Report`.
+   학습자가 제공한 모든 데이터는 해당 파일에 포함된다.  :ref:`Columns in the Student Profile Report` 에 자세한 안내가 나와있다.
 
-View Learner Data
+학습자 데이터 열람하기
 ***********************
 
-To view learner data, follow these steps.
+학습자 데이터를 웹에서 바로 열람하려면.
 
-.. note:: This option is available only for courses with an enrollment of less
- than 200.
+.. note:: 본 선택사항은 200명 이하의 학습자들이 등록된 강좌에서만 가능하다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Data Download**.
+#. **교수자** 에서 **데이터** 를 클릭한다.
 
-#. To display data about enrolled learners, select **List enrolled students'
-   profile information**.
+#. 등록된 학습자의 데이터를 표시하려면 등록된 학습자의 프로필 목록 을 클릭한다.
 
-   A table of profile data displays, with one row for each enrolled learner.
-   Longer values, such as goals, are truncated. For more information, see
-   :ref:`Columns in the Student Profile Report`.
+   각각의 등록된 학습자들이 한 줄로 표시된 학습자 데이터표가 생성된다. 학습자 목표와 같은 길이가 긴 입력사항들은 잘려지게 된다.  :ref:`Columns in the Student Profile Report`  에 자세한 안내가 나와있다.
 
 .. _Access_anonymized:
 
 ********************************
-Accessing Anonymized Learner IDs
+익명 학습자 데이터 조회하기
 ********************************
 
-Some of the tools that are available for use with the edX platform, including
-external graders and surveys, work with anonymized learner data. If it becomes
-necessary for you to deanonymize previously anonymized data, you can download a
-CSV file to use for that purpose.
+활용 가능한 몇몇 도구들은 외부 채점자, 설문조사, 그리고 익명 학습자 데이터와 관련된 작업들이다. 기존에 익명 처리된 데이터를 다시 공개할 필요가 있을 경우, CSV파일을 다시 다운받아 해당 용도로 활용한다.
 
-To download a file of assigned user IDs and anonymized user IDs, follow these
-steps.
+할당된 사용자 아이디 및 익명 처리된 사용자 아이디의 파일을 다운 받으려면 다음의 절차를 따른다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Data Download**.
+#. **교수자** 에서 **데이터** 를 클릭한다.
 
-#. Select **Get Student Anonymized IDs CSV**.
+#. **익명 학습자 아이디 CSV 파일** 을 클릭한다.
 
-You are prompted to open or save the {course-id}-anon-id.csv file for your
-course. This file contains the user ID that is assigned to each learner at
-registration and its corresponding edX-wide anonymized user ID and course
-specific anonymized user ID. Values are included for every learner who ever
-enrolled for your course.
+{강좌 –아이디}-익명-아이디.csv파일을 열거나 저장할 수 있다. 해당 파일은 등록시 각각의 학습자에게 할당된 아이디와 그에 상응하는 익명 학습자 아이디와 강좌에 적용되는 익명 학습자 아이디를 포함하고 있다. 또한 등록했던 모든 학습자의 데이터가 포함되어 있다.
 
-To research and deanonymize learner data, you can use this file together with
-the ``{course_id}_student_profile_info_{date}.csv`` file of learner data or the
-``{course_id}_grade_report_{date}.csv`` file of grades.
+학습자 데이터를 검색하여 익명처리를 변경하여 공개로 바꿀 경우 본 파일과 함께 학습자 데이터의 {강좌 아이디} 학습자 프로필 정보 {날짜}.csv 파일 혹은 {강좌 아이디} 성적 보고 {날짜}.csv파일을 함께 사용한다.
 
 .. only:: Open_edX
 

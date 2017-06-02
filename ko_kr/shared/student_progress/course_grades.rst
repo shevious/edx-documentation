@@ -1,297 +1,169 @@
 .. _Grades:
 
 ############################
-Learner Grades and Grading
+학습자 성적
 ############################
 
-You can review information about how grading is configured for your course, and
-access learner grades, at any time after you create the course. You can also
-make adjustments to learner grading for a problem, for a single learner or all
-learners. For information about the grading data that you can access and the
-changes you can make, see the following topics.
+강좌를 개설한 후 언제든, 학습자의 점수와 최종 성적 산출 방식을 확인할 수 있다. 또한 특정 문제에 대한 개별 또는 전체 학습자의 성적을 수정할 수 있다. 이렇게 학습자의 성적과 관련한 작업이 필요한 경우, 아래 링크를 확인하면 된다.
 
 .. contents::
  :local:
  :depth: 1
 
-To review learner answers to course problems, you can check the answer
-submissions for a specific problem, either for a selected learner or for all
-learners. You can also review answer distribution data for all of the problems.
-See :ref:`Review_Answers`.
+학습자의 답안을 확인하는 방법으로, 특정 문제에 대해 특정 학습자나 모든 학습자가 제출한 답안을 확인할 수 있다. 답안 분포 데이터에 관해서 :ref:`Review_Answers` 에 자세한 안내가 나와있다.
 
-For open response assessments, you can generate an ORA data report that
-provides details of each learner's response and of assessments that were
-performed on each response. For details, see :ref:`Generate ORA Report`.
+개방형 응답 평가에 대해서 개별 학습자 답안 및 각 답안에 대한 평가를 담은 개방형 응답 평가 보고를 만들 수 있다. :ref:`Generate ORA Report` 에 자세한 안내가 나와있다.
 
-For information about how you establish a grading policy and work with the
-Problem components in your course, see :ref:`Grading Index` or
-:ref:`Working with Problem Components`.
+성적 규정과 문제 구성요소에 대한 더 자세한 안내는  :ref:`Grading Index` 혹은 :ref:`Working with Problem Components` 에 있다.
 
 .. _Review_grades:
 
 ********************************************************
-Review How Grading Is Configured for Your Course
+강좌의 성적 규정 검토하기
 ********************************************************
 
-You can review the assignment types that are graded and their respective
-weights on the Instructor Dashboard.
+교수자 대시보드에서 성적에 반영하는 과제의 종류 및 가중치를 확인할 수 있다.
 
-You establish a grading policy for your course when you create it in Studio.
-While the course is running, you can view an XML representation of the
-assignment types in your course and how they are weighted to determine
-learners' grades.
+먼저, Studio에서 강좌를 개설하고 성적 규정을 만든다. 강좌가 진행 중일 때 자신의 강좌의 XML형식의 과제를 살펴보고 학습자 성적에 적용될 가중치를 확인할 수 있다.
 
 ..  DOC-290: research this statement before including anything like it: Below the list of graded assignment types and their weights, each *public* subsection and unit that contains an assignment is listed.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Data Download** > **Grading
-   Configuration**.
+#. **교수자** 를 클릭하고 **데이터** 의 **성적 가중치** 를 클릭한다.
 
-   A list of the assignment types in your course displays. In this example,
-   Homework is weighted as 0.3 (30%) of the grade.
+   각 과제별 성적 가중치가 나타난다. 예를 들면, 중간고사는 전체 점수의 0.3 (30%)의 가중치를 산정한다.
 
    .. image:: ../../../shared/images/Grading_Configuration.png
      :alt: XML of course assignment types and weights for grading.
 
-   In Studio, you define this information by selecting **Settings** and then
-   **Grading**. For more information, see :ref:`Configure the Assignment
-   Types`.
+   Studio에서 설정 에서 과제 평가 를 선택해 가중치를 조정할 수 있다. 이에 대해 자세한 안내는 :ref:`Configure the Assignment Types` 에 있다.
 
    .. image:: ../../../shared/images/Grading_Configuration_Studio.png
      :alt: Studio example of homework assignment type and grading weight.
 
-.. important:: Any changes that you make to the course grading policy, to
-   graded subsections, or to graded components after the course begins will
-   affect learners' experiences in the course as well as analysis of its data.
-   EdX recommends that you announce any unavoidable changes learners by using,
-   for example, the **Home** page. You should also carefully track these
-   changes for researchers.
+.. important:: 강좌 성적 규정, 성적에 반영되는 소주제 및 구성요소에 대해서 변경사항을 적용할 경우 학습자들의 학습경험에 영향을 미치게 된다. 이에 변경하지 않는 것을 권하지만 변경이 불가피한 경우, 홈 의 공지사항 을 통해 학습자에게 이를 알리는 것이 좋다.
 
 .. _Access_grades:
 
 ***********************************************************
-Generate a Grade Report for Enrolled Learners (All Courses)
+성적 보고서 보기 (전체 강좌)
 ***********************************************************
 
-For any course, you can generate grades and then download a file with the
-results for each enrolled learner.
+모든 강좌는 전체 학습자의 성적을 산출하고, 각 학습자의 성적을 파일로 다운받을 수 있다.
 
-When you initiate calculations to grade learner work, a process starts on the
-edX servers. The complexity of your grading configuration and the number of
-learners enrolled in your course affect how long this process takes. You can
-download a report of the calculated grades in a comma-separated values (.csv)
-file when the grading process is complete.
+학습자의 성적을 계산하기 시작하면 K-MOOC 서버에서 처리가 시작된다. 성적 가중치 및 강좌에 등록된 학습자의 수에 따라 처리 속도가 달라진다. 성적 산출이 완료되면 산출된 점수를 CSV (콤마-분리 형식) 파일로 다운받을 수 있다.
 
-For courses with fewer than 200 learners enrolled, you also have the option to
-review learner grades on the Instructor Dashboard. For more information, see
-:ref:`gradebook`.
+200명 이하의 학습자들이 등록된 강좌는 교수자 대시보드에서 학습자의 성적을 확인할 수 있다. 이에 대한 더 자세한 안내는 :ref:`gradebook` (소규모 강좌) 에 있다.
 
-To generate and download the grade report for the learners who are currently
-enrolled in your course, follow these steps.
+등록된 학습자의 성적 보고서를 생성하려면s.
 
-.. important:: Because the grade report file contains confidential, personally
-   identifiable data which might be subject to the Family Educational Rights
-   and Privacy Act (FERPA), be sure to follow your institution's data
-   stewardship policies when you open or save this file.
+.. important:: 본 파일은 가족 교육 권리 및 사생활 보호 법(FERPA)과 같이 사적 데이터를 포함하고 있기 때문에, 본 파일을 열거나 저장할 경우 자신이 속해 기관의 데이터 관리 지침을 따르도록 한다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Data Download**.
+#. **교수자** 에서 **데이터** 를 클릭한다.
 
-#. To start the grading process, select **Generate Grade Report**.
+#. 성적 산출을 시작하려면 **성적 보고서 생성** 을 클릭한다.
 
-   A status message indicates that the grading process is in progress. This
-   process can take some time to complete, but you can navigate away from this
-   page and do other work while it runs.
+   성적 산출 과정이 처리중이라는 상태 메시지가 뜬다. 처리 완료까지 시간이 소요될 수도 있지만, 진행중인 현재 페이지 외에 다른 페이지에서 다른 작업을 할 수 있다.
 
-#. To check the progress of the grading process, reload the page in your
-   browser and scroll down to the **Pending Tasks** section. The
-   status of active tasks is shown in the table.
+#. 점수 산출 처리과정을 보려면, 브라우저의 페이지를 다시 로딩한 다음 **대기중인 작업 목록** 으로 스크롤을 내린다. 현재 수행중인 작업 상태를 볼 수 있다.
 
-   When the report is complete, a linked .csv file name becomes available above
-   the **Pending Tasks** section. File names are in the format
-   ``{course_id}_grade_report_{datetime}.csv``. The most recently generated
-   reports appear at the top of the list.
+   보고가 완성되면 .csv 파일이 
+   ``{course_id}_grade_report_{datetime}.csv`` 형식의 이름으로 대기중인 작업 목록에 나타나게 된다. 가장 최근 생성된 보고가 최상단에 올라가게 된다.
 
-#. To open or save a grade report file, locate and select the link for the
-   grade report you requested.
+#. 성적 보고서를 열거나 저장하려면 요청한 성적 보고서의 링크를 찾아 선택한다.
 
-   You can open .csv files in a spreadsheet application to sort, graph, and
-   compare data.
+   .csv 파일을 스프레드시트 프로그램으로 열어 데이터를 분류하고, 그래프를 만들고 비교할 수 있다.
 
-.. note:: To prevent the accidental distribution of learner data, you can
-   download grade report files only by selecting the links on this page. Do not
-   copy these links for reuse elsewhere, as they expire within 5 minutes. The
-   links on this page also expire if the page is open for more than 5 minutes.
-   If necessary, refresh the page to generate new links.
+.. note:: 학습자 데이터의 유출을 막기 위하여 본 페이지의 링크를 클릭해야만 파일을 다운로드 받을 수 있다. 다른 어떤곳에서 재사용을 위하여 본 링크들을 복사해서는 안 된다.
 
 .. _Interpret the Grade Report:
 
 ==========================
-Interpret the Grade Report
+성적 보고서 해석하기
 ==========================
 
-A grade report for your course is a time-stamped .csv file that identifies
-each enrolled learner by ID, email address, and username, and provides a
-snapshot of their cumulative course scores.
+등록된 각 학습자의 아이디, 이메일, 사용자 이름, 총합 성적 등이 표시된 CSV 파일을 생성할 수 있다.
 
-Scores in the grade report are presented by assignment. There is a column for
-every assignment that is included in your grading configuration: each
-homework, lab, midterm, final, and any other assignment type you added to your
-course.
+성적 보고서의 성적은 과제 단위로 나온다. 과제, 실험, 중간고사, 기말고사 등 강좌에 추가한 모든 종류의 과제와 같이 성적에 반영되는 모든 과제의 성적도 포함한다.
 
-.. note:: The grade report does not include information about individual
-   problems within assignments, or include learner answer distributions. For a
-   report that shows problem-level information, see :ref:`problem_report`.
+.. note:: 성적 보고서는 과제 내 개별 문제나 학습자 답안 분포에 대한 정보를 포함하지 않는다. 문제 단위 정보는 :ref:`problem_report`  (모든 강좌)에 안내가 나와있다.  
 
-The report indicates the enrollment track for each learner. For professional
-and verified track learners it also shows whether they have verified their
-identity. The report shows whether each learner is eligible to receive a
-certificate (determined by whether he has earned a passing grade at the time
-the report was requested), whether a certificate has been generated, and the
-type of certificate earned.
+이 보고는 각 학습자의 수강 내역을 보여준다. 이수증 과정을 수강중인 학습자는 신분 확인 여부도 표시된다. 또한 각 학습자가 이수증을 받을 수 있는지 (보고 작성 당시 성적이 이수증 받을 점수를 넘는가), 이수증이 생성 되었는지, 또 어떤 이수증인지 보여준다.
 
-If your course includes :ref:`cohorts<Cohorts Overview>`, :ref:`content
-experiments<Overview of Content Experiments>`, or
-:ref:`teams<CA_Teams_Overview>`, the grade report includes additional columns
-indicating the name of the cohort, experiment group, or team that each learner
-belongs to.
+만약 강좌가 학습집단, 콘텐츠 실험 혹은 팀을 사용한다면 이 성적 보고서에 추가 칼럼이 만들어져 집단 이름, 실험 그룹과 팀을 나타내게 된다.
 
 .. image:: ../../../shared/images/Grade_Report.png
   :alt: A course grade report, opened in Excel, showing the grades achieved by
         learners on several homework assignments and the midterm.
 
-The grade report .csv file contains one row of data for each learner, and
-columns that provide the following information.
+CSV 파일은 각 학습자마다 하나의 줄을 포함하고 있고 다음의 정보를 제공하는 칼럼을 포함한다.
 
-* Learner identifiers, including an internal **id**, **email** address, and
-  **username**.
+* 아이디, 이메일 주소 등 학습자 식별자.
 
-* The overall **grade**, with the total score a learner has currently attained
-  in the course. This value is expressed as a decimal: a learner with a grade
-  of 0.65 has earned 65% of the credit in the course, and a learner with a
-  grade of 1 has earned 100%.
+* 학습자가 강좌에서 현재 획득한 전체 성적. 본 성적 값은 소수점으로 표시된다. 학습자가 0.65에 해당하는 성적을 받고 있을 경우 본 강좌에서는 65%으로 표시되고 1에 해당하는 점수를 받고 있는 학습자의 경우 100%를 받은 것이다.
 
-* Each **{assignment type} {number}** defined in your grading configuration,
-  with the score that the learner attained for that specific assignment. For
-  example, column HW 03 shows the scores for the third homework assignment.
+* 특정 과제에서 학습자가 얻은 점수와 함께 성적 구성에서 정의된 각각의 {과제 종류} {번호} . 예를 들면, 칼럼 HW03은 세 번째 숙제를 나타내는 것이다.
 
-* An **{assignment type} Avg** with each learner's current average score for
-  that assignment type: for example, HW Avg.
+* 특정 과제의 학습자 현재 평균 점수와 함께 표시되는 {과제 종류} 평균 : 예를 들어, ‘과제 평균’으로 나타난다.
 
-* If :ref:`cohorts<Cohorts Overview>` are used in the course, a **Cohort Name**
-  column indicates the name of the cohort that each learner belongs to,
-  including the default cohort. The column is empty for learners who are not
-  yet assigned to a cohort.
+* 강좌에서  :ref:`cohorts<Cohorts Overview>` 을 활용할 경우, 학습집단의 이름 칼럼은 각 학습자가 속해 있는 학습집단의 이름을 나타내고 이는 기본 학습집단을 포함한다. 학습집단에 아직 배정이 되지 않은 학습자의 경우 해당칼럼은 공백으로 남아 있는다.
 
-* If :ref:`content experiments<Overview of Content Experiments>` are used in
-  the course, an **Experiment Group** column indicates the name of the
-  experiment group that each learner belongs to within a group configuration.
-  The column heading includes the name of the group configuration. The column
-  is empty for learners who are not assigned to an experiment group. If you
-  have more than one experiment group configuration in your course, you see one
-  column for each group configuration.
+* 강좌에서  :ref:`content experiments<Overview of Content Experiments>` 을 활용할 경우, 실험 집단 칼럼은 해당 집단에서 각각의 학습자가 소속된 실험 집단의 이름을 나타낸다. 칼럼 머리말은 집단 구성에 대한 이름을 포함한다. 아직 실험 집단으로 배정이 안된 학습자의 칼럼은 공백으로 남아 있는다. 자신의 강좌에 하나 이상의 실험 집단이 있을 경우 각 집단의 구성마다 하나의 칼럼을 볼 수 있다.
 
-* If :ref:`teams<CA_Teams_Overview>` are enabled in the course, a **Team
-  Name** column indicates the name of the team that each learner belongs to. The
-  column is empty for learners who have not joined a team.
+* 강좌가  :ref:`teams<CA_Teams_Overview>` 활용할 경우 팀 이름 칼럼은 학습자가 속한 팀의 이름을 나타낸다. 팀에 배정이 되지 않은 학습자의 경우 해당칼럼은 공백으로 남아 있는다.
 
-* The **Enrollment Track** column indicates whether each learner is enrolled in
-  the course in the honor code, verified, or professional education track.
+* 수강중인 과정 칼럼은 학습자가 인증 이수증, 명예 이수증, 전문과정 이수증 중 어느 과정을 수강중인지 나타낸다.
 
-* The **Verification Status** column applies only to learners who are enrolled
-  in the verified or professional tracks. The value in this column indicates
-  whether the verified or professional education learner has verified her
-  identity to edX by using a webcam to submit her photo and an official ID.
-  The value is "N/A" for learners who are not in the verified or professional
-  tracks.
+* 확인 상태 칼럼은 인증 이수증이나 전문과정 이수증을 수강중인 학습자에게만 적용된다. 이 칼럼의 값은 이 학습자가 웹캠으로 찍은 사진과 신분증을 K-MOOC에 제출해 신분 확인을 마쳤는지 나타낸다. “N/A” 값은 인증 이수증이나 전문과정 이수증 과정에 있지 않은 학습자를 나타낸다.
 
-* The **Certificate Eligible** column indicates whether a learner is eligible
-  for a certificate for your course. The value in this column is "Y" for
-  learners who attained a passing grade before this report was requested, and
-  for all whitelisted learners, regardless of grade attained. The value is "N"
-  for learners who did not attain a passing grade and for those who live in
-  embargoed countries.
+* 가능한 인증서 칼럼은 학습자가 강좌 이수증을 획득할 수 있는지 나타낸다. “Y”는 보고서 작성 전 이미 통과 점수를 획득한 학습자를 나타내며 “N”은 아직 점수를 충분히 획득하지 못했거나 금수 조치된 국가에 살고 있는 학습자를 나타낸다.
 
-* For learners who are eligible to receive a certificate, the **Certificate
-  Delivered** column has a value of "Y" when the certificates for a course have
-  been generated. The value is "N" for learners who are not eligible to
-  receive a certificate.
+* 이수증을 획득할 수 있는 학습자의 경우 이수증 전달 칼럼에 이미 학습자가 이수증을 발급 받았을 경우 “Y”가 나타나며 이수증을 획득을 하지 못하는 학습자에게는 “N”이 나타난다.
 
-* The **Certificate Type** column indicates the type of certificate that the
-  learner is eligible for, such as "honor" or "verified". If a learner is not
-  eligible for a certificate, or if the certificates for a course have not yet
-  been generated, the value in this column is "N/A".
+* 이수증 종류 칼럼은 학습자가 받을 수 있는 “명예”, “인증” 등의 이수증 종류를 나타낸다. 학습자가 이수증을 받을 수 없거나 이수증이 아직 발급되지 않았다면 “N/A”가 표시된다.
 
 .. _problem_report:
 
 *******************************************************************
-Generate a Problem Grade Report for Enrolled Learners (All Courses)
+수강 중인 학습자 문제 성적 보고서 생성하기 (모든 강좌)
 *******************************************************************
 
-For any course, you can calculate grades for problems and generate a report
-that can be downloaded. The problem grade report for a course shows the number
-of points that each learner has earned for each problem, and the number of
-possible points for every problem in the course. In addition, the
-report shows the final grade score for each learner.
+모든 강좌에서 문제에 대한 점수를 산출하고 다운로드 가능한 보고서를 만들 수 있다. 강좌의 문제 성적 보고서는 각 학습자가 각 문제에 대해 획득한 점수를 보여주고 각 문제의 총점을 나타낸다. 또, 이 보고서는 각 학습자의 최종 성적을 보여준다.
 
-To generate and download the problem grade report for the learners who are
-currently enrolled in your course, follow these steps.
+문제 성적 보고서를 생성하고 다운로드하기 위하여.
 
-.. important:: Because the problem grade report file contains confidential,
-   personally identifiable data which might be subject to the Family
-   Educational Rights and Privacy Act (FERPA), be sure to follow your
-   institution's data stewardship policies when you open or save this file.
+.. important:: 본 파일은 가족 교육 권리 및 사생활 보호 법(FERPA)과 같이 사적 데이터를 포함하고 있기 때문에, 본 파일을 열거나 저장할 경우 자신이 속해 기관의 데이터 관리 지침을 따르도록 한다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Data Download**.
+#. 교수자를 선택하고 데이터 다운로드를 클릭한다.
 
-#. To start the problem grading process, select **Generate Problem Grade
-   Report**.
+#. 문제 성적 보고서 생성하기를 선택한다.
 
-   A status message indicates that the problem grading process is in progress.
-   This process can take some time to complete, but you can navigate away from
-   this page and do other work while it runs.
+   문제 채점이 진행중이라는 상태 메시지가 나온다. 이 과정은 시간이 좀 걸리나 페이지에서 벗어나 다른 작업을 수행할 수 있다.
 
-#. To check the progress of the problem grading process, reload the page in
-   your browser and scroll down to the **Pending Tasks** section. The status of
-   active tasks is shown in the table.
+#. 문제 채점 경과를 확인하기 위해 브라우저를 새로고침하고 대기중인 작업 목록을 확인한다.
 
-   When the report is complete, a linked .csv file name becomes available above
-   the **Pending Tasks** section. File names are in the format
-   ``{course_id}_problem_grade_report_{datetime}.csv``. The most recently
-   generated reports appear at the top of the list.
+   보고가 완성되면 .csv 파일이  ``{course_id}_problem_grade_report_{datetime}.csv`` 형식의 이름으로 대기중인 작업 목록에 나타나게 된다. 가장 최근 생성된 보고가 최상단에 올라가게 된다.
 
-#. To open or save a problem grade report file, locate and select the link for
-   the problem grade report you requested.
+#. 문제 성적 보고서 파일을 열거나 저장하기 위해 요청한 보고서의 링크를 선택한다.
 
-   You can open .csv files in a spreadsheet application to sort, graph, and
-   compare data.
+   .csv 파일을 스프레드시트 프로그램으로 열어 데이터를 분류하고, 그래프를 만들고 비교할 수 있다.
 
-.. note:: To prevent the accidental distribution of learner data, you can
-   download problem grade report files only by selecting the links on this
-   page. Do not copy these links for reuse elsewhere, as they expire within 5
-   minutes. The links on this page also expire if the page is open for more
-   than 5 minutes. If necessary, refresh the page to generate new links.
+.. note:: 학습자 데이터의 유출을 막기 위하여 본 페이지의 링크를 클릭해야만 파일을 다운로드 받을 수 있다. 다른 어떤곳에서 재사용을 위하여 본 링크들을 복사해서는 안 된다.
 
 .. _Interpret the Problem Grade Report:
 
 ====================================
-Interpret the Problem Grade Report
+문제 성적 보고서 해석하기
 ====================================
 
-A problem grade report for your course is a time-stamped .csv file that
-identifies each enrolled learner by ID, email address, and username, and
-provides a snapshot of earned scores compared with the possible scores for
-each problem.
+등록된 각 학습자의 아이디, 이메일, 사용자 이름, 총합 성적 등이 표시된 CSV 파일을 생성할 수 있다.
 
-The problem grade report includes two columns for every problem that is
-included in your grading configuration. For each homework, lab, midterm, or
-final exam problem, there is one column for earned points, and one column for
-possible points. In addition, the report shows the final grade score for each
-learner, expressed as a decimal.
+문제 성적 보고서에 각 문제에 대해 두개의 칼럼이 포함되어 있다. 각 숙제, 실험실, 중간 고사 및 기말 고사 문제에 대해 점수를 나타내는 칼럼 하나와 총점을 나타내는 칼럼 하나가 표기된다. 또한 이 보고서는 각 학습자의 최종 성적을 소수로 나타낸다.
 
 .. image:: ../../../shared/images/Problem_Grade_Report_Example.png
   :alt: An example problem grade report shown in Excel, showing the decimal
@@ -299,225 +171,150 @@ learner, expressed as a decimal.
     each achieved on several quiz assignments. A column for a midterm is only
     partially visible.
 
-The .csv file contains one row of data for each learner, and columns that
-provide the following information.
+.csv 파일엔 각 학습자 데이터를 나타내는 행 하나와 다음 정보를 나타내는 열이 있다.
 
-* Learner identifiers, including an internal **Student ID**, **Email** address,
-  and **Username**.
+* 학습자 ID, 이메일 주소 및 사용자 이름을 포함한 학습자 식별자.
 
-* The **Final Grade**, with the total score that a learner has currently
-  attained in the course. This value is expressed as a decimal: a learner with
-  a grade of 0.65 has earned 65% of the credit in the course, and a learner
-  with a grade of 1 has earned 100%.
+* 학습자가 강좌에서 현재 획득한 최종 성적. 본 성적 값은 소수점으로 표시된다. 학습자가 0.65에 해당하는 성적을 받고 있을 경우 본 강좌에서는 65%으로 표시되고 1에 해당하는 점수를 받고 있는 학습자의 경우 100%를 받은 것이다.
 
-* For each problem (identified by assignment, subsection, and problem name), a
-  column showing the number of points actually earned by each learner. If a
-  learner has not viewed a problem, the value in this column is "N/A". If
-  a learner has not answered a problem, the value in this column is "0".
+* 각 문제 (과제, 소주제 및 문제 이름으로 나타낸다)에 대해 각 학습자가 실제 획득한 점수를 보여주는 칼럼이 있다. 만약 문제를 학습자가 조회하지 않았다면 이 칼럼의 값은 “N/A”가 된다. 학습자가 답을 입력하지 않았다면 이 칼럼의 값은 “0”이 된다.
 
-* For each problem (identified by assignment, subsection, and problem name), a
-  column showing the number of points that it is possible to earn for the
-  problem. If a learner has not viewed a problem, the value in this column
-  is "N/A".
+* 각 문제 (과제, 소주제 및 문제 이름으로 나타낸다)에 대해 문제 총점을 나타내는 칼럼이 있다. 만약 문제를 학습자가 조회하지 않았다면 이 칼럼의 값은 “N/A”가 된다.
 
 .. _gradebook:
 
 ********************************************************
-Review Grades for Enrolled Learners (Small Courses)
+성적 보고서 조회 (소규모 강좌)
 ********************************************************
 
-For courses with enrollments of up to 200 learners, you can review a gradebook
-on the Instructor Dashboard.
+200명 보다 적은 학습자들이 등록되어 있는 강좌의 경우 교수자 대시보드에서 성적 보고서를 볼 수 있다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Student Admin**. For courses with
-   fewer than 200 learners enrolled, this tab includes a **Student Gradebook**
-   section.
+#. **교수자** 를 클릭하고 **학습자 관리** 를 클릭한다. 200명 이하의 학습자들이 등록된 강좌의 경우 본 탭이 학습자 **성적 보고서** 를 포함한다.
 
-#. Select **View Gradebook**. Grades are calculated and the gradebook displays.
+#. 성적 보고서 보기를 클릭한다. 성적이 산출되었고 성적 보고서가 표시된다.
 
    .. image:: ../../../shared/images/Student_Gradebook.png
      :alt: Course gradebook with rows for learners and columns for assignment
          types.
 
-The gradebook includes the following features.
+성적 보고서의 경우 다음과 같은 특징들을 포함한다.
 
-* You can select the username in each row to review that learner's **Course
-  Progress** page. For more information, see :ref:`check_student_progress`.
+* 각각의 줄에 있는 학습자 아이디를 클릭하여 해당 학습자의 강좌 진도 페이지를 확인할 수 있다. :ref:`check_student_progress` 을 참조한다.
 
-* There is a column for each **{assignment type} {number}** defined in your
-  grading configuration, with the scores that the learner attained for that
-  specific assignment.
+* 특정 과제에 대하여 학습자가 얻은 점수와 함께 점수 구성에서 정의된 각각의 {과제 종류} {번호} 에 대한 칼럼이 있다.
 
-  The gradebook does not have a scroll bar, but it can be dragged: to see
-  columns that are hidden at one side of the grade book, select the gradebook
-  and then drag left or right to reveal those columns.
+  성적 보고서에는 스크롤 바가 없지만 드래그를 할 수는 있다. 성적 보고서 한쪽에 감춰진 칼럼을 보려면, 성적 보고서를 클릭하고 해당 칼럼을 표시하기 위하여 왼쪽 오른쪽으로 드래그를 한다.
 
-* For assignment types that include more than one assignment, an **{assignment
-  type} Avg** column displays each learner's current average score for that
-  assignment type.
+* 하나 이상의 과제를 포함하고 있는 과제 유형의 경우, {과제 종류} {번호} 칼럼이 해당 종류마다 학습자의 현재 평균 점수를 표시한다.
 
-* The **Total** column presents the total score that each learner has currently
-  attained in the course. This value is expressed as a whole number: a learner
-  with a grade of 65 has earned 65% of the credit in the course, and a learner
-  with a grade of 100 has earned 100%.
+* 전체칼럼은 강좌에서 현재 학습자가 얻은 점수의 총 합계 를 나타낸다. 해당 수치는 정수로 표시된다. 65점을 받은 학습자의 경우 강좌의 65%에 해당하는 점수를 얻은 것이며 100에 해당하는 학습자의 경우 100%를 받은 것이다.
 
-* To filter the data that displays you can use the **Search students** option.
-  This option is case-sensitive and limits the rows shown in the gradebook to
-  usernames that match your entry.
+* 표시되는 데이터를 걸러내려면, 학습자 검색 선택사항을 활용할 수 있다. 본 선택 사항은 해당 안건마다 다르게 적용되며 성적 보고서상의 열을 입력값에 상응하는 아이디로 제한한다.
 
 
 .. _check_student_progress:
 
 ****************************************
-Check the Progress of a Single Learner
+개별 학습자 진도 조회하기
 ****************************************
 
-To check a single learner's progress, you can locate the specific row on the
-grade report or review the learner's **Progress** page. The **Progress** page
-includes a chart that plots the score the learner has earned for every graded
-assignment and the total grade as of the current date. Below the chart, each
-assignment and the score attained are listed.
+개별 학습자 진도를 확인하려면, 성적 보고서의 특정 열의 위치를 파악하거나 학습자 진도 페이지를 확인한다. 진도 페이지는 각 과제마다 받은 점수를 점으로 표시한 표 및 현재 날짜까지의 전체 점수를 표시한다. 아래의 표에서 보면, 각각의 과제 및 획득한 점수가 표시된다.
 
-To review a learner's **Progress** page, you supply an email address or
-username. You can check the progress for learners who are either enrolled in,
-or who have unenrolled from, the course.
+개별 학습자의 진도 페이지를 확인하려면 이메일 주소나 아이디를 입력해야 한다. 강좌에 등록되었거나 강좌 등록을 철회한 학습자의 진도를 확인할 수 있다.
 
-Learners can view a similar chart and assignment list (of their own progress
-only) when they are logged in to the course. For more information, see :ref:`A
-Students View`.
+학습자의 경우 강좌에 로그인 하게 되면 이와 비슷한 표 및 과제 목록 (진도에 대한 목록만 해당)을 볼 수 있다.  :ref:`A Students View` 를 참조한다.
 
-To view the **Progress** page for a learner, follow these steps.
+**개별 학습자의 진도** 를 확인하려면.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Student Admin**.
+#. **교수자** 를 클릭하고 **학습자 관리** 를 클릭한다.
 
-#. In the Student-Specific Grade Inspection section, enter the learner's email
-   address or username.
+#. **학습자별 성적 확인** 에서, 학습자의 이메일 주소 혹은 아이디를 입력한다.
 
-#. Select **Student Progress Page**.
+#. **학습자 진도** 페이지 를 클릭한다.
 
-   The **Progress** page for the learner displays a chart with the grade for
-   each homework, lab, midterm, final, and any other assignment types in your
-   course, and the total grade earned for the course to date. The chart does
-   not reflect any cohort or experiment group assignments.
+   학습자의 진도 페이지는 과제, 실험, 중간고사, 기말고사 등 모든 과제의 종류 및 현재 날짜상의 강좌 전체의 점수를 표시한다. 단 학습집단 혹은 실험집단의 과제는 포함하지 않는다.
 
    .. image:: ../../../shared/images/Student_Progress.png
     :alt: Progress page chart for a learner: includes a column graph with the
           score achieved for each assignment.
 
-   To learn more about a particular assignment, move the cursor onto the value
-   in the chart. A brief description displays.
+   특정 과제에 대해 더 알아보려면 마우스 커서를 표의 수치로 옮긴다. 그러면 그에 대한 짧은 설명이 표시된다.
 
    .. image:: ../../../shared/images/Student_Progress_mouseover.png
     :alt: Progress page with a tooltip for the X that was graphed for the last
           homework assignment, which indicates that the lowest homework score
           is dropped.
 
-   Below the chart, subsections are listed on the left and the units that
-   contain assignments are listed on the right. The learner's individual
-   problem scores display.
+   아래의 표에서 보면, 왼쪽에는 소주제가 표시되고 오른쪽에는 과제가 표시된다. 학습자 개인의 문제 점수가 표시된다.
 
    .. image:: ../../../shared/images/Student_Progress_list.png
     :alt: Bottom portion of a Progress page for the same learner with the
           score achieved for each problem in the first course subsection.
 
 =============================================
-Interpret the Learner Progress Page
+학습자 진도 페이지에 대한 해석
 =============================================
 
-The chart of a learner's scores on the **Progress** page and the rows of data
-on the grade report present assignment scores in a similar order. However, the
-total, cumulative score earned for the course is placed in a different position
-on the **Progress** page.
+진도 페이지에서 학습자 점수표 및 성적 보고서의 데이터 열은 이와 비슷한 순서로 과제 점수를 표시한다. 하지만, 전체 및 누적 점수의 경우 진도 페이지에선 다른 위치에 표시된다.
 
-In this example grade report, the indicated learner has a current grade of 0.43
-(43%).
+본 성적 보고서 예시에서 보면, 표시된 학습자의 경우 현재 0.43 (43%)의 점수를 획득하고 있다.
 
 .. image:: ../../../shared/images/Grade_Report_example.png
  :alt: A course grade report with a single learner's information indicated by
        a rectangle.
 
-* On each of the first four homework assignments the learner scored 1 (100%),
-  but currently has a 0 (0%) on each of the remaining three assignments.
+* 각각의 네 과제에서, 한 과제는 학습자가 1 (100%)를 획득하였지만 현재 다른 세 가지는 0 (0%)를 현재 기록 중이다.
 
-  Notice, however, that the learner's current average score for homework
-  assignments is listed as 0.666666667 (67%): in this course, the homework
-  assignment with the lowest score is dropped, so this average is over six
-  assignments rather than all seven.
+  하지만, 학습자의 현재 평균 숙제 점수는 0.666666667 (67%)로 표시되고 있다. 본 강좌에서, 가장 낮은 점수를 받은 과제는 무효처리 되므로 본 평균점수는 일곱 가지가 아니라 여섯 가지 과제에 대한 평균인 것이다.
 
-* The learner has a score of 0.75 (75%) on the midterm, and a score of 0 (0%)
-  on the final.
+* 학습자는 중간고사에서 0.75 (75%)를 받았고 기말고사에선 0 (0%)를 받았다.
 
-On the learner's **Progress** page, you see the same information graphically
-represented; however, the learner's "total" of 43% is on the far right.
+개별 학습자 진도 페이지에서 보면, 같은 정보가 그래프상에 표시된 것을 볼 수 있다. 하지만, 학습자의 “전체” 점수인 43%는 오른쪽에 표시되어 있다.
 
 .. image:: ../../../shared/images/Student_Progress.png
  :alt: Progress page for a learner also included on the grade report: includes
        a column graph with the grade achieved for each assignment.
 
-The chart on the **Progress** page includes y-axis labels for the grade ranges
-defined for the course. In this example, Pass is set to 60%, so at the end of
-the course, learners with a grade of 0.60 or higher can receive certificates.
 
-.. note:: Learner scores on the **Progress** page are a snapshot of the
- current state of the problem score database. They can, at times, be out of
- sync with actual problem scores. For example, asynchronicities can occur if
- the weight of a live problem was changed during an assignment, and not all
- learners have resubmitted their answers for that problem.
+.. note:: 진도 페이지에 있는 학습자 점수는 문제 점수 데이터베이스 상에 있는 현재 기록을 보여준다. 때때로 이들은 실제 점수와 다르게 나타나기도 한다. 예를 들면, 현재 진행중인 문제의 가중치가 과제에서 변경된 경우, 그리고 모든 학습자들이 해당 문제에 대한 답안을 제출하지 않은 경우 점수가 다르게 나타날 수 있다.
 
 .. _A Students View:
 
 =============================================
-A Learner's View of Course Progress
+학습자 강좌 진도 조회
 =============================================
 
-Learners can check their progress by selecting **Progress** in the course
-navigation bar. The learner's progress through the graded part of the course
-displays at the top of this page, above the subsection scores. Progress is
-visualized as a chart with entries for all the assignments, total percentage
-earned in the course so far, and percent needed for each grade cutoff. Here is
-an example of a learner's progress through edX101.
+학습자도 진도 를 클릭해 자신의 진도를 확인할 수 있다. 강좌에서 점수가 산출된 부분에 대한 학습자의 진도는 페이지 상단, 즉 소주제 점수 위에 표시되고 있다. 진도는 모든 과제, 현재까지 강좌에서 얻은 전체 백분율, 그리고 각각의 성적에 해당하는 가장 낮은 수치 등이 시각적으로 표시된다.
 
 .. image:: ../../../shared/images/StudentView_GradeCutoffs.png
  :alt: Image of a learner's Course Progress page with the grade cutoffs legend
        highlighted.
 
-The learner can see from this page that edX101 was graded as a Pass/Fail
-course with a cutoff of 34% and that the grading rubric contained one
-assignment type, called Learning Sequence, consisting of 11 assignments total.
-Furthermore, this particular learner has only submitted correct responses to
-two assignments, and her current total percent grade in the course is 6%. By
-hovering over each progress bar, learners can get further statistics of how
-much each assignment was counted as.
+학습자는 이를 통해 강좌 이수 기준이 34%이며 전체 11개의 과제로 구성되어 있음을 확인할 수 있다. 더욱이, 이 학습자의 경우 두 가지 과제에만 정답을 제출하였고 현재까지 백분율은 3%이다. 각각의 진도바를 움직이다 보면, 학습자는 각각의 과제의 성적이 어떻게 산출되었는지에 대한 통계 수치를 확인할 수 있다.
 
-Further down on the **Progress** page is a list of all the subsections in the
-course, with the scores recorded for the learner for all problems in the
-course. Here is the **Progress** page for the learner in the example above:
+각 소주제에서의 성적이 진도 페이지의 하단에 나온다. 아래는 학습자의 진도 페이지의 예시이다:
 
 .. image:: ../../../shared/images/StudentView_Problems.png
    :width: 800
    :alt: Image of a learner's Course Progress page with problems highlighted.
 
-Note that point scores from graded sections are called "Problem Scores",
-while point scores from ungraded sections are called "Practice Scores".
+성적이 산출된 영역의 점수는 “문제 점수”이고 성적이 산출되지 않은 영역의 점수는 “연습 점수”라고 불린다.
 
 .. _Adjust_grades:
 
 ***********************************
-Adjust Grades
+성적 변경하기
 ***********************************
 
-If you modify a problem or its settings after learners have attempted to answer
-it, learners' grades can be affected. For information about making changes to
-problems in Studio, see :ref:`Modifying a Released Problem`.
+학습자에게 문제가 공개된 후 문제를 변경하거나 설정사항을 변경하게 되면 학습자의 점수에 영향을 미치게 된다. Studio에서 문제 변경에 대한 자세한 안내는  :ref:`Modifying a Released Problem` 에 있다.
 
-To make adjustments to learner grades, you need the unique location identifier of the modified problem. For more information, see :ref:`find_URL`.
+한편, 학습자 점수를 변경하려면 수정된 문제 고유 위치 식별자가 필요하다. 이에 대한 자세한 안내는  :ref:`find_URL`  에 있다.
 
-The following sections describe the various ways in which you can adjust
-learners' grades when a correction or other change is unavoidable.
+다음 장은 학습자 성적을 변경할 수 있는 다양한 방법에 대해 설명한다.
 
 .. contents::
  :local:
@@ -536,11 +333,9 @@ learners' grades when a correction or other change is unavoidable.
 Find the Unique Location Identifier for a Problem
 ==================================================
 
-When you create each of the problems for a course, edX assigns a unique
-location to it. To make grading adjustments for a problem, or to view data
-about it, you need to specify the problem location.
+강좌에서 각각의 문제를 출제할 경우, 문제 고유 위치 식별자가 생성된다. 해당 문제에 대한 점수 변경을 할 경우, 혹은 그에 대한 데이터를 볼 경우, 이것이 필요하다.
 
-Location identifiers for problems can be in one of these formats.
+위치 식별자는 다음과 같은 형식을 갖는다.
 
 * ``location = block-v1:{org}+{course}+{run}+type@problem+block@{id}``, for
   example, ``location = block-v1:edX+BlendedX+1T2015+type@problem+block@72e0f73cdf5c4d648ebec0022854f18b``
@@ -548,234 +343,158 @@ Location identifiers for problems can be in one of these formats.
 * ``location = i4x://{org}/{course}/problem/{id}``, for example,
   ``location = i4x://edX/edX101/problem/680cc746e8ee473490841334f0235635``
 
-Courses created since Fall 2014 typically have usage IDs in the first format,
-while older courses have usage IDs in the second format.
+2014년 가을 이후에 시작된 강좌는 첫 형식의 ID를 갖고 이전의 강좌는 두번째 형식의 ID를 갖는다.
 
-To find the unique location identifier for a problem, follow these steps.
+해당 문제에 대한 문제 고유 위치 식별자를 찾으려면.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Course**, and then navigate to the unit that contains the
-   problem.
+#. 강좌 내용을 클릭하고 해당 문제를 포함하고 있는 부분을 찾는다.
 
-#. Display the problem, and find the **Submission History** and **Staff Debug
-   Info** options that appear below it.
+#. 문제를 표시하고 제출 이력과 오류 검출 정보를 찾는다.
 
-#. Select **Staff Debug Info**. Information about the problem appears,
-   including its **location**.
+#. 오류 검출 정보를 선택한다. 위치를 포함한 문제에 대한 정보가 나타난다.
 
-#. To copy the location of the problem, select the entire value after
-   ``location =``, right click, and then select **Copy**.
+#. 문제의 위치를 복사하려면  ``location =``, 뒤의 값을 선택하고 오른쪽 클릭을 한 후 **복사하기** 를 선택한다.
 
-To close the Staff Debug viewer, click on the browser page outside of the
-viewer.
+강좌 운영팀 오류 검출 보기를 닫으려면 뷰어 밖에 있는 브라우저 페이지를 클릭한다.
 
 .. _rescore:
 
 ==========================================
-Rescore Learner Submissions for a Problem
+학습자 답안 점수 다시 매기기
 ==========================================
 
-Each problem that you create for your course includes the definition of a
-correct answer, and might also include a tolerance or acceptable alternatives.
-If you decide to make a change to the answers for a problem, you can also
-rescore any responses that were already submitted. For a specified problem,
-you can rescore the work submitted by a single learner, or rescore the
-submissions made by every enrolled learner.
+강좌에서 제시한 모든 문제마다 정답이 있고 허용된 혹은 받아들여질 수 있는 대안이 포함되어 있을 수 있다. 이러한 수치에 변화를 적용하게 되면 이미 제출한 답안들에 대한 점수를 다시 매길 수 있다. 각각의 문제마다 단일 학습자가 제출한 답안에 대해 점수를 다시 매길 수 있고 혹은 전체 등록된 학습자가 제출한 답안을 다시 매길 수 있다.
 
-.. note:: You can only rescore problems that have a correct answer defined in
-   edX Studio. This procedure cannot be used to rescore open response
-   assessment problems, or problems that are scored by an external grader.
+.. note:: Studio 상에서 정답으로 표기된 문제들만 성적을 다시 매길 수 있다. 이러한 절차는 외부 채점자가 점수를 산출한 문제에 대해 점수를 다시 매길 경우 활용할 수 없다.
 
-   Additionally, errors might occur if you rescore a problem that has multiple
-   response fields and you have completed any of the following actions.
+   추가적으로 여러 답변 필드가 있는 문제를 다음과 같은 작업 수행 후 다시 채점하면 오류가 발생할 수 있다.
 
-   * You removed a response field.
-   * You added a response field.
-   * You reordered any of the response fields.
+   * 답안 필드를 삭제하였다.
+   * 답안 필드를 추가하였다.
+   * 답안 필드 중 하나를 다시 만들었다.
 
-.. note:: Do not use this method to rescore open response assessment (ORA)
-   problems. For ORA problems, you can :ref:`override a learner assessment
-   grade<Override a learner assessment grade>` in Studio.
+.. note:: 이 방법을 이용해  :ref:`override a learner assessment grade<Override a learner assessment grade>` 바꾸면 안된다. 개방형 응답 평가는 스튜디오를 활용한다
 
 
-Rescore a Submission for an Individual Learner
+개별 학습자 답안 점수 다시 매기기
 -----------------------------------------------
 
-To rescore a problem for a single learner, you need that learner's username or
-email address.
+개별 학습자 답안의 점수를 다시 매기려면, 학습자의 아이디 혹은 이메일 주소가 필요하다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Course** and navigate to the component that contains the
-   problem you want to rescore.
+#. 강좌 내용 을 클릭하고 점수를 다시 매기고자 하는 문제를 포함하고 있는 부분을 검색한다.
 
-#. Display the problem, and then select **Staff Debug Info**. The Staff Debug
-   viewer opens.
+#. 문제를 표시하고 강좌 운영팀 오류 검출 정보를 클릭한다. 강좌 운영팀 오류 검출 보기가 열린다.
 
-#. In the **Username** field, enter the learner's email address or username,
-   and then select **Rescore Student Submission**. A message indicates a
-   successful adjustment.
+#. 아이디 에 학습자 이메일 주소나 아이디를 입력하고 학습자 제출 답안 점수 다시 매기기를 클릭한다. 성공적으로 변경하였을 경우 메시지가 뜬다.
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
+#. 강좌 운영팀 오류 검출 보기를 닫으려면 뷰어 밖에 있는 브라우저 페이지를 클릭한다.
 
-Rescore Submissions for All Learners
+모든 학습자의 답안 점수 다시 매기기
 ------------------------------------
 
-To specify the problem you want to rescore, you need its location identifier.
-See :ref:`find_URL`. To rescore a problem:
+점수를 다시 매기고자 하는 문제를 파악하려면 위치 식별자가 있어야 한다. 이에 대한 자세한 안내는  :ref:`find_URL` 에 있다.
 
-#. View the live version of your course.
+문제에 대한 성적을 다시 매기려면
 
-#. Select **Instructor**, and then select **Student Admin**.
+#. 적용 결과 보기를 클릭한다.
 
-#. In the **Course-Specific Grade Adjustment** section of the page, enter the
-   unique problem location, and then select **Rescore ALL students' problem
-   submissions**.
+#. **교수자** 를 클릭하고 **학습자 관리** 를 클릭한다.
 
-#. When a dialog box notifies you that the rescore process is in progress,
-   select **OK**.
+#. **강좌에 따른 성적 조정** 에서 위치 식별자를 입력하고 **모든 학습자의 답안 재채점** 을 클릭한다.
 
-   This process can take some time to complete for all enrolled learners. The
-   process runs in the background, so you can navigate away from this page and
-   do other work while it runs.
+#. 재채점 처리 과정이 진행중이라는 대화창을 보면 **OK** 를 클릭한다.
 
-#. To view the results of the rescore process, select either **Show Background
-   Task History for Student** or **Show Background Task History for Problem**.
+   이 처리 과정에는 시간이 어느 정도 걸릴 수도 있다. 이 처리 과정은 백그라운드에서 진행되기 때문에, 이 페이지를 벗어나 다른 작업을 수행할 수 있다.
 
-   A table displays the status of the rescore process for each learner or
-   problem.
+#. 성적 다시 매기기 절차의 결과를 보려면 문제에 대한 **배경 작업 기록 보기** 를 클릭한다.
 
-.. note:: You can use a similar procedure to rescore the submission for a
- problem by a single learner. You work in the **Student-Specific Grade
- Adjustment** section of the page to enter both the learner's email address or
- username and the unique problem identifier, and then select **Rescore Student
- Submission**.
+   표는 각각의 학습자 혹은 문제마다 성적 다시 매기기의 절차 상태를 표시한다.
+
+.. note:: 비슷한 절차를 활용하여 성적을 다시 매길 수 있다. 학습자별 점수 조정 을 통해 학습자 이메일 주소나 아이디 및 단독 문제 식별자를 입력하고 답안 재채점 을 클릭한다.
 
 .. _reset_attempts:
 
 =====================================
-Reset Learner Attempts for a Problem
+학습자 문제 풀이 횟수 재설정
 =====================================
 
-When you create a problem, you can limit the number of times that a learner
-can try to answer that problem correctly. If unexpected issues occur for a
-problem, you can reset the value for one particular learner's attempts back to
-zero so that the learner can begin work over again. If the unexpected behavior
-affects all of the learners in your course, you can reset the number of
-attempts for all learners to zero.
+학습자가 정답을 제출하는 횟수에 제한을 둘 수 있다. 그러나 문제에 예상치 못한 오류가 있다면, 특정 학습자의 문제 해결 횟수 시도를 0으로 재설정하여 학습자가 다시 문제를 풀 수 있도록 할 수 있다. 또한 전체 학습자의 문제 해결 횟수를 0으로 재설정할 수도 있다.
 
-.. note:: You cannot use this method with open response assessment (ORA)
-   problems. To allow a learner to start an ORA problem again and resubmit
-   responses, you must :ref:`delete the learner's state<delete_state>`.
+.. note:: 이 방법을 방형 응답 평가에 사용하면 안된다. 개방형 응답 평가 문제의 경우 학습자 상태를 삭제해야 한다.
 
-Reset Attempts for an Individual Learner
+개별 학습자 문제 풀이 횟수 재설정
 ---------------------------------------------
 
-To reset the number of attempts for a single learner, you need that learner's
-username or email address.
+개별 학습자의 문제 풀이 횟수를 0으로 재설정 하려면 학습자의 아이디 혹은 이메일 주소가 필요하다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Course** and navigate to the component that contains the
-   problem you want to reset.
+#. **강좌 내용** 을 클릭하고 재설정하고자 하는 문제가 포함된 부분을 검색한다.
 
-#. Display the problem, and then select **Staff Debug Info**. The Staff Debug
-   viewer opens.
+#. 문제를 표시하고 **강좌 운영팀 오류 검색 정보** 를 클릭한다. 강좌 운영팀 오류 검색 보기가 열린다.
 
-#. In the **Username** field, enter the learner's email address or username,
-   and then select **Reset Student Attempts**. A message indicates a successful
-   adjustment.
+#. 아이디란에 학습자의 이메일 주소 혹은 아이디를 입력하고 학습자 시도 **재설정** 을 클릭한다. 성공적으로 조정되었을 경우 메시지가 뜬다.
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
+#. 강좌 운영팀 오류 검색 보기를 닫으려면, 뷰어 밖에 있는 브라우저 페이지를 클릭한다.
 
-Reset Attempts for All Learners
+모든 학습자 문제 풀이 횟수 재설정
 ------------------------------------
 
-To reset the number of attempts that all enrolled learners have for a problem,
-you need the unique identifier of the problem. For more information, see
-:ref:`find_URL`.
+모든 학습자 문제 해결 횟수를 재설정 하려면 문제의 고유 식별자가 필요하다. :ref:`find_URL` 를 참조한다.
 
-To reset attempts for all learners, follow these steps.
+모든 학습자 문제 해결 횟수를 재설정 하려면 다음의 절차를 따른다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Student Admin**.
+#. **교수자** 를 클릭하고 **학습자 관리** 를 클릭한다.
 
-#. To reset the number of attempts for all enrolled learners, you work in the
-   **Course-Specific Grade Adjustment** section of the page. Enter the unique
-   problem location, and then select **Reset ALL students' attempts**.
+#. 등록된 모든 학습자들의 문제 해결 횟수를 재설정 하려면 과목별 점수 변경 페이지에서 작업하도록 한다. 고유 문제 위치를 입력하고 모든 학습자 문제 해결 횟수 재설정을 클릭한다.
 
-#. A dialog opens to indicate that the reset process is in progress. Select
-   **OK**.
+#. 재설정 처리가 진행 중이라는 대화창이 뜬다. **OK** 를 클릭한다.
 
-   This process can take some time to complete. The process runs in the
-   background, so you can navigate away from this page and do other work while
-   it runs.
+   처리 완료까지 시간이 소요될 수도 있지만, 진행중인 현재 페이지 외에 다른 페이지에서 다른 작업을 할 수 있다.
 
-#. To view the results of the reset process, select either **Show Background
-   Task History for Student** or **Show Background Task History for Problem**.
+#. 재설정 처리에 대한 결과를 보려면, **학습자 배경 작업 기록 보이기** 나 **문제 배경 작업 기록 보기** 를 클릭한다.
 
-   A table displays the status of the reset process for each learner or
-   problem.
+   각각의 학습자 혹은 문제에 대한 해결횟수 재설정 처리과정이 표에 표시된다.
 
-.. note:: You can use a similar procedure to reset problem attempts for a
- single learner. You work in the **Student-Specific Grade Adjustment** section
- of the page to enter both the learner's email address or username and the
- unique problem identifier, and then select **Reset Student Attempts**.
+.. note:: 이와 비슷한 절차를 활용하여 **개별 학습자의 문제 해결 횟수를 재설정** 할 수도 있다. 학습자별 점수 변경페이지에서 학습자 이메일 주소나 아이디 그리고 고유한 문제 식별자를 입력하고 **학습자 문제 해결 횟수 재설정** 을 클릭한다.
 
 .. _delete_state:
 
 =======================================
-Delete a Learner's State for a Problem
+학습자 상태 삭제
 =======================================
 
-You can completely delete a learner's database history, or "state", for a
-problem. You can only delete learner state for one learner at a time.
+문제에 대한 학습자의 데이터 기록 혹은 “상태”를 완전히 삭제할 수 있다. 한번에 하나의 학습자의 상태를 삭제할 수 있다.
 
-For example, you realize that a problem needs to be rewritten after only a few
-of your learners have answered it. To resolve this situation, you rewrite the
-problem and then delete learner state only for the affected learners so that
-they can try again.
+예를 들어 만약 몇 학습자가 답을 제출한 문제가 다시 출제할 필요가 있다고 느꼈을 경우 문제를 다시 쓰고 답을 제출한 학습자의 상태만 삭제할 수 있는 것이다.
 
-To delete a learner's entire history for a problem from the database, you need
-that learner's username or email address.
+특정 문제에 대한 학습자 상태를 삭제하려면 학습자의 이메일 주소 혹은 아이디가 필요하다.
 
-.. important:: Learner state is deleted permanently by this process. This
-   action cannot be undone.
+.. important:: 학습자 상태는 이 작업을 통해 영구적으로 지워지게 된다. 다시 되돌릴 수 없다.
 
-   When you delete a learner's state for an open response assessment (ORA)
-   problem, the learner will have to start the assignment from the beginning,
-   including submitting responses and going through the required assessment
-   steps.
+   개방형 응답 평가 문제의 학습자 상태를 삭제할 경우 학습자가 답안을 제출하는 단계인 첫 단계부터 **재시작** 해야 하며 평가 단계도 다시 밟아야 한다.
 
-You can use either the Staff Debug viewer or the Instructor Dashboard to delete
-learner state.
+강좌 운영팀 뷰어나 교수자 대시보드를 활용하여 학습자 상태를 삭제한다.
 
-To use the Staff Debug viewer, follow these steps.
+강좌 운영팀 뷰어를 사용하려면 다음의 절차를 따른다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Course** and navigate to the component that contains the
-   problem.
+#. **강좌 내용** 을 클릭하여 해당 문제를 포함하고 있는 부분을 검색한다.
 
-#. Display the problem, and then select **Staff Debug Info**. The Staff Debug
-   viewer opens.
+#. 문제를 표시하고 강좌 운영팀 오류 검색 정보를 클릭한다. 강좌 운영팀 오류 검색 보기가 열린다.
 
-#. In the **Username** field, enter the learner's email address or username,
-   and then select **Delete Student State**. A message indicates a successful
-   adjustment.
+#. 아이디 에 학습자 이메일 주소나 아이디를 입력하고 **학습자 상태 삭제** 를 클릭한다. 성공적으로 처리가 될 경우 메시지가 뜬다.
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
 
-To use the Instructor Dashboard, you need the unique identifier of the problem.
-See :ref:`find_URL`.
+교수자 대시보드를 사용할 경우, 문제 고유의 식별자가 필요하다. 이에 대한 더 자세한 안내는  :ref:`find_URL`  에 있다..
 
-#. Select **Instructor**, and then select **Student Admin**.
+#. **교수자** 를 클릭하고 **학습자 관리** 를 클릭한다.
 
-#. In the **Student-Specific Grade Adjustment** section of the page, enter both
-   the learner's email address or username and the unique problem identifier,
-   and then select **Delete Student State for Problem**.
+#. **학습자별 성적 조정** 에서 학습자의 이메일 주소 혹은 아이디 및 고유 문제 식별자를 입력하고 문제관련 **학습자 상태 삭제** 를 클릭한다.
