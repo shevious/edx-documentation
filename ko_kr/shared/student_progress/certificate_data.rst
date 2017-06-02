@@ -1,17 +1,16 @@
 .. _Reporting Certificate Data:
 
 ############################
-Obtaining Certificate Data
+이수증 데이터 모으기
 ############################
 
-This topic describes how to access data about certificates that have been
-issued for a course.
+이 장은 발급된 이수증의 데이터를 모으는 방법에 대해 다룬다.
 
 .. contents::
    :local:
    :depth: 1
 
-For more information, see the following other topics about certificates.
+다음은 이수증에 대해 설명한다.
 
 * :ref:`Setting Up Course Certificates`
 * :ref:`Checking Student Progress and Issuing Certificates`
@@ -19,67 +18,60 @@ For more information, see the following other topics about certificates.
 .. _Access Certificate Data:
 
 **************************
-Access Certificate Data
+이수증 데이터 조회하기
 **************************
 
-From the Instructor Dashboard, you can view data about the certificates that
-have been issued for your course. You can also download a .csv (comma-separated
-values) file with the certificate data.
+교수자 대시보드에서 이미 발급된 이수증 데이터를 조회할 수 있다. 이수증 데이터가 포함된 .csv파일도 다운로드 받을 수 있다.
 
 ==========================
-View Certificate Data
+이수증 데이터 조회하기
 ==========================
 
-To view certificate data, follow these steps.
+이수증 데이터 조회를 위해,
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Data Download**.
+#. **교수자** 를 선택하고 **데이터 다운로드** 를 클릭한다.
 
-#. Select **View Certificates Issued**.
+#. **발급된 이수증 조회** 를 선택한다.
 
-   A table of certificate data is displayed, with one row for each type of
-   certificate issued. For more information on the contents of this report, see
-   :ref:`Columns in the Certificate Report`.
+   이수증 데이터 표가 표시되며 발급된 이수증 종류에 대한 행이 포함된다. 이 보고에 대해  :ref:`Columns in the Certificate Report` 에 자세히 나와있다.
 
 ==========================
-Download Certificate Data
+이수증 데이터 다운로드하기
 ==========================
 
-To download certificate data, follow these steps.
+이수증 데이터를 다운로드하기 위해.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 클릭한다.
 
-#. Select **Instructor**, and then select **Data Download**.
+#. **교수자** 를 선택하고 **데이터 다운로드** 를 클릭한다.
 
-#. Select **Download CSV of Certificates Issued**.
+#. 발급받은 이수증 CSV 파일 다운로드를 선택한다.
 
-   The CSV file is downloaded to your computer.
+   CSV 파일이 컴퓨터에 다운로드된다.
 
-   For more information on the contents of this file, see :ref:`Columns in the
-   Certificate Report`.
+   이 파일에 대해 :ref:`Columns in the Certificate Report` 에 자세히 나와있다.
 
 .. _Columns in the Certificate Report:
 
 ***************************************
-Columns in the Certificate Report
+이수증 보고 칼럼
 ***************************************
 
-The certificate report includes a row for each type of certificate issued for
-the course.
+이수증 보고는 강좌에서 발급한 이수증 각 종류에 대한 행을 포함한다.
 
 .. list-table::
    :widths: 30 70
    :header-rows: 1
 
-   * - Column
-     - Description
-   * - CourseID
-     - The unique ID of the course for which you are viewing certificate data.
-   * - Certificate Type
-     - The type of certificate issued. For example, Verified or Honor.
-   * - Total Certificates Issued
-     - The number of certificates of the specific type that have been issued to
-       learners as of the report date.
-   * - Date Report Run
-     - The date the report was created.
+   * - 칼럼
+     - 설명
+   * - 강좌 ID
+     - 이수증 데이터를 조회하는 강좌를 나타내는 ID.
+   * - 이수증 종류
+     - 발급된 이수증의 종류. 예를 들어 명예 이수증, 인증 이수증 등이 포함된다.
+   * - 발급된 이수증 수
+     - 보고 날짜 기준으로 학습자에게 발급된 특정 종류의 이수증 수를 나타낸다.
+   * - 보고 날짜
+     - 보고가 작성된 날짜를 나타낸다.

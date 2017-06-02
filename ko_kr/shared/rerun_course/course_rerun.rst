@@ -1,12 +1,10 @@
 .. _Rerun a Course:
 
 ###################
-Re-running a Course
+강좌 재 개강하기
 ###################
 
-Another way to create a course in Studio is to re-run an existing course. When
-you re-run a course, most, but not all, of the original course content is
-duplicated to the new course. The original course is not changed in any way.
+Studio에서 강좌를 만드는 또 다른 방법은 기존 강좌를 재개강하는 것이다. 강좌 재개강하기를 선택하면, 전부는 아니지만 원래 강좌 콘텐츠의 대부분이 새로운 강좌로 복제된다. 기존 강좌가 변경될 일은 없다.
 
 .. contents::
   :local:
@@ -15,190 +13,114 @@ duplicated to the new course. The original course is not changed in any way.
 .. _Data Duplicated When You Re-Run a Course:
 
 ********************************************
-Data Duplicated When You Re-Run a Course
+강좌 재 개강시 복제되는 데이터
 ********************************************
 
 .. list-table::
    :widths: 45 45
    :header-rows: 1
 
-   * - Type of Content
-     - Duplicated to New Course?
-   * - Course start date
-     - No. Set to midnight on January 1, 2030 (UTC).
-   * - All other course dates
-     - Yes. You must update all release dates and due dates.
-   * - Course structure (sections, subsections, units) and state (published,
-       hidden)
-     - Yes.
-   * - Individual problems and other components
-     - Yes.
-   * - Files uploaded to the course, including videos and textbooks
-     - Yes.
-   * - Pages added to the course
-     - Yes, including all page content and the defined page order.
-   * - Course Updates
-     - Yes.
-   * - Advanced Settings
-     - Yes.
-   * - Grading policy
-     - Yes.
-   * - Student enrollment data
-     - No.
-   * - Course team privileges, including admins, discussion moderators, beta
-       testers
-     - No. Only the user who created the new course has access to it.
-   * - Manually created cohorts
-     - No.
-   * - Student answers, progress, and grading data
-     - No.
-   * - Certificates
-     - Yes.
-   * - Discussion posts, responses, comments, and other data
-     - No.
-   * - Wiki contributions
-     - No.
+   * - 콘텐츠 유형
+     - 새로운 강좌로 복제되는가?
+   * - 강좌 시작 날짜
+     - 아니오. 2030년 1월 1일 자정으로 설정.
+   * - 강좌 일정
+     - 예. 강좌 시작일과 종료일을 변경해야 함.
+   * - 강좌 구조 (주제, 소주제, 학습활동) 및 상태 (게시된 상태, 숨겨진 상태)
+     - 예.
+   * - 개별 문제 및 다른 구성요소
+     - 예.
+   * - 동영상 및 교재를 포함하여 강좌에 업로드된 파일
+     - 예.
+   * - 추가된 메뉴
+     - 예, 모든 메뉴 콘텐츠 및 정해진 메뉴 순서도 복제.
+   * - 공지사항
+     - 예.
+   * - 고급 설정
+     - 예.
+   * - 성적 규정
+     - 예.
+   * - 학습자 수강 데이터
+     - 아니오.
+   * - 교수자, 토론 운영자, 베타 테스터를 포함한 강좌 운영팀의 특별 권한
+     - 아니오. 새로운 강좌를 개설한 자만 접근 가능.
+   * - 직접 설정한 학습집단
+     - 아니오.
+   * - 학습자 답안, 진도, 및 채점 데이터
+     - 아니오.
+   * - 이수증
+     - 예.
+   * - 게시글, 답글, 의견 및 다른 데이터
+     - 아니오.
+   * - 위키
+     - 아니오.
 
-After you re-run a course, modifications to the original course and the re-run
-course are independent. Changes to either course have no effect on the other
-course. Therefore, you should ensure that the original course content is as
-complete as possible before you re-run the course.
+강좌를 재개강하면 원 강좌에 가하는 수정과 재개강한 강좌에 가하는 수정은 완전히 별개다. 한 강좌의 수정사항은 다른 강좌에 아무 영향도 끼치지 않는다. 따라서 강좌의 재 개강을 결정하기 전에 원 강좌 콘텐츠가 최대한 흠 없도록 해야한다.
 
-For more information, see :ref:`Use Re-Run to Create a Course` and
-:ref:`Update the New Course`.
+보다 자세한 정보는  :ref:`Use Re-Run to Create a Course` 와 :ref:`Update the New Course` 에 있다.
 
 .. _Use Re-Run to Create a Course:
 
 ********************************************
-Using Re-Run to Create a Course
+강좌를 만들기 위해 재 개강하기
 ********************************************
 
 .. only:: Partners
 
-   Only edX staff members have the permissions needed to re-run a course. To
-   re-run a course that is hosted on the `edx.org`_ or `edX Edge`_ sites,
-   contact your edX partner manager. After your partner manager creates the new
-   course using the re-run feature, you can complete the steps to
-   :ref:`update the new course<Update the New Course>`.
+   K-MOOC 운영팀만이 재 개강 권한을 갖고 있다. 테스트서버나 kmooc.kr의 강좌를 재 개강하기 원하면 K-MOOC 파트너 매니저와 상담해야 한다. 파트너 매니저가 :ref:`update the new course<Update the New Course>` 을 이용해 강좌를 새로 만들면 재 개강할 강좌를 업데이트 할 수 있다.
 
 .. only:: Open_edX
 
-   Only global or system administrators have the permissions needed to re-run
-   a course. To re-run a course, contact your system administrator. After your
-   system administrator creates a new course using the re-run feature, you can
-   complete the steps to :ref:`update the new course<Update the New Course>`.
 
-.. note:: Before you re-run a course, make sure that its settings and content
-  are complete. Additions and changes that you make to the original course
-  after you create the new course have no effect on the new course.
+.. note:: 재 개강을 결정하기 전에 원 강좌 콘텐츠가 최대한 흠 없도록 해야한다. 재 개강한 뒤 원 강좌에 가하는 수정사항이나 추가사항은 새 강좌에 아무 영향도 주지 못한다.
 
 .. Comment out the procedure to create rerun, since only Global Admin (i.e.
 .. edX internal can do this) Done as part of DOC-2236 (CT, Sept 11, 2015)
-   To re-run a course, follow these steps.
-
-   #. Sign in to Studio. Your dashboard lists the courses that you have access
-      to as a course team member.
-
-   #. Move your cursor over each row in the list of courses. The **Re-Run
-      Course** and **View Live** options appear for each course.
-
-      .. image:: ../../../shared/images/Rerun_link.png
-        :alt: A course listed on the dashboard with the Re-run Course and View
-           Live options shown.
-        :width: 600
-
-   #. Locate the course you want to re-run and select **Re-Run Course**. The
-      **Create a re-run of a course** page opens with values already supplied
-      in the **Course Name**, **Organization**, and **Course Number** fields.
-
-      .. image:: ../../../shared/images/rerun_course_info.png
-        :alt: The course creation page for a rerun, with the course name,
-           organization, and course number supplied.
-        :width: 600
-
-   #. Supply a **Course Run** to indicate when the new course will be offered.
-
-      Together, the course number, the organization, and the course run are
-      used to create the URL for the new course. The combination of these three
-      values must be unique for the new course. In addition, the total number
-      of characters used for the name, organization, number, and run must be 65
-      or fewer.
-
-   #. Select **Create Re-Run**. Your **My Courses** dashboard opens with a
-      status message about the course creation process.
-
-      Duplication of the course structure and content takes several minutes.
-      You can work in other parts of Studio or in the LMS, or on other web
-      sites, while the process runs. The new course appears on your **My
-      Courses** dashboard in Studio when configuration is complete.
 
 
 .. _Update the New Course:
 
 ********************************************
-Update the New Course
+재개강할 강좌 업데이트하기
 ********************************************
 
-When you create a course by re-running another course, you must carefully
-review the settings and content of the new course. To assure a quality
-experience for learners, be sure to test the course thoroughly before the
-course start date. See :ref:`Testing Your Course Content` and
-:ref:`Beta_Testing`.
+이전 강좌를 재개강하여 강좌를 만들 때 새로운 강좌의 설정 및 콘텐츠를 신중하게 검토해야 한다. 또한 학습자에게 훌륭한 학습 경험이 되도록 개강 전에 강좌에 대해 철저하게 테스트 해야 한다
 
-At a minimum, you must make the following changes to prepare the new
-course for release.
+이에 대해,  :ref:`Testing Your Course Content` 와  :ref:`Beta_Testing` 에 자세한 안내가 있다.
 
-* Add course team members, including discussion admins, moderators, and
-  community TAs. See :ref:`Add Course Team Members` or :ref:`Course_Staffing`.
+재개강을 준비할 때, 다음 작업이 완료되었는지 확인해야 한다.
 
-* Update course-wide dates, including course and enrollment start and end
-  dates. See :ref:`Scheduling Your Course`.
+* 토론 관리자, 조정자 및 커뮤니티 TA를 포함한 강좌 운영팀 구성원을 추가한다. 세부사항은  :ref:`Add Course Team Members` 나  :ref:`Course_Staffing` 를 참고한다.
 
-* Change the release dates of course sections, subsections, and units. See
-  :ref:`Release Dates`.
+* 강좌 및 수강신청 시작 및 종료 날짜를 포함하여 주요 일정을 업데이트한다. 세부사항은 :ref:`Scheduling Your Course` 을 참고한다.
 
-* Change the due dates of subsections that are part of your grading policy. See
-  :ref:`Set the Assignment Type and Due Date for a Subsection`.
+* 강좌 주제, 소주제 및 학습활동 시작 날짜를 변경한다. 세부사항은  :ref:`Release Dates` 을 참고한다.
 
-* Delete or edit posts on the **Course Updates** page in Studio. See :ref:`Add
-  a Course Update`.
+* 성적에 반영하는 소주제의 마감일을 변경한다. 세부사항은  :ref:`Set the Assignment Type and Due Date for a Subsection` 을 참고한다.
 
-* Review the files on the **Files & Uploads** page. To update a file that
-  contains references to course-related dates, you must complete the
-  following steps.
+* Studio의 공지사항 페이지에 있는 게시물을 삭제 또는 편집한다. 세부사항은 :ref:`Add a Course Update` 를 참고한다.
 
-  1. Locate the source file.
-  2. Change course-related dates in the file.
-  3. Upload the revised version of the file.
+* 파일 업로드 페이지에서 파일을 검토한다. 강좌 관련 날짜에 대한 참조를 포함하는 파일을 업데이트 하려면 다음과 같이 해야 한다.
 
-  .. note:: If you use the same file name when you upload a revised file,
-   links to that file in course components and course handouts will continue to
-   work correctly. If you rename a file and then upload it, you must also
-   update all links to the original file name. See :ref:`Add Course Handouts`
-   or :ref:`Add a Link to a File`.
+  1. 소스 파일을 찾는다.
+  2. 파일에 강좌 관련 날짜를 변경한다.
+  3. 파일의 수정된 버전을 업로드한다.
 
-* Review the staff biographies and other information on the course summary
-  page and make needed updates. See :ref:`The Course About Page`.
+  .. note:: 수정된 파일을 업로드할 때 동일한 파일 이름을 사용하는 경우, 강좌 구성요소 및 학습자료에서 해당 파일에 대한 링크가 수정된 파일로 연결될 것이다. 그러나 파일 이름을 변경한 다음 그것을 업로드 하는 경우, 원래 파일 이름에 대한 모든 링크를 또한 업데이트 해야 한다. 이와 관련한 세부사항은  :ref:`Add Course Handouts`  또는  :ref:`Add a Link to a File` 를 참고한다.
 
-* Create initial posts for discussion topics and an "introduce yourself"
-  post. See :ref:`Discussions`.
+* 강좌 운영팀 소개 및 강좌 요약 페이지에 대한 기타 정보를 검토하고 필요한 업데이트를 확인한다. 세부사항은  :ref:`The Course About Page` 를 참고한다.
 
-* Add initial wiki articles.
+* 토의 주제 및 “자기 소개”에 관한 첫 게시물을 만든다. 세부사항은  :ref:`Discussions` 를 참고한다.
 
-* For a course that includes :ref:`learner cohorts<Enabling and Configuring
-  Cohorts>`, set up the cohorts and select a strategy for assigning learners to
-  the cohorts.
+* 위키를 만든다.
 
-* For a course that includes drag and drop problems, replace any problems
-  created prior to April 2016, with the newer drag and drop problem component,
-  which is accessible and mobile ready. For more information about enabling the
-  new drag and drop problem type and adding these problems to your course, see
-  :ref:`drag_and_drop_problem`.
+* 학습 집단을 사용하는 강좌의 경우 학습 집단을 설정하고 학습자 배치 방법을 선택한다.
 
-You can also refer to the :ref:`Launch` topic for tools and ideas that help you
-prepare the course for launch.
+* 드래그 앤 드랍을 포함하는 강좌의 경우 새 드래그 앤 드랍 문제 구성요소가 나왔기 때문에 2016년 4월 이전에 만들어진 모든 문제를 바꿔야 한다. 세부사항은  :ref:`drag_and_drop_problem` 에 새로운 드래그 앤 드랍 문제를 참고한다.
+
+그외에도 개강 준비에 도움이 되는 도구 및 아이디어에 대한 안내가  :ref:`Launch` 에 있다.
 
 .. note::
-  Changes you make in the new course have no effect on the original course.
+  새 강좌에 가하는 수정 사항은 원 강좌에 아무 영향을 끼치지 못한다.
 
 .. include:: ../../../links/links.rst

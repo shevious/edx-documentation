@@ -1,117 +1,95 @@
 .. _Checking Student Progress and Issuing Certificates:
 
 ###################################################
-Assign Final Grades and Issue Certificates
+최종 성적 산출 및 이수증 발급
 ###################################################
 .. This chapter will be renamed and expanded to include course wrap-up activities and best practices.
 
-This topic describes how to assign grades and issue certificates to learners in
-your course.
+이 장은 최종 성적을 산출하고 이수증을 발급하는 방법에 대해 설명한다.
 
 .. contents::
    :local:
    :depth: 1
 
-For more information, see the following other topics about certificates.
+다음은 이수증에 대해 설명한다.
 
 * :ref:`Setting Up Course Certificates`
 * :ref:`Reporting Certificate Data`
 
 ****************************************
-Overview
+개관
 ****************************************
 
-As you prepare for the end of your course, you can send learners a :ref:`course
-farewell<Course Farewell and Certificates>` email message.
+종강이 다가오면 학습자들에게  :ref:`course farewell<Course Farewell and Certificates>` 을 보낼 수 있다.
 
-To assign a final grade to each learner enrolled in a course, you generate
-grades after the **Course End Date** and **Time** have passed. For more
-information, see :ref:`Access_grades`.
+강좌 마감일과 시간 이 지난 이후 강좌에 등록된 개별 학습자의 최종 성적을 산출할 수 있다. 이에 관한 자세한 안내는  :ref:`Access_grades` 에 있다.
 
-The learner's final grade and the grading configuration you set in Studio are
-used to determine whether the learner has earned a certificate for the course.
+학습자의 이수증 발급은 강좌 운영팀이 Studio에서 설정한 성적 규정에 따라 결정된다. 즉, 학습자가 이수증 발급 기준 성적 이상을 받아야 하는 것이다.
 
 ****************************************
-On-Demand Certificates
+즉시 발급 이수증
 ****************************************
 
-If you have a self-paced course, you can allow your learners to request their
-certificates as soon as they have completed enough of the course with a high
-enough grade to qualify for a certificate. Learners might want to request a
-certificate right away, or they might wait until they have completed the
-course.
+자율 형식 강좌가 있다면 이수증 발급을 위한 충분한 성적을 지닌 강좌의 상당 부분을 마친 학습자에게 이수증을 신청하도록 할 수 있다. 학습자는 즉시 이수증을 신청할 수도 있고 강좌를 완료할 때까지 기다릴 수도 있다.
 
 ========================================
-Allow Learners to Request Certificates
+학습자 이수증 신청 허용하기
 ========================================
 
-To allow learners to request certificates from the **Progress** page, follow
-these steps.
+성과 페이지에서 학습자 이수증 신청을 허용하기 위해.
 
-#. View the live version of your course.
+#. 실시간 적용 보기를 선택한다.
 
-#. Select **Instructor**, and then select **Certificates**.
+#. 교수자를 선택하고 이수증을 클릭한다.
 
-#. Select **Enable Student-Generated Certificates**.
+#. 학습자 생성 이수증 허용하기를 선택한다.
 
-   When they have qualified, learners can request their certificates from the
-   Progress page.
+   학습자는 자격을 갖추게 되면 성과 페이지에서 이수증을 신청할 수 있게 된다.
 
-   To prevent learners from requesting certificates, select **Disable Student-
-   Generated Certificates**.
+   학습자의 이수증 신청을 막으려면 학습자 생성 이수증 불허하기를 선택하면 된다.
 
 .. only:: Partners
 
-  For information about how learners request certificates, see
-  :ref:`learners:SFD On Demand Certificates`.
+  학습자 이수증 신청에 대해  :ref:`learners:SFD On Demand Certificates` 에 자세한 안내가 나와있다.
 
-.. note:: If you do not allow learners to request certificates, you must
-  `generate certificates`_.
+.. note:: 학습자의 이수증 신청을 허용하지 않으면 이수증을 생성해야 한다.
 
 =====================================================
-Communicate to Learners abut Requesting Certificates
+이수증 신청에 대해 학습자에게 알리기
 =====================================================
 
-If your course offers on-demand certificates, we encourage you to include this
-information on your course About page, on the **Home** page, and in
-communication with your learners.
+만약 강좌가 신청에 의한 이수증을 허용한다면 이 정보를 홈 화면의 강좌 소개 페이지에 추가해 학습자에게 알릴 것을 권장한다.
 
 .. only:: Partners
 
-   Course teams should also discuss additional self-paced settings with their
-   edX partner manager during the course announcement process.
+   강좌 운영팀은 강좌 발표 과정 중 K-MOOC 파트너 매니저와 자율 일정 설정에 대해 추가적인 이야기를 해야 한다.
 
 ==============================================================
-Allow Learners to Download Certificates when they Qualify
+자격이 있는 학습자에게 이수증 다운로드 허용하기
 ==============================================================
 
-To allow learners to download certificates from the dashboard when they qualify
-for them, you must modify the **Certificates Display Behavior** advanced
-setting in Studio.
+학습자가 자격을 갖춘 후 대시보드에서 이수증을 다운로드 받는 것을 허용하기 위해 스튜디오 고급 설정에서 이수증 표시 방식을 수정해야 한다.
 
-#. From the **Settings** menu, select **Advanced Settings**.
+#. **설정** 메뉴에서 **고급 설정** 을 선택한다.
 
-#. On the **Advanced Settings** page, locate **Certificates Display Behavior**.
+#. 고급 설정 페이지에서 이수증 표시 방식으로 들어간다.
 
-#. In the **Certificates Display Behavior** field, enter ``"early_no_info"``.
-   Be sure that you include the double quotation marks.
+#. 이수증 표시 방식 필드에서  ``"early_no_info"`` 를 입력한다. 따옴표가 반드시 포함되어야 한다.
 
-#. Select **Save Changes**.
+#. **저장** 을 클릭한다.
 
 ***********************
-Generate Certificates
+이수증 생성하기
 ***********************
 
-Unless you `allow learners to request certificates`_ in a self-paced course,
-you must generate certificates.
+자율 일정 강좌에서 학습자에게 이수증 신청을 허용하지 않는 한 직접 이수증을 생성해야 한다.
 
-To generate certificates, follow these steps.
+이수증을 생성하기 위해.
 
-#. View the live version of your course.
+#. 실시간 적용 보기를 선택한다.
 
-#. Select **Instructor**, and then select **Certificates**.
+#. 교수자를 선택하고 이수증을 클릭한다.
 
-#. Select **Generate Certificates**.
+#. 이수증 생성을 선택한다.
 
-   Learners who have qualified can now view their certificates on the
-   dashboards.
+   자격이 있는 학습자는 이제 대시보드에서 이수증을 조회할 수 있다.
