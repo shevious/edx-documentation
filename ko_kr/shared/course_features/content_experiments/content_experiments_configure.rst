@@ -1,11 +1,10 @@
 .. _Configure Your Course for Content Experiments:
 
 #####################################################
-Configure Your Course for Content Experiments
+콘텐츠 실험을 위한 강좌 설정하기
 #####################################################
 
-This section provides instructions to configure your course to use content
-experiments.
+이 장은 강좌에서 콘텐츠 실험을 사용하기 위한 방법에 대해 다룬다.
 
 .. contents::
   :local:
@@ -14,27 +13,24 @@ experiments.
 .. _Enable Content Experiments:
 
 ****************************************
-Enable Content Experiments
+콘텐츠 실험을 활성화하기
 ****************************************
 
-To enable content experiments in your course, you add ``split_test`` to the
-**Advanced Module List** in Advanced Settings.
+강좌에서 콘텐츠 실험을 활성화하기 위해, ``split_test`` 를 고급설정에서 고급 모듈 목록 에 추가한다.
 
 .. note::
-  ``split_test`` is the internal edX Platform name for a content experiment.
+  ``split_test`` 는 콘텐츠 실험의 내부 K-MOOC 플랫폼 이름이다.
 
-#. From the **Settings** menu, select **Advanced Settings**.
+#. 환경 메뉴에서 고급환경 을 선택한다.
 
-#. On the **Advanced Settings** page, locate **Advanced Module List**.
+#. 고급환경 에서, 고급 모듈 목록 을 찾는다.
 
-#. In the **Advanced Module List** field, add ``"split_test"``. Be sure that
-   you include the double quotation marks.
+#. 고급 모듈 목록 칸에,  ``"split_test"`` 를 추가한다. 큰따옴표가 포함되었는지 확인한다.
 
-   If you have multiple values, ensure that they are separated by commas
+   여러 개의 값이 있다면, 쉼표로 분리한다. 
    (``,``).
 
-   For example, the text in the **Advanced Module List** field may resemble
-   the following:
+   예를 들어, 고급 모듈 목록 칸에 입력되는 텍스트는 다음과 같을 것이다:
 
    .. code-block:: json
 
@@ -44,117 +40,86 @@ To enable content experiments in your course, you add ``split_test`` to the
        "split_test"
      ]
 
-#. Select **Save Changes**.
+#. 페이지 하단에 다시 저장 을 클릭한다
 
 .. _Overview of Group Configurations:
 
 ****************************************
-Overview of Group Configurations
+그룹 설정 개관
 ****************************************
 
-Before you can create content experiments, you must specify at least one group
-configuration for your course.
+콘텐츠 실험을 만들기 전에 강좌에서 최소한 1개의 그룹을 설정해야 한다 .
 
-A group configuration defines how many groups of learners are in an experiment.
-You can have any number of group configurations in your course. When you create
-a content experiment, you select the group configuration to use.
+그룹 설정은 실험에 참여하는 그룹의 수를 정한다. 콘텐츠 실험을 만들 때, 활용하기 위한 그룹 설정을 선택한다.
 
-For example, you may want to do two different experiments at different times
-during your course. In one content experiment, learners either see a video or
-complete a reading assignment. You can then include problems so that you can
-see which group learned the material more completely. For this content
-experiment, you need a group configuration that assigns your learners to two
-experiment groups.
+예를 들어, 강좌에서 다른 시기에 다른 2개의 실험을 원한다고 하자. 콘텐츠 실험에서, 학습자는 동영상을 보거나 읽기 과제를 한다. 어떤 그룹이 자료를 더 잘 학습하였는지 확인하기 위해 문제를 추가할 수 있다. 콘텐츠 실험에서, 2개의 실험 그룹에 학생들을 배정하기 위해 그룹 설정한다.
 
-In the other content experiment, you can present the same question using four
-different types of problems. For this content experiment, you need a
-group configuration that assigns your learners to four experiment groups.
+다른 콘텐츠 실험에서, 문제의 4개의 다른 유형을 이용하여 동일 질문을 보여 줄 수 있다. 이 콘텐츠 실험에서, 학습자들을 4개의 실험 그룹에 배정하도록 그룹을 설정한다.
 
 =======================================
-Assigning Learners to Experiment Groups
+실험 그룹에 학습자 배정하기
 =======================================
 
-The edX Platform assigns learners to each experiment group in a group
-configuration.
+K-MOOC 플랫폼은 그룹 설정에서 학습자를 각 실험 그룹에 배정한다.
 
-Experiment group assignments are:
+실험 그룹 배정의 특징은 다음과 같다:
 
-* Dynamic
+* 다이나믹하다(역동적이다)
 
-  The edX Platform assigns a learner to an experiment group the first time he
-  or she views a content experiment that uses the group configuration.
+  K-MOOC 플랫폼은 학습자를 하나의 실험 그룹에 우선 배정하면, 학습자는 그룹 설정에 따른 콘텐츠 실험에 참여하게 된다.
 
-* Random
+* 무작위이다.
 
-  You cannot control which learners are assigned to which experiment group.
+  학습자가 할당되는 실험그룹은 조정할 수 없다.
 
-* Evenly distributed
+* 고르게 분포된다.
 
-  The edX Platform keeps track of the size of experiment groups, and assigns
-  new learners to groups evenly. For example, if you have two experiment groups
-  in a configuration, each group includes 50% of the learners in the course; if
-  you have four experiment groups, each group includes 25% of the learners.
+  K-MOOC 플랫폼은 실험 그룹들의 크기를 계속 점검하고, 새로운 학습자를 그룹에 고르게 배정한다. 예를 들어, 2개의 실험 그룹이 설정에 되어 있다면, 각 그룹은 강좌에 등록한 50%의 학습자를 포함하게 된다; 4개의 실험 그룹이 있다면, 각 그룹은 학습자의 25%씩 배정된다.
 
-* Permanent
+* 영구적이다.
 
-  Learners remain in their assigned experiment groups regardless of how many
-  content experiments you set up that use the same group configuration.
+  동일한 그룹 설정에 적용되는 콘텐츠 실험의 수와 관계 없이 학습자는 배정된 실험 그룹에 남아 있게 된다.
 
 .. _Set up Group Configurations in edX Studio:
 
 ************************************************
-Set up Group Configurations in edX Studio
+Studio에서 실험 그룹 설정하기
 ************************************************
 
 .. note::
-  You must :ref:`enable content experiments<Enable Content Experiments>` before
-  you can set up group configurations.
+  그룹을 설정하기 전에 콘텐츠 실험을 활성화 해야 한다.
 
-To set up group configurations, on the **Settings** menu, select **Group
-Configurations**. The **Group Configurations** page opens.
+그룹 설정을 하기 위해, 설정 메뉴에서, 그룹 설정 을 선택한다. 그룹 설정 페이지가 열린다.
 
-From this page you can :ref:`create<Create a Group Configuration>`,
-:ref:`edit<Edit a Group Configuration>`, and :ref:`delete<Delete a Group
-Configuration>` group configurations. You can also :ref:`view experiments that
-use a group configuration<View Experiments that Use a Group Configuration>`.
+이 페이지에서 그룹 설정을 생성하고, 편집하고, 삭제를 할 수 있다. 또한 그룹 설정을 사용하는 실험들을 볼 수 있다.
 
 .. _Create a Group Configuration:
 
 =============================
-Create a Group Configuration
+실험 그룹 설정 생성하기
 =============================
 
-You can create a group configuration at any time.
+항상 그룹 설정을 생성할 수 있다.
 
-#. On the **Group Configurations** page, under **Experiment Groups**, select
-   **New Experiment Group**. The following page opens:
+#. 그룹 설정 페이지에서, 실험 그룹 을 선택하고, 새 실험 그룹 을 클릭한다. 다음 페이지가 나타난다:
 
    .. image:: ../../../../shared/images/create-group-config.png
     :width: 800
     :alt: An image of the Create a New Group Configuration page in Studio.
 
-#. Enter a name in the **Group Configuration Name** field. Use a meaningful
-   name, because you will select from group configuration names when you create
-   content experiments. Learners do not see the group configuration name.
+#. 그룹 설정명 을 입력한다. 의미 있는 명칭을 이용 하는 것은 콘텐츠 실험을 만들 때 그룹 설정을 선택하기 때문이다. 학습자는 이 그룹 설정명을 알지 못한다.
 
-#. Optionally, enter a description for the new group configuration.
+#. 선택적으로, 새로운 그룹 설정에 대한 설명을 입력한다.
 
-#. By default, a new configuration already contains two groups. Modify the
-   groups or add and delete groups as needed. A group configuration must have
-   at least one group.
+#. 기본적으로, 새로운 설정은 2개의 그룹이 포함되어 있다. 그룹을 수정하거나 필요에 따라 추가 혹은 삭제할 수 있다. 그룹 설정은 최소 1개의 그룹은 있어야 한다.
 
-   * Modify group names as needed. You see group names in the unit page in
-     Studio, but group names are not visible to learners.
-   * Select **Add another group** to include another group as part of the
-     configuration.
-   * Select the **X** to the right of an existing group to remove it from the
-     configuration. A group configuration must have at least one group.
+   * 그룹 명을 필요한 만큼 수정한다. Studio의 학습 활동 페이지에서 그룹 명을 볼 수 있다. 그러나, 학습자는 그룹명을 볼 수 없다.
+   * 설정에 또다른 **그룹을 추가하기** 위해 다른 **그룹 추가** 를 클릭한다.
+   * 기존의 그룹의 오른쪽에 **X** 를 클릭하여 설정으로부터 제거할 수 있다. 그룹 설정에는 최소 1개의 그룹이 있어야 한다.
 
-#. Select **Create** to save the new group configuration.
+#. **생성** 을 클릭하여 새 그룹 설정을 저장한다.
 
-The group configuration is then listed in the page. You can see the number of
-groups that the configuration contains, as well as whether the configuration is
-in use in the course:
+그러면 그룹 설정은 페이지에 나타난다. 설정에 포함된 그룹의 수를 볼 수 있고, 설정이 강좌에서 사용되는지 여부를 볼 수 있다:
 
 .. image:: ../../../../shared/images/group_configurations_one_listed.png
  :width: 800
@@ -163,16 +128,12 @@ in use in the course:
 .. _Edit a Group Configuration:
 
 =============================
-Edit a Group Configuration
+그룹 설정 편집하기
 =============================
 
-.. important:: You can change the name of a group configuration at any time.
-   However, before you modify any other characteristics of a group
-   configuration that is currently used in a running course, review `Guidelines
-   for Modifying Group Configurations`_.
+.. important:: 그룹 설정의 명칭은 언제든지 변경할 수 있다. 그러나 운영중인 강좌에 현재 이용되는 그룹 설정의 성격을 변경하기 전에  `Guidelines for Modifying Group Configurations`_  을 살펴본다.
 
-#. On the **Group Configurations** page, hover over the group configuration and
-   select **Edit**.
+#. **그룹 설정** 페이지에서, 그룹 설정으로 가서 **편집** 을 클릭한다.
 
    .. image:: ../../../../shared/images/group_configurations_edit.png
     :alt: An image of the Group Configurations page with Edit button
@@ -185,83 +146,74 @@ Edit a Group Configuration
     :alt: An image of the Edit a Group Configuration page.
     :width: 800
 
-#. Modify the name and description as needed.
+#. 필요하다면 명칭과 설명을 수정한다.
 
-#. Modify groups in the configuration as needed. See `Create a Group
-   Configuration`_ for details.
+#. 필요하다면 설정에서 그룹을 수정한다.  `Create a Group Configuration`_  에 자세하게 안내되어 있다.
 
-#. Select **Save** to save your changes.
+#. **저장** 을 클릭하여 변경사항을 저장한다.
 
 .. _Delete a Group Configuration:
 
 =============================
-Delete a Group Configuration
+그룹 설정 삭제하기
 =============================
 
 .. note::
- You can only delete a group configuration that is not currently used in a
- content experiment. You cannot delete a group configuration that is used in a
- content experiment.
+ 콘텐츠 실험에서 현재 사용되지 않는 그룹 설정을 삭제할 수 있다. 콘텐츠 실험에서 사용되고 있는 그룹 설정은 삭제할 수 없다.
 
-#. On the **Group Configurations** page, hover over the group configuration and
-   select the Delete icon.
+#. **그룹 설정** 페이지에서, 그룹 설정으로 이동하고 삭제 아이콘을 클릭한다.
 
    .. image:: ../../../../shared/images/group-configuration-delete.png
     :alt: An image of the Edit a Group Configuration page.
     :width: 800
 
-#. When prompted to confirm the deletion, select **Delete**.
+#. 삭제를 확인하기 위해 메세지가 나타날 때, **삭제** 를 클릭한다.
 
 .. _View Experiments that Use a Group Configuration:
 
 ===============================================
-View Experiments that Use a Group Configuration
+그룹 설정을 이용하는 실험 보기
 ===============================================
 
-You can view the experiments that use each of your group configurations.
+각 그룹 설정을 사용하는 실험을 볼 수 있다.
 
-On the **Group Configurations** page, select the name of a group to see its
-details. You see links to experiments that use the group configuration:
+그룹 설정 페이지에서, 자세한 사항을 보기 위해 그룹명을 클릭한다. 그룹설정을 사용한 실험의 링크를 보게 된다:
 
 .. image:: ../../../../shared/images/group_configurations_experiments.png
  :alt: An image of a group configuration with the experiments using the
      configuration circled.
  :width: 800
 
-Select a link to go to the unit page that contains the experiment.
+실험이 포함된 학습활동 페이지로 이동하기 위해 링크를 클릭한다.
 
 ===============================================
-View a Group Configuration from an Experiment
+실험에서 그룹 설정 보기
 ===============================================
 
-When working with a content experiment, you can view details about the group
-configuration used by that experiment in two ways:
+콘텐츠 실험 작업에서, 두가지 방법으로 실험에 사용되는 그룹 설정에 대해 볼 수 있다:
 
-* In a unit that contains a content experiment, in the content experiment
-  block, select the name of the group configuration.
+* 콘텐츠 실험을 포함하는 학습활동에서, 콘텐츠 실험 블럭에서, 그룹 설정명을 클릭한다.
 
   .. image:: ../../../../shared/images/content_experiment_group_config_link.png
    :alt: An image of the content experiment in the unit page with the group
      configuration link circled
    :width: 800
 
-* At the top of the content experiment page, select the name of the group
-  configuration.
+* 콘텐츠 실험페이지의 상단에, 그룹 설명명을 클릭한다.
 
   .. image:: ../../../../shared/images/content_experiment_page_group_config_link.png
    :alt: An image of the content experiment page with the group configuration
        link circled.
    :width: 800
 
-In both cases, the group configuration opens:
+이제 그룹 설정이 나타난다:
 
 .. image:: ../../../../shared/images/group_configurations_experiments.png
  :alt: An image of the Group Configuration page with the experiments using it
      circled.
  :width: 800
 
-You can use the link in the group configuration to return to the unit that
-contains the content experiment.
+콘텐츠 실험이 포함된 학습활동으로 돌아가기 위해 그룹 설정에 있는 링크를 이용할 수 있다.
 
 .. import OLX-content experiment doc that's shared in OLX guide.
 

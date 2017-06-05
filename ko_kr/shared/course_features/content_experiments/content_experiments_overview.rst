@@ -1,58 +1,38 @@
 .. _Overview of Content Experiments:
 
 #################################
-Overview of Content Experiments
+콘텐츠 실험 살펴보기
 #################################
 
-This section provides an introduction to using content experiments.
+이 장은 콘텐츠 실험을 소개한다.
 
 .. contents::
   :local:
   :depth: 1
 
 *********
-Overview
+개관
 *********
 
-You use content experiments to show different course content to different
-groups of learners. Also known as "A/B tests" or "split tests", content
-experiments enable you to research and compare the performance of learners in
-different groups to gain insight into the relative effectiveness of your course
-content.
+콘텐츠 실험은 학습자 그룹별로 다른 강좌 내용을 제공하는데 이용된다. “A/B test”나 “split tests”로 알려진 것처럼, 콘텐츠 실험은 강좌 내용의 상대적인 효과를 고려하여 학습자 그룹별 성취 결과를 조사 및 비교하는 것이 가능하다.
 
-If your course uses content experiments, the grade report that you generate
-from the Instructor Dashboard includes a column identifying the experiment
-group that each learner has been assigned to. For more information, see
-:ref:`Interpret the Grade Report`.
+강좌가 콘텐츠 실험을 활용하고 있다면 교수자 대시보드에서 만드는 성적표에 학습자가 참여한 실험 그룹에 대한 열이 포함된다. 자세한 사항은 :ref:`Interpret the Grade Report` 를 참고하면 된다.
 
-For information about analyzing events from content experiments, see
-:ref:`data:AB_Event_Types` in the *EdX Research Guide*.
+자세한 사항은 :ref:`data:AB_Event_Types` 를 참고하면 된다.
 
 
 .. _Courses with Multiple Content Experiments:
 
 ******************************************
-Courses with Multiple Content Experiments
+복수 콘텐츠 실험을 포함한 강좌
 ******************************************
 
-You can run multiple content experiments in your course. You can set up each
-experiment to use the same groups of learners, or you can set up each
-experiment to be independent and use a different grouping.
+강좌 내 복수 콘텐츠 실험을 운영할 수 있다. 동일한 학습자 그룹에서 각 실험에 참여하도록 설정하거나, 별개 그룹을 만들어 독립적인 실험에 참여하도록 설정한다.
 
 .. important::
 
-  If your course has multiple experiments, it is critical that you decide
-  in advance if the experiments share the same groups of learners or if each
-  experiment has its own unique grouping. If two experiments share the same
-  grouping, then any learner that is in Group A for the first experiment will
-  also be in Group A for the second one. If you want the experiments to be
-  independent, then the experiments must use different groupings so that
-  learners are randomly assigned for each experiment.
+  강좌에 여러 개의 실험이 있을 때, 동일 그룹의 학습자가 실험을 공유할지 혹은 특정 그룹에 따라 각 실험을 하게 될 지 미리 결정해야 한다. 즉 두 실험을 동일 그룹에서 공유한다면, 첫 번째 실험에서의 그룹 A에 속한 학습자가 있고, 두 번째 실험에도 그룹 A의 학습자가 포함되어 있을 것이다. 독립적인 실험을 원할 경우, 각 실험은 학습자를 무작위로 배정되는 별개의 그룹들이 있어야 한다.
 
-To determine the available groupings of learners, you set up group
-configurations :ref:`using Studio <Set up Group Configurations in edX Studio>`
-or :ref:`using XML <Set Up Group Configuration for OLX Courses>`.
+적용할 학습자 그룹을 결정하기 위해, 스튜디오 Studio에서 실험 그룹 설정하기 및 OLX 강좌의 그룹 설정을 설정하기 을 사용하여 그룹을 편성한다.
 
-You then select which group configuration to use when you add a content
-experiment :ref:`using Studio <Add a Content Experiment in Studio>` or
-:ref:`using XML <Add a Content Experiment in OLX>`.
+그리고 나서, 콘텐츠 실험을 스튜디오에서 콘텐츠 실험 추가하기 혹은 OLX에 콘텐츠 실험 추가하기 로 추가할 때, 학습자 그룹을 설정할 것인지 선택한다.

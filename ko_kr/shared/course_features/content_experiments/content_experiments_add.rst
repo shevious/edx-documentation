@@ -1,22 +1,20 @@
 .. _Add Content Experiments to Your Course:
 
 #########################################
-Add Content Experiments to Your Course
+콘텐츠 실험 추가하기
 #########################################
 
-This section provides instructions for adding content experiments to your
-course.
+이 장은 강좌에 콘텐츠 실험을 추가하는 법에 대해 다룬다.
 
 .. contents::
   :local:
   :depth: 1
 
 ********************************************
-Before Adding Content Experiments
+콘텐츠 실험을 추가하기 전에
 ********************************************
 
-Before you add content experiments to your course, ensure that you have
-completed the following tasks.
+강좌에 콘텐츠 실험을 추가하기 전에 반드시 다음을 수행해야 한다.
 
 * :ref:`Enable Content Experiments`
 * :ref:`Set up Group Configurations in edX Studio`
@@ -24,89 +22,70 @@ completed the following tasks.
 .. _Add a Content Experiment in Studio:
 
 ********************************************
-Add a Content Experiment in Studio
+스튜디오에서 콘텐츠 실험 추가하기
 ********************************************
 
-You can add a content experiment in a unit or container page. In Studio, you
-create and view content for all groups in the content experiment in a container
-page for the experiment, as shown in `Create Content for Groups in the Content
-Experiment`_.
+학습활동이나 컨테이너 페이지에 콘텐츠 실험을 추가할 수 있다.  `Create Content for Groups in the Content Experiment`_  에 제시된 바와 같이, 컨테이너 페이지의 콘텐츠 실험 안에서 모든 그룹의 콘텐츠를 생성하고 확인한다. 
 
-When a learner views the unit with the content experiment, she has no
-indication there is a content experiment in the unit, and the content
-experiment display name is not shown. She sees only the content that you
-configure for the group she is assigned to. To the learner, the unit with the
-content experiment is no different than any other unit.
+학습활동에서 학습자에게 콘텐츠 실험에 참여하고 있다는 안내나 실험명이 보이지 않는다. 학습자는 자신이 속한 학습그룹에 설정된 콘텐츠만을 볼 수 있다. 콘텐츠 실험이 있는 학습활동은 다른 학습활동과 차이가 없다.
 
-To configure a content experiment in Studio, you perform the following tasks.
+스튜디오에서 콘텐츠 실험을 설정하려면.
 
 #. `Create the content experiment`_.
 #. `Create content for groups in the content experiment`_.
 
-After you configure a content experiment, you can change its group
-configuration. For more information, see `Change the Group Configuration for a
-Content Experiment`_.
+콘텐츠 실험을 설정한 후에 그룹 설정을 변경할 수 있다.  `Change the Group Configuration for a Content Experiment`_  에서 확인한다.
 
 ===============================
-Create the Content Experiment
+콘텐츠 실험 만들기
 ===============================
 
-#. In the unit page, under **Add New Component**, select **Advanced**.
+#. 학습활동 구성 페이지에서, **새로운 요소 추가** 아래에 있는 **고급** 을 선택한다.
 
-#. Select **Content Experiment**.
+#. **콘텐츠 실험** 을 선택한다.
 
-   A new content experiment is added to the unit.
+   새로운 콘텐츠 실험을 학습활동에 추가한다.
 
    .. image:: ../../../../shared/images/content_experiment_block.png
     :width: 800
     :alt: An image showing the content experiment component in a unit page in
         Studio.
 
-   You can work with the content experiment as you do any other component.
-   For more information, see :ref:`Developing Course Components`.
+   다른 요소처럼 콘텐츠 실험 작업을 하면된다. 더 많은 정보가 필요하면  :ref:`Developing Course Components`  를 확인한다.
 
-#. Select either **Select a Group Configuration** or **Edit** to open the
-   content experiment component.
+#. 콘텐츠 실험 구성요소를 열기 위해 **그룹 설정 선택하기** 혹은 **수정** 을 클릭한다.
 
    .. image:: ../../../../shared/images/content_experiment_editor.png
     :alt: An image of the content experiment editor in Studio.
     :width: 800
 
-#. Next to **Group Configuration**, select a group configuration.
+#. **그룹설정** 다음에 그룹설정을 선택한다.
 
-#. In the **Display Name** field, enter the name of the component. The display
-   name is only used in Studio; learners do not see this value.
+#. **사용 가능한 이름 영역** 안에 사용할 이름을 등록한다. 등록된 이름은 스튜디오에서만 사용하고 학습자는 입력값을 보지 못한다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-The content experiment is displayed as a component that contains other
-components. For more information, see :ref:`Components that Contain Other
-Components`.
+콘텐츠 실험은 다른 요소들과 같이 제시되었다. 더 많은 정보가 필요하면  :ref:`Components that Contain Other Components`  에서 확인한다.
 
-.. note:: You cannot duplicate a content experiment.
+.. note:: 콘텐츠 실험은 복사할 수 없다. 
 
-You can now create content for the groups in the experiment.
+이제 콘텐츠 실험에서 그룹별 콘텐츠를 만들 수 있다.
 
 =====================================================
-Create Content for Groups in the Content Experiment
+콘텐츠 실험에 학습그룹별 콘텐츠 만들기
 =====================================================
 
-After you select a group configuration, in the content experiment component,
-select **View**.
+콘텐츠 실험 구성요소에서 그룹 설정을 선택한 후, **보기** 를 클릭한다.
 
-The content experiment page that opens automatically includes a container for
-each group that is defined in the group configuration you selected. For
-example, if you select a group configuration that defines Group A and Group B,
-you see the following page.
+자동 생성된 콘텐츠 실험은 선택한 그룹 설정에서 정의된 각 그룹이 포함된 컨테이너가 나타난다. 예를 들어, 그룹 A와 그룹 B로 정의한 그룹 설정을 선택하면 다음의 페이지가 나타난다.
 
 .. image:: ../../../../shared/images/content_experiment_container.png
  :alt: An image of the content experiment page in Studio, with two groups.
  :width: 800
 
-You add content for both groups as needed, just as you would add content to any
-container page. For more information, see :ref:`Components that Contain Other Components`.
+두 그룹을 위한 각각의 콘텐츠를 추가한다. 더 많은 정보를 보기위해  :ref:`Components that Contain Other Components`  를 살펴본다. 
 
-For example, you can add an HTML component and a video to Group A.
+예를 들어, 그룹 A에 HTML 요소와 동영상을 추가할 수 있다.
 
 .. image:: ../../../../shared/images/a_b_test_child_expanded.png
  :alt: An image of an expanded content experiment component with an HTML and
@@ -114,50 +93,40 @@ For example, you can add an HTML component and a video to Group A.
  :width: 800
 
 .. note::
-  It is valid, and can be useful, to have no content for a group in the
-  experiment. For example, if one group has a video and another group has no
-  content, you can analyze the effect of the video on learner performance.
+  실험에서 하나의 그룹에는 콘텐츠가 없는 것이 타당하며 유용하다. 예를 들어, 한 그룹은 동영상이 있고 다른 그룹은 어떤 콘텐츠도 없다면 학습자가 동영상으로 학습할 때의 효과를 분석해볼 수 있다.
 
 ========================================================
-Change the Group Configuration for a Content Experiment
+콘텐츠 실험에서 그룹 설정 변경하기
 ========================================================
 
-You can change the group configuration for a content experiment. When you
-change the group configuration, you must add components to any new groups that
-you create. You can use the components from the previous groups, as well as
-create new components.
+콘텐츠 실험의 그룹 설정을 변경할 수 있다. 실험 그룹의 설정을 바꾸면, 새로운 그룹에 구성요소를 추가해야 한다. 이전 그룹에서 이용된 구성요소를 사용할 수 있고 또한 새로운 요소를 만들어 이용할 수 있다.
 
 .. warning::
-  Changing the group configuration of a learner-visible experiment will affect
-  the experiment data.
+  학습자가 인지하고 있는 실험의 그룹설정을 변경하는 것은 실험 결과에 영향을 미칠 것이다. 그룹 설정을 변경하기 위하여.
 
-#. Open the unit page of the unit that contains the content experiment.
+#. 콘텐츠 실험이 있는 **학습활동** 페이지를 연다.
 
-#. In the content experiment component, select **Edit**.
+#. 콘텐츠 실험 구성요소에서 **수정** 을 클릭한다.
 
    .. image:: ../../../../shared/images/content_experiment_editor_group2.png
     :alt: An image of the content experiment editor in Studio, with a group
         configuration selected.
     :width: 800
 
-#. Select a different group configuration.
+#. 다른 그룹 설정을 선택한다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-#. You must now add components to the new groups in the experiment. Select
-   **View** to open the content experiment.
+#. 콘텐츠 실험에서 새로운 그룹에 구성요소를 추가해야 한다. 보기 를 클릭하여 콘텐츠 실험을 연다.
 
-   You see that groups for the new configuration are empty, and any components
-   that you had added to groups in the previous configuration are now moved to
-   a section called **Inactive Groups**.
+   새롭게 설정한 그룹은 비어 있다. 이전 설정에서 그룹에 추가했던 구성요소는 **비활성화 그룹** 으로 영역을 이동했다.
 
    .. image:: ../../../../shared/images/inactive_groups.png
     :alt: An image of a content experiment in Studio, with components in an
         inactive group.
     :width: 800
 
-#. Drag and drop components from the **Inactive Groups** section into the new
-   groups. You can also create new components in the new groups.
+#. 새로운 그룹에 비활성화 그룹 에서 구성요소를 끌어 온다. 또한 새로운 그룹에는 새로운 요소를 만들 수 있다.
 
 .. import OLX-content experiment doc that's shared in OLX guide.
 

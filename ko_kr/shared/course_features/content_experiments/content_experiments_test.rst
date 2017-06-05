@@ -5,33 +5,25 @@
 .. _Test Content Experiments:
 
 ##########################################
-Test Content Experiments
+콘텐츠 실험 테스트하기
 ##########################################
 
-You should test content experiments in your course before the course starts, to
-ensure that content is delivered to experiment groups as you intended.
+강좌를 시작하기 전에 의도한 대로 콘텐츠가 그룹에게 제시되는지 확인 하기 위해서 콘텐츠 실험을 테스트해야 한다.
 
-When you view a unit that contains a content experiment in the LMS Staff view,
-you can select one of the experiment groups from a drop-down list. The unit
-page then shows the content as the selected group of learners sees it.
+LMS 운영자 보기에서 콘텐츠 실험을 포함하는 요소를 볼 때 드롭다운 리스트로부터 실험 그룹 중 하나를 선택한다. 그러면 구성 페이지는 선택 받은 학습자 그룹에게 보이는 것과 같이 콘텐츠가 나타난다.
 
-For example, in the following image, Group 0 is selected, and the HTML
-component and video that is part of Group 0 is displayed.
+예를 들어, 다음의 페이지에서 그룹 0이 선택되었고, 그룹 0의 일부로 HTML 요소와 비디오가 제시되었다.
 
 
 .. image:: ../../../../shared/images/a-b-test-lms-group-0.png
  :alt: An Image of a unit page in the LMS, with Group 0 selected.
  :width: 800
 
-You can change the experiment group selection to view the content that a
-different experiment group of learners sees.
+다른 학습자 그룹에게 보이는 콘텐츠를 보기 위하여 실험 그룹 선택을 변경할 수 있다.
 
 .. image:: ../../../../shared/images/a-b-test-lms-group-2.png
  :alt: An image of a unit page in the LMS, with Group 1 selected.
  :width: 800
 
 
-.. note:: The example course content in this section uses content experiment
- terminology ("Welcome to Group A", for example) to make the functionality
- clear. Typically, you would not use terminology in course content that would
- make learners aware of the experiment.
+.. note:: 본 장에서 강좌 콘텐츠 예는 콘텐츠 실험이라는 용어를 이용하여 기능을 설명한다. 대개 학습자가 실험이라는 용어를 강좌에서 보게 되진 않을 것이다.

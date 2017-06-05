@@ -1,12 +1,10 @@
 .. _In Course Reverification:
 
 #################################
-In-Course Identity Reverification
+강좌 내 신분 재확인
 #################################
 
-To use in-course identity reverification, you must enable reverification in
-your course, create specific verification checkpoints, and then set
-assessments to require verification.
+강좌 내 신분 재확인을 사용하기 위해 강좌에서 재확인을 활성화하고 특정 확인 체크포인트를 만든 뒤 평가에 확인이 필요하도록 설정해야 한다.
 
 .. contents::
  :local:
@@ -15,237 +13,161 @@ assessments to require verification.
 .. _Enable ICRV:
 
 *****************************************
-Enable In-Course Identity Reverification
+강좌 내 신분 재확인 활성화하기
 *****************************************
 
-To enable in-course identity reverification for your course, follow these
-steps.
+강좌 내 신분 재확인을 활성화하기 위해.
 
-#. In Studio, select **Settings**, and then select **Advanced Settings**.
-#. In the **Advanced Module List** field, place your cursor between the
-   brackets (``[ ]``), and then add ``"edx-reverification-block"``. Make sure
-   to include the quotation marks.
+#. 스튜디오에서 설정을 선택하고 **고급** 설정을 클릭한다.
+#. 고급 모듈 목록 필드에 [] 사이에 마우스를 올려놓고  ``"edx-reverification-block"``  를 추가한다. 이 때 반드시 따옴표가 있어야 한다.
 
-   .. note:: If the **Advanced Module List** field already contains one or
-    more items, add a comma after the closing quotation mark for the last
-    item, and then add ``"edx-reverification-block"``. You do not have to
-    include a space between the items. The field should resemble the following
-    example.
+   .. note:: 만약 고급 모듈 목록 필드가 이미 하나 이상의 항목을 포함하고 있다면 마지막 항목 따옴표 뒤에 ,를 추가하고  ``"edx-reverification-block"`` 를 입력한다.  항목 사이에 띄어쓰기는 필요 없다. 다음과 같이 작성하면 된다
 
     ``["module_name","edx-reverification-block"]``
 
-#. At the bottom of the page, select **Save Changes**.
+#. 페이지 하단에서 저장을 클릭한다.
 
 .. _Create ICRV Checkpoint:
 
 *********************************
-Create a Verification Checkpoint
+확인 체크포인트 생성하기
 *********************************
 
-To require learners to verify their identities before a specific assessment,
-you add a verification checkpoint component to a unit in that assessment. After
-you create a checkpoint component, the checkpoint appears on the **Progress**
-pages and in the body of the course for learners who must complete in-course
-identity reverification.
+학습자에게 특정 평가를 하기 전에 신분을 확인하도록 하기 위해 확인 체크포인트 구성요소를 학습활동에 추가해야 한다. 체크포인트 구성요소를 만들면 성과 페이지와 강좌 내 신분 재확인이 필요한 학습자의 강좌 화면에 나타나게 된다.
 
-.. note:: Make sure that you add verification checkpoints only before assessments.
+.. note:: 평가 전에만 확인 체크포인트를 만들어야 한다.
 
-#. In the subsection that contains the assessment, create a new unit.
+#. 평가가 있는 소주제에 새 학습활동을 추가한다.
 
-   If the subsection already contains one or more units, move the new unit so
-   that it is the first unit in the subsection.
+   만약 소주제에 이미 하나 이상의 학습활동이 포함되어 있다면 추가한 학습활동을 이동시켜 소주제 내 첫 학습활동이 되도록 한다.
 
-#. In the new unit, locate **Add New Component**, and then select **Advanced**.
+#. 새 학습활동에서 새 구성요소 추가하기를 선택하고 고급을 클릭한다.
 
-#. Select **Verification Checkpoint**, and then select **Edit**.
+#. 확인 체크포인트를 선택하고 편집을 클릭한다.
 
-#. In the **Verification Checkpoint Name** box, enter a name.
+#. 확인 체크포인트 이름 상자에 이름을 입력한다.
 
-#. In the **Verification Attempts** box, select the number of times that
-   learners can attempt to verify their identities. You can specify up to
-   three attempts.
+#. 확인 시도 박스에 학습자가 신분 확인을 하도록 시도할 수 있는 횟수를 입력한다. 최대 3까지 입력할 수 있다.
 
-#. Select **Save**.
+#. 저장을 클릭한다.
 
-#. Publish the unit that contains the component.
+#. 구성요소를 포함하고 있는 학습활동을 게시한다.
 
-After you save the component and publish the unit that contains the component,
-the verification checkpoint name appears in a list of verification checkpoints
-in component and unit settings. You modify these settings to require
-verification for a component or unit. For more information, see :ref:`Require
-Verification Component` or
-:ref:`Require Verification Unit`.
+구성요소를 저장하고 학습활동을 게시하면 체크포인트 이름이 구성요소 및 학습활동 설정의 확인 체크포인트 목록에 추가된다. 이 설정을 사용해 구성요소나 학습활동에서 확인이 필요하도록 할 수 있다. 자세한 사항은  :ref:`Require Verification Component` 와 :ref:`Require Verification Unit` 를 참고하면 된다.
 
 .. _Require Verification:
 
 *********************************************************
-Set an Assessment to Require Verification
+확인이 필요한 평가 만들기
 *********************************************************
 
-After you create a verification checkpoint in an assessment, you set the
-components and units in that assessment to require verification.
+평가에 확인 체크포인트를 만든 뒤 구성요소와 학습활동을 설정해 확인이 필요한 평가를 만들 수 있다.
 
-When a component or unit requires verification, the content in that component
-or unit is invisible to learners until the learners pass the verification
-checkpoint that you select. If you want to include text that learners can see
-regardless of verification status, you can leave some components and units
-visible.
+구성요소나 학습활동이 확인을 필요로 하면 그 콘텐츠는 학습자가 선택한 확인 체크포인트를 통과할 때까지 보이지 않는다. 학습자의 확인 상태와 관계없이 볼 수 있는 텍스트를 추가하고 싶다면 구성요소와 학습활동의 일부를 공개 상태로 둘 수 있다.
 
-To require verification, you select the verification checkpoint in the
-settings of the component or unit. By default, components and units do not
-require verification and are visible to learners. To leave them visible, do
-not select a verification checkpoint in the component or unit settings.
+확인을 필수로 만들기 위해 구성요소나 학습활동의 설정에서 확인 체크포인트를 선택해야 한다.
 
-When you set a component or unit to require verification, keep the
-following information in mind.
+* 학습활동 전체를 확인이 필요하도록 설정하면 해당 학습활동의 모든 구성요소는 학습자가 확인을 끝낼 때 까지 공개되지 않는다. 일부 구성요소만을 공개할 수 없다.
 
-* If you set an entire unit to require verification, all of the components in
-  that unit are invisible until learners complete verification. You cannot
-  make an individual component visible.
+* 학습활동을 확인이 필요하도록 설정하지 않으면 해당 학습활동의 구성요소는 기본 설정으로 모두 공개된다. 그러나 개별 구성요소가 확인이 필요하도록 설정할 수 있다.
 
-* If you do not set a unit to require verification, all of the components in
-  that unit are visible by default. However, you can set individual components
-  to require verification.
+.. important:: 확인 체크포인트 구성요소를 포함하는 학습활동이나 그 구성요소 자체를 확인이 필요하도록 설정하면 안된다. 이 경우 학습자는 확인 체크포인트에 접속할 수 없다.
 
-.. important:: Do not set the unit that contains the verification
- checkpoint component, or the verification component itself, to require
- verification. If you do this, learners cannot access the verification
- checkpoint.
-
-For an example situation in which a unit contains three components, with one
-component that requires verification, see :ref:`Understand the Learner
-Experience`.
+학습활동이 3개의 구성요소를 포함하며 그 중 하나가 확인이 필요한 예제는 학습자 입장에서 확인 보기에 나와있다.
 
 .. _Require Verification Component:
 
 =================================================
-Require Verification for a Component
+구성요소 확인 필수 설정하기
 =================================================
 
-To set a component to require verification, access the component visibility
-settings for the component, and then select the verification checkpoint that
-you want from the list.
+구성요소에 확인을 필수로 설정하려면 구성요소 공개 설정에 들어가 확인 체크포인트를 선택한다.
 
-.. important:: Do not set the verification checkpoint component itself
- to require verification. If you do this, learners cannot access the
- verification checkpoint.
+.. important:: 확인 체크포인트 자체를 확인이 필요하도록 설정해선 안된다. 이 경우 학습자는 확인 체크포인트에 접속할 수 없다.
 
-#. On the unit page, locate the component that you want, and then select
-   **Visibility Settings** for that component. The **Visibility Settings**
-   control resembles an eye.
+#. 학습활동 페이지에서 구성요소를 선택하고 눈 모양의 공개 설정으로 들어간다.
 
-#. Under **Make visible to**, select **Specific Content Groups**, and then
-   select the verification checkpoint that you want.
+#. -에 공개 아래에서 콘텐츠 그룹을 선택하고 원하는 확인 체크포인트를 선택한다.
 
    .. image:: ../../../../shared/images/ICRV_CompSettings.png
     :width: 250
     :alt: The settings editor for a component, showing the list of
       verification checkpoints.
 
-#. Select **Save**.
+#. 저장을 클릭한다.
 
 .. _Require Verification Unit:
 
 =================================================
-Require Verification for a Unit
+학습활동 확인 필수 설정하기
 =================================================
 
-To set a unit to require verification, access the unit settings, and then
-select the verification checkpoint that you want from the list.
+학습활동에 확인을 필수로 설정하기 위해 학습활동 설정에 들어가 원하는 확인 체크포인트를 선택한다.
 
-.. important:: Do not set the unit that contains the verification
- checkpoint to require verification. If you do this, learners cannot access
- any of the content in the unit, including the verification checkpoint.
+.. important:: 확인 체크포인트 구성요소를 포함하는 학습활동이나 그 구성요소 자체를 확인이 필요하도록 설정하면 안된다. 이 경우 학습자는 확인 체크포인트에 접속할 수 없다.
 
-#. On the **Course Outline** page, locate the unit that you want, and then
-   select **Configure** for that unit. The **Configure** control resembles a
-   gear.
+#. 강좌 개요 페이지에서 원하는 학습활동을 선택하고 톱니바퀴 모양의 설정을 클릭한다.
 
-#. Under **Verification Checkpoint**, select the name of the verification
-   checkpoint that you want.
+#. 확인 체크포인트에 들어가 원하는 체크포인트를 선택한다.
 
    .. image:: ../../../../shared/images/ICRV_UnitSettings.png
     :width: 250
     :alt: The settings editor for a unit, showing the list of verification
       checkpoints.
 
-#. Select **Save**.
+#. 저장을 클릭한다.
 
 .. _Understand the Learner Experience:
 
 **************************************
-Understand the Learner Experience
+학습자 입장에서 확인 보기
 **************************************
 
-The following example explains how to require verification for an assessment,
-and then shows the learner view of the first unit before and after
-verification.
+다음 예제는 평가에서 확인을 필수로 설정하는 것과 학습자가 첫 학습활동을 확인하는 전후의 화면을 보여준다. 
 
 =================================================
-Example Assessment: Course Team Steps
+예제 평가: 강좌 운영팀 단계
 =================================================
 
-In your assessment, you want the first unit to contain some introductory text,
-the verification checkpoint, and an exam problem. You want the introductory
-text to be visible to all learners, regardless of verification. However, you
-do not want learners to see the exam problem until they pass the verification
-checkpoint.
+평가에서 첫 학습활동에 소개 텍스트, 확인 체크포인트 및 시험 문제를 추가하는 것이 좋다. 소개 텍스트를 확인 유무와 관계없이 모든 학습자에게 공개하는 것이 좋다. 그러나 학습자가 확인 체크포인트를 통과하기 전까지 시험 문제를 조회할 수 있도록 하면 안된다.
 
-You want all of the components in the remaining units to be invisible until
-learners pass the verification checkpoint.
+나머지 학습활동의 모든 구성요소를 학습자가 확인 체크포인트를 통과하기 전까지 공개하지 않는다.
 
-To create this assessment, you would follow these steps.
+이 평가를 생성하기 위해.
 
-#. Create a new unit. Do not change the unit settings.
-#. Create one component for the introductory text, and enter your text in the
-   component.
-#. Below the introductory text component, create the verification checkpoint
-   component.
-#. Below the verification checkpoint component, create a component for the
-   problem, and enter the content for the component.
-#. Change the settings of the problem component to require verification. Do
-   not change the settings of the other components.
-#. Create the remaining units and components. Change the settings of each
-   remaining unit to require identity verification. You do not have to change
-   the settings of the individual components in any of these units.
+#. 학습활동을 생성하고 설정을 바꾸지 않는다.
+#. 소개 텍스트를 위한 구성요소를 생성하고 텍스트를 입력한다.
+#. 소개 텍스트 구성요소 아래에 확인 체크포인트 구성요소를 생성한다.
+#. 확인 체크포인트 구성요소 아래에 문제 구성요소와 내용을 입력한다.
+#. 문제 구성요소 설정을 바꿔 확인을 필수로 설정하고 다른 구성요소 설정은 바꾸지 않는다.
+#. 나머지 학습활동과 구성요소를 생성한다. 나머지 학습활동의 각각의 설정을 확인이 필수가 되도록 바꾸고 개별 구성요소 설정은 바꾸지 않는다.
 
 
 =================================================
-Example Assessment: Learner View
+예제 평가: 학습자 화면
 =================================================
 
-When learners arrive at the assessment in the course, the introductory
-text and the verification checkpoint are visible. The assessment content in
-the third component in the unit is not visible.
+학습자가 강좌의 평가 단계에 이르면 소개 텍스트와 확인 텍스트를 볼 수 있다. 학습활동의 3번째 구성요소의 평가 콘텐츠는 공개되지 않는다.
 
 .. image:: ../../../../shared/images/ICRV_Checkpoint.png
  :width: 500
  :alt: A verification checkpoint showing a message that the learner must
      perform identity verification.
 
-After learners pass the checkpoint, a message indicates that they can now
-access assessment content, and the assessment content is visible.
+학습자가 체크포인트를 통과하면 평가 콘텐츠를 조회할 수 있다는 메시지와 함께 평가 콘텐츠가 공개된다.
 
 .. image:: ../../../../shared/images/ICRV_Checkpoint_Passed.png
  :width: 500
  :alt: A verification checkpoint showing a message that the learner can
      continue to the assessment.
 
-When learners who do not have to complete in-course identity reverification
-arrive at a checkpoint, the learners receive an informative message about
-identity verification and verified certificates. They can immediately access
-assessment content.
+강좌 내 신분 재확인을 거칠 필요가 없는 학습자가 체크포인트에 도달하면 신분 확인과 확인된 이수증에 관한 메시지를 받는다. 학습자는 즉시 평가 콘텐츠를 조회할 수 있다.
 
-Additionally, learners who must complete in-course reverification see the
-verification checkpoints for their course in the list of course credit
-requirements on their **Progress** pages.
+추가적으로 강좌 내 재확인을 거쳐야 하는 학습자는 성과 페이지의 강좌 인정 조건 목록에서 강좌에 대한 확인 체크포인트를 본다.
 
 .. image:: ../../../../shared/images/SFD_Credit_ReqList.png
  :width: 350
  :alt: Learner's Progress page with a list of credit requirements below the
      progress graph.
 
-For more information about the in-course identity reverification experience for
-the learner, see `In-Course Identity Reverification <http://edx-guide-for-stude
-nts.readthedocs.org/en/latest/SFD_credit_courses/SFD_in_course_ID_reverificatio
-n.html>`_.
+ `In-Course Identity Reverification <http://edx-guide-for-students.readthedocs.org/en/latest/SFD_credit_courses/SFD_in_course_ID_reverification.html>`_  에 자세한 안내사항이 나와있다.

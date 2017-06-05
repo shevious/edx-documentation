@@ -3,47 +3,33 @@
 .. _Guidelines for Modifying Group Configurations:
 
 *********************************************
-Guidelines for Modifying Group Configurations
+그룹 설정 수정을 위한 가이드라인
 *********************************************
 
-Review these guidelines if you must modify a group configuration after a course
-starts. These guidelines apply for courses built in Studio or OLX.
+강좌가 시작한 후 그룹 설정을 수정해야 한다면 다음 가이드라인을 본다. 이 가이드라인은 Studio 혹은 OLX에서 강좌에 적용한다.
 
 ==================================
-Modifying a Group Configuration
+그룹 설정 수정하기
 ==================================
 
-After the course starts, **do not**:
+강좌가 시작한 후, 금지 사항은 다음과 같다 :
 
-* Delete group configurations.
+* 그룹 설정 삭제.
 
-* Change the ``id`` value of a group configuration.
+* 그룹설정의 id 값 변경.
 
 ============================
-Modifying Experiment Groups
+실험 그룹 수정하기
 ============================
 
-After the course starts, **do not** change the ``id`` value of an experiment
-group.
+강좌가 시작한 후, 실험그룹의 id 의 값을 변경하지 말아야 한다.
 
-You can change experiment group names at any time.
+실험 그룹명은 언제든지 수정할 수 있다.
 
 ==========================================================
-Removing Experiment Groups from Group Configurations
+그룹 설정에서 실험 그룹 삭제하기
 ==========================================================
 
-After a course in which you are running a content experiment has started,
-learners in a specific experiment group might have difficulties with the
-content or with the course experience. In this situation, you can remove the
-experiment group from the group configuration. Content that was specified for
-that experiment group is then no longer visible to learners.
+콘텐츠 실험이 실행되는 강좌가 운영을 시작한 후, 특정 실험 그룹에서 학습자들은 콘텐츠 혹은 강좌 내에서 어려움을 겪을 수 있다. 이 경우, 그룹 설정에서 실험 그룹을 삭제할 수 있다. 그러면 실험 그룹을 위해 넣은 콘텐츠는 학습자에게 더이상 보이지 않는다.
 
-Learners in the removed experiment group are reassigned evenly to one of the
-other experiment groups in the group configuration. Any problems that these
-learners completed in the removed experiment group content do not count toward
-their grades. The learners must begin the problem set again and complete all
-the problems in the experiment group content to which they are reassigned.
-
-Removing an experiment group affects event data for the course. Ensure that
-researchers who are evaluating your course results are aware of the experiment
-group that you removed and the date on which you removed it.
+삭제된 실험그룹의 학습자는 그룹 설정에서 다른 실험 그룹 중 하나에 재배정한다. 제거된 실험 그룹 콘텐츠에서 학습자들이 완료한 문제는 성적에 포함되지 않는다. 학습자들은 문제를 다시 풀어야 하고 재배당된 실험 그룹 콘텐츠의 문제 풀이를 모두 완료 해야 한다. 실험 그룹 삭제는 강좌의 이벤트 데이터에 영향을 준다. 강좌 결과를 평가하는 연구자들은 삭제한 실험 그룹과 제거한 날짜를 알고 있어야 한다.

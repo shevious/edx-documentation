@@ -1,76 +1,47 @@
 .. _Academic Course Credit:
 
 #####################################
-Academic Course Credit
+학업 강좌 인정 강좌 학점
 #####################################
 
-If your institution has an agreement with edX, you might be able to offer
-academic credit for your course. Learners will be able to purchase this
-academic credit after they meet requirements that you set. These requirements
-typically include periodic identity checks throughout the course as well as ID
-verification at the beginning of the course. Learners can see a list of the
-requirements on their **Progress** pages.
+소속 기관이 K-MOOC과 협약을 맺었다면 수강한 강좌에 대해 학업 인정을 받을 수도 있다(학점 인정을 받을 수 있다). 학습자는 일정 요구조건을 맞추면 학업 인정을 구매할 수 있다. 요구조건에는 주로 주기적으로 하는 신분 검사와 수강 초기에 진행되는 신분 검사가 있다. 학습자는 성과 페이지에서 요구조건 목록을 열람할 수 있다.
 
-If your course offers academic credit, your edX partner manager will complete
-the initial setup of your course, including setting the price of credit and
-enabling your course to offer credit. You must then complete the following
-steps.
+강좌가 학업 인정을(학점을) 제공한다면 K-MOOC 파트너 매니저가 인정 가격과 인정 제공을 허용하는 등 강좌 초기 설정을 해줄 것이다. 그 후에.
 
-#. :ref:`Specify the minimum grade that a learner must earn to receive
-   academic credit in the course <Specify Minimum Credit Eligible Grade>`.
+#. :ref:`Specify the minimum grade that a learner must earn to receive academic credit in the course <Specify Minimum Credit Eligible Grade>`  학습자가 강좌 학업 인정을(학점을) 취득하기 위해 받아야 할 최소 성적.
 
-#. :ref:`Determine which identity checks <Add Identity Checks>` you want to
-   use. We recommend that you read the information about each type of identity
-   check before you decide which type or types you want to use. Adding an
-   identity check involves several steps.
+#. :ref:`Determine which identity checks <Add Identity Checks>` 신분 검사 방식을 설정한다. 방식을 결정하기 전에 각 방식에 대한 설명을 읽어보는 것을 권장한다. 신분 검사를 추가하기 위해 몇 가지 절차를 밟아야 한다.
 
-#. :ref:`Add identity checks to the course <Add Identity Checks>`.
+#. :ref:`Add identity checks to the course <Add Identity Checks>` 강좌에 신분 검사를 추가한다.
 
 
 .. _Specify Minimum Credit Eligible Grade:
 
 ********************************************
-Specify the Minimum Credit-Eligible Grade
+인정 위한 최소 성적 설정하기
 ********************************************
 
-In addition to setting the usual grade scale for your course, you indicate a
-specific grade that learners must receive to earn credit for your course.
+강좌에 일반 성적 기준 외에도 인정(학점) 취득을 위한 점수를 따로 설정해야 한다.
 
-#. In Studio, select **Settings**, and then select **Grading**.
+#. 스튜디오에서 설정에 들어가 성적을 클릭한다.
 
-#. In the **Credit Eligibility** section, specify a grade in the **Minimum
-   Credit-Eligible Grade** box. This grade must be greater than or equal to
-   the passing grade for the course.
+#. 인정 조건 페이지에서 인정 위한 최소 성적에서 성적을 설정한다. 이 성적은 강좌 합격 성적보다 높아야 한다.
 
-For more information about grading, see :ref:`Grading Index`.
+자세한 사항은  :ref:`Grading Index` 를 참고하면 된다.
 
 
 .. _Add Identity Checks:
 
 ****************************
-Add Identity Checks
+신분 검사 추가하기
 ****************************
 
-For courses that offer academic credit, edX has two forms of identity checks:
-in-course reverification and proctored exams. You can use either feature or
-both features in your course.
+학업 인정을(학점을) 제공하는 강좌는 K-MOOC이 제공하는 두 가지 신분 검사 중 하나 이상을 강좌에 포함시켜야 한다: 강좌 내 재확인, 프록터 시험.
 
-* In-course reverification allows you to add identity verification
-  "checkpoints" at specific locations in your course, such as before
-  assessments or exams. When learners reach a checkpoint, they must use the
-  webcams on their computers to verify their identity, similar to the original
-  ID verification process, before they can access more course content.
+* 강좌 내 재확인은 강좌 내 평가 및 시험 직전 등 특정 위치에 신분 확인 “체크포인트”를 만든다. 학습자가 체크포인트에 도달하면 컴퓨터 웹캠을 사용해 최초 신분 확인 과정과 유사하게 신분을 확인한다.
 
-  For more information, see :ref:`In Course Reverification`.
+  자세한 사항은 :ref:`In Course Reverification` 을 참고하면 된다.
 
-* Proctored exams are timed exams that learners take while being monitored by
-  online proctoring software. Only learners who have enrolled in the verified
-  track see the proctored exam option in the course, and can choose
-  whether they want to take the exam with online proctoring. If they decline
-  the proctored option, they can take the exam with no monitoring and no time
-  limit, but they will not be eligible to earn academic credit for the course,
-  regardless of their final grade. Honor code learners see the same exam in
-  the course, but without the proctored exam option. They take the exam as
-  an open exam, with no monitoring and no time limit.
+* 프록터 시험은 시간 제한 시험으로써 온라인 프록터 소프트웨어를 사용 중에 학습자가 보게 된다. 이수증 과정의 학습자만이 프록터 시험을 볼 수 있다. 프록터 옵션을 사용하지 않으면 시간 제한 및 소프트웨어 사용 없이 시험을 볼 수 있지만 최종 성적과 관계 없이 학업 인정은 받을 수 없다(학점은 취득할 수 없다). 명예 이수 과정의 학습자는 프록터 옵션 없이 동일한 시험을 보게 된다. 해당 학습자는 프로그램 사용 및 시간 제한 없이 시험을 보게 된다..
 
-  For more information, see :ref:`CA_ProctoredExams`.
+  자세한 사항은  :ref:`CA_ProctoredExams` 를 참고하면 된다.
