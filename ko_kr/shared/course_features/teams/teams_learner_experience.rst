@@ -2,12 +2,10 @@
 
 
 ##########################################
-The Learner's Experience of Teams
+학습자 팀 활용
 ##########################################
 
-After you have :ref:`enabled teams <Teams Setup>` and created topics in your
-course, learners can begin browsing topics and joining teams. Teams are formed
-within topics. Each learner can belong to only one team.
+팀을 허용하고 강좌에 주제를 만들었다면 학습자는 주제를 찾아보고 팀에 가입할 수 있다. 팀은 주제 내에 형성되며 각 학습자는 하나의 팀에 가입할 수 있다.
 
 .. contents::
   :local:
@@ -17,9 +15,7 @@ within topics. Each learner can belong to only one team.
 Browsing Teams by Topic
 ***********************************
 
-On the **Teams** page in the LMS, learners in your course can browse topics to
-find a subject that they are interested in collaborating on. Learners can sort
-topics alphabetically by name, or by the number of teams in a topic.
+학습 관리 시스템의 팀 페이지에서 강좌를 수강중인 학습자는 주제 단위로 검색해 관심있는 분야를 찾을 수 있다. 주제를 알파벳 순으로 나열할 수도 있으며 주제 내 팀 숫자 순으로 나열할 수도 있다.
 
 
 .. image:: ../../../../shared/images/Teams_TopicArrowButton.png
@@ -27,87 +23,53 @@ topics alphabetically by name, or by the number of teams in a topic.
   :alt: On the page showing available topics, one topic has the arrow button
       that takes users to the list of teams within that topic highlighted.
 
-Within each topic, learners can view existing teams. The overview for each
-team shows the team's name and description, the number of members and
-available spots, and the elapsed time since the last activity in the team.
+각 주제에 어떤 팀이 있는지 볼 수 있다. 각 팀의 개관에서 팀의 이름과 설명, 회원 수와 남은 자리 수, 그리고 마지막 활동 시점을 볼 수 있다.
 
-To find teams, learners can sort teams by the most recent activity or by the
-most open spots. They can also use keywords to search for teams that might
-match their interests, language, or country.
+팀을 찾기 위해 학습자는 마지막 활동 시점이나 남은 자리 수를 기준으로 팀을 나열할 수 있다. 또한 흥미, 언어나 국적 등에 맞는 팀을 찾기 위해 키워드 검색을 사용할 수도 있다.
 
-When learners locate a team that they might be interested in joining, they can
-select **View** on the team overview to view team details.
+학습자가 가입하고 싶은 팀을 찾으면 팀 개관의 조회를 선택해 팀 정보를 볼 수 있다.
 
 .. image:: ../../../../shared/images/Teams_TopicViewButton.png
   :width: 500
   :alt: View of a team within a topic showing name and description, number of members.
 
-On each team's details page, learners can view the team's name and
-description, as well as any optional characteristics that were specified, such
-as a primary language of communication and a country that members primarily
-identify with. While they are browsing teams, learners can read any team's
-discussion posts, but they cannot add posts to a team's discussion forum
-unless they join that team.
+각 팀의 정보 페이지에서 학습자는 팀 이름과 설명, 그리고 주사용 언어, 국적 등의 선택사항인 특징들을 볼 수 있다. 팀을 검색하면서 팀 게시판 글을 볼 수는 있지만 가입하기 전에 글을 쓸 수는 없다.
 
 
 *************************************
-Joining, Creating, or Leaving a Team
+팀 가입, 생성 및 탈퇴
 *************************************
 
-When learners find a team that they want to join, they select **Join Team**
-and are immediately added to the team membership.
+학습자가 가입하고 싶은 팀을 찾으면 팀 가입하기를 선택해 즉시 가입할 수 있다.
 
-.. note:: Learners can belong to only one team. If a learner already belongs to a
-   team, the **Join Team** button is not available.
+.. note:: 학습자는 동시에 하나의 팀에만 속할 수 있다. 만약 이미 팀이 있다면 팀 가입하기 버튼은 나타나지 않는다.
 
-Learners can create their own teams if they cannot find a team they want to
-join. Under the list of existing teams in a topic, learners select **create a
-new team in this topic**. This link is available only to learners who do not
-already belong to a team.
+가입하고 싶은 팀이 없는 경우 학습자는 직접 팀을 생성할 수 있다. 주제 내 팀 목록 하단에 이 주제에 새 팀 생성하기를 클릭하면 된다. 팀에 속해있지 않은 학습자만이 이 버튼을 클릭할 수 있다.
 
 .. image:: ../../../../shared/images/Teams_CreateNewTeamLink.png
   :width: 500
   :alt: View of a team within a topic showing name and description, number of members.
 
-Learners specify a name and description for their team, and optionally specify
-a country and language that team members identify with. A learner who creates
-a team automatically becomes a member of the new team.
+학습자는 만드는 팀의 이름과 설명을 덧붙이며 주사용 언어나 국적을 입력할 수도 있다. 팀을 만드는 학습자는 자동으로 회원이 된다.
 
-.. note:: EdX recommends that you encourage learners to join existing teams
-   before they create new teams.
+.. note:: K-MOOC은 학습자에게 새 팀을 만들기 전에 기존 팀에 가입하는 것을 권장하도록 추천한다.
 
-.. note:: Course team members who have the role of Admin, Discussion
-   Moderator, or Discussion Admin can create multiple teams; therefore they
-   are not automatically added to teams that they create. This is also true
-   for learners who have the community TA role.
+.. note:: 운영자, 관리자, 게시판 관리자 및 게시판 촉진자 권한이 있는 강좌 운영자는 팀을 여러 개 생성할 수 있기 때문에 자동으로 팀에 추가되지 않는다. 커뮤니티 조교 역시 마찬가지다.
 
-At any time, learners can leave teams that they have joined, although you
-should emphasize to learners that they should try not to change teams after
-any team projects or activities have started. Learners who leave a team will
-also be unable to continue contributing to discussion threads in the team that
-they have left.
+팀 프로젝트나 활동 개시 이후 팀을 바꾸지 않도록 학습자에게 강조해야 하지만 학습자는 언제나 가입한 팀을 탈퇴할 수 있다. 팀을 탈퇴한 학습자는 탈퇴한 팀의 게시판 활동에 참여할 수 없다.
 
-Learners can only belong to one team at a time. For learners who already
-belong to a team, the **Join Team** button is not available when they view
-other teams. To join a new team, they must first leave their existing team.
+학습자는 동시에 하나의 팀에만 속할 수 있다. 이미 팀이 있는 학습자에게는 팀 가입하기 버튼이 나타나지 않는다. 새 팀에 가입하기 위해선 기존 팀을 탈퇴해야 한다.
 
 
 .. Add back Invite Others when available
 
 
 *************************************
-Participating in Team Discussions
+팀 게시판 참여하기
 *************************************
 
-Only members of a team (or anyone with a discussion administrator, discussion
-moderator, or community TA role) can post to a team's discussion forum. Any
-learner in your course can view team discussions without being a member, but
-they cannot add posts to a team's discussion unless they also belong to that
-team.
+팀 회원 (혹은 게시판 관리자, 게시판 촉진자 혹은 커뮤니티 조교 권한이 있는 사람)은 팀 게시판에 글을 작성할 수 있다. 강좌 내 학습자는 회원이 아니더라도 게시판을 조회할 수 있지만 글을 작성할 수는 없다.
 
-.. note:: Team discussions are not divided by cohort. Learners who are in the
-   same team but who belong to different cohorts can view and participate in
-   their team discusssions without regard to the cohort they belong to.
+.. note:: 팀 게시판을 학습집단으로 나눠지지 않는다. 같은 팀에 소속되어 있으나 다른 학습집단에 소속된 학습자는 학습집단과 상관없이 팀 게시판 글을 보고 참여할 수 있다.
 
-For information about course discussions and managing discussions, see
-:ref:`Discussions` and :ref:`Discussions for Students and Staff`.
+강좌 게시판 및 관리에 대해서 :ref:`Discussions` 와 :ref:`Discussions for Students and Staff` 에 자세한 정보가 나와있다.

@@ -1,94 +1,55 @@
 .. _Cohorts Overview:
 
 #############################
-Using Cohorts in Your Courses
+학습 집단 기능 사용하기
 #############################
 
-This section provides an introduction to using cohorts.
+이 장에서 집단 기능 사용에 대해 알아보자.
 
 .. contents::
   :local:
   :depth: 1
 
 *********
-Overview
+개관
 *********
 
-To create smaller communities in your course, or design different
-course experiences for different groups of learners, you can :ref:`set up
-cohorts<Enabling and Configuring Cohorts>` in your course.
+:ref:`set up cohorts<Enabling and Configuring Cohorts>` 를 통해, 강좌에서 학습 집단을 설정을 이용하여 학습자 소규모 커뮤니티를 만들 수 있다. 이에 학습자 집단별로 다른 강좌 경험을 설계할 수 있다. 학습 집단별로 나뉘어진 토의 주제에서, 학습자는 소속된 학습 집단 안에서 의사소통을 하고 경험을 공유할 수 있다. 학습 집단 내 토의는 학습자가 공동체 의식을 갖도록 하는 데 도움이 되고, 특별한 경험을 제공하며, 보다 깊이 있고 유의미한 강좌에 참여할 수 있도록 한다.
 
-In discussion topics that are divided by cohort, learners can also communicate
-and share experiences privately within the cohort that they are assigned to.
-Cohort-specific discussion opportunities can help learners develop a sense of
-community, provide specialized experiences, and encourage deeper, more
-meaningful course involvement.
-
-If you use cohorts in your course, you define a set of cohorts that reflect
-communities of learners, then select a strategy for :ref:`assigning learners to
-cohorts<Options for Assigning Learners to Cohorts>`.
+강좌에서 학습 집단 기능을 사용하기 위해, 학습자의 커뮤니티을 의미하는 학습 집단을 정의하고, 학습 집단 배치 방법을 선택한다.  :ref:`assigning learners to cohorts<Options for Assigning Learners to Cohorts>`  에 자세히 안내되어 있다.
 
 .. note::
-   * Every learner must be assigned to a cohort. This ensures that
-     every learner has the ability to read and contribute to course discussion
-     topics.
+   * 모든 학습자는 반드시 하나의 학습 집단에 소속되어야 한다. 모든 학습자는 토의 주제를 읽고 참여해야 한다.
 
-   * Each learner can be in one and only one cohort.
+   * 각 학습자들은 하나의 학습 집단에만 속할 수 있다.
 
-   To provide learners with a consistent experience throughout the course run,
-   do not change cohort configuration or a learner's cohort assignment after
-   your course begins.
+   강좌에 참여하는 학습자가 학습 집단에서 일관된 경험을 가질 수 있도록, 강좌 시작 이후에는 학습자가 속한 학습 집단을 변경하지 않는다.
 
-For more information about using cohorts, see the following topics.
+강좌에서 학습 집단에 관한 참고할 수 있는 자료는 다음과 같다.
 
 * :ref:`Enabling and Configuring Cohorts`
 
-* :ref:`Setting Up Discussions in Courses with Cohorts<Set up Discussions in
-  Cohorted Courses>`
+* :ref:`Setting Up Discussions in Courses with Cohorts<Set up Discussions in Cohorted Courses>`
 
 * :ref:`Moderating Discussions for Cohorts`
 
-For information about discussions in general, see :ref:`Discussions`.
+게시판에 관한 일반 정보는  :ref:`Discussions` 를 참고할 수 있다.
 
 .. _Options for Assigning Learners to Cohorts:
 
 *****************************************
-Options for Assigning Learners to Cohorts
+학습 집단에 학습자 배치하기
 *****************************************
 
-Learners are assigned to cohorts either automatically or manually, depending on
-the types of cohorts that you create. Manual cohorts do not have
-learners assigned to them unless you manually add learners. Automatic cohorts
-have learners randomly assigned to them if learners do not belong to any cohort
-by the time they access the course content (including the course **Discussion**
-page or content-specific discussion topics). If you have not created any
-automated cohorts by the time learners access course content, a default
-automated cohort is created and used for automatic assignment, so that no
-learner in the course is without a cohort.
+자동 및 수동적 방법으로 학습 집단을 구성하여 학습 집단의 특징을 설정할 수 있다. 수동 집단은 직접 학습자를 추가하지 않는 이상 학습자가 배치되지 않는다. 자동 집단은 학습자가 집단에 속해있지 않으면 강좌 콘텐츠를 이용하는 순간 자동으로 집단에 배치된다. (이 때 강좌 게시판이나 주제 토의를 포함한다.) 만약 학습자가 강좌 콘텐츠를 사용할 때 자동 집단을 만들어놓지 않았어도 기본 자동 집단이 만들어지고 과제에 활용된다.
 
-Determine the basic strategy that you will use to create cohorts. An automated
-assignment strategy means that you create cohorts to which learners are
-assigned automatically and randomly. A manual assignment strategy means that
-you create cohorts to which learners are assigned only when you or your course
-team manually adds them. You can use a hybrid assignment method by creating a
-combination of automated and manual cohorts. Typically, your purpose in
-including the cohort feature determines which assignment option you use for
-your course.
+집단을 생성할 때 어떤 집단을 만들지 생각해야 한다. 자동 집단을 사용한다는 것은 학습자가 자동으로 임의의 집단에 배치된다는 뜻이고 수동 집단을 사용한다는 것은 직접 학습자를 배치해야 한다는 뜻이다. 또한 두 가지 방법을 혼합하여 학습 집단을 구성할 수도 있다. 일반적으로 학습 집단을 사용하는 목적이 어떤 방식을 사용하는지 결정하게 된다.
 
-.. note:: You can add learners manually to any cohort, whether it was created
-   as an automated cohort or a manual cohort.
+.. note:: 자동 및 수동 집단 모두에서 직접 학습자를 집단에 배치할 수 있다.
 
-.. note:: Although you can change the assignment method of a cohort at any time
-   after you create it, you should have a cohort assignment strategy in mind as
-   you design your course, and only make changes to cohorts while the course is
-   running if absolutely necessary. Be aware of the implications of changing
-   cohort configuration while your course is running. For more information, see
-   :ref:`Altering Cohort Configuration`. In general, to provide learners with a
-   consistent experience throughout the course run, do not change cohort
-   configuration or a learner's cohort assignment after your course begins.
+.. note:: 집단을 생성한 후 언제든지 형식을 바꿀 수 있지만 집단 배치 전략에 관한 명확한 생각이 강좌 생성 전에 있어야 한다. 또, 정말 필요할 때만 집단 형식을 바꾸는 것이 좋다. 강좌 진행 중에 집단 형식을 바꿨을 때 발생할 수 있는 문제에 대해 인지하고 있어야 한다. 자세한 사항은  :ref:`Altering Cohort Configuration`  를 참고하면 된다. 일반적으로 학습자가 일관된 방식으로 강좌를 수강할 수 있게 강좌 진행중에는 집단 형식을 바꾸지 않는 것이 좋다.
 
-For more information about strategies for assigning learners to cohorts, see
-the following topics.
+학습자 집단 배치와 관련하여 다음 항목에 자세한 정보가 나와있다.
 
 * :ref:`All Automated Assignment`
 
@@ -101,148 +62,70 @@ the following topics.
 .. _All Automated Assignment:
 
 ========================================================
-Automated Assignment: Making MOOC Discussions Manageable
+학습자 자동 배치: 관리가 용이한 MOOC 토의 게시판 만들기
 ========================================================
 
-In very large courses, the number of posts that are made to course discussion
-topics can make for a daunting amount of daily reading. In such courses,
-dividing the enrollees into separate cohorts makes the volume of posts,
-responses, and comments by the members of each cohort more manageable, and is
-more likely to foster community feeling.
+대규모 강좌에서 매일 읽기 부담스러울 정도 많은 게시글이 올라 올 수 있다. 이런 강좌에서는 학습자를 학습 집단으로 구분한다면, 학습자가 게시글을 읽고, 답글과 코멘트를 남기는 활동에 대한 부담을 덜 수 있고, 더불어 소속감을 높일 수 있다.
 
-If you use the automated assignment strategy, you create several "auto"
-(automated) cohorts. Learners are automatically and randomly assigned to one of
-the auto cohorts when they first view any course content on the **Course** or
-**Discussion** page. In this way, each learner who engages with the course
-content or its discussion community is assigned to a cohort. No learner who
-particpates in these ways remains unassigned.
+학습자 배치하기 위해서는, 학습 집단 기능을 사용하고 “자동”(자동적) 배치 학습 집단을 만들 수 있다. 학습자가 강좌나 게시판 에서 강좌 콘텐츠를 처음 볼 때, 여러 학습 집단 중 하나에 무작위로 배치된다. 즉, 강좌 콘텐츠나 게시판에서 활동하는 모든 학습자는 집단에 배치되게 되며 배치되지 않는 학습자는 없게 된다.
 
-The following guidelines are based on the experiences of MOOC teams that have
-used cohorts in this way. They are suggested to help you determine how many
-automated cohorts to define for your course.
+다음 가이드라인은, 학습 집단을 이용한 강좌 운영 경험에 따라, 강좌를 운영할 때 자동 배치 학습집단의 수를 결정하는데 도움이 될 것이다.
 
-* Each cohort should be large enough to inspire lively participation and
-  diverse points of view, but small enough to allow a sense of community to
-  develop. Cohorts formed by random assignment tend to be successful if they
-  include between 200 and 500 members.
+* 각 학습 집단은 학습자 활발히 참여하고 다양한 의견을 공유할 수 있을 만큼 커야 하고, 공동체 의식을 가질 수 있을 만큼 적은 인원으로 구성되어야 한다. 각 학습 집단에 200~500명의 무작위 배치된 학습자로 이루어진 경우, 성공적으로 운영된다. 각 학습 집단에 200~500명의 무작위 배치된 학습자로 이루어진 경우, 성공적으로 운영된다.
 
-* For every 10,000 students who enroll, approximately 200 to 400 students
-  remain active in the discussions throughout the course run.
+* 강좌에 등록한 학습자 10,000명 당 약 200~400명의 학습자들은 강좌가 진행되는 동안 토의에 활발히 참여한다.
 
-* Divide the estimated total enrollment of the course run by 10,000.
+* 예상되는 총 과목 등록 인원을 10,000으로 나눈다.
 
-* Use the result as the number of automated cohorts to create.
+* 이 때, 나누기한 다음 몫 만큼 자동배치 학습 집단을 만든다.
 
-For example, two days before it starts, a course has an enrollment of 80,000
-students. To create small communities within the discussions, the course team
-enables cohorts and then creates eight automated cohorts. As learners visit the
-**Discussion** page or view the course content, they are randomly assigned to
-one of the eight cohorts. In divided discussion topics, learners read and
-respond only to contributions made by other members of the same cohort.
+예를 들어, 강좌 시작 이틀 전에 80,000명의 학습자가 등록했다면 게시판 안에서 소규모 커뮤니티를 만들기 위해서, 학습 집단 기능을 선택하고 8개의 자동배치 학습 집단을 만든다. 학습자가 게시판 페이지를 방문하여 강좌 내용에 따른 토의 구성 요소를 확인할 때, 학습자는 학습 집단 중 하나에 배치 된다. 분할된 토의 주제에 대해서, 학습자는 속한 학습 집단의 구성원들이 남긴 게시글에 대해서만 읽고 응답할 수 있다.
 
-For more information, see :ref:`Implementing the Automated Assignment
-Strategy`.
+학습자 자동 배치에서 보다 많은 정보를 확인할 수 있다.  :ref:`Implementing the Automated Assignment Strategy`.
 
 .. _All Manual Assignment:
 
 =====================================================
-Manual Assignment: Grouping by Common Characteristics
+학습자 직접 배치: 공통적인 특성으로 집단 구성하기
 =====================================================
 
-In SPOCs and other courses with small- to medium-sized enrollments, known
-existing commonalities can be used to identify cohorts. An example is a course
-that enrolls learners from different companies or with different educational
-backgrounds, or members of alumni or parent groups. When learners are assigned
-to cohorts on the basis of a characteristic that they share, they can privately
-discuss applications for what they are learning and explore resources and ideas
-that are of particular interest.
+학습자가 소규모에서 중규모로 등록하는 강좌는 학습자의 공통적인 속성으로 학습 집단을 구분할 수 있다. 예로 소속, 출신 학교, 졸업생 및 부모 집단 등이 등록한 강좌를 들 수 있다. 공통된 학습자 특성에 따라 학습 집단이 만들어질 때, 학습집단 안에서만 교육내용의 활용에 대해 의견을 나누거나, 특정 관심사에 대한 자료나 아이디어를 살펴볼 수 있다.
 
-To implement this assignment strategy, you identify the "real-world" cohorts
-that your learners already belong to. You enable cohorts and then create
-"manual" cohorts to represent each of the real-world cohorts. You then manually
-assign each enrolled learner to a cohort. Every learner in your course,
-including those who enroll after the course starts, must be assigned to a
-cohort.
+이 방법을 적용하기 위해서는, 학습자가 이미 속해있는 실제의 학습 집단을 확인해야 한다.학습 집단 기능을 활성화하고 각 학습 집단을 나타내기 위해서 “직접” 학습 집단을 생성한 후,각 학습자를 학습 집단에 직접 배치하면 된다.강좌가 시작된 후 등록한 학습자를 포함한 모든 등록된 학습자는 반드시 하나의 학습 집단에 속해야 한다.
 
-.. note:: To ensure that every learner is assigned to a cohort, you can set up
-   a single automated cohort, as described for the :ref:`hybrid assignment
-   strategy<Hybrid Assignment>`. If you do not create an automated cohort, the
-   system automatically creates a :ref:`default cohort<Default Cohort Group>`
-   and assigns learners to it if necessary.
+.. note:: 모든 학습자를 단일 학습 집단으로 지정하고 싶다면, 모든 학습자를 단일 학습 집단으로 지정하고 싶다면,  :ref:`hybrid assignment strategy<Hybrid Assignment>`  에 자세한 안내가 있다. 자동 배치 학습 집단을 만들지 않는다면, 시스템은 자동적으로 기본 학습 집단  :ref:`default cohort<Default Cohort Group>` 을 생성하고 필요시 학습자를 배치한다.
 
-For more information, see :ref:`Implementing the Manual Assignment Strategy`.
+학습자 직접 배치 방법  :ref:`Implementing the Manual Assignment Strategy`  에서 보다 많은 정보를 확인할 수 있다.
 
 .. _Hybrid Assignment:
 
 =============================================================
-Hybrid Assignment: Accommodating Small Groups Within a Course
+혼합적 배치: 강좌 안에서의 소집단 활용하기
 =============================================================
 
-For some courses, the manual assignment strategy is not feasible to execute,
-and the automated assignment strategy does not accommodate existing cohorts in
-the student body. The enrollment might be too large to complete manual
-assignments effectively, or only some of the learners might have strong
-defining characteristics among an otherwise diverse student body. For these
-courses, you can use a hybrid of the two strategies to implement cohorts.
+어떤 강좌에서는, 직접 배치 방법은 실행이 가능하지 않을 수도 있고, 자동 배치 또한 기존의 학습 집단에 적합하지 않을 수도 있다. 직접 배치를 효과적으로 하기에 등록생 수가 너무 많거나, 다양한 학습자 중에서 특성이 잘 구분되는 학습자가 소수인 경우가 그렇다.이러한 강좌에서 학습 집단 기능을 구현하기 위해서는 두 가지 방법의 혼합적 배치를 해볼 수 있다.
 
-An example is a course that enrolls members of an alumni association. The
-alumni want an opportunity to have private interactions, so manual assignment
-of those learners to a cohort makes sense. For other learners in the class,
-manual assignment is not needed: you can create one or more automated cohorts
-for the remaining learners in the course.
+예를 들어, 동창회원이 등록생들의 경우, 그들만의 집단내 교류를 원할 수 있는데, 이 때 수동배치 방법을 사용할 수 있다.그 외의 강좌 내 다른 학습자를 위해서는 직접 배치가 필요 없으므로, 하나 이상의 자동 배치 학습 집단을 생성하면 된다.
 
-Before you implement the hybrid strategy, you identify the characteristics that
-define existing cohorts in the student body. You also decide whether you want
-the remaining learners in the course to be divided into their own, similarly-
-sized cohorts, or if you want them all to be in just one other cohort.
+혼합적 방법을 사용하기 전에, 등록된 학습자 중에 이미 존재하는 학습 집단의 학습자 특성을 확인해야 한다.또한 나머지 학습자를 비슷한 크기의 학습 집단으로 나눌지, 또는 나머지 학습자 모두를 또 다른 하나의 학습 집단으로 분류할 것 인지를 결정해야 한다.
 
-After you enable cohorts, you create a manual cohort for each student group
-that you identified. You manually assign learners who belong to each group to
-the corresponding cohort. You also set up automated cohorts for the other
-learners in the course, or rely on the default automated cohort. Any learners
-who are not assigned to a manual cohort are automatically assigned to one of
-the automated cohorts or to the default cohort when they first view any course
-content, including the course **Discussion** page or content-specific
-discussion topics. For best results when you use this strategy, you should
-complete all manual cohort assignments before the course starts and before
-learners begin viewing course content and discussion topics.
+학습 집단 기능을 활성화 한 후, 확인한 각 학습 집단을 위해 직접 배치 학습집단을 만든다. 유사한 학습 집단에 속해있는 학습자를 해당 학습 집단에 직접 배치한다. 나머지 학습자는 자동 배치 학습 집단 구성 또는 기본 학습 집단으로 설정하여 배치할 수 있다. 직접 배치가 되지 않은 학습자는 게시판 이나 강좌의 학습 내용에 있는 토의 주제 페이지를 방문했을 때, 자동 배치 학습 집단 중 하나에 자동적으로 배치되거나, 기본 학습 집단을 선택한 경우에는 기본 학습 집단에 배치된다. (강좌가 시작되기 전과 학습자가 게시판이나 토의 주제 페이지를 방문하기 전에 직접 배치를 완료하는 것이 학습 집단 구성에 가장 좋은 방법이다.)
 
-For more information, see :ref:`Implementing the Automated Assignment
-Strategy` and :ref:`Implementing the Manual Assignment Strategy`.
+:ref:`Implementing the Automated Assignment Strategy` 와  :ref:`Implementing the Manual Assignment Strategy`  에서 보다 많은 정보를 확인할 수 있다.
 
 .. _Default Cohort Group:
 
 ===========================================================
-Ensuring That All Learners Are Assigned: The Default Cohort
+기본 학습 집단: 모든 학습자를 단일 학습 집단에 배치
 ===========================================================
 
-If you enable cohorts in your course, all learners must be assigned to a
-cohort. To ensure that there are no learners in the course without a cohort,
-the system automatically creates a default cohort and assigns learners to it if
-necessary.
+학습 집단 기능이 활성화된 강좌에서, 모든 학습자는 반드시 학습 집단에 속해야 한다.모든 학습자를 학습 집단에 배치되도록 하기 위해서, 시스템은 자동적으로 기본 학습 집단을 생성하고 학습자를 이 학습 집단에 배치한다. 강좌에서 자동적 학습 집단을 설정하지 않는 경우에 기본 학습 집단이 만들어진다.직접 배치로 학습 집단에 속하지 않은 학습자는 강좌 콘텐츠를 활용할 때 자동으로 기본 학습 집단에 배치된다.
 
-The default cohort is created only if you have not created at least one
-automated assignment cohort in your course by the time that the first learner
-accesses your course content. Learners who have not been manually assigned to a
-cohort when they access the course content are automatically assigned to the
-default cohort.
-
-Learners who are in the default cohort see a cohort name of "Default Group" in
-discussion posts. If you want learners to see a different name for the default
-cohort, you can change its name. For details about renaming cohorts, see
-:ref:`Renaming a Cohort`.
+기본 학습 집단에 배치된 학습자는 게시글에서 “기본 학습 집단”이라는 학습 집단명이 나타난다. 학습자에게 다른 집단 이름을 보여주고 싶다면 :ref:`Renaming a Cohort`  를 참고하면 된다.
 
 .. image:: ../../../../shared/images/post_visible_default.png
  :alt: A discussion topic post with "This post is visible to Default Group"
        above the title.
  :width: 600
 
-You can check the :ref:`learner profile information report<View and download
-student data>` for your course to see if any learners are assigned to the
-default cohort, and change their cohort assignments. Note, however, that in
-divided discussion topics learners can only see posts by members of their
-currently assigned cohort: when a learner is reassigned, posts that he
-previously saw will seem to have "disappeared". To avoid negatively affecting
-the learner experience, any cohort assignment changes should be done as early
-in the course run as possible, so that learners' views of discussion posts and
-contributions remain consistent over time.
+학습자가 기본 학습 집단에 배치되어 있는지 알고 싶다면, 학습자 프로필 정보 보고서  :ref:`learner profile information report<View and download student data>` 를 참고할 수 있으며, 학습 집단을 달리 배치할 수도 있다. 토의 주제가 여러 가지로 나눠진 경우, 학습자는 현재 속해있는 학습 집단 구성원들의 게시글만 볼 수 있다는 것에 유의해야 하며, 학습자의 학습 집단을 변경하는 경우에 게시글들은 “사라지게 된다”. 학습 집단의 배치를 변경하는 것은 가능하면 강좌 운영 초기에 마쳐야 학습자가 게시글을 보거나 기여한 정도를 확인할 수 있다

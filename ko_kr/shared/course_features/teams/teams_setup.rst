@@ -1,11 +1,10 @@
 .. _Teams Setup:
 
 ##########################################
-Using Teams in Your Courses
+강좌에서 팀 활용하기
 ##########################################
 
-This section provides conceptual and procedural information about using teams
-in your courses.
+이 장은 강좌에서 팀을 활용하는 방법에 대해 설명한다.
 
 
 .. contents::
@@ -16,86 +15,47 @@ in your courses.
 .. _CA_Teams_Overview:
 
 *******************************
-Teams Overview
+팀 개관
 *******************************
 
-Using teams in your course is an effective way for learners to interact and
-collaborate on small group projects or activities. You define topics that
-learners choose from; learners choose a topic they are interested in, and
-either join a team or create their own team within that topic. Each learner
-can belong to only one team.
+강좌에서 팀을 활용하는 것은 학습자가 소규모 그룹 프로젝트나 활동을 함에 있어 상호 교류하고 협력할 수 있도록 한다. 학습자는 흥미를 갖고 있는 주제를 선택해 팀에 가입하거나 새로 만들 수 있다. 한 학습자는 하나의 팀에 들어갈 수 있다.
 
-When learners create a new team, they add names and descriptions to identify
-their team. They can also optionally specify a primary communication language
-and a primary country that members identify with. Team characteristics might
-serve as the basis for attracting new members, resulting in small groups of
-learners with similar interests and goals who will work together on projects
-or activities within the same topic area.
+학습자가 새 팀에 가입하면 이름과 설명을 추가해 팀을 알릴 수 있다. 또한 선택사항으로 주요 의사소통 언어와 주요 국가를 설정할 수 있다. 팀 특성은 새 회원을 구하는데 도움을 줄 수 있으며 결과적으로 공통된 흥미와 목표를 위해 협력하여 같은 주제의 프로젝트와 활동을 하는 학습자 소규모 그룹이 만들어진다.
 
-Teams are most effective when learners have a clear reason for joining a team,
-and a clear outcome to achieve with fellow team members. For example, you
-might create an assignment that consists of a group project or activity, with
-a choice of topics, and ask learners to join teams within the topic of their
-choice to complete the assignment. Team members can use discussions within the
-team to communicate and collaborate on the assignment.
+팀은 학습자가 가입하는 이유가 명확하고 팀 회원과 이루고자 하는 목표가 뚜렷할 때 그 효과가 극대화된다. 예를 들어 그룹 프로젝트나 활동을 필요로 하는 과제를 만들고 학습자로 하여금 팀을 짜서 과제를 하도록 할 수 있다. 팀 회원은 팀 내 게시판을 사용해 의사소통하고 협력할 수 있다.
 
-Teams are not as effective when members have no specific team tasks or goals.
-EdX does not recommend using teams in your course if you want only to provide
-a way for learners to connect socially. You can encourage learners to connect
-socially by using discussions within the course. For more information about
-using discussions, see :ref:`Running_discussions`.
+팀은 뚜렷한 목표가 없으면 효과가 떨어진다. K-MOOC은 친목 활동을 위해 팀을 활용하는 것은 권장하지 않는다. 학습자에게 강좌 내 게시판을 활용해 친목 활동을 하도록 할 수 있다. 자세한 사항은  :ref:`Running_discussions`  를 참고하면 된다.
 
 
 .. _Enable and Configure Teams:
 
 *******************************
-Enable and Configure Teams
+팀 허용 및 설정하기
 *******************************
 
-To enable and configure teams in your course, modify the **Teams
-Configuration** policy key on the **Advanced Settings** page so that the key
-includes team topic names and the maximum team size.
+팀을 강좌에서 허용하고 설정하기 위해서 팀 설정 정책 키를 고급 설정 화면에서 수정해 팀 주제명과 최대 규모를 설정한다.
 
-.. note:: The **Teams** page in the LMS becomes available only after you have
-   specified at least one team topic.
+.. note:: 학습 관리 시스템의 팀 화면은 하나 이상의 팀 주제를 작성했을 때 들어갈 수 있다.
 
 
-.. note::  EdX recommends that you do not delete topics once your course is
-   running, and if learners might have already joined teams within topics. If
-   you delete a topic from the **Teams Configuration** policy key, that topic
-   is no longer visible in the LMS, and learners will not be able to leave
-   teams associated with the deleted topic.
+.. note::  K-MOOC은 강좌 진행 중에는 학습자가 이미 팀에 가입했을 수 있으므로 주제를 삭제하지 않는 것을 권장한다. 만약 팀 설정 정책 키에서 주제를 삭제한다면 해당 주제는 더 이상 학습 관리 시스템에 나타나지 않으며 학습자는 삭제된 주제의 팀에서 탈퇴할 수 없다.
 
 
-#. In Studio, from the **Settings** menu, select **Advanced Settings**,
-   then locate the **Teams Configuration** policy key.
+#. Studio의 설정 메뉴에서 고급 설정을 선택하고 팀 설정 정책 키를 찾는다.
 
-   By default, you see a set of curly braces ({}). You define topics and the
-   maximum team size inside this set of braces.
+   기본적으로 {}안에서 주제와 최대 팀 규모를 설정할 수 있다.
 
-#. To specify the maximum team size for teams in your course, enter the
-   ``max_team_size`` parameter in double quotation marks, followed by a colon,
-   then a positive integer value representing the maximum number of team
-   members allowed. For example, to set the maximum number of learners per
-   team in your course to 5, your entry would look like this example.
+#. 강좌에서 최대 팀 규모를 설정하기 위해  ``max_team_size`` 항목을 큰따옴표 안에 입력하고 :와 팀 최대 규모 숫자를 자연수 형태로 입력한다. 다음 예제는 최대 팀 규모를 5명으로 설정한 것이다.
 
    ``"max_team_size": 5``
 
-#. To specify topics within which teams can be created, add entries under
-   ``"topics"``. For each topic, provide a description, name, and ID as shown
-   in the example.
+#. 팀 내 주제 설정은 ``"topics"`` 로 한다. 각 주제에 설명, 이름과 ID를 다음 예제와 같이 입력한다.
 
-   Make sure that you enclose all of the sets of topic values within a set of
-   square brackets, with a comma after the closing square bracket.
+   모든 주제 값을 괄호 안에 입력하고 괄호를 닫은 뒤 ,를 입력해야 한다.
 
-   .. note:: If you create more than one topic, make sure that you add a comma
-      after the closing curly brace of each topic that has another topic
-      following it. The syntax that you use must match the example syntax
-      exactly. Missing or incorrect indentation, curly braces, brackets, or
-      punctuation marks cause errors.
+   .. note:: 하나 이상의 주제를 설정할 경우 각 주제 괄호 뒤에 ,를 추가해야 한다. 다음 예제와 정확히 똑같은 방법으로 입력해야 하며 들여쓰기나 괄호 등이 잘못되면 오류가 발생한다.
 
-   .. note:: For topic IDs, you can use only alphanumeric characters and the
-      underscore, hyphen, and period characters.
+   .. note:: 주제 ID로 알파벳, _, -와 .만을 사용할 수 있다.
 
 
 ::
@@ -123,9 +83,7 @@ includes team topic names and the maximum team size.
    }
 
 
-The topics you have created appear on the **Teams** page in the LMS when
-learners browse teams by topic. The **Teams** page is not visible until you
-have created at least one topic.
+생성한 주제는 학습 관리 시스템의 팀 페이지에 나타난다. 팀 페이지는 하나 이상의 주제를 생성해야만 공개된다.
 
 
 .. image:: ../../../../shared/images/Teams_TopicsView.png
@@ -136,146 +94,115 @@ have created at least one topic.
 .. _Create a Team:
 
 ******************
-Create a Team
+팀 생성하기    
 ******************
 
-Although learners in your course can create their own teams, you can seed each
-topic with a few teams to give learners some ideas for their own teams.
+강좌의 학습자는 직접 팀을 만들 수 있지만 몇몇 팀에 주제를 부여해 어떤 팀을 만들 수 있을지 학습자에게 도움을 줄 수 있다.
 
-Course team members who have the **Staff**, **Admin**, **Discussion Admin**,
-or **Discussion Moderator** role can create new teams within topics.
-**Community TAs** and learners in the course can also create teams, although
-learners can create a new team only if they do not already belong to one.
+운영자, 관리자, 게시판 관리자 및 게시판 촉진자 권한이 있는 강좌 운영자는 주제 내에 새 팀을 생성할 수 있다. 강좌 내 커뮤니티 조교와 아직 팀이 없는 학습자도 팀을 만들 수 있다.
 
-To create a team, follow these steps.
+팀을 생성하기 위해.
 
-#. From the **Teams** page in the LMS, select **Browse**, then select the
-   topic in which you want to create a team.
+#. 학습 관리 시스템의 팀 페이지에서 탐색을 선택하고 팀을 만들 주제를 고른다.
 
-#. At the bottom of the list of teams within the topic, select the **create a
-   new team in this topic** link.
+#. 주제 내 팀 목록 하단에 이 주제에 새 팀 생성하기를 선택한다.
 
    .. image:: ../../../../shared/images/Teams_CreateNewTeamLink.png
      :width: 600
      :alt: The "create a new team in this topic" link
 
 
-3. On the **Create a New Team** page, add a name and description for the team.
+3. 새 팀 생성하기 페이지에서 팀 이름과 설명을 추가한다.
 
-   In the description, include details about the proposed project or activity
-   to help learners to decide whether they want to join this team.
+   설명에 학습자가 이 팀에 가입할 이유로 예정 프로젝트나 활동에 대해 입력한다.
 
    .. image:: ../../../../shared/images/Teams_CreateNewTeamForm.png
      :width: 600
      :alt: Empty form with fields to be completed when you create a new team.
 
-#. Optionally, add some characteristics for your team. You can specify a
-   language that members would primarily use to communicate with each other,
-   and a country that members would primarily identify with. Keep in mind that
-   if your team details make the team membership seem too selective, learners
-   might be discouraged from joining.
+#. 선택사항으로 팀 특성을 추가한다. 주로 사용할 언어와 대부분 회원의 국적을 입력할 수 있다. 만약 팀 세부사항이 너무 회원의 범위를 좁힌다면 학습자가 가입을 포기할 수 있다.
 
-#. When you have finished entering details for the team, select **Create**.
+#. 입력이 끝났으면 생성을 클릭한다.
 
-   Your new team is added to the list of teams under your selected topic.
+   선택한 주제 아래에 새 팀이 추가된다.
 
 
 
 .. _Search for a Team:
 
 ******************
-Search for a Team
+팀 검색하기
 ******************
 
-Use the search field to find a team within a topic.
+검색 필드를 활용해 주제 내 팀을 검색할 수 있다.
 
-.. note:: Partial words are not supported for searching teams.
+.. note:: 단어의 일부분을 사용해 팀을 검색할 수 없다.
 
-To get a list of teams whose names, descriptions, or characteristics match
-your search keywords, follow these steps.
+키워드에 맞는 이름, 설명 및 특성을 가진 팀 목록을 검색하기 위해.
 
-#. From the **Teams** page in the LMS, select **Browse**, then select the
-   topic in which you want to find a team.
+#. 학습 관리 시스템의 팀 페이지에서 탐색을 선택하고 팀을 검색할 주제를 고른다.
 
-#. In the search field, enter one or more keywords to search for, then press
-   **Enter** or select the search icon.
+#. 검색 필드에 키워드를 입력하고 검색을 클릭하거나 검색 아이콘을 누른다.
 
-   Teams within the topic that match your search are displayed.
+   키워드와 일치하는 주제 내 팀이 표시된다.
 
-To clear the existing search term, select the **X** next to the search field,
-or select all the text within the field and enter text to replace it.
+검색 결과를 초기화하기 위해 검색 필드 옆의 X를 클릭하거나 입력한 텍스트를 지우고 새로 입력한다.
 
 
 .. _Edit a Team:
 
 ******************
-Edit a Team
+팀 편집하기
 ******************
 
-Course team members who have the **Staff**, **Admin**, **Discussion Admin**,
-or **Discussion Moderator** role can edit any of a team's details, including
-removing members from a team. **Community TAs** can also edit teams. For more
-details about removing team members, see :ref:`Remove Learner from Team`.
+운영자, 관리자, 게시판 관리자 및 게시판 촉진자 권한이 있는 강좌 운영자는 회원을 탈퇴시키거나 팀 정보를 수정하는 등의 편집 권한을 갖는다. 강좌 내 커뮤니티 조교도 팀을 편집할 수 있다. 회원 탈퇴와 관련하여  :ref:`Remove Learner from Team`  에 자세한 정보가 나온다.
 
-To edit a team's details, follow these steps.
+팀 정보 편집을 위해.
 
-.. note:: Before making significant changes to a team, communicate with team
-   members so that they are aware of the changes and their impacts.
+.. note:: 팀에 중대한 수정을 가하기 전에 팀 회원과 이야기 해야 한다.
 
-#. In the LMS, select the **Teams** tab.
-#. On the **Teams** page, select **Browse** to show all topics.
-#. Select the arrow button for the topic to show all teams in that topic.
-#. Locate the team that you want to edit. To find the team, you can search
-   using keywords or sort teams by last activity or open slots.
-#. Select **View** for the team that you want to edit.
-#. Select **Edit Team**.
-#. Make your changes, then select **Update**.
-   The team's details are updated.
+#. 학습관리 시스템에서 팀 탭을 선택한다.
+#. 팀 페이지에서 검색을 클릭해 모든 주제를 본다.
+#. 주제의 화살표 버튼을 선택해 주제 내 모든 팀을 본다.
+#. 편집할 팀을 선택한다. 팀을 찾기 위해 키워드 검색을 사용하거나 가장 최근 활동한 팀 순으로 정리한다.
+#. 편집할 팀의 **조회** 버튼을 클릭한다.
+#. **팀 편집하기** 를 선택한다.
+#. 수정을 마친 후 **업데이트** 를 클릭한다.
 
 
 .. _Remove Learner from Team:
 
 ********************************
-Remove a Learner from a Team
+팀에서 회원 탈퇴시키기
 ********************************
 
-Course team members who have the **Staff**, **Admin**, **Discussion Admin**,
-or **Discussion Moderator** role can remove members from a team. **Community
-TAs** can also remove learners from a team. You might want to remove a learner
-from a team and make the spot on the team available to other learners if, for
-example, a learner joined a team but is not participating, or if a learner has
-unenrolled from the course without leaving the team.
+운영자, 관리자, 게시판 관리자 및 게시판 촉진자 권한이 있는 강좌 운영자는 팀에서 회원을 탈퇴시킬 수 있다. 강좌 내 커뮤니티 조교도 회원을 탈퇴시킬 수 있다. 학습자를 탈퇴 시키고 다른 학습자에게 팀에 참여할 기회를 주는 것이 좋을 수 있다. 예를 들어 어떤 학습자가 팀에 가입했으나 활동을 하지 않거나 팀에서 탈퇴하지 않은 채 강좌 수강을 포기했으면 탈퇴 시키는 것이 나을 수 있다.
 
-.. note:: Before making significant changes to a team, communicate with team
-   members so that they are aware of the changes you will make, and their
-   impacts.
+.. note:: 팀에 중대한 수정을 가하기 전에 팀 회원과 이야기 해야 한다.
 
-To remove a learner from a team, follow these steps.
+팀에서 회원을 탈퇴 시키기 위해.
 
-#. In the LMS, select the **Teams** tab.
-#. On the **Teams** page, select **Browse** to show all topics.
-#. Select the arrow button for the topic to show all teams in that topic.
-#. Locate the team that you want to edit. To find the team, you can search
-   using keywords or sort teams by last activity or open slots.
-#. Select **View** for the team from which you want to remove a learner.
-#. Select **Edit Team**.
-#. On the **Instructor Tools** bar, select **Edit Membership**.
+#. 학습 관리 시스템의 팀 탭을 선택한다.
+#. 팀 페이지에서 검색을 선택해 모든 주제를 본다.
+#. 주제의 화살표 버튼을 선택해 주제 내 모든 팀을 본다.
+#. 편집할 팀을 선택한다. 팀을 찾기 위해 키워드 검색을 사용하거나 가장 최근 활동한 팀 순으로 정리한다.
+#. 팀의 조회 버튼을 클릭한다.
+#. 팀 편집하기를 선택한다.
+#. 교수자 도구 바에서 회원 관리를 선택한다.
 
    .. image:: ../../../../shared/images/Teams_InstructorToolsEditMembers.png
      :width: 600
      :alt: The Edit Membership button on the "Instructor Tools" bar on the Edit Team page.
 
-#. On the team's **Membership** page, select **Remove** next to the name of
-   the learner who you want to remove from the team.
-#. In the confirmation message, select **Remove**.
+#. 팀 회원 페이지에서 탈퇴시킬 회원 이름 옆의 제거를 클릭한다.
+#. 확인 메시지가 나오면 다시 제거를 선택한다.
 
 
-   The team member you removed no longer appears on the **Membership** page.
+   제거한 회원은 더 이상 회원 페이지에 나타나지 않는다.
 
-#. Repeat steps 8 and 9 to remove additional members.
+#. 8,9단계를 반복해 계속 회원을 탈퇴시킬 수 있다.
 
-   The team members you removed no longer appear on the **Membership** page,
-   and the count of team members is updated wherever it appears on team pages.
+   탈퇴시킨 회원은 더 이상 회원 페이지에 나타나지 않으며 팀 회원 수에 즉시 반영된다.
 
 
 
@@ -284,41 +211,29 @@ To remove a learner from a team, follow these steps.
 .. _Delete a Team:
 
 ******************
-Delete a Team
+팀 삭제하기
 ******************
 
-Course team members who have the **Staff**, **Admin**, **Discussion Admin**,
-or **Discussion Moderator** role can delete teams. **Community TAs** can also
-delete teams. you might need to manage the teams in your course, including
-deleting teams that remain empty or where members are experiencing abusive
-situations.
+운영자, 관리자, 게시판 관리자 및 게시판 촉진자 권한이 있는 강좌 운영자는 팀을 삭제할 수 있다. 강좌 내 커뮤니티 조교도 팀을 삭제할 수 있다. 회원이 없는 팀이나 문제가 발생하는 팀을 삭제할 필요가 있을 수 있다.
 
-When you delete a team, all learners are removed from the team membership.
-Neither learners nor course team members can access discussions from deleted
-teams.
+팀을 삭제하면 모든 회원은 자동으로 탈퇴하게 된다. 삭제된 팀의 게시판은 학습자와 강좌 운영자 모두 접속할 수 없다.
 
-.. note:: Deleting a team removes it permanently from the course, and cannot
-   be undone.
+.. note:: 팀을 삭제하는 것은 영구적이며 되돌릴 수 없다.
 
-To delete a team, follow these steps.
+팀을 삭제하기 위해.
 
-#. In the LMS, select the **Teams** tab.
-#. On the **Teams** page, select **Browse** to show all topics.
-#. Select the arrow button for the topic to show all teams in that topic.
-#. Locate the team that you want to delete. To find the team, you can search
-   using keywords or sort teams by last activity or open slots.
-#. Select **View** for the team that you want to delete, then select **Edit
-   Team**.
-#. On the **Instructor Tools** bar, select **Delete Team**.
+#. 학습 관리 시스템의 **팀** 탭을 선택한다.
+#. 팀 페이지에서 검색을 선택해 모든 주제를 본다.
+#. 주제의 화살표 버튼을 선택해 주제 내 모든 팀을 본다.
+#. 삭제할 팀을 선택한다. 팀을 찾기 위해 키워드 검색을 사용하거나 가장 최근 활동한 팀 순으로 정리한다.
+#. 삭제할 팀의 **조회** 버튼을 클릭하고 **팀 편집하기** 를 선택한다.
+#. **교수자 도구** 바에서 팀 **삭제하기** 를 선택한다.
 
    .. image:: ../../../../shared/images/Teams_InstructorToolsDeleteTeam.png
      :width: 600
      :alt: The Edit Membership button on the "Instructor Tools" bar on the Edit Team page.
 
-#. In the confirmation message, select **Delete**.
+#. 확인 메시지가 나오면 **삭제** 를 선택한다.
 
-   You return to the topic page, where you receive a confirmation that the
-   team has been successfully deleted. The team no longer appears in the teams
-   list within its topic. Learners who were previously members of this team no
-   longer belong to a team.
+   다시 주제 화면을 돌아가면 팀이 삭제되었다는 확인 메시지가 나올 것이다. 해당 팀은 더 이상 주제 내 팀 목록에 나타나지 않는다. 이 팀의 회원이었던 학습자는 더 이상 어느 팀에도 소속되지 않는다.
 

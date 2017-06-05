@@ -2,51 +2,32 @@
 
 
 #########################
-Managing Team Discussions
+팀 게시판 관리하기
 #########################
 
-EdX recommends that you designate course staff and optionally student TAs to
-moderate team discussions. The same discussion administration roles for
-managing course discussions on the **Discussions** page apply to discussion
-administration for team discussions. Course team members and student TAs who
-already have discussion moderation roles for course discussions on the
-**Discussions** page can perform the same roles for discussions in teams.
+K-MOOC은 강좌 운영자와 학습자 조교(선택사항)을 지정해 팀 게시판을 촉진시키는 것을 권장한다. 게시판 페이지의 강좌 게시판 관리 방법이 팀 게시판에 똑같이 적용된다. 게시판 페이지에서 이미 강좌 운영자와 학습자 조교 역할을 갖고 있어도 팀 게시판에서 같은 역할을 수행할 수 있다.
 
-For information about discussion administration roles, see
-:ref:`Assigning_discussion_roles`. For information about managing discussions,
-see :ref:`Running_discussions`.
+게시판 관리 역할과 관련된 내용은  :ref:`Assigning_discussion_roles`  에 자세히 나와있다. 게시판 관리와 관련해  :ref:`Running_discussions`  를 참고하면 된다.
 
 .. contents::
   :local:
   :depth: 1
 
 ***********************************
-Ability to Post in Team Discussions
+팀 게시판 글 작성 권한
 ***********************************
 
-Team members, discussion community TAs, and course team members with the roles
-of Discussion Admin or Discussion Moderator can post to the team discussion.
-Team members can edit their own posts, reply to posts and comments, follow and
-flag posts, and so on.
+팀 회원, 게시판 커뮤니티 조교와 게시판 관리자나 게시판 촉진자 권한을 가진 강좌 운영자는 팀 게시판에 글을 작성할 수 있다. 팀 회원은 자신이 작성한 글을 수정할 수 있으며 다른 글에 답을 달거나 즐겨찾기에 추가할 수 있다.
 
-Posts made by discussion community TAs are marked as "By: Community TA" in the
-discussion navigation pane, and those made by discussion moderators or
-discussion admins are marked as "By: Staff".
+게시판 커뮤니티 조교가 작성한 글은 “커뮤니티 조교”라고 표시되며 게시판 촉진자나 게시판 운영자가 작성한 글에는 “운영팀”이라고 표시된다.
 
 ***********************************
-Ability to Edit or Delete Posts
+글 편집 및 삭제 권한
 ***********************************
 
-Discussion moderators, discussion admins, and community TAs can perform the
-following actions in team discussions, without being a member of the team.
+게시판 촉진자, 게시판 관리자 및 커뮤니티 조교는 팀 게시판 회원이 아니더라도 다음과 같은 역할을 수행할 수 있다.
 
-* Review, edit, or delete messages
+* 메시지 조회, 편집 및 삭제
 * Pin, close, or reopen posts
 * Endorse responses
-
-Responses and comments made by community TAs have a colored "Community TA"
-identifier.
-
-Responses and comments made by discussion moderators or discussion admin
-have a colored "Staff" identifier.
 

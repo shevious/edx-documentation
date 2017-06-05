@@ -2,50 +2,30 @@
 .. _Set up Discussions in Cohorted Courses:
 
 ######################################################
-Setting up Discussions in Courses with Cohorts
+학습집단별 게시판 설정하기
 ######################################################
 
-This section provides information about setting up discussions for specific
-cohorts.
+이 장은 학습집단별 게시판을 설정하는 방법을 다룬다.
 
 .. contents::
   :local:
   :depth: 1
 
 *********
-Overview
+개관
 *********
 
-In courses that have cohorts enabled, discussion topics can be either divided
-by cohort, or unified and accessible to all learners.
+학습 집단 기능이 활성화된 강좌에서, 학습 집단에 따라 토의 주제를 나누거나 모든 학습자가 같은 토의 주제를 다룰 수 있도록 설정할 수 있다.
 
-Discussion topics that are divided by cohort are visible to all learners but
-the posts, responses, and comments within them are divided so that they are
-visible only to members of the same cohort. Posts, responses, and comments
-within unified discussion topics are visible to all learners in the course,
-regardless of cohort.
+집단 별로 나뉘어 있는 게시판 주제는 모든 학습자에게 공개되나 글, 반응 및 답변은 집단 내 학습자에게만 공개된다. 모든 학습자가 참여하는 게시판의 글, 반응 및 답변은 집단과 관계없이 모든 학습자에게 공개된다.
 
-When you first enable cohorts in your course, the initial behavior for
-:ref:`course-wide discussion topics<Coursewide Discussion Topics and Cohorts>`
-is different from the behavior of :ref:`content-specific discussion topics
-<Content Specific Discussion Topics and Cohorts>`.
+최초로 학습 집단을 활성화했을 때, 일반 주제를 위한 활동과 주제별 토의 주제의 활동은 차이가 있다
 
-By default, course-wide discussion topics are unified because these discussions
-are generally used for posts that are of broad interest to all learners in the
-course. In contrast, content-specific discussion topics are by default divided
-by cohort. On the Instructor Dashboard, you can change discussion topics of
-either type to be divided or unified.
+시스템은 기본적으로, 일반 주제는 학습자 모두에게 통합적으로 제시하고, 주제별 토의 주제는 학습 집단별로 나누어 제시한다. 토의 유형을 나누거나 통합하도록 설정할 수 있다
 
-.. warning:: If you change the cohort settings of discussion topics in a live
-   course after learners have begun reading and contributing to discussion
-   posts, you are changing their course experience. Learners might see posts
-   that were previously not visible to them, or they might no longer see posts
-   that were previously available to all learners. If you make changes to
-   cohort settings in a running course, be aware of the implications of your
-   changes. For more details, see :ref:`Altering Cohort Configuration`.
+.. warning:: 학습자가 게시판에 글을 올리기 시작한 이후 실시간 강좌 게시판 집단 설정을 바꾼다면 학습자에게 크게 영향을 주게 된다. 학습자는 전에 보지 못하던 글을 보거나 볼 수 있던 글을 못보게 될 수 있다. 이러한 점을 명심하고 집단 설정을 변경해야 한다. 자세한 사항은 :ref:`Altering Cohort Configuration` 를 참고하면 된다.
 
-For information about cohort settings for discussion topics, see the following
-topics.
+게시판 학습집단 설정에 관해 다음을 참고하면 된다.
 
 * :ref:`Coursewide Discussion Topics and Cohorts`
 * :ref:`Specify Whether CourseWide Discussion Topics are Cohorted`
@@ -53,227 +33,150 @@ topics.
 * :ref:`Specify that All ContentSpecific Discussion Topics are Cohorted`
 * :ref:`Specify Some ContentSpecific Discussion Topics as Cohorted`
 
-For overview information about discussions in a course, see :ref:`Discussions`.
-For information about using cohorts in a course and managing discussions that
-are divided by cohort, see :ref:`Cohorts Overview` and :ref:`Moderating
-Discussions for Cohorts`.
+강좌에서 토의에 관한 개괄적 정보는  :ref:`Discussions`  에서 볼 수 있다.강좌에 학습집단 사용에 관한 정보는 :ref:`Cohorts Overview` 와  :ref:`Moderating Discussions for Cohorts` 에서 볼 수 있다.
 
-.. note:: Making discussion topics divided by cohort, described in this and
-   the following topics, only divides posts within the discussion topics by
-   cohort; the discussion topics are still visible to all learners in the
-   course. If you want to make specific content-specific discussion topics
-   visible only to certain cohorts, you can implement content groups and
-   change the visibility settings on the discussion components. For more
-   details, see :ref:`Cohorted Courseware Overview`.
+.. note:: 게시판을 학습집단으로 구분짓는 것은 게시판 글을 집단 별로 나누는 것이며 게시판 주제는 강좌 내 모든 학습자에게 공개된다. 콘텐츠별 게시판 주제를 생성해 특정 집단에만 공개하고 싶다면 게시판 구성요소의 공개 설정을 바꿔야 한다. 자세한 사항은  :ref:`Cohorted Courseware Overview`  를 참고하면 된다.
 
 .. _Coursewide Discussion Topics and Cohorts:
 
 ***********************************************
-Course-Wide Discussion Topics and Cohorts
+일반 토의 주제와 학습 집단
 ***********************************************
 
-When you first :ref:`create a course-wide discussion topic<Create CourseWide
-Discussion Topics>`, it is unified, and all learners in the course can post,
-read, respond, and comment in the topic without regard to their cohort
-assignments.
+최초로  :ref:`create a course-wide discussion topic<Create CourseWide Discussion Topics>` 했을 때, 토의 주제는 모든 학습자에게 통합적으로 제시되고, 강좌의 모든 학습자는 속한 학습 집단에 상관 없이 이 주제에 대하여 게시글을 쓰고, 읽고, 응답하고, 코멘트를 남길 수 있다. 
 
-After you add a course-wide topic, you can configure it so that it is divided
-by cohort instead. For step-by-step instructions for specifying whether a
-course-wide discussion topic is unified or divided by cohort, see
-:ref:`Specify Whether CourseWide Discussion Topics are Cohorted`.
+
+일반 토의 주제를 추가한 후, 토의 주제가 학습 집단에 따라 분류되도록 환경 설정을 할 수 있다. 게시판 주제가 학습 집단에 따라 분류되었는지 확인하기 위해  :ref:`Specify Whether CourseWide Discussion Topics are Cohorted`  를 참고한다.
+
 
 ====================================================================
-Example: Making Some Course-Wide Discussion Topics Divided by Cohort
+예시: 학습 집단별 일반 주제 게시판 설정
 ====================================================================
 
-Course-wide discussion topics are by default unified, so that all learners can
-participate. In some instances, however, you might decide that it makes sense
-to divide some course-wide discussion topics by cohort, so that members of each
-cohort only see and respond to posts made by learners in the same cohort.
+일반 주제 게시판은 기본 설정으로 모든 학습자에게 공개되어 있다. 그러나 학습 집단별로 일반 주제 게시판을 나눠 학습자가 집단별로 글을 보고 반응할 수 있도록 할 수 있다.
 
-For example, in addition to the system-supplied General topic, you add three
-new course-wide discussion topics, for a total of four discussion topics.
+다음 예제는 시스템에서 제공하는 주제에 3개의 일반 주제를 더해 총 4개의 게시판 주제를 갖는다.
 
-* General
-* Course Q&A
-* Announcements
-* Brainstorming
+* 주제
+* 강좌 Q&A
+* 공지사항
+* 브레인스토밍
 
-The posts that you intend to make to the General and Course Q&A topics, and
-the subjects you expect learners to explore there, are appropriate for a
-unified learner audience.
+주제와 강좌 Q&A 항목의 글은 모든 학습자에게 공개하는 것이 좋다.
 
-However, you decide that it will be useful for the Announcements and
-Brainstorming topics to be divided by cohort. For information about specifying
-whether course-wide discussion topics are divided by cohort, see :ref:`Specify
-Whether CourseWide Discussion Topics are Cohorted`.
+그러나, 주제와 공지사항을 학습 집단별로 진행할 수 있도록 해당 주제에 학습 집단을 설정할 수 있다. 학습 집단별 일반 주제 게시판 분류 유무를 확인하기 위해  :ref:`Specify Whether CourseWide Discussion Topics are Cohorted` 를 참고한다.
 
-You also decide to apply a naming convention so that learners will know the
-audience for the discussion topics before they add any posts. For information
-about naming conventions, see :ref:`Apply Naming Conventions to Discussion
-Topics`.
+또한, 학습자가 해당 주제에 게시물을 추가하기 전에, 확인할 수 있는 사람이 누구인지 알 수 있도록 설정할 수 있다. 이러한 기능을 사용하기 위해서는  :ref:`Apply Naming Conventions to Discussion Topics`  를 참고하면 된다.
 
 .. _Specify Whether CourseWide Discussion Topics are Cohorted:
 
 ********************************************************************
-Specify Whether Course-Wide Discussion Topics are Divided by Cohort
+학습 집단별 일반 주제 게시판 분류 설정하기
 ********************************************************************
 
-When you :ref:`create course-wide discussion topics<Create CourseWide
-Discussion Topics>`, they are by default unified, and all learners in the
-course can see and respond to posts from all other learners. You can change
-course-wide discussion topics to be divided by cohort, so that only members of
-the same cohort can see and respond to each other's posts.
+일반 주제 게시판은 기본 설정으로 모든 학습자에게 공개되어 있다. 그러나 학습 집단별로 일반 주제 게시판을 나눠 학습자가 집단별로 글을 보고 반응할 수 있도록 할 수 있다.
 
-To change the cohort settings for course-wide discussion topics, follow these
-steps.
+일반 주제 게시판 설정을 바꾸기 위해.
 
-#. In the LMS, select **Instructor**, then select **Cohorts**.
+#. 학습 관리 시스템에서 교수자를 선택하고 학습집단을 클릭한다.
 
-#. Select **Specify whether discussion topics are divided by cohort**.
+#. 게시판 주제 학습 집단별 분류 유무 설정을 선택한다.
 
-#. In the **Course-Wide Discussion Topics** section, select the checkbox next
-   to each course-wide discussion topic that you want to divide by cohort.
-   Clear the checkbox next to each course-wide discussion topic that you want
-   to make unified.
+#. 일반 주제 게시판에서 학습 집단별로 나눌 게시판 주제 옆의 체크박스를 클릭해 나눌 주제를 선택한다. 다시 체크박스를 누르면 모든 학습자에게 공개된다.
 
-#. Select **Save**.
+#. 저장을 선택한다.
 
-   The list of course-wide discussion topics is updated to show which topics
-   are divided by cohort, and which are unified.
+   일반 주제 게시판 주제 목록에 반영된다.
 
    .. image:: ../../../../shared/images/CohortDiscussionsCourseWide.png
      :alt: Two course-wide discussion topics in list, one cohorted and one
        unified.
      :width: 400
 
-For more information about managing discussions that are divided by cohort, see
-:ref:`Moderating Discussions for Cohorts`.
+자세한 사항은 :ref:`Moderating Discussions for Cohorts` 를 참고하면 된다.
 
 .. _Content Specific Discussion Topics and Cohorts:
 
 **********************************************
-Content-Specific Discussion Topics and Cohorts
+주제별 토의와 학습집단
 **********************************************
 
-When you enable the cohort feature for a course, and :ref:`create content-specific discussion topics<Create ContentSpecific Discussion Topics>` by adding
-discussion components to units in Studio, these content-specific discussion
-topics are by default divided by cohort. A learner who is assigned to one
-cohort cannot read or add to the posts, responses, or comments contributed by
-the members of another cohort.
+강좌에서 학습 집단 기능을 활성화하고, 스튜디오의 토의 구성 요소를 학습 활동에 추가하여  :ref:`create content-specific discussion topics<Create ContentSpecific Discussion Topics>`  할 때, 주제별 토의는 학습집단 기본 값으로 나뉘어진다. 하나의 학습집단에 배치된 학습자는 다른 학습집단 회원의 온라인 학습 활동들을 읽어보거나 게시글, 응답, 코멘트를 추가할 수 없다.
 
-If you want all content-specific discussion topics in your course to be
-divided by cohort, you do not need to take any action. For more information,
-see :ref:`Specify that All ContentSpecific Discussion Topics are Cohorted`.
+모든 주제별 토의를 학습집단으로 나누고자 한다면, 어떤 설정도 할 필요가 없다. 자세한 사항은  :ref:`Specify that All ContentSpecific Discussion Topics are Cohorted` 를 참고하면 된다.
 
-Alternatively, you can specify that you want most of the content-specific
-discussion topics in your course to be unified, and make :ref:`only a few
-discussion topics divided by cohort<Specify Some ContentSpecific Discussion
-Topics as Cohorted>`.
+아니면 대부분의 콘텐츠별 게시판 주제를 전체 학습자에게 공개하고 일부만 학습 집단별로 분류할 수 있다.
 
 .. _Specify that All ContentSpecific Discussion Topics are Cohorted:
 
 *****************************************************************
-Specify that All Content-Specific Discussion Topics are Cohorted
+모든 콘텐츠별 게시판 주제 학습 집단별로 나누기
 *****************************************************************
 
-The default behavior for content-specific discussion topics is that they are
-divided by cohort when you first :ref:`add them<Create ContentSpecific
-Discussion Topics>` in your course. If you want all content-specific
-discussion topics in your course to be divided by cohort, you do not need to
-take any action.
+콘텐츠별 게시판 주제의 기본 설정은 처음 강좌에 추가할 때 학습 집단별로 분류되는 것이다. 모든 주제별 토의를 학습집단으로 나누고자 한다면, 어떤 설정도 할 필요가 없다.
 
-You can confirm this setting on the Instructor Dashboard **Cohorts** tab.
+이 설정을 교수자 대시보드 학습집단 탭에서 확인할 수 있다.
 
-#. In the LMS, select **Instructor**, then select **Cohorts**.
+#. 학습 관리 시스템에서 교수자를 선택하고 학습집단을 클릭한다.
 
-#. Select **Specify whether discussion topics are divided by cohort**.
+#. 게시판 주제 학습 집단별 분류 유무 설정을 선택한다.
 
   .. image:: ../../../../shared/images/CohortDiscussionsSpecifyLink.png
     :alt: The link in the UI to specify whether content specific discussion
         topics are divided by cohort.
     :width: 800
 
-In the **Content-Specific Discussion Topics** section, you see that the
-**Always cohort content-specific discussion topics** option is selected.
+**콘텐츠별 게시판 주제** 탭에 게시판 주제 언제나 학습 집단별로 분류가 선택되어 있는 것을 확인할 수 있다.
 
-All content-specific discussion topics in your course are divided by cohort,
-and you cannot change the cohort settings of individual content-specific
-discussion topics.
+모든 콘텐츠별 게시판 주제는 학습 집단별로 분류되며 개별 콘텐츠별 게시판 주제의 학습집단 설정을 바꿀 수 없다.
 
 .. image:: ../../../../shared/images/CohortDiscussionsAlwaysCohort.png
  :alt: Content specific discussion topics controls with the "Always cohort
   content specific discussion topics" option selected.
  :width: 500
 
-For information about changing the cohort settings for your content-specific
-discussions to make all of them unified except a few, see :ref:`Specify Some
-ContentSpecific Discussion Topics as Cohorted`.
+게시판 주제의 일부만 학습 집단별로 분류하는 방법은 :ref:`Specify Some ContentSpecific Discussion Topics as Cohorted` 을 참고한다.
 
 .. _Specify Some ContentSpecific Discussion Topics as Cohorted:
 
 **************************************************************************
-Specify that Some Content-Specific Discussion Topics are Divided by Cohort
+콘텐츠별 게시판 주제 일부만 학습 집단별로 분류 설정
 **************************************************************************
 
-The default behavior for content-specific discussion topics is that they are
-divided by cohort when you first :ref:`add them<Create ContentSpecific
-Discussion Topics>` in your course.
+콘텐츠별 게시판 주제의 기본 설정은 처음 강좌에 추가할 때 학습 집단별로 분류되는 것이다.
 
-To make only a few of your content-specific discussion topics divided by
-cohort, you change the cohort settings for content-specific discussion topics
-to make them all unified, and then explicitly select only the topics that you
-want to be divided by cohort.
+일부 게시판 주제만 학습 집단별로 분류하기 위해선 우선 모든 학습자에게 공개되도록 설정한 후 학습 집단별로 분류할 일부 주제만 선택해야 한다.
 
-.. warning:: When you change the cohort setting from **Always Cohort Content-
-   Specific Discussion Topics** to **Cohort Selected Content-Specific
-   Discussion Topics**, you are making all content-specific discussion topics
-   in your course unified, unless you explicitly change them to be divided by
-   cohort before saving your changes. This means that any posts that were
-   previously divided by cohort and restricted to viewing, responding, and
-   commenting by members of the same cohort are now visible to all learners in
-   your course.
+.. warning:: 학습집단 설정을 콘텐츠별 게시판 주제 항상 학습 집단별로 분류에서 콘텐츠별 게시판 주제 일부 학습 집단별로 분류로 설정을 변경하면 모든 콘텐츠별 게시판 주제를 학습자에게 공개하되 선택한 일부만 학습 집단별로 공개되는 것이다. 이는 기존에 학습 집단별로 나뉘어져 조회, 반응 및 답변이 제한되었던 글은 이제 모든 학습자에게 공개된다는 의미이다.
 
-   If you make changes to cohort settings in a running course, be aware of the
-   implications of your changes. For more details, see :ref:`Altering Cohort
-   Configuration`.
+   설정을 바꿀 때 일어날 수 있는 결과를 명심하고 집단 설정을 변경해야 한다. 자세한 사항은 :ref:`Altering Cohort Configuration`  를 참고하면 된다.
 
-To specify that only some content-specific discussion topics in your course are
-divided by cohort, follow these steps.
+콘텐츠별 게시판 주제 일부만 학습 집단별로 분류하기 위해.
 
-#. In the LMS, select **Instructor**, then select **Cohorts**.
+#. 학습 관리 시스템에서 교수자를 선택하고 학습집단을 클릭한다.
 
-#. Select **Specify whether discussion topics are divided by cohort**.
+#. 게시판 주제 학습 집단별 분류 유무 설정을 선택한다.
 
    .. image:: ../../../../shared/images/CohortDiscussionsSpecifyLink.png
     :alt: The link in the UI to specify whether content specific discussion
         topics are divided by cohort.
     :width: 800
 
-#. In the **Content-Specific Discussion Topics** section, if it is not already
-   selected, select **Cohort selected content-specific discussion topics**.
+#. 콘텐츠별 게시판 주제 탭에서 콘텐츠별 게시판 주제 일부 학습 집단별로 분류를 선택한다.
 
-   .. warning:: If you make changes to cohort settings in a running course, be
-      aware of the implications of your changes. For more details, see
-      :ref:`Altering Cohort Configuration`.
+   .. warning:: 설정을 바꿀 때 일어날 수 있는 결과를 명심하고 집단 설정을 변경해야 한다. 자세한 사항은 :ref:`Altering Cohort Configuration`  를 참고하면 된다.
 
-   All content-specific discussion topics that you add in your course are
-   unified and visible to all learners. The list of content-specific
-   discussion topics becomes editable.
+   강좌에 추가하는 콘텐츠별 게시판 주제는 모든 학습자에게 공개된다. 콘텐츠별 게시판 주제를 편집할 수 있게 된다.
 
-#. Select the checkbox next to each content-specific discussion topic that you
-   want to divide by cohort.
+#. 학습 집단별로 공개할 각 콘텐츠별 게시판 주제 옆 체크박스를 선택한다.
 
    .. image:: ../../../../shared/images/CohortDiscussionsCohortSelected.png
      :alt: Content specific discussion topics controls with the "Cohort
       selected content specific discussion topics" option selected.
      :width: 500
 
-#. Select **Save**.
+#. 저장을 선택한다.
 
-   The changes to your content-specific discussions are saved. The
-   content-specific discussion topics that you selected are saved as being
-   divided by cohort. All other content-specific discussion topics are unified.
+   콘텐츠별 게시판 주제 변경사항이 저장된다. 선택한 콘텐츠별 게시판 주제는 학습 집단별로 분류된다. 기타 콘텐츠별 게시판 주제는 모든 학습자에게 공개된다.
 
-For more information about managing discussions that are divided by cohort, see
-:ref:`Moderating Discussions for Cohorts`.
+학습 집단별로 분류된 게시판에 대해선  :ref:`Moderating Discussions for Cohorts`  를 참고하면 된다.
