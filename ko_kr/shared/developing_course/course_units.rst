@@ -1,79 +1,67 @@
 .. _Developing Course Units:
 
 ###################################
-Developing Course Units
+학습활동
 ###################################
 
-To work with units in the course outline and develop your course, you need to
-understand the following concepts and complete the following tasks.
+학습활동을 만들기 전에, 우선 다음 사항을 이해해야 한다.
 
 .. contents::
    :depth: 1
    :local:
 
-You add content to units with :ref:`course components<Developing Course
-Components>`.
+강좌 운영팀은 학습활동에 구성요소를 추가할 수 있다.
 
 .. _What is a Unit?:
 
 ****************************
-What is a Unit?
+학습활동이란?
 ****************************
 
-A unit is a part of a :ref:`subsection<Developing Course Subsections>` that
-learners view as a single page.
+학습활동은  :ref:`subsection<Developing Course Subsections>` 의 구성 단위로써, 학습자가 소주제를 클릭하면 한 번에 하나씩 볼 수 있다.
 
-A unit contains one or more :ref:`components<Developing Course Components>`,
-such as text with :ref:`HTML<Working with HTML Components>` markup,
-:ref:`problems<Working with Problem Components>`, a :ref:`discussion<Working
-with Discussion Components>`, or a
-:ref:`video<Working with Video Components>`.
+1개의 학습활동은 1개 이상의  :ref:`components<Developing Course Components>` 
+를 가질 수 있는데, 이러한 구성요소로는 :ref:`HTML<Working with HTML Components>` , :ref:`problems<Working with Problem Components>` ,  :ref:`discussion<Working with Discussion Components>` , :ref:`video<Working with Video Components>` 이 있다..
 
 ****************************
-Viewing Units in the Outline
+강좌 개요에서 학습활동 보기
 ****************************
 
-To view units in the outline, you :ref:`expand<Navigating the Course Outline>`
-the parent section and subsection.
+학습활동을 보려면, 주제와 소주제를 먼저 펼쳐야 한다.
 
 .. image:: ../../../shared/images/outline-callouts.png
  :alt: An outline with numbered indicators for the section, subsection, and
   units.
  :width: 400
 
-#. The section.
-#. The subsection.
-#. The units in the subsection.
+#. 주제.
+#. 소주제.
+#. 학습활동.
 
 ****************************
-Viewing the Unit Page
+Studio에서 학습활동 보기
 ****************************
 
-When you select a unit name in the outline, the **Unit** page opens.
+강좌 개요에서 소주제명을 클릭하면, 학습활동 이 나온다.
 
-The following example shows a unit page with two components, with circles and
-text to show different areas and controls in the page.
+다음 예시는 1개 학습활동에 2개의 구성요소가 있는 화면이며, 원으로 표시된 영역은 화면상의 다른 영역과 버튼을 가리킨다.
 
 .. image:: ../../../shared/images/unit-page.png
  :alt: The Unit page with numbered indicators.
  :width: 600
 
-#. A component in the unit.
-#. Options for testing the unit.
-#. Status panel for the unit.
-#. Location of the unit in the course outline.
+#. 학습활동의 구성요소.
+#. 학습활동 시험 요소.
+#. 학습활동 상태.
+#. 강좌 개요 학습활동 위치.
 
 ****************************
-Viewing Units as a Learner
+학습자 화면에서 학습활동 보기
 ****************************
 
-To a learner using the edX learning management system (LMS), each unit in the
-subsection is represented by an icon in the unit navigation bar at the top of
-the **Course** page. The components in the selected unit appear below the unit
-navigation bar.
+학습자는 강좌 내용에서 소주제에 있는 학습활동을 볼 수 있다. 다음 학습활동으로 넘어가려면 화살표 버튼을 눌러야 한다.
 
-The following image shows a subsection with five units in the LMS. The fourth
-unit is open.
+다음 예시는 1개의 소주제에 학습활동이 5개로 구성되어 있을 때, 어떻게 강좌 개요에서 보이는지를 나타낸다.
 
 .. image:: ../../../shared/images/Units_LMS.png
  :alt: A unit in the LMS, with all of the unit icons in the unit navigation bar
@@ -83,14 +71,12 @@ unit is open.
 .. _The Unit Workflow:
 
 ************************************************
-The Unit Workflow
+학습활동 작업 흐름
 ************************************************
 
-When you have set up the :ref:`section<Developing Course Sections>` and
-:ref:`subsection<Developing Course Subsections>` in the course outline, you
-then work with units.
+먼저  :ref:`section<Developing Course Sections>` 와 :ref:`subsection<Developing Course Subsections>` 을 만든 후에 학습활동을 만들 수 있다.
 
-The typical workflow includes these steps.
+학습활동을 만드는 기본 순서는 아래와 같다.
 
 #. :ref:`Create a unit<Create a Unit>`.
 #. :ref:`Add components to the unit<Add a Component>`.
@@ -99,54 +85,39 @@ The typical workflow includes these steps.
 .. image:: ../../../shared/images/workflow-create-unit.png
  :alt: Diagram of the unit development workflow.
 
-You :ref:`publish the unit<Publish a Unit>` after you add all of its
-components. If you make additional modifications, you must publish the unit
-again for the changes to be visible to learners.
+모든 구성 요소를 추가하면 학습활동을 게시하게 된다. 다른 추가적인 수정사항이 있다면 다시 학습활동을 게시해야 한다.
 
-As you work through these steps, the publishing status of the unit changes.
-The publishing status controls the content available to learners, along with
-:ref:`release dates<Release Dates>` (in an instructor-paced course). See the
-next section for more information.
+이 단계를 수행하면, 학습활동의 게시 상태 가 바뀌게 된다. 게시 상태는 :ref:`release dates<Release Dates>`  에 따라 학습자에게 공개되는 상태를 의미한다.
 
-.. note:: Release dates apply only to instructor-paced courses. For more
-  information about instructor-paced and self-paced courses, see :ref:`Setting
-  Course Pacing`.
+.. note:: 공개일은 고정 일정 형식의 강좌에만 해당하며 자세한 사항은 :ref:`Setting Course Pacing` 를 참고하면 된다.
 
 .. _Unit States and Visibility to Students:
 
 *************************************************
-Unit Publishing Status and Visibility to Learners
+학습활동 게시 상태 및 학습자 공개 
 *************************************************
 
-The following information summarizes whether or not learners can see a unit.
+학습자가 학습활동을 볼 수 있는지 여부는 학습활동의 게시 상태에 따라 달라진다.
 
-* Learners never see a unit with the publishing status `Draft (Never
-  Published)`_.
+*  `Draft (Never Published)`_ 일 때, 학습자는 학습활동을 볼 수 없다.
 
-* Learners never see a unit with the publishing status `Visible to Staff
-  Only`_. For more information, see :ref:`Hide a Unit from Students`.
+* `Visible to Staff Only`_  일 때, 학습자는 학습활동을 볼 수 없다. 이에 대해  :ref:`Hide a Unit from Students` 에 더 자세한 안내가 있다.
 
-* Learners do not see a unit with the publishing status `Published Not Yet
-  Released`_ until the :ref:`release date <Release Dates>` (in an
-  instructor-paced course). On the release date, the status changes to
-  `Published and Live`_.
+* 게시됨(아직 공개되지 않음) 상태일 때, 공개일 전까지는 학습자가 학습활동을 볼 수 없다. 하지만 공개일이 되면, 게시 상태가 공개됨 으로 바뀌게 된다.
 
-* If the publishing status is `Published and Live`_, learners see the current
-  version of the unit.
+* `Published and Live`_ 일 때, 학습자는 학습활동을 볼 수 있다.
 
-* If the publishing status is `Draft (Unpublished Changes)`_, learners see the
-  last published version of the unit if the :ref:`release dates<Release Dates>`
-  for the containing section and subsection have passed.
+* `Draft (Unpublished Changes)`_ 의 상태일 때, 주제의  :ref:`release dates<Release Dates>` 이 이미 지난 경우라면 학습자가 변경된 학습활동을 바로 볼 수 있는 것이 아니라, 변경 이전의 학습활동을 보게 된다.
 
-For more information, see :ref:`Controlling Content Visibility`.
+더 자세한 설명은  :ref:`Controlling Content Visibility` 을 참고하면 된다.
 
 .. _Unit Publishing Status:
 
 ************************************************
-Unit Publishing Statuses
+학습활동 게시 상태
 ************************************************
 
-As a course author, you work with units that have the following statuses.
+학습활동의 게시 상태로는 다음과 같은 종류가 있다.
 
 .. contents::
    :depth: 1
@@ -156,200 +127,160 @@ As a course author, you work with units that have the following statuses.
 .. _Draft (Never Published):
 
 ========================
-Draft (Never published)
+초안 (게시된 적 없음)
 ========================
 
-When you create a new unit and add components to it, the unit's publishing
-status is **Draft (Never Published)**, as shown in the status panel.
+새 학습활동을 만들어 구성요소를 추가할 때, 학습활동의 게시 상태는 초안 (게시된 적 없음) 이며 화면에는 다음과 같이 나타나게 된다.
 
 .. image:: ../../../shared/images/unit-never-published.png
  :alt: Status panel of a unit that has never been published.
  :width: 200
 
-.. note:: The **Release** section applies only to instructor-paced courses. It
- does not appear for units in self-paced courses. For more information about
- instructor-paced and self-paced courses, see :ref:`Setting Course Pacing`.
+.. note:: 고정 일정 형식의 강좌만 공개 항목이 적용된다. 자세한 사항은  :ref:`Setting Course Pacing` 를 참고하면 된다.
 
-In Studio, you see the draft content as you develop the unit. Though you do not
-see the unit in the LMS, you can :ref:`preview the unit<Preview Course
-Content>`.
+학습활동을 학습 관리 시스템에서 못 보더라도,  :ref:`preview the unit<Preview Course Content>` 에서 볼 수 있다.
 
-Learners never see a unit with this status, even after the release date (in an
-instructor-paced course). You must :ref:`publish the unit<Publish a Unit>` for
-it to be included in the LMS.
+학습활동을 학습자가 볼 수 있게 하려면, 반드시 :ref:`publish the unit<Publish a Unit>` 를 해야 한다는 것에 유의한다.
 
 .. _Published and Live:
 
 ====================
-Published and Live
+공개됨
 ====================
 
-You published the unit and have not modified it. The release date for the
-section and subsection have passed (in an instructor-paced course). You, and
-enrolled learners, see the current version of the unit.
+주제와 소주제의 공개일이 지난 경우로, 학습활동을 게시했으며 이후 변경하지 않았을 때의 상태이다. 이때는 강좌 운영팀과 학습자 모두 학습활동을 볼 수 있다.
 
 .. image:: ../../../shared/images/unit-published.png
  :alt: Status panel of a unit that is published.
  :width: 200
 
-The **Release** section applies only to instructor-paced courses. It does not
-appear for units in self-paced courses. For more information, see :ref:`Setting
-Course Pacing`.
+고정 일정 형식의 강좌만 공개 항목이 적용된다. 자세한 사항은  :ref:`Setting Course Pacing` 를 참고하면 된다.
 
 .. _Published Not Yet Released:
 
 ====================================
-Published (not yet released)
+(수정안)아직 공개되지 않음 
 ====================================
 
-You published the unit, but the release date is still in the future. Learners
-cannot see this unit until the release date passes.
+학습활동을 게시한 상태지만, 아직 공개일이 되지 않아 학습자가 볼 수 없다.
 
 .. image:: ../../../shared/images/unit-published_unreleased.png
  :alt: Status panel of a unit that is published but not released.
  :width: 200
 
-This status applies only to instructor-paced courses. It does not apply to
-self-paced courses.
+여기에서는 오직 고정 일정 형식의 강좌에만 적용된다.
 
 .. _Draft (Unpublished Changes):
 
 ===========================
-Draft (Unpublished changes)
+수정안(아직 게시되지 않음)
 ===========================
 
-When you edit a published unit, whether or not it is released, the unit's
-publishing status changes to **Draft (Unpublished Changes)**, as shown in the
-status panel.
+게시한 학습활동을 변경하면, 공개 여부와 관계 없이 학습활동의 상태가 수정안(게시되지 않음) 으로 바뀐다.
 
 .. image:: ../../../shared/images/unit-pending-changes.png
  :alt: Status panel of a unit that has pending changes.
  :width: 200
 
-The **Release** section applies only to instructor-paced courses. It does not
-appear for units in self-paced courses.
+공개 항목은 고정 일정 형식의 강좌에만 적용된다.
 
-In Studio, you see the draft content as you develop the unit. You can
-:ref:`preview the changes to a unit<Preview Course Content>` to test how your
-changes will appear to learners after you publish the unit.
+Studio에서 강좌 운영팀은 작업중인 학습활동을 보게 된다. :ref:`preview the changes to a unit<Preview Course Content>` 를 통해 학습자가 보게 될 화면을 확인할 수도 있다.
 
-If the release date has passed in an instructor-paced course, learners see the
-last published version of the unit. If the release date is in the future,
-learners cannot see your content. You must :ref:`publish the unit<Publish a
-Unit>` for learners to see your changes.
+학습자는 공개일이 지난 경우 해당 학습활동의 마지막(최신) 게시 버전을 보게 된다. 공개일이 지나지 않은 경우에는 학습자가 볼 수 없다. 변경된 버전을 학습자가 보게 하려면, 반드시  :ref:`publish the unit<Publish a Unit>` 를 해야 한다.
 
 .. _Visible to Staff Only:
 
 ===========================
-Visible to Staff Only
+운영팀에게만 공개
 ===========================
 
-When you :ref:`hide a unit from learners<Hide a Unit from Students>`, the
-unit's publishing status changes to **Visible to Staff Only**.
+:ref:`hide a unit from learners<Hide a Unit from Students>` 상태일 때, 학습활동의 게시 상태가 운영팀에게만 공개 로 바뀌게 된다.
 
-The publishing status of a unit also changes to **Visible to Staff Only** if
-you hide the parent :ref:`section<Hide a Section from Students>` or
-:ref:`subsection<Hide a Subsection from Students>` from learners.
+:ref:`section<Hide a Section from Students>` 또는 :ref:`subsection<Hide a Subsection from Students>`  상태이면 학습자가 학습활동을 볼 수 없다.
 
-Learners never see a unit with this status, even if it has been published and
-the release date has passed (in an instructor-paced course).
+게시되었거나 공개일이 지났더라도 학습자가 이 상태의 학습활동은 볼 수 없다.
 
 .. image:: ../../../shared/images/unit-hide.png
  :alt: Status panel of a unit that is hidden from learners.
  :width: 200
 
-The **Release** section applies only to instructor-paced courses. It does not
-appear for units in self-paced courses.
+공개 항목은 고정 일정 형식의 강좌에만 적용된다.
 
 .. _Create a Unit:
 
 ****************************
-Create a Unit
+학습활동 만들기
 ****************************
 
-You can create a unit from the outline or create a unit in the same subsection
-from the unit page.
+강좌개요나 학습활동 페이지에서 학습활동을 만들 수 있다.
 
-To create a unit from the outline, follow these steps.
+강좌개요에서 학습활동을 만들려면, 신규 학습활동을 추가하고 싶은 소주제를 펼친다.
 
-#. In the outline, expand the subsection in which you want to create a new
-   unit.
-#. Select **New Unit** at the bottom of the expanded subsection. A new
-   page opens for you to add components to the unit.
-#. On the unit page, the unit name is selected. Supply an identifying name. A
-   descriptive name can help learners locate content in the course. It can
-   also help you select content when you analyze performance in edX Insights.
-#. :ref:`Add components<Add a Component>` to the new unit as needed.
+#. 개요에서, 새로운 학습활동을 만들기 위해 소주제를 펼친다.
+#. 펼쳐진 소주제의 아래에 있는 새로운 학습활동 을 클릭한다. 새로운 학습활동은 소주제의 끝에 추가된다.
+#. 학습활동 페이지에서, 학습활동명을 선택한다. 활동명을 편집한다.
+#. 필요하다면  :ref:`Add components<Add a Component>` 를 한다.
 
-To create a unit from a unit page, follow these steps.
+학습활동 페이지에서 학습활동을 만드려면.
 
-#. In the **Unit Location** panel, select **New Unit**.
+#. 왼쪽 하단의 학습 활동 위치 에서, 새로운 학습활동 을 추가한다.
 
    .. image:: ../../../shared/images/unit_location.png
     :alt: The Unit Location panel in the Unit page.
     :width: 200
 
-   The unit page for the new unit opens automatically.
+   새로 만든 학습활동의 페이지는 자동으로 열린다.
 
-#. On the unit page, the unit name is selected. Supply an identifying name. A
-   descriptive name can help learners locate content in the course. It can
-   also help you select content when you analyze performance in edX Insights.
+#. 학습활동명을 입력한다.
 
-#. :ref:`Add components<Add a Component>` to the new unit as needed.
+#. 필요하다면,  :ref:`Add components<Add a Component>`  를 시작한다.
 
-You must then :ref:`publish the unit<Publish a Unit>` to make it visible to
-learners.
+새로 만든 학습활동을 학습자가 볼 수 있게 하려면  :ref:`publish the unit<Publish a Unit>` 를 한다.
 
 
 .. _Edit a Unit:
 
 **************
-Edit a Unit
+학습활동 편집하기
 **************
 
-You can edit a unit in the following ways.
+다음 방법으로 학습활동을 편집할 수 있다.
 
 * `Edit the unit name`_
 * :ref:`Develop components<Developing Course Components>`
 * `Reorganize Components in Units`_
 
-When you make any of these changes, if you previously published the unit, the
-state changes to `Draft (Unpublished Changes)`_. You must then :ref:`publish
-the unit<Publish a Unit>` to make your edits visible to learners.
+게시한 학습활동을 편집하면, 공개 여부와 관계 없이 학습활동의 상태가 수정안(아직 게시되지 않음) 으로 바뀐다.
+
+변경된 버전을 학습자가 보게 하려면, 반드시 학습활동 게시하기 해야 한다
 
 ==============================
-Edit the Unit Name
+학습활동명 편집
 ==============================
 
-To edit a unit name, select **Edit** next to the name.
+학습활동명을 바꾸기 위해 학습활동명 옆의 편집을 클릭한다.
 
 .. image:: ../../../shared/images/unit-edit-icon.png
   :alt: The Edit icon for the unit name with the mouseover help showing.
   :width: 300
 
-The name field becomes editable. Enter the new name, and then tab or click
-outside of the field to save the name.
+편집 아이콘을 클릭하면, 제목을 편집할 수 있는 상태가 된다. 새 제목을 입력한 후 탭 키를 누르거나 이름 입력란 밖의 아무 곳이나 클릭하면, 이름이 저장된다.
 
 ==============================
-Reorganize Components in Units
+구성요소 재구성하기
 ==============================
 
-You can reorganize components within a unit by dragging and dropping them to
-new locations.
+마우스를 이용해 구성요소를 원하는 위치로 옮기면, 구성방식을 바꿀 수 있다.
 
-To change the location of a component, move your mouse pointer over the **Drag
-to reorder** handle on the component toolbar. The pointer changes to a four-
-headed arrow. You can then drag the component to the location that you want.
+구성요소를 옮기려면, 구성요소 영역의 오른쪽 상단에 마우스를 갖다 대면 마우스 커서가 십자가로 바뀌는 아이콘이 있다. 
 
-In the image that follows, the handle for the discussion component is selected.
+그 후 원하는 위치로 드래그하면 된다. 다음 이미지에서 마우스 커서가 위치한 아이콘을 말한다.
 
 .. image:: ../../../shared/images/unit-drag-selected.png
   :alt: A discussion component selected to drag it.
   :width: 600
 
-A dashed outline indicates where the component will land when you release the
-mouse button. For example, in the image below, the discussion component is
-being moved to the top of the unit.
+그러면 파란색의 윤곽선이 마우스를 따라 움직이고, 원하는 곳에 마우스를 놓으면 된다. 다음 이미지는 구성요소를 학습활동의 상단으로 움직이려고 할 때를 나타낸다.
 
 .. image:: ../../../shared/images/unit-drag-moved.png
  :alt: A component being dragged to a new location.
@@ -358,35 +289,28 @@ being moved to the top of the unit.
 .. _Preview a Unit:
 
 ****************************
-Preview a Unit
+학습활동 미리보기
 ****************************
 
-You preview a unit to review and test the content before it is visible to
-learners.
+학습자가 학습활동을 보기 전에, 강좌 운영팀이 콘텐츠를 먼저 테스트해볼 수 있다.
 
-You can preview a unit before it is published and before the course is live.
-In a live course, after the unit is published and if there are no pending
-changes, previewing a unit is exactly the same as viewing the live version of
-the unit.
+학습활동을 게시하기 전이라면 학습활동을 미리 볼 수 있다. 그러나 게시되었거나, 변경사항이 없다면 미리 볼 수 없는 대신 학습활동의 적용 결과를 봐야 한다.
 
-To preview the unit, in the unit page, select **Preview**.
+학습활동 페이지에서, 학습활동을 미리보려면 **미리보기** 를 클릭한다.
 
 .. image:: ../../../shared/images/preview_changes.png
  :alt: A course unit page, with the Preview button circled.
   :width: 600
 
-The unit opens in preview mode.
+미리보기 모드에서 학습활동은 이렇게 열린다.
 
 .. image:: ../../../shared/images/preview_mode.png
  :alt: The unit in preview mode in the LMS.
   :width: 400
 
-When you are revising a previously published unit, it can be helpful to preview
-your changes in one browser window and :ref:`view the published unit<View a
-Published Unit>` in a second window.
+게시된 학습활동을 변경할 때 새 창을 띄우면 편리하다. 새 창에서는 미리보기 기능을 활용해 변경사항을 보고, 다른 창으로는 변경 전의 학습활동을 봄으로써 둘을 비교하며 작업하면 유용할 것이다.
 
-For more information about previewing course content, see :ref:`Preview Course
-Content`.
+자세한 사항은  :ref:`Preview Course Content` 를 참고하면 된다.
 
 .. _Publish a Unit:
 
@@ -394,175 +318,152 @@ Content`.
 Publish a Unit
 ****************************
 
-Publishing a unit makes the current version of the unit in Studio available to
-learners. In an instructor-paced course, the release dates for the section and
-subsection must also have passed for learners to access a published unit.
+학습활동을 게시하는 것은, 주제와 소주제의 공개일이 지나면 Studio에 있는 현재 버전을 학습자가 볼 수 있게 한다는 것이다. 고정 일정 형식의 강좌에서 주제와 소주제에 대한 공개일이 지나야만 학습자가 게시된 학습활동을 볼 수 있다.
 
-You publish a unit that has a status of `Draft (Never Published)`_ or `Draft
-(Unpublished Changes)`_. When you publish a unit, the status changes to
-`Published and Live`_ or `Published Not Yet Released`_.
+게시할 대상은 `Draft (Never Published)`_  또는  `Draft (Unpublished Changes)`_ 상태의 학습활동이다. 이러한 상태의 학습활동을 게시하면  `Published and Live`_  또는  `Published Not Yet Released`_  상태가 된다.
 
-You can publish a unit from the unit page or the course outline.
+학습활동 페이지나 강좌 개요에서 학습활동을 게시할 수 있다.
 
-For more information about instructor-paced and self-paced courses, see
-:ref:`Setting Course Pacing`.
 
 =======================================
-Use the Unit Page to Publish a Unit
+학습활동 페이지에서 게시하기
 =======================================
 
-To publish the unit, select **Publish** in the status panel.
+학습활동을 게시하려면, 화면 왼쪽에서 게시 버튼을 클릭한다.
 
 .. image:: ../../../shared/images/unit-publish-button.png
  :alt: Unit status panel with the Publish button indicated.
  :width: 200
 
 =======================================
-Use the Outline to Publish a Unit
+강좌 개요에서 학습활동 게시하기
 =======================================
 
-To publish a unit from the outline, select the **Publish** icon in the box for
-the unit.
+강좌개요에서 학습활동을 게시하려면, 학습활동 영역에서 게시 아이콘을 클릭한다.
 
 .. image:: ../../../shared/images/outline-publish-icon-unit.png
  :alt: The Course Outline page with the Publish icon for a unit indicated.
  :width: 400
 
 .. note::
- The **Publish** icon only appears when there is new or changed content in the
- unit.
+ 게시 아이콘은 새로 추가되거나 변경된 콘텐츠가 있을 때에만 나타난다.
 
 .. _Discard Changes to a Unit:
 
 ****************************
-Discard Changes to a Unit
+학습활동 변경 취소하기
 ****************************
 
-When you modify a published unit, your changes are saved in Studio, though the
-changes are not visible to learners until you publish the unit again.
+게시된 학습활동을 변경하면 변경사항이 Studio에 저장된다. 그러나 게시하지 않는 한, 학습자가 이를 볼 수는 없다.
 
-If you decide that you never want to publish your changes, you can discard the
-changes so that Studio reverts to the last published version of the unit.
+그런데, 이러한 변경을 취소해서 Studio에 가장 최근에 게시된 학습활동이 나오도록 할 수 있다.
 
-To discard changes and revert the Studio version of the unit to the last
-published version, select **Discard Changes** in the status panel.
+이를 원한다면, **변경 취소하기** 를 클릭하면 된다.
 
 .. image:: ../../../shared/images/unit-discard-changes.png
  :alt: Unit status panel with the Discard Changes option indicated.
  :width: 200
 
 .. caution::
- When you discard changes to a unit, the changes are permanently deleted. You
- cannot retrieve discarded changes or undo the action.
+ 학습활동 변경을 취소하면, 변경사항이 영구적으로 삭제된다. 삭제된 변경사항을 되돌릴 수 없음에 주의한다.
 
 .. _View a Published Unit:
 
 ****************************
-View a Published Unit
+게시된 학습활동 보기
 ****************************
 
-To view the last published version of a unit in the LMS, select **View Live
-Version**.
+가장 최근에 학습 관리 시스템에 게시된 학습활동을 보려면, **적용 결과 보기** 를 클릭한다.
 
 .. image:: ../../../shared/images/unit_view_live_button.png
  :alt: Unit page with View Live Version button circled.
  :width: 600
 
-The unit page opens in the LMS in Staff view. You might be prompted to log in
-to the LMS.
+그러면 학습 관리 시스템에서 학습활동을 볼 수 있다. 이를 위해 학습 관리 시스템에서 다시 로그인해야 할 수 있다.
 
-If the unit status is `Draft (Unpublished Changes)`_, you do not see your
-changes in the LMS until you publish the unit again.
+`Draft (Unpublished Changes)`_  상태에서는 학습활동을 게시해야만 학습 관리 시스템에서 볼 수 있다.
 
-If the unit status is `Draft (Never Published)`_, **View Live Version** is not
-enabled.
+학습활동의 상태가  `Draft (Never Published)`_  인 경우, 적용 결과 보기 버튼이 활성화되지 않는다.
+
 
 .. _Hide a Unit from Students:
 
 ****************************
-Hide a Unit from Learners
+학습활동 감추기
 ****************************
 
-You can prevent learners from seeing a unit regardless of the unit status or
-the release schedules of the section and subsection.
+주제와 소주제의 공개일과 학습활동의 공개 상태와 관계 없이, 소주제 내부의 전체 콘텐츠를 감출 수 있다.
 
-For more information, see :ref:`Content Hidden from Students`.
+:ref:`Content Hidden from Students` 에 더 자세한 안내가 있다.
 
-You can hide a unit from learners using the course outline or the unit page.
+강좌 개요나 학습활동 페이지에서 학습활동을 감출 수 있다.
 
 =======================================
-Use the Unit Page to Hide a Unit
+학습활동 페이지에서 학습활동을 감추기
 =======================================
 
-Select the **Hide from students** check box in the status panel.
+학습자에게 **감추기** 의 체크박스를 클릭한다.
 
 .. image:: ../../../shared/images/unit-hide.png
  :alt: Unit status panel with Hide from Students selected.
  :width: 200
 
-The **Release** section applies only to instructor-paced courses. It does not
-appear for units in self-paced courses.
+고정 일정 형식의 강좌만 공개 항목이 적용된다.
 
-For more information, see :ref:`Controlling Content Visibility`.
+자세한 사항은  :ref:`Controlling Content Visibility`  를 참고하면 된다.
 
 =======================================
-Use the Outline to Hide a Unit
+강좌개요 페이지에서 학습활동을 감추기
 =======================================
 
-#. Select the **Configure** icon in the unit box.
+#. 학습활동 영역에서 설정 아이콘을 클릭한다.
 
    .. image:: ../../../shared/images/outline-unit-settings.png
       :alt: The Course Outline page with the Configure icon for a unit
           indicated.
       :width: 600
 
-   The **Settings** dialog box opens.
+   **설정** 창이 열린다.
 
-#. Check **Hide from students**.
+#. 학습자에게 감추기 의 체크박스를 클릭한다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
 =======================================
-Make a Hidden Unit Visible to Learners
+감추었던 학습활동 공개하기
 =======================================
 
-Before you make a hidden unit visible to learners, be aware that course content
-will immediately be visible to learners, as follows.
+감췄던 학습활동을 학습자에게 공개하기 전에, 다음 사항을 주의해야 한다.
 
-* For a hidden unit that previously was published, clearing the check box
-  publishes the current content for the unit. If you made changes to the unit
-  while is was hidden, those draft changes are published.
+* 이전에 게시 상태였던 학습활동은, 체크박스를 해제하면 바로 콘텐츠가 학습자에게 공개된다. 
 
-* When you make a section or subsection that was previously hidden visible to
-  learners, draft content in units is *not* published. Changes you made since
-  last publishing units are not made visible to learners.
+감춰진 동안 학습활동에 변경사항이 있다면, 변경된 학습활동이 게시된다
 
-You can make a hidden unit visible to learners from the unit page or the course
-outline. Follow the instructions above and clear the **Hide from students**
-check box.
+* 이전에 감췄던 주제나 소주제를 학습자에게 공개한다고 해서, 게시한 적이 없는 학습활동까지 게시되는 것은 아니다.
 
-You are prompted to confirm that you want to make the unit visible to learners.
+게시 중이었던 학습활동이라면, 마지막으로 게시했던 학습활동이 공개된다
+
+감추었던 학습활동을 공개하려면, 학습활동 영역에서 설정 아이콘을 클릭한 후, **학습자에게 감추기** 의 체크박스를 해제한다.
+
+학습활동의 공개 여부를 확인하는 메세지가 나타난다.
 
 ********************************
-Delete a Unit
+학습활동 삭제하기
 ********************************
 
-You delete a unit from the course outline.
+강좌개요에서 학습활동을 삭제할 수 있다.
 
-When you delete a unit, you delete all components within the unit.
+학습활동을 삭제하면, 학습활동에 포함된 모든 구성요소들이 삭제된다는 것에 유의해야 한다.
 
 .. warning::
- You cannot restore course content after you delete it. To ensure that you do
- not delete any content that you need later, move the unit to a
- hidden section or subsection instead of deleting it.
+ 삭제 후에는 콘텐츠를 복구할 수 없다. 나중에 필요할 수도 있다고 생각되는 콘텐츠는 삭제하지 말고, 비공개 주제에 옮겨두는 것을 권장한다.
 
-To delete a unit, follow these steps.
+학습활동을 삭제하려면.
 
-#. Select the **Delete** icon in the box for the unit you want to delete.
+#. 삭제하고 싶은 학습활동 영역에서 삭제 아이콘을 클릭한다.
 
    .. image:: ../../../shared/images/unit-delete.png
     :alt: The Course Outline page with the Delete icon for a unit indicated.
     :width: 600
 
-#. When you receive the confirmation prompt, select **Yes, delete this
-   unit**.
+#. 삭제를 확인하는 대화상자가 뜨면, **네, 학습활동을 삭제합니다.** 를 클릭한다.

@@ -1,77 +1,52 @@
 .. _Controlling Content Visibility:
 
 ###################################
-Controlling Content Visibility
+콘텐츠 공개 설정
 ###################################
 
-As a member of the course team, you must carefully control which content is
-visible to learners and when.
+강좌 운영팀은 어느 콘텐츠를 언제 학습자에게 공개할 것인지 신중하게 결정해야 한다. 
 
-You control content visibility through these features in Studio.
 
 .. contents::
   :local:
   :depth: 1
 
-These features work together to control content visibility for learners.
+다음의 설정이 콘텐츠 공개 설정과 관련되어 있다.
 
 .. _Release Dates:
 
 ***********************
-Release Dates
+공개일
 ***********************
 
-You specify release dates and times for the sections and subsections in an
-instructor-paced course. By defining release dates, you ensure that content is
-available to learners on a planned schedule, without requiring manual
-intervention while the course is running.
+고정 일정 형식의 강좌에서 주제와 소주제의 공개일을 설정한다. 공개일을 정해서 콘텐츠가 문제 없이 정확하게 일정대로 학습자에게 공개되도록 할 수 있다.
 
-.. note:: Self-paced courses do not have release dates for sections and
-  subsections. For more information about instructor-paced and self-paced
-  courses, see :ref:`Setting Course Pacing`.
+.. note:: 자율 일정 형식의 강좌는 주제와 소주제에 대한 공개일이 없다. 자세한 사항은 :ref:`Setting Course Pacing` 를 참고하면 된다 
 
-By default, a subsection inherits the release date and time of the section it
-is in. You can change the release date of the subsection to another date.
+기본적으로 소주제는 주제의 공개일을 따르며 원할 경우 바꿀 수도 있다.
 
-Published units are not visible to learners until the scheduled release date
-and time. When the section and subsection have different release schedules,
-published units are not visible until both dates have passed.
+공개일 전에는 학습자가 게시 상태인 학습활동을 볼 수 없다. 주제와 소주제의 공개일이 다른 경우, 각 공개일이 모두 지난 후에야 게시 상태의 학습활동을 볼 수 있다.
 
-Prior to release, content is visible to course team members by
-:ref:`previewing the course <Preview Course Content>` or :ref:`viewing the live
-course as staff<View Your Live Course>`.
+한편 공개일 전이라도, 강좌 운영팀은 :ref:`previewing the course <Preview Course Content>` 나  :ref:`viewing the live course as staff<View Your Live Course>` 를 통해 콘텐츠를 볼 수 있다.
 
-.. note:: The release times that you set, and the times that learners see,
-   are in Coordinated Universal Time (UTC). You might want to verify that you
-   have specified the times that you intend by using a time zone converter such
-   as `Time and Date Time Zone Converter
-   <http://www.timeanddate.com/worldclock/converter.html>`_
+.. note:: 모든 날짜는 UTC를 기준으로 표기되며  `Time and Date Time Zone Converter <http://www.timeanddate.com/worldclock/converter.html>`_ 를 이용해 다시 한번 확인하는 것이 좋다.
 
-For more information about setting release dates in an instructor-paced course,
-see the following topics.
+자세한 사항은 다음을 참고하면 된다.
 
 * :ref:`Set a Section Release Date`
 * :ref:`Set a Subsection Release Date`
 
 ***********************
-Unit Publishing Status
+학습활동의 게시 상태
 ***********************
 
-You publish units to make them visible to learners. In both instructor-paced
-and self-paced courses, units must be published to be visible to learners.
-Learners see the last published version of a unit if the section and subsection
-it is in are released.
+학습자가 볼 수 있게 하려면 학습활동을 게시해야 한다. 주제와 소주제가 공개된 상태라면, 학습자가 가장 최근에 게시된 버전을 볼 수 있다.
 
-Learners do not see units that have never been published, and they do not see
-unpublished changes to units or components within units. Therefore, you can
-make changes to units in released subsections without disrupting the learner
-experience.
+학습자는 항상 게시된 학습활동만을 볼 수 있다. 만약 학습활동과 구성요소를 변경하고 이를 게시하지 않으면, 학습자는 변경 이전의 상태를 보게 된다.
 
-For more information, see :ref:`Unit Publishing Status`.
+주제나 소주제의 모든 변경사항을 한꺼번에 게시할 수도 있고, 개별적으로 게시할 수도 있다.
 
-You can publish all changes in a section or subsection at once, or publish
-changes to individual units. For more information about publishing units, see
-the following topics.
+이에 대해서는 다음 링크에 자세히 안내되어 있다.
 
 * :ref:`Publish all Units in a Section`
 * :ref:`Publish all Units in a Subsection`
@@ -81,148 +56,104 @@ the following topics.
 .. _Content Hidden from Students:
 
 *****************************
-Content Hidden from Learners
+콘텐츠 감추기
 *****************************
 
-You can hide content from learners in both instructor-paced and self-paced
-courses. Such content is never visible to learners, regardless of the release
-and publishing status.
+학습자에게 감추기 설정을 이용하면, 공개나 게시 상태와 관계 없이 학습자가 콘텐츠를 볼 수 없다.
 
-You might hide a unit from learners, for example, when that unit contains an
-answer to a problem in another unit of that subsection. After the problem's due
-date, you could make the unit with the answer visible.
+예를 들어, 소주제 안에 답을 가지고 있는 문제를 추가할 경우, 이 학습활동을 학습자에게 감춰야 할 필요가 있을 것이다. 그리하여 학습자가 문제를 풀 수 있는 기간이 지난 후, 이를 공개할 수 있다. 이러한 방식으로 교수자 및 강좌 운영팀은 이러한 방식으로 학습활동을 활용하면 된다.
 
-You could also hide a unit from learners if you wanted to use that unit to
-provide instructions or guidance meant only for the course team. Only course
-team members would see that unit in the course.
+.. note:: 성적에 반영되는 콘텐츠, 소주제 및 주제는 감추지 않는 것이 좋다. 플랫폼에서 성적 처리가 진행될 때 학습자에게 감추어진 콘텐츠는 반영이 되지 않기 때문이다. 자세한 사항은  :ref:`Hiding Graded Content` 를 참고하면 된다.
 
-.. note:: As a best practice, do not hide sections, subsections, or units that
-   contain graded content. When the platform performs grading for any learner,
-   the grading process does not include problems that a learner does not have
-   access to, in other words, any content that is hidden from that learner.
-   For more details, see :ref:`Hiding Graded Content`.
-
-You can hide content at different levels, as described in the following topics.
+감추기 설정에도 여러 수준이 있다.
 
 * :ref:`Sections<Hide a Section from Students>`
 * :ref:`Subsections<Hide a Subsection from Students>`
 * :ref:`Units<Hide a Unit from Students>`
 
 .. note::
- When you make a previously hidden section or subsection visible to learners,
- some content in the section or subsection might remain hidden. If you have
- explicitly set a subsection or unit to be hidden from learners, this
- subsection or unit remains hidden even when you change the visibility of the
- parent section or subsection. Unpublished units remain unpublished, and
- changes to published units remain unpublished.
+ 이전에 감추었던 주제나 소주제를 공개한다고 해서, 게시한 적이 없는 학습활동까지 게시되는 것은 아니다. 또한 게시했던 학습활동이라도 변경한 후 다시 게시하지 않는다면, 학습자는 변경 이전에 게시했던 버전의 학습활동을 볼 것이다.
 
 
 .. _Hiding Graded Content:
 
 =====================
-Hiding Graded Content
+성적에 반영되는 콘텐츠 감추기
 =====================
 
-Grading is affected if you hide a section, subsection, or unit that contains
-graded problems. When the platform performs grading for any learner, the grading
-process does not include problems that the learner does not have access to, in
-other words, any content that is hidden from that learner.
+성적에 반영되는 문제, 주제 혹은 소주제를 감추게 되면 성적 처리에 영향을 준다. 플랫폼에서 성적 처리가 진행될 때 학습자에게 감추어진 콘텐츠는 반영이 되지 않기 때문이다.
 
-.. note:: Grading is not affected for timed exams when you select the setting to
-   keep timed exam content hidden from learners even after the exam due date has
-   passed. For more information, see :ref:`Timed Exams`.
+.. note:: 시간제한이 있는 시험의 경우 내용을 공개하지 않기 위해 감추기 설정을 해도 성적 처리에 영향을 주지 않는다.
 
 
 .. _Content Groups:
 
 **************
-Content Groups
+콘텐츠 그룹
 **************
 
-If you have cohorts enabled in your course, you can use content groups to
-designate particular components in your course as visible only to specific
-groups of learners.
+강좌에서 학습집단을 활성화하면, 특정 구성요소가 특정 학습자 집단에게만 보이게 할 수 있다.
 
-For details, see :ref:`About Content Groups` and :ref:`Cohorted Courseware
-Overview`.
+:ref:`About Content Groups` 와  :ref:`Cohorted Courseware Overview`  에 더 자세한 안내가 있다.
 
 .. _configuring_prerequisite_content:
 
 *******************************************
-Configuring Prerequisite Course Subsections
+선수 강좌 소주제 설정하기
 *******************************************
 
-You can hide subsections of your course until learners complete other,
-prerequisite subsections. If a subsection has a prerequisite, it is not
-visible in the course navigation unless a learner has earned a minimum score in
-the prerequisite subsection.
+학습자가 각기 다른 선수 소주제를 완료할 때까지 소주제를 감춰둘 수 있다. 만약 소주제가 선수 소주제가 있다면 통과할 때까지 공개되지 않는다.
 
 .. _enabling_subsection_gating:
 
 =================================
-Enable Subsection Prerequisites
+선수 소주제 허용하기
 =================================
 
-To enable prerequisite subsections in a course, follow these steps.
+선수 소주제를 허용하기 위해서.
 
-#. From the **Settings** menu, select **Advanced Settings**.
+#. 설정 메뉴에서 고급 설정을 선택한다.
 
-#. In the **Enable Subsection Prerequisites** field, enter ``true``.
+#. 선수 소주제 만들기 필드에  ``true`` 를 써넣는다.
 
-#. Select **Save Changes**.
+#. 저장하기를 클릭한다.
 
 .. _creating_a_prerequisite_subsection:
 
 ==================================
-Create a Prerequisite Subsection
+선수 소주제 만들기
 ==================================
 
-To prevent learners from seeing a subsection of your course until they have
-earned a minimum score in a prerequisite subsection, follow these steps.
+선수 소주제를 만들기 위해서.
 
 .. note::
-    Make sure that you configure subsection prerequisites in the order that you
-    intend for learners to encounter them in the course content. The
-    prerequisite configuration controls do not prevent you from creating a
-    circular chain of prerequisites that will permanently hide them from
-    learners.
+    학습자가 완료해야 하는 순서대로 선수 소주제를 설정하는 것이 중요하다. 순서에 오류가 있어 학습자가 보지 못하는 선수 소주제를 만들 수 없다.
 
-#. Enable subsection prerequisites for your course. For more information, see
-   :ref:`enabling_subsection_gating`.
+#. 선수 소주제를 허용한다.
 
-#. Select the **Configure** icon for the subsection that must be completed
-   first. This is the prerequisite subsection.
+#. 선수 소주제의 설정 아이콘을 클릭한다.
 
    .. image:: ../../../shared/images/subsections-settings-icon.png
      :alt: A subsection in the course outline with the configure icon
       indicated.
      :width: 600
 
-#. Select the **Access** tab.
+#. **접속** 탭을 선택한다.
 
-#. Select **Use as a Prerequisite** > **Make this subsection
-   available as a prerequisite to other content**.
+#. **선수 소주제로 사용** > 이 소주제를 다른 콘텐츠의 선수 소주제로 만들기를 클릭한다.
 
-#. Select **Save**.
+#. 저장을 클릭한다.
 
-#. Select the **Configure** icon for the subsection that
-   will be hidden until the prerequisite is met.
+#. 선수 소주제를 완료할 때까지 감춰질 소주제의 설정 아이콘을 클릭한다.
 
-#. Select the **Access** tab.
+#. **접속** 탭을 선택한다.
 
-#. In the **Limit Access** > **Prerequisite** menu, select the name of the
-   subsection you want to specify as the prerequisite.
+#. **접속 제한** > **선수 소주제** 메뉴에서 선수 소주제를 선택한다.
 
-#. Enter the percent of the total score that learners must earn in the
-   **Minimum Score** field. A learner's score for all problems in the
-   prerequisite subsection must be equal to or greater than this percentage in
-   order to satisfy the prerequisite and display the current subsection.
+#. 최소 점수 필드에 학습자가 받아야 할 성적을 입력한다. 이 소주제를 보기 위해선 선수 소주제의 모든 문제에 대한 점수가 이 값보다 커야 한다.
 
-   For example, if the prerequisite subsection includes four problems and each
-   problem is worth the same number of points, set the **Minimum Score** to
-   ``75`` to require at least three correct answers.
+   예를 들어 만약 선수 소주제에 문제가 4개 있고 각 문제가 같은 점수라면 최소 성적 75점을 받기 위해선 3개의 문제를 맞춰야 하는 것이다.
 
-#. Select **Save**.
+#. 저장을 클릭한다.
 
-#. In the course outline, if a subsection has a prerequisite, the prerequisite
-   name appears under the subsection name.
+#. 강좌 요약에서 소주제가 선수 소주제가 있다면 소주제 아래에 이름이 표시된다.
