@@ -1,93 +1,69 @@
 .. _Working with Video Components:
 
 #############################
-Working with Video Components
+동영상 구성요소
 #############################
 
-This section describes how to include videos as part of the content of your
-course.
+다음 장은 강좌 콘텐츠의 일부로 동영상을 추가하는 방법을 소개한다.
 
 .. contents::
  :local:
  :depth: 1
 
-You can also include an "about" video for your course. A course about video
-appears on learner dashboards to market your course. For more information, see
-:ref:`Add a Course Video`.
+강좌 소개 영상도 추가할 수 있다. 강좌 소개 영상은 학습자 대쉬보드에 나타나며 강좌 홍보에 도움을 준다. 자세한 사항은 :ref:`Add a Course Video` 를 참고하면 된다. 
 
 ************************
-Overview
+개관
 ************************
 
-You can create videos and add them to a course to supplement active
-learning components, such as discussions and problems. Videos can be
-effective for a number of purposes, such as presenting motivating
-material, showing experiments, and reducing cognitive load for complex
-content.
+효과적인 학습을 위해 강좌 동영상을 만들 수 있으며 토의 및 문제 등과 같은 구성요소를 강좌에 추가할 수 있다. 동영상은 학습 의욕을 키우고 실험을 보여주는 등 다양한 효과를 지니고 있다.
 
-For more information about how learners can interact with course videos, see
-:ref:`learners:Video Player` in the *EdX Learner's Guide* or
-:ref:`openlearners:Video Player` in the *Open edX Learner's Guide*.
+자세한 사항은 학습자 가이드에서 K-MOOC 플레이어에서 동영상 보기를 참고하면 된다.
 
 =====================
-When to Use a Video
+동영상을 언제 사용하는가
 =====================
 
-Before creating video content, decide whether video is the best medium by
-asking the following questions.
+동영상을 만들기 전에 스스로에게 다음과 같은 질문을 하여 과연 동영상이 적합한지 생각해봐야 한다.
 
-* Should the content be conveyed through text?
-* Through an interactive demonstration?
-* By having learners work through a problem?
+* 콘텐츠가 글로는 전달될 필요는 없는가?
+* 콘텐츠가 상호작용성을 필요로 하지는 않는가?
+* 학습자가 문제를 풀어야 하지는 않는가?
 
 =============
-Video Length
+동영상 길이
 =============
 
-Keep videos as short as possible.
-
-Learners are more likely to finish watching a video if it is no more than 5-10
-minutes long.
+동영상은 최대한 짧은 것이 좋다. 5-10분이 넘어가면 학습자가 끝까지 보지 않을 가능성이 높아진다.
 
 ====================
-Video Accessibility
+동영상 접근성
 ====================
 
-Be sure to review :ref:`Creating Accessible Media` before you create videos for
-your course.
+동영상을 만들기 전에  :ref:`Creating Accessible Media` 를 다시 한번 검토하는 것이 좋다.
 
 ========================================
-Allowing Learners to Download Videos
+동영상 다운로드 허용
 ========================================
 
-To help course teams protect video assets, the edX video player hides video
-URLs by default. This functionality is in effect for all video
-files, including YouTube videos and videos that are hosted in other locations.
+동영상 저작권 보호를 위해 K-MOOC 플레이어는 기본적으로 동영상 URL을 감춘다. 이는 유튜브 등 외부 동영상을 포함한 모든 동영상에 해당된다.
 
-You can allow learners to download videos by selecting the **Video Download
-Allowed** option for your video components.
+동영상에 대해 동영상 다운로드 허용을 선택해 학습자가 다운로드 받을 수 있게 만들 수 있다.
 
-For more information about posting videos to hosting sites other than YouTube,
-see :ref:`Post the Video Online`.
+유튜브 외의 사이트에서 동영상을 가져오는 것에 대한 자세한 사항은  :ref:`Post the Video Online` 를 참고하면 된다.
 
-For more information about options that you can set when you create a video
-component, see :ref:`Video Advanced Options` under :ref:`Create a Video
-Component`.
+동영상을 만들 때 설정할 수 있는 옵션에 대해선  :ref:`Video Advanced Options` 아래의  :ref:`Create a Video Component` 을 참고하면 된다.
 
 .. _Create the Video:
 
 ************************
-Step 1. Create the Video
+1단계. 동영상 만들기
 ************************
 
-Your videos can contain whatever content you want to include in the course. The
-`Creating Videos`_ section of `edX101 Overview of Creating an edX Course`_ has
-some helpful pointers for creating good video content.
+동영상은 강좌에 넣고 싶은 어떤 콘텐츠라도 포함할 수 있다.  `edX101 Overview of Creating an edX Course`_ 주제는 좋은 동영상 콘텐츠를 만들기 위한 유용한 정보를 담고 있다.
 
-When you create videos, follow Richard E. Mayer's `12 Principles of Multimedia
-Learning <http://hartford.edu/academics/faculty/fcld/data/documentation/technology/presentation/powerpoint/12_principles_multimedia.pdf>`_. The
-principles in this document are based on extensive experimental research of
-student learning.
+동영상을 만들 땐 Richard E. Mayer의  `12 Principles of Multimedia Learning <http://hartford.edu/academics/faculty/fcld/data/documentation/technology/presentation/powerpoint/12_principles_multimedia.pdf>`_  을 참고하는 것이 좋다. 이 문서는 모두 수 차례 실험을 통해 정립된 것이다
+
 
 .. _Compression Specifications:
 
@@ -95,16 +71,15 @@ student learning.
 Recommended Compression Specifications
 ======================================
 
-EdX recommends the following video compression specifications. These
-specifications are recommended but not required.
+동영상을 만들 때 다음 압축 사양을 권장한다. 이 사양은 권장사항이며 필수적인 것은 아니다.
 
 .. list-table::
    :widths: 10 20 20
    :stub-columns: 1
 
    * - Output
-     - **Publish to YouTube**
-     - **Publish downloadable file to AWS S3**
+     - **YouTube에 게시하기**
+     - **AWS S3에 다운로드 가능한 파일 올리기**
    * - Codec
      - H.264 .mp4
      - H.264 .mp4
@@ -127,194 +102,125 @@ specifications are recommended but not required.
      - AAC 44.1 / 192 kbps
      - AAC 44.1 / 192 kbps
 
-.. note:: Typically you export at the same frame rate that was used when you
- created the media file. For example, if you create the file in a country that
- uses the PAL system, you export at 25 fps instead of the NTSC standard of
- 29.97 fps.
+.. note:: 일반적으로 미디어 파일을 만들 때 사용된 동일한 프레임 속도로 동영상을 내보낼 수 있다. 예를 들어 PAL 시스템을 사용하는 국가에서 동영상 파일을 만들 경우 29.97의 NTSC 표준 대신 25 fps에서 내보낸다.
 
 .. _Video Formats:
 
 =======================
-Supported Video Formats
+동영상 포맷
 =======================
 
-The edX video player supports videos in .mp4, .mpeg, .webm, and .ogg format.
-However, to help make sure all standard browsers can play your video, edX
-strongly recommends that you use the **.mp4 format**.
+K-MOOC 동영상 플레이어는 .mp4,.webm,.mpeg, .ogg 형식의 동영상을 지원한다. 그러나, 모든 표준 브라우저에서 동영상을 재생할 수 있는지 확인하기 위해, .mp4 또는.webm 형식 사용 을 적극 권장한다.
 
 .. _Create Transcript:
 
 *********************************************
-Step 2. Create or Obtain a Video Transcript
+2단계. 동영상 자막 만들기 및 찾기
 *********************************************
 
-Transcripts are required for your videos. Transcripts help learners with
-hearing impairments understand audio content, and they are helpful for learners
-who speak other languages. You can allow learners to download transcripts so
-that they can read them offline. You associate a transcript with a video when
-you create the video component.
+동영상 자막은 필수적이다. K-MOOC 강좌는 접근성의 문제로 한글자막과 영어자막 모두 제공하는 것이 원칙이다. 자막은 모국어 이외의 언어로 동영상을 보거나, 동영상을 볼 수 없거나, 또는 동영상 콘텐츠를 검토하기 원하는 학습자에게 유용하다. 학습자가 오프라인으로 자막을 볼 수 있도록 자막 다운로드를 허용할 수 있다. 동영상 구성요소를 만들 때 동영상과 함께 자막을 연결하도록 한다.
 
-Timed transcripts in the SubRip Text (.srt) format are strongly recommended.
-Learners can select the **Show transcript** (") icon in the video player's
-control bar to show the transcript next to the video. The transcript
-automatically scrolls as the video plays, and learners can select a line in the
-transcript to jump to the point in the video where that word is spoken.
+재생시간이 포함된 SubRip 텍스트 (.srt) 형식의 자막이 권장된다. 학습자는 녹취록 보기 아이콘을 클릭하여 동영상 옆에 녹취록을 띄울 수 있다. .srt 형식의 자막은 동영상 옆에서 동영상이 재생되면 자동으로 스크롤된다. 학습자는 자막에서 단어를 클릭하여 동영상 내에서 그 단어가 발화된 지점으로 이동할 수 있다.
 
-Learners can also choose to show the transcript file as overlaid closed
-captions for the video by selecting the **CC** icon in the
-video player's control bar.
+학습자는 동영상 플레이어의 재생 바에서 CC아이콘을 선택하여 녹취록을 자막 형태로 볼 수도 있다.
 
-To create or obtain a transcript in .srt format, you can work with a company
-that provides captioning services.
 
 .. only:: Partners
 
-  EdX works with `3Play Media <http://www.3playmedia.com>`_ and
-  `Cielo24 <http://www.cielo24.com/>`_. `YouTube <http://www.youtube.com/>`_
-  also provides captioning services.
+  .srt 형식의 자막을 만들거나 찾기 위해, 캡션 서비스를 제공하는 회사와 함께 작업할 수 있다. EdX는 3Play Media, Cielo24 와 협력하고 있으며, YouTube 또한 서비스를 제공한다
 
-When you upload an .srt file, a .txt file is created automatically. You can
-allow learners to download these transcript files. If you allow your learners
-to download transcripts, the video player includes a **Download transcript**
-option. Learners can then select either **SubRip (.srt) file** or **Text (.txt)
-file** to download the .srt or .txt transcript.
+.srt 파일을 업로드 할 때 .txt 파일이 자동으로 만들어진다. 학습자가 자막 파일을 다운로드 하도록 허용할 수 있다. 학습자가 자막을 다운로드 하는 것을 허용하는 경우, 동영상 아래에 자막 다운로드 버튼이 나타난다. 학습자는 .srt 또는 .txt 자막을 다운로드 하기 위해 SubRip (.srt) 파일 또는 텍스트 (.txt) 파일 을 선택할 수 있다.
 
 .. image:: ../../../shared/images/Video_DownTrans_srt-txt.png
    :width: 500
    :alt: Video status bar showing .srt and .txt transcript download options.
 
 ================================
-Naming SubRip Text Files
+SubRip 자막 파일 이름 짓기
 ================================
 
-To prevent errors when you upload your video transcripts, edX recommends the
-following conventions for naming your transcript files.
+자막 업로드 중의 오류를 방지하기 위해 K-MOOC은 다음과 같은 이름 형식을 권장한다.
 
-* Each transcript file should have a unique identifying name. The name should
-  be unique not only across the transcript files for your videos, but across
-  all of your course uploads.
+* 각 자막 파일은 서로 다른 이름이어야 하고 동영상 자막만이 아닌 다른 강좌 업로드 파일들과도 달라야 한다.
 
-* File names that include special characters, such as ç, å, or ó, cause the
-  upload option to result in an error. Before you upload a transcript, change
-  the file name to remove the special characters.
+* 특수문자가 포함된 이름은 오류 발생 가능성이 있으므로 포함하지 않는다.
 
-* Make sure that the file type, ``.srt``, is in lower case.
+* 확장자 ``.srt`` 가  소문자여야 한다.
 
-* Other than to separate the identifying name from the ``.srt`` file type, file
-  names should not include periods.
+* 확장자 ``.srt`` 를 제외하고 이름에 .이 들어가면 안된다.
 
 =========================================
-Providing Transcripts in Other Formats
+다른 형식의 자막 제공
 =========================================
 
-You can provide transcripts in formats other than the .srt format, such as
-.pdf, and you can provide additional transcript files in different languages.
-For more information about these options, see :ref:`Additional Transcripts`.
+또한 다른 형식 (예: .pdf 등)으로 자막을 제공할 수 있고, 다른 언어 자막도 제공할 수도 있다. 자세한 정보는  :ref:`Additional Transcripts` 에 있다.
 
-.. note:: Historically, some courses used .sjson files for video transcripts.
- Use of .sjson files is no longer recommended; however, if transcripts in your
- course use this format, see :ref:`Steps for sjson files`.
+.. note:: .sjson 파일의 동영상 자막을 사용한 강좌가 있기도 하나, .sjson 파일 사용은 권장하지 않는다. 만약 이 형식의 자막을 사용하는 경우  :ref:`Steps for sjson files`  를 참조한다.
 
 .. _Post the Video Online:
 
 *****************************
-Step 3. Post the Video Online
+3단계. 온라인 동영상 게시하기
 *****************************
 
-All course videos should be posted to YouTube. By default, the edX video player
-accesses your YouTube videos.
+K-MOOC에서는 CDN서비스를 제공하고 있어, K-MOOC에서 바로 강좌를 업로드할 수 있다. 기본적으로 K-MOOC 동영상 플레이어는 YouTube 동영상에 접근 가능하며, 원하는 경우 YouTube에 동영상을 게시하여 링크를 통해 K-MOOC에 동영상을 게시할 수 있다.
 
-Because YouTube is not available in all locations, however, edX recommends that
-you also post copies of your videos on a third-party hosting site such as
-`Amazon S3 <http://aws.amazon.com/s3/>`_. When a learner views a video in your
-course, if YouTube is not available in that learner's location or if the
-YouTube video does not play, the video on the backup site starts playing
-automatically. You can also allow the learners to download the video from the
-backup site.
+그러나 YouTube를 사용할 수 없는 곳이 있기 때문에, `Amazon S3 <http://aws.amazon.com/s3/>`_  혹은 K-MOOC  CDN과  같은 외부 사이트에 강좌 동영상의 자막을 게시할 수 있다. 학습자가 강좌에서 동영상을 볼 때, 학습자의 위치에서 YouTube를 사용할 수 없는 경우 또는 YouTube 동영상이 재생되지 않는 경우, 백업 사이트에 있는 동영상이 자동으로 재생되기 시작한다. 또한 학습자가 백업 사이트에서 동영상을 다운로드하도록 허용할 수 있다.
 
-After you post your video online, make sure you have the URL for that copy of
-the video. If you post copies of your video in more than one place, make sure
-you have the URL for each video location.
+동영상을 온라인에 게시한 후, 동영상에 대한 URL이 있는지 반드시 확인한다. 동영상 여러개를 올릴 경우, 각 동영상 위치에 대한 별도의 URL을 가지고 있는지 확인해야 한다.
 
 ==================
 YouTube
 ==================
 
-After you create your video, upload the video to `YouTube
-<http://www.youtube.com/>`_.
+동영상을 제작하면 K-MOOC CDN서비스를 이용하여 바로 업로드하거나 `YouTube <http://www.youtube.com/>`_  에 동영상을 업로드한다.
 
 ==================
-Other Sites
+다른 사이트
 ==================
 
-You can use any video backup site that you want. However, keep in mind that the
-site where you post the videos might need to handle high traffic volume.
+모든 동영상 백업사이트를 사용할 수 있다. 그러나, 동영상을 게시하는 사이트는 심각한 트래픽을 겪을 수 있음을 유념해야 한다.
 
-.. note:: The URL for the video that you post on a third-party site must end
- in .mp4, .mpeg, .webm, or .ogg. (To help make sure all standard browsers can
- play your video, edX **strongly** recommends that you use .mp4 format.) EdX
- cannot support videos that you post on sites such as Vimeo.
+.. note:: 다른 사이트에 게시하는 동영상에 대한 URL은 .mp4,.webm,.mpeg, .ogg 로 끝나야 한다. (모든 표준 브라우저가 동영상을 재생할 수 있도록, .mp4 또는.webm 형식을 사용하도록 적극 권장한다) Vimeo와 같은 사이트에 게시하는 동영상은 지원하지 않는다.
 
-If you (or your beta testers or learners) encounter an error when you view a
-course video, it might be the result of one of these browser-related problems.
+만일 강좌 동영상을 볼 때 오류가 발생한다면 브라우저 관련 문제일 수도 있다.
 
-* Verify that the viewer's browser is up to date. For example, some older
-  versions of the Mozilla Firefox browser did not play .mp4 video files. These
-  problems do not occur in more recent browser versions.
+* 브라우저가 최신 버전인지 확인한다. 예를 들어 Mozilla Firefox 브라우저의 구버전은 .mp4 파일이 재생되지 않으나, 최신 버전에선 같은 문제가 발생하지 않는다.
 
-  For more information, see `Media formats supported by the HTML audio and
-  video elements`_.
+  자세한 사항은  `Media formats supported by the HTML audio and video elements`_ 을 참고하면 된다.
 
-* Verify that file metadata, particularly the MIME type, is correctly set on
-  the host site. For example, when edX offered support for Internet Explorer 10
-  browsers, it was found that videos did not play if the MIME type was not set.
-  The HTTP header ``Content-Type`` had to be set to video/mp4 for an .mp4 file.
-
-  As an example of how you might set metadata on a video backup site, the
-  *Console User Guide* for the Amazon Simple Storage Service provides this
-  information about `editing object metadata`_.
+* 특히 MIME 타입의 파일 메타데이터가 호스트 사이트에 올바르게 설정되어있는지 확인한다. 예를 들어 인터넷 익스플로러 10 브라우저 중에 MIME 타입이 설정이 안되어 있다면 동영상 재생이 안될 수도 있다. HTTP 헤더에서 Content-Type은 .mp4 파일의 경우 video/mp4로 설정하여야 한다.
 
 
 .. _Create a Video Component:
 
 ********************************
-Step 4. Create a Video Component
+4단계. 동영상 구성요소 만들기
 ********************************
 
 .. The following note provides a cross reference to information that applies only to courses running on edx.org. - Alison 24 Jun 15
 
 .. only:: Partners
 
-    .. note:: If you are building a course to run on the edx.org site, in
-     place of this step, you follow the :ref:`Add the edX Video ID to a Video
-     Component` procedure. For more information, see the :ref:`Processing Video
-     Files Index` section.
-
+    .. note:: K-MOOC에서 사용할 강좌를 만들고 있다면 :ref:`Add the edX Video ID to a Video Component` 에 나와있는 절차를 따르면 된다. 자세한 사항은 :ref:`Processing Video Files Index` 를 참고하면 된다.
 
 To add a video and its transcript to your course, follow these steps.
 
-#. Under **Add New Component**, select **Video**.
+#. 신규 구성요소 추가 아래에, 동영상 을 클릭한다.
 
-#. When the new video component appears, select **Edit**. The video editor
-   opens to the **Basic** page.
+#. 새로운 동영상 구성요소가 보이면 편집 을 클릭한다. 동영상 편집기는 기본 탭이 열린다.
 
    .. image:: ../../../shared/images/VideoComponentEditor.png
     :alt: Image of the video component editor.
     :width: 600
 
-   You replace the default values with your own.
+   기본 값을 바꿀 수 있다.
 
-#. In the **Component Display Name** field, enter an identifying name for this
-   video. This name appears as a heading above the video in the LMS, and it
-   identifies the video for you in Insights.
+#. 표시될 구성요소 이름 입력칸에 동영상 이름을 입력한다. 이 이름은 LMS에서 동영상 위에 나타나게 되고 Insights에서 이 이름을 이용해 동영상을 찾을 수 있다.
 
-   The default display name for new video components is "Video". Changing the
-   default to a unique, descriptive display name can help you and your learners
-   identify different videos quickly and accurately. If you delete this default
-   and do not enter an identifying name, the platform supplies "video" for you.
+   동영상 구성요소의 기본 이름은 “동영상”이다. 기본 이름을 바꿔야 동영상 내용을 쉽게 알 수 있다. 만약 기본 이름을 지우고 새 이름을 입력하지 않는다면 플랫폼은 “video”라는 이름을 사용할 것이다.
 
-#. In the **Default Video URL** field, enter the URL of the video. Example
-   URLs follow.
+#. 동영상 URL 기본값 입력칸에서 동영상 URL을 입력한다. 예를 들어 URL은 다음과 같을 것이다.
 
    ::
 
@@ -322,181 +228,104 @@ To add a video and its transcript to your course, follow these steps.
       http://www.youtube.com/watch?v=OEoXaMPEzfM
       https://s3.amazonaws.com/edx-course-videos/edx-edx101/EDXSPCPJSP13-G030300.mp4
 
-   .. note:: To be sure that all learners can access a video, you can
-      create multiple versions that use different encodings or hosting
-      services. After you post different versions on the Internet, you add each
-      URL below the default video URL. **These URLs cannot be YouTube URLs**.
-      To add a URL for another version, select **Add URLs for additional
-      versions**. The first listed video that is compatible with the learner's
-      computer plays.
+   .. note:: 모든 학습자가 동영상에 접근할 수 있도록 여러 인코딩 형식의 동영상을 모두 제공할 것을 권장한다. 이렇게 하려면 동영상의 추가 버전을 인터넷에 올리고, 기본 동영상 URL 아래에 추가 동영상의 URL을 더할 수 있다. 이때 URL은 YouTube URL이 될 수 없다. 다른 버전에 대한 URL을 추가하려면 다른 버전 URL 추가하기 를 클릭한다. 학습자의 컴퓨터와 호환되는 첫 번째로 나열된 동영상이 재생될 것이다.
 
-#. Next to **Default Timed Transcript**, select an option.
+#. **기본 자막** 의 옵션을 선택한다.
 
-   * If edX already has a transcript for this video, Studio automatically
-     finds the transcript and associates the transcript with the video. This
-     situation can occur when you reuse a video from an existing course.
+   * 기존의 강좌에 있는 동영상을 이용하는 경우와 같이 K-MOOC에 이미 동영상 자막이 있는 경우 Studio는 자동으로 동영상을 찾아서 자막을 연결한다. 이것은 기존 강좌 내에서 동영상을 재활용할 경우에만 해당한다.
 
-     If you want to modify the transcript, select **Download Transcript for
-     Editing**. You can then make your changes and upload the new file by
-     selecting **Upload New Transcript**.
+     자막을 수정할 경우 편집을 위해 자막 다운로드 를 클릭한다. 변경 내용을 확인하고 신규 자막 업로드 를 클릭하여 새 파일을 업로드 수 있다.
 
-   * If edX does not have a transcript for the video, but YouTube has a
-     transcript, Studio automatically finds the YouTube transcript and asks if
-     you want to import it. To use this YouTube transcript, select **Import
-     YouTube Transcript**. (If you want to modify the YouTube transcript,
-     import the YouTube transcript into Studio, and then select **Download
-     Transcript for Editing**. You can then make your changes and upload the
-     new file by selecting **Upload New Transcript**.)
+   * K-MOOC에는 동영상 자막이 없지만 YouTube에는 자막이 있는 경우, Studio가 자동으로 YouTube 자막을 찾아서 가져올 것인지 묻는다. YouTube 자막을 사용하려면 YouTube 자막 가져오기 를 클릭한다. (YouTube 자막을 수정하려는 경우 YouTube 자막을 스튜디오로 가져온 다음 편집을 위해 자막 다운로드 를 클릭한다. 변경 후 신규 자막 업로드하기 를 클릭하여 새로운 파일을 업로드 할 수 있다.)
 
-   * If both edX and YouTube have a transcript for your video, but the edX
-     transcript is out of date, you receive a message asking if you want to
-     replace the edX transcript with the YouTube transcript. To use the YouTube
-     transcript, select **Yes, replace the edX transcript with the YouTube
-     transcript**.
+   * K-MOOC와 YouTube 모두 동영상 자막을 가지고 있지만 K-MOOC의 자막이 최신 버전이 아니라면, K-MOOC에 있는 자막을 YouTube 자막과 교체할 것인지를 묻는 메시지를 보게된다. YouTube 자막을 사용하려면 **네, K-MOOC 자막을 YouTube 자막으로 교체합니다.** 를 클릭한다.
 
-   * If neither edX nor YouTube has a transcript for your video, and your
-     transcript uses the .srt format, select **Upload New Transcript** to
-     upload the transcript file from your computer.
+   * K-MOOC와 YouTube 모두 동영상에 대한 자막이 없고, 운영팀에서 올리는 자막이 .srt 파일일 경우, 컴퓨터에서 자막 파일을 업로드 하려면 **신규 자막 업로드하기** 를 클릭한다.
 
      .. note::
 
-        * If you want to provide a transcript in a format such as .pdf,
-          do not use this field to upload the transcript. For more
-          information, see :ref:`Additional Transcripts`.
+        * PDF 등과 같은 형식으로 자막을 제공하려는 경우, 자막을 업로드하기 위해 이 설정을 이용하지 않도록 한다. 자세한 내용은  :ref:`Additional Transcripts` 를 참조 한다.
 
-        * If your transcript uses the .sjson format, do not use this field.
-          For more information, see :ref:`Steps for sjson files`.
+        * 운영팀에서 올리는 자막이 .sjson 형식을 사용하려고 하는 경우, 이 설정을 이용하지 않는다. 자세한 내용은  :ref:`Steps for sjson files` 을 참조한다.
 
-#. Optionally, select **Advanced** to set more options for the video. For a
-   description of each option, see :ref:`Video Advanced Options`.
+#. 동영상에 대한 다양한 옵션을 설정하려면 고급 을 클릭한다. 각 옵션의 설명은  :ref:`Video Advanced Options`  를 참조한다.
 
-#. Select **Save.**
+#. 저장 을 클릭한다.
+
 
 .. _Video Advanced Options:
 
 ========================
-Setting Advanced Options
+고급 옵션
 ========================
 
-The following options appear on the **Advanced** page of the video component.
+동영상 구성요소에서 고급 탭에 다음 옵션이 나타난다.
 
 .. list-table::
     :widths: 30 70
 
-    * - **Component Display Name**
-      - The name that you want your learners to see. This is the same as the
-        **Display Name** field on the **Basic** tab.
-    * - **Default Timed Transcript**
-      - The name of the transcript file that was specified in the **Default
-        Timed Transcript** field on the **Basic** page. You do not have to
-        change this setting.
-    * - **Download Transcript Allowed**
-      - Specifies whether you want to allow learners to download the timed
-        transcript. If you select **True**, a link to download the
-        file appears below the video.
+    * - **표시될 구성요소 이름**
+      - 학습자가 보게 될 이름이다. 이것은 기본 탭에 있는 표시될 구성요소 이름 입력 필드와 동일하다.
+    * - **기본 자막**
+      - 기본 탭의 기본 자막 입력 필드에 사용되는 자막 파일의 이름이다. 이 입력 필드는 자동으로 채워진다. 이 설정을 변경할 필요가 없다.
+    * - **자막 다운로드 허용**
+      - 학습자에게 자막 다운로드를 허용하는지 지정한다. 이 값을 True로 설정하면 자막 파일을 다운로드 하는 링크가 동영상 아래에 나타난다.
 
-        By default, Studio creates a .txt transcript when you upload an .srt
-        transcript. Learners can download the .srt or .txt versions of the
-        transcript when you set **Download Transcript Allowed** to **True**. If
-        you want to provide the transcript for download in a different format
-        as well, such as .pdf, upload a file to Studio by using the **Upload
-        Handout** field.
+        기본적으로 Studio는 .srt 자막을 업로드하면 .txt 자막을 만든다. 자막 다운로드 허용 을 True 로 설정하면 학습자는 .srt 또는.txt 버전의 자막을 다운로드 할 수 있다. .pdf 등 다른 형식으로 자막 다운로드를 제공하려는 경우 학습 자료 업로드 입력 필드를 사용 하여 스튜디오에 파일을 업로드 한다.
 
-    * - **Downloadable Transcript URL**
-      - The URL for a non-.srt version of the transcript file posted on the
-        **Files & Uploads** page or on the Internet. Learners see a link to
-        download the non-.srt transcript below the video.
+    * - **다운로드 가능 자막 URL**
+      - 파일 업로드 페이지 또는 인터넷에 게시된 자막 파일의 .srt 이외의 버전에 대한 URL이다. 학습자는 동영상 아래 .srt 이외의 자막을 다운로드 하는 링크를 보게 된다.
 
-        When you add a transcript to this field, only the transcript that you
-        add is available for download. The .srt and .txt transcripts become
-        unavailable. If you want to provide a downloadable transcript in a
-        format other than .srt, edX recommends that you upload a handout for
-        learners by using the **Upload Handout** field. For more information,
-        see :ref:`Additional Transcripts`.
+        이 입력 필드에 자막을 추가하면 추가한 자막만 다운로드 가능하다. .Srt 및 .txt 자막은 이용할 수 없게 된다. .srt 이외의 형태로 다운로드 가능한 자막을 제공하려는 경우에, 학습 자료 업로드 입력 필드를 사용하여 학습자를 위한 자료를 업로드할 것을 권장한다. 자세한 내용은  :ref:`Additional Transcripts` 를 참조하도록 한다.
 
-    * - **EdX Video ID**
-      - An optional field used only by course teams that are working with
-        edX to process and host video files.
+    * - **동영상 ID**
+      - 동영상 파일을 프로세스 및 호스트 하기 위해 강좌 운영팀에 의해서만 사용되는 선택적인 입력 필드이다.
 
-    * - **License**
-      - Optionally, you can set the license for the video, if you want to
-        release the video with a license different from the overall course
-        license.
+    * - **라이센스**
+      - 전체 강좌 라이센스와 다른 라이센스를 동영상에 지정할 수도 있다.
 
-        * Select **All Rights Reserved** to indicate to learners that you own
-          the copyright for the video.
+        * All Rights Reserved를 지정해 모든 저작권을 보호할 수도 있다.
 
-        * Select **Creative Commons** to grant others the right to share and
-          use the video. You must then select the Creative Commons license
-          options to apply.
+        * 크리에이티브 커먼즈를 지정해 다른 사람들이 공유하고 사용할 수 있도록 할 수 있다. 이 때 옵션을 지정하여야 한다.
 
-          The license options that you select control the copyright notice that
-          learners see for the video. For more information, see :ref:`Licensing
-          a Course`.
+          선택하는 라이센스에 따라 학습자는 다른 저작권 안내를 보게 된다. 자세한 사항은 :ref:`Licensing a Course` 를 참고하면 된다.
 
-    * - **Show Transcript**
-      - Specifies whether the transcript appears next to the video by default.
-    * - **Transcript Languages**
-      - The transcript files for any additional languages. For more
-        information, see :ref:`Transcripts in Additional Languages`.
-    * - **Upload Handout**
-      - Allows you to upload a handout to accompany this video. Your handout
-        can be in any format. Learners can download the handout by selecting
-        **Download Handout** under the video. For more information, see
-        :ref:`Additional Transcripts`.
-    * - **Video Available on Web Only**
-      - If you select **True**, learners are only allowed to play this video
-        in a Web browser. If you select **False**, learners can use any
-        compatible application to play the video, including Web browsers and
-        mobile apps.
-    * - **Video Download Allowed**
-      - Specifies whether learners can download versions of this video in
-        different formats if they cannot use the edX video player or do not
-        have access to YouTube. If you select **True**, you must add
-        at least one non-YouTube URL in the **Video File URLs** field.
-    * - **Video File URLs**
-      - The URL or URLs where you posted non-YouTube versions of the video.
-        Every URL should end in .mp4, .mpeg, .webm, or .ogg and cannot be a
-        YouTube URL. Each learners will be able to view the first listed video
-        that is compatible with the his or her computer. To allow learners to
-        download these videos, you must set **Video Download Allowed** to
-        **True**.
+    * - **자막 보기**
+      - 기본적으로 자막을 동영상과 함께 재생할 것인지 여부를 지정한다.
+    * - **자막 언어**
+      - 모든 추가 언어에 대한 자막 파일이다. 더 자세한 내용은 :ref:`Transcripts in Additional Languages` 에 있다.
+    * - **학습 자료 업로드**
+      - 동영상이 동반하는 학습 자료를 업로드 할 수 있다. 학습 자료는 어떤 형식도 될 수 있다. 학습자는 동영상 아래 :ref:`Additional Transcripts`  를 클릭하여 학습 자료를 다운로드 할 수 있다.
+    * - **웹에서만 제공하는 동영상**
+      - 만일 True를 선택하면 학습자는 웹브라우저에서만 해당 동영상을 볼 수 있다. False를 선택한다면 학습자는 웹 브라우저와 모바일 어플리케이션 등 동영상을 재생할 수 있는 모든 환경에서 볼 수 있다.
+    * - **동영상 다운로드 허용**
+      - 학습자가 K-MOOC 동영상 플레이어를 사용할 수 없거나, YouTube에 접근할 수 없는 경우 다른 형식으로 동영상 버전을 다운로드할 수 있는지 여부를 지정한다. 이 값을 True 로 설정하면 Video File URLs 입력 필드에 최소 1개 이상의 YouTube가 아닌 URL을 추가해야 한다.
+    * - **동영상 파일 URLs**
+      - YouTube 이외의 버전으로 게시된 동영상에 대한 URL이다. 모든 URL은 .mpeg,.webm,.mp4, 또는.ogg 형식으로 끝나야 하고 YouTube URL이 될 수 없다. 각 학습자는 학습자의 컴퓨터와 호환되는 첫 번째 나열된 동영상을 볼 수 있을 것이다. 학습자가 이러한 동영상을 다운로드할 수 있도록, 동영상 다운로드 허용 을 True 로 설정해야 한다.
 
-        To help make sure all standard browsers can play your video, we
-        **strongly** recommend that you use the .mp4 format.
+        모든 표준 브라우저가 동영상을 재생할 수 있는지 확인하기 위해, .webm 또는 .mp4 포맷을 사용할 것을 적극 권장한다.
 
-    * - **Video ID**
-      - An optional field used only by course teams that are working with
-        edX to process and host video files.
-    * - **Video Start Time**
-      - The time you want the video to start if you do not want the entire
-        video to play. Use HH:MM:SS format. The maximum value is 23:59:59.
+    * - **동영상  ID**
+      - K-MOOC과 협력하는 일부 강좌 운영팀만 사용하는 필드이다.
+    * - **동영상 시작 시간**
+      - 동영상을 처음부터 재생하지 않으려면 동영상을 시작하고 싶은 시간을 지정한다. HH:MM:SS 형태로 지정된다. 최대 재생 표기 값은 23:59:59이다.
 
-        .. note:: Learners who download and play the video in the mobile
-         app see the entire video file. Only videos that play in a browser
-         start playing at the specified start time.
+        .. note:: 모바일 어플리케이션으로 다운받아서 동영상을 재생하는 학습자의 경우 전체 동영상 파일을 볼 수 있다. 웹 브라우저에서 재생되는 동영상만이 지정한 시작 시간에서 시작한다.
 
-    * - **Video Stop Time**
-      - The time you want the video to stop if you do not want the entire video
-        to play. Use HH:MM:SS format. The maximum value is 23:59:59.
+    * - **동영상 정지 시간**
+      - 동영상을 끝까지 재생하지 않으려면 동영상을 멈추길 원하는 시간을 지정한다. HH:MM:SS 형태로 지정된다. 최대 재생 표기 값은 23:59:59이다.
 
-        .. note:: Learners who download and play the video in the mobile
-         app see the entire video file. Only videos that play in a browser
-         stop playing at the specified stop time.
+        .. note:: 모바일 어플리케이션으로 다운받아서 동영상을 재생하는 학습자의 경우 전체 동영상 파일을 볼 수 있다. 웹 브라우저에서 재생되는 동영상만이 지정한 정지 시간에서 멈춘다.
 
     * - **YouTube IDs**
-      - If you have uploaded separate video files to YouTube for different
-        speeds of your video (YouTube ID for .75x speed, YouTube ID for 1.25x
-        speed, YouTube ID for 1.5x speed), enter the YouTube IDs for these
-        videos in these fields. These settings are optional, to support video
-        play on older browsers.
+      - 동영상의 다른 속도로 개별 동영상 파일을 업로드 한 경우처럼 (.75 배속의 YouTube ID, 1.25 배속의 YouTube ID, 1.5 배속의 YouTube ID), 이 입력 필드에 그러한 동영상에 대한 YouTube IDs를 입력하도록 한다. 이 설정은 이전 버전의 브라우저에서 동영상 재생을 지원하기 위해 선택적이다.
 
 **********************************
-Including Optional Collateral
+부가기능
 **********************************
 
-After you add a video component to your course, you can provide optional
-collateral to accompany the video.
+강좌에 동영상 구성요소를 추가했다면 부가기능을 추가할 수 있다.
+
 
 .. contents::
   :local:
@@ -505,82 +334,56 @@ collateral to accompany the video.
 .. _Additional Transcripts:
 
 ============================================================
-Add a Supplemental Downloadable Transcript
+다운로드 가능 자막 추가하기
 ============================================================
 
-By default, a .txt file is created when you upload an .srt file, and learners
-can download either the .srt or .txt transcript when you set **Download
-Transcript Allowed** to **True**. **Download Transcript** appears below the
-video, and learners see the .srt and .txt options when they move the cursor
-over that option.
+기본적으로 .srt 파일을 업로드하면 .txt 파일이 만들어지고, 자막 다운로드 허용 을 True 로 설정한 경우 .srt 또는 .txt 자막을 모두 다운로드 할 수 있다. 자막 다운로드 버튼이 동영상 아래쪽에 나타나고, 학습자는 버튼 위로 마우스를 가져가면 .srt 및 .txt 선택 옵션을 보게 된다.
 
 .. image:: ../../../shared/images/Video_DownTrans_srt-txt.png
    :width: 500
    :alt: Video status bar showing .srt and .txt transcript download options.
 
-To provide a downloadable transcript in a format such as .pdf along with the
-.srt and .txt transcripts, you use the **Upload Handout** advanced setting.
-When you do this, **Download Handout** appears to the right of the **Download
-Transcript** in the video player, and learners can download the .srt, .txt, or
-handout version of the transcript.
+.srt 및 .txt 자막과 함께 .pdf로 자막을 다운로드할 수 있게 하려는 경우 고급 설정의 학습 자료 업로드 를 이용할 것을 권장한다. 이 경우 학습 자료 다운로드 버튼이 자막 다운로드 버튼의 오른쪽에 나타나고 학습자는 .srt, .txt, 학습 자료의 자막 파일을 다운로드 할 수 있다.
 
 .. image:: ../../../shared/images/Video_DownTrans_srt-handout.png
    :width: 500
    :alt: Video status bar showing .srt, .txt, and handout transcript download
     options.
 
-To add a downloadable transcript, follow these steps.
+다운로드 가능한 자막을 추가 하려면.
 
-#. Create or obtain your transcript as a .pdf or in another format.
-#. In the video component, select **Advanced**.
-#. Locate **Upload Handout**, and then select **Upload**.
-#. In the **Upload File** dialog box, select **Choose File**.
-#. In the dialog box, select the file on your computer, and then select
-   **Open**.
-#. In the **Upload File** dialog box, select **Upload**.
+#. pdf 또는 다른 형식으로 된 자막을 만들거나 구한다.
+#. 동영상 구성요소에서 **고급** 탭을 클릭.
+#. 학습 자료 업로드 를 찾아서 **업로드** 를 클릭한다.
+#. 파일 업로드 대화 상자에서, 파일 **선택** 을 클릭한다.
+#. 대화 상자에서 컴퓨터에 파일을 선택하고, **열기** 를 클릭한다.
+#. 파일 업로드 대화 상자에서, **업로드** 를 클릭한다.
 
 .. _Transcripts in Additional Languages:
 
 ============================================================
-Add a Transcript in Another Language
+추가 언어 자막
 ============================================================
 
-You can provide transcripts for your video in more than one language. To do
-this, you work with a third-party service to obtain an .srt transcript file for
-each language, and then associate the .srt file with the video in Studio.
+다른 언어로 동영상 자막을 제공할 수 있다. 각 언어에 대한 .srt 자막 파일을 얻기 위해 관련 서비스 업체와 작업해야 하고, 그 후 Studio에서 .srt 파일을 동영상과 연동할 수 있다.
 
-Before you add a transcript file, make sure that each file has a unique name.
-If you use the same transcript name more than once, only the most recently
-added transcript will appear for every video component that is set up to use a
-transcript with that name. To avoid this problem, a best practice is to name
-additional transcript files by appending the transcript's language to the video
-file name.
+다른 언어 자막을 추가하기 전에 각 파일의 이름이 모두 다른지 확인한다. 만약 이름이 중복될 경우 가장 최근에 추가된 자막이 같은 이름의 모든 동영상에 나오게 된다. 이를 막기 위해 자막의 언어를 파일 이름 끝에 추가해 주는 것이 좋다.
 
-For example, you have two videos, named video1.mp4 and video2.mp4, and their
-original transcripts are named video1.srt and video2.srt. When you add Spanish
-transcripts for these videos, you name them video1_ES.srt and video2_ES.srt.
-Later, when you add Russian transcripts for the videos, you name them
-video1_RU.srt and video2_RU.srt.
+예를 들어 만약 동영상 1.mp4, 동영상 2.mp4가 있고 자막 이름이 동영상 1.srt, 동영상 2.srt이고 스페인어 자막을 추가한다면 동영상1_ES.srt, 동영상 2_ES.srt로, 러시아어 자막을 추가한다면 동영상1_RU.srt, 동영상2_RU.srt로 하는 것이다.
 
-To add a transcript to a video component, follow these steps.
+다른 언어 자막을 추가하기 위해서.
 
-#. After you obtain the .srt files for additional languages, open the
-   video component for the video.
+#. 추가 언어에 대한 .srt 파일을 구한 후 동영상 구성요소를 연다.
 
-#. On the **Advanced** tab, scroll down to **Transcript Languages**, and then
-   select **Add**.
+#. **고급** 탭에서 자막 언어 아래로 스크롤 한 다음 **추가하기** 를 클릭한다. 업로드 버튼이 언어 아래쪽에 나타난다.
 
-#. Select the language for the transcript that you want to add.
+#. **업로드** 를 클릭하고, 원하는 언어에 대한 .srt파일을 찾은 다음 **열기** 를 클릭한다.
 
-#. Select **Upload**, browse to the .srt file for the transcript in that
-   language, and then select **Open**.
+#. **자막 업로드** 대화 상자에서 **업로드** 를 클릭한다.
 
-#. In the **Upload translation** dialog box, select **Upload**.
+#. 모든 추가 언어에 대해 2-5 단계를 반복한다.
 
-#. Repeat steps 2 - 5 for any additional languages.
-
-When your learners view the video, they can select the **Language menu** to
-select a language.
+학습자가 동영상을 볼 때, 언어를 선택하기 위해 언어 메뉴를 클릭할 수 있다.
 
 .. image:: ../../../shared/images/Video_LanguageTranscripts_LMS.png
    :alt: The video player with the language menu selected to show English and
@@ -589,32 +392,26 @@ select a language.
 .. _Steps for sjson files:
 
 ==================================
-Upload an .sjson File (Deprecated)
+.sjson 파일을 위한 단계(삭제됨)
 ==================================
 
-If your course uses .sjson files, you upload the .sjson file for the video
-to the **Files & Uploads** page, and then specify the name of the .sjson file
-in the video component.
+강좌가 .sjson 파일을 사용하는 경우, 파일 업로드 페이지에서 동영상의 자막파일로 .sjson 파일을 업로드하고, 동영상 구성요소에서 .sjson 파일의 이름을 지정하도록 한다.
 
-.. note:: Only older courses that have used .sjson files in the past should use
- .sjson files. All new courses should use .srt files.
+.. note:: 이전에 만들어진 강좌만이 .sjson 파일을 사용하며 최근 만들어진 강좌는 대부분 .srt 형식을 사용한다.
 
-#. Obtain the .sjson file from a media company such as 3Play.
-#. Change the name of the .sjson file to use the following format.
+#. 3Play 같은 미디어 회사에서 .sjson 파일을 가져온다.
+#. 다음 형식을 사용하여 .sjson 파일의 이름을 변경한다.
 
    ``subs_{video filename}.srt.sjson``
 
-   For example, if the name of your video is **Lecture1a**, the name of your
-   .sjson file must be **subs_Lecture1a.srt.sjson**.
+   예를 들어 동영상의 이름이 Lecture1a 인 경우, .sjson 파일의 이름은 **subs_Lecture1a.srt.sjson** 가 되어야 한다.
 
-#. Upload the .sjson file for your video to the **Files & Uploads** page.
-#. Edit or create the video component.
-#. Select **Advanced**.
-#. In the **Default Timed Transcript** field, enter the file name of your
-   video. Do not include `subs_` or `.sjson`. For the example in step 2, you
-   would only enter **Lecture1a**.
-#. Set the other options that you want.
-#. Select **Save**.
+#. 파일 업로드 페이지에서 동영상에 대한 .sjson 파일을 업로드 한다.
+#. 새로운 동영상 구성요소를 만든다.
+#. **고급** 탭을 클릭한다.
+#. 기본 자막 입력필드에서, 동영상의 파일명을 입력한다. subs_ 또는 .sjson를 포함하지 않도록 한다. 예를 들어, 2 단계에서 Lecture1a 만 입력한다.
+#. 원하는 다른 옵션을 설정한다.
+#. **저장** 을 클릭한다.
 
 
 .. The following include adds procedures for pre-roll videos to the guide for partners only. This feature works only on edx.org.  - Alison 24 Jun 15

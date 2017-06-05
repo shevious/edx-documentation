@@ -1,42 +1,32 @@
 .. _Awarding Partial Credit for a Problem:
 
 ***************************************
-Awarding Partial Credit for a Problem
+문제에 부분점수 주기
 ***************************************
 
-You can configure the following problem types so that learners can receive
-partial credit for a problem if they submit an answer that is partly correct.
+다음과 같은 문제 유형에서 학습자에게 부분점수를 부여할 수 있다.
 
 * :ref:`Checkbox <Awarding Partial Credit in a Checkbox Problem>`
 * :ref:`Multiple Choice <Awarding Partial Credit in a Multiple Choice Problem>`
 * :ref:`Numerical Input <Awarding Partial Credit in a Numerical Input Problem>`
 * :ref:`Write-Your-Own Grader <Award Half Credit>`
 
-By awarding partial credit for problems, you can motivate learners who have
-mastered some of the course content and provide a score that accurately
-demonstrates their progress.
+문제에 부분점수를 줌으로서 학습자가 아는 만큼 정확하게 점수를 줄 수 있고 이를 통해 의욕을 높일 수 있다.
 
-For more information about configuring partial credit, see the topic for each
-problem type.
+자세한 사항은 각 문제 유형 별 내용을 참고하면 된다.
 
 .. only:: Partners
 
   .. note::
-    Support for the partial credit feature is provisional for courses on
-    edx.org and edX Edge. Ensure that you test such problems thoroughly before
-    you publish them to learners. For more information, contact your edX
-    partner manager.
+    부분점수 기능은 kmooc.kr과 테스트서버에서 잠정적인 기능이다. 학습자에게 제공하기 전에 확실히 테스트할 필요가 있다. 자세한 사항은 파트너 매니저에게 (K-MOOC 관리자에게) 문의하면 된다.
 
 ==========================================
-How Learners Receive Partial Credit
+학습자가 부분점수를 얻는 방법
 ==========================================
 
-Learners receive partial credit when they submit an answer in the LMS.
+학습자는 학습 관리 시스템에 정답을 입력할 때 부분 점수를 얻는다.
 
-In the following example, the course team configured a multiple choice problem
-to award 25% of the possible points (instead of 0 points) for one of the
-incorrect answer options. The learner selected this incorrect option, and
-received 25% of the possible points.
+다음 예에서 강좌 운영팀은 오답 보기 하나에 대해서 0점이 아닌 25%를 부여하도록 부분점수를 설정했다. 이 오답을 선택한 학습자는 전체 점수의 25%를 획득하였다.
 
 .. image:: ../../../shared/images/partial_credit_multiple_choice.png
  :alt: A multiple choice problem with partial credit for an incorrect
@@ -45,28 +35,17 @@ received 25% of the possible points.
 
 
 ====================================================
-Partial Credit and Reporting on Learner Performance
+부분 점수와 학습자 성취 보고
 ====================================================
 
-When a learner receives partial credit for a problem, the LMS only adds the
-points that the learner earned to the grade. However, the LMS reports any
-problem for which a learner receives credit, in full or in part, as correct in
-the following ways.
+학습자가 문제에 대해 부분 점수를 획득하면 학습 관리 시스템은 성적에 학습자가 얻은 점수만을 입력한다. 그러나 학습 관리 시스템은 다음과 같은 방법으로 학습자가 어떤 식으로든 점수를 얻은 문제를 보고한다.
 
-* Events that the system generates when learners receive partial credit for a
-  problem indicate that the answer was correct. Specifically, the
-  ``correctness`` field has a value of ``correct``.
+* 학습자가 부분 점수를 얻었을 때 생성되는 이벤트는 학습자가 정확한 답을 했음을 알려준다. 구체적으로 correctness 필드는 correct 값을 갖는다.
 
-  For more information about events, see :ref:`data:problem` in the *EdX Research Guide*.
+  자세한 사항은  :ref:`data:problem` 를 참고하면 된다.
 
-* The **AnswerValue** in the :ref:`Student_Answer_Distribution` report is
-  **1**, for correct.
+* 학습자 정답 분포 보고에서 정답에 대한 값은 1이다.
 
-* The edX Insights :ref:`insights:student performance reports<Performance
-  Index>` count the answer as correct.
+* K-MOOC Insights의 학습자 성취 보고는 그 답을 정답으로 인식한다.
 
-Course teams can see that a learner received partial credit for a problem in
-the learner's submission history. The submission history shows the score that
-the learner received out of the total available score, and the value in the
-``correctness`` field is ``partially-correct``.  For more information, see
-:ref:`Student_Answer_Submission`.
+강좌 운영팀은 학습자 제출 기록에서 부분 점수를 얻었던 것을 확인할 수 있다. 제출 기록은 학습자가 총 점수에서 얻은 점수를 표시해주며 ``correctness`` 필드는 ``partially-correct`` 값을 갖는다. 자세한 사항은 :ref:`Student_Answer_Submission` 을 참고하면 된다.

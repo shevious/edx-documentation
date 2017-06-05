@@ -1,102 +1,64 @@
 .. _Section_learner_problem_view:
 
 ************************************
-The Learner View of a Problem
+학습자가 볼 문제 보기
 ************************************
 
-All problems on the edX platform have several component parts.
+K-MOOC 플랫폼에 있는 모든 문제는 다음과 같은 구성요소로 구성된다.
 
 .. image:: ../../../shared/images/AnatomyOfExercise1.png
   :alt: A problem from a learner's point of view, with numbered callouts for
        elements of the problem.
   :width: 400
 
-#. **Problem text.** The problem text can contain any standard HTML formatting.
+#. **문제 텍스트** 문제는 어떤 표준 HTML 서식이라도 포함할 수 있다.
 
-#. **Response field.** Learners enter answers in response fields. The
-   appearance of the response field depends on the type of the problem.
+#. **학습자 답안 입력란** 학습자는 응답 필드 에 답안을 입력한다. 응답 필드의 모양은 문제의 유형에 따라 달라진다.
 
-#. **Rendered answer.** For some problem types, the LMS uses MathJax to render
-   plain text as "beautiful math."
+#. **작성된 답변** 문제에 따라 Studio에서 일반 텍스트를 “수식”으로 만들기 위해 MathJax를 사용하기도 한다.
 
-#. **Check.** The learner selects **Check** to submit a response or find out if
-   his answer is correct. If the answer is correct, a green check mark appears.
-   If it is incorrect, a red X appears. When a learner selects **Check**, the
-   LMS saves the grade and current state of the problem.
+#. **확인 버튼** 학습자는 응답을 제출하거나 답이 맞았는지 보기 위해 확인 을 클릭한다. 답이 맞으면, 녹색 확인 표시가 나타난다. 답이 틀리면, 빨간색 X가 나타난다. 학습자가 확인 버튼 을 클릭하면, LMS는 성적 및 문제의 현재 상태를 저장한다.
 
-#. **Save.** The learner can select **Save** to save his current response
-   without submitting it for a grade. This allows the learner to stop working
-   on a problem and come back to it later.
+#. **저장 버튼** 학습자는 응답을 제출하지 않고 현재 응답을 저장하기 위해 저장 을 클릭할 수 있다. 학습자가 문제풀기를 멈추고 다시 돌아와 계속 풀 수 있도록 허용한다.
 
-#. **Show Answer.** This button is optional. When the learner selects **Show
-   Answer**, the learner sees both the correct answer (see 2 above) and the
-   explanation (see 10 below). You define whether the **Show Answer** button is
-   visible.
+#. **정답 보기 버튼** 이 버튼은 선택 사항이다. 학습자가 정답 보기 를 클릭하면 학습자는 정확한 답(위의 2번 참조)과 설명 (아래 10번 참조)을 모두 보게 된다. 교수자는 정답 보기 버튼의 표시 여부를 설정할 수 있다.
 
-#. **Attempts.** You can set a specific number of attempts or allow unlimited
-   attempts for a problem. By default, the course-wide **Maximum Attempts**
-   advanced setting is null, meaning that the maximum number of attempts for
-   problems is unlimited. If the course-wide **Maximum Attempts** setting is
-   changed to a specific number, the **Maximum Attempts** setting for
-   individual problems defaults to that number, and cannot be set to unlimited.
+#. **문제 풀이 최대 횟수** 교수자는 문제 풀이 시도 횟수를 지정하거나 무제한 풀이를 허용할 수 있다. 기본적으로는 강좌 전체에 문제 풀이 최대 횟수 에 대한 기본 설정값은 null인데, 이는 횟수에 제한이 없음을 의미한다. 강좌 전체에 걸친 문제 풀이 최대 횟수 설정을 특정한 수로 변경하면, 더 이상 무제한으로 설정되지 않게 된다.
 
    .. image:: ../../../shared/images/AnatomyOfExercise2.png
     :alt: A problem from a learner's point of view, with numbered callouts for
           attempts and showing the answer.
     :width: 500
 
-#. **Feedback.** After a learner selects **Check**, all problems return a green
-   check mark or a red X.
+#. **피드백** 학습자가 확인 을 클릭한 후, 모든 문제는 녹색 확인 표시 또는 빨간색 X를 반환한다.
 
-#. **Correct answer.** Most problems require that you specify a single correct
-   answer.
+#. **정답** 대부분의 문제에 대하여 교수자는 단일 정답을 지정해야 한다.
 
-#. **Explanation.** You can include an explanation that appears when a learner
-   selects **Show Answer**.
+#. **설명** 교수자는 학습자가 정답 확인 을 클릭하면 설명이 나타나게 할 수 있다.
 
-#. **Reset.** Learners can select **Reset** to clear any input that has not yet
-   been submitted, and try again to answer the question.
+#. **초기화 버튼** 학습자는 제출하지 않은 모든 입력을 취소하고, 질문에 다시 대답하기 위해 초기화 를 클릭할 수 있다.
 
-   * If the learner has already submitted an answer, selecting **Reset** clears
-     the submission and, if the problem includes a Python script to randomize
-     variables and the randomization setting is **On Reset**, changes the
-     values the learner sees in the problem.
+   * 학습자가 이미 답안을 제출한 경우 초기화 를 클릭하면 제출이 취소되며, Python 스크립트를 이용해 무작위 변수를 포함하는 문제에서 무작위 추출하기(randomization)가 초기화 가능 으로 설정된 경우, 문제에서 학습자가 보는 값이 변경된다.
 
-   * If the number of **Maximum Attempts** that was set for this problem has
-     been reached, **Reset** is not visible.
+   * 문제에 대해 설정된 최대 시도 횟수에 도달하면, 초기화 버튼은 더 이상 표시되지 않는다.
 
-#. **Hide Answer.**
+#. **답안 버튼 숨기기**
 
    .. image:: ../../../shared/images/AnatomyOfExercise3.png
     :alt: A section and its subsections in the course navigation pane, with
         numbered callouts for the graded content icon and the due date.
     :width: 200
 
-#. **Grading.** You can specify whether a group of problems is graded. If a
-   group of problems is graded, an icon of a pen and a piece of paper appears
-   or that assignment in the course navigation pane.
+#. **채점하기** 교수자는 그룹 문제의 채점 여부를 지정할 수 있다. 그룹 문제가 채점되는 경우, 강좌 탐색창에 해당 과제에 대한 종이 아이콘이 나타난다.
 
-#. **Due date.** The date that the problem is due. A problem that is past due
-   does not offer a **Check** option. It also does not accept answers or
-   provide feedback.
+#. **기한** 문제 제출 마감 날짜로, 기한을 넘긴 문제는 확인 버튼이 나타나지 않는다. 또한 답안을 수락하거나 피드백을 제공하지 않는다.
 
-.. note:: Problems can be **open** or **closed**. Closed problems do not
-          have a **Check** option. Learners can still see questions, solutions,
-          and revealed explanations, but they cannot check their work, submit
-          responses, or change an earlier score.
+.. note:: 문제는 열리거나 닫힐 수 있다. 닫힌 문제는 확인 버튼이 없다. 학습자는 여전히 문제, 답안 및 공개된 설명을 볼 수 있지만, 문제 풀이 상태를 확인하거나, 답안을 제출 하거나, 또는 이전 점수를 변경하는 등의 작업은 할 수 없다.
 
-There are also some attributes of problems that are not immediately
-visible. You can set these attributes in Studio.
+또한 즉시 표시되지 않는 문제의 몇 가지 특성이 있다. Studio에서 이러한 특성을 설정할 수 있다.
 
-* **Accessible Label.** In the problem text, you can identify the text that is,
-  specifically, the question that learners need to answer. The text that is
-  labeled as the question is used by screen readers, reports, and Insights. For
-  more information, see :ref:`Simple Editor`.
+* **레이블** 각 문제별로 학습자가 답해야 하는 부분에 레이블을 추가할 수 있다. 스크린 리더 등을 이용하여 문제에 대한 레이블을 읽을 수 있다.
 
-*  **Randomization.** In certain types of problems, you can include a Python
-   script to randomize the values that are presented to learners. You use this
-   setting to define when values are randomized. For more information, see
-   :ref:`Randomization`.
+*  **무작위 추출하기** 몇 가지 문제에 대하여, 교수자는 학습자마다 문제를 다르게 제공할 것인지 여부를 지정할 수 있다.
 
-*  **Weight.** Different problems in a particular problem set can be
-   given different weights.
+*  **가중치** 특정 문제들에서 문제에 따라 다른 가중치가 부여될 수 있다.

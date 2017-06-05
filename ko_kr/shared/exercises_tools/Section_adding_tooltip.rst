@@ -1,28 +1,21 @@
 .. _Adding Tooltips to a Problem:
 
 ==============================
-Adding Tooltips to a Problem
+문제에 말풍선 추가하기
 ==============================
 
-To help learners understand terminology or other aspects of a problem, you can
-add inline tooltips. Tooltips show text to learners when they move their
-cursors over a tooltip icon.
+학습자가 개념이나 문제를 잘 이해할 수 있도록 말풍선을 추가할 수 있다. 말풍선은 말풍선 아이콘 위로 마우스를 가져갔을 때 학습자에게 보여진다.
 
-The following example problem includes two tooltips. The tooltip that provides
-a definition for "ROI" is being shown.
+다음 예는 두가지 말풍선을 보여준다. “ROI”의 정의를 보여주는 말풍선이 보여지고 있다.
 
 .. image:: ../../../shared/images/tooltip.png
  :alt: An example of a tooltip from a learner's point of view.
  :width: 500
 
 .. note::
-  For learners using a screen reader, the tooltip expands to make its
-  associated text accessible when the screen reader focuses on the tooltip
-  icon.
+  스크린 리더를 이용하는 학습자에게 말풍선은 스크린 리더가 말풍선에 고정되었을 때 보여진다.
 
-To add the tooltip, you wrap the text that you want to appear as the tooltip in
-the ``clarification`` element.  For example, the following problem contains two
-tooltips.
+말풍선 추가를 위해 보여질 텍스트를  ``clarification`` 요소로 감싼다. 예를 들어 다음 문제는 두 가지 말풍선이 있다.
 
 .. code-block:: xml
 

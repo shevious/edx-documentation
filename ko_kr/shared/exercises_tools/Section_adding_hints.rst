@@ -1,10 +1,10 @@
 .. _Adding Feedback and Hints to a Problem:
 
 ***************************************
-Adding Feedback and Hints to a Problem
+문제에 피드백과 힌트 추가하기
 ***************************************
 
-You can add feedback, hints, or both to the following problem types.
+피드백이나 힌트를 다음 문제 유형에 추가할 수 있다.
 
 * :ref:`Checkbox`
 * :ref:`Dropdown`
@@ -12,101 +12,75 @@ You can add feedback, hints, or both to the following problem types.
 * :ref:`Numerical Input`
 * :ref:`Text Input`
 
-By using hints and feedback, you can provide learners with guidance and help as
-they work on problems.
+힌트와 피드백을 사용해 학습자의 문제 풀이를 도울 수 있다.
 
 ==========================================
-Feedback in Response to Attempted Answers
+답안 입력에 대한 피드백
 ==========================================
 
-You can add feedback that is displayed to learners when they submit an answer.
+학습자가 답안을 입력했을 때 피드백을 표시할 수 있다.
 
-For example, the following multiple choice problem provides feedback in
-response to the selected option when the learner selects **Check**. In this
-case, feedback is given for an incorrect answer.
+예를 들어 학습자가 확인을 선택했을 경우 다음 선다형 문제에서 선택된 옵션에 대한 피드백이 나오게 된다. 이 경우 오답에 대한 피드백이 제공된다.
 
 .. image:: ../../../shared/images/multiple_choice_feedback.png
  :alt: Image of a multiple choice problem with feedback.
  :width: 600
 
 ==========================================
-Best Practices for Providing Feedback
+올바른 피드백을 주는 방법
 ==========================================
 
-The immediacy of the feedback available to learners is a key advantage of
-online instruction and difficult to do in a traditional classroom environment.
+온라인 강좌의 큰 장점 중 하나는 바로 피드백을 줄 수 있다는 것이다.
 
-You can target feedback for common incorrect answers to the misconceptions that
-are common for the level of the learner (for example, elementary, middle, high
-school, college).
+흔히 나오는 오답과 학습자의 수준을 고려해 이해하기 힘든 부분에 대한 피드백을 줄 수 있다.
 
-In addition, you can create feedback that provides some guidance to the
-learner about how to arrive at the correct answer. This is especially important
-in text input and numeric input problems, because without such guidance,
-learners might not be able to proceed.
+또한, 학습자로 하여금 정답을 떠올릴 수 있는 피드백을 줄 수도 있다. 이는 힌트 없이 나아가기 힘들 수 있는 텍스트 입력 문제와 수치 입력 문제에서 특히 중요하다.
 
-You should also include feedback for the correct answer to reinforce why the
-answer is correct. Especially in questions where learners are able to guess,
-such as multiple choice and dropdown problems, the feedback should provide a
-reason why the selection is correct.
+또, 정답에 대해선 정답에 대한 설명을 첨부하는 것이 좋다. 특히 선다형 문제나 드롭다운 문제와 같이 학습자가 찍어서 맞출 수 있는 문제에서 더욱 중요하다.
 
 ============================
-General Hints to a Problem
+문제에 대한 일반적 힌트
 ============================
 
-You can add one or more hints that are displayed to learners. When you add
-hints, the **Hint** button is automatically displayed to learners. Learners can
-access the hints by selecting **Hint** beneath the problem.  A learner can view
-multiple hints by selecting **Hint** multiple times.
+학습자에게 힌트를 줄 수 있는데 추가하게 되면 학습자는 힌트 버튼을 보게 된다. 학습자는 문제 아래의 힌트를 클릭해 볼 수 있고 여러 번 클릭해서 여러가지 힌트를 볼 수도 있다.
 
-For example, in the following multiple choice problem, the learner selects
-**Hint** before attempting the answer.
+예를 들어 다음 선다형 문제에서 학습자가 답안 입력 전 힌트를 클릭하면
 
 .. image:: ../../../shared/images/multiple_choice_hint.png
  :alt: Image of a multiple choice problem with the first hint.
  :width: 600
 
-The hint indicates that it is the first of two hints. The learner selects
-**Hint** a second time.
+두 가지 힌트 중 첫 힌트가 나왔다는 메시지가 함께 표시된다. 다시 한번 힌트를 누르면
 
 .. image:: ../../../shared/images/multiple_choice_hint2.png
  :alt: Image of a multiple choice problem with the second hint.
  :width: 600
 
 ==========================================
-Best Practices for Providing Hints
+올바른 힌트를 주는 방법
 ==========================================
 
-To ensure that your hints can assist learners with varying backgrounds and
-levels of understanding, you should provide multiple hints with different
-levels of detail.
+다양한 배경과 수준의 학습자에게 도움을 주기 위해서 여러 단계의 힌트를 줘야 한다.
 
-For example, the first hint can orient the learner to the problem and help
-those struggling to better understand what is being asked.
+예를 들어 첫 힌트는 문제 자체를 이해 못하는 학습자를 위한 것일 수 있다.
 
-The second hint can then take the learner further towards the answer.
+2번째 힌트는 다음 단계로 나아갈 수 있도록 유도해줄 수 있다.
 
-In problems that are not graded, the third and final hint can explain the
-solution for learners who are still confused.
+채점이 되지 않는 문제에선 3번째 혹은 마지막 힌트에서 아직 풀지 못한 학습자에게 정답과 함께 해설을 줄 수도 있다.
 
 ==========================================
-Create Problems with Feedback and Hints
+피드백과 힌트가 있는 문제 만들기
 ==========================================
 
-You create problems with feedback and hints in Studio. Templates with feedback
-and hints configured are available to make creating your own problems easier.
+피드백과 힌트가 포함된 테블릿을 통해 Studio에서 피드백과 힌트가 있는 문제를 만들 수 있다.
 
-While editing a unit, in the **Add New Component** panel, select **Problem**.
-In the list that opens, select the  **Common Problem Types** tab. Templates for
-problems with feedback and hints are listed.
+학습활동을 편집할 때 새 구성요소 추가하기에서 문제를 선택한다. 그 후 목록에서 일반 문제 유형 탭을 열고 피드백과 힌트가 포함된 테블릿을 선택한다.
 
 .. image:: ../../../shared/images/hints_feedback_problem_templates.png
  :alt: Image of the templates with hints and feedback in Studio.
  :width: 250
 
-Add the problem type you need to the unit, then edit the component.  The exact
-syntax you use to configure hints and feedback depends on the problem type.
-See the topic for the problem type for more information.
+학습활동에 필요한 문제 유형을 추가하고 편집한다. 정확히 어떤 어조로 힌트와 피드백을 줄지는 문제 유형에 따라 다르다. 자세한 사항은 다음을 참고한다.
 
 * :ref:`Checkbox`
 * :ref:`Dropdown`
