@@ -1,36 +1,14 @@
 .. _edX Accessibility Guidelines:
 
 ****************************************************************
-What Is The EdX Accessibility Best Practices Guidance Based On?
+K-MOOC 접근성 가이드 자료
 ****************************************************************
 
-EdX measures and evaluates accessibility using the World Wide Web Consortium's
-`Web Content Accessibility Guidelines (WCAG) 2.0 <http://www.w3.org/TR/WCAG/>`_
-(Dec. 11, 2008). All features that are merged into edX repositories are expected
-to `conform <http://www.w3.org/TR/WCAG20/#conformance>`_ to `Level AA
-<http://www.w3.org/TR/WCAG20/#cc1>`_ of this specification and satisfy the 
-requirements outlined in the edX `Website Accessibility Policy 
-<http://www.edx.org/accessibility>`_. 
+K-MOOC은 접근성을 월드와이드웹 컨소시엄의 `Web Content Accessibility Guidelines (WCAG) 2.0 <http://www.w3.org/TR/WCAG/>`_ 에 따라 측정하고 평가한다. K-MOOC저장소의 모든 자료는 WCAG의 AA단계 조건과 K-MOOC 웹사이트 접근성 정책에 기술된 요구사항을 맞춰야 한다.
 
-In addition, our guidance is based on principles of universal
-design (usable by all, to the greatest extent possible, without the need for
-adaptation or specialized design). Course teams who build courses based on
-these principles create an inclusive experience that considers the diverse set
-of learning styles and needs of all learners, including learners with
-disabilities, learners whose native language is not English, learners with
-technical issues such as low bandwidth internet or no access to audio.
+추가적으로, 모든 지침은 수정이나 적용을 위한 노력이 필요 없는 통합된 형태를 위한 원칙을 따른다. 강좌 운영팀은 이런 원칙에 따라 다양한 학습 스타일과 니즈를 맞추고 장애가 있거나 모국어가 영어가 아니고 인터넷 환경이 좋지 않거나 오디오를 들을 수 없는 학습자를 포용하기 위해 노력해야 한다.
 
-For the purposes of this guidance, we assume that end users are equipped with
-the appropriate adaptive technology and compatible software. To supplement the
-accessibility you can achieve within the Open edX platform, we recommend that
-you engage the resources available at your institution to support learners
-with disabilities. Most institutions offer disability support services and
-information technology resources that provide accessibility advice and
-support. These professionals are trained in making disability accommodation
-decisions and can advise you on what accommodations may be appropriate in
-light of the goals of the course and the instructional methodologies employed.
-
-For more information, see the following topics.
+이 지침의 목적을 위해 우리는 최종 사용자가 적절한 장비와 소프트웨어를 사용하고 있다고 가정한다. 오픈 K-MOOC 플랫폼 내부의 접근성을 높이기 위해 우리는 소속 기관의 자료를 최대한 활용하고 장애가 있는 학습자를 지원하는 것을 추천한다. 대부분의 기관은 장애 지원 서비스와 접근성 지원을 위한 기술 지원을 제공한다. 이런 전문가는 장애 지원과 관련된 경험이 많아 어떻게 환경을 구성하여 강좌가 지향하는 목표를 달성할 수 있을지 올바른 조언을 해줄 수 있다.
 
 * :ref:`Supporting Learners with Diverse Needs`
 * :ref:`Accessibility Best Practices for Course Content Development`

@@ -1,17 +1,12 @@
 .. _Reaching Learners:
 
 ######################################
-Reaching As Many Learners As Possible
+학습자 범위 확대하기
 ######################################
 
-The core mission of edX is to expand access to education for everyone. Keep in
-mind that the courses and course content that you create should be accessible
-to everyone, regardless of any physical limitation that they might have, and
-regardless whether they are accessing your course using a Web browser or using
-the edX iOS and Android apps.
+K-MOOC의 가장 중요한 목적은 모두에게 교육의 기회를 주는 것이다. 명심해야 할 점은 K-MOOC의 강좌는 신체적 ​장애를 가진 학습자들이나 강좌에 접속하는 수단(웹 브라우저, iOS/안드로이드 어플리케이션 등)에 관계 없이 모두가 볼 수 있어야 한다는 것이다.
 
-For information about accessibility best practices, see :ref:`Accessibility
-Index`.
+접근성에 관한 자세한 내용은  :ref:`Accessibility Index` 를 참고하면 된다.
 
 .. toctree::
    :maxdepth: 2

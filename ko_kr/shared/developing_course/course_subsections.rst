@@ -1,75 +1,59 @@
 .. _Developing Course Subsections:
 
 ###################################
-Developing Course Subsections
+소주제
 ###################################
 
-To develop subsections in your course, you must first understand the
-following topics.
+소주제를 만들기 전에, 우선 다음 사항을 이해해야 한다.
 
 .. contents::
   :local:
   :depth: 2
 
 ****************************
-What Is a Subsection?
+소주제란?
 ****************************
 
-Sections are divided into subsections, which in turn contain one or more units.
-A subsection may represent a topic in your course, or another organizing
-principle. Subsections are sometimes called "lessons" or they might represent a
-week's worth of material.
+주제는 1개 이상의 학습활동이 포함된 소주제로 나뉘게 된다. 소주제를 살펴보면 그 강좌의 핵심이 되는 내용이 무엇인지 이해할 수 있게 된다.
 
 ***********************************
-Viewing Subsections in the Outline
+개요에서 소주제 보기
 ***********************************
 
-The following example shows three subsections in a section, all collapsed, in
-the course outline.
+다음 예시는 세 소주제가 모두 접힌 상태로, 강좌 개요에서 어떻게 보이는지를 나타낸다.
 
 .. image:: ../../../shared/images/subsections.png
  :alt: Three collapsed subsections in the outline.
 
 *********************************
-The Learner View of a Subsection
+학습자 화면에서 소주제 보기
 *********************************
 
-Learners see subsections on the **Course** page, listed beneath the
-expanded section. In the following example, two subsections are circled, and
-the first one is open in the LMS.
+학습자는 강좌 탭에서, 주제가 펼쳐져 있는 상태에서 소주제를 볼 수 있다. 다음 예시에서 일곱 개의 소주제에 동그라미 표시가 되어있는데, 그 중 첫 번째 소주제가 LMS 상에서 열려있는 상태다.
 
 .. image:: ../../../shared/images/subsections_student.png
  :width: 500
  :alt: The learner view of the outline.
 
 ************************************************
-Subsections and Visibility to Learners
+소주제와 학습자 공개 설정
 ************************************************
 
-Learners cannot see any content in a subsection if the subsection's release
-date and time is unscheduled or has not passed.
+소주제의 공개일이 지정되지 않거나, 아직 그 날짜가 되지 않았다면 학습자는 소주제에서 어떤 콘텐츠도 볼 수 없다.
 
-If a subsection's release date has passed, learners can see content in the
-subsection if the following three conditions are met.
+소주제의 공개일이 지나야 학습자가 콘텐츠를 볼 수 있는데.
 
-* The release date of the parent section has passed.
-* The units have been published.
-* The units are not hidden from learners.
+* 소주제가 속해있는 주제의 공개일이 지났거나.
+* 학습활동이 게시되었거나.
+* 학습활동이 따로 학습자에게 비공개로 설정되어 있지 않은 경우 학습자가 볼 수 있다.
 
-.. note:: The time that you set, and the time that learners see, is in
-   Coordinated Universal Time (UTC). You might want to verify that you have
-   specified the time that you intend by using a time zone converter such as
-   `Time and Date Time Zone Converter
-   <http://www.timeanddate.com/worldclock/converter.html>`_
+.. note:: 모든 날짜는 UTC를 기준으로 표기되며  `Time and Date Time Zone Converter <http://www.timeanddate.com/worldclock/converter.html>`_ 를 이용해 다시 한번 확인하는 것이 좋다.
 
 ************************************************
-Release Statuses of Subsections
+소주제의 공개 상태
 ************************************************
 
-As a course author, you control the release status of subsections. For the
-content of a subsection to be visible to learners, the subsection must be
-released. See the following topics for more information about the possible
-release statuses of subsections.
+강좌 개설자는 소주제의 공개일을 조절할 수 있다. 콘텐츠를 학습자에게 공개하려면, 그 콘텐츠가 들어가 있는 소주제가 공개되어야 한다. 소주제의 공개 상태로는 다음과 같은 것이 있다.
 
 * `Scheduled with the Section`_
 * `Unscheduled`_
@@ -79,114 +63,92 @@ release statuses of subsections.
 * `Released`_
 
 ==========================
-Scheduled with the Section
+주제와 함께 공개 예정
 ==========================
 
-When you create a subsection, it is set by default to release on the same date
-and time as the section it is in. Therefore, published content in the
-subsection is visible to learners at the date and time the section is released.
+소주제 공개일의 기본값은 주제의 공개일로 설정되어 있다. 이에 따라, 학습자는 주제가 공개되는 날, 소주제의 게시된 콘텐츠도 볼 수 있다.
 
-The following example shows how a subsection in the Scheduled with Section
-state displays in the outline, summarized with a green bar.
+다음 예시는 주제에 공개일이 지정되어 있을 때, 소주제가 어떻게 강좌 개요에서 보이는지를 나타낸다.
 
 .. image:: ../../../shared/images/subsection-scheduled.png
  :alt: A subsection scheduled to release with the section.
 
-You can change the release date for a subsection to be different from the
-section it is in. For more information, see :ref:`Set a Subsection Release
-Date`.
+소주제와 주제의 공개 날짜는 상이할 수 있으며 자세한 사항은  :ref:`Set a Subsection Release Date` 를 참고하면 된다.
 
 ========================
-Unscheduled
+공개일이 지정되지 않음
 ========================
 
-If the parent section is unscheduled, when you create a new subsection it
-will also be unscheduled.
+소주제를 포함하는 주제의 공개일이 지정되지 않으면, 학습자는 소주제를 볼 수 없다.
 
-Regardless of the publishing status of units within the subsection, no content
-in an unscheduled subsection is visible to learners.
+이에 따라 소주제의 학습활동의 게시 상태에 관계 없이, 학습자는 소주제 내부의 학습활동 역시 볼 수 없게 된다.
 
-The following example shows how an unscheduled subsection displays in the
-outline, summarized with a gray bar.
+다음 예시는 공개일이 지정되지 않은 소주제가 어떻게 강좌 개요에서 보이는지를 나타낸다.
 
 .. image:: ../../../shared/images/subsection-unscheduled.png
  :alt: An unscheduled subsection.
 
-Content in the subsection is not visible to learners until you set a release
-date and the date passes.
+학습자가 콘텐츠를 볼 수 있게 하려면, 강좌 운영팀이 반드시 주제의 공개일을 지정해야 한다.
 
 ===================================
-Scheduled Later than the Section
+주제 공개 후 소주제 공개
 ===================================
 
-You can set a subsection to release on a date after the section releases.
+주제를 먼저 공개하고, 그 주제에 속한 소주제를 나중에 공개할 수 있다.
 
-Content in a subsection that is scheduled for release on a future date is not
-visible to learners, even if some or all of the units in the subsection are
-published.
+소주제 내부의 학습활동이 게시 상태이더라도, 공개일의 날짜가 많이 남아 있는 경우 학습자는 콘텐츠를 볼 수 없다.
 
-The following example shows the way that a subsection that will release after
-its parent subsection displays in the course outline.
+다음 예시는 주제가 먼저 공개된 후 공개될 예정인 소주제가 어떻게 강좌 개요에서 보이는지를 나타낸다.
 
 .. image:: ../../../shared/images/subsection-scheduled-different.png
  :alt: A subsection scheduled to release later than the section.
 
-The scheduled date must pass for the subsection to be visible to learners.
+학습자가 콘텐츠를 볼 수 있게 하려면, 강좌 운영팀이 반드시 주제의 공개일을 지정해야 한다.
 
 ==================================
-Scheduled with Unpublished Changes
+공개 예정인 소주제의 학습활동 변경
 ==================================
 
-You can make changes to a published unit before its parent subsection
-is released.
+소주제가 공개되기 전, 학습활동이 게시 상태이더라도 학습활동을 변경할 수 있다. 그 후 학습자는 소주제 공개일에 맞춰 변경된 학습활동을 보게 된다.
 
-In this situation, when the release date for the subsection passes, the last
-published version of units within the subsection are made visible to learners.
-The changes in units are not visible to learners until you publish them.
+하지만 소주제가 이미 공개된 상태라면, 학습자는 변경된 학습활동을 볼 수 없다. 따라서 학습활동을 변경할 경우, 다시 게시해야 한다.
 
-The following example shows how a scheduled subsection with unpublished changes
-displays in the outline, summarized with a yellow bar.
+다음 예시는 아직 게시되지 않은 변경된 학습활동이 있는, 공개 예정 소주제가 어떻게 학습자에게 보이는지를 나타낸다.
 
 .. image:: ../../../shared/images/section-scheduled-with-changes.png
  :alt: A scheduled subsection with unpublished changes.
 
 ==================================
-Released with Unpublished Changes
+공개된 소주제의 학습활동 변경
 ==================================
 
-If you modify a unit within a released subsection, those modifications are not
-visible to students until you publish them.
+공개된 소주제의 학습활동을 변경한다면, 그것을 다시 게시하지 않는 한 학습자는 변경된 학습활동을 볼 수 없다.
 
-The following example shows how a released section that has unpublished changes
-displays in the outline, summarized with a yellow bar.
+다음 예시는 아직 게시되지 않은 변경된 학습활동이 있는, 공개된 소주제가 어떻게 학습자에게 보이는지를 나타낸다.
 
 .. image:: ../../../shared/images/section-released-with-changes.png
  :alt: A released subsection with unpublished changes.
 
 ===========================
-Released
+공개일시
 ===========================
 
-A subsection that is released is visible to learners; however, learners see
-only units within the subsection that are published.
+학습자는 공개된 소주제를 보게 된다. 그런데 이때 소주제 내부에서 게시 상태인 학습활동만을 볼 수 있다.
 
-The following example shows how a released subsection displays in the
-outline, summarized with a blue bar.
+다음 예시는 공개된 소주제가 강좌 개요에서 어떻게 보이는지를 나타낸다.
 
 .. image:: ../../../shared/images/subsection-released.png
  :alt: A released subsection.
 
 ===========================
-Staff Only Content
+강좌 운영팀에게만 공개됨
 ===========================
 
-A subsection can contain a unit that is hidden from learners and available to
-members of the course team only. That unit is not visible to learners, even if
-the subsection has been released.
+소주제에 학습활동을 추가하되, 이것을 학습자에게는 비공개로 하여 강좌 운영팀만 볼 수 있도록 할 수 있다.
 
-The following example shows how a section with a subsection that contains a
-unit with staff only content displays in the outline, summarized with a black
-bar.
+상위 소주제가 공개되더라도, 학습자는 비공개로 설정한 학습활동을 볼 수 없다
+
+다음 예시는 소주제에 강좌 운영팀만 볼 수 있는 학습활동이 있을 경우, 강좌 개요에서 어떻게 보이는지를 나타낸다.
 
 .. image:: ../../../shared/images/section-hidden-unit.png
  :alt: A subsection with a hidden unit.
@@ -197,178 +159,143 @@ bar.
 Create a Subsection
 ****************************
 
-To create a new subsection, follow these steps.
+소주제를 만드려면.
 
-#. In the outline, expand the section in which you want to create a new
-   subsection.
-#. Select **New Subsection** at the bottom of the expanded section. A new
-   subsection appears at the end of the section, with the subsection name
-   selected.
-#. Enter the name for the new subsection. A descriptive name can help learners
-   locate content in the course. It can also help you select content when you
-   analyze performance in edX Insights.
-#. :ref:`Add units<Create a Unit>` to the new subsection as needed.
+#. 강좌 개요에서, 신규 소주제를 만들고 싶은 주제를 펼친다.
+#. 펼친 주제의 하단에 있는 + **새로운 소주제** 를 클릭한다. 그러면 소주제가 추가되며, 소주제명을 입력할 수 있게 된다.
+#. 소주제명을 입력한다. 주제명을 정확하게 정해야 K-MOOC Insights에서 강좌를 조회하고 학습자가 강좌를 검색하는데 좋다.
+#. 필요한 경우, 이어서  :ref:`Add units<Create a Unit>` 을 추가한다.
 
-It is recommended that you :ref:`test course content <Testing Your Course
-Content>` as you create new subsections.
+신규 소주제를 추가한 후,  :ref:`test course content <Testing Your Course Content>` 를 권장한다.
 
 ********************************
-Change a Subsection Name
+소주제명 바꾸기
 ********************************
 
-To change a subsection name, select the **Edit** icon next to the subsection
-name. The name field becomes editable. Enter the new name, and then tab or
-click outside of the field to save the name.
+소주제명 위에 마우스를 갖다 대면 소주제명 옆에 편집 아이콘이 나타날 것이다. 편집 아이콘을 클릭한다. 그러면 편집 가능한 상태의 입력란이 생기게 된다. 그곳에 새 이름을 입력하고 탭 키를 누르거나 입력란 바깥의 영역을 클릭하면 그 이름이 저장된다.
 
 .. _Set a Subsection Release Date:
 
 ********************************
-Set a Subsection Release Date
+소주제 공개일 설정하기
 ********************************
 
-To set the subsection release date, follow these steps.
+소주제의 공개일을 설정하려면.
 
-#. Select the **Configure** icon in the subsection box.
+#. 소주제 영역에서 설정 아이콘을 클릭한다.
 
    .. image:: ../../../shared/images/subsections-settings-icon.png
     :alt: A subsection in the course outline with the configure icon indicated.
     :width: 600
 
-   The **Settings** dialog box opens.
+   **설정** 대화 상자가 열릴 것이다.
 
-#. Enter the release date and time for the subsection.
+#. 주제의 공개 일시를 입력한다.
 
-   .. note:: The time that you set, and the time that learners see, is in
-     Coordinated Universal Time (UTC). You might want to verify that you have
-     specified the time that you intend by using a time zone converter such as
-     `Time and Date Time Zone Converter
-     <http://www.timeanddate.com/worldclock/converter.html>`_
+   .. note:: 모든 날짜는 UTC를 기준으로 표기되며  `Time and Date Time Zone Converter <http://www.timeanddate.com/worldclock/converter.html>`_ 를 이용해 다시 한번 확인하는 것이 좋다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-For more information, see :ref:`Release Dates`.
+:ref:`Release Dates` 에 더 자세한 안내가 나와있다.
 
 .. _Set the Assignment Type and Due Date for a Subsection:
 
 ********************************************************
-Set the Assignment Type and Due Date for a Subsection
+과제 유형 및 마감일 설정
 ********************************************************
 
-You set the assignment type for problems at the subsection level.
+소주제에 들어있는 문제의 과제 유형을 설정한다.
 
-When you set the assignment type for a subsection, all problems within the
-subsection are graded and weighted as a single type. For example, if you
-designate the assignment type for a subsection as **Homework**, then all
-problem types in that subsection are graded as homework.
+소주제의 과제 유형을 설정하면, 소주제 내의 모든 문제는 채점이 되고 최종 성적에 설정된 가중치에 따라 반영된다. 예를 들어, 소주제의 과제유형을 과제 로 설정하면, 이 소주제의 모든 문제가 과제로 처리되어 채점된다.
 
-.. note:: Unlike other problem types, ORA assignments are not governed by the
-   subsection due date. Due dates for each ORA assignment are set in the
-   assignment's settings. For details, see :ref:`PA Specify Name and Dates`.
+.. note:: 다른 과제 유형과 다르게 ORA 과제는 소주제 제출 기한과 관련이 없다. 각 ORA별 제출 기한은 과제 설정에서 정할 수 있다. 자세한 사항은 :ref:`PA Specify Name and Dates` 를 참고하면 된다.
 
-To set the assignment type and due date for a subsection, follow these steps.
+과제 유형과 마감일을 설정하려면.
 
-#. Select the **Configure** icon in the subsection box.
+#. 소주제 영역에서 설정 아이콘을 클릭한다.
 
    .. image:: ../../../shared/images/subsections-settings-icon.png
     :alt: A subsection in the course outline with the configure icon indicated.
     :width: 600
 
-   The **Settings** dialog box opens.
+   그러면 설정 대화 상자가 열린다.
 
-#. In the **Grading** section, select the assignment type for this subsection
-   in the **Grade as** field.
+#. 채점 영역에서 이 소주제의 과제 유형을 선택한다.
 
-#. Enter or select a due date and time for problems in this subsection.
+#. 과제의 마감 일시를 설정한다.
 
-   .. note:: The time that you set, and the time that learners see, is in
-     Coordinated Universal Time (UTC). You might want to verify that you have
-     specified the time that you intend by using a time zone converter such as
-     `Time and Date Time Zone Converter
-     <http://www.timeanddate.com/worldclock/converter.html>`_
+   .. note:: 모든 날짜는 UTC를 기준으로 표기되며  `Time and Date Time Zone Converter <http://www.timeanddate.com/worldclock/converter.html>`_  를 이용해 다시 한번 확인하는 것이 좋다.
 
-#. Optionally, for a course that has the timed exam feature enabled, select the
-   **Advanced** tab to set the subsection to be :ref:`timed<Timed Exams>`.
+#. 선택사항으로 시간 제한 시험이 있는 강좌의 경우 **고급 설정** 탭에서 소주제에 시간 제한을 두면 된다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-For more information, see :ref:`Grading Index`.
+자세한 사항은  :ref:`Grading Index` 를 참고하면 된다.
 
 .. _Publish all Units in a Subsection:
 
 **********************************
-Publish All Units in a Subsection
+소주제의 전체 학습 활동 게시하기
 **********************************
 
-To publish all new and changed units in a subsection, select the **Publish**
-icon in the box for the subsection.
+소주제 내부의 전체 학습 활동을 게시하려면, 소주제 영역의 **게시** 아이콘을 클릭한다.
 
 .. image:: ../../../shared/images/outline-publish-icon-subsection.png
  :alt: Publishing icon for a subsection
 
 .. note::
- The **Publish** icon only appears when there is new or changed content within
- the subsection.
+ 게시 아이콘은 새로 추가되거나 변경된 콘텐츠가 있을 때에만 나타난다.
 
-See :ref:`Unit Publishing Status` for information about statuses and visibility
-to learners.
+학습자 공개 설정과 공개 상태에 관해  :ref:`Unit Publishing Status` 에 자세히 안내되어 있다.
 
 .. _Hide a Subsection from Students:
 
 ********************************
-Hide a Subsection from Learners
+학습자에게 소주제 감추기
 ********************************
 
-You can hide all content in a subsection from learners, regardless of the
-status of units within the section.
+학습활동의 공개 상태와 관계 없이, 소주제 내부의 전체 콘텐츠를 감출 수 있다.
 
-For more information, see :ref:`Content Hidden from Students`.
+자세한 사항은 :ref:`Content Hidden from Students` 를 참고하면 된다.
 
-To hide a subsection from learners, follow these steps.
+학습자에게 소주제를 감추려면.
 
-#. Select the **Configure** icon in the subsection box.
+#. 소주제 영역의 **설정** 아이콘을 클릭한다.
 
    .. image:: ../../../shared/images/subsections-settings-icon.png
      :alt: A subsection in the course outline with the configure icon
       indicated.
      :width: 600
 
-   The **Settings** dialog box opens.
+   **설정** 대화 상자가 열릴 것이다.
 
-#. In the **Student Visibility** section, select **Hide from students**.
+#. 학습자 보기에서 학습자에게 **감추기** 의 체크박스를 클릭한다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-Now, no content in the subsection is visible to learners.
+이제 소주제의 콘텐츠가 학습자에게 보이지 않을 것이다.
 
-To make the subsection visible to learners, repeat these steps and clear the
-**Hide from students** check box.
+학습자에게 소주제를 공개하려면, 이 단계를 반복하되 학습자에게 감추기 의 체크박스를 해제한다.
 
 .. warning::
- When you clear the **Hide from students** check box for a subsection, not all
- content in the subsection is necessarily made visible to learners. If you
- explicitly set a unit to be hidden from learners, it remains hidden from
- learners. Unpublished units remain unpublished, and changes to published units
- remain unpublished.
+ 학습자에게 감추기 의 체크박스를 해제해도, 개별적으로 비공개로 설정한 학습활동은 여전히 공개되지 않는다. 또한 게시하지 않은 학습활동도 여전히 공개되지 않는다.
 
 .. _Delete a Subsection:
 
 ********************************
-Delete a Subsection
+소주제 삭제하기
 ********************************
 
-When you delete a subsection, you delete all units within the subsection.
+소주제를 삭제하면, 해당 소주제 내부의 전체 학습활동도 함께 삭제된다.
 
 .. warning::
- You cannot restore course content after you delete it. To ensure you do not
- delete content you may need later, you can move any unused content to a
- section in your course that you set to never release.
+ 소주제를 삭제한 후에는 강좌 콘텐츠를 복구할 수 없다. 나중에 필요할 수도 있다고 생각되는 콘텐츠는 삭제하지 말고, 비공개 주제에 옮겨두는 것을 권장한다.
 
-To delete a subsection, follow these steps.
+소주제를 삭제하려면.
 
-#. Select the **Delete** icon in the subsection that you want to delete.
+#. 삭제를 원하는 소주제의 영역에 있는 **삭제** 아이콘을 클릭한다.
 
   .. image:: ../../../shared/images/subsection-delete.png
    :alt: The subsection with Delete icon circled.
 
-2. When the confirmation prompt appears, select **Yes, delete this
-   subsection**.
+2. 삭제를 확인하는 대화상자가 뜨면, **네, 소주제를 삭제합니다.** 를 클릭한다.

@@ -1,19 +1,16 @@
 .. _Developing Your Course Outline:
 
 ###################################
-Developing Your Course Outline
+강좌 개요
 ###################################
 
-As you develop your course, you work primarily in the edX Studio course
-outline. This section includes the following information about working with
-the course outline.
+강좌를 개발할 때는 주로 Studio에 있는 강좌 개요에서 작업하게 되는데, 본 장에서 이에 대해 다룬다.
 
 .. contents::
   :local:
   :depth: 1
 
-See the following sections for information about working with the course
-building blocks in the course outline.
+다음 장에서는 강좌 개요를 이루는 기본 요소를 다룬다.
 
 * :ref:`Developing Course Sections`
 * :ref:`Developing Course Subsections`
@@ -21,20 +18,19 @@ building blocks in the course outline.
 * :ref:`Developing Course Components`
 
 ****************************
-Open the Course Outline
+강좌 개요 열기
 ****************************
 
-To view the course outline, follow these steps.
+강좌 개요를 보려면.
 
-#. Log in to edX Studio.
-#. In the **My Courses** page, select the course you want to develop.
+#. Studio에 로그인한다.
+#. 내 강좌 화면에서 조회하고 싶은 **강좌** 를 선택한다.
 
-   The course outline opens by default when you open a course.
+   기본적으로 강좌명을 클릭하면, 강좌 개요가 나오게 되어있다.
 
-When working in a course, to open the outline, from the **Content** menu,
-select **Outline**.
+다른 페이지에서 강좌 개요를 보려면, 콘텐츠 메뉴에서 **강좌 개요** 를 선택하면 된다.
 
-The first time you view an outline for a course, it contains no content.
+처음 강좌 개요를 열었을 때는 콘텐츠가 없는 공백 상태이다.
 
 .. image:: ../../../shared/images/outline_empty.png
  :alt: An empty course outline.
@@ -45,117 +41,90 @@ You must :ref:`create the first section<Create a Section>`.
 Understanding a Course Outline in Studio
 ********************************************************
 
-The following example shows a partial course outline in Studio, with
-indications for sections, subsections, and units. As you develop your course,
-it will begin to look like this example.
+다음 예시는 Studio에서 강좌 개요가 어떻게 나타나는지를 보여준다. 주제, 소주제, 학습활동 등 강좌의 기본 요소를 채우면, 강좌 개요가 아래 예시처럼 보이게 된다.
 
 .. image:: ../../../shared/images/outline-callouts.png
  :alt: An outline with callouts for sections, subsections, and units.
 
-As this example shows, the course is organized into the following levels.
+위 예시가 보여주듯이, 강좌는 다음 구조로 구성된다.
 
 #. :ref:`Sections<Developing Course Sections>`
 #. :ref:`Subsections<Developing Course Subsections>`
 #. :ref:`Units<Developing Course Units>`
 
-:ref:`Components<Developing Course Components>` are not shown in the outline.
-You add or access components by selecting the units that contain them.
+:ref:`Components<Developing Course Components>` 는 강좌 개요에 나타나지 않는다. 구성요소가 포함되어 있는 학습활동을 클릭해야 해당 구성요소를 볼 수 있다.
 
-Use the links above for more information and instructions on working with each
-type of object in the course. The topics in the rest of this section provides
-more detail about the course outline.
+본 장에서는 우선 강좌 개요에 대한 안내가 이어진다. 강좌 기본 구성요소에 대한 더 자세한 안내는 위의 링크에 있다.
 
 ********************************************************
-View the Course Organization as a Learner
+학습자 화면에서 강좌 구성 보기
 ********************************************************
 
-The content you see in the outline in Studio is displayed to learners in the
-**Course** page in the LMS. The following image shows how a learner sees
-your course content.
+Studio의 강좌 개요에서 보이는 콘텐츠를 학습자는 학습관리시스템(LMS)에서 강좌 내용 탭에서 보게 된다. 다음 이미지는 학습자가 보게 될 화면을 나타낸다.
 
 .. image:: ../../../shared/images/Course_Outline_LMS.png
  :alt: Course content from learner's point of view.
 
-#. Sections are listed in the course navigation pane. Learners select a section
-   to see the subsections that it contains.
+#. 강좌 개요에서 주제를 확인할 수 있으며 이를 펼치면 소주제를 볼 수 있다.
 
-#. Subsections are listed in the course navigation pane after a learner expands
-   a section.
+#. 주제를 펼치면 소주제들을 확인할 수 있다.
 
-#. Units appear in the unit navigation bar, represented by icons, after
-   learners select a subsection. A tooltip with the unit's name appears when
-   learners move the pointer onto an icon.
+#. 소주제를 펼치면 학습활동 아이콘을 확인할 수 있다. 아이콘으로 마우스를 옮기면 학습활동 이름을 볼 수 있다.
 
-   Learners select icons in the unit navigation bar to access course units.
-   They can also use the **Previous** and **Next** options at either end of the
-   unit navigation bar to move back to the previous unit or forward to the next
-   unit.
+   아이콘을 클릭하여 학습활동으로 이동할 수 있으며 이전과 다음을 이용해 학습활동 페이지를 이동할 수 있다.
 
 .. _Navigating the Course Outline:
 
 *******************************
-Navigate the Course Outline
+강좌 개요 살펴보기
 *******************************
 
-In Studio, you navigate the course outline by expanding and collapsing sections
-and subsections. Use the "drop-down" icon next to a section or subsection name
-to expand or collapse its contents.
+Studio의 강좌 개요 화면에서 각 주제와 소주제를 펼치거나 접어서 개요를 살펴보면 편리하다. 주제나 소주제 명 옆의 드롭 다운 아이콘을 클릭하면 펼치기 및 접기가 가능하다.
 
 .. image:: ../../../shared/images/outline-expand-collapse.png
  :alt: The outline with expand and collapse icons circled.
 
-When you expand a subsection, all units in the subsection are visible.
+펼칠 경우, 소주제 안의 모든 학습활동이 다음처럼 보이게 된다.
 
 .. image:: ../../../shared/images/outline-with-units.png
  :alt: The outline with an expanded subsection.
 
-Select the name of a unit to open the :ref:`unit page<Developing Course
-Units>`.
+학습활동을 열려면 학습활동 명을 클릭하면 된다.
 
 .. _Add Content in the Course Outline:
 
 ************************************************
-Add Content in the Course Outline
+강좌 개요에 콘텐츠 추가하기
 ************************************************
 
-You add sections, subsections, and units directly in the outline.
+강좌 개요에서 주제, 소주제, 학습활동을 바로 추가할 수 있다.
 
-* To add a section to the outline, select **New Section**. This option appears
-  at both the top of the page and below the current sections in the outline.
-  For more information, see :ref:`Create a Section`.
+* 강좌 개요 하단의 + 새로운 주제 나 상단의 신규 주제 추가하기 를 클릭하면, 주제를 추가할 수 있다. 자세한 사항은  :ref:`Create a Section` 를 참고하면 된다.
 
-*  To add a subsection to the end of the section, expand the section and select
-   **New Subsection**.
+* 소주제를 추가하기 위해선, 주제를 먼저 펼친 후 + **새로운 소주제** 를 클릭하면 된다.
 
    .. image:: ../../../shared/images/outline-new-subsection.png
      :alt: The outline with the New Subsection button circled.
 
-* To add a unit to the end of a subsection, expand the subsection and select
-  **New Unit**.
+* 학습 활동을 추가하기 위해서는 소주제를 먼저 펼친 후 + **새로운 학습활동** 을 클릭하면 된다.
 
   .. image:: ../../../shared/images/outline-new-unit.png
     :alt: The outline with the New Subsection button circled.
 
-  The :ref:`unit<Developing Course Units>` page opens.
+  그러면  :ref:`unit<Developing Course Units>` 이 열린다.
 
 .. the following note is for prerequisite exams, which are currently released in open edx only and not on edx.org.  when they are available on edx.org, this note should no longer be conditionalized.
 
 .. only:: Open_edX
 
-    .. note::
-      If you want to require an entrance exam for your course, you also create
-      the exam in the course outline. Before you can create an exam, you must
-      set your course to require an entrance exam in Studio. For more
-      information, see :ref:`Require an Entrance Exam`.
 
 .. _Modify Settings for Objects in the Course Outline:
 
 ***************************************************
-Modify Settings for Objects in the Course Outline
+강좌 세부 사항 설정 변경
 ***************************************************
 
-You modify settings for sections, subsections, and units in the course outline.
-Specifically, you can complete the following tasks.
+강좌 개요에서 주제, 소주제, 학습활동의 설정을 변경할 수 있다. 구체적인 내용은 다음 링크를 참조한다.
 
 * :ref:`Set a Section Release Date`
 * :ref:`Hide a Section from Students`
@@ -164,37 +133,31 @@ Specifically, you can complete the following tasks.
 * :ref:`Hide a Subsection from Students`
 * :ref:`Hide a Unit from Students`
 
-To modify settings for a section, subsection, or unit, select the **Configure**
-icon for that object. In the following example, the **Configure** icon is
-circled for a section, a subsection, and two units.
+주제, 소주제 및 학습활동의 설정을 변경하려면, 각 항목의 설정 아이콘을 클릭한다. 다음 화면에서, 주제, 소주제 및 학습활동의 설정 아이콘을 빨간 원으로 표시하였다.
 
 .. image:: ../../../shared/images/settings-icons.png
  :alt: Configure icons in the course outline.
 
-For more information, see the links above.
+자세한 사항은 위 링크를 참고하면 된다.
 
 
 .. _Publish Content from the Course Outline:
 
 ************************************************
-Publish Content from the Course Outline
+콘텐츠 게시하기
 ************************************************
 
-You can publish new and changed units for an entire section or subsection. You
-can also publish individual units.
+주제, 소주제 및 학습 활동을 게시할 수 있다. 이를 전체적으로 게시할 수도 있고, 개별적으로 게시할 수도 있다.
 
-To publish new and changed units, select the **Publish** icon for a section,
-subsection, or unit. In the following example, the **Publish** icon is circled
-for a section, subsection, and unit.
+신규 및 변경된 학습활동을 게시하려면, 각 주제, 소주제 및 학습 활동의 게시 아이콘을 클릭한다. 다음 화면에서 게시 아이콘을 빨간 원으로 표시하였다.
 
 .. image:: ../../../shared/images/outline-publish-icons.png
  :alt: Publishing icons in the course outline.
 
 .. note::
- The **Publish** icon only appears when there is new or changed content within
- the object.
+ 게시 아이콘은 새롭거나 변경된 콘텐츠가 있을 때만 나타난다.
 
-For more information, see the following topics.
+더 자세한 안내는 아래 링크에 있다.
 
 * :ref:`Unit Publishing Status`
 * :ref:`Publish all Units in a Section`
@@ -204,64 +167,47 @@ For more information, see the following topics.
 .. _Reorganize the Course Outline:
 
 ************************************************
-Reorganize the Course Outline
+강좌 개요 재구성하기
 ************************************************
 
-You can reorganize your course content by dragging and dropping sections,
-subsections, and units to new locations in the outline.
+주제, 소주제, 학습활동을 원하는 위치로 드래그하여 강좌 콘텐츠를 재구성할 수 있다.
 
-To move a section, subsection, or unit, move your cursor over the handle on the
-right of the object's box until the cursor changes to a four-headed arrow. For
-example, in the image below, the handle for the subsection Lesson 1 - Getting
-Started is selected.
+각 주제, 소주제, 학습활동의 오른쪽 상단에 마우스를 올리면 커서가 십자가로 바뀐다. 예를 들어, 다음 이미지처럼 커서가 바뀌는 것이다.
 
 .. image:: ../../../shared/images/outline-drag-select.png
  :alt: A subsection handle selected to drag it.
 
-Then, click and drag the object to the location that you want.
+이 상태에서, 원하는 위치로 드래그하면 된다.
 
-If you expanded the section or subsection you are moving the object to, when
-you move the object, a blue line indicates where the object will land when you
-release the mouse button. For example, in the image below, the subsection
-Lesson 1 - Getting Started is being moved to the end of the section
-Introduction.
+이동을 원하는 주제나 소주제를 펼친 상태에서 드래그하면, 새로 놓을 위치에 파란색 줄이 생긴다. 예를 들어, 아래 이미지처럼 이 과정이 이루어지게 된다.
 
 .. image:: ../../../shared/images/outline-drag-new-location.png
  :alt: A subsection being dragged to a new section.
 
-If you did not expand the section or subsection you are moving the object to,
-the outline of that section or subsection turns blue when you have moved the
-object to a valid location. You can then release the mouse button. For example,
-in the image below, the subsection Lesson 1 - Getting Started is being moved to
-the collapsed section Introduction.
+주제나 소주제를 접은 상태에서 드래그하면, 주제나 소주제의 윤곽이 파란색으로 표시된다. 예를 들어, 아래 이미지처럼 과정이 이루어지게 된다.
 
 .. image:: ../../../shared/images/outline-drag-new-location-collapsed.png
   :alt: A subsection being dragged to a new section.
 
-.. note:: When you move a subsection to a different section, the release date
-  and time for that subsection does not change.
+.. note:: 한 소주제를 다른 주제 아래로 이동시켜도 공개일과 시간은 변하지 않는다.
 
 .. _Delete Content in the Course Outline:
 
 ************************************************
-Delete Content in the Course Outline
+강좌 개요에서 강좌 콘텐츠 삭제하기
 ************************************************
 
-You delete sections, subsections, and units from the course outline.
+주제, 소주제, 학습활동을 강좌 개요에서 삭제할 수 있다.
 
 .. warning::
- You cannot restore course content after you delete it. To ensure you do not
- delete content you may need later, you can move any unused content to a
- section in your course that you set to never release.
+ 강좌 콘텐츠를 삭제한 후에는 되돌릴 수 없다. 나중에 사용할 수도 있는 콘텐츠라면, 삭제하지 말고 비공개 주제로 콘텐츠를 옮겨놓는 것이 좋다.
 
-Select the **Delete** icon in the box for the object you want to delete.
+삭제하길 원하는 주제, 소주제 및 학습 활동의 오른쪽에 있는 삭제 아이콘을 클릭한다.
 
 .. image:: ../../../shared/images/outline-delete.png
  :alt: The outline with Delete icons circled.
 
-You are prompted to confirm the deletion.
+아이콘을 클릭하면, 삭제 여부를 다시 확인하는 메시지가 나타난다.
 
 .. note::
- When you delete an object, all objects that it contains are deleted. For
- example, when you delete a subsection, all units in that subsection are
- deleted.
+ 주제, 소주제 및 학습활동을 삭제할 경우, 포함되어 있던 콘텐츠들도 전부 삭제된다. 예를 들어, 소주제를 삭제할 경우 소주제 내부의 전체 학습활동도 함께 삭제되는 것이다.

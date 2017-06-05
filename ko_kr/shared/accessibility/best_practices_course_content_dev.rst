@@ -1,18 +1,12 @@
 .. _Accessibility Best Practices for Course Content Development:
 
 ############################################################
-Accessibility Best Practices for Developing Course Content
+강좌 제작자를 위한 접근성 가이드
 ############################################################
 
-EdX is dedicated to creating a platform that is not only itself accessible, but
-also enables course content creators to create accessible content. If you
-encounter platform issues that you believe might affect your ability to provide
-accessible course content, please contact us at accessibility@edx.org. We
-welcome any comments and questions.
+K-MOOC의 가장 중요한 목적은 모두에게 교육의 기회를 주는 것이다. 명심해야 할 점은 K-MOOC의 강좌는 신체적 장애에 관계 없이 모두가 볼 수 있어야 한다는 것이다.
 
-.. note:: Use of authoring tools other than those provided by edX might result
-   in inaccessible course content. However, for clarity, use of edX authoring
-   tools does not ensure that your course content will be accessible.
+.. note:: 강좌 운영팀은 이 행동 가이드를 숙지하고 강좌 제작과 관련된 사람들에게 전달해줘야 한다.
 
 .. contents::
    :local:
@@ -21,336 +15,187 @@ welcome any comments and questions.
 .. _Make Sure Your Course Content is Perceivable:
 
 ************************************************
-Make Sure Your Course Content is Perceivable
+강좌 내용 인식 형태 다양화하기
 ************************************************
 
-The `WCAG 2.0 <http://www.w3.org/TR/WCAG20/#cc1>`_ guidelines are organized
-around several principles, one of which is that web content must be
-perceivable. That is, information and user interface components must be
-presentable to users in ways they can perceive; it cannot be invisible to all
-of their senses. In almost all cases, this means that the information should be
-available as text, which can be rendered or transformed into a format that can
-be perceived.
+`WCAG 2.0 <http://www.w3.org/TR/WCAG20/#cc1>`_ 에는 다양한 원칙이 있는데 그 중 하나는 웹 콘텐츠는 인식이 가능해야 한다는 것이다. 이는 정보와 유저(사용자) 인터페이스를 사용자가 인식할 수 있어야 한다는 뜻이다. 대부분의 경우, 이는 정보가 텍스트로서 제공되고 인식 가능한 기타 형태로 변형 가능해야 한다는 뜻이다.
 
-To produce content that is perceivable by all learners, follow these
-guidelines.
+모든 학습자가 인식할 수 있는 콘텐츠 제작을 위해 다음 방법을 사용하면 된다.
 
 =================================================
-Include Text Alternatives for Non-Text Content
+비텍스트 콘텐츠에 텍스트 대안 추가하기
 =================================================
 
-For any non-text content, provide text alternatives so that the content can be
-changed into other forms that people need, such as large print, braille,
-speech, symbols, or simpler language.
+모든 비텍스트 콘텐츠에 대해 학습자가 사용할 수 있는 큰 활자, 점자, 음성, 기호 혹은 간단한 언어 등 텍스트 대안을 제공해야 한다.
 
-For non-text tests or exercises that would be invalid if presented in text,
-provide text alternatives that at least provide descriptions of the non-text
-content. Make sure that all images have useful alternative text that screen
-readers and other assistive technologies can read. For more information, see
-:ref:`Best Practices for Describing Images`.
+텍스트 형태가 불가능한 비텍스트 시험이나 연습의 경우 비텍스트 콘텐츠에 대한 설명이라도 텍스트 형태로 제공하는 것이 좋다. 모든 이미지에 대해 스크린 리더와 기타 지원 기술이 인식할 수 있는 텍스트 대안을 준비해야 한다.
 
 =================================================
-Provide Alternatives for Time-Based Media
+시한성 미디어 대안 준비하기
 =================================================
 
-For time-based media, including pre-recorded audio or video content, provide
-alternative equivalent information, such as captions, audio description or
-pre-recorded sign language interpretation. For more information, see
-:ref:`Creating Accessible Media`.
+사전에 녹음, 녹화된 콘텐츠와 같은 시한성 미디어에 대해 자막, 음성 설명 혹은 수화 통역과 같은 대안을 준비해야 한다. 자세한 사항은 :ref:`Creating Accessible Media` 를 참고하면 된다.
 
 =================================================
-Make Sure Your Content is Adaptable
+다양한 환경에서 콘텐츠 제공하기
 =================================================
 
-Design your course content so that it can be presented in different ways
-without losing information or structure. If your content includes specific
-information, structure, and relationships (such as sequence) that is conveyed
-through presentation, make sure the same information, structure, and
-relationships can be programmatically determined or are available in text. HTML
-is an ideal format in which to publish course content, because it provides
-semantic elements with implied roles, states, and properties. Users of
-assistive technologies rely on such semantic elements to effectively and
-efficiently consume and navigate content. Publish your content in HTML whenever
-possible.
+정보나 구성을 잃지 않은 채 다양한 방식으로 표시될 수 있도록 강좌 내용을 꾸며야 한다. 만약 강좌에 프레젠테이션을 통해 전달되는 구체적인 정보, 구성 혹은 순서와 같은 관계 등이 포함될 경우 동 내용이 텍스트로도 제공되어야 한다. HTML은 역할, 상태와 특징이 내재된 의미 요소를 제공하기 때문에 강좌 제작에 있어 이상적인 형태이다. 지원 기술을 이용하는 유저(사용자)는 이런 의미 요소에 의존하여 콘텐츠를 받아들이기 때문이다. 가능하면 HTML로 강좌를 제작하는 것이 좋다.
 
-Make sure your course content does not rely solely on sensory characteristics
-such as shape, size, visual location, orientation, or sound to be understood by
-learners.
+학습자가 강좌 내용을 이해하기 위해 모양, 크기, 시각적 위치, 음성 등에 의존하지 않도록 하는 것이 좋다.
 
 ======================================================
 Make It Easier for Learners to See and Hear Content
 ======================================================
 
-Make the default presentation as easy to perceive as possible, especially by
-making it easier for learners to distinguish foreground information from the
-background, in both visual and audio elements.
+학습자가 정보를 시각, 음성 형태로 배경으로부터 가려내기 쉽도록 기본 설명을 구성해야 한다.
 
-For visual elements, techniques include making sure the fonts you use are
-readable, and that there is sufficient contrast between the foreground and
-background. Do not use color as the sole means of visually distinguishing an
-element or conveying critical information. If you must create images that
-contain text, make sure that the text has a font size of at least 14 points and
-has good contrast with the background. Images of text cannot be scaled or
-color corrected as effectively as HTML text. Whenever possible, use the default
-font and color defined in the edX platform, which was designed to be easy to
-read. If you choose to override default font colors, make sure that the
-foreground and background colors have `sufficient contrast
-<https://leaverou.github.io/contrast-ratio/>`_.
+시각적 요소로는 글씨체를 읽기 쉽게 만들고 정보와 배경의 색을 구분 짓는 등의 방법이 있다. 단, 중요한 정보를 나타내는 유일한 방법으로 색깔을 사용해선 안된다. 만일 텍스트를 포함하는 이미지를 사용한다면 글자 크기를 14 이상으로 키우고 배경과 잘 대조되도록 해야 한다. 이미지 형태의 텍스트는 HTML에 비해 크기와 색을 바꾸기 힘들다. 가능하다면 최대한 읽기 쉽게 만들어진 K-MOOC 플랫폼의 기본 글씨체와 색을 사용하는 것이 좋다. 만약 기본 글씨 색을 사용하지 않는다면 정보와 배경의 색을 확실히 구분시켜야 한다.
 
-For audio elements, make sure that foreground sounds are sufficiently louder
-than background sounds.
+음성 요소로는 배경 소리보다 정보를 전달하는 음성이 크도록 해야 한다.
 
 .. _Make Sure Your Course Content is Understandable:
 
 ************************************************
-Make Sure Your Course Content is Understandable
+강좌 내용 이해하기 쉽게 만들기
 ************************************************
 
-Make sure your course content is readable and understandable. EdX courses have
-a global and diverse audience, including learners whose native language is not
-the language in which you created your course, as well as learners who have a
-disability that affects reading, such as dyslexia or a visual impairment.
+강좌 내용을 알기 쉽게 만들어야 한다. K-MOOC 강좌들은 국제적으로 다양한 학습자들이 수강하므로 다른 언어를 모국어로 갖는 학습자가 있을 수 있다. 또한, 시각 장애나 난독증으로 읽기 힘든 학습자가 있을 수 있다.
 
-Learners will be better positioned to access concepts in your content if you
-write in clear, straightforward language and the content is well structured.
+강좌가 잘 구성되어 있고 직접적인 언어로 개념을 설명한다면 학습자의 이해를 도울 수 있을 것이다.
 
 =========================================
-Write Simply and Clearly
+간단하고 쉽게 쓰기
 =========================================
 
-Avoid jargon. If unfamiliar words or phrases are relevant to the subject,
-explain them when they are first used, and include a glossary with your course
-materials. When you use an abbreviation or acronym, provide the full phrase the
-first time it appears. For example, "World Health Organization (WHO)."
+용어의 사용은 피해야 한다. 만일 주제와 관련된 단어나 문구를 지속적으로 사용해야 한다면 첫 등장 때 설명을 하고 강좌 내용과 함께 용어 사전을 첨부하는 것이 좋다. 약어를 사용할 땐 처음 그 단어가 나올 때 풀어서 설명해 줘야 한다. 예를 들어 “WHO”는 세계 보건 기구로 풀어줘야 한다.
 
-The Center for Plain Language provides `detailed resources on writing clearly
-and concisely <http://centerforplainlanguage.org/5-steps-to-plain-language/>`_,
-in language appropriate for your content and target audience.
+`detailed resources on writing clearly and concisely <http://centerforplainlanguage.org/5-steps-to-plain-language/>`_ 에선 간단하고 쉽게 글을 쓰는 법에 대해 설명하고 있고, 이를 강좌에 활용하면 된다 
 
 =========================================
-Make Your Course Easy to Navigate
+강좌 탐색 쉽게 만들기
 =========================================
 
-One aspect of making your course understandable is making sure that learners
-can easily grasp its structure, find content, and determine where they are
-within the course.
+강좌의 이해를 돕는 요소로는 학습자가 쉽게 강좌의 구조를 이해하고, 내용을 찾으며 강좌와의 연관성을 파악하게 하는 것이 있다.
 
-Name your course sections, subsections, units, components, and discussion
-topics in a consistent way, and make sure the names are useful and easy to
-skim. Make an element's name descriptive of its content, and put important
-keyword information first in the name. These names are used in navigation
-menus, page headings, and section headings; they are signposts that help
-learners to navigate your course and read course content.
+강좌를 일관성 있게 여러 부분과 세부 항목, 차시, 토의 주제 등으로 나눠서 찾기 쉬운 이름을 지어야 한다. 요소의 이름이 강좌 내용에 대해 설명하고 중요한 정보를 이름에 추가해야 한다. 이런 이름은 탐색 메뉴, 페이지 두서 등에 사용되며 학습자는 이를 이용해 강좌를 탐색하고 내용을 보게 된다.
 
-When you create written learning resources, break text into sections using
-HTML elements such as headings, paragraphs, and lists. Long blocks of unbroken
-text are a barrier to most readers. Segmented content is more inviting and is
-easier to navigate and search. See :ref:`Best Practices for HTML Markup` for
-guidance on creating accessible HTML.
+서면 자료를 만들 때 제목, 문단, 목록 등의 HTML 요소를 이용해 문서를 여러 부분으로 나눠야 한다. 나눠지지 않은 긴 문단은 이해가 힘들다. 여러 부분으로 쪼개진 내용이 이해하기 쉽고 검색도 쉽다. 접근성 높은 HTML을 만들기 위해  :ref:`Best Practices for HTML Markup` 을 참고하면 된다.
 
-When you provide links to external materials, use link text that clearly
-explains the link destination (for example, "Review the Course Syllabus").
-Avoid using constructs such as "Review the Course Syllabus here", with only
-the word "here" serving as link text. For links that point to documents rather
-than web pages, include the document type in the link. For example,
-"Supplemental Reading for Week 1 (EPUB)". Screen reader users frequently
-browse lists of links, or navigate web pages by moving from one link to the
-next. Ensuring that link text is understandable without surrounding context is
-important.
+외부 자료에 대한 링크를 제공할 때 링크가 어떤 자료와 연결되어 있는지 분명히 해야 한다. (예를 들어 “강좌 수업계획서 복습”) “강좌 수업계획서 복습은 이곳에”라고 쓰고 “이곳에”에만 링크를 거는 것은 피해야 한다. 또, 웹 페이지가 아닌 문서로 연결되는 링크는 어떤 프로그램을 사용하는지 첨부해줘야 한다. 예를 들어, “1주차 보조 읽기 자료(EPUB)”라고 쓰면 된다. 스크린 리더 사용자는 링크 목록을 자주 보고 한 링크에서 다른 링크로 이동하면서 웹페이지를 탐색할 때가 많다. 때문에, 주변의 맥락 없이 링크 텍스트를 이해할 수 있는 것이 중요하다.
 
 .. _Best Practices for Describing Images:
 
 ************************************************
-Use Best Practices for Describing Images
+이미지 설명 쉽게 하기
 ************************************************
 
-When you use images (including diagrams, maps, charts, or icons) in your
-course content, you must provide text alternatives that provide information
-equivalent to the visual content, or that identify the purpose of such
-non-text content.
+강좌에서 도형, 지도, 차트, 기호 등을 포함한 이미지를 사용할 때 항상 이미지의 목적을 설명하거나 이미지를 설명하고 있는 대안 텍스트를 첨부해야 한다.
 
-The text alternative for an image depends on the image's context and purpose,
-and might not be a simple description of the image's visual characteristics.
-In general, for every image, edX recommends that you provide a text
-alternative that provides the equivalent information that a sighted learner
-would obtain from viewing the image. If the image contains words that are
-important for understanding the content, include the words in the text
-alternative. If the image itself is being used as a link, the text
-alternative should describe the destination or action that will be performed
-when the link is activated.
+이미지의 대안 텍스트는 그 이미지의 맥락과 사용 목적과 관련이 있고, 단순한 이미지 생김새를 설명하라는 것이 아니다. 일반적으로 모든 이미지에 대해 K-MOOC은 이미지를 본 학습자가 얻은 정보와 동일한 정보를 텍스트 대안으로 제공할 것을 추천한다. 만약 이미지가 내용 이해에 중요한 단어를 담고 있다면 그 단어를 대안 텍스트에 추가해야 한다. 만약 이미지 자체가 링크로 사용되고 있다면 대안 텍스트는 그 링크에 실행했을 때에 대한 설명을 첨부해야 한다.
 
-The primary mechanism for providing a text alternative for an image in HTML is
-the ``alt`` attribute. The text value of this attribute is what screen reader
-users hear when they encounter the image in your content.
+HTML에서 이미지에 대한 대안 텍스트에서 가장 중요한 점은  ``alt`` 속성이다. 스크린 리더 사용자가 강좌에서 이미지를 봤을 때 이 속성을 이용하여 듣게 되기 때문이다.
 
-.. note:: All images *must* include an ``alt`` attribute. There are some
-   cases, noted below, when an empty ``alt`` attribute (``alt=""``) is
-   desirable. However, the ``alt`` attribute must never be omitted.
+.. note:: 모든 이미지는 반드시  ``alt`` 속성을 포함해야 한다. 허나 아래와 같은 공백  ``alt`` 속성을 추가해야 하는 예외도 존재한다. 그러나  ``alt`` 속성은 절대 빠져선 안된다.
 
-Create useful and meaningful text alternatives for images in your course by
-following these guidelines for particular situations.
+다음과 같은 방법으로 각 이미지에 유용하고 의미 있는 텍스트 대안을 추가해야 한다.
 
 .. contents::
    :local:
    :depth: 1
 
 =========================================
-Images That Are Links or Controls
+링크 및 조작 시 사용되는 이미지
 =========================================
 
-If your image serves as a link to additional content or is an interactive form
-control such as a button, the value of the ``alt`` attribute should describe
-the destination of the link or the action that will be performed when the user
-clicks the image. For example, if a linked image of an envelope opens an email
-program to send an email, a useful text alternative is "Send message", rather
-than "Envelope."
+만일 이미지가 기타 내용으로의 링크 혹은 버튼과 같은 조작에 사용되는 것이라면 ``alt`` 속성은 링크를 실행했을 때 도착점이나 이미지를 클릭했을 때의 작동을 설명해야 한다. 예를 들어, 만약 편지봉투 이미지 링크가 이메일 발송을 위한 프로그램을 연다면 대안 텍스트는 “편지봉투”가 아닌 “메시지 발송”이 되어야 한다
 
 ===========================
-Images That Contain Text
+텍스트를 포함하는 이미지
 ===========================
 
-If your image contains text, the ``alt`` attribute would typically consist of
-exactly the same text as is contained in the image. However, there are a
-couple of conditions when having an empty ``alt`` attribute (``alt=""``) is
-the preferred solution.
+만일 이미지가 텍스트를 포함한다면 ``alt`` 속성은 일반적으로 이미지와 동일한 텍스트를 포함한다. 그러나 공백 alt 속성을 사용하는 것이 더 좋은 예외적인 경우도 있다.
 
-If the text contained in the image is also available in nearby HTML, or
-otherwise accessible text, including it in the ``alt`` attribute would be
-redundant. In this case, setting an empty ``alt`` attribute (``alt=""``) is
-acceptable.  Doing so effectively "hides" the image from screen reader users.
+만일 이미지에 포함된 텍스트가 HTML에 포함되어 있거나 접근 가능한 텍스트라면 ``alt`` 속성에 포함하는 것은 중복일 수 있다. 이런 경우 공백 ``alt`` 속성을 사용하는 것도 가능하다. 이는 효과적으로 이미지를 스크린 리더 사용자로부터 감출 수 있다
 
-.. note:: All images *must* include an ``alt`` attribute so do not omit
-   the ``alt`` attribute entirely. If the ``alt`` attribute is omitted
-   entirely, screen readers will read the value of the ``src`` attribute (the
-   path to the image on a web server) as a fallback. This is rarely helpful to
-   the user and often results in a poor user experience.
+.. note:: 모든 이미지는 반드시 ``alt`` 속성을 포함해야 하며 alt 속성이 통째로 빠져선 안된다. 만약 ``alt`` 속성이 통째로 없어지면 스크린 리더는 src 속성 값을 읽게 된다. 이는 사용자가 좋은 환경에서 수강하는 것을 방해하게 된다.
 
-If the text contained in the image is for decorative purposes only and adds no
-value to the content of the page, an empty ``alt`` attribute is also
-acceptable.
+만약 이미지에 포함된 텍스트가 디자인적 기능만을 하고 강좌 내용과는 아예 관련이 없다면 공백 ``alt`` 속성도 문제 없다.
 
 ===================================================================
-Images That Contribute Meaning or Additional Context to the Page
+추가적 의미와 문맥을 담고 있는 이미지
 ===================================================================
 
-If the image is a simple graphic or photograph that provides additional
-context to the surrounding content, the ``alt`` attribute should briefly
-describe the image in a way that conveys that context.
+만약 이미지가 추가적인 맥락을 포함하는 간단한 사진이나 도표를 담고 있다면 ``alt`` 속성은 간단히 그 맥락을 알려주는 설명을 담아야 한다.
 
-Consider the following examples of meaningful alt attributes for a photo of
-the famous stone bridge, Ponte Vecchio in Florence, Italy.
+다음은 같은 유명한 이탈리아 피렌체의 석교 Ponte Vecchio 사진의 alt 속성 예시다.
 
-* For a representative image of the bridge included on a page about Florence,
-  a meaningful ``alt`` attribute would be "Photo of Ponte Vecchio, a famous
-  bridge and shopping center in Florence, Italy."
+* 피렌체의 다리의 대표적 이미지에 대한 의미 있는 ``alt`` 속성은 “피렌체의 유명한 다리이자 쇼핑 센터인 Ponte Vecchio의 사진” 일것이다.
 
-* If the context of the page is about the bridge itself a meaningful ``alt``
-  attribute would be more specific: "Photo of Ponte Vecchio showing its three
-  stone arches which span the Arno River."
+* 만약 페이지의 내용이 다리 자체에 관한 것이라면 의미 있는 ``alt`` 속성은 더 구체적일 것이다: “아르노강을 건너는 세 개의 석재 아치로 구성된 Ponte Vecchio의 사진”
 
-* For a technical diagram, or illustration, on a page about the construction of
-  the bridge the ``alt`` attribute would include the details conveyed visually,
-  such as dimensions and materials used: "The Ponte Vecchio is a stone bridge
-  with three arches and a span-to-rise ratio of 5 to 1."
+* 다리의 건축과 관련된 기술적 도표나 그림에 대한 것이라면 ``alt`` 속성은 크기와 재료 등 자세한 내용을 포함할 것이다: “Ponte Vecchio는 세 개의 아치로 구성된 석교로서 5대 1의 비율로 되어있다"
 
-* For a map intended to provide directions to the bridge, the ``alt`` attribute
-  would provide directions as text.
+* 만약 다리로 가는 법을 설명하는 지도라면 ``alt`` 속성은 가는 길을 포함할 것이다.
 
 ===========================================================
-Graphs or Complex Visual Representations of Information
+정보에 대한 그래프와 복잡한 시각적 묘사
 ===========================================================
 
-If the image is a graph or represents a complex piece of information, include
-the information contained in the image as accessible text adjacent to the
-image, or provide a link to the information. The ``alt`` attribute should
-convey a summary of what the complex image conveys visually. For example, a
-line graph that represents the price of a stock over time might be "The price
-of the stock rises from $45 in January of 2015 to over $76 in June of 2015 with
-a significant drop of 30% during the month of March."
+만일 이미지가 그래프나 복잡한 정보를 포함하고 있다면 이미지에 포함된 정보를 근처에 적어 놓거나 링크를 걸어 놓아야 한다. ``alt`` 속성은 복잡한 이미지가 시각적으로 무엇을 표현하는가에 대한 요약을 담아야 한다. 예를 들어 주가의 변화를 나타내는 선 그래프라면 “주가가 2015년 1월 45달러에서 2015년 6월 76달러 이상으로 증가했으나 3월 30% 감소했던 바 있다”라고 쓰면 된다.
 
-Consider using a caption to display long descriptions so that the information
-is available to all learners. In the following example, the image element
-includes the short description as the ``alt`` attribute and the paragraph
-element includes the long description.
+모든 학습자가 정보를 볼 수 있도록 자막을 사용해 긴 설명을 하는 것이 좋다. 다음 예시에서 이미지 요소는 짧은 설명을 담고 있고 ``alt`` 요소와 문단 요소에서 긴 설명을 담고 있다.
 
   ``<img src="image.jpg" alt="Photo of Ponte Vecchio"> <p>Photo of Ponte Vecchio showing its three stone arches and the Arno river</p>``
 
-Alternatively, provide long descriptions by creating an additional unit or
-downloadable file that contains the descriptive text and providing a link to
-the unit or file below the image.
+혹은 별도로 긴 설명을 첨부하거나 이미지 근처에 설명 텍스트를 포함하여 다운받을 수 있는 파일을 추가해도 된다.
 
   ``<img src="image.jpg" alt="Illustration of Ponte Vecchio"> <p><a href="description.html">Description of Ponte Vecchio Illustration</a></p>``
 
 =============================================================
-Images With Unknown Descriptions at The Time of Publication
+첨부 당시 설명이 존재하지 않는 이미지
 =============================================================
 
-If a suitable text alternative is unknown at the time of publication (for
-example, a webcam image that updates every 10 minutes) provide an ``alt``
-attribute that includes as much useful information as possible. For example,
-"Traffic on Interstate 90 at 5:45 PM June 26, 2015."
+만약 적당한 대안 텍스트가 없을 경우 (예를 들어, 10분마다 업데이트되는 웹캠 이미지) 최대한 많은 정보를 담고 있는 ``alt`` 요소를 추가해야 한다. 예를 들어 “2015년 6월 26일 5:45 PM 90번 고속도로의 교통 상황” 식으로 추가하면 된다.
+
 
 ===================================================
-Non-Informative Images
+정보가 담겨있지 않은 이미지
 ===================================================
 
-Images that do not provide information, including purely decorative images, do
-not need text descriptions. For example, an icon that is followed by link text
-that reads "Course Syllabus (EPUB)" does not need alternative text.
+만약 정보가 담겨있지 않은 순수 디자인적 목적을 위한 이미지라면 텍스트 설명이 필요 없다. 예를 들어 “강좌 수업계획서(EPUB)”이라는 텍스트로 이어지는 아이콘이라면 텍스트 대안은 필요 없다.
 
-For non-informative images that should be skipped by screen reading software,
-include an ``alt`` attribute but leave it with an empty value (also known as a
-NULL ``alt`` attribute).
+정보가 없는 이미지는 스크린 리더 상 건너뛰어야 하므로 공백 ``alt`` 요소를 추가하면 된다.
 
    ``<img src="image.jpg" alt="">``
 
-.. note:: While it is appropriate to have an empty ``alt`` attribute, it is
-  never acceptable to omit the ``alt`` attribute entirely. If image elements do
-  not include an ``alt`` attribute at all, a screen reader will read the path
-  to the image, or, in the case of a linked image, announce the linked URL.
-  This is rarely helpful to the user and often results in a poor user
-  experience.
+.. note:: 공백 alt 요소를 사용하는 것은 상관 없지만 ``alt`` 요소를 완전히 빼놓아선 안 된다. 만약 이미지가 ``alt`` 요소가 아예 없다면 스크린 리더는 이미지의 경로를 읽거나 링크가 첨부된 이미지의 경우 URL을 읽을 것이다. 이는 사용자가 좋은 환경에서 수강하는 것을 방해하게 된다.
 
 .. _Information Graphics:
 
 =============================================================
-Information Graphics (Charts, Diagrams, Illustrations)
+정보 그래픽 (차트, 도표, 그림)
 =============================================================
 
-Graphics are helpful for communicating concepts and information, but they can
-present challenges for people with visual impairments. For example, a chart
-that requires color perception or a diagram with tiny labels and annotations
-will likely be difficult to comprehend for learners with color blindness or low
-vision. All images present a barrier to learners who are blind.
+개념과 정보를 설명하는데 시각 자료는 매우 유용하지만 시각 장애가 있는 사람에겐 사용이 제한될 수 있다. 예를 들어 색을 구분해야 하는 차트나 작은 글씨로 쓰여진 도표는 맹인이나 저시력자가 보기 힘들 것이다. 시각 장애가 있는 사람에겐 모든 이미지가 진입장벽이 된다.
 
-EdX recommends that you follow these best practices for making information
-graphics accessible to visually impaired learners.
+K-MOOC은 다음과 같은 방법으로 시각 장애가 있는 학습자에게 정보 그래픽을 보여주는 것을 추천한다.
 
-* Avoid using only color to distinguish important features of an image. For
-  example, on a line graph, use a different symbol or line style as well as
-  color to distinguish the data elements.
+* 색깔만을 이용해 이미지의 중요한 부분을 구분하는 것을 피해야 한다. 예를 들어 선 그래프에서는 다른 색깔과 더불어 기호와 선 모양을 이용해 데이터 요소를 구분해야 한다.
 
-* Whenever possible, use an image format that supports scaling, such as .svg,
-  so that learners can employ zooming or view the image larger. Consider
-  providing a high-resolution version of complex graphics that have small but
-  essential details.
+* 가능한대로 .svg 형태 등 축소가 가능한 이미지 형식을 사용해야 한다. 이를 통해 학습자가 이미지를 쉽게 확대할 수 있다. 작고 중요한 세부사항이 있는 복잡한 시각 자료를 쓸 땐 고화질 이미지를 이용한다.
 
-* For every graphic, provide a text alternative that provides the equivalent
-  information that a sighted learner would obtain from viewing the graphic. For
-  charts and graphs, a text alternative could be a table displaying the same
-  data. See :ref:`Best Practices for Describing Images` for details about
-  providing useful text alternatives for images.
+* 모든 시각 자료는 대안 텍스트를 이용해 일반 학습자와 동일한 정보를 얻을 수 있도록 해야 한다. 차트와 그래프에서 대안 텍스트는 그와 같은 자료를 보여주는 표가 될 수 있다.  :ref:`Best Practices for Describing Images` 을 참고하여 이미지에 대한 효과적인 대안 텍스트를 넣으면 된다.
 
 =====================================================
-Accessible Images Resources
+접근성 높은 이미지 자료
 =====================================================
 
 * W3C `Resources on Alternative Text for Images <http://www.w3.org/WAI/alt/>`_
 
 * `W3C WAI Images Tutorial <http://www.w3.org/WAI/tutorials/images/>`_
 
-* `HTML5 - Requirements for providing text to act as an alternative for images
-  <http://www.w3.org/TR/html5/embedded-content-0.html#alt>`_
+* `HTML5 - Requirements for providing text to act as an alternative for images <http://www.w3.org/TR/html5/embedded-content-0.html#alt>`_
 
 * `WebAim <http://webaim.org/techniques/alttext/>`_ provides general guidance
   on the appropriate use of alternative text for images.
@@ -363,56 +208,36 @@ Accessible Images Resources
 .. _Creating Accessible Course Materials:
 
 ************************************************
-Create Accessible Course Materials
+접근성 높은 강좌 자료 만들기
 ************************************************
 
-The source teaching materials for your course might exist in a variety of
-formats. For example, your syllabus might be in MS Word, your presentation
-slides in MS PowerPoint, and your textbooks in publisher-supplied PDF. It is
-important to consider how accessible these supplemental materials are before
-making them available through your course.
+강좌에 사용될 자료엔 여러 형태가 있다. 예를 들어 수업 계획서가 MS 워드로 작성되고 프레젠테이션 슬라이드가 MS 파워포인트로 작성되며 교재가 PDF 형태일 수 있다. 이런 자료를 강좌에 사용하기 전에 얼마나 접근성이 높은지 고려해야 한다.
 
-Carefully consider the document format you choose for publishing your course
-materials, because some formats support accessibility better than others.
-Whenever possible, create course materials in HTML format, using the tools
-available to you in edX Studio. When you make digital textbooks (ebooks)
-available within your course, ask digital book publishers for books in either
-`DAISY <https://en.wikipedia.org/wiki/DAISY_Digital_Talking_Book>`_ or `EPUB 3
-<https://en.wikipedia.org/wiki/EPUB#Version_3.0.1_.28current_version.29>`_
-format, or both. Both of these digital book formats include unparalleled
-support for accessibility. However, simply supporting accessibility does not
-always mean a document will be accessible. When you source ebooks from third
-parties, it helps to ask the right questions about accessibility.
+강좌 자료를 만들 때 문서 형식에 따라 접근성이 달라지므로 신중히 고려해야 한다. 가능한 한 강좌 자료는 HTML 형식으로 만들고 K-MOOC에서 제공하는 도구를 이용하는 것이 좋다. 디지털 교재(이북)를 강좌에서 사용한다면 이북 회사에게 DAISY나 EPUB3 형식으로 만들어 달라고 하는 것이 좋다. 이 두 형식은 접근성을 크게 높여준다. 그러나 접근성을 지원한다고 해서 항상 문서가 접근 가능함을 의미하는 것은 아니다. 이북을 제3자로부터 공급받을 때 다음과 같은 질문을 하는 것이 좋다.
 
-* Can screen readers read the document text?
-* Do images in the document include alternative text descriptions?
-* Are all tables, charts, and math provided in an accessible format?
-* Does all media include text equivalents?
-* Does the document have navigational aids, such as a table of contents, index,
-  headings, and bookmarks?
+* 스크린 리더가 문서를 읽을 수 있는가?
+* 문서의 이미지가 대안 텍스트 설명을 포함하는가?
+* 모든 표, 차트와 계산이 접근 가능한 형식으로 되어있는가?
+* 모든 미디어 자료에 텍스트 설명이 있는가?
+* 문서에 목차, 색인, 제목, 책갈피 등 탐색 도구가 있는가?
 
-Natively accessible formats like those mentioned above might not always be
-available options. Other popular document formats included in edX courses
-include PDF, Microsoft Word, Excel, or PowerPoint. Many of the same
-accessibility techniques and principles that apply to authoring web content
-apply to these document formats as well.
+접근성이 기본으로 보장된 형식이 언제나 사용 가능하지는 않다. K-MOOC 강좌에서 다른 종류의 인기 있는 형식은 PDF, MS 워드, 엑셀, 파워포인트 등이 있다. 웹 콘텐츠에 적용되는 접근성 적용 방식 중 많은 부분이 위와 같은 문서 형식에도 동일하게 적용된다.
 
-* Images must have descriptive text associated with them.
-* Documents should be well structured.
-* Information should be presented in a logical order.
-* Hyperlinks should be meaningful and describe the destination.
-* Tables should include properly defined column and row headers.
-* Color combinations should be high contrast.
+* 이미지는 설명 텍스트가 같이 있어야 한다.
+* 문서의 구조가 잘 짜여 있어야 한다.
+* 정보는 논리적 흐름에 따라 제시되어야 한다.
+* 하이퍼링크는 의미가 있어야 하며 연결되는 곳을 지칭해야 한다.
+* 표는 행과 열이 올바르게 정리되어 있어야 한다.
+* 색 조합은 제대로 대조되어야 한다.
 
-The information that follows provides some practical guidance to publishing
-accessible course materials in popular formats.
+다음은 대중적인 형식의 강좌 자료에서 접근성을 높이는 실용적인 방법이다.
 
 .. contents::
    :local:
    :depth: 1
 
 =====================================================
-Accessible Course Materials Resources
+접근성 높은 강좌 자료
 =====================================================
 
 * `The DAISY Consortium <http://www.daisy.org>`_ is a global partnership of
@@ -425,77 +250,43 @@ Accessible Course Materials Resources
 .. _Creating Accessible PDFs:
 
 =====================================================
-Creating Accessible PDF Documents
+접근성 높은 PDF 만들기
 =====================================================
 
-Not all ebooks are available in DAISY or EPUB 3 format. Portable Document
-Format (PDF) is another common format for course materials, including textbooks
-supplied by publishers. However, converting materials to PDF documents can
-create accessibility barriers, particularly for learners with visual
-impairments. Such learners rely on the semantic document structure inherently
-available in HTML, DAISY, or EPUB 3 to understand and effectively navigate PDF
-documents. For more information, see :ref:`HTML Markup Resources`).
+모든 이북이 DAISY나 EPUB3 형식으로 제공되는 것은 아니다. PDF는 강좌 자료 및 출판서 교재로 흔히 사용되는 형식이다. 그러나 자료를 PDF 형식으로 바꾸는 것은 시각 장애가 있는 학습자의 접근성에 문제를 야기할 수 있다. 시각 장애가 있는 학습자는 PDF 형식의 문서를 볼 때 HTML, DAISY, EPUB3이 제공하는 의미론적 구조에 의존하기 때문이다. 자세한 내용은  :ref:`HTML Markup Resources` 를 참고하면 된다.
 
-Accessibility issues are very common in PDF files that were scanned from
-printed sources or exported from a non-PDF document format. Scanned documents
-are simply images of text. To make scanned documents accessible, you must
-perform Optical Character Recognition (OCR) on these documents, and proofread
-the resulting text for accuracy before embedding it within the PDF file. You
-must also add semantic structure and other metadata (headings, links,
-alternative content for images, and so on) to the embedded text.
+접근성 문제는 본래 PDF 형식이 아니었던 문서 추출되었거나 스캔된 문서를 PDF 형식으로 저장하였을 경우 흔히 발생한다. 스캔한 문서는 텍스트의 사진일 뿐이기 때문이다. 스캔한 문서의 접근성을 높이기 위해선 해당 문서에 광학적 문자 판독장치 (OCR)을 사용하고 PDF 파일로 저장하기 전에 첨삭해야 한다. 또한 의미론적 구조 및 기타 메타데이터(제목, 링크, 이미지를 위한 대체 내용 등)를 추가하여야 한다.
 
-When you export documents to PDF from other formats, it is important to ensure
-that the source document contains all the required semantic structure and
-metadata before exporting. Unfortunately, some applications do not include this
-information when exporting and require the author to add or "tag" the document
-manually using PDF editing software. You should carefully consider whether
-exporting to PDF is necessary at all.
+다른 형식의 문서에서 PDF 파일을 추출할 경우 원 문서가 필요한 의미론적 구조와 메타데이터를 사전에 갖춰 놓았는지 확인하는 것이 중요하다. 아쉽게도 일부 어플리케이션은 추출 시 이런 정보를 필요로 하지 않고 추출자가 PDF 수정 소프트웨어를 이용해 수동으로 추가하도록 하고 있다. PDF로 추출하는 것 자체가 필요한지 재고해 볼 필요가 있다.
 
-.. note:: `OpenOffice <https://www.openoffice.org/>`_ and `LibreOffice
-   <https://www.libreoffice.org/>`_ will produce the best results when you
-   export documents to PDF.
+.. note:: `OpenOffice <https://www.openoffice.org/>`_ 와  `LibreOffice <https://www.libreoffice.org/>`_ 를 이용하는 것이 PDF로 추출 시 가장 좋다.
 
-Best Practices for Authoring Accessible PDF Documents
+접근성 높은 PDF 문서 작성하기
 *******************************************************
 
-* Explicitly define the language of the document so that screen readers know
-  what language they should use to parse the document.
+* 스크린 리더가 어떤 어조로 문서를 분석해야 할지 알려주기 위해 문서의 어조를 분명하게 한다.
 
-* Explicitly set the document title. When you export a file to PDF format, the
-  document title usually defaults to the file name, not a human readable title.
+* 문서 제목을 분명하게 설정한다. PDF 형식으로 파일을 추출할 때 문서 제목은 주로 파일 이름으로 되기 때문에 읽기 힘들 수 있다.
 
-* Verify that all images have alternative content defined or are marked as
-  decorative only.
+* 디자인적 요소로 사용된 것을 제외한 모든 이미지가 텍스트 대안이 있는 것을 확인한다.
 
-* Verify that the PDF file is "tagged". Make sure the semantic structure from
-  the source document has been correctly imported to the PDF file.
+* PDF 파일이 “태그”되었음을 확인한다. 원 문서의 의미론적 구조가 PDF 파일에 제대로 적용되도록 한다.
 
-* Verify that a logical reading order is defined. This is especially important
-  for documents that have atypical page layouts or structure.
+* 읽기 순서가 논리적으로 구축되었음을 확인한다. 이는 이례적인 페이지 레이아웃이나 구조를 갖고 있는 문서에서 특히 중요하다.
 
-* If your document includes tables, verify that table headers for rows and
-  columns are properly defined.
+* 만일 문서에 표가 있다면 표 행과 열의 제목이 제대로 설정되었음을 확인한다.
 
-.. note:: When you export Microsoft Office documents as PDF, use the **Save
-   as PDF** option. Make sure the **Document Structure Tags for Accessibility**
-   option is selected (consult your software documentation for more details).
-   PDFs generated from Windows versions of MS Office might be more accessible
-   than those generated from Mac OS versions of MS Office. If you are using Mac
-   OS, we highly recommend exporting from OpenOffice or LibreOffice.
+.. note:: MS 문서를 PDF 파일로 저장할 때 PDF로 저장을 클릭한다. 이때에 반드시 Document Structure Tags for Accessibility 옵션을 선택하도록 한다. (소프트웨어 도움말 참고) 윈도우 버전의 MS 오피스에서 추출한 PDF 파일이 Mac OS에서 추출한 것 보다 접근성이 높을 수 있다. 만약 Mac OS를 사용 중이라면 OpenOffice나 LibreOffice의 사용을 적극 추천한다.
 
-.. note:: When you export from OpenOffice or LibreOffice, use the **Export as
-   PDF** option. Make sure the **Tagged PDF** option is selected.
+.. note:: OpenOffice나 LibreOffice로부터 추출할 때 PDF 태그 옵션을 선택한 채 PDF로 추출 옵션을 사용한다.
 
 
-Evaluating PDF Files for Accessibility
+PDF 파일 접근성 확인하기
 ***************************************
 
-EdX highly recommends using the tools available in Adobe Acrobat Pro (for
-example, "Accessibility Checker") to evaluate your PDF files for accessibility.
-Adobe Acrobat Pro also includes tools (for example, "Make Accessible") for
-fixing most common accessibility issues.
+K-MOOC은 PDF 파일의 접근성을 확인할 때 (“접근성 확인” 등) Adobe Acrobat Pro가 제공하는 도구 사용을 적극 추천한다. Adobe Acrobat Pro는 (“접근성 높이기” 등) 흔히 발생하는 접근성 문제를 해결하는 도구 역시 제공한다.
 
-Accessible PDF Resources
+접근성을 높이는 PDF 자료
 *******************************************************
 
 * Microsoft provides detailed `guidance on generating accessible PDFs from
@@ -519,39 +310,30 @@ Accessible PDF Resources
   `creating accessible Office documents <http://adod.idrc.ocad.ca/>`_.
 
 =====================================================
-Creating Accessible Word Documents
+접근성 높은 워드 문서 만들기
 =====================================================
 
-Many of the same accessibility techniques and principles that apply to
-authoring web content also apply to creating Word documents.
+웹 콘텐츠에 적용되는 접근성 적용 방식 중 많은 부분이 위와 같은 문서 형식에도 동일하게 적용된다.
 
-* Images must have `descriptive text <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D#__toc275414986>`_ associated with them.
+* 이미지는 설명 텍스트가 같이 있어야 한다.
 
-* Documents should be `well structured <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D#__toc275414990>`_.
+* 문서의 구조가 잘 짜여 있어야 한다.
 
-* `Hyperlinks should be meaningful <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D#__toc275414991>`_ and describe the destination.
+* 하이퍼링크는 의미가 있어야 하며 연결되는 곳을 지칭해야 한다 .
 
-* Tables should include `properly defined column and row headers <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D#__toc271197283>`_.
+* 표는 행과 열이 올바르게 정리되어 있어야 한다.
 
-* Color combinations should be high contrast.
+* 색 조합은 제대로 대조되어야 한다.
 
-* Verify the accessibility of your document using `Microsoft's Accessibility
-  Checker <https://support.office.com/en-us/article/Check-for-accessibility-
-  issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
+* 문서의 접근성을  `Microsoft's Accessibility Checker <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_ 를 이용해 확인한다.
 
-In addition, follow these guidelines when you format Word documents.
+추가적으로 워드 문서 작성시 다음과 같은 사항을 따른다.
 
-* Keep formatting simple. Use headings, paragraphs, lists, images, and
-  captions. Use tables for tabular data. Do not add unnecessary indents,
-  rules, columns, blank lines, or typographic variation.
+* 간단한 형식을 유지한다. 제목, 문단, 목록, 표, 이미지와 자막을 이용한다. 필요 없는 들여 쓰기, 열, 빈 줄과 글씨체를 사용하지 않는다.
 
-* Use standardized styles for formatting your text, such as Normal, Heading 1,
-  and Heading 2, rather than manually formatting text using text styles and
-  indents. Formatting text for its semantic meaning and not for its visual
-  appearance allows users of assistive technology to consume and navigate
-  documents effectively and efficiently.
+* 형식을 직접 만드는 것이 아니고 미리 표준화 되어있는 형식을 사용하는 것이 좋다. 디자인적인 목적이 아닌 의미 전달을 목적으로 형식을 만들어야 지원 기술을 사용하는 학습자가 효과적이고 효율적으로 문서를 이해할 수 있다.
 
-Accessible Microsoft Word Resources
+접근성을 높이는 워드 자료
 *************************************
 
 * Microsoft guide to `creating accessible Word documents <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D>`_.
@@ -559,32 +341,24 @@ Accessible Microsoft Word Resources
 * Microsoft tool that allows you to `check Word documents for accessibility issues <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
 
 =====================================================
-Creating Accessible Excel Documents
+접근성 높은 엑셀 문서 만들기
 =====================================================
 
-Many of the same accessibility techniques and principles that apply to
-authoring data tables in HTML also apply to creating Excel spreadsheets.
+HTML에서 데이터 표에 적용되는 접근성을 높이는 방법들이 엑셀 시트에도 동일하게 적용될 수 있다.
 
-* Images must have descriptive text associated with them. For more information,
-  see `Add alternative text to images and objects in Excel documents
-  <https://support.office.com/en-us/article/Creating-accessible-Excel-
-  workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593#__toc271205010>`_.
+* 이미지는 설명 텍스트가 같이 있어야 한다. 자세한 사항은  `Add alternative text to images and objects in Excel documents <https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593#__toc271205010>`_ 를 참고하면 된다.
 
-* `Column and row headings should be programmatically identified <https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593#__toc271205011>`_.
+* 행과 열 제목이 제대로 있어야 한다.
 
-* `Hyperlinks in spreadsheets should be meaningful <https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593#__toc271197281>`_ and describe the destination.
+* 엑셀 시트의 하이퍼링크는 의미가 있어야 한다.
 
-* Use a unique and informative title for each worksheet tab.
+* 각 엑셀 시트의 탭 별로 내용을 알 수 있는 제목이 있어야 한다.
 
-* Do not use blank cells for formatting.
+* 색 조합은 제대로 대조되어야 한다.
 
-* Color combinations should be high contrast.
+* 문서의 접근성을  `Microsoft's Accessibility Checker <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_ 를 이용해 확인한다.
 
-* Verify the accessibility of your workbook using `Microsoft's Accessibility
-  Checker <https://support.office.com/en-us/article/Check-for-accessibility-
-  issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
-
-Accessible Microsoft Excel Resources
+접근성을 높이는 엑셀 자료
 *******************************************************
 
 * Microsoft guide to `creating accessible Excel workbooks
@@ -596,49 +370,29 @@ Accessible Microsoft Excel Resources
   issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
 
 =====================================================
-Creating Accessible PowerPoint Documents
+접근성 높은 파워포인트 문서 만들기
 =====================================================
 
-Many of the same accessibility techniques and principles that apply to
-authoring web content also apply to creating PowerPoint presentations.
+HTML에서 웹 콘텐츠에 적용되는 접근성을 높이는 방법들이 파워포인트 프레젠테이션에도 동일하게 적용될 수 있다.
 
-* Images must have descriptive text associated with them. For more information,
-  see `Add alternative text to images and objects in PowerPoint documents
-  <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-
-  presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131977>`_.
+* 이미지는 설명 텍스트가 같이 있어야 한다. 자세한 사항은  `Add alternative text to images and objects in PowerPoint documents <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131977>`_ 를 참고하면 된다.
 
-* Column and row headings should be programmatically identified. For more
-  information, see `Specify column header information in tables in PowerPoint
-  documents <https://support.office.com/en-us/article/Creating-accessible-
-  PowerPoint-presentations-
-  6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131978>`_.
+* 행과 열 제목이 제대로 있어야 한다.
 
-* `Hyperlinks in presentations should be meaningful <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131980>`_ and describe the destination.
+* 프레젠테이션의 하이퍼링크는 의미가 있어야 한다.
 
-* Use a unique and informative title for each slide.
+* 각 슬라이드 별로 내용을 알 수 있는 제목이 있어야 한다.
 
-* Ensure that information is `presented in a logical order
-  <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-
-  presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131984>`_
+* 정보는 논리적 순서에 따라 제시되어야 한다.
 
-* Color combinations should be high contrast.
+* 색 조합은 제대로 대조되어야 한다.
 
-* Verify the accessibility of your presentation using `Microsoft's
-  Accessibility Checker <https://support.office.com/en-us/article/Check-for-
-  accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-
-  US&ad=US>`_.
+* 문서의 접근성을  `Microsoft's Accessibility Checker <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_ 를 이용해 확인한다.
 
-To make your content accessible and comprehensible to learners who use screen
-reading software, start in Outline view and include all of your content as
-text. After completing the outline, add design elements and images, and use
-the picture formatting options in MS PowerPoint to include detailed text
-descriptions of images that convey useful information to learners who cannot
-view the images. Use the **Home > Drawing > Arrange > Selection Pane** option
-to view the reading order of objects on each slide. If the reading order is
-not logical, change the order of the objects.
+스크린 리더를 사용하고 있는 학습자가 내용을 이해할 수 있도록 개요 보기로 시작하여 모든 내용을 텍스트 형태로 담아야 한다. 개요를 끝낸 후 디자인 요소와 이미지를 추가하고 MS 파워포인트의 사진 형식 옵션을 이용해 이미지를 볼 수 없는 학습자를 위해 중요한 사진에 대한 텍스트 설명을 추가한다. Home > Drawing > Arrange > Selection Pane 순으로 들어가 각 슬라이드 별 읽기 순서를 지정한다. 만일 읽기 순서가 논리적이지 않다면 순서를 바꾼다.
 
 
-Accessible PowerPoint Resources
+접근성을 높이는 파워포인트 자료
 *******************************************************
 
 * Microsoft guide to `creating accessible PowerPoint presentations
@@ -656,50 +410,33 @@ Accessible PowerPoint Resources
 .. _Best Practices for Math Content:
 
 ************************************************
-Use Best Practices for Mathematical Content
+수학 콘텐츠 활용법
 ************************************************
 
-Math in online courses can be challenging to deliver in a way that is
-accessible to people with vision impairments. Non-scalable images of
-mathematical content cannot be sufficiently enlarged or navigated by low-vision
-users and are not accessible to blind users at all.
+온라인 강좌에서 수학은 시각 장애가 있는 학습자에게 가르치기 어려운 과목이다. 수학적 내용을 담은 확대 및 축소가 힘든 이미지의 경우 저시력자는 보기 힘들며 아예 볼 수 없는 사람에겐 전혀 접근성이 없다.
 
-EdX uses `MathJax <https://www.mathjax.org>`_ to render math content in a
-format that is clear, readable, and accessible to people who use screen
-readers. MathJax works together with math notation such as LaTeX and MathML to
-render mathematical equations as text instead of images. EdX recommends that
-you use MathJax to author your math content. MathJax renders math in a variety
-of formats on the client side, offering the end user the ability to consume
-math content in their preferred format. EdX Studio supports authoring math
-directly in LaTeX using the `LaTeX Source Compiler
+K-MOOC은 MathJax를 이용하여 화면 판독기를 이용하는 학습자에 대해 접근성 높고 읽을 수 있으며 깨끗한 형식으로 수학 콘텐츠를 제공한다. MathJax는 LaTeX나 MathML과 같은 문법을 사용하며 이미지나 텍스트를 사용하지 않는다. K-MOOC은 MathJax를 이용하여 가르치는 것을 권장한다. MathJax는 여러 형식을 제공해 최종 소비자가 원하는 형태로 수학 콘텐츠를 학습할 수 있기 때문이다. Studio는 LaTeX 컴파일러를 사용한 교수법도 제공한다
 <https://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/creating_content/create_html_component.html#import-latex-code>`_ to transform LaTeX into MathJax.
 
 ======================================================
-Accessible Mathematical Content Resources
+접근성 높은 수학 콘텐츠 자료
 ======================================================
 
-* `The MathJax website <http://www.mathjax.org>`_ provides guidance on creating
-  accessible pages using their display engine.
+* 접근성 높은 수학 콘텐츠 자료 `The MathJax website <http://www.mathjax.org>`_ .
 
-* The `DO-IT project <http://www.washington.edu/doit/are-there-guidelines-creating-accessible-math?465=>`_ from the University of Washington provides guidance on creating accessible math content.
+* 워싱턴 대학의 DO-IT 프로젝트는 접근성이 높은 수학 콘텐츠를 만드는 방법에 관한 지침을 제공한다 `DO-IT project <http://www.washington.edu/doit/are-there-guidelines-creating-accessible-math?465=>`_ .
 
-* `The AccessSTEM website <http://www.washington.edu/doit/programs/accessstem/overview>`_
-  provides guidance on creating accessible science, technology, engineering
-  and math educational content.
+* AccessSTEM은 접근성이 높은 과학, 기술, 공학 및 수학 교육 콘텐츠를 만드는 지침을 제공한다 `The AccessSTEM website <http://www.washington.edu/doit/programs/accessstem/overview>`_ .
 
-* The `Design Science News blog <http://news.dessci.com/accessible-math>`_
-  shares information about making math accessible.
+* Design Science News 블로그는 수학의 접근성을 높이는 방법에 대해 공유한다 `Design Science News blog <http://news.dessci.com/accessible-math>`_ .
 
 .. _Best Practices for Custom Content Types:
 
 ************************************************
-Use Best Practices for Custom Content Types
+사용자 지정 콘텐츠 활용법
 ************************************************
 
-Using different content types in your courses can significantly add to the
-learning experience for your learners. This section covers how to design
-several custom content types so that your course content is accessible to all
-learners.
+서로 다른 콘텐츠 형식을 사용하는 것은 더 많은 학습 경험을 제공할 수 있다. 장애를 가진 학습자가 접근할 수 있는 여러 가지 사용자 맞춤형 콘텐츠 형식을 설계하는 방법을 아래에서 살펴본다.
 
 .. contents::
    :local:
@@ -707,101 +444,52 @@ learners.
 .. _Simulations and Interactive Modules:
 
 ======================================================
-Simulations and Interactive Modules
+시뮬레이션 및 인터랙티브 모듈
 ======================================================
 
-Simulations, including animated or gamified content, can enhance the learning
-experience. In particular, they benefit learners who might have difficulty
-acquiring knowledge from reading and processing textual content alone. However,
-simulations can also present some groups of learners with difficulties. To
-minimize barriers to learning, consider the intended learning outcome of the
-simulation. Is your goal to reinforce understanding that can also come from
-textual content or a video lecture, or is it to convey new knowledge that other
-course resources cannot cover? Providing alternative resources will help
-mitigate the impact of any barriers.
+애니메이션 또는 게임화된 콘텐츠를 포함하는 시뮬레이션은 학습 경험을 향상시킬 수 있다. 특히, 혼자 텍스트 콘텐츠를 읽고 처리하며 지식을 습득 하는데 어려움이 있는 학습자를 도울 수 있다. 그러나, 시뮬레이션은 또한 일부 그룹의 학습자에게 어려울 수 있다. 그 장벽을 최소화하기 위해, 시뮬레이션의 의도된 학습 결과를 고려해야 한다. 뿐만 아니라 대체 자료를 제공한다면 모든 장애물의 부정적인 영향을 완화하는데 도움이 될 것이다.
 
-Although you can design simulations to avoid many accessibility barriers, some
-barriers, particularly in simulations supplied by third parties, might be
-difficult or impossible to address for technical or pedagogic reasons.
-Understanding the nature of these barriers can help you provide workarounds for
-learners who are affected. Keep in mind that attempted workarounds for
-simulations supplied by third parties might require the supplier's consent if
-copyrighted material is involved. If you consider third party solutions, we
-encourage you to evaluate them for accessibility. The easiest way to do this is
-to contact the vendor and ask them about the accessibility of their product.
+외부에서 제공하는 시뮬레이션의 경우, 접근성을 높일 대안을 만드는 것이 저작권 문제가 있을 수 있으니 제공 업체의 동의가 필수 적이다.
 
-Consider the following questions when creating simulations, keeping in mind
-that as the course creator, you enjoy considerable freedom in selecting course
-objectives and outcomes. Additionally, if the visual components of a simulation
-are so central to your course design, providing alternative text description
-and other accommodations might not be practical or feasible.
+시뮬레이션을 만들 때는 다음 질문들을 고려하도록 한다. 교수 설계에서 시뮬레이션의 시각적 구성 요소가 핵심적이라면, 대안 텍스트 설명 및 다른 보충자료를 제공하는 것이 실용적이거나 실현 가능하지 않을 수 있다.
 
-* Does the simulation require vision to understand? If so, provide text
-  describing the concepts that the simulation conveys.
+* 시뮬레이션을 이해하기 위해 시력이 요구되는가? 그렇다면, 시뮬레이션이 전달하는 개념을 설명하는 텍스트를 제공하도록 한다.
 
-* Is a computer mouse necessary to operate the simulation? If so, provide text
-  describing the concepts that the simulation conveys.
+* 시뮬레이션을 작동 하는데 마우스가 필요한가? 그렇다면, 시뮬레이션이 전달하는 개념을 설명하는 텍스트를 제공하도록 한다.
 
-* Does the simulation include flashing or flickering content that could trigger
-  seizures?
+* 시뮬레이션은 점멸하거나 깜박거리는 콘텐츠를 포함하고 있는가? 
 
-  If so, and if this content is critical to the nature of the simulation, take
-  these steps.
+  그렇다면 이러한 콘텐츠가 시뮬레이션의 특성상 매우 중요하지만.
 
-  * Do not make using the simulation a requirement for a graded assessment
-    activity.
+  * 학습자가 평가에 반영되는 활동을 하기 위해 이러한 시뮬레이션을 사용하도록 요구하지 않도록 한다.
 
-  * Provide a warning that the simulation contains flickering or flashing
-    content.
+  * 시뮬레이션이 점멸성의 깜빡임 또는 플래시 콘텐츠를 포함하고 있다는 경고를 제공하도록 한다.
 
 .. _Online Exercises and Assessments:
 
 ======================================================
-Online Exercises and Assessments
+온라인 연습문제 및 평가
 ======================================================
 
-For each activity or assessment that you design, consider any difficulties that
-learners with disabilities might have in completing it, and consider using
-multiple assessment options. Focus on activities that can be completed and
-submitted by all learners.
+학습 활동과 평가에 참여가 어려운 학습자가 있을 수 있다. 학습자가 경험할 어려움을 고려하고, 일부 학습자가 장애가 있을 수 있음을 염두에 두고 여러가지 평가 옵션을 사용할 것을 고려한다. 
 
-Some learners take longer to read information and input responses, such as
-learners with visual or mobility impairments and learners who need time to
-comprehend the information. If an exercise has a time limit, consider whether
-the allowed time is enough for all learners to respond. Advance planning might
-help to reduce the number of learners requesting time extensions.
+예를 들어, 연습 문제에 시간 제한이 있는 경우, 학습자가 응답하는데 충분한 시간인지를 고려한다.
 
-Some online exercise question types, such as the following examples, might be
-difficult for learners who have vision or mobility impairments.
+시각 또는 신체 장애가 있는 학습자 및 정보를 이해하는데 시간이 필요한 학습자와 같이 일부 학습자는 정보를 읽고 응답을 입력하는데 더 오래 걸릴 수 있다. 예를 들어.
 
-* Exercises requiring fine hand-eye coordination, such as image mapped input or
-  drag and drop exercises, might present difficulties to learners who have
-  limited mobility. Consider alternatives that do not require fine motor
-  skills, unless, of course, such skills are necessary for effective
-  participation in the course. For example, instead of a drag and drop exercise
-  for mapping atoms to compounds, provide a checkbox or multiple choice
-  exercise.
+* 이미지와 매핑된 입력 또는 드래그 앤 드롭 연습 문제와 같이 손과 눈의 정교한 조화를 요구하는 것은 제한된 운동성을 가진 학습자에게 어려울 수 있다. 세밀한 기술이 강좌 참여하는데 필수적이지 않다면, 정교한 운동 능력이 요구되지 않는 방법을 고려하도록 한다. 예를 들어, 원자를 화합물로 매핑하는 것은 체크박스 또는 객관식 연습문제로 제공 하도록 한다.
 
-* Highly visual stimuli, such as word clouds, might not be accessible to
-  learners who have visual impairments. Provide a text alternative that conveys
-  the same information, such as an ordered list of words in the word cloud.
+* 시각 장애를 가진 학습자는 단어구름(word cloud)과 같은 시각적 자극에 접근하지 못할 수도 있다. 단어구름 단어들의 순차적인 목록처럼 동일한 정보를 제공하는 텍스트 대안을 제공하도록 한다.
 
 .. _Third Party Content:
 
 ======================================================
-Third-Party Content
+외부 콘텐츠
 ======================================================
 
-If you include links to third-party content in your course, be mindful of the
-accessibility of such resources. EdX recommends that you evaluate third-party
-content prior to sharing it with learners.
+강좌에 외부 콘텐츠 링크를 포함할 때는, 장애를 가진 학습자가 쉽게 접근할 수 없을 수 있으므로 외부 자료에 대한 접근성을 고려해야 한다. 학습자에게 공유하기 전에 모든 링크를 테스트할 것을 권장한다.
 
-You can use the eReader tool or :ref:`Add Files to a Course` to incorporate
-third-party textbooks and other publications in PDF format into your course.
-You can also incorporate such materials into your course in HTML format. See
-:ref:`Creating Accessible PDFs` for guidance on working with third-party
-supplied PDFs, and :ref:`Best Practices for HTML Markup` for guidance on
-creating accessible HTML.
+강좌에 외부 교재 및 기타 출판물을 PDF 형태로 통합하기 위해 eReader 도구 또는 :ref:`Add Files to a Course` 를 사용할 수 있다. 또한 강좌에 HTML 형식으로 그러한 자료를 통합시킬 수 있다. 외부업체에서 제공된 PDF 파일들을 작업하는 것에 대한 지침으로 :ref:`Creating Accessible PDFs` 를 참조하고, 접근할 수 있는 HTML 만들기에 관한 지침으로 :ref:`Best Practices for HTML Markup` 을 참조하도록 한다.
 
 
 .. _Accessible Custom Content Resources:
@@ -810,212 +498,114 @@ creating accessible HTML.
 Accessible Custom Content Resources
 ======================================================
 
-* `Effective Practices for Description of Science Content within Digital Talking Books <http://ncam.wgbh.org/experience_learn/educational_media/stemdx>`_, from the National Center for Accessible Media, provides best practices for describing graphs, charts, diagrams, and illustrations.
+* National Center for Accessible Media에 있는 디지털 도서 내에서 과학 콘텐츠에 대한 설명을 위한 효과적인 사례는 그래프, 차트, 다이어그램 및 그림을 설명하기 위한 모범 사례를 제공한다 `Effective Practices for Description of Science Content within Digital Talking Books <http://ncam.wgbh.org/experience_learn/educational_media/stemdx>`_ .
 
-* `AccessSTEM <http://www.washington.edu/doit/programs/accessstem/overview>`_
-  provides guidance on creating accessible science, technology, engineering
-  and math educational content.
+* `AccessSTEM <http://www.washington.edu/doit/programs/accessstem/overview>`_ 은 접근성이 높은 과학, 기술, 공학 및 수학 교육 콘텐츠를 만드는 지침을 제공한다.
 
-* The National Center on Educational Outcomes (NCEO) provides `Principles and Characteristics of Inclusive Assessment and Accountability Systems <http://www.cehd.umn.edu/nceo/onlinepubs/Synthesis40.html>`_.
+* The National Center on Educational Outcomes (NCEO)는 포함된 평가 및 책임 시스템에 관한 원리와 특성을 제공한다. `Principles and Characteristics of Inclusive Assessment and Accountability Systems <http://www.cehd.umn.edu/nceo/onlinepubs/Synthesis40.html>`_.
 
 .. _Creating Accessible Media:
 
 ************************************************
-Create Accessible Media
+미디어 접근성 높이기
 ************************************************
 
-Media-based course materials help to convey concepts and can bring course
-information to life. We require all videos in edX courses to include text
-captions in `SubRip (SRT) format
-<https://en.wikipedia.org/wiki/SubRip#SubRip_text_file_format>`_. The edX
-media player displays caption files in an interactive sidebar that benefits a
-variety of learners, including learners who are hard of hearing or whose
-native language differs from the primary language of the media. This built-in
-universal design mechanism enhances your course's accessibility. When you
-create your course, you need to factor in time and resources for creating text
-captions.
+미디어 기반 강좌 교재는 개념을 전달하고 생활에 강좌 정보를 적용하는데 도움이 된다. 모든 edX 강좌는 .srt 형식의 자막이 제공되는 비디오를 사용해야 한다. K-MOOC 동영상 플레이어는 청각 장애가 있거나 미디어의 언어와 다른 모국어를 갖고 있는 학습자에게 도움을 주는 자막 파일을 제공한다. 이렇게 내재된 universal design(통합 설계 디자인)은 강좌에 대한 접근성을 향상 시킬 수 있다. 강좌를 만들 때, 자막을 만들기 위해 드는 시간과 자원에 대한 요인들을 고려해야 한다.
 
 =====================================================
-Audio Captions
+오디오 자막
 =====================================================
 
-Audio captions are essential for presenting the readable equivalent of audio
-content to learners who cannot hear. They can also be helpful for learners
-whose native languages are languages other than the primary language of the
-media. Synchronized text captions allow learners who cannot hear to follow
-along with the video. The edX media player displays text captions as links in
-an interactive area adjacent to the video, which allows all learners to
-navigate to a specific section of the video by selecting some location within
-the caption text.
+듣지 못하는 학습자에게 오디오 자막은 청취 내용을 제시하는데 필수적이며 그 미디어의 언어가 모국어가 아닌 학습자에게도 도움이 된다. 싱크가 맞는 자막은 들을 수 없는 학습자가 비디오를 따라가거나 자막 텍스트를 클릭하여 비디오의 특정 주제로 탐색할 수 있도록 도와준다. 또한, 모든 학습자는 연구 및 검토용으로 미디어에 기반한 학습 자료의 자막을 이용할 수 있다.
 
-Text caption files start with the text version of a video's spoken content and
-any non-spoken audio that is important to understanding the context of the
-video, such as [BUZZER], [LAUGHTER], or [THUNDER]. If you created your video
-using a script, you have a great start on creating the text caption file.
-Simply review the recorded video and update the script as needed. Text
-captions can be uploaded to YouTube along with the video to create a timed
-text file in `SubRip (SRT) format
-<https://en.wikipedia.org/wiki/SubRip#SubRip_text_file_format>`_. Otherwise,
-you will need to transcribe the video yourself or engage someone to do it.
-There are many companies that will create timed text captions (captions that
-synchronize the text with the video using time codes) for a fee. SRT files
-should be associated with video components in Studio. See :ref:`Working with
-Video Components` for details on how to associate text captions with videos.
+텍스트 자막 파일은 동영상의 음성 콘텐츠의 텍스트 버전과 동영상 이해에 필요한 각종 음향 효과 등을 포함한다. 스크립트를 사용해 동영상을 만들기 시작했다면 자막 파일을 만들기 용이하다. 녹화한 동영상을 보며 스크립트를 수정하면 된다. 동영상의 녹취록을 작성하여 만들지 않고 YouTube 업로드를 통해 .srt 자막 파일을 만들 수도 있다. 비용을 지불하면 자막을 만들어주는 회사도 있다. .srt 파일은 Studio에서 동영상 구성요소와 연동되어야 한다. 자막을 추가하는 방법에 대한 자세한 사항은 :ref:`Working with Video Components` 를 참조하도록 한다.
 
 =====================================================
-Descriptions in Video
+영상 설명
 =====================================================
 
-When you create video segments, consider how you will convey information to
-learners who cannot see what is happening in a video. Actions that are only
-visible on screen without any audible equivalent are not accessible to learners
-who have visual impairments.
+영상을 만들려고 할 때는, 볼 수 없는 학습자에게 어떻게 정보를 전달할 것인지를 고려하도록 한다. 화면에서만 보이는 행동은 시각 장애가 있는 학습자들에게 이해가 힘들 수 있다.
 
-For many topics, you can fully cover concepts in the spoken presentation. If it
-is practical to do so, you should audibly describe visual events as they happen
-in the video. For example, if you are illustrating dropping a coin and a
-feather together from a height, you should consider narrating your actions as
-you perform them. Ask yourself if your video would make sense if the learner
-were only listening to the audio content, for example while they were driving a
-car.
+많은 주제에 대해, 음성을 함께 제공함으로써 개념을 완벽하게 소화할 수 있도록 한다. 가능하면 동영상에서 일어나는 일을 음성으로 설명하는 것도 좋다. 예를 들어 동전과 깃털을 같은 높이에서 떨어뜨리는 동작이라면 동작 수행과 동시에 이를 말로 설명할 수 있는가를 고려해야 한다. 스스로에게 이를 음성으로 들었을 때도 말이 될지 물어보는 것이 좋다.
 
 =====================================================
-Downloadable Transcripts
+다운로드 가능한 자막
 =====================================================
 
-For both audio and video transcripts, consider including a text file that
-learners can download and review using tools such as word processing, screen
-reader, or literacy software. All learners can use transcripts of media-based
-learning materials for study and review.
+워드 프로세싱, 화면 판독기, 또는 문맹 퇴치 소프트웨어와 같은 도구를 이용하여 학습자가 다운로드하거나 복습할 수 있도록 자막은 텍스트 파일을 포함하는 것이 좋다. 다운로드 가능한 자막은 시간 코드 없이 텍스트로만 되어 있어야 한다.
 
 =====================================================
-Accessible Media Resources
+접근성 높은 미디어 자료
 =====================================================
 
-`Accessible Digital Media Guidelines <http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide>`_ provides detailed advice on creating online video and audio with accessibility in mind.
+`Accessible Digital Media Guidelines <http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide>`_ 은 접근성을 염두에 둔 온라인 비디오 및 오디오 강좌를 만드는 방법에 관한 상세한 조언을 제공한다.
 
 .. _Best Practices for HTML Markup:
 
 ************************************************
-Use Best Practices for HTML Markup
+HTML Markup 활용하기
 ************************************************
 
-HTML is the best format for creating accessible content. It is well supported
-and adaptable across browsers and devices. Also, the information in HTML
-markup helps assistive technologies, such as screen reader software, to
-provide information and functionality to people with vision impairments.
+HTML은 브라우저 및 장치에 골고루 잘 지원된다. HTML Markup에 있는 정보는 시각 장애가 있는 사람들에게 화면 판독기 소프트웨어와 같은 보조 기술을 통해 정보와 기능성을 제공하도록 도와준다.
 
-Most of the problem type templates in edX Studio conform to our recommended
-best practices in terms of good HTML markup. You can manually add appropriate
-HTML tagging even if it does not exist in the component template. Depending on
-the type of component you are adding to your course in edX Studio, the raw
-HTML data is available either automatically or by selecting the "Advanced
-Editor" or "HTML" views.
+Studio 대부분의 문제 유형 템플릿은 권장하고 있는 HTML Markup 활용법을 따른다. 템플릿에 존재하지 않지만 적절하다고 생각되는 HTML 태그도 추가할 수 있다. Studio에서 추가하는 구성요소의 종류에 따라 raw HTML 데이터가 자동으로 제공될 수도 있으며 “고급 편집기”나 “HTML”을 선택하여 봐야 할 수도 있다.
 
-Keep the following guidelines in mind when you create HTML content.
+HTML 콘텐츠를 만들 때 다음 지침에 유의하도록 한다.
 
-* Use HTML tags to describe the meaning of content, rather than changing its
-  appearance. For example, you should tag a section title with the appropriate
-  heading level (such as ``<h3>``) rather than making the text appear like
-  a heading by applying visual elements such as bold text and a larger font
-  size. Format list items into a list rather than using images of bullets or
-  indents. Using HTML to describe your content's meaning is valuable for
-  learners who use screen readers, which, for example, can read through all
-  headings of a specific level or announce the number of items in a list.
+* 콘텐츠의 외관 보다는 콘텐츠의 의미를 설명 하기 위해 HTML을 사용하도록 한다. Level 1 제목 (<h1>) 으로 표시된 문구는 페이지의 주제를 명확하게 나타내지만, 굵은 텍스트(<bold> 또는 <strong>)로 표시된 문구는 제목이거나 단지 교수자가 강조하고 싶은 텍스트일 수 있다. 목록으로 표시된 항목의 그룹은 글머리 기호 및 들여쓰기 같은 시각적 단서에 의존하지 않고 코드와 관련되어 있다. 콘텐츠를 의미하는 코딩은 머리글을 통해 읽을 수 있거나 혹은 목록에 있는 항목의 수를 밝혀 줄 수 있는 화면 판독기를 사용하는 학습자에게 특히 유용하다.
 
-* Use HTML heading levels in sequential order to represent the structure of a
-  document. Well-structured headings help learners and screen reader users to
-  navigate a page and efficiently find what they are looking for.
+* 문서 구조를 나타내기 위해 순차적으로 HTML 제목 수준을 사용하도록 한다. 체계화된 제목들은 학습자가 페이지를 탐색하고 또 학습자가 무엇을 찾고 있는지를 알 수 있도록 돕는다.
 
-  In your :ref:`HTML<Working with HTML Components>` and
-  :ref:`problem<Working with Problem Components>` components, be sure to apply
-  only heading levels 3 through 6 to your content. Because the components
-  that you add are part of a complete page, and heading levels 1 and 2 are
-  already in use by other elements on the page, any text with a heading 1
-  or 2 style within an HTML or problem component can interfere with the
-  functionality of tools such as screen readers.
+  :ref:`HTML<Working with HTML Components>` 과   :ref:`problem<Working with Problem Components>` 에서 머리말 3~6만을 사용해야 한다. 추가적 구성요소는 전체 페이지의 일부이고 머리말 1,2가 다른 부분에서 사용되기 때문에 화면 판독기 등의 도구와 충돌할 수 있다.
 
-* Use HTML list elements to group related items and make content easier to skim
-  and read. HTML offers three kinds of lists.
+* 관련 항목들을 그룹화 하고 콘텐츠를 보다 쉽게 건너 뛰고 읽을 수 있도록 하기 위해 HTML 목록 요소를 사용하도록 한다. HTML은 다음 세 가지 종류의 목록을 제공한다.
 
-  *  Unordered lists, where the order of items is not important. Each item is
-     marked with a bullet.
+  *  각 항목이 글머리 기호로 표시되어 있는 순서 없는 목록.
 
-  *  Ordered lists, where the order of items is important. Each item is listed
-     with a number.
+  *  각 항목이 번호와 함께 나열되어 있는 순서 목록.
 
-  *  Definition lists, where each item is represented using term and
-     description pairs (like a dictionary).
+  *  (사전 처럼) 용어와 설명의 짝을 이루어 표기된 정의 목록.
 
-* Use table elements to format information that works best in a grid format,
-  and include descriptive row and column headings. Tag row and column headers
-  with the ``<th>`` element so screen readers can effectively describe the
-  content in the table.
+* 격자 서식에 가장 적합한 정보인 데이터 세트를 표시하기 위해서는, 설명하는 행과 열을 가진 테이블 요소를 사용하도록 한다. 화면 판독기가 효과적으로 표에 있는 내용을 설명할 수 있도록 <th> 요소를 사용하여 행과 열의 제목을 표시하도록 한다.
 
 .. _HTML Markup Resources:
 
 ====================================================
-HTML Markup Resources
+HTML Markup 자료
 ====================================================
 
-* `Creating Semantic Structure <http://webaim.org/techniques/semanticstructure/>`_
-  provides guidance on reflecting the semantic structure of a web page in
-  the underlying markup (WebAIM).
+* `Creating Semantic Structure <http://webaim.org/techniques/semanticstructure/>`_ 는 기본 태그 (WebAIM)에서 웹 페이지의 의미 구조를 반영하는 지침을 제공한다.
 
-* `Creating Accessible Tables <http://webaim.org/techniques/tables/data>`_
-  provides specific guidance on creating data tables with the appropriate
-  semantic structure so that screen readers can correctly present the
-  information (WebAIM).
+* `Creating Accessible Tables <http://webaim.org/techniques/tables/data>`_ 는 화면 판독기가 올바르게 정보(WebAIM)를 표시할 수 있도록 적절한 의미 구조를 가지는 데이터 표를 만드는 방법에 관한 구체적인 지침을 제공한다.
 
 .. _Universal Design for Learning:
 
 ************************************************
-Apply Universal Design for Learning
+통합 학습 디자인 적용하기
 ************************************************
 
-Universal Design for Learning focuses on delivering courses in a format so that
-as many of your learners as possible can successfully interact with the
-learning resources and activities you provide them, without compromising on
-pedagogic rigor and quality.
+통합 학습 디자인을 적용함으로서 최대한 많은 학습자가 교육 자료 및 활동을 활용하도록 할 수 있다.
 
-The principles of Universal Design for Learning can be summarized by the
-following points.
+통합 학습 디자인의 원칙으로는.
 
-#. Present information and content in various ways.
-#. Provide more than one way for learners to express what they know.
-#. Stimulate interest and motivation for learning.
+#. 다양한 방법으로 정보와 콘텐츠를 제시한다.
+#. 학습자가 아는 것을 표현하도록 한가지 방법 이상의 방법을 제공한다.
+#. 학습에 대한 흥미와 동기부여를 자극한다.
 
-Course teams can apply these principles in course design by following several
-guidelines.
+강좌 운영팀은 다음과 같은 원칙을 디자인에 적용할 수 있다.
 
-* Design resources and activities that can be accessed by learners in a variety
-  of ways. For example, if there is a text component, provide the ability to
-  enlarge the font size or change the text color. For images and diagrams,
-  always provide an equivalent text description. For video, include text
-  captions.
+* 다양한 방식으로 학습자가 접근할 수 있는 디자인 자료 및 활동. 예를 들어, 텍스트 구성요소엔 글자 크기를 조절하거나 색을 바꿀 수 있는 기능을 제공한다. 이미지와 도표엔 텍스트 설명을 첨부하고 동영상엔 자막을 추가한다.
 
-* Provide multiple ways for learners to engage with information and demonstrate
-  their knowledge. This is particularly important to keep in mind as you design
-  activities and assessments.
+* 학습자가 정보를 다루고 지식을 시현할 수 있는 방법을 여럿 제공한다. 이는 활동과 평가를 기획할 때 특히 중요하다.
 
-* Identify activities that require specific sensory or physical capability and
-  for which it might be difficult or impossible to accommodate the
-  accessibility needs of learners. For example, an activity that requires
-  learners to identify objects by color might cause difficulties for learners
-  with visual impairments. In these cases, consider whether there is a
-  pedagogical justification for the activity being designed in that way. If
-  there is a justification, communicate these requirements to prospective
-  learners in the course description and establish a plan for responding to
-  learners who encounter barriers. If there is no justification for the
-  requirements, edX recommends that you redesign the learning activities to be
-  more flexible and broadly accessible.
+* 특정 감각 혹은 신체적 능력을 필요로 해서 일부 학습자에겐 참여가 불가능하거나 힘든 활동을 찾는다. 이러한 경우 구성 방식을 교육학적으로 정당화할 수 있는지 생각해본다. 정당한 이유가 있다면 강좌 설명 란에서 잠재적 학습자에게 설명하고 대안을 찾는다. 만약 정당한 사유가 없다면 K-MOOC은 좀 더 접근성이 높은 학습 활동을 만들 것을 권장한다.
 
 =======================================
-Universal Design for Learning Resources
+통합 학습 디자인 자료
 =======================================
 
-* `Delivering Accessible Digital Learning (JISC Techdis) <http://www.jisctechdis.ac.uk/techdis/resources/accessiblecontent>`_ provides a useful overview of an inclusive approach to course design.
+* `Delivering Accessible Digital Learning (JISC Techdis) <http://www.jisctechdis.ac.uk/techdis/resources/accessiblecontent>`_ 은 강좌 설계에 있어 접근성을 높이는 방법을 제시한다.
 
-* `The National Center on Universal Design for Learning <http://www.udlcenter.org/implementation/postsecondary>`_ provides a helpful overview on Universal Design for Learning.
+* `The National Center on Universal Design for Learning <http://www.udlcenter.org/implementation/postsecondary>`_ 는 통합 학습 디자인에 대한 여러 설명을 제공한다.
 
 

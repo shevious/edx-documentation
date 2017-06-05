@@ -1,92 +1,43 @@
 .. _Designing For a Mobile Experience:
 
 ###############################################
-Designing Your Course For a Mobile Experience
+모바일 환경의 강좌 제작
 ###############################################
 
-The percentage of learners who access MOOCs using smartphones is increasing
-every day. Most courses on edx.org can be viewed on smartphones using the edX
-Android and iPhone apps, although we still recommend that learners complete
-graded assignments on a desktop computer, depending on the type of assessments
-that their courses include. For information on which exercises and tools are
-mobile-ready, see the table in the :ref:`Introduction to Exercises and
-Tools<Create Exercises>` section.
+K-MOOC의 강좌를 스마트폰을 통해 접하는 학습자의 수는 날로 증가하고 있다. K-MOOC 대부분의 강좌는 안드로이드와 iOS 어플리케이션을 이용해 볼 수 있고 과제에 따라 상이하지만 과제는 데스크톱 컴퓨터를 이용해서 진행하는 것을 권한다. 어떤 연습과 도구가 모바일 환경에서 이용 가능한지는  :ref:`Introduction to Exercises and Tools<Create Exercises>` 를 참고하면 된다.
 
-To make the course experience for mobile learners as rewarding as it is for
-learners using desktop computers, keep the following best practices in mind as
-you design, test, and run your course.
+데스크톱 환경만큼 모바일 환경에서 강좌 만족도를 주기 위해 강좌를 제작, 시험 및 운영함에 있어서 다음과 같은 점을 명심하는 것이 좋다.
 
-* Course updates that you make might take longer to appear in the edX mobile
-  apps than on the edX site. In particular, newly published content can take up
-  to an hour to update on the Android app.
+* 모바일 환경에선 강좌 업데이트가 느리게 적용될 수 있다. 특히 새로운 강좌 내용은 안드로이드 환경에서 1시간 늦게 업데이트 될 수 있다.
 
-* Display names are critical for navigating through courses on smartphones. As
-  you create course content, make sure you replace the default display names
-  for every component with useful course component names.
+* 스마트폰 환경에서 강좌를 탐색할 때 이름이 중요하다. 강좌를 제작하면서 꼭 각 부분별 이름을 기본명이 아닌 강좌에 대해 알려줄 수 있는 이름으로 바꿔줘야 한다.
 
-* Keep display names and labels concise. Long display names and labels might
-  wrap on smaller screens, or might not be easily viewable. For example, if
-  several components have names that all start with the first five words and
-  differ only after that, learners using smartphones to access your course
-  might have difficulty distinguishing between components.
+* 이름은 항상 간결한 것이 좋고 긴 이름은 잘 보이지 않을 수 있다. 예를 들어 각 부분의 이름의 첫 다섯 단어가 같다면 스마트폰 환경에선 부분별 이름이 똑같이 보일 수 있다.
 
-* Do not use Flash, which is not supported on mobile platforms, to create
-  course content.
+* 스마트폰 환경에서 지원이 되지 않는 플래시는 사용하지 않는 것이 좋다.
 
-* Only use iFrames in course content where necessary, because iFrame content
-  might not be responsive and cannot be optimized for viewing on a range of
-  devices.
+* iFrame이 작동되지 않는 스마트폰이 있으므로 강좌 내용과 관련이 있을 때만 사용하는 것이 좋다.
 
-* If you develop course components in HTML, including course announcements, make
-  sure you set relative rather than explicit sizes for objects such as images,
-  tables, text, and so on, so that they will scale appropriately when viewed on
-  displays of different sizes.
+* HTML로 강좌 소식 등의 부분을 제작한다면 이미지, 표, 텍스트를 절대적 크기가 아닌, 상대적 크기로 설정하여 다양한 화면에서 볼 수 있도록 하는 것이 좋다.
 
-* Learners might be viewing your course materials on screens as large as a
-  high-resolution Mac Thunderbolt display, or as small as a 5 inch smartphone
-  screen, so it is difficult to size an image so that it displays well at all
-  resolutions. In general, edX recommends keeping most images under 0.5MB in
-  size so that learners who have low Internet bandwidth will not have trouble
-  downloading the images. If you have a large image that requires zooming to
-  view the full detail, in addition to providing an image that can be easily
-  downloaded, link to a full resolution copy that can be opened separately
-  from the course.
+* 학습자는 다양한 크기의 화면으로 강좌를 보게 되므로 모든 해상도에서 잘 보이도록 이미지를 설정하는 것이 어렵다. 일반적으로 K-MOOC은 대부분의 이미지 크기를 0.5MB 이하로 설정하여 모든 인터넷 환경에서 볼 수 있도록 하는 것을 추천한다. 만일 이미지를 확대해서 자세하게 볼 필요가 있을 경우 작은 크기의 이미지와 함께 원본 크기의 이미지를 업로드 하는 것이 좋다.
 
-* When you make choices about the problem types to use for graded and ungraded
-  assignments in your course, or which problem types to present in a single
-  unit, keep the mobile experience in mind. Whenever possible, use mobile-
-  ready assessment types. If you use assessment types that are not supported on
-  smartphones, notify learners in the body of your course that they will not be
-  able to complete assignments that contain unsupported assessment types using
-  the edX iPhone and Android mobile apps.
+* 과제 유형을 정할 때 항상 모바일 환경을 염두에 두고 가능한 한 스마트폰으로 과제를 수행할 수 있도록 해야 한다. 만일 스마트폰으로 수행할 수 없는 과제를 출제할 경우 iOS 및 안드로이드 K-MOOC 어플리케이션으로 할 수 없는 과제가 있다는 것을 강좌 소개에서 알리는 것이 좋다.
 
-* When learners access your course using the edX Android and iPhone apps, they
-  progress from component to component by swiping through them. It might seem
-  useful to include an HTML component in a unit for the purpose of providing a
-  demarcation point or guiding learners to the next unit, but having to swipe
-  through too many "markers" with no real course content is not a good
-  experience for mobile users.
+* 학습자는 모바일 환경에서 강좌를 수강할 때 각 부분별로 화면을 밀어서 이동한다. 다음 단원으로 넘어가는 메시지를 추가하는 것이 도움이 될 수 있지만 실제 강좌 내용이 담기지 않은 부분을 과하게 추가하는 것은 모바일 이용자에게 불편할 수 있다.
 
-* Make sure your JavaScript and CSS are compliant. You should verify that all
-  components render correctly in the edX Android and iPhone apps as well as
-  directly in the LMS.
+* 자바스크립트와 ​CSS​의 표준을 잘 지켜야 한다. 모든 요소가 ​LMS ​웹 뿐 아니라 안드로이드와 아이폰앱에서도 잘 보여지는 지 확인해야 한다.
 
 
 .. _Testing Your Course For Mobile Devices:
 
 **************************************
-Testing Your Course For Mobile Devices
+모바일 환경에서 강좌 작동 확인
 **************************************
 
-If you have included some of the more complex problem types, or have highly
-customized the way course content displays, edX recommends that you test your
-course for multiple devices and displays.
+만일 복잡한 문제 유형을 출제했거나 강좌 내용 표시 방식을 많이 조정했다면 다양한 장비와 화면에서 강좌가 작동하는지 확인하는 것이 좋다.
 
-To test the mobile experience of your course, sign in to your course using the
-edX Android or iPhone app, and view each course unit to make sure that it
-renders as you expect it to.
+모바일 환경에서 강좌 작동 여부를 확인하기 위해선 모바일 환경의 K-MOOC 강좌에 접속하고 각 차시가 의도대로 작동하는지 확인하면 된다.
 
-.. note:: Keep in mind that course updates that you make might not be
-   immediately reflected in the edX mobile apps. In particular, newly
-   published content can take up to an hour to update on the Android app.
+.. note:: 모바일 환경에선 강좌 업데이트가 느리게 적용될 수 있다. 특히 새로운 강좌 내용은 안드로이드 환경에서 1시간 늦게 업데이트 될 수 있다.
 

@@ -1,68 +1,57 @@
 .. _Developing Course Sections:
 
 ###################################
-Developing Course Sections
+주제
 ###################################
 
-To develop sections in your course, you must first understand the following
-topics.
+주제를 만들기 전에, 우선 다음 사항을 이해해야 한다.
 
 .. contents::
   :local:
   :depth: 2
 
 ****************************
-What Is a Section?
+주제란
 ****************************
 
-A section is the topmost category in your course. A section can represent a
-time period in your course, a chapter, or another organizing principle. A
-section contains one or more subsections.
+주제는 강좌에서 가장 상위 범주에 해당된다. 순차적으로 공개되는 주제를 보면 개강일 이후 강좌의 진행 흐름을 알 수도 있고, 강좌의 구성을 한 눈에 볼 수 있다. 각 주제는 1개 이상의 소주제를 가진다.
 
 ********************************
-Viewing Sections in the Outline
+강좌 개요에서 주제 보기
 ********************************
 
-The following example shows four sections, all collapsed, in the course
-outline.
+다음 예시는 강좌개요에서 주제가 모두 접혀있는 상태를 보여준다.
 
 .. image:: ../../../shared/images/sections-outline.png
  :alt: Four sections in the outline.
 
 ******************************
-The Learner View of a Section
+학습자 화면에서 주제 보기
 ******************************
 
-Learners see sections in the **Course** page. Learners can expand one
-section at a time to see its contents. In the following example, three sections
-are circled, and the third one is expanded to show its subsections.
+학습자는 **강좌** 탭에서 주제를 본다. 한 번에 1개의 주제씩 펼쳐볼 수 있다. 다음 예시에서 세 주제에 동그라미 표시가 되어있는데, 그 중 세 번째 주제가 펼쳐진 상태로 소주제를 바로 확인할 수 있다.
 
 .. image:: ../../../shared/images/sections_student.png
  :width: 500
  :alt: The learner view of the course with three sections circled.
 
 ************************************************
-Sections and Visibility to Learners
+주제 및 학습자 공개 설정
 ************************************************
 
-Learners cannot see any content in the section if the section's release date is
-unscheduled or has not passed.
+주제의 공개일이 지정되지 않거나, 공개일이 다가오지 않았다면 학습자는 해당 주제에서 어떤 콘텐츠도 볼 수 없다.
 
-If a section's release date has passed, learners can see content in the section
-if:
+주제의 공개일이 지나야 학습자가 콘텐츠를 볼 수 있는데:
 
-* The release date for the subsection that contains that content has passed.
-* The unit has been published.
-* The unit is not hidden from learners.
+* 콘텐츠가 포함되어 있는 소주제의 공개일이 지났거나.
+* 학습활동이 게시되었거나.
+* 학습활동이 따로 학습자에게 비공개로 설정되어 있지 않은 경우 학습자가 볼 수 있다.
 
 ************************************************
-Release Statuses of Sections
+주제의 공개 상태
 ************************************************
 
-As an course author, you control the release status of sections.  For the
-content of a section to be visible to learners, the section must be released.
-See the following topics for more information about the possible release
-statuses of sections.
+강좌 운영자는 주제의 공개일을 조정할 수 있다. 콘텐츠를 학습자에게 공개하려면, 그 콘텐츠가 들어가 있는 주제가 공개되어야 한다. 주제의 공개 상태는 다음과 같다.
 
 * `Unscheduled`_
 * `Scheduled`_
@@ -71,82 +60,66 @@ statuses of sections.
 * `Staff Only Content`_
 
 ========================
-Unscheduled
+공개일이 지정되지 않음
 ========================
 
-If you do not change the :ref:`course start date<Set Start and End Dates>`
-default value, ``1/1/2030 00:00:00 UTC``, when you create a new section, its
-release date will appear as ``Unscheduled``. When the section release date is
-unscheduled, learners cannot see any content in that section, regardless of
-the publishing status of that content.
+주제를 만든 후, 기본값이 ``1/1/2030 00:00:00 UTC`` 로 설정된  :ref:`course start date<Set Start and End Dates>` 을 바꾸지 않으면, 주제가 계속 공개일이 지정되지 않음 상태에 있게 된다. 이 상태에서는 학습자가 주제에 들어있는 콘텐츠를 볼 수 없어 주의해야 한다.
 
-If you have modified the course start date, when you create a new section, the
-default release date is the course start date.
+개강일을 변경하면, 주제 공개일의 기본값이 개강일로 바뀐다.
 
-The following example shows how an unscheduled section displays in the
-outline, summarized with a gray bar.
+다음 예시는 공개일이 지정되지 않은 주제가 강좌 개요에서 어떻게 나타나는지 나타낸 것이다.
 
 .. image:: ../../../shared/images/section-unscheduled.png
  :alt: An unscheduled section.
 
-To make the content available to learners, you must schedule the release date.
+학습자가 콘텐츠를 볼 수 있게 하려면, 강좌 운영팀이 반드시 공개일을 지정해야 한다.
 
 ==========
-Scheduled
+예정됨
 ==========
 
-A section that is scheduled for release on a future date will not be visible to
-learners until after the release date. Regardless of the publishing status of
-content within the section, the entire section will not visible to learners.
+공개가 예정된 주제는 지정된 공개일이 다가오기 전까지는 학습자에게 공개되지 않는다. 이는 그 주제 내의 콘텐츠의 게시 상태와 관계없으며, 전체 주제가 학습자에게 공개되지 않으면 콘텐츠 또한 학습자가 볼 수 없다.
 
-The following example shows how a section that is scheduled for release
-displays in the outline, summarized with a green bar.
+다음 예시는 공개가 예정된 주제가 강좌 개요에서 어떻게 보이는지를 나타낸 것이다.
 
 .. image:: ../../../shared/images/section-future.png
  :alt: A section scheduled to release in the future.
 
-The scheduled date must pass for the section to be visible to learners.
+주제의 공개 예정일이 지나야만 학습자가 볼 수 있다는 것을 유의해야 한다.
 
 ===========================
-Released
+공개
 ===========================
 
-A section that is released is visible to learners; however, learners see only
-subsections within the section that are also released, and units that are
-published.
+학습자는 공개된 주제를 보게 되지만, 주제 내부의 콘텐츠 중에서 공개된 소주제와 게시된 학습활동만 볼 수 있다.
 
-The following example shows how a released section displays in the outline,
-summarized with a blue bar.
+다음 예시는 공개된 주제가 강좌 개요에서 어떻게 보이는지를 나타낸 것이다.
 
 .. image:: ../../../shared/images/section-released.png
  :alt: A released section.
 
 ==================================
-Released with Unpublished Changes
+공개 후 변경 사항은 아직 게시되지 않음
 ==================================
 
-If you change a unit in a released section but do not publish the changes,
-learners see the last published version of the modified unit.
+공개된 주제의 학습활동을 변경하였다면, 이를 다시 게시하지 않는 한 학습자들은 변경된 학습활동을 볼 수 없다.
 
-The following example shows how a released section with unpublished changes
-displays in the outline, with a yellow bar. The section is expanded to show
-the unit with unpublished changes.
+다음 예는 게시되지 않은 학습활동이 포함된 주제가 어떻게 학습자에게 보이는지를 나타낸 것이다. 게시되지 않은 학습활동은 그림에서 노란색으로 표시된 부분이다. 또한 이 그림은 학습활동의 상태를 보기 위해 주제가 펼쳐진 상태이다.
 
 .. image:: ../../../shared/images/section-unpublished-changes.png
  :alt: A section with unpublished changes.
 
-You must publish the unit for learners to see the updates.
+학습자가 변경된 학습활동을 보려면, 강좌 운영팀이 반드시 해당 학습활동을 게시해야 한다.
 
 ===========================
-Staff Only Content
+강좌 운영팀에게만 공개
 ===========================
 
-A section can contain a unit that is hidden from learners and available to
-members of the course team only. That unit is not visible to learners,
-regardless of the release date of the section or subsection.
+주제에 학습활동을 추가하여도, 학습자에게는 비공개로 하여 운영팀만 볼 수 있도록 할 수 있다.
 
-The following example shows how a section that contains a unit that is hidden
-from learners displays in the outline, summarized with a black bar.
+해당 학습활동을 포함한 주제 및 소주제의 공개 설정과는 관계없이 적용되는 것이다.
+
+다음 예시는 학습자에게는 비공개인 학습활동이 강좌 개요에서 어떻게 보이는지를 나타낸 것이다.
 
 .. image:: ../../../shared/images/section-hidden-unit.png
  :alt: A section with a hidden unit.
@@ -155,151 +128,122 @@ from learners displays in the outline, summarized with a black bar.
 .. _Create a Section:
 
 ****************************
-Create a Section
+주제 만들기
 ****************************
 
-If you do not change the :ref:`course start date<Set Start and End Dates>`
-default value, ``1/1/2030``, when you create a new section, its release date
-will be ``Unscheduled``.
+주제를 만든 후, 1/1/2030 00:00:00 UTC 으로 기본값이 설정된  :ref:`course start date<Set Start and End Dates>` 을 바꾸지 않으면, 주제가 계속 공개일이 지정되지 않음 상태에 있게 된다
 
-If you have modified the course start date, when you create a new section, the
-default release date is the course start date.
+개강일을 변경하면, 주제 공개일의 기본값이 개강일로 바뀐다.
 
 .. caution::
- If the course start date is in the past, newly created sections are
- immediately visible to learners.
+ 이미 개강하였다면, 새로 추가되는 주제는 즉시 학습자에게 보이게 된다.
 
-To create a new section, follow these steps.
+새 주제를 만들기 위해선.
 
-#. On the **Course Outline** page, select **New Section**. This option appears
-   at both the top of the page and below the current sections in the outline.
+#. 강좌 개요 페이지에서 페이지 상단과 개요의 현재 주제 바로 아래에 있는 신규 주제 추가하기를 클릭한다.
 
-   A new section appears at the end of the course content, with the section
-   name selected.
+   기존의 콘텐츠 아래에 새로 추가한 주제가 추가될 것이다.
 
-#. Enter the name for the new section. A descriptive name can help learners
-   locate content in the course. It can also help you select content when
-   you analyze performance in edX Insights.
+#. 신규 주제명을 입력한다. 주제명을 정확하게 정해야 K-MOOC Insights에서 강좌를 조회하고 학습자가 강좌를 검색하는데 좋다.
 
-#. :ref:`Add subsections<Create a Subsection>` to the new section as needed.
+#. 이어서  :ref:`Add subsections<Create a Subsection>` 를 추가한다.
 
-It is recommended that you :ref:`test course content <Testing Your Course
-Content>` as you create new sections.
+신규 주제를 추가한 후,  :ref:`test course content <Testing Your Course Content>` 를 권장한다.
 
 ********************************
-Change a Section Name
+주제명 바꾸기
 ********************************
 
-To edit a section name, move your cursor over the section name to show the
-**Edit** icon.
+주제명 위에 마우스를 갖다 대면 주제명 옆에 편집 아이콘이 나타날 것이다.
 
 .. image:: ../../../shared/images/section-edit-icon.png
   :alt: The Edit Section Name icon.
 
-Select the **Edit** icon next to the section name. The name field becomes
-editable. Enter the new name, and then tab or click outside of the field to
-save the name.
+편집 아이콘을 클릭한다. 그러면 편집 가능한 상태의 입력란이 생기게 된다. 그곳에 새 이름을 입력하고 탭 키를 누르거나 입력란 바깥의 영역을 클릭하면 이름이 저장된다.
 
 .. _Set a Section Release Date:
 
 ********************************
-Set a Section Release Date
+주제 공개일 설정하기
 ********************************
 
-To set the section release date, follow these steps.
+주제의 공개일을 설정하려면.
 
-#. Select the **Configure** icon in the section box.
+#. 주제 영역에서 설정 아이콘을 클릭한다.
 
    .. image:: ../../../shared/images/section-settings-box.png
     :alt: The section settings icon circled.
 
-   The **Settings** dialog box opens.
+   **설정** 대화 상자가 열릴 것이다.
 
-#. Enter the release date and time for the section.
+#. 주제의 공개일시를 입력한다.
 
-  .. note:: The time that you set, and the time that learners see, is in
-   Coordinated Universal Time (UTC). You might want to verify that you have
-   specified the time that you intend by using a time zone converter such as
-   `Time and Date Time Zone Converter
-   <http://www.timeanddate.com/worldclock/converter.html>`_
+  .. note:: 모든 날짜는 UTC를 기준으로 표기되며  `Time and Date Time Zone Converter <http://www.timeanddate.com/worldclock/converter.html>`_ 를 이용해 다시 한번 확인하는 것이 좋다.
 
-#. Select **Save**.
+#. 저장을 클릭한다.
 
-For more information, see :ref:`Release Dates`.
+:ref:`Release Dates` 에 더 자세한 안내가 나와있다.
 
 .. _Publish all Units in a Section:
 
 ********************************
-Publish all Units in a Section
+주제 내 전체 학습 활동 게시하기
 ********************************
 
-To publish all new and changed units in a section, select the **Publish** icon
-in the box for the section.
+주제 내 전체 학습 활동을 게시하려면 주제 영역의 게시 아이콘을 클릭해야 한다.
 
 .. image:: ../../../shared/images/outline-publish-icon-section.png
  :alt: Publishing icon for a section.
 
 .. note::
- The **Publish** icon only appears when there is new or changed content within
- the section.
+ 게시 아이콘은 새로 추가되거나 변경된 콘텐츠가 있을 때에만 나타난다.
 
-For more information about statuses and visibility to learners, see :ref:`Unit
-Publishing Status`.
+학습자 공개 설정과 공개 상태에 관해 :ref:`Unit Publishing Status` 에 더 자세한 안내가 나와있다.
 
 .. _Hide a Section from Students:
 
 ********************************
-Hide a Section from Learners
+학습자에게 주제 감추기
 ********************************
 
-You can hide all content in a section from learners, regardless of the status
-of subsections and units within the section.
+소주제의 공개 상태와 관계 없이, 주제 내부의 전체 콘텐츠를 감출 수 있다.
 
-For more information, see :ref:`Content Hidden from Students`.
+자세한 사항은  :ref:`Content Hidden from Students` 를 참고하면 된다.
 
-To hide a section from learners, follow these steps.
+학습자에게 주제를 감추기 위해서는.
 
-#. Select the **Configure** icon in the section box.
+#. 주제 영역의 게시 아이콘을 클릭한다.
 
    .. image:: ../../../shared/images/section-settings-box.png
     :alt: The section settings icon circled.
 
-   The **Settings** dialog box opens.
+   설정 대화 상자가 열릴 것이다.
 
-#. In the **Student Visibility** section, select **Hide from students**.
+#. 학습자 보기에서 학습자에게 감추기 의 체크박스를 클릭한다.
 
-#. Select **Save**.
+#. 저장을 클릭한다.
 
-Now, none of the content in the section is visible to learners.
+주제의 콘텐츠가 학습자에게 보이지 않을 것이다.
 
-To make the section visible to students, repeat these steps and clear the
-**Hide from students** check box.
-
-.. warning::
- When you clear the **Hide from students** check box for a section, not all
- content in the section is necessarily made visible to learners. If you
- explicitly set a subsection or unit to be hidden from learners, it remains
- hidden from learners. Unpublished units remain unpublished, and changes to
- published units remain unpublished.
-
-********************************
-Delete a Section
-********************************
-
-When you delete a section, you delete all subsections and units within the
-section.
+학습자에게 주제를 공개하려면, 이 단계를 반복하되 학습자에게 감추기 체크박스를 해제한다.
 
 .. warning::
- You cannot restore course content after you delete it. To ensure you do not
- delete content you may need later, you can move any unused content to a
- section in your course that you set to never release.
+ 학습자에게 감추기 의 체크박스를 해제한다고 해서, 주제 내 콘텐츠 전체가 학습자에게 보이는 것은 아니다. 소주제나 학습활동 중 학습자에게 보이지 않게 설정해둔 것은 계속 그 상태가 유지된다.
 
-To delete a section, follow these steps.
+********************************
+주제 삭제하기
+********************************
 
-#. Select the **Delete** icon in the section that you want to delete.
+주제를 삭제하면, 내부의 전체 소주제와 학습활동도 함께 삭제된다.
+
+.. warning::
+ 주제를 삭제한 후에는 강좌 콘텐츠를 복구할 수 없다. 나중에 필요할 수도 있다고 생각되는 콘텐츠는 삭제하지 말고, 비공개 주제에 옮겨두는 것을 권장한다.
+
+주제를 삭제하려면.
+
+#. 삭제를 원하는 주제의 영역에 있는 삭제 아이콘을 클릭한다.
 
   .. image:: ../../../shared/images/section-delete.png
    :alt: The section with Delete icon circled.
 
-2. When you receive the confirmation prompt, select **Yes, delete this
-   section**.
+2. 삭제를 확인하는 대화상자가 뜨면 **예, 주제를 삭제합니다.** 를 클릭한다.

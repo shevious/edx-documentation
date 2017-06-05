@@ -1,25 +1,12 @@
 .. _Accessibility Intro:
 
 ######################################################################
-Accessibility Best Practices Guidance for Content Providers
+강좌 제작자를 위한 접근성 가이드
 ######################################################################
 
-The core mission of edX is to expand access to education for everyone. We
-expect courses and course content developed on the Open edX platform to be
-accessible to everyone, regardless of any physical limitation that they might
-have.
+K-MOOC의 가장 중요한 목적은 모두에게 교육의 기회를 주는 것이다. 명심해야 할 점은 K-MOOC의 강좌는 신체적 장애에 관계 없이 모두가 볼 수 있어야 한다는 것이다.
 
 .. Do not modify the following paragraph; wording exactly as provided by Legal.
 
-In furtherance of our mission, edX has entered into an agreement with the
-United States, under which we have agreed to incorporate accessibility into
-our website (http://www.edx.org), mobile applications, and platform to meet a
-wide variety of requirements of learners with disabilities and to enable
-content providers to develop accessible course content.
 
-The topics in this section are intended to help course teams understand how to
-develop courses that can serve the widest possible audience.
-
-.. note:: Course teams should familiarize themselves with this best practices
-   guidance and distribute it to any members of their teams who are
-   responsible for creating course content.
+.. note:: 강좌 운영팀은 이 행동 가이드를 숙지하고 강좌 제작과 관련된 사람들에게 전달해줘야 한다.
