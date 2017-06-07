@@ -18,10 +18,10 @@
 학습활동이란?
 ****************************
 
-학습활동은  :ref:`subsection<Developing Course Subsections>` 의 구성 단위로써, 학습자가 소주제를 클릭하면 한 번에 하나씩 볼 수 있다.
+학습활동은  :ref:`Developing Course Subsections` 의 구성 단위로써, 학습자가 소주제를 클릭하면 한 번에 하나씩 볼 수 있다.
 
-1개의 학습활동은 1개 이상의  :ref:`components<Developing Course Components>` 
-를 가질 수 있는데, 이러한 구성요소로는 :ref:`HTML<Working with HTML Components>` , :ref:`problems<Working with Problem Components>` ,  :ref:`discussion<Working with Discussion Components>` , :ref:`video<Working with Video Components>` 이 있다..
+1개의 학습활동은 1개 이상의  :ref:`Developing Course Components` 
+를 가질 수 있는데, 이러한 구성요소로는 :ref:`Working with HTML Components` , :ref:`Working with Problem Components` ,  :ref:`Working with Discussion Components` , :ref:`Working with Video Components` 이 있다..
 
 ****************************
 강좌 개요에서 학습활동 보기
@@ -74,20 +74,20 @@ Studio에서 학습활동 보기
 학습활동 작업 흐름
 ************************************************
 
-먼저  :ref:`section<Developing Course Sections>` 와 :ref:`subsection<Developing Course Subsections>` 을 만든 후에 학습활동을 만들 수 있다.
+먼저  :ref:`Developing Course Sections` 와 :ref:`Developing Course Subsections` 을 만든 후에 학습활동을 만들 수 있다.
 
 학습활동을 만드는 기본 순서는 아래와 같다.
 
-#. :ref:`Create a unit<Create a Unit>`.
-#. :ref:`Add components to the unit<Add a Component>`.
-#. :ref:`Modify components in the unit<Developing Course Components>`.
+#. :ref:`Create a Unit`.
+#. :ref:`Add a Component`.
+#. :ref:`Developing Course Components`.
 
 .. image:: ../../../shared/images/workflow-create-unit.png
  :alt: Diagram of the unit development workflow.
 
 모든 구성 요소를 추가하면 학습활동을 게시하게 된다. 다른 추가적인 수정사항이 있다면 다시 학습활동을 게시해야 한다.
 
-이 단계를 수행하면, 학습활동의 게시 상태 가 바뀌게 된다. 게시 상태는 :ref:`release dates<Release Dates>`  에 따라 학습자에게 공개되는 상태를 의미한다.
+이 단계를 수행하면, 학습활동의 게시 상태 가 바뀌게 된다. 게시 상태는 :ref:`Release Dates`  에 따라 학습자에게 공개되는 상태를 의미한다.
 
 .. note:: 공개일은 고정 일정 형식의 강좌에만 해당하며 자세한 사항은 :ref:`Setting Course Pacing` 를 참고하면 된다.
 
@@ -107,7 +107,7 @@ Studio에서 학습활동 보기
 
 * `Published and Live`_ 일 때, 학습자는 학습활동을 볼 수 있다.
 
-* `Draft (Unpublished Changes)`_ 의 상태일 때, 주제의  :ref:`release dates<Release Dates>` 이 이미 지난 경우라면 학습자가 변경된 학습활동을 바로 볼 수 있는 것이 아니라, 변경 이전의 학습활동을 보게 된다.
+* `Draft (Unpublished Changes)`_ 의 상태일 때, 주제의  :ref:`Release Dates` 이 이미 지난 경우라면 학습자가 변경된 학습활동을 바로 볼 수 있는 것이 아니라, 변경 이전의 학습활동을 보게 된다.
 
 더 자세한 설명은  :ref:`Controlling Content Visibility` 을 참고하면 된다.
 
@@ -138,9 +138,9 @@ Studio에서 학습활동 보기
 
 .. note:: 고정 일정 형식의 강좌만 공개 항목이 적용된다. 자세한 사항은  :ref:`Setting Course Pacing` 를 참고하면 된다.
 
-학습활동을 학습 관리 시스템에서 못 보더라도,  :ref:`preview the unit<Preview Course Content>` 에서 볼 수 있다.
+학습활동을 학습 관리 시스템에서 못 보더라도,  :ref:`Preview Course Content` 에서 볼 수 있다.
 
-학습활동을 학습자가 볼 수 있게 하려면, 반드시 :ref:`publish the unit<Publish a Unit>` 를 해야 한다는 것에 유의한다.
+학습활동을 학습자가 볼 수 있게 하려면, 반드시 :ref:`Publish a Unit` 를 해야 한다는 것에 유의한다.
 
 .. _Published and Live:
 
@@ -184,9 +184,9 @@ Studio에서 학습활동 보기
 
 공개 항목은 고정 일정 형식의 강좌에만 적용된다.
 
-Studio에서 강좌 운영팀은 작업중인 학습활동을 보게 된다. :ref:`preview the changes to a unit<Preview Course Content>` 를 통해 학습자가 보게 될 화면을 확인할 수도 있다.
+Studio에서 강좌 운영팀은 작업중인 학습활동을 보게 된다. :ref:`Preview Course Content` 를 통해 학습자가 보게 될 화면을 확인할 수도 있다.
 
-학습자는 공개일이 지난 경우 해당 학습활동의 마지막(최신) 게시 버전을 보게 된다. 공개일이 지나지 않은 경우에는 학습자가 볼 수 없다. 변경된 버전을 학습자가 보게 하려면, 반드시  :ref:`publish the unit<Publish a Unit>` 를 해야 한다.
+학습자는 공개일이 지난 경우 해당 학습활동의 마지막(최신) 게시 버전을 보게 된다. 공개일이 지나지 않은 경우에는 학습자가 볼 수 없다. 변경된 버전을 학습자가 보게 하려면, 반드시  :ref:`Publish a Unit` 를 해야 한다.
 
 .. _Visible to Staff Only:
 
@@ -194,9 +194,9 @@ Studio에서 강좌 운영팀은 작업중인 학습활동을 보게 된다. :re
 운영팀에게만 공개
 ===========================
 
-:ref:`hide a unit from learners<Hide a Unit from Students>` 상태일 때, 학습활동의 게시 상태가 운영팀에게만 공개 로 바뀌게 된다.
+:ref:`Hide a Unit from Students` 상태일 때, 학습활동의 게시 상태가 운영팀에게만 공개 로 바뀌게 된다.
 
-:ref:`section<Hide a Section from Students>` 또는 :ref:`subsection<Hide a Subsection from Students>`  상태이면 학습자가 학습활동을 볼 수 없다.
+:ref:`Hide a Section from Students` 또는 :ref:`Hide a Subsection from Students`  상태이면 학습자가 학습활동을 볼 수 없다.
 
 게시되었거나 공개일이 지났더라도 학습자가 이 상태의 학습활동은 볼 수 없다.
 
@@ -219,7 +219,7 @@ Studio에서 강좌 운영팀은 작업중인 학습활동을 보게 된다. :re
 #. 개요에서, 새로운 학습활동을 만들기 위해 소주제를 펼친다.
 #. 펼쳐진 소주제의 아래에 있는 새로운 학습활동 을 클릭한다. 새로운 학습활동은 소주제의 끝에 추가된다.
 #. 학습활동 페이지에서, 학습활동명을 선택한다. 활동명을 편집한다.
-#. 필요하다면  :ref:`Add components<Add a Component>` 를 한다.
+#. 필요하다면  :ref:`Add a Component` 를 한다.
 
 학습활동 페이지에서 학습활동을 만드려면.
 
@@ -233,9 +233,9 @@ Studio에서 강좌 운영팀은 작업중인 학습활동을 보게 된다. :re
 
 #. 학습활동명을 입력한다.
 
-#. 필요하다면,  :ref:`Add components<Add a Component>`  를 시작한다.
+#. 필요하다면,  :ref:`Add a Component`  를 시작한다.
 
-새로 만든 학습활동을 학습자가 볼 수 있게 하려면  :ref:`publish the unit<Publish a Unit>` 를 한다.
+새로 만든 학습활동을 학습자가 볼 수 있게 하려면  :ref:`Publish a Unit` 를 한다.
 
 
 .. _Edit a Unit:
@@ -247,7 +247,7 @@ Studio에서 강좌 운영팀은 작업중인 학습활동을 보게 된다. :re
 다음 방법으로 학습활동을 편집할 수 있다.
 
 * `Edit the unit name`_
-* :ref:`Develop components<Developing Course Components>`
+* :ref:`Developing Course Components`
 * `Reorganize Components in Units`_
 
 게시한 학습활동을 편집하면, 공개 여부와 관계 없이 학습활동의 상태가 수정안(아직 게시되지 않음) 으로 바뀐다.
@@ -315,7 +315,7 @@ Studio에서 강좌 운영팀은 작업중인 학습활동을 보게 된다. :re
 .. _Publish a Unit:
 
 ****************************
-Publish a Unit
+학습활동 게시하기
 ****************************
 
 학습활동을 게시하는 것은, 주제와 소주제의 공개일이 지나면 Studio에 있는 현재 버전을 학습자가 볼 수 있게 한다는 것이다. 고정 일정 형식의 강좌에서 주제와 소주제에 대한 공개일이 지나야만 학습자가 게시된 학습활동을 볼 수 있다.

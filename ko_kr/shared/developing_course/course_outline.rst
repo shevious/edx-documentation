@@ -35,10 +35,10 @@
 .. image:: ../../../shared/images/outline_empty.png
  :alt: An empty course outline.
 
-You must :ref:`create the first section<Create a Section>`.
+You must :ref:`Create a Section`.
 
 ********************************************************
-Understanding a Course Outline in Studio
+강좌 개요의 기본 구조
 ********************************************************
 
 다음 예시는 Studio에서 강좌 개요가 어떻게 나타나는지를 보여준다. 주제, 소주제, 학습활동 등 강좌의 기본 요소를 채우면, 강좌 개요가 아래 예시처럼 보이게 된다.
@@ -48,11 +48,11 @@ Understanding a Course Outline in Studio
 
 위 예시가 보여주듯이, 강좌는 다음 구조로 구성된다.
 
-#. :ref:`Sections<Developing Course Sections>`
-#. :ref:`Subsections<Developing Course Subsections>`
-#. :ref:`Units<Developing Course Units>`
+#. :ref:`Developing Course Sections`
+#. :ref:`Developing Course Subsections`
+#. :ref:`Developing Course Units`
 
-:ref:`Components<Developing Course Components>` 는 강좌 개요에 나타나지 않는다. 구성요소가 포함되어 있는 학습활동을 클릭해야 해당 구성요소를 볼 수 있다.
+:ref:`Developing Course Components` 는 강좌 개요에 나타나지 않는다. 구성요소가 포함되어 있는 학습활동을 클릭해야 해당 구성요소를 볼 수 있다.
 
 본 장에서는 우선 강좌 개요에 대한 안내가 이어진다. 강좌 기본 구성요소에 대한 더 자세한 안내는 위의 링크에 있다.
 
@@ -111,7 +111,7 @@ Studio의 강좌 개요 화면에서 각 주제와 소주제를 펼치거나 접
   .. image:: ../../../shared/images/outline-new-unit.png
     :alt: The outline with the New Subsection button circled.
 
-  그러면  :ref:`unit<Developing Course Units>` 이 열린다.
+  그러면  :ref:`Developing Course Units` 이 열린다.
 
 .. the following note is for prerequisite exams, which are currently released in open edx only and not on edx.org.  when they are available on edx.org, this note should no longer be conditionalized.
 

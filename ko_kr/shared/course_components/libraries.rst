@@ -29,7 +29,7 @@
 .. _Create a New Library:
 
 ********************
-Create a New Library
+새 콘텐츠 보관함 만들기
 ********************
 
 :ref:`content libraries<Content Libraries>` 를 사용하여 구성요소 모음을 만들 수 있다..

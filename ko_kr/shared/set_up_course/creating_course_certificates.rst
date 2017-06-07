@@ -35,15 +35,12 @@ Studio를 이용해서 학습자가 받을 수 있는 이수증을 만들 수 �
 .. only:: Open_edX
 
     ***********************************
-    Certificates and Course Start Dates
+    이수증과 개강일
     ***********************************
 
-    If your course is configured to issue certificates, you cannot start the
-    course until the required certificates are :ref:`activated<Activate a
-    Certificate>`.
+    이수증을 발급하도록 강좌를 설정했다면, 해당 이수증이 :ref:`Activate a Certificate` 되기 전에는 강좌를 개강할 수 없다.
 
-    For information about starting the course, see :ref:`Determine Start and
-    End Dates`.
+    자세한 사항은 :ref:`Determine Start and End Dates` 를 참조하면 된다.
 
 **********************
 이수증 디자인
