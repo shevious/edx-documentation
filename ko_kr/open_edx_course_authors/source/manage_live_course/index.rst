@@ -12,7 +12,6 @@
    course_data
    bulk_email
    course_enrollment
-   manage_course_fees
    discussions
    discussions_students
    discussion_guidance_moderators
