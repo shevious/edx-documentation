@@ -161,4 +161,3 @@
 
 .. only:: Open_edX
 
-    .. include:: ../../../shared/student_progress/Section_course_student.rst
