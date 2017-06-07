@@ -1,46 +1,40 @@
 .. _Multiple Choice and Numerical Input:
 
 ############################################
-Multiple Choice and Numerical Input Problem
+선다형-수식 입력 혼합 문제
 ############################################
 
-.. note:: EdX offers provisional support for this problem type.
+.. note:: K-MOOC은 이 문제 유형에 대해 부분적인 지원을 제공한다
 
-You can create a problem that combines a multiple choice and numerical input
-problems. Students not only select a response from options that you provide,
-but also provide more specific information, if necessary.
+선다형 문제와 수치 입력 문제를 혼합한 문제를 만들 수 있다. 학습자는 제공되는 선택지 중에서 답변을 선택할 뿐 아니라 필요에 따라 보다 구체적인 정보를 추가 입력할 수도 있다.
 
 .. image:: ../../../shared/images/MultipleChoice_NumericalInput.png
   :alt: Image of a multiple choice and numerical input problem
 
 .. note::
- Currently, students can only enter numerals in the text field. Students
- cannot enter words or mathematical expressions, which might be confusing to
- students who are accustomed to other edX numerical input fields.
+ 현재까지는 학습자가 문자열 필드에 숫자만을 입력할 수 있다. 숫자가 아닌 기타 K-MOOC 수치 입력 필드에 익숙한 학습자에게 생소할 수 있는 문자 또는 수학식은 입력할 수 없다.
 
- You can make a calculator available to your learners on every unit
- page. For more information, see :ref:`Calculator`.
+ 모든 학습활동 페이지에서 계산기를 활용할 수 있다. 자세한 사항은  :ref:`Calculator` 를 참고하면 된다.
 
 .. _Create an MCNI Problem:
 
 ********************************************************
-Create a Multiple Choice and Numerical Input Problem
+선다형-수치 입력 혼합 문제 생성하기
 ********************************************************
 
-To create a multiple choice and numerical input problem, follow these steps.
+선다형-수치 입력 혼합 문제를 생성하는 절차는 다음과 같다.
 
-#. In the unit where you want to create the problem, click **Problem** under
-   **Add New Component**, and then click the **Advanced** tab.
-#. Click **Blank Advanced Problem**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, paste the code from below.
-#. Replace the example problem and response options with your own text.
-#. Click **Save**.
+#. 문제를 생성하고자 하는 학습 활동에서 **신규 구성요소 추가** 의 **문제** 를 클릭한 후 **고급** 탭을 클릭한다.
+#. **고급 문제 생성** 을 클릭한다.
+#. 구성요소가 표시되면 **편집** 을 클릭한다.
+#. 구성요소 편집기에 아래의 코드를 복사해 넣는다.
+#. 기존 예제를 지우고 생성하고자 하는 선택지를 추가한다.
+#. **저장** 을 클릭한다.
 
 .. _MCNI Problem Code:
 
 ************************************************
-Multiple Choice and Numerical Input Problem Code
+선다형-수치 입력 혼합 문제 코드
 ************************************************
 
 .. code-block:: xml
