@@ -1,150 +1,122 @@
 .. _Getting Started with Studio:
 
 ###########################
-Getting Started with Studio
+Studio 시작하기
 ###########################
 
-This topic describes the tools you use to build an edX course, and how to
-create your first course.
+K-MOOC 강좌를 만드는데 사용되는 도구와 첫 강좌를 만드는 방법에 대한 안내사항이 있다.
 
 .. contents::
  :local:
  :depth: 1
 
-If your organization has an agreement with edX and approval to do so, you can
-run courses on the edX Edge and edx.org websites.
+만일 소속 기관이 K-MOOC과 협력을 맺었다면 kmooc.kr과 테스트서버에서 강좌를 열 수 있다.
 
-If you are using an instance of Open edX to create a course, see
-:ref:`opencoursestaff:Getting Started with Studio` in the *Building and Running
-an Open edX Course* guide.
+만일 오픈 K-MOOC을 사용해 강좌를 만들었다면 :ref:`opencoursestaff:Getting Started with Studio` 를 오픈 K-MOOC 강좌 제작 및 운영 가이드에서 참고하면 된다.
 
 .. _What is Studio?:
 
 ***************
-What is Studio?
+Studio란?
 ***************
 
-Studio is the edX tool you use to build your courses. You use Studio to create
-a course structure, and then add problems, videos, and other resources for
-learners. You can also manage the course schedule, identify members of the
-course team, set the grading policy, publish your course, and more.
+K-MOOC 교수자 및 강좌 운영팀은 Studio에서 강좌를 만들 수 있다.
 
-* For the edX Edge site, anyone who has approval to use Studio can create and
-  develop courses.
+Studio를 이용하여 강좌 콘텐츠, 문제, 동영상 및 기타 자료를 업로드할 수 있다.
 
-* For the edx.org site, only edX staff members can create courses in Studio.
-  Course teams at partner institutions can then use Studio to develop the
-  courses. Contact your partner manager to discuss your schedule and other
-  requirements.
+또한 Studio에는 운영팀의 일정 관리, 성적 규정 설정 등 다양한 기능이 있다.
 
-You use Studio directly through your browser. You do not need any additional
-software.
+* 테스트서버에서 Studio 사용 권한이 있는 유저(사용자)는 강좌를 만들고 운영할 수 있다.
+
+* 기관의 강좌 운영팀은 그 후에 Studio에서 강좌를 운영한다. 일정과 기타 요구 사항은 파트너 매니저(K-MOOC 매니저)와 상담한다.
+
+원활한 작업을 위해 Chrome 브라우저 사용을 권장하며, 다른 소프트웨어는 전혀 필요 없다.
 
 .. _Use Studio on Edge:
 
 ******************
-Use Studio on Edge
+테스트서버에서 Studio 사용하기
 ******************
 
-For the edX Edge site, you use Studio to create and build courses.
+테스트서버에서 Studio를 활용해 강좌를 만들고 운영할 수 있다.
 
 ===================================================
-Request Course Creation Privileges for edX Edge
+테스트서버 강좌 제작 권한 요청
 ===================================================
 
-If you are a first time Studio user for the edX Edge site, follow these steps.
+만일 테스트서버에서 처음 Studio를 사용하는 유저(사용자)라면 다음과 같은 절차를 밟아야 한다.
 
-#. Go to the Studio website for Edge, located at https://studio.edge.edx.org.
+#. 테스트서버의 Studio 사이트  https://studio.edge.edx.org  에 접속한다.
 
-#. Sign in with the account you created on Edge.
+#. 테스트서버에서 만든 계정으로 로그인한다.
 
-   You must then request access to create courses.
+   그 후 강좌 제작 권한을 요청해야한다.
 
-#. Select the **+** icon to expand the field labeled **Becoming a Course
-   Creator in Studio**.
+#. **+** 아이콘을 클릭해 Studio에서 강좌 만들기를 클릭한다.
 
-#. Select **Request the Ability to Create Courses**.
+#. **강좌 제작 권한 요청** 을 클릭한다.
 
-EdX evaluates your request. When course creation permissions are granted,
-you are notified by email.
+K-MOOC은 그 요청을 검토 한 이후 강좌 제작 권한을 부여하게 되면 그 결과는 이메일을 통해 통보한다.
 
 .. _Create Your First Course:
 
 ==================================
-Create Your First Course on Edge
+첫 강좌 만들기
 ==================================
 
-When you receive notice that you can create courses on Edge, log in to Studio
-at https://studio.edge.edx.org.
-
-You see the following page, which is your **My Courses** dashboard.
+원활한 작업을 위해 Chrome 브라우저 사용을 권장하며, 다른 소프트웨어는 전혀 필요 없다.
 
 .. image:: ../../../shared/images/first_course.png
  :width: 600
  :alt: The Studio home page for edX Edge where you create your first course.
 
-Select **Create Your First Course**, and then follow the instructions in the
-:ref:`Creating a New Course` section.
+첫 강좌를 만듭니다를 클릭하고 :ref:`Creating a New Course` 항목의 설명에 따른다.
 
-After you create a course, you can view it in the Edge LMS.
+강좌를 만들면 Edge LMS를 통해 확인할 수 있다.
 
 .. _View Your Course on Edge:
 
 ==================================
-View Your Course in the Edge LMS
+테스트서버 LMS에서 강좌 보기
 ==================================
 
-You can view a course in the LMS as soon as you create it, even if it does not
-contain any content.
+강좌를 만들게 되면 내용이 추가되지 않았더라도 LMS에서 조회할 수 있다.
 
-From the Course Outline page in Studio, select **View Live**. The course opens
-in the Edge LMS.
+Studio의 강좌 요약 페이지에서 실시간 보기를 클릭하면 테스트서버 LMS에서 열린다.
 
-You can also go directly to the edX Edge LMS at https://edge.edx.org/. Sign in
-if prompted. You see the course you just created listed on your **My Courses**
-dashboard.
+또한 https://edge.edx.org/. 에 접속해 직접 테스트서버 LMS에 들어 갈 수 있다. 가입이 되어있다면 로그인하고 나의 강좌 대쉬보드에서 만든 강좌를 확인할 수 있다.
 
 .. image:: ../../../shared/images/new_course.png
  :width: 600
  :alt: The learner dashboard for the edX Edge site, with a single course
      listed.
 
-You can select the course to confirm its content.
+강좌 내용 확인을 위해 선택한다.
 
 .. _Register Your Course on edx.org:
 
 ****************************************************
-View Your edx.org Course in Studio and the LMS
+Studio와 LMS에서 kmooc.kr 강좌 보기
 ****************************************************
 
-If your organization has an agreement with edX and approval to do so, you can
-develop courses to run on the edx.org website. Only edX staff members can
-create courses to run on edx.org.
+만일 소속 기관이 K-MOOC과 협의를 맺었다면 kmooc.kr에서 강좌를 열 수 있다. K-MOOC 관리자만이 kmooc.kr에서 열리는 강좌를 만들 수 있다.
 
-.. note:: Contact your partner manager directly to discuss your schedule and
-  other requirements for creating an edx.org course. The **Email staff to
-  create course** option that appears in Studio is not regularly monitored, and
-  should not be used.
+.. note:: 일정과 기타 요구 사항은 파트너 매니저(K-MOOC 매니저)와 상담한다. Studio에 있는 관리자에게 강좌 제작 이메일 보내기는 주기적으로 확인되지 않으므로 사용하지 않는다.
 
-After the course is created, you can add content in Studio and then view the
-course in the LMS.
+강좌가 만들어지면 Studio에서 내용을 추가하고 LMS를 통해 확인할 수 있다.
 
-#. Go to the Studio website for edx.org, located at https://studio.edx.org.
+#. https://studio.edx.org 로 가서 Studio에 접속한다.
 
-#. Sign in, and then verify that your course appears on your dashboard.
+#. 로그인을 하고 대쉬보드에서 강좌를 확인한다.
 
-#. To build your course, follow the instructions in the :ref:`Creating a New
-   Course` section.
+#. 강좌를 만들기 위해 :ref:`Creating a New Course` 의 안내사항을 따른다.
 
-#. To view the course in the LMS, on the **Course Outline** page select **View
-   Live**.
+#. LMS에서 강좌를 보기 위해 강좌 요약 화면에서 실시간 보기를 선택한다.
 
-   Your course enrollment page opens in a new browser tab.
+   강좌 추가 화면을 새 탭에서 확인할 수 있다.
 
-#. Select **Enroll** to enroll in your course. After you enroll in your course,
-   it opens in the edx.org LMS.
+#. 추가를 선택하면 새 강좌를 등록할 수 있고 LMS에서 확인할 수 있다.
 
-#. To continue working on your course, select the browser tab that shows
-   Studio. The **Course Outline** page displays.
+#. 강좌를 계속 듣기 위해 Studio로 들어가 강좌 요약 화면을 확인한다.
 
 .. include:: ../../../links/links.rst

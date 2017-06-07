@@ -1,14 +1,12 @@
 .. _Course Features Index:
 
 ###############################################
-Choosing Enhanced Capabilities For Your Course
+강좌 추가 기능 선택하기
 ###############################################
 
-Use the topics in this section to learn about options for enhancing your course
-experience for learners.
+이 장은 강좌에 사용할 수 있는 추가 기능에 대해 설명한다.
 
-For information on how to develop your course content in the Studio Outline,
-see :ref:`Developing Your Course Index`.
+Studio 개요에서 강좌를 개발하는 방법은 :ref:`Developing Your Course Index` 를 참고하면 된다.
 
 .. toctree::
    :maxdepth: 2

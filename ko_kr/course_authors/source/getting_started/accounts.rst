@@ -1,96 +1,33 @@
 .. _Getting Started with edX:
 
 #############################
-Getting Started with edX
+K-MOOC 시작하기
 #############################
 
-The following topics provide an introduction to edX and instructions for
-getting started on edX websites.
+다음 항목을 통해 K-MOOC에 대한 소개와 K-MOOC을 시작하는 방법을 알아볼 수 있다.
 
 .. contents::
  :local:
  :depth: 1
 
-This information is intended for course teams. The *EdX Learner's Guide* also
-includes information about creating an account and the edX Demo course. You
-might want to share course- or institution-specific details about the
-registration process, such as password policies or the use of campus
-credentials, in your communications with prospective students.
+이 부분은 강좌 운영팀을 위해 제작되었다. K-MOOC 학습자 가이드 역시 계정 생성 방법과 K-MOOC 데모 강좌가 담겨 있다. 학생들에게 비밀번호 설정이나 대학의 자격 등과 같은 등록 절차에 관한 정보를 알려주는 것이 좋을 수 있다.
 
-For information about enrolling students in a course, see
-:ref:`enroll_student`.
+강좌에 학생을 추가하는 것과 관련해선 :ref:`enroll_student` 항목을 참고하면 된다.
 
-.. _edX.org and edX Edge:
-
-*************************
-edx.org and edX Edge
-*************************
-
-To explore edX courses or create edX course content, you can register an
-account on the `edx.org`_ website, the `edX Edge`_ website, or both. These
-sites are visually and functionally similar, but their content and purposes are
-different.
-
-* edx.org hosts massive open online courses (MOOCs) from edX institutional
-  partners. To publish a course on edx.org, you must have an agreement with edX
-  and specific approval from your organization. Courses on edx.org are publicly
-  listed in the edX course catalog and are open to learners from around the
-  world.
-
-* Edge, at edge.edx.org, is a more private site. Courses on Edge are not
-  published on edx.org. Any member of a partner course team can create and
-  publish courses, including test courses, on Edge without receiving approval
-  from edX or a partner institution.
-
-  However, Edge does not have a course catalog, and courses cannot be found
-  through search engines such as Google. Only learners whom you explicitly
-  invite or who have the URL for your course can participate in your course on
-  Edge. Note that you can invite an unlimited number of learners to participate
-  in an Edge course.
-
-  EdX Edge also hosts small private online courses (SPOCs).
-
-.. _Create an Account:
-
-*******************************
-Create and Activate an Account
-*******************************
-
-.. note::
-  All user accounts on Edge and edx.org are separate. If you want to use both
-  edx.org and Edge, you must complete the account registration process on both
-  sites.
-
-When you create an edx.org or edX Edge account, you associate an email
-address with your edX account. EdX strongly recommends that you use your
-organizational email address or select an existing account (such as a campus
-account) that is set up to use your organizational email address.
-
-.. include:: ../../../shared/students/Section_register_account.rst
-
-You can only access the **Account Settings** page from the LMS. You cannot
-access this page from Studio.
 
 .. _edX101_section:
 
 ******************************
-The edX Demo Course and edX101
+K-MOOC 시작하기 강좌(Demo Course)
 ******************************
 
-EdX provides the edX Demo course and Overview of Creating an edX Course
-to help familiarize you with taking and creating edX courses.
+교수자 및 강좌 운영팀이 K-MOOC 강좌를 수강하거나 만드는 방법을 익힐 수 있도록 데모강좌를 제공한다.
 
-* The `edX Demo course`_ allows new students to explore and learn how to take
-  an edX course. We recommend that you become familiar with the way students
-  experience an edX course before you begin building your first course.
+* 신규 학습자는 데모강좌를 통해 강좌를 탐색하거나 수강하는 방법을 배울 수 있다. 교수자 및 강좌 운영팀은 첫 강좌를 개발하기 전에 학습자가 강좌를 경험하는 과정에 익숙해지는 것이 좋다.
 
   .. note::
-    You can include information about the edX Demo course in your course
-    materials, and recommend that new learners take the edX Demo course before
-    proceeding with your course.
+    교수자 및 강좌 운영팀은 해당 강좌 자료에 데모 강좌에 관한 정보를 포함할 수 있고, 새로운 학습자가 강좌를 수강하기 전에 데모강좌를 수강하도록 권장할 수 있다.
 
-* `Overview of Creating an edX Course`_ is an example of a course built with
-  Studio. It is a self-paced walk-through of planning, building, and running
-  your own online course.
+* K-MOOC 강좌 제작 개요는 Studio로 만든 예시 강좌며 강좌의 계획, 제작 및 운영 단계에 관한 전체적인 소개를 한다.
 
 .. include:: ../../../links/links.rst
