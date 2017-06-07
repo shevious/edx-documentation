@@ -1,90 +1,57 @@
 .. _Reusing Course Content:
 
 ##########################################
-Reusing Course Content with LTI
+LTI를 사용해 강좌 콘텐츠 재사용하기
 ##########################################
 
 .. only:: Partners
 
-  .. note:: Support for this feature is provisional. EdX is currently working
-   with a limited number of partners to test this feature on edX Edge.
+  .. note:: 이 기능은 현재 개발중이다. K-MOOC은 소수의 협력 기관과 함께 테스트서버에 이 기능을 사용하기 위해 테스트 중이다.
 
-When you use LTI to reuse edX course content, learners who are already familiar
-with an external learning management system or other consumer application
-(external LMS) see content from edX that is seamlessly integrated into a
-familiar context. Only the content that you specify from edX appears in the
-external LMS, typically within an iframe on a page.
+LTI를 사용해 K-MOOC 강좌 콘텐츠를 재사용할 때, LMS(외부 학습 관리 시스템)나 이와 유사한 시스템에 친숙한 학습자의 경우 그 시스템의 콘텐츠와 다소 통합된 K-MOOC 콘텐츠를 볼 수 있다. K-MOOC에서 지정하는 콘텐츠만이 LMS에 등장하며 주로 페이지 내 iframe 안에 위치한다.
 
-For example, you can set up a course on an external LMS, such as Canvas, to
-include a link to a problem component that is part of an edX course. The
-problem is included as one of the course's assignments, and appears in Canvas
-like other content.
+예를 들어 Canvas와 같은 LMS에서 강좌를 만들고 K-MOOC 강좌의 문제 구성요소 링크를 추가할 수 있다. 이 문제는 강좌의 과제 중 일부로 추가되며 다른 콘텐츠와 동일하게 Canvas에 등장한다.
 
 .. image:: ../../../../shared/images/lti_canvas_example.png
   :alt: An edX molecule builder problem shown as part of a course running on a
       Canvas system.
 
-This section provides background information on different aspects of the
-experience that learners and course team members have when interacting with edX
-content in the context of an external LMS.
+이 장은 학습자와 강좌 운영자가 LMS에서 K-MOOC 콘텐츠를 사용할 때 필요한 여러 정보를 제공한다.
 
 .. contents::
    :local:
    :depth: 1
 
-For information about the content that you can include in an external LMS, see
-:ref:`Preparing Content`.
+강좌 콘텐츠 재사용 준비에 LMS에 포함할 수 있는 콘텐츠에 대한 자세한 안내가 나와있다.
 
 **********************************
-Course Roster Management
+강좌 로스터 관리하기
 **********************************
 
-Course teams manage the course roster entirely on the external LMS, as you
-would for other courses that run on that platform. Learners do not use the edX
-LMS to enroll, and the course team does not complete any enrollment activities
-in Studio or the edX LMS.
+강좌 운영팀은 LMS에서 해당 플랫폼의 다른 강좌와 마찬가지로 강좌 로스터를 관리한다. 학습자는 수강 신청 시 K-MOOC 학습 관리 시스템을 사용하지 않으며 강좌 운영팀은 스튜디오나 K-MOOC 학습 관리 시스템에서 수강 신청 관련 작업을 수행하지 않는다.
 
-To obtain enrollment data for the course, you use the features available in
-the external LMS.
+강좌의 수강신청 데이터를 위해 LMS의 기능을 사용하면 된다.
 
 ******************************************
-Learner Identification and Single Sign On
+학습자 신원 확인 및 1회 로그인
 ******************************************
 
 .. only:: Partners
 
-  .. note:: Different configuration options are available for how an external
-   LMS and edX Edge authenticate users. Your DevOps team is likely to have
-   additional information about the specific authentication process used by
-   your institution.
+  .. note:: 외부 학습 관리 시스템과 테스트서버가 사용자 신원 확인을 하는 방법은 여러가지 있다. DevOps 팀이 기관에서 사용하는 신원 확인 과정에 대한 자세한 사항을 알고 있을 것이다.
 
-Learners do not need to navigate to a different website, or sign in to any
-other system (including edX), to access content that originates in an edX
-course. However, the first time a learner views edX course content in the
-external LMS, she might have to re-enter her credentials for the external LMS,
-even though she is already signed in to the external LMS.
+학습자는 K-MOOC 강좌의 콘텐츠에 접속하기 위해 다른 사이트를 탐색 하거나 K-MOOC을 포함한 다른 시스템에 로그인할 필요가 없다. 그러나 학습자가 처음 K-MOOC 강좌 콘텐츠를 LMS에서 접할 때 이미 로그인이 되어 있더라도 LMS에 다시 정보를 입력해야 할 수 있다.
 
-Internally, the edX instance associates a unique internal identifier to each
-learner's credentials to allow for a streamlined, single sign in experience in
-the future. However, this separate edX identifier can make some edX content
-confusing for learners when viewed in the context of an external LMS. For
-example, edX course discussions can identify participants by their edX IDs
-instead of the usernames they would normally see in the external LMS. As a
-result, some edX content is not currently suitable for use in an external LMS.
+내부적으로 K-MOOC은 한번의 로그인으로 충분하도록 각 학습자에게 서로 다른 내부 식별자를 부여하고 있다. 그러나 이런 K-MOOC의 독자적 식별자가 LMS에서 일부 K-MOOC 콘텐츠를 조회했을 때 학습자에게 문제가 될 수 있다. 예를 들어 K-MOOC 강좌 게시판은 LMS에서 주요 사용하는 사용자 이름이 아닌 K-MOOC ID로 참여자를 구분하는데 이 때문에 LMS에서 게시판 사용이 힘들다.
 
-For more information, see :ref:`Preparing Content`.
+:ref:`Preparing Content` 에 자세한 안내가 나와있다.
 
 ******************************
-Learner Progress and Grades
+학습자 성과 및 성적
 ******************************
 
-Each learner's progress through the edX content is saved. Learners start, stop,
-and resume work in the external LMS in the same way that they would in the edX
-LMS.
+K-MOOC 콘텐츠의 각 학습자 성과는 저장되어 있다. 학습자는 K-MOOC 학습 관리 시스템과 동일하게 LMS에서 일을 시작하고 멈추고 재개한다.
 
-Learner responses to edX problem components are graded by the edX system, and
-then transferred automatically to the grade book in the external LMS. For more
-information, see :ref:`Grading Remote Content`.
+K-MOOC 문제의 구성요소에 대한 학습자 답변은 K-MOOC 시스템이 채점하며 자동으로 LMS에 전송된다.  :ref:`Grading Remote Content` 에 자세한 안내가 나와있다.
 
-To obtain learner engagement and performance data, you use the features
-available in the external LMS.
+학습자 성과 데이터를 얻기 위해선 외부 학습 관리 시스템의 기능을 사용해야 한다.

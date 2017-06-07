@@ -1,149 +1,105 @@
 .. _Online Proctoring Rules:
 
 ####################################
-Online Proctoring Rules for Learners
+학습자를 위한 온라인 프록터 규칙
 ####################################
 
-EdX.org uses an online proctoring service for certain exams (typically final
-exams) that are part of courses that can be made eligible for credit. Learners
-taking proctored exams are required to adhere to a set of defined rules to
-receive a **Satisfactory** result from the proctoring service.
+Kmooc.kr은 학점 인정을 위해 일부 시험(주로 기말고사)를 위해 온라인 프록터를 사용한다. 온라인 프록터 시험에 응시하는 학습자는 프록터 과정 검토 통과를 위해 일부 규칙에 따라야 한다.
 
-If a particular exam in your course has less stringent rules or allows you to
-use a specific tool such as a calculator or reference book during a proctored
-exam, your course staff will let you know. If you are not told about any
-different proctoring exam rules, make sure you adhere to the "Closed Book
-Exam" rules that are described in the following sections.
+만약 강좌 내 특정 시험에서 덜 엄격한 시험 환경을 사용하거나 계산기나 연필, 종이 등 특정 도구를 사용할 수 있다면 강좌 운영팀이 학습자에게 알려줄 것이다. 만약 특별한 이야기가 없으면 다음 장에 나오는 “Closed Book” 시험 규칙에 따라야 한다.
 
-Students are responsible for testing their systems with the proctoring
-software well in advance of all online proctored exams in their courses, so
-that any troubleshooting that is required can be accomplished. Students might
-be able to take practice proctored exams in their course, or can refer to the
-free Demo Course on edX.org, where they can experience a sample proctored
-exam.
+“Closed Book” 시험 규정은 다음과 같다
 
-As with other ID-verified assessments and exams, learners will be asked to
-establish their identity during the proctored exam process by supplying a
-government-issued photo ID with a full name that matches the name they used to
-register on edX.org.
+학습자는 온라인 프록터 시험 응시 전에 프록터 프로그램을 테스트 하여 문제가 발생할 수 있는 상황을 해결할 수 있도록 해야 한다. 학습자는 강좌에서 연습용 프록터 시험을 볼 수 있고 kmooc.kr의 데모 강좌에서 예제 프록터 시험을 볼 수 있다.
 
-.. note:: If you require additional time or any specific accommodations or
-   exemptions to the exam policies in order to complete a proctored exam,
-   contact your instructor or edX Support.
+다른 신분증 확인이 필요한 과제 및 시험과 마찬가지로 kmooc.kr 등록에 사용한 이름과 동일한 이름이 적힌 사진이 포함된 정부 발급 신분증이 필요하다.
+
+.. note:: 프록터 시험에 관련되어 추가 시간이나 특별 요청 사항이 있다면 교수자나 K-MOOC 지원팀에 연락해야 한다.
 
 
 *****************************
-Test Environment Requirements
+시험 환경 조건
 *****************************
 
-To pass a proctored exam, students must make sure that the environment in
-which they take the exam meets the following requirements.
+프록터 시험 통과를 위해 학습자는 다음 조건에 맞는 환경에서 응시해야 한다.
 
 =====================================
-The Room You are Taking the Test In
+시험에 응시하는 방
 =====================================
 
-#. Make sure the room is well lit. The lighting in the room must be bright
-   enough to be considered "daylight" quality. Overhead lighting is preferred.
-   If overhead lighting is not available, the source of light should not be
-   behind you.
+#. 밝은 방에서 시험을 응시해야 한다. 방 안의 조명은 낮이라고 인식될만한 수준이어야 하고 조명은 머리 위에 위치하는 것이 좋다. 머리 위에 조명이 위치할 수 없어도 뒤에 위치해선 안된다.
 
-#. Sit at a clean desk or table, not on a bed or couch.
+#. 깨끗한 책상이나 테이블에 앉아야 하고 침대나 소파에 앉아선 안된다.
 
-#. Clear the desk or table of all materials such as books, papers, notebooks,
-   calculators, and so on, unless you have been specifically permitted (in
-   posted guidelines) to have such materials available for a particular
-   examination.
+#. 특정 도구 사용을 사전에 허락 받지 않은 이상 책, 종이, 공책, 계산기 등의 물건이 책상에 없도록 한다.
 
-   In addition to pens, paper, calculators, textbooks, and notebooks, the
-   following tools should not be on your desk or used during your proctored exam.
+   펜, 종이, 계산기, 교재 및 공책에 더해 다음의 것은 책상에 있어선 안된다.
 
-   * Phones.
-   * Programs such as Excel, Word, Powerpoint.
-   * Communication programs such as Skype.
-   * Any website page other than the exam window in your course, including
-     other content on edX.org.
+   * 휴대폰.
+   * 엑셀, 워드, 파워포인트 등의 프로그램.
+   * Skype 등의 통신 프로그램.
+   * Kmooc.kr의 콘텐츠를 포함한 시험 창 이외의 웹사이트.
 
-#. Make sure there is no writing visible on the desk or on the walls around
-   you.
+#. 책상이나 벽에 어떠한 글도 없어야 한다.
 
-#. Make sure you do not have more than one display or monitor connected to the
-   computer on which you are taking the exam.
+#. 시험 응시 중 컴퓨터에 하나 이상의 모니터가 연결되어 있지 않아야 한다.
 
-#. Do not have music or television playing in the background during the exam.
+#. 시험 응시 중 음악이나 TV가 켜져 있지 않아야 한다.
 
-#. Do not use headphones, ear buds, or any other type of listening equipment.
+#. 헤드폰 이어폰 등 어떤 종류의 음감 도구도 사용할 수 없다.
 
-#. Do not talk to anyone else. During the proctored exam you must not
-   communicate with any other person by any means.
+#. 프록터 시험 중에는 타인과 대화할 수 없다.
 
-#. Do not use a phone for any reason during the proctored exam.
+#. 프록터 시험 중에는 어떤 이유로든 핸드폰을 사용할 수 없다.
 
-#. While you are taking the proctored exam, no other person is allowed to
-   enter the room in which you are taking the exam.
+#. 프록터 시험 중에는 시험 응시중인 방에 다른 사람이 들어올 수 없다.
 
-#. The room you take the exam in must be the same room in which you performed
-   the room scan during the proctoring session setup.
+#. 프록터 설정 단계에서 방 스캐닝을 진행한 방에서 시험을 응시해야 한다.
 
-#. Do not leave the room during the exam for any reason, unless you have been
-   specifically permitted to do so in posted guidelines for a particular exam.
+#. 사전에 방을 떠날 수 있도록 허락을 받지 않은 이상 시험 응시 중 방을 떠날 수 없다.
 
-#. Do not move to another room during the exam. The exam must be completed in
-   the same room that the proctoring webcam scan is performed in.
+#. 시험 중 다른 방으로 이동할 수 없다. 웹캠 스캐닝을 진행했던 방에서 시험을 응시해야 한다.
 
 
 ==========================================
-The Computer You are Taking the Test With
+시험을 응시하는 컴퓨터
 ==========================================
 
-#. Make sure you do not have more than one display or monitor connected to the
-   computer on which you are taking the exam. For example, if you usually use
-   a laptop with a monitor connected, disconnect your monitor and use only the
-   laptop screen.
+#. 시험 응시 중에 컴퓨터에 하나 이상의 화면이 연결되어 있을 수 없다. 예를 들어 만약 평소에 모니터와 연결된 노트북을 사용한다면 모니터가 아닌 노트북 화면으로 시험에 응시해야 한다.
 
-#. Before starting your proctored exam, close all other programs or windows on
-   your testing computer.
+#. 프록터 시험 시작 전 컴퓨터의 모든 프로그램과 창을 닫는다.
 
-#. The following tools should not be used during your proctored exam.
+#. 프록터 시험 중 다음 도구를 사용할 수 없다.
 
-   * Programs such as Excel, Word, Powerpoint.
-   * Communication programs such as Skype.
-   * Any website page other than the exam window in your course, including
-     other content on edX.org.
+   * 엑셀, 워드, 파워포인트 등의 프로그램.
+   * Skype 등의 통신 프로그램.
+   * Kmooc.kr의 콘텐츠를 포함한 시험 창 이외의 웹사이트.
 
 ==========================================
-Your Personal Behavior
+개인 행동 양식
 ==========================================
 
-#. Dress as if you are in a public setting.
+#. 공공장소처럼 옷을 입는다.
 
-#. Do not leave the room during the exam for any reason, unless you have been
-   specifically permitted to do so in posted guidelines for a particular exam.
+#. 사전에 허락을 받지 않은 이상 시험 종료 전에 방을 떠나지 않는다.
 
-#. Do not move to another room during the exam. The exam must be completed in
-   the same room that the proctoring webcam scan is performed in.
+#. 시험 중 다른 방으로 이동하지 않는다. 시험은 웹캠 스캐닝이 진행된 방에서 응시해야 한다.
 
-#. Do not have music or television playing in the background.
+#. 시험 응시 중 음악이나 TV가 켜져 있지 않아야 한다.
 
-#. Do not use headphones, ear buds, or any other type of listening equipment.
+#. 헤드폰 이어폰 등 어떤 종류의 청각적인 도구도 사용할 수 없다.
 
-#. Do not talk to anyone else. During the proctored exam you must not
-   communicate with any other person by any means.
+#. 프록터 시험 중에는 타인과 대화할 수 없다.
 
-#. Do not use a phone for any reason during the proctored exam.
+#. 프록터 시험 중에는 어떤 이유로든 핸드폰을 사용할 수 없다.
 
-#. While you are taking the proctored exam, no other person is allowed to
-   enter the room in which you are taking the exam.
+#. 프록터 시험 중에는 시험 응시중인 방에 다른 사람이 들어올 수 없다.
 
 
 ************************************
-Consequences of Violating the Policy
+규정 위반 시
 ************************************
 
-If you violate the online proctoring rules in a way that results in your
-proctoring session being given an **Unsatisfactory** status, you are not
-eligible to use the course for academic credit, even if you have achieved a
-passing grade.
+온라인 프록터 규칙을 위반해 프록터 과정 검토 결과가 반려로 나오면 성적을 충족시켰더라도 학점 인정을 받을 수 없다.
 
-If you have questions about your proctoring exam status, go to http://edx.org
-to contact edX Support, or consult your course team.
+프록터 시험 상태에 관한 질의사항은  http://www.kmooc.kr 의 K-MOOC 지원팀이나 강좌 운영팀에게 문의한다.

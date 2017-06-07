@@ -1,160 +1,136 @@
 .. _Timed Exams:
 
 ###################
-Timed Exams
+시간 제한 시험
 ###################
 
-This topic describes how to add and manage timed exams in your course.
+이 장은 강좌에서 시간 제한 시험을 추가하고 사용하는 법에 대해 다룬다.
 
 .. contents::
   :local:
   :depth: 2
 
 **********
-Overview
+개관
 **********
 
-You can configure a :ref:`subsection <Developing Course Subsections>`
-in your course so that learners have a set amount of time to complete and
-submit all problems in that subsection.
+강좌에 소주제를 추가해 학습자가 제한 시간 내에 소주제의 모든 문제를 제출하도록 할 수 있다.
 
-If a learner goes over the time limit you set, she can no longer submit
-answers to problems in that subsection. The learner does not receive points for
-unsubmitted problems.
+학습자가 제한된 시간을 넘어가면 해당 소주제에 대해 더 이상 답변을 제출할 수 없다. 학습자는 제출되지 않은 답변에 대해 점수를 획득하지 않는다.
 
-Course teams can grant individual learners more time to complete problems in
-the subsection.
+강좌 운영팀은 개별 학습자에게 추가 시간을 부여할 수 있다.
 
 .. note::
-  Although you can configure an ungraded subsection to be timed, typically
-  you would set a time limit on graded subsections, such as for mid-term or
-  final exams.
+  성적이 반영되지 않는 소주제에도 시간 제한을 설정할 수 있지만 일반적으로 중간고사, 기말고사 등 성적이 반영되는 소주제에 시간 제한 기능이 사용된다.
 
 .. only:: Partners
 
-  Timed exams are different than :ref:`proctored exams<CA_ProctoredExams>`.
-  While both types of exams have a time limit, learners are only monitored
-  during proctored exams.
+  시간 제한 시험은 :ref:`proctored exams<CA_ProctoredExams>` 과 다르다. 두 시험 모두 시간 제한은 있지만 학습자는 프록터 시험의 경우에만 감시를 받는다.
 
 *******************
-Enable Timed Exams
+시간 제한 시험 활성화하기
 *******************
 
-To enable timed exams in your course, follow these steps.
+시간 제한 시험 활성화를 위해.
 
-#. In Studio, select **Settings**, then select **Advanced Settings**.
+#. 스튜디오에서 **설정** 을 선택하고 **고급 설정** 을 클릭한다.
 
-#. Locate the **Enable Timed Exams** field. The default value is ``false``.
+#. 시간 제한 시험 활성화 필드를 찾는다. 기본 값은  ``false`` 로 되어있다.
 
-#. Change the value of the setting to ``true``.
+#. 값을 ``true`` 로 바꾼다.
 
-#. Select **Save Changes**. You can now create timed exams in your course.
+#. **저장** 을 선택한다. 이제 시간 제한 시험을 강좌에서 생성할 수 있다.
 
 *****************************
-Set a Subsection to be Timed
+소주제 시간 제한 설정하기
 *****************************
 
-Ensure that you have enabled timed exams in the course. Then follow these
-steps.
+강좌에서 시간 제한 시험을 활성화 했다면.
 
-#. Add and :ref:`develop a subsection <Developing Course Subsections>` as you
-   would any other subsection.
+#. 다른 소주제와 마찬가지 방법을 통해 소주제를 추가한다.
 
-#. Select the **Configure** icon for the subsection.
+#. 소주제의 **설정** 아이콘을 클릭한다.
 
    .. image:: ../../../shared/images/subsections-settings-icon.png
     :alt: A subsection in the course outline with the configure icon indicated.
     :width: 600
 
-   The **Settings** dialog box opens to the **Basic** tab.
+   설정 다이얼로그 상자가 기본 탭을 연다.
 
-#. In the **Grading** section, set the :ref:`assignment type and due date<Set
-   the Assignment Type and Due Date for a Subsection>` for the subsection.
+#. 성적에서 소주제에 대해 과제 형식과 제출 기한을 설정한다.
 
-#. Select the **Advanced** tab.
+#. **고급** 탭을 선택한다.
 
-#. In the **Set as a Special Exam** section, select **Timed**.
+#. 특별 시험 지정에서 시간 제한을 선택한다.
 
    .. only:: Partners
 
-     If your course has the proctored exam feature enabled, the
-     **Advanced** tab also shows options for :ref:`proctored and practice
-     proctored exams<CA_ProctoredExams>`.
+     만약 강좌가 프록터 시험 기능도 활성화했다면 고급 탭에  :ref:`proctored and practice proctored exams<CA_ProctoredExams>` 에 대한 옵션도 있을 것이다.
 
-#. In the **Time Allotted** field, enter the length of time that you want
-   learners to have to complete the problems in the subsection. Enter the time
-   as HH:MM, where HH is hours and MM is minutes.
 
-#. Select **Save**.
+#. 한 시간 필드에 소주제 문제 풀이 제한 시간을 입력한다. 시간:분 형태로 입력하면 된다.
+
+#. **저장** 을 선택한다.
 
 *****************************************
-Grant Learners More Time for a Timed Exam
+시간 제한 시험에서 학습자에게 추가 시간 부여하기
 *****************************************
 
-From the instructor dashboard, a course team member can grant a learner
-extra time to complete a timed exam.
+교수자 대시보드에서 강좌 운영자는 학습자에게 추가 시간을 부여할 수 있다.
 
-#. View the live version of your course.
+#. 적용 결과 보기를 선택한다.
 
-#. Select **Instructor**, and then select **Special Exams**.
+#. **교수자** 를 선택하고 **특수 시험** 을 클릭한다.
 
-#. Expand the **Allowance Section**.
+#. **허용 메뉴** 를 확대한다.
 
    .. image:: ../../../shared/images/inst_dash_special_exams.png
     :alt: The Allowance Section in the Instructor Dashboard.
     :width: 600
 
-#. Select **Add Allowance**.
+#. **허용 추가** 를 선택한다.
 
    .. image:: ../../../shared/images/new_allowance.png
     :alt: The Allowance Section in the Instructor Dashboard.
     :width: 400
 
-#. Select the subsection that contains the timed exam.
+#. 시간 제한 시험을 포함하고 있는 소주제를 선택한다.
 
-#. For **Allowance Type**, select **Additional Time (minutes)**.
+#. **허용 형태** 에서 **추가 시간 (분)** 을 선택한다.
 
-#. In the **Value** field, enter the number of extra minutes that you are
-   granting the learner.
+#. 값 필드에 학습자에게 부여할 추가 시간을 분단위로 입력한다.
 
-   .. note:: Enter a whole number greater than 0.
+   .. note:: 0 이상의 숫자를 입력한다.
 
-#. Enter the learner's **Username** or **Email**.
+#. 학습자 사용자 **이름이나 이메일 주소** 를 입력한다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
 
 *****************************************
-Hide a Timed Exam After Its Due Date
+기한이 지난 시간 제한 시험 숨기기
 *****************************************
 
-Timed exams are hidden from learners after they complete and submit their
-exams, but are available again for viewing after the exam due date has passed.
-You can configure a timed exam to remain hidden even after the exam due date
-has passed.
+시간 제한 시험은 학습자가 시험을 제출 한 뒤 자동으로 숨겨지나 기한 경과 후 다시 보여지게 된다. 기한 경과 뒤에도 시간 제한 시험이 계속해서 숨김 상태로 있도록 설정할 수 있다.
 
-When you keep a timed exam hidden after its due date, learners cannot see the
-content of the exam, but the grades that they received on the exam are not
-affected, and their scores for the exam remain visible on the **Progress** page.
+기한 경과 뒤에도 시간 제한 시험을 숨김 상태로 두면 학습자는 시험의 내용은 볼 수 없지만 성적에 영향이 가지는 않은 채 성적을 성과 화면에서 확인할 수 있다.
 
-.. note:: This setting applies only to timed exams. It has no effect on other
-   types of special exams, including proctored or practice exams.
+.. note:: 이 설정은 시간 제한 시험에만 적용되며 프록터나 연습 시험 등 다른 특수 시험에 영향을 주지 않는다.
 
 
-#. In Studio, select the **Configure** icon for the timed exam (subsection)
-   that you want to configure.
+#. 스튜디오에서 원하는 **시간 제한 시험의 설정** 아이콘을 클릭한다.
 
-   The **Settings** dialog box opens to the **Basic** tab.
+   설정 다이얼로그 상자가 **기본** 탭을 연다.
 
-#. Select the **Advanced** tab.
+#. **고급** 탭을 클릭한다.
 
-#. In the **Set as a Special Exam** section, make sure **Timed** is selected.
+#. **특수 시험** 으로 **설정** 메뉴에서 **시간 제한** 을 선택한다.
 
-#. Select **Hide Exam After Due Date**.
+#. **기한 경과** 뒤에도 시험 숨기기를 선택한다.
 
    .. image:: ../../../shared/images/timed_exam_hide_after_due_date.png
     :alt: The Hide Exam After Due Date option in the Settings dialog box.
     :width: 400
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 

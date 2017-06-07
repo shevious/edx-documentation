@@ -1,10 +1,10 @@
 .. _CA_ProctoredExams:
 
 ##########################################
-Including Proctored Exams In Your Course
+강좌에 프록터 시험 추가하기
 ##########################################
 
-This section describes how to create and manage proctored exams in Studio.
+이 장은 스튜디오에서 프록터 시험을 생성하고 관리하는 법에 대해 설명한다.
 
 .. contents::
  :local:
@@ -13,122 +13,64 @@ This section describes how to create and manage proctored exams in Studio.
 .. _CA_ProctoredExams_Overview:
 
 ****************************
-Proctored Exam Overview
+프록터 시험 개관
 ****************************
 
-Proctored exams are exams with time limits that learners complete while online
-proctoring software monitors their computers and behavior for activity that
-might be evidence of cheating.
+프록터 시험은 시간 제한이 있고 부정행위를 막기 위해 학습자가 온라인 프록터 프로그램을 사용하는 동안 봐야 하는 시험이다.
 
-In for-credit courses, course teams can create exams that they designate as
-proctored exams, and require that learners pass these exams as one of the
-requirements for credit eligibility.
+강좌 운영팀은 학점 인정 강좌에서 일부 시험을 프록터 시험으로 지정해 학습자가 학점 인정을 위해 이 시험을 통과해야 하도록 할 수 있다.
 
-.. note:: Only learners who are enrolled in the verified track see the option
-   to take an exam with online proctoring. If you believe that there are
-   students who have not yet upgraded to the verified track who should be
-   taking proctored exams and qualifying for course credit, you should remind
-   them to enroll in the verified track before the deadline for upgrading.
+.. note:: 이수증 과정에 있는 학습자만 프록터 시험을 볼 수 있다. 아직 이수증 과정을 신청하지 않았지만 학점 인정을 위해 프록터 시험을 봐야 하는 학습자가 있는 것 같으면, 반드시 기한 전에 인증 이수증 과정에 들어가도록 해야 한다.
 
-Learners in the verified track can choose to take the exam as proctored and be
-eligible for course credit, or take the exam as an open exam and not be
-eligible for course credit. For more information about creating proctored
-exams in Studio, see :ref:`Create a Proctored Exam`.
+이수증 과정의 학습자는 학점 인정을 위해 프록터 시험을 볼 수도 있고, 학점 인정을 포기하고 프록터 시험을 보지 않을 수도 있다. 스튜디오에서 프록터 시험을 생성하는 방법은  :ref:`Create a Proctored Exam` 를 참고하면 된다.
 
-You can also :ref:`create a practice proctored exam <Create a Practice
-Proctored Exam>` for your course so that learners can become familiar with the
-process of installing proctoring software and performing the required checks
-ahead of time.
+또한 연습용 프록터 시험을 만들어 학습자가 프록터 프로그램을 좀 더 친숙하게 다룰 수 있도록 도울 수 있다.
 
-To satisfy the proctored exam requirement for credit eligibility, learners
-must take the exam as a proctored exam and receive a **Satisfactory** result
-for their proctoring session review as well as a passing grade on the exam
-itself. For more information about proctored session review results, see
-:ref:`Proctored Exam Session Results`.
+학점 인정을 위한 프록터 시험 조건을 맞추기 위해 학습자는 시험 자체에서 강좌 통과 성적을 얻고 동시에 프록터 시험 검토에 만족스러운 결과를 얻어야 한다. :ref:`Proctored Exam Session Results`  에 관해 더 자세한 안내가 나와있다.
 
-For information about for-credit courses and specifying the passing score for
-credit eligibility, see :ref:`Academic Course Credit` and :ref:`Specify
-Minimum Credit Eligible Grade`.
+학점 인정 과정과 학점 인정 점수에 대해선  :ref:`Academic Course Credit` 과 :ref:`Specify Minimum Credit Eligible Grade`  에 자세한 안내가 나와있다.
 
 
 =====================================================
-Learner Requirements for Taking Proctored Exams
+프록터 시험 응시를 위한 학습자 요구조건
 =====================================================
 
-Learners who agree to take an exam with online proctoring must install
-proctoring software, which checks that the person taking the exam is the same
-person who is taking the course for credit, and also detects any attempts to
-cheat on the exam. Learners perform a series of checks on their computer and
-test environment and must also provide photo identification before being
-allowed to proceed. The proctoring software then runs in the background,
-monitoring the test environment and screen activity as the learner takes the
-exam.
+프록터 시험을 응시하기로 결정한 학습자는 반드시 프록터 프로그램을 설치하여 시험을 응시하는 사람이 학점을 위해 강좌를 수강중인 사람과 동일한 사람임을 인증 받고 부정행위가 없도록 해야한다. 학습자는 컴퓨터 및 시험 환경에 대해 몇 차례의 검사를 받고 사진 인증을 받아야 한다. 그러면 학습자가 시험을 응시하는 동안 프록터 프로그램은 컴퓨터 화면과 시험 환경을 감시하며 실행하게 된다.
 
-For more information about the technical requirements for taking a proctored
-exam, and edX's :ref:`Online Proctoring Rules <Online Proctoring Rules>`, see
-:ref:`Preparing Learners for Proctored Exams`.
+프록터 시험의 기술적 요구조건과 K-MOOC의 :ref:`Online Proctoring Rules <Online Proctoring Rules>` 은  :ref:`Preparing Learners for Proctored Exams` 에 자세한 안내가 나와있다.
 
-.. note:: Course staff should familiarize themselves with edX's :ref:`Online
-   Proctoring Rules <Online Proctoring Rules>`, which reflect our proctoring
-   software partner's "Closed Book Exam" rules. These strict rules prohibit
-   learners from using any tools during the exam, including pencil and
-   paper, calculators, or reference books.
+.. note:: 강좌 운영팀은 반드시 K-MOOC  :ref:`Online Proctoring Rules <Online Proctoring Rules>`  을 숙지해야 한다. 이 규칙은 학습자가 시험 중에 연필, 종이, 계산기나 책 등 어떠한 도구도 사용할 수 없도록 해야 한다.
 
-   If a particular exam in your course has a less stringent exam policy, or if
-   you want to allow a particular tool (for example, a calculator or pencil and
-   paper), you can enter custom rules or rule exceptions for your exam. It is
-   important that the rules for your exam, if different from the "closed book"
-   rules, are communicated to the proctored exam reviewers so that learners'
-   exam attempts are not incorrectly disqualified. For more information, see
-   :ref:`specifying_exam_rules_and_exceptions`.
+   만약 강좌 내 특정 시험에 대해 덜 엄격한 시험 환경을 원하거나 계산기나 연필, 종이 등 특정 도구를 사용하기 원한다면 시험에 예외 규정이나 사용자 지정 규칙을 입력할 수 있다. 만약 “closed book” 규칙과 다른 규칙을 사용하고 싶다면 확실하게 프록터 시험 검토자와 연락을 취해 학습자가 실수로 과락하는 일이 없도록 해야한다.  :ref:`specifying_exam_rules_and_exceptions`  에 자세한 안내가 나와있다.
 
 
 .. _Proctored Exam Session Results:
 
 ===============================
-Proctored Exam Session Results
+프록터 시험 과정 결과
 ===============================
 
-When learners complete a proctored exam, either by submitting their answers or
-when the time expires for the exam, the proctoring session data is uploaded to
-the third party proctoring service provider. This data is reviewed for
-adherence to :ref:`Online Proctoring Rules <Online Proctoring Rules>`, and
-when the review is complete, a result is returned for each learner who took
-the exam as a proctored exam.
+학습자가 프록터 시험을 완료하면 프록터 과정 결과가 외부 프로그램에 전송된다. 이 결과는  :ref:`Online Proctoring Rules <Online Proctoring Rules>`  에 의거하여 검토되고 검토가 끝나면 프록터 시험을 응시한 각 학습자에게 결과가 돌아간다.
 
-Before proctoring session results are available, learners see a **Pending**
-result. After their proctoring sessions are available, learners can receive
-either a **Satisfactory** or **Unsatisfactory** result.
+프록터 과정 결과가 나오기 전 학습자는 대기중이라는 메시지를 본다. 검토 후 학습자는 통과 혹은 반려 중 하나의 메시지를 보게 된다.
 
-Learners can check their proctoring session results by returning to the
-proctored exam in the course. Their proctoring session review results are
-updated there when results are received. In addition, learners can go to their
-**Progress** pages, where they can check their proctored exam results as a
-part of their overall credit eligibility status.
+학습자는 강좌 내 프록터 시험으로 돌아가 프록터 과정 결과를 조회할 수 있다. 프록터 과정 검토 결과는 검토가 끝나는 순간 업데이트된다.
 
-Course staff can download a report that lists proctoring results for learners
-in their course. For more information, see :ref:`Proctored Session Results`.
+또한 학습자는 성과 페이지에 들어가 전체 학점 인정 과정의 일부로  :ref:`Proctored Session Results` 를 조회할 수 있다.
+
 
 
 .. _CA_LearnerExperience_Proctored Exams:
 
 ==============================================
-The Learner Experience of Proctored Exams
+프록터 시험 학습자 환경
 ==============================================
 
-Only learners who have signed up for the verified track in your course have
-the option of taking proctored exams. When they access a proctored exam,
-learners on the verified track can choose to take the exam with online
-proctoring, or to take the exam without proctoring and as an open exam with no
-time limit.
+이수증 과정의 학습자만 프록터 시험을 응시할 수 있다. 프록터 시험 때 이수증 과정의 학습자는 프록터 프로그램을 사용할 수도 있고, 사용하지 않은 채 시간제한 없이 시험을 응시할 수 있다.
 
-If learners choose to take the exam without proctoring, they are not eligible
-for credit for the exam, and will not be offered the proctored option for that
-exam again.
+학습자가 프록터 프로그램을 사용하지 않는다면 학점 인정을 받을 수 없으며 해당 시험을 프록터 프로그램을 사용하여 재응시할 수 없다.
 
-Learners who are not ready to make the choice or take the exam immediately can
-defer their decision and return to the exam again at some other time before
-the due date.
+지금 당장 선택을 할 수 없거나 즉시 시험을 볼 수 없는 학습자는 결정을 미루고 기한 전에 다시 시험에 응시할 수 있다.
 
 .. Question for Griff or Julia
 
@@ -141,139 +83,84 @@ the due date.
 .. students also need adequate time to retake the exam.
 
 
-Taking a proctored exam
+프록터 시험 응시하기
 +++++++++++++++++++++++++++++++++
 
-When learners agree to take the exam with online proctoring, they are guided
-through the process of installing the proctoring software and performing
-system and user checks, including ID verification. They must be ready to take
-the exam as soon as the proctoring session setup is completed. For details,
-see :ref:`SFD Before Taking Proctored Exam` in the *edX Learner's Guide*.
+학습자가 프록터 프로그램을 사용해 시험에 응시하면 프로그램 설치 및 시스템 사용, ID 인증 과정 등에 대해 안내를 받을 수 있다. 프록터 프로그램 설치 완료와 동시에 시험을 응시할 수 있어야 한다.  :ref:`SFD Before Taking Proctored Exam` 에 자세한 안내가 나와있다.
 
-After learners successfully complete the checks, the proctoring session starts.
-Learners are reminded not to close the proctoring software window. They are
-prompted to return to the browser window where the course is open, and to
-start taking the exam.
+학습자가 인증을 마친 뒤 프록터 프로그램이 실행된다. 학습자는 프록터 프로그램 창을 닫아선 안된다. 학습자는 강좌가 열려 있는 창으로 안내 받아 시험을 시작하게 된다.
 
-A countdown timer is visible at the top of the page during the exam. Warnings
-are displayed when there is 20% and 5% of allotted time remaining. For example,
-if the allowed time in the exam is 60 minutes, learners see a warning when
-there are 12 minutes remaining, and again when there are 3 minutes remaining.
+시험 응시 중 페이지 상단에 타이머가 나온다. 응시 시간 중 20%가 남았을 때와 5% 남았을 때 경고 메시지가 나온다. 예를 들어 만약 응시 시간이 60분이라면 12분이 남았을 때 3분이 남았을 때 한번씩 경고 메시지를 보게 된다.
 
-For information about scenarios that learners might encounter while taking
-proctored exams, see :ref:`Respond to Learner Concerns about Proctored Exams`
-and :ref:`CA_Situations_Learners_Encounter_Proctored_Exams`.
+프록터 시험 중 학습자에게 발생할 수 있는 문제에 대해  :ref:`Respond to Learner Concerns about Proctored Exams` 과 :ref:`CA_Situations_Learners_Encounter_Proctored_Exams`  에 자세한 안내가 나와있다.
 
 
-Completing a proctored exam
+프록터 시험 완료하기
 +++++++++++++++++++++++++++++++++
 
-When learners complete the exam, or when the countdown timer reaches 00:00,
-they no longer have access to the exam. Learners are reminded to quit the
-proctoring session, and the proctoring software begins the process of
-uploading the captured session data.
+학습자가 시험을 완료하거나 타이머가 00:00에 도달했을 때 더 이상 시험을 응시할 수 없다. 학습자는 프록터 화면에서 벗어나라는 메시지를 받고 프록터 프로그램은 시험 과정 데이터 전송을 시작한다.
 
-On the proctored exam page in the LMS, learners see a status of "Pending" for
-their proctoring session results until their session data has been reviewed.
-They can return to this page in the course or check their **Progress**
-pages in the LMS for updates to their proctoring review results.
+학습 관리 시스템의 프록터 시험 페이지에서 검토 완료 전 학습자는 “대기 중”이라는 메시지를 보게 된다. 강좌에서 이 페이지로 돌아오거나 학습 관리 시스템에서 성과 페이지를 확인해 검토 결과를 조회가 가능한지 확인할 수 있다.
 
 
 
 .. _Preparing Learners for Proctored Exams:
 
 ====================================================
-Preparing Learners for Proctored Exams
+학습자 프록터 시험 교육하기
 ====================================================
 
-Well before the exam is due, provide learners with information about the
-grading policy of your course, and make it clear what the requirements are for
-earning credit.
+시험 시작 전에 학습자에게 강좌 성적 규정과 학점 인정을 위한 요구조건이 무엇인지 알려야 한다.
 
-Explain what proctored exams are, and provide learners with links to the
-Learner's Guide topics about proctored exams, and to edX's :ref:`Online
-Proctoring Rules <Online Proctoring Rules>`.
+프록터 시험에 대해 설명하고 프록터 시험에 대한 학습자 가이드와 K-MOOC 프록터 시험의 규칙 링크를 추가한다.
 
-.. note:: Course staff should familiarize themselves with edX's :ref:`Online
-   Proctoring Rules <Online Proctoring Rules>`, which reflect our proctoring
-   software partner's "Closed Book Exam" rules. These strict rules prohibit
-   learners from using any tools during the exam, including pencil and
-   paper, calculators, or reference books.
+.. note:: 강좌 운영팀은 반드시 K-MOOC 온라인 프록터 규칙을 숙지해야 한다. 이 규칙은 학습자가 시험 중에 연필, 종이, 계산기나 책 등 어떠한 도구도 사용할 수 없도록 해야 한다.
 
-   If a particular exam in your course has a less stringent exam policy, or if
-   you want to allow a particular tool (for example, a calculator or pencil and
-   paper), you can enter custom rules or rule exceptions for your exam. It is
-   important that the rules for your exam, if different from the "closed book"
-   rules, are communicated to the proctored exam reviewers so that learners'
-   exam attempts are not incorrectly disqualified. For more information, see
-   :ref:`specifying_exam_rules_and_exceptions`.
+   만약 강좌 내 특정 시험에 대해 덜 엄격한 시험 환경을 원하거나 계산기나 연필, 종이 등 특정 도구를 사용하기 원한다면 시험에 예외 규정이나 사용자 지정 규칙을 입력할 수 있다. 만약 “closed book” 규칙과 다른 규칙을 사용하고 싶다면 확실히 프록터 시험 검토자와 연락을 취해 학습자가 실수로 과락하는 일이 없도록 해야 한다.   :ref:`specifying_exam_rules_and_exceptions`  에 자세한 안내가 나와있다
 
-Emphasize that learners must be aware of the requirements before taking the
-exam, and that some of the requirements might take some preparation.
+학습자가 시험 응시 전에 요구조건을 확인해야 한다는 점을 반드시 강조하고 일부 조건은 사전 준비가 필요하다는 것을 알려야 한다.
 
-You can also create a practice proctored exam that is visible to all learners.
-This ungraded exam provides an opportunity for learners to experience the
-proctoring software setup process and make sure their computers are compatible
-with the software. For more information, see :ref:`Create a Practice Proctored
-Exam`.
+또한 모든 학습자가 볼 수 있는 연습용 프록터 시험을 만들 수 있다. 이 시험은 채점되지 않으며 이를 통해 학습자는 프록터 프로그램 설치 과정을 숙지하고 사용중인 컴퓨터에서 프로그램을 사용할 수 있는지 확인할 수 있다.  :ref:`Create a Practice Proctored Exam`  에 자세한 안내가 나와있다.
 
-.. note:: In an actual proctored exam, as soon as learners agree to take the
-   exam with online proctoring and start the process of installing the
-   proctoring software, they must continue through to taking the exam as soon
-   as that process is completed.
+.. note:: 실제 프록터 시험에서 학습자가 프록터 프로그램 사용에 동의하고 프록터 프로그램 설치를 시작하면 설치 완료와 동시에 시험에 응시해야 한다.
 
-The following list represents only some of the requirements listed in the
-:ref:`Online Proctoring Rules <Online Proctoring Rules>`.
+다음 목록은 :ref:`Online Proctoring Rules <Online Proctoring Rules>`  에 나온 요구조건 일부이다.
 
-* System and environment checks that learners are asked to perform for the
-  proctoring session include taking a photo of a government-issued photo ID,
-  and a photo of themselves, using the webcam on their computer. In addition,
-  they must use the webcam to provide a room scan that includes the desk area,
-  the area under their desk, and a view around the whole room.
+* 프록터 과정 중 학습자가 수행해야 할 시스템 및 환경 체크에 얼굴이 포함된 정부 기관이 발급한 신분증 사진과 웹캠으로 찍은 본인 사진의 제출이 포함된다. 또한 학습자는 웹캠을 통해 책상, 책상 아래와 방 전체를 찍어야 한다.
 
-* Learners must sit at a clean desk or table that has been cleared of all
-  materials such as phones, books, notebooks, pens, and papers. They cannot
-  sit on a bed or couch to take the proctored exam.
+* 학습자는 핸드폰, 책, 공책, 펜 및 종이 등이 전혀 없는 책상에 있어야 한다. 침대나 소파에 앉은 채 프록터 시험에 응시할 수 없다.
 
-* No writing can be visible on the desk or walls in the test environment.
+* 시험 환경엔 책상이나 벽에 어떠한 글도 써져 있어선 안된다.
 
-* The computer on which a learner takes the exam must not have a secondary
-  monitor connected.
+* 학습자가 시험 응시 중 사용할 컴퓨터는 하나의 모니터에만 연결되어 있어야 한다.
 
-* Once the exam starts and until it ends, the learner cannot leave the room
-  for any reason.
+* 시험이 시작되면 끝날 때까지 어떠한 이유로도 학습자는 방을 떠나선 안된다.
 
-* Once the exam starts and until it ends, no other person can enter the room
-  for any reason.
+* 시험이 시작되면 끝날 때까지 어떠한 이유로도 다른 사람이 방에 들어와선 안된다.
 
-* The learner cannot talk to anyone or communicate by any means with another
-  person during the exam.
+* 학습자는 시험 응시 중 다른 사람과 어떤 방식으로든 의사소통 할 수 없다.
 
-* Learners cannot have music or the television playing in the background during
-  the exam. They cannot use headphones, ear buds, or any other type of
-  listening equipment.
+* 시험 응시 중 음악이나 TV가 나와선 안된다. 헤드폰 이어폰 등 어떤 종류의 청각 도구도 사용할 수 없다.
 
 
 .. _Enabling Proctored Exams:
 
 **************************************************
-Enabling Proctored Exams in Your Course
+강좌에서 프록터 시험 활성화하기
 **************************************************
 
 
-To enable proctored exams in your course, follow these steps.
+강좌 내 프록터 시험을 활성화하기 위해.
 
-#. In Studio, select **Settings**, then select **Advanced Settings**.
+#. 스튜디오에서 **설정** 을 선택하고 **고급 설정** 을 클릭한다.
 
-#. Locate the **Enable Proctored Exams** policy key. The default value is
-   ``false``.
+#. 프록터 시험 활성화 규정 키를 찾는다. 기본값은  ``false`` 이다. 
+ 
+#. 설정의 값을  ``true`` 로 바꾼다.
 
-#. Change the value of the setting to ``true``.
+#. **저장** 을 클릭한다. 이제 강좌에서 프록터 시험을 생성할 수 있다.
 
-#. Select **Save Changes**. You can now create proctored exams in your course.
-
-After you enable this setting for your course, you can perform the
-following tasks.
+활성화한 뒤 다음과 같은 작업을 수행할 수 있다.
 
 .. contents::
  :local:
@@ -283,160 +170,119 @@ following tasks.
 .. _Create a Proctored Exam:
 
 =================================
-Create a Proctored Exam
+프록터 시험 생성하기
 =================================
 
-To create an exam that includes online proctoring, follow these steps.
+온라인 프록터 시험을 생성하기 위해.
 
-.. note:: Proctored exams are always timed exams.
+.. note:: 프록터 시험은 항상 시간 제한이 있다.
 
-#. Add and :ref:`develop a subsection <Developing Course Subsections>` as you
-   would any other subsection.
+#. 다른 소주제와 마찬가지 방법을 통해 소주제를 추가한다.
 
-#. Select the **Configure** icon for the subsection.
+#. 소주제의 **설정** 아이콘을 클릭한다.
 
    .. image:: ../../../../shared/images/subsections-settings-icon.png
     :alt: A subsection in the course outline with the configure icon indicated.
     :width: 600
 
-   The **Settings** dialog box opens to the **Basic** tab.
+   설정 다이얼로그 상자가 기본 탭을 연다.
 
-#. In the **Grading** section, set the :ref:`assignment type and due date<Set
-   the Assignment Type and Due Date for a Subsection>` for the subsection.
+#. 성적에서 소주제에 대해 과제 형식과 제출 기한을 설정한다.
 
-#. Select the **Advanced** tab.
+#. **고급** 탭을 선택한다.
 
-#. In the **Set as a Special Exam** section, select **Proctored**.
+#. **특별 시험 지정** 에서 프록터를 선택한다.
 
-#. In the **Time Allotted** field, enter the length of time that you want
-   learners to have to complete the problems in the subsection. Enter the time
-   as HH:MM, where HH is hours and MM is minutes.
+#. 제한 시간 필드에 소주제 문제 풀이 제한 시간을 입력한다. 시간:분 형태로 입력하면 된다.
 
-#. Optionally, in the **Review Rules** field, enter any additions or exceptions
-   to the :ref:`default rules for proctored exams<Online Proctoring Rules>`.
-   For more information, see :ref:`specifying_exam_rules_and_exceptions`.
+#. 선택사항으로 규칙 검토 필드에 프록터 시험 기본 규칙에 추가할 사항이나 예외 사항을 입력한다.  :ref:`specifying_exam_rules_and_exceptions`  에 자세한 안내가 나와있다.
 
-#. Select **Save**.
+#. **저장** 을 클릭한다.
 
-For information about how learners experience a proctored exam, see
-:ref:`CA_LearnerExperience_Proctored Exams`. For information about creating a
-practice exam that learners can take, see :ref:`Create a Practice Proctored
-Exam`.
+학습자 화면의 :ref:`CA_LearnerExperience_Proctored Exams` 은 프록터 시험을 치르는 학습자의 경험에 관해 자세한 안내가 나와있다. 연습용 시험에 대해선  :ref:`Create a Practice Proctored Exam`  에 자세한 안내가 나와있다.
 
 
 .. _Create a Practice Proctored Exam:
 
 ===================================
-Create a Practice Proctored Exam
+연습용 프록터 시험 생성하기
 ===================================
 
-You can add a practice proctored exam to your course so that learners can
-confirm that their systems are compatible with the proctoring software and
-familiarize themselves with the steps to perform the identity and environment
-checks.
+강좌에 연습용 프록터 시험을 추가하여 학습자가 사용중인 시스템이 프록터 프로그램을 사용할 수 있는지 확인하고 신분 및 환경 확인 절차에 친숙해질 수 있도록 할 수 있다.
 
-.. note:: Unlike actual proctored exams, practice exams are visible to all
-   learners, regardless of the track that they are enrolled in.
+.. note:: 실제 프록터 시험과 달리 연습용 시험은 과정에 상관 없이 모든 학습자가 볼 수 있다.
 
-Practice exams are not linked to credit eligibility requirements and
-no monitoring by the proctoring software is actually done, but learners will
-be guided through the same steps as in a real proctored exam, to install the
-proctoring software, perform the identify checks and room scan.
+연습용 시험은 성적 인정 요구조건과 관계 없으며 실제 프록터 프로그램이 감시하지 않지만 학습자는 프로그램 설치, 신분 확인, 방 스캐닝 등 실제 프록터 시험과 동일한 환경과 절차를 경험할 수 있다.
 
-Learners who have performed the proctoring software installation for a
-practice exam are required to perform the same installation step when they
-prepare to take an actual proctored exam, to ensure that they are using the
-latest version of the proctoring software.
+연습용 시험에 대한 프록터 프로그램 설치를 마친 학습자도 확실하게 최신 프록터 프로그램을 사용할 수 있도록 실제 시험에서 동일한 절차를 거친다.
 
-.. note:: Make sure you create the practice exam as an ungraded exam.
+.. note:: 반드시 연습용 시험은 성적 반영이 되지 않는 시험으로 만들어야 한다.
 
-To create a practice exam, follow these steps.
+연습용 시험을 생성하기 위해.
 
-#. Add and :ref:`develop a subsection <Developing Course Subsections>` as you
-   would any other subsection.
+#. 다른 소주제와 마찬가지 방법을 통해 소주제를 추가한다 .
 
-#. Select the **Configure** icon for the subsection.
+#. 소주제의 설정 아이콘을 클릭한다.
 
    .. image:: ../../../../shared/images/subsections-settings-icon.png
     :alt: A subsection in the course outline with the configure icon indicated.
     :width: 600
 
-   The **Settings** dialog box opens to the **Basic** tab.
+   설정 다이얼로그 상자가 기본 탭을 연다.
 
-#. In the **Grading** section, set the :ref:`assignment type and due date<Set
-   the Assignment Type and Due Date for a Subsection>` for the subsection.
+#. 성적에서 소주제에 대해 :ref:`assignment type and due date<Set the Assignment Type and Due Date for a Subsection>` 을 설정한다.
 
-#. Select the **Advanced** tab.
+#. **고급** 탭을 선택한다.
 
-#. In the **Set as a Special Exam** section, select **Practice Proctored**.
+#. 특별 시험 지정에서 프록터를 선택한다.
 
-#. In the **Time Allotted** field, enter the length of time that you want
-   learners to have to complete the problems in the subsection. Enter the time
-   as HH:MM, where HH is hours and MM is minutes.
+#. 제한 시간 필드에 소주제 문제 풀이 제한 시간을 입력한다. 시간:분 형태로 입력하면 된다.
 
-   For a practice exam, edX recommends that you specify a relatively short
-   duration that is appropriate for the number of example problems you
-   include in the subsection.
+   연습용 시험에서 K-MOOC은 시간제한을 비교적 짧게 두는 것을 권장한다.
 
-#. Select **Save**.
+#. **저장** 을 선택한다.
 
-#. Optionally, add a unit with a text component to the practice exam
-   subsection. You can use the text component to provide learners with
-   information about the proctored exam in your course.
+#. 선택사항으로 연습용 시험 소주제에 텍스트 구성요소가 포함된 학습활동을 추가한다. 이 텍스트 구성요소를 활용해 학습자에게 연습용 시험에 대한 안내를 할 수 있다.
 
-The practice exam is added to the course, and is visible to all learners
-regardless of their enrollment track.
+강좌에 연습용 시험이 추가되며 과정과 상관없이 모든 학습자에게 공개된다.
 
 .. _specifying_exam_rules_and_exceptions:
 
 ====================================
-Specifying Exam Rules and Exceptions
+시험 규칙 및 예외사항 설정하기
 ====================================
 
-You can provide custom rules and rule exceptions to the team of reviewers who
-determine whether learners' exam attempts conform to the rules for proctored
-exams. If your course allows learners to use tools and techniques that are
-prohibited by the default rules for proctored exams, you must describe the
-exceptions to the reviewers.
+프록터 시험 규칙에 대해 사용자 지정 규칙이나 예외 규정을 추가할 수 있다. 만약 프록터 시험 규칙이 금지하는 도구를 강좌에서 사용하는 중이라면 반드시 예외 규정으로 추가해야 한다.
 
-For more information about the default rules for proctored exams, see
-:ref:`Online Proctoring Rules <Online Proctoring Rules>`.
+:ref:`Online Proctoring Rules <Online Proctoring Rules>` 에 프록터 시험 기본 규칙에 대한 안내가 나와있다.
 
-To specify custom proctored exam rules and rule exceptions, follow these steps.
+사용자 지정 프록터 시험 규칙과 예외 규정을 설정하기 위해.
 
-#. In Studio, open your course outline and select the subsection for the exam.
+#. 스튜디오에서 강좌 개요를 열고 시험에 대한 소주제를 선택한다.
 
-#. Select the **Configure** icon to open the **Settings** dialog box.
+#. **설정** 아이콘을 클릭해 **설정 다이얼로그 상자** 를 연다.
 
-#. Select the **Advanced** tab.
+#. **고급** 탭을 선택한다.
 
-#. In the **Review Rules**
-   field, describe any additional rules or rule exceptions.
+#. 규칙 검토 필드에 추가 규칙이나 예외 규정을 입력한다.
 
-   Write clear, English-language descriptions of your exam rules. For example,
-   you could enter the following rules.
+   시험 규칙에 대해 간결하게 영어로 작성한다. 예를 들어 다음과 같이 작성할 수 있다.
 
    ``Allow one blank sheet of paper and a pencil or pen. Allow a hand-held
    calculator on the desk.``
 
-#. Select **Save**.
+#. **저장** 을 선택한다.
 
 .. note::
-   Your description of the additional rules and rule exceptions must be as
-   clear, specific, and easy to understand as possible. If the reviewers do not
-   understand your rules and exceptions, they may incorrectly disqualify exam
-   attempts. Use uncomplicated sentences and words that a global English-
-   speaking audience will understand.
+   추가 규칙과 예외 규정에 대한 설명은 간결하고 구체적이고 쉽게 이해할 수 있도록 작성해야 한다. 만약 검토관이 규칙과 예외 규정을 제대로 이해하지 못하면 잘못하여 학습자를 과락시킬 수 있다. 복잡하지 않은 문장과 단어를 사용해 모두가 이해하기 쉬운 언어로 작성한다.
 
 .. _Respond to Learner Concerns about Proctored Exams:
 
 **********************************************************
-Responding to Learners' Concerns about Proctored Exams
+프록터 시험에 대한 학습자 질의사항 응답
 **********************************************************
 
-In addition to questions that can be answered in the FAQs on edx.org, or by the
-:ref:`Online Proctoring Rules <Online Proctoring Rules>`, situations might
-arise that require an action by edX Support.
+Kmooc.kr의 FAQ와 온라인 프록터 규칙에 답이 나와있는 질문 외에도 K-MOOC 지원팀의 도움이 필요한 상황이 발생할 수 있다.
 
 .. contents::
  :local:
@@ -446,365 +292,247 @@ arise that require an action by edX Support.
 .. _Requests for Additional Time:
 
 ===================================
-Handle Requests for Additional Time
+추가 시간 요청
 ===================================
 
-In some situations, for example to accommodate learners with disabilities,
-additional time allowances can be provided for specific students. Consult with
-your organization's Disability Services resources to decide whether and how a
-learner with specific needs can be accommodated for a timed exam.
+장애가 있는 학습자에게 추가 시간을 부여해야 하는 상황이 발생할 수 있다. 소속 기관의 복지 서비스와 상담해 학습자에게 추가 시간이 필요한지 결정한다.
 
-.. note:: Make sure the learner who has requested additional time does not
-   start taking the proctored exam before the additional time has been approved
-   and set up.
+.. note:: 추가 시간을 요청한 학습자가 추가 시간 승인 및 설정 이전에 프록터 시험을 시작하지 않도록 한다.
 
-If it is confirmed that additional time should be allowed for a specific
-student to take the exam, follow these steps.
+추가 시간이 허용되었다면.
 
-#. Contact edX Support to ask them to set up a time allowance for the learner.
+#. K-MOOC 지원팀에 연락해 학습자를 위해 추가 시간을 설정한다.
 
-#. Provide edX Support with the learner's username or email address, and the
-   amount of additional time that this learner should be allowed to complete
-   the exam.
+#. K-MOOC 지원팀에 학습자의 사용자 이름과 이메일 주소를 제공하고 학습자에게 추가 시간에 대해 공지한다.
 
-#. When the allowance has been set up, let the learner know their adjusted
-   allowed time for the exam.
+#. 추가 시간 설정이 끝나면 학습자에게 추가된 시간에 대해 공지하다.
 
-   When this learner starts taking the exam, the exam timer takes into account
-   the adjusted time.
+   학습자가 시험을 응시하게 되면 시험 타이머에 추가 시간만큼 제한시간이 늘어나게 된다.
 
 
 .. _Requests for Special Allowances:
 
 =======================================
-Handle Requests for Special Allowances
+특별 허가 사항 요청
 =======================================
 
-In some situations, for example to accommodate learners with disabilities,
-special allowances can be provided for specific students. Consult with your
-organization's Disability Services resources to decide whether and how a
-learner with specific needs can be accommodated.
+장애가 있는 학습자에게 특별 허가 사항을 제공하는 등의 상황이 발생할 수 있다. 소속 기관의 복지 서비스와 상담해 학습자에게 특별 허가 사항이 필요한지 결정한다.
 
-.. note:: Make sure the learner who has requested special allowances does not
-   start taking the proctored exam before the exemption has been approved and
-   set up.
+.. note:: 특별 허가 사항을 요청한 학습자가 특별 허가 사항 승인 및 설정 이전에 프록터 시험을 시작하지 않도록 한다.
 
-If it is confirmed that a special allowance should be made to the exam
-policy for a particular learner, follow these steps.
+특별 허가 사항이 허용되었다면.
 
-#. Contact edX Support and ask the support team to set up a special allowance
-   for the learner.
+#. K-MOOC 지원팀에 연락해 학습자를 위해 추가 시간을 설정한다.
 
-#. Provide edX Support with the learner's username or email address and the
-   exception to the standard exam policy. For example, "Learner cannot
-   see. Allow an additional person in the room to act as a scribe."
+#. K-MOOC 지원팀에 학습자 사용자 이름, 이메일 주소 및 기본 시험 규정 예외 사항에 대해 알려준다. 예를 들어 “학습자가 볼 수 없으므로 서기 역할을 위해 방 안에 추가 인원이 필요함”이라고 작성하면 된다.
 
-#. When the allowance has been set up, let the learner know that their special
-   allowance has been granted.
+#. 특별 허가 사항이 승인되면 학습자에게 알려준다.
 
-   When the learner's proctored exam results are reviewed, the reviewer is
-   aware of the special allowance and takes that into account.
+   학습자 프록터 시험 검토관은 특별 허가 사항을 적용하게 된다.
 
 
 .. _Requests for Retaking a Proctored Exam:
 
 =====================================================
-Handle Requests for Retaking a Proctored Exam
+프록터 시험 재시험 요청
 =====================================================
 
-Course teams might have to assist learners who have experienced technical
-difficulties with online proctoring, or have other reasons to request
-permission to retake a proctored exam. Learners can contact edX support to
-request that their proctored exam attempts be cleared. Clearing a proctored
-exam attempt allows a learner to retake a proctored exam.
+강좌 운영팀은 온라인 프록터 프로그램 기술적 오류나 기타 이유로 인해 학습자 재시험 요청을 지원해야 할 수도 있다. 학습자는 K-MOOC 지원팀에 연락해 응시 내역 삭제를 요청할 수 있다. 응시 내역을 삭제하면 학습자는 다시 시험에 응시할 수 있다.
 
-.. note:: Deleting a learner's exam attempt clears all submitted answers, and
-   the learner experiences the exam as if for the first time, including making
-   the choice to take the exam with online proctoring, obtaining an exam code,
-   going through the proctoring software setup, and so on.
+.. note:: 학습자 응시 내역을 삭제하면 제출된 모든 답안이 삭제되며 학습자는 시험 코드를 받고 프로그램을 설치하는 등 시험을 처음 응시하는 것과 동일한 절차를 밟게 된다.
 
-If a learner needs to retake a proctored exam, follow these steps.
+학습자가 프록터 시험 재응시를 해야 하면.
 
-#. Instruct the learner to contact edX Support and request that the support
-   team delete the exam attempt.
+#. 학습자에게 K-MOOC 지원팀에 연락해 응시 내역 삭제 요청을 하라고 알려준다.
 
-#. When the exam attempt has been deleted, instruct the learner to
-   retake the exam.
+#. 응시 내역이 삭제되면 학습자에게 재시험에 대한 안내를 한다.
 
 
 .. _Proctored Session Results:
 
 ******************************
-Proctored Session Results
+프록터 과정 검토 결과
 ******************************
 
-The proctoring software monitors both the screen activity and webcam view of
-learners. When learners complete a proctored exam, their proctoring session
-data is uploaded for review by the proctoring service provider. Reviewers
-apply defined criteria including the :ref:`Online Proctoring Rules <Online
-Proctoring Rules>` to decide whether any observed behavior should be flagged.
+프록터 소프트웨어는 화면 활동과 학습자 웹캠 화면을 동시에 감시한다. 학습자가 프록터 시험을 완료하면 프록터 과정 데이터가 외부 제공자에 전송된다. 검토관은 관찰된 행동이 적절한지를 결정하는 온라인 프록터 규칙을 포함하여 그 규칙에 따라 정해진 기준을 적용한다.
 
-Two results are possible for proctoring session reviews.
+프록터 과정 검토 결과는 다음과 같은 두 가지 결과를 가질 수 있다.
 
-*  **Satisfactory** - the learner has passed the proctoring review.
+*  **통과** - 학습자가 프록터 검토를 통과하였다.
 
-*  **Unsatisfactory** - Some suspicious activity has been observed. The
-   learner has not passed the proctoring review.
+*  **반려** - 일부 수상한 활동이 감지되어 학습자는 프록터 검토를 통과하지 못했다.
 
-Some learner behavior that is listed in the Online Proctoring Rules is
-discouraged but does not impact the integrity of the exam. Violations in these
-cases might be flagged but learners with such flags can still receive a
-**Satisfactory** result. For example, a learner is discouraged from playing
-music or having a TV on in the background while they take their exam, but if
-their session recording shows such behavior, it is still possible for them to
-receive a **Satisfactory** result for their proctoring session results, as long
-as there are no instances of suspicious activity that do seem to indicate
-cheating.
+일부 학습자는 온라인 프록터 규칙에 위배하였지만, 전체 시험에 영향을 주지 않는 행동을 했을 수 있다. 이 때 위반사항이 기록될 수는 있으나 통과 결과를 얻는데 문제가 없을 수 있다. 예를 들어 시험 응시 중 음악이 재생되거나 TV가 있는 것은 금지되어 있으나 이 규칙을 위반 학습자도 부정행위로 간주될 만한 수상한 행동이 없었을 경우 통과 결과를 받을 수 있는 것이다.
 
-Activities that would cause learners to fail their proctoring session review
-include not providing a photo ID, using a second computer during the proctored
-exam, appearing to read the exam to another person in the room, displaying
-nudity or explicit materials or browsing adult-based content. If there is even
-one instance of such activity, learners receive an **Unsatisfactory** result
-for their proctoring session.
+프록터 과정 검토 통과에 지장을 주는 행동은 사진이 포함된 신분증 미제공, 프록터 시험 중 복수의 컴퓨터 사용, 방 안의 다른 사람에게 시험 내용을 읽어주는 행위, 성인물 노출 등이 있다. 이런 행동이 한번이라도 발견되었을 경우 프록터 과정 검토 결과가 반려된다.
 
 
 .. _Viewing Proctored Session Results:
 
 =================================
-Viewing Proctored Session Results
+프록터 과정 결과 조회하기
 =================================
 
-At any time after learners have taken the proctored exam in your course, you
-can download a .csv file that displays the status of the proctoring session
-for participating learners.
+학습자가 프록터 시험을 응시한 뒤 학습자의 프록터 과정 검토 결과를 담은 CSV 파일을 다운로드 받을 수 있다.
 
-.. note:: The Proctored Session Results report only shows the result of
-   reviews of the proctored sessions. These results are separate from the
-   learners' grades on the exam.
+.. note:: 프록터 과정 검토 결과 보고는 프록터 과정 검토에 대한 결과만 보여주며 실제 시험의 학습자 성적과는 무관하다.
 
-To generate and download a file of proctoring session results, follow these
-steps.
+프록터 과정 검토 결과 파일 생성 및 다운로드를 위해 다음의 단계를 따라야 한다.
 
-.. important:: Because the proctoring session results file contains
-   confidential, personally identifiable data which might be subject to the
-   Family Educational Rights and Privacy Act (FERPA), be sure to follow your
-   institution's data stewardship policies when you open or save this file.
+.. important:: 본 파일은 가족 교육 권리 및 사생활 보호 법(FERPA)과 같이 사적 데이터를 포함하고 있기 때문에, 본 파일을 열거나 저장할 경우 자신이 속해 기관의 데이터 관리 지침을 따르도록 한다.
 
-#. View the live version of your course.
+#. **적용 결과 보기** 를 클릭한다.
 
-#. In the LMS, select **Instructor**, then select **Data Download**.
+#. 학습 관리 시스템에서 교수자를 선택하고 **데이터 다운로드** 를 클릭한다.
 
-#. Select **Generate Proctored Exam Results Report**.
+#. **프록터 시험 검토 결과 보고 생성하기** 를 선택한다.
 
    .. image:: ../../../../shared/images/Proctoring_GenerateCSVExamResults.png
      :alt: The "Generate Proctored Exam Results Report" button in the LMS.
      :width: 400
 
-   A status message indicates that the report generation process is in
-   progress. This process can take some time to complete, but you can navigate
-   away from this page and do other work while it runs.
+   보고 생성 중이라는 상태 메시지가 나오고 이 과정은 일정 시간이 소요되나 페이지에서 벗어나 다른 작업을 수행할 수 있다.
 
-#. To check the progress of the report generation, reload the page in your
-   browser and scroll down to the **Pending Tasks** section. The status of
-   active tasks is shown in the table.
+#. 보고 생성 과정 확인을 위해 브라우저에서 페이지를 새로고침하고 대기중인 작업 목록까지 스크롤을 내린다. 현재 진행중인 과제 목록이 표에 나타난다.
 
-   When the report is complete, a linked .csv file name becomes available
-   above the **Pending Tasks** section. File names are in the format
-   ``{course_id}_proctored_exam_results_report_{datetime}.csv``. The most
-   recently generated reports appear at the top of the list.
+   보고서 생성이 완료되면 링크가 걸린 CSV파일이 대기중인 작업 목록 위에 나타나게 된다. 파일 이름은   ``{course_id}_proctored_exam_results_report_{datetime}.csv``  형식으로 되어있으며 가장 최근 생성된 보고가 목록 맨 위에 위치하게 된다.
 
-#. To open or save a report file, locate and click the link for the report you
-   requested.
+#. 보고 파일을 열거나 저장하기 위해 요청한 보고의 링크를 찾아 클릭한다.
 
    .. image:: ../../../../shared/images/Proctoring_CSVExamResultsLink.png
      :alt: The link for a generated proctored exam results report in the
          instructor dashboard.
      :width: 600
 
-   You can open .csv files in a spreadsheet application to sort, graph, and
-   compare data.
+   CSV 파일을 스프레드시트 프로그램에서 열어 데이터를 분류, 비교하고 그래프를 만들 수 있다.
 
-.. note:: To prevent the accidental distribution of learner data, you can
-   download exam result report files only by clicking the links on this page.
-   Do not copy these links for reuse elsewhere, as they expire within 5
-   minutes. The links on this page also expire if the page is open for more
-   than 5 minutes. If necessary, refresh the page to generate new links.
+.. note:: 학습자 데이터의 유출을 막기 위하여 본 페이지의 링크를 클릭해야만 파일을 다운로드 받을 수 있다. 다른 곳에서 재사용을 막기 위하여 본 링크들을 복사해서는 안 된다.
 
 
 .. _Proctored Session Results File:
 
 =================================================
-Understanding the Proctored Session Results File
+프록터 과정 검토 결과 파일 알아보기
 =================================================
 
-The .csv file that you can download to view the status and results of
-learners' proctoring sessions contains the following fields.
+학습자 프록터 과정 검토 상태 및 결과 조회를 위해 다운로드한 CSV 파일은 다음과 같은 내용을 담는다.
 
 
 .. list-table::
    :widths: 30 55
    :header-rows: 1
 
-   * - Column
-     - Description
-   * - user_email
-     - The username or email address that identifies the learner taking the
-       proctored exam.
-   * - exam_name
-     - The name of the proctored exam in the body of the course.
-   * - attempt_code
-     - An identifier for the exam attempt. The attempt code is an
-       internal identifier and is included in the report for use in
-       troubleshooting.
-   * - allowed_time_limit_mins
-     - The amount of time in minutes that this learner was allotted for
-       completing the exam.
-   * - is_sample_attempt
-     - Indicates whether this exam attempt was for a practice exam.
-   * - started_at
-     - The date and time that the learner started to take the proctored exam.
-   * - completed_at
+   * - 칼럼
+     - 설명
+   * - 사용자 이메일
+     - 프록터 시험에 응시한 학습자를 나타내는 사용자 이름이나 이메일 주소를 나타낸다.
+   * - 시험 이름
+     - 프록터 시험의 이름을 나타낸다.
+   * - 수험번호
+     - 응시한 시험을 나타낸다. 수험 번호는 내부 식별자로서 문제가 생겼을 때 사용하기 위해 보고에 포함되어 있다.
+   * - 시험 제한 시간
+     - 학습자가 응시한 시험의 제한 시간을 나타낸다.
+   * - 연습용 시험 여부
+     - 응시한 시험이 연습용이었는지 나타낸다.
+   * - 시작 시점
+     - 학습자가 프록터 시험에 응시한 날짜와 시간을 나타낸다.
+   * - 완료 시점
      - The date and time that the learner submitted the proctored exam.
-   * - status
-     - The status of the proctoring session review. Possible values are
-       ``created``, ``ready to start``, ``started``, ``timed out``,
-       ``completed``, ``submitted``, ``second review required``, ``verified``,
-       ``rejected``, and ``error``. For an explanation of each status, see the
-       table below.
+   * - 상태
+     - 프록터 과정 검토 상태를 나타낸다.  ``created``, ``ready to start``, ``started``, ``timed out``,  ``completed``, ``submitted``, ``second review required``, ``verified``, ``rejected``,  ``error``  와 같은 값들이 나타날 수 있으며 아래 표에 각 상태에 관한 설명이 나와있다. 
 
-
-The following table describes the possible values in the Status column.
+다음 표는 상태 칼럼에 나타날 수 있는 다양한 값들을 보여준다.
 
 .. list-table::
    :widths: 30 55
    :header-rows: 1
 
-   * - Value in the Status column
-     - Description
-   * - Created
-     - The exam attempt record has been created, but the exam has not yet been
-       started.
-   * - Ready to Start
-     - The exam attempt record has been created. The learner still needs to
-       start the exam.
-   * - Started
-     - The learner has started the proctored exam.
-   * - Timed Out
-     - The proctored exam has timed out.
-   * - Completed
-     - The learner has completed the proctored exam.
-   * - Submitted
-     - The learner has completed the proctored exam and results have been
-       submitted for review.
-   * - Second Review Required
-     - The exam attempt has been reviewed and the review team has
-       determined that it requires additional evaluation. The review team will
-       perform the second review. Course teams do not need to take any action.
-   * - Satisfactory
-     - The proctoring session review has been completed, and has passed.
-   * - Unsatisfactory
-     - The proctoring session review has been completed, and has not passed.
-   * - Error
-     - The exam is believed to be in error.
+   * - 상태 칼럼의 값
+     - 설명
+   * - 생성 완료
+     - 시험 응시 기록이 생성되었으나 아직 시험이 시작되지 않았다.
+   * - 시작 준비 완료
+     - 시험 응시 기록이 생성되었으나 학습자가 아직 시험에 응시하지 않았다.
+   * - 시작
+     - 학습자가 프록터 시험을 시작하였다.
+   * - 중지
+     - 프록터 시험이 중단되었다.
+   * - 완료
+     - 학습자가 프록터 시험 응시를 완료하였다.
+   * - 제출
+     - 학습자가 프록터 시험을 마쳤으며 과정 검토 중이다.
+   * - 재검토 필요
+     - 검토관이 추가 검토가 필요하다고 결정하였고 재검토가 예정되어 있다. 강좌 운영팀이 따로 수행해야 할 작업은 없다.
+   * - 통과
+     - 프록터 과정 검토가 완료되었고 통과되었다.
+   * - 반려
+     - 프록터 과정 검토가 완료되었고 반려되었다.
+   * - 오류
+     - 시험에 오류가 있었다.
 
 
 .. _CA_Situations_Learners_Encounter_Proctored_Exams:
 
 **********************************************************
-Situations that Learners Might Encounter
+학습자에게 발생할 수 있는 상황
 **********************************************************
 
-This section provides information about scenarios that learners might
-encounter while they take proctored exams. In general, course teams will have
-to decide how to proceed on a case by case basis.
+이 장은 학습자에게 프록터 시험 중 발생할 수 있는 상황에 대한 안내를 담고 있다. 일반적으로 강좌 운영팀이 개별적으로 처리하게 된다.
 
 =========================================================
-Navigating to Another Part of the Course During an Exam
+시험 응시 중 강좌 다른 부분 탐색
 =========================================================
 
-While they are taking a proctored exam, learners can navigate (using the same
-browser session) to other parts of your course.
+프록터 시험 중에 학습자는 같은 브라우저를 사용해 강좌의 다른 부분을 탐색할 수 있다.
 
-.. note:: It is a violation of edX's Online Proctoring Rules for learners to
-   navigate to websites other than edX.org during the proctored exam.
+.. note:: 프록터 시험 중 kmooc.kr 외의 사이트를 탐색하는 것은 K-MOOC의 온라인 프록터 규칙에 위반된다.
 
-If learners navigate to other parts of your course, they see an alert message
-indicating that the timer on their exam continues to count down. When learners
-return to the exam, they resume where they left the exam. The timer has been
-continuing to count down during the learner's time away from the exam.
+학습자가 강좌의 다른 부분을 탐색한다면 시험의 타이머는 멈추지 않는다는 경고 메시지를 보며, 다시 시험 페이지로 돌아왔을 때 마지막에 보던 화면으로 돌아간다. 타이머는 다른 페이지를 탐색하고 있는 중에는 중단되지 않는다.
 
 
 ==========================================
-Running Out Of Time In an Exam
+시험 응시 중 시간
 ==========================================
 
-If the timer reaches 00.00 before a learner has completed the exam, the exam
-ends, and all answers that the learner has submitted up to that point in time
-are submitted for grading.
+학습자가 시험 응시를 완료하기 전에 타이머가 00.00에 도달한다면 그 시점까지 학습자가 작성한 답변은 모두 채점을 위해 제출된다.
 
-The proctoring software detects that the edX exam has ended, and prompts
-learners to confirm that they want to quit their proctoring session. Learners
-must go back to the proctoring software and confirm that they are quitting, so
-that the proctoring session ends and the proctoring session data is uploaded
-for review.
+프록터 프로그램이 K-MOOC 시험이 완료된 것을 감지하면 학습자에게 프록터 과정에서 벗어난다는 확인 창을 보여준다. 학습자는 프록터 프로그램으로 돌아가 벗어난다는 것을 확인해야 하며 프록터 과정 데이터는 검토를 위해 전송된다.
 
 
 =======================================================
-Closing a Browser Window Before The End of the Exam
+시험 종료 전 브라우저 창 닫기
 =======================================================
 
-Several situations might arise during the exam. This section describes the
-result of each of these situations.
-
-In some cases, course team members will have to decide whether the exam
-results that were obtained are valid, or whether the exam attempt should be
-cleared and the learner given an opportunity to retake the exam. For more
-information, see :ref:`Requests for Retaking a Proctored Exam`.
+시험 중에는 여러 상황이 발생할 수 있으며 이 장은 각 상황의 결과에 대해 설명한다.
 
 
-The Proctoring Software Terminates Unexpectedly
+프록터 프로그램이 갑자기 종료됨
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 
-If the proctoring software crashes, the LMS alerts learners and stops the
-exam. Learners should contact edX Support in this situation.
+만약 프록터 프로그램에 오류가 생기면 학습 관리 시스템이 학습자에게 알리고 시험을 중단한다. 이 때 학습자는 K-MOOC 지원팀에 연락해야 한다.
 
 
-The edX Browser Terminates Unexpectedly
+K-MOOC 브라우저가 갑자기 종료됨
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 
-If the browser in which the edX exam is running crashes, the exam timer for
-each learner continues to run. Learners can reopen their exam in a new browser
-window and continue their exam, but they will have lost time while the browser
-was closed.
+만약 K-MOOC 시험이 열려 있는 브라우저에 오류가 생겨도 시험 타이머는 계속 진행된다. 학습자는 새 브라우저 창에서 시험을 열어 계속 볼 수 있지만 브라우저가 닫혀 있었던 동안의 시간은 추가되지 않는다.
 
 .. Question for Chris: how does the proctoring software view such a break in
 .. taking the exam?
 
 
-Learners Close the Proctoring Software Window
+학습자가 프록터 프로그램 창을 닫음
 +++++++++++++++++++++++++++++++++++++++++++++++
 
-If learners close their proctoring software windows before they have completed
-a proctored exam, they see alert messages warning them that they are ending
-their exam. If they continue to close the proctoring software window, both the
-exam and the proctoring session end.
+만약 학습자가 프록터 시험 완료 전에 프록터 프로그램 창을 닫으면 시험을 종료한다는 경고 메시지를 보게 된다. 경고 메시지를 본 뒤 프록터 프로그램 창을 닫으면 시험과 프록터 과정이 모두 종료된다.
 
-The exam is stopped in the LMS. Answers in the exam up to the point that the
-session ended are submitted for grading, but the proctoring session recording
-might not be completely uploaded. Learners should contact edX Support in this
-situation.
+시험은 학습 관리 시스템에서 종료되며 프록터 과정이 끝난 순간까지 작성된 답변은 채점을 위해 제출되지만 프록터 과정 기록이 완전이 업로드되지 않았을 수 있다. 이 상황에서 학습자는 K-MOOC 지원팀에 연락해야 한다.
 
 
-Learners Close the edX Exam Window
+학습자가 K-MOOC 시험창을 닫음
 +++++++++++++++++++++++++++++++++++
 
-If learners close the browser in which their edX proctored exam is running
-before they have completed the exam, they might not see any alerts, depending
-on the browser that they are using. The exam  timer for each learner continues
-to run. If learners reopen their exam in a new browser window, they can
-continue their exam, but they will have lost time while the browser was
-closed.
+학습자가 시험 종료 전 K-MOOC 프록터 시험이 진행되던 브라우저 창을 닫으면 브라우저에 따라 경고 메시지가 나오지 않을 수도 있다. 시험 타이머는 계속되며 새 브라우저 창에서 다시 시험을 열면 계속 시험을 볼 수 있지만 브라우저가 닫혀 있었던 동안의 시간은 추가되지 않는다.
 
 .. Question for Chris: how does the proctoring software view such a break in
 .. taking the exam?
