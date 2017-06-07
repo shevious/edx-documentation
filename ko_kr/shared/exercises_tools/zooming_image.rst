@@ -12,7 +12,7 @@
   :alt: Example zooming image tool showing a chemistry exercise.
 
 ***********************************
-Components of a Zooming Image Tool
+이미지 확대/축소 도구의 구성요소
 ***********************************
 
 이미지 확대/축소 도구를 생성하려면 다음 파일이 필요하다.

@@ -11,7 +11,7 @@
   :depth: 1
 
 *********
-Overview
+개관
 *********
 
 강좌의 학습집단 구성을 위해서, 자동 배치, 직접 배치, 혼합적 배치 방법을 통해 학습자를 학습집단에 배치할 수 있는데 이에 대한 사항은  :ref:`Options for Assigning Learners to Cohorts` 에서 확인할 수 있다.

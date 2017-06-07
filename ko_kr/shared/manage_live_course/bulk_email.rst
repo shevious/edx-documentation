@@ -20,7 +20,7 @@
 .. _bulk_email_message_addressing:
 
 *************************
-Message Addressing
+발송 주소 지정
 *************************
 
 교수자 대시보드에서 이메일을 보낼 때,  ~에게 옵션을 선택해 수신자를 선택한다. 하나 이상의 수신자를 선택할 수 있다. :ref:`Bulk Email Who Is Included or Excluded` 에 더 자세한 안내가 나와있다.
@@ -306,7 +306,7 @@ https:// 을 웹 URL에 다음 예제와 같이 추가해야 한다.
 .. _Example Messages to Students:
 
 *********************************
-Example Messages to Learners
+학습자들에게 보내는 발송 이메일 예제
 *********************************
 
 강좌 내의 소통을 위해 일반적인 강좌 일정보다 미리 강좌를 준비하면서, 다음 메일 예시를 사용할 수 있다.

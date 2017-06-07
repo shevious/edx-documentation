@@ -1,7 +1,7 @@
 .. _Including Learner Cohorts:
 
 #############################
-Including Learner Cohorts
+학습집단 추가하기
 #############################
 
 .. toctree::
