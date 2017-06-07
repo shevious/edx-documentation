@@ -1,13 +1,12 @@
 .. _Course Assets Index:
 
 ##########################
-Adding Course Assets
+강좌 자료 추가하기
 ##########################
 
-Use the topics in this section to learn about managing assets in your course.
+이 장은 강좌 내 자료의 관리에 대해 다룬다.
 
-For information on how to develop your course content in the Studio Outline,
-see :ref:`Developing Your Course Index`.
+Studio의 강좌 개요 페이지에서 콘텐츠를 개발하는 방법은  :ref:`Developing Your Course Index` 에 안내되어 있다.
 
 .. toctree::
    :maxdepth: 2

@@ -1,19 +1,14 @@
 .. _Grading Index:
 
 #############################################
-Establishing a Grading Policy For Your Course
+성적 규정 설정하기
 #############################################
 
-Use the topics in this section to learn about setting up grading for your
-course. Establishing a grading policy requires several steps, including
-deciding whether to include ungraded sections in your course.
+이 장은 강좌의 성적 규정을 설정하는 방법을 다룬다. 성적 규정 설정에는 채점이 되지 않는 부분을 추가하는 방법을 포함해 몇 가지 절차가 필요하다.
 
-.. important:: Any changes to the course grading policy, to graded
- subsections, or to graded components after a course begins will affect the
- student experience in the course and analysis of its data.
+.. important:: 강좌를 시작한 후, 강좌 채점 규정, 성적 반영 소주제, 또는 성적 반영 구성요소에 대한 변경은 강좌에서 학습자의 학습 경험과 성적 분석에 영향을 미친다.
 
-For information on how to develop your course content in the Studio Outline,
-see :ref:`Developing Your Course Index`.
+스튜디오 개요에서 강좌를 개발하는 방법은  :ref:`Developing Your Course Index` 를 참고하면 된다.
 
 .. toctree::
    :maxdepth: 1
