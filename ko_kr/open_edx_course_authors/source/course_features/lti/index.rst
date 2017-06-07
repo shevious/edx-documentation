@@ -1,36 +1,15 @@
 .. _Using Open edX as an LTI Tool Provider:
 
 ######################################
-Using Open edX as an LTI Tool Provider
+K-MOOC을 LTI 도구 공급자로 사용하기
 ######################################
 
-Your installation of Open edX can be configured to be a learning tool
-interoperability (LTI) provider to other systems and applications. If your Open
-edX site is configured to be an LTI provider, you can present content from an
-Open edX course in any application that is configured to be a consumer of that
-content. As a result, you can reuse Open edX course content, including advanced
-problem types and videos, in contexts other than the Open edX LMS. Examples
-include courses running on Canvas, Blackboard, and other learning management
-systems and applications.
+테스트서버를 협력 기관이 사용하는 다른 시스템과 프로그램의 LTI 공급자로 설정할 수 있다. 사용할 시스템 혹은 프로그램과 테스트서버 간의 초기 설정과 테스트가 끝나면 강좌 운영팀은 이 기능을 사용해 모든 공간에서 테스트서버 고급 문제 유형 및 동영상을 포함한 강좌 콘텐츠를 재사용할 수 있다. 
 
-For more information about the configuration process for this feature, see
-`Configuring an edX Instance as an LTI Tool Provider`_ in the *Installing,
-Configuring, and Running the Open edX Platform* guide.
+.. note::
+  이 기능의 적용 여부는 현재 검토중이다. LTI 공급자 기능에 대해서는 K-MOOC 운영팀에 문의한다.
 
-You use the topics in this section to prepare your course for reuse.
 
-.. toctree::
-   :maxdepth: 2
-
-   lti_reuse_content
-   lti_prepare_content
-   lti_address_content
-   lti_grade_content
-   lti_canvas_example
-   lti_blackboard_example
-
-You can also include content from an LTI provider in your Open edX courses. For
-more information, see :ref:`LTI Component`.
 
 .. _Configuring an edX Instance as an LTI Tool Provider: http://edx.readthedocs.org/projects/edx-installing-configuring-and-running/en/latest/configuration/lti/index.html
 
