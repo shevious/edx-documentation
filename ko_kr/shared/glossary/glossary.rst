@@ -1,7 +1,7 @@
 .. _Glossary:
 
 ############
-Glossary
+주요 용어
 ############
 
 :ref:`A` - :ref:`C` - :ref:`D` - :ref:`E` - :ref:`F`

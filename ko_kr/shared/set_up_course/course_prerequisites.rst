@@ -1,11 +1,10 @@
 .. _Set Course Prerequisites:
 
 #########################
-Set Course Prerequisites
+강좌 선수 강좌 설정하기
 #########################
 
-You might want to make sure that your learners have a specific set of skills
-and knowledge before they take your course.
+학습자들에게 강좌를 듣기에 필요한 선수 강좌에 대해 알리고 싶을 때 사용한다.
 
 .. contents::
  :local:
@@ -15,126 +14,88 @@ and knowledge before they take your course.
 .. _Specify Prerequisite Courses:
 
 ****************************
-Specify Prerequisite Courses
+선수 강좌 지정
 ****************************
 
-You can require that your learners pass a particular edX course before they
-enroll in your course. Learners see information about course prerequisites on
-the course **About** page.
+해당 강좌를 듣기위한 선수 강좌를 지정하고 학습자들이 강좌개요에서 볼 수 있도록 알려준다.
 
 .. image:: ../../../shared/images/PrereqAboutPage.png
   :width: 500
   :alt: A course About page with prerequisite course information circled.
 
-If learners have not completed the prerequisite course, they can enroll in your
-course and then see your course on their learner dashboards. However, unlike
-with other courses, the dashboard does not provide a link to the course
-content. The dashboard includes a link to the **About** page for the
-prerequisite course. Learners can enroll in the prerequisite course from the
-**About** page.
+선수 강좌를 이수하지 못했을 경우에는 수강신청은 가능하지만 학습자 대시보드에서 학습하기 링크를 제공하지 않는다.
 
 .. image:: ../../../shared/images/Prereq_StudentDashboard.png
   :width: 500
   :alt: The learner dashboard with an available course and a course that is
       unavailable because it has a prerequisite.
 
-To define one course as the prerequisite for another, you must be the course
-creator in both the current course and in the prerequisite course.
+선수 과정을 지정하기 위해서는 현재 강좌와 선수 강좌 모두의 교수자로 지정되어야 한다.
 
-To specify a prerequisite course, follow these steps.
+선수 과정을 지정하기 위해서 다음의 순서를 따른다.
 
-#. In Studio, open your course.
-#. On the **Settings** menu, select **Schedule & Details**.
-#. On the **Schedule & Details** page, locate the **Requirements** section.
-#. Under **Prerequisite Course**, select a course from the list.
-#. Select **Save Changes**.
+#. 스튜디오에서 해당 강좌에 들어간다.
+#. 설정에서 강좌 기본설정을 선택한다.
+#. 강좌 기본 설정에서 학습 시간 및 선수 강좌를 찾는다.
+#. 선수 과정에서 과정을 선택한다.
+#. 저장하기 버튼이 나타나면 누른다.
 
 .. note:: Currently, you can specify only one prerequisite course.
 
 .. _Require an Entrance Exam:
 
 ****************************
-Require an Entrance Exam
+사전평가 설정
 ****************************
 
-You can require your learners to pass an entrance exam before they access your
-course materials. If you include an entrance exam, learners who enroll in your
-course can only access the **Entrance Exam** page until they pass the exam.
-After learners pass the exam, they can access all released materials in your
-course.
+학습자들이 강좌의 내용에 접근하기 전에 필요한 사전평가를 요구할 수 있다. 사전평가를 설정하면 학습자들은 최초에 사전평가만이 보여지고 이것을 통과하기 전에는 나머지 내용들이 보이지 않는다.
 
-To require an entrance exam, follow these steps.
+사전평가를 설정하기 위해서는 다음의 순서를 따른다.
 
-#. In Studio, open your course.
-#. On the **Settings** menu, select **Schedule & Details**.
-#. On the **Schedule & Details** page, locate the **Requirements** section.
-#. Select the **Require students to pass an exam before accessing course
-   materials** check box.
-#. Select **Save Changes**.
+#. 스튜디오에서 해당 강좌에 들어간다.
+#. 설정 메뉴에서 강좌 기본 설정을 선택한다.
+#. 강좌 기본 설정에서 학습 시간 및 선수 강좌를 찾는다.
+#. 사전 평가에서 수강 시작 전, 사전 평가를 통과해야 합니다 체크박스를 클릭한다.
+#. 저장하기 버튼이 나타나면 누른다.
 
-After you save your changes, Studio automatically creates an **Entrance Exam**
-section in your course outline. To add content to your entrance exam, go to the
-course outline.
+저장한 뒤에 스튜디오에는 자동적으로 **사전평가** 주제가 생겨난다. 사전평가에 내용을 추가하기 위해서는 강좌개요로 이동한다.
 
 ==================================
-Best Practices for Entrance Exams
+사전평가 활용하기
 ==================================
 
-We strongly recommend that you follow several guidelines to help you and your
-learners have a positive experience with entrance exams.
+사전평가를 활용하기 위해서는 다음의 내용을 참고하도록 한다.
 
-* Make sure that your beta testers include the entrance exam when they test
-  your other course content.
+* 베타테스터들이 사전평가에 참여해서 강좌 내용을 테스트 해볼 수 있도록 한다.
 
-* Make sure that you mention the entrance exam in the course description on
-  your course **About** page. Otherwise, learners will not know about the
-  entrance exam before they enroll in your course and try to access course
-  content.
+* 사전평가를 강좌 개요 페이지에서 사용자들이 알 수 있게끔 게시하여, 학습자들이 수강신청 후에 사전평가를 보고 당황하지 않도록 한다.
 
-* Add an announcement to the **Course Updates & News** page that contains
-  information and instructions for learners who need to take the exam. When
-  learners first try to access content in a course that has an entrance exam,
-  they see the **Course Updates & News** page. We suggest that you include the
-  following information.
+* 공지사항에 사전평가를 위한 세부 지침을 알려주도록한다. 학습자들이 강좌에 최초에 들어가면 공지사항을 접하게 되기 때문이다. 다음의 정보가 게시되도록 한다.
 
-  * To begin the course entrance exam, learners select **Entrance Exam**.
+  * 사전평가를 시작하기 위해서는 강좌에서 사전평가를 선택한다.
 
-  * After learners complete the entrance exam, they must select
-    **Entrance Exam** again or refresh the page in their browsers. When the
-    page refreshes, learners can see all currently available course content.
+  * 사전평가를 완료하고 나서는 사전평가를 재선택하던지, F5를 눌러서 브라우저를 새로고침한다. 페이지가 새로고침되면 이용가능한 강좌내용이 표시된다.
 
 ================================================
-Create an Entrance Exam from the Course Outline
+강좌개요에서 사전평가 만들기
 ================================================
 
-You create your course entrance exam from the course outline in Studio.
-Creating entrance exam content is just like creating other course content. For
-more information, see :ref:`Course Components Index`.
+스튜디오의 강좌개요에서 사전평가를 만들 수 있다. 사전평가는 다른 강좌 주제들의 생성방법과 다르지 않다. :ref:`Course Components Index` 를 참조하면 된다.
 
 ==================================
-Adjust Scores in the Entrance Exam
+사전평가 점수 조정하기
 ==================================
 
-If you find an error in the exam after learners have taken it, and corrections
-to the exam are unavoidable, you have several options to rescore the exam for
-individual learners. These options are available on the Instructor Dashboard.
+사전평가에서 오류가 발견되고 수정이 불가피할 경우 교수자 대시보드에서 다음의 방법으로 점수를 재채점할 수 있다.
 
-On the Instructor Dashboard, select **Student Admin**, and then locate the
-**Entrance Exam Grade Adjustment** section. The following options are
-available.
+교수자 대시보드에서 학습자 관리를 선택하고 사전평가 점수 조정 부분을 찾는다. 다음의 방법들을 이용할 수 있다.
 
-* **Reset Student Attempts**: Reset the value for one particular learner's
-  attempts back to zero so that the learner can begin work over again. For more
-  information, see :ref:`reset_attempts`.
+* **문제풀이 횟수 초기화**: 특정학생의 시도횟수를 0으로 설정하여, 다시 시험을 볼 수 있게 한다. 자세한 사항은 :ref:`reset_attempts` 를 참조한다.
 
-* **Rescore Student Submission**: Rescore the responses that a learner has
-  submitted. For more information, see :ref:`rescore`.
+* **답안 재채점**: 학습자들이 재출한 문제를 다시 채점한다. 자세한 사항은 :ref:`rescore` 를 참조한다.
 
-* **Delete Student State for Problem**: Delete a learner's entire history for
-  the exam from the database. For more information, see :ref:`delete_state`.
+* **문제관련 학습자 상태 삭제**: 학습자들의 시험기록을 삭제한다. 자세한 사항은 :ref:`delete_state` 를 참조한다.
 
-Another option on the Instructor Dashboard is **Show Background Task History
-for Student**. If you reset learner attempts, rescore learner submissions, or
-delete learner state, the operation runs in the background. If you want to see
-a record of all the operations that have run for the entrance exam, select
-**Show Background Task History for Student**.
+교수자 대시보드에서 학습자 배경작업 이력보기를 선택한다. 학습자들의 시도회수를 초기화 하거나 재채점하거나, 학습자 상태를 삭제하게 되면 해당 작업은 백그라운드에서 이루어 진다.
+
+이러한 작업들의 상태를 보려면 학습자 배경작업 이력보기를 선택한다.

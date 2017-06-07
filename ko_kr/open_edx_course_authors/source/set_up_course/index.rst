@@ -16,8 +16,6 @@ Studio의 강좌 개요 페이지에서 콘텐츠를 개발하는 방법은 :ref
    scheduling_course
    setting_pacing
    course_prerequisites
-   search_course
    setting_up_student_view
    course_staffing
    creating_course_certificates
-   custom_courses
