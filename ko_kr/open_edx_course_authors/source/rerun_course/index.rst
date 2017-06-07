@@ -1,13 +1,12 @@
 .. _Rerunning Your Course Index:
 
 ##########################
-Re-running Your Course
+강좌 재개강하기
 ##########################
 
-Use the topics in this section to learn about re-running your course.
+이 장은 강좌 재개강에 대해 설명한다.
 
-For information on how to develop your course content in the Studio Outline,
-see :ref:`Developing Your Course Index`.
+:ref:`Developing Your Course Index` 에 스튜디오 개요에서 강좌 콘텐츠를 개발하는 방법에 대한 자세한 안내가 나와있다.
 
 .. toctree::
    :maxdepth: 2

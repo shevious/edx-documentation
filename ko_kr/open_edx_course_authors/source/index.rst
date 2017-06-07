@@ -1,7 +1,7 @@
 .. _Building and Running an Open edX Course:
 
 ###########################################################
-Building and Running an Open edX Course: Eucalyptus Release
+강좌 공개하기
 ###########################################################
 
 .. toctree::

@@ -1,17 +1,16 @@
 .. _Course Components Index:
 
 ############################
-Adding Course Components
+강좌 콘텐츠 만들기
 ############################
 
-Use the topics in this section to understand how to create course content of
-different types.
+이 장에서는 다양한 유형의 강좌 콘텐츠를 만드는 방법에 대해 다룬다.
 
-For information on creating exercises and tools, see :ref:`Exercises and Tools
-Index`.
+연습문제 및 도구 만들기에 관한 안내는 :ref:`Exercises and Tools Index` 에 있다.
 
-For information on how to develop your course content in the Studio Outline
-page, see :ref:`Developing Your Course Index`.
+학습자에게 과제를 제시할 수 있는 콘텐츠 보관함 만들기에 관한 안내는 콘텐츠 보관함 에 있다.
+
+Studio 개요 페이지에서 강좌 콘텐츠를 개발하는 방법에 관한 안내는 :ref:`Developing Your Course Index` 에 있다.
 
 
 

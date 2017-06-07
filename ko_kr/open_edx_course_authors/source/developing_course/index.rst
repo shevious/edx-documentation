@@ -1,20 +1,16 @@
 .. _Developing Your Course Index:
 
 ##########################
-Developing Your Course
+강좌 개발하기
 ##########################
 
-Use the topics in this section to understand how to develop your course
-content in the Studio Outline page.
+이 장에서는 Studio의 강좌 개요 페이지에서 강좌 콘텐츠를 개발하는 방법에 대해 다룬다.
 
-For information on building specific course component types, see :ref:`Course
-Components Index`.
+구체적인 강좌 구성요소 개발 방법은  :ref:`Course Components Index` 에 안내되어 있다.
 
-For information on creating exercises and tools, see :ref:`Exercises and Tools
-Index`.
+연습문제와 도구를 만드는 방법은  :ref:`Exercises and Tools Index` 에 안내되어 있다.
 
-For information on creating content libraries from which you can randomly draw
-content for randomized assigments, see :ref:`Content Libraries`.
+과제에 무작위로 할당되는 콘텐츠 정보에 대한 안내는  :ref:`Content Libraries` 에 있다.
 
 .. toctree::
    :maxdepth: 2

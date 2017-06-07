@@ -1,11 +1,10 @@
 .. _Manage Student Progress Index:
 
 #####################################
-Managing Learner Progress and Grades
+학습자 진도 및 성적 관리하기
 #####################################
 
-Use the topics in this section to learn about accessing learner data and
-managing learners' answers and grades in your course.
+이 장은 학습자 데이터 조회와 학습자 답안 및 성적 관리법에 대해 다룬다.
 
 .. toctree::
    :maxdepth: 2

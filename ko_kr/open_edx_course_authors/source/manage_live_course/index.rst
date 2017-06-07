@@ -1,12 +1,10 @@
 .. _Manage Live Course Index:
 
 ##########################
-Managing a Running Course
+진행중인 강좌 관리하기
 ##########################
 
-Use the topics in this section to learn about managing a course that is
-currently running, including enrolling or unenrolling learners, and managing
-course discussions.
+이 장에서는 현재 진행중인 강좌를 관리하는 법에 대해 알아보자.
 
 .. toctree::
    :maxdepth: 2
