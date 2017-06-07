@@ -1,380 +1,237 @@
 .. _Create Exercises:
 
 ############################
-Exercises and Tools
+연습문제 및 도구
 ############################
 
-You can add a wide variety of different types of exercises and tools to your
-course outline. By default, a core set of exercises is available for you to add
-to your course. There are also numerous additional exercises and tools that you
-can review and add to your course.
+강좌 개요에 다양한 연습문제와 도구를 추가할 수 있다. 기본적으로 이를 강좌에 추가할 수 있도록 핵심 연습문제 모음을 준비할 수 있다. 또한 추가로 다양한 연습문제와 도구를 강좌에 추가할 수 있다.
 
 .. contents::
   :local:
   :depth: 2
 
 ************************************
-Levels of Support for Tools
+도구의 지원 수준
 ************************************
 
-The level of support that edX provides for each tool varies. The description
-of each exercise and tool in the following sections indicates the level of
-support designated for each tool: full, provisional, or no support. This table
-provides the definition for each level of support.
+각 도구 별로 K-MOOC이 지원하는 수준이 다르다. 각 도구별로 전체 지원, 부분적 지원, 지원 없음으로 나뉘는데 다음은 이에 대한 정의와 설명을 보여준다.
 
 .. list-table::
    :widths: 25 60
    :header-rows: 1
 
-   * - Level of Support
-     - Description
-   * - Full support
-     - Fully supported tools and features are available on edx.org, are fully
-       tested, have user interfaces where applicable, and are documented in the
-       official edX guides that are available on docs.edx.org.
-   * - Provisional support
-     - Provisionally supported tools and features are available on edx.org,
-       but might lack the robustness of functionality that your courses
-       require. You should test provisionally supported tools thoroughly
-       before using them in your course, especially in graded sections.
-       Complete documentation might not be available for provisionally
-       supported tools, or documentation might be available from sources other
-       than the official edX guides.
-   * - Not supported
-     - Exercises and tools with no support are not maintained by edX, and
-       might be deprecated in the future. They are not recommended for use in
-       courses due to non-compliance with one or more of the base
-       requirements, such as testing, accessibility, internationalization, and
-       documentation.
+   * - 지원 수준
+     - 설명
+   * - 완전 지원
+     - Kmooc.kr에 완전히 지원 가능한 도구 및 기능이 있다. Kmooc.kr은 UI를 포함한 모든 테스트를 거쳤으며 가이드에서 이와 같은 내용을 확인할 수 있다.
+   * - 부분 지원
+     - Kmooc.kr에 부분적으로 지원 가능한 도구 및 기능이 있지만 강좌에서 요구하는 부분을 충족하지 못할 수 있다. 강좌, 특히 채점이 되는 부분에 사용하기 전에 사전 테스트가 필요하며 부분적 지원 도구에 관해서 K-MOOC 가이드에 완전한 설명이 없을 수 있다.
+   * - 지원 없음
+     - K-MOOC이 관리하지 않고 지원도 하지 않는 연습문제 및 도구를 의미한다. 문서화, 국제화, 접근성 등 기본적인 요구사항을 맞추지 못하는 부분이 있을 가능성이 있으므로 사용하지 않는 것을 추천한다.
 
 ************************************
-Introduction to Exercises and Tools
+연습문제 및 도구 소개
 ************************************
 
-"Exercises and tools" is a general way to refer to the robust variety of
-content that you can integrate into an online course. You create the graded and
-ungraded assessments in your course with different exercises or problem types,
-while various tools deliver different types of course content. Software
-developers use the XBlock component architecture to contribute new exercises
-and tools to the Open edX platform and provide new and varied options for
-reaching learners.
+온라인 강좌에 포함할 수 있는 다양한 콘텐츠를 대표하는 것이 바로 연습문제 및 도구다. 채점이 되는 평가와 되지 않는 평가부터 여러 연습문제 및 문제 유형을 사용할 수 있고 각종 도구를 활용해 다양한 강좌 콘텐츠를 제공할 수 있다. 소프트웨어 개발자는 XBlock을 사용해 새로운 연습문제와 도구를 K-MOOC 플랫폼에 추가하고 학습자에게 다가갈 수 있는 각종 기능을 개발한다.
 
-* You might need to explicitly enable an exercise or tool that you want to use
-  in your course. For more information, see :ref:`Enable Additional Exercises
-  and Tools`.
+* 강좌에 사용하고 싶은 연습문제나 도구를 허용해야 할 수도 있다. 자세한 사항은  :ref:`Enable Additional Exercises and Tools` 을 참고하면 된다.
 
-* After you enable an exercise or tool for use with your course, when you add a
-  component to a unit, that exercise or tool might be listed as one of the
-  **Advanced**, **HTML**, or **Problem** options.
+* 강좌 내 연습문제나 도구를 설정한 이후 학습활동에 구성요소를 추가할 때, 이 연습문제나 도구가 고급 설정, HTML, 문제 옵션 아래에 들어갈 수 있다.
 
-The topics in this section describe different exercises and tools. Information
-about how to enable specific exercises and tools is provided, followed by
-examples and step-by-step instructions for how you use Studio to add components
-to your course. For many of the exercises and tools, when you add a component
-Studio presents a template for you to use as a starting point for your work.
-XML examples and descriptions of the attributes, tags, and elements that you
-can use in an XML editor are also provided.
+이 장의 주제는 다양한 연습문제와 도구를 설정한다. 특정 연습문제와 도구 설정 방법에 대한 설명이 있고 여러 예시와 자세한 설명을 통해 Studio로 강좌에 구성요소를 추가하는 방법을 설명하고 있다. 많은 연습문제와 도구에 대해 구성요소를 추가했을 때 Studio가 템플릿을 제공한다. XML 예시와 XML 편집기에서 사용할 수 있는 속성, 태그 및 요소에 대한 설명도 있다.
 
 .. _General Exercises and Tools:
 
 ****************************
-General Exercises and Tools
+일반적 연습문제 및 도구
 ****************************
 
-Exercises and tools with a wide range of uses are listed alphabetically in this
-table.
+다음은 알파벳 순서로 정리된 다양한 연습문제 및 도구에 관한 설명이다.
 
 .. only:: Open_edX
 
-  .. note:: In addition to the following exercises and tools, Open edX offers
-   the :ref:`Notes tool<Notes Tool>`. The Notes tool allows learners to
-   highlight and make notes about what they read in the course. This tool
-   is not available for courses on edx.org.
 
 .. list-table::
    :widths: 25 60 20
    :header-rows: 1
 
-   * - Type
-     - Description
-     - Support
+   * - 종류
+     - 설명
+     - 지원
    * - :ref:`Annotation`
-     - Annotation problems ask learners to respond to questions about a
-       specific block of text. The question appears above the text when the
-       learner moves the cursor to the highlighted text so that learners can
-       think about the question as they read.
-     - Provisional support
+     - 주석 문제는 학습자에게 텍스트의 특정 블록에 대한 질문에 대해 답변하도록 한다. 학습자가 강조 표시된 텍스트에 마우스를 가져갈 때 문제가 그 텍스트 위에 나타난다. 이는 학습자가 읽고 있는 질문에 대해 생각할 수 있도록 해준다.
+     - 부분적 지원
    * - :ref:`Calculator`
-     - The calculator tool is available for every course through the course
-       advanced settings. When the calculator tool is enabled, it appears on
-       every unit page. Learners can enter input that includes Greek
-       letters, trigonometric functions, and scientific or ``e`` notation in
-       addition to common operators.
-     - Provisional support
+     - 계산기 도구는 강좌 고급 설정을 통해 모든 강좌에 적용할 수 있다. 계산기 도구를 설정해 놓으면, 모든 학습활동 페이지에 이것이 등장한다. 학습자는 그리스 숫자, 삼각함수 등을 모두 사용할 수 있다.
+     - 부분적 지원
    * - :ref:`completion`
-     - This tool allows learners to mark sections of course content as
-       completed. It helps learners to track their progress through sections of
-       the course (including for ungraded activities such as reading text,
-       watching video, or participating in course discussions), and gives them
-       a way to indicate to both themselves and course staff that they
-       completed the required activities.
-     - Full support
+     - 이 도구는 학습자가 강좌 콘텐츠 중 이미 완료했다고 표시하고 싶은 부분에 사용한다. 이를 통해 학습자가 어디까지 학습을 완료했는지 알 수 있으며 텍스트 읽기, 동영상 보기, 게시판 토의 등 모든 종류의 활동을 포함한 필수 활동 진도 현황을 알 수 있다.
+     - 전체 지원
    * - :ref:`Conditional Module`
-     - You can create a conditional module to control versions of content that
-       groups of learners see. For example, learners who answer "Yes" to a poll
-       question then see a different block of text from the learners who answer
-       "No" to that question.
-     - Provisional support
+     - 학습자 그룹이 참조하는 콘텐츠의 버전을 조절하기 위해 조건부 모듈을 만들 수 있다. 예를 들어, 설문 조사 질문에 “예”라고 대답한 학습자는 그 질문에 “아니오” 라고 대답하는 학습자와 다른 텍스트의 블록을 참조하게 된다.
+     - 부분적 지원
    * - :ref:`Custom JavaScript`
-     - Custom JavaScript display and grading problems (also called custom
-       JavaScript problems or JS input problems) allow you to create a
-       custom problem or tool that uses JavaScript and then add the problem or
-       tool directly into Studio.
-     - Full support
+     - 사용자 지정 JavaScript 표시 및 채점 문제(사용자 지정 JavaScript 문제 또는 JS 입력 문제 라고도 함)는 JavaScript를 사용하는 사용자 지정 문제 또는 도구를 만들고, 스튜디오에 문제 또는 도구를 직접 추가할 수 있도록 허용한다.
+     - 전체 지원
    * - :ref:`External Grader`
-     - An external grader is a service that receives learner responses to a
-       problem, processes those responses, and returns feedback and a problem
-       grade to the edX platform. You build and deploy an external grader
-       separately from the edX platform. An external grader is particularly
-       useful for software programming courses where learners are asked to
-       submit complex code.
-     - Provisional support
+     - 외부 채점자는 문제에 대한 학습자의 응답을 받아 처리한 후, K-MOOOC 플랫폼으로 피드백과 문제 점수를 전달하는 서비스이다. K-MOOC 플랫폼과는 별도로 외부 채점자를 만들고 배포할 수 있다. 외부 채점자는 학습자가 복잡한 코드를 제출해야 하는 소프트웨어 프로그래밍 강좌에 특히 유용하다.
+     - 부분적 지원
    * - :ref:`Google Calendar Tool`
-     - You can embed a Google calendar in your course so that learners see the
-       calendar in the course body. You can use a Google calendar to share quiz
-       dates, office hours, or other schedules of interest to learners.
-     - Full support
+     - 학습자가 강좌 내용에서 볼 수 있도록 강좌에 구글 캘린더를 사용할 수 있다. 퀴즈 날짜, 근무 시간, 또는 학습자에게 관심이 될만한 다른 일정을 공유하기 위해 구글 캘린더를 사용할 수 있다.
+     - 전체 지원
    * - :ref:`Google Drive Files Tool`
-     - You can embed a Google Drive file, such as a document, spreadsheet, or
-       image, in your course so that learners see the file in the course body.
-     - Full support
+     - 학습자가 강좌 내용에서 볼 수 있도록 강좌에 문서, 스프레드시트, 또는 이미지 등의 구글 드라이브 파일을 사용할 수 있다.
+     - 전체 지원
    * - :ref:`Google Instant Hangout`
-     - You can add the ability for learners to participate in instant hangouts
-       directly from your course. With instant hangouts, learners can interact
-       through live video and voice, share screens and watch videos together,
-       and collaborate on documents.
-     - Provisional support
+     - 강좌에서 직접 인스턴트 행아웃(instant hangouts)에 참여할 수 있도록 학습자에게 능력을 부여할 수 있다. 인스턴트 행아웃을 통해, 학습자는 실시간 동영상 및 음성을 통해 상호작용하고, 화면을 공유하며 동영상을 함께 보고, 문서에 관해 공동 작업 할 수 있다.
+     - 부분적 지원
    * - :ref:`IFrame`
-     - With the iframe tool, you can integrate ungraded exercises and tools
-       from any Internet site into an HTML component in your course.
-     - Provisional support
+     - 모든 인터넷 사이트에 있는 채점되지 않은 연습 및 도구를 강좌에서 HTML 구성 요소로 통합할 수 있도록 해주는 도구이다.
+     - 부분적 지원
    * - :ref:`LTI Component`
-     - LTI components allow you to add an external learning application or non-
-       PDF textbook to Studio.
-     - Full support
+     - LTI 구성 요소는 외부 학습 응용 프로그램 또는 PDF가 아닌 교재를 Studio에 추가할 수 있도록 허용한다.
+     - 전체 지원
    * - :ref:`Office Mix Tool`
-     - You can embed interactive lessons created from PowerPoint files so that
-       learners can experience them directly in the course body.
-     - Full support
+     - 파워포인트 파일을 실시간 학습에 적용하여 학습자가 직접 강좌에 참여할 수 있도록 할 수 있다.
+     - 전체 지원
    * - :ref:`Open Response Assessments 2`
-     - In open response assessments, learners receive feedback on written
-       responses of varying lengths as well as image files that the learners
-       upload. Open response assessments include self assessment and peer
-       assessment.
-     - Full support
+     - 개방형 평가(open response assessments)에서, 학습자는 업로드한 이미지 파일 뿐만 아니라 다양한 길이의 응답에 대한 피드백을 받는다. 개방형 평가는 자기평가 및 상호평가를 포함한다.
+     - 전체 지원
    * - :ref:`Oppia Exploration Tool`
-     - You can embed Oppia explorations in your course so that learners can
-       interact with them directly in the course body.
-     - Full support
+     - Oppia 탐색을 강좌에 적용해 학습자가 직접 강좌에 참여할 수 있도록 할 수 있다.
+     - 전체 지원
    * - :ref:`UBC Peer Instruction`
-     - This tool offers the experience of the Peer Instruction learning system
-       within your online course.
-     - Full support
+     - 온라인 강좌 내 상호 설명 학습 시스템을 사용할 수 있다.
+     - 전체 지원
    * - :ref:`Poll Tool`
-     - You can include polls in your course to gather learners' opinions on
-       various questions. You can use the Poll Tool in Studio.
-     - Full support
+     - 강좌에서 학습자가 다른 질문에 대한 의견을 공유할 수 있도록 설문조사를 시행할 수 있다
+     - 전체 지원
    * - :ref:`Poll`
-     - You can run polls in your course so that your learners can share
-       opinions on different questions. You can only add this type of poll to a
-       course by using OLX. Support for this tool in Studio is not available.
-       For more information, see the :ref:`olx:edX Open Learning XML Guide`.
-     - Provisional support
+     - 강좌에서 학습자가 다른 질문에 대한 의견을 공유할 수 있도록 설문조사를 시행할 수 있다. 이 종류의 설문 조사는 OLX를 통해서만 추가할 수 있다. Studio에선 이 도구를 지원하지 않는다. 자세한 사항은 :ref:`olx:edX Open Learning XML Guide` 를 참고하면 된다. 
+     - 부분적 지원
    * - :ref:`Problem with Adaptive Hint`
-     - A problem with an adaptive hint evaluates a learner's response, then
-       gives the learner feedback or a hint based on that response so that the
-       learner is more likely to answer correctly on the next attempt. These
-       problems can be text input or multiple choice problems.
-     - Provisional support
+     - 응답 맞춤형 힌트 문제는 학습자의 응답을 평가한 후, 답안에 따라 학습자에게 피드백 또는 힌트를 준다. 그러면 학습자는 다음 시도에 올바르게 대답을 할 가능성이 많아진다. 이 문제는 텍스트 입력 문제 또는 다중 선택형 문제가 될 수 있다.
+     - 부분적 지원
    * - :ref:`Problem Written in LaTeX`
-     - If you have a problem that is already written in LaTeX, you can use
-       this problem type to easily convert your code into XML.
-     - No support
+     - LaTex에서 문제를 작성한 경우, 코드를 XML로 쉽게 변환하기 위해 이 문제 유형을 사용할 수 있다.
+     - 지원 없음
    * - :ref:`Qualtrics Survey`
-     - You can import surveys that you have created in Qualtrics. The survey
-       appears inside an iframe in your course.
-     - Full support
+     - 퀄트릭스에서 만든 설문을 가져올 수 있다. 강좌의 내부프레임에 설문이 등장한다.
+     - 전체 지원
    * - :ref:`RecommenderXBlock`
-     - RecommenderXBlock can hold a list of resources for misconception
-       remediation, additional reading, and so on. This tool allows the
-       course team and learners to work together to maintain the list of
-       resources. For example, team members and learners can suggest new
-       resources, vote for useful ones, or flag abuse and spam.
-     - Full support
+     - 추천 XBlock은 오개념 수정, 추가 읽기 자료 등의 목록을 담고 있다. 이 도구로 강좌 운영팀과 학습자가 협력해 자료 목록을 관리한다. 예를 들어 강좌 운영팀과 학습자는 새 자료를 추천하고 유용한 자료를 추천하며 필요 없는 것은 폐기할 수 있다.
+     - 전체 지원
    * - :ref:`Survey Tool`
-     - You can include surveys in your course to collect learner responses to
-       multiple questions. You can use the survey tool in Studio.
-     - Full support
+     - 강좌에서 학습자가 다른 질문에 대한 의견을 공유할 수 있도록 설문조사를 시행할 수 있다. Studio의 설문 조사 도구를 사용할 수 있다.
+     - 전체 지원
    * - :ref:`Text Input`
-     - In text input problems, learners enter text into a response field. The
-       response can include numbers, letters, and special characters such as
-       punctuation marks.
-     - Full support; mobile-ready
+     - 텍스트 입력 문제에서, 학습자는 응답 입력 필드에 텍스트를 입력한다. 응답은 숫자, 문자, 문장 부호와 같은 특수 문자를 포함할 수 있다.
+     - 전체 지원; 모바일 앱 지원
    * - :ref:`Word Cloud`
-     - Word clouds arrange text that learners enter - for example, in response
-       to a question - into a colorful graphic that learners can see.
-     - Provisional support
+     - 워드 클라우드는 예를 들어 질문에 대한 응답처럼 학습자가 입력한 텍스트를 학습자가 볼 수 있도록 화려한 그래픽으로 정렬한다.
+     - 부분적 지원
    * - :ref:`Write Your Own Grader`
-     - In custom Python-evaluated input (also called "write-your-own-grader")
-       problems, the grader uses a Python script that you create and embed in
-       the problem to evaluates a learner's response or provide hints. These
-       problems can be any type.
-     - Provisional support
+     - 사용자 지정 Python 평가 입력 문제 (또는 “스스로 채점하는 문제”)에서, 채점자는 학습자의 응답을 평가하거나 힌트를 제공하기 위해 Python 스크립트를 만들고 이를 사용한다.
+     - 부분적 지원
 
 ********************************
-Image-Based Exercises and Tools
+이미지 기반 연습문제 및 도구
 ********************************
 
-Exercises and tools that involve image files are listed alphabetically in
-this table.
+다음은 이미지 기반 연습문제 및 도구 목록이다.
 
 .. list-table::
    :widths: 25 60 20
    :header-rows: 1
 
-   * - Type
-     - Description
-     - Support
+   * - 종류
+     - 설명
+     - 지원
    * - :ref:`drag_and_drop_problem`
-     - In drag and drop problems, learners respond to a question by dragging
-       text or objects to a specific location on an image.
-     - Full support; mobile-ready
+     - drag and drop problems에서, 학습자는 이미지의 특정 위치에 텍스트 또는 개체를 드래그하여 질문에 답한다.
+     - 전체 지원; 모바일 앱 지원
    * - :ref:`Full Screen Image`
-     - The full screen image tool allows a learner to enlarge an image in the
-       whole browser window. This is useful when the image contains a large
-       amount of detail and text that is easier to view in context when
-       enlarged.
-     - Full support
+     - 전체 화면 이미지 도구는 학습자가 전체 브라우저 창에 이미지를 확대할 수 있도록 한다. 이렇게 확대하면, 많은 양의 세부 사항 및 텍스트를 포함하는 이미지를 볼 때 유용하다.
+     - 전체 지원
    * - :ref:`Image Mapped Input`
-     - In an image mapped input problem, learners click inside a defined area
-       in an image. You define this area by including coordinates in the body
-       of the problem.
-     - Provisional support
+     - 이미지가 그려진 입력 문제에서, 학습자는 이미지에서 정의된 영역의 내부를 클릭한다. 문제의 본문에 좌표를 포함함으로써 이 영역을 정의할 수 있다.
+     - 부분적 지원
    * - :ref:`Zooming Image`
-     - Zooming images allow you to enlarge sections of an image so that
-       learners can see the section in detail.
-     - Full support
+     - 이미지 확대는 학습자가 해당 부분을 자세히 볼 수 있도록 이미지를 확대해준다.
+     - 전체 지원
 
 ************************************
-Multiple Choice Exercises and Tools
+다양한 유형의 연습문제 및 도구
 ************************************
 
-Exercises and tools that provide ways for learners to select from
-several options are listed alphabetically in this table.
+다음은 알파벳 순서대로 정리한 다양한 유형의 연습문제 및 도구 목록이다.
 
 .. list-table::
    :widths: 25 60 20
    :header-rows: 1
 
-   * - Type
-     - Description
-     - Support
+   * - 종류
+     - 설명
+     - 지원
    * - :ref:`Checkbox`
-     - In checkbox problems, the learner selects one or more options from a
-       list of possible answers. The learner must select all the options that
-       apply to answer the problem correctly.
-     - Full support; mobile-ready
+     - 학습자는 문제에서 답안 목록 중 하나 이상을 선택한다. 학습자는 문제의 정답을 모두 선택해야 한다.
+     - 전체 지원; 모바일 앱 지원
    * - :ref:`Dropdown`
-     - Dropdown problems allow the learner to choose from a collection of
-       answer options, presented as a dropdown list. Unlike multiple choice
-       problems, whose answers are always visible directly below the question,
-       dropdown problems don't show answer choices until the learner clicks the
-       dropdown arrow.
-     - Full support; mobile-ready
+     - 드롭다운 문제는 학습자가 드롭다운 목록으로 제공된 답안 옵션 모음에서 선택하도록 한다. 답안이 항상 질문 바로 아래 표시되는 다중 선택형 문제와는 달리, 드롭다운 문제는 학습자가 드롭다운 화살표를 클릭할 때까지 답안 선택이 표시되지 않는다.
+     - 전체 지원; 모바일 앱 지원
    * - :ref:`Multiple Choice`
-     - In multiple choice problems, learners select one option from a list of
-       answer options. Unlike with dropdown problems, whose answer choices
-       don't appear until the learner clicks the drop-down arrow, answer
-       choices for multiple choice problems are always visible directly below
-       the question.
-     - Full support; mobile-ready
+     - 학습자는 답안 선택 목록에서 하나를 선택한다. 학습자가 드롭다운 화살표를 클릭할 때까지 답안 선택이 표시되지 않는 드롭다운 문제와는 달리, 선다형 문제에 대한 답안 선택은 항상 질문 바로 아래 표시된다.
+     - 전체 지원; 모바일 앱 지원
    * - :ref:`Multiple Choice and Numerical Input`
-     - You can create a problem that combines a multiple choice and numerical
-       input problems. Students not only select a response from options that
-       you provide, but also provide more specific information, if necessary.
-     - Provisional support; mobile-ready
+     - 선다형 및 숫자 입력 문제를 결합하여 문제를 만들 수 있다. 학습자는 제공하는 옵션에서 응답을 선택할 수 있을 뿐만 아니라, 필요한 경우 더 자세한 정보를 제공할 수 있다.
+     - 부분적 지원; 모바일 앱 지원
 
 
 ********************************
-STEM Exercises and Tools
+STEM 연습 및 도구
 ********************************
 
-Exercises and tools that are most suitable for use in science, technology,
-engineering, or math courses are listed alphabetically in this table.
+다음은 STEM 연습 및 도구를 알파벳 순서에 따라 정리한 도표이다.
 
 .. list-table::
    :widths: 25 60 20
    :header-rows: 1
 
-   * - Type
-     - Description
-     - Support
+   * - 종류
+     - 설명
+     - 지원
    * - :ref:`Chemical Equation`
-     - Chemical equation problems allow the learner to enter text that
-       represents a chemical equation into a text box. The grader evaluates the
-       learner's response by using a Python script that you create and embed in
-       the problem.
-     - Full support
+     - 학습자가 화학 공식을 텍스트칸에 입력하도록 한다. 채점자는 Python 스크립트를 활용하여 학습자의 응답을 평가한다.
+     - 전체 지원
    * - :ref:`Circuit Schematic Builder`
-     - In circuit schematic builder problems, learners can arrange circuit
-       elements such as voltage sources, capacitors, resistors, and MOSFETs on
-       an interactive grid. They then submit a DC, AC, or transient analysis of
-       their circuit to the system for grading.
-     - Provisional support
+     - 회로도 문제에서 학습자는 전압, 커패시터(축전기), 저항, MOSFETs 등 회로 요소를 학습자가 원하는대로 이동하여 나열할 수 있다. 그런 다음, 채점을 위해 회로에 대한 DC, AC, 또는 과도상태 분석 결과를 시스템에 제출한다.
+     - 부분적 지원
    * - :ref:`Gene Explorer`
-     - The gene explorer (GeneX) simulates the transcription, splicing,
-       processing, and translation of a small hypothetical eukaryotic gene.
-       GeneX allows learners to make specific mutations in a gene sequence, and
-       it then calculates and displays the effects of the mutations on the mRNA
-       and protein.
-     - Provisional support
+     - GeneX는 전사, 접합, 처리, 및 가상의 작은 진핵 유전자의 변형을 시뮬레이션 한다. GeneX는 학습자가 유전자 시퀀스에 특정 돌연변이를 만들 수 있도록 하며, mRNA와 단백질에 미치는 돌연변이의 효과를 계산하고 표시한다.
+     - 부분적 지원
    * - :ref:`Math Expression Input`
-     - The more complex of Studio's two types of math problems. In math
-       expression input problems, learners enter mathematical expressions to
-       answer a question. These problems can include unknown variables and more
-       complex symbolic expressions. You can specify a correct answer either
-       explicitly or by using a Python script.
-     - Full support; mobile-ready
+     - Studio에 있는 두 가지 유형의 수학 문제 중 더 복잡한 유형이다. 학습자는 질문에 답하기 위해 수학 공식을 입력한다. 이 문제는 변수와 복잡한 기호식을 포함할 수 있다. 명백하게 정답을 지정하거나 또는 Python 스크립트를 사용하여 정답을 지정할 수 있다.
+     - 전체 지원; 모바일 앱 지원
    * - :ref:`Molecule Editor`
-     - The molecule editor allows learners to draw molecules that follow the
-       rules for covalent bond formation and formal charge, even if the
-       molecules are chemically impossible, are unstable, or do not exist in
-       living systems.
-     - No support
+     - 분자 편집기는 분자가 화학적으로 불가능하거나, 불안정하거나, 존재하지 않는 경우라 할지라도, 학습자가 공유 결합의 형성 및 형식 전하에 대한 규칙에 따라 분자를 그릴 수 있도록한다.
+     - 지원 없음
    * - :ref:`Molecule Viewer`
-     - The molecule viewer allows you to create three-dimensional
-       representations of molecules for learners to view.
-     - No support
+     - 분자 뷰어는 학습자에게 분자를 3차원으로 보여줄 수 있게 한다.
+     - 지원 없음
    * - :ref:`Numerical Input`
-     - The simpler of Studio's two types of math problems. In numerical input
-       problems, learners enter numbers or specific and relatively simple
-       mathematical expressions to answer a question. These problems only allow
-       integers and a few select constants. You can specify a margin of error,
-       and you can specify a correct answer either explicitly or by using a
-       Python script.
-     - Full support; mobile-ready
+     - Studio에 있는 두 가지 유형의 수학 문제 중에 더 간단한 유형이다. 학습자는 질문에 답하기 위해 숫자 혹은 비교적 간단한 수학 공식을 입력한다. 여기에는 정수만을 허용하며, 몇 가지 문제는 상수만 허용한다. 허용 오차를 설정하여 분명하게 정답을 지정하고 혹은 Python 스크립트를 사용하여 정답을 지정할 수 있다.
+     - 전체 지원; 모바일 앱 지원
    * - :ref:`Periodic Table`
-     - An interactive periodic table of the elements shows detailed information
-       about each element as the learner moves the mouse over the element.
-     - No support
+     - 학습자가 마우스 커서를 원소 위에서 이동하면 원소에 대한 자세한 정보가 나타난다.
+     - 지원 없음
    * - :ref:`Protein Builder`
-     - The Protex protein builder asks learners to create specified protein
-       shapes by stringing together amino acids.
-     - No support
+     - 학습자가 아미노산을 모아 특정 단백질 모양을 만들 수 있도록 한다.
+     - 지원 없음
 
 
 *********************************
-Mobile-Ready Problem Types
+모바일 앱 지원 문제 유형
 *********************************
 
 .. include:: ../../../shared/exercises_tools/Section_mobile_problems.rst

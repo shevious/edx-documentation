@@ -1,253 +1,184 @@
 .. _Determining Content Addresses:
 
 #####################################
-Determining Content Addresses
+콘텐츠 주소 작성하기
 #####################################
 
 .. only:: Partners
 
-  .. note:: Support for this feature is provisional. EdX is currently working
-   with a limited number of partners to test this feature on edX Edge.
+  .. note:: 이 기능은 현재 개발 중이다. K-MOOC은 소수의 협력 기관과 함께 테스트서버에 이 기능을 사용하기 위해 테스트 중이다.
 
-To include the content of an existing course in another system, you use the edX
-LMS to find the location identifiers for the content you want to include. You
-then format the identifiers into an LTI URL.
+기존 강좌의 콘텐츠를 다른 시스템에 추가하기 위해 K-MOOC 학습 관리 시스템을 사용해 추가할 콘텐츠의 식별자를 찾고 이를 LTI URL 형식으로 바꿔야 한다.
 
 .. contents::
    :local:
    :depth: 2
 
-You might find using a tool like a spreadsheet helpful as a way to organize the
-course ID and each of the usage IDs that correspond to the course content you
-want to include in an external LMS.
+스프레드시트 등의 도구를 사용하는 것이 강좌 ID와 외부 학습 관리 시스템에 추가할 각 사용 ID를 정리하는데 도움이 된다.
 
 .. _Find the Course ID:
 
 ********************
-Find the Course ID
+강좌 ID 찾기
 ********************
 
-The identifier for your course can be in one of these formats.
+강좌의 식별자는 다음 중 하나의 형태를 갖는다.
 
-* ``{key type}:{org}+{course}+{run}``, for example,
-  ``course-v1:edX+DemoX+2014``
+* ``{key type}:{org}+{course}+{run}``, 예를 들어,  ``course-v1:edX+DemoX+2014``
 
-* ``{org}/{course}/{run}``, for example, ``edX/DemoX/2014``
+* ``{org}/{course}/{run}``, 예를 들어, ``edX/DemoX/2014``
 
-Courses created since Fall 2014 typically have an ID that uses the first
-format, while older courses have IDs that use the second format.
+2014년 가을 이후에 시작된 강좌는 첫 형식의 ID를 갖고 이전의 강좌는 두번째 형식의 ID를 갖는다.
 
-To find the course ID for your course, follow these steps.
+강좌 ID를 찾기 위해.
 
-#. In the edX LMS, open your course.
+#. K-MOOC 학습 관리 시스템에서 강좌를 연다.
 
-#. In the URL shown by your browser, find the course ID.
+#. 브라우저에 나타난 URL에서 강좌 ID를 찾는다.
 
-For example, you open the "Blended Learning with edX" course to the **Home**
-page for the course. The URL for the **Home** page is
-``https://courses.edx.org/courses/course-v1:edX+BlendedX+1T2015/info``. From
-the URL, you determine that the course ID is ``course-v1:edX+BlendedX+1T2015``.
+예를 들어 “Blended Learning with edX” 강좌의 홈 화면을 연다. 홈 화면의 URL은 ``https://courses.edx.org/courses/course-v1:edX+BlendedX+1T2015/info``  이다. 이 URL에서 강좌 ID가  ``course-v1:edX+BlendedX+1T2015`` 임을 알 수 있다.
 
-Another example is the edX DemoX course. The URL is
-``https://edge.edx.org/courses/edX/DemoX/2014/info``, and its course ID is
-``edX/DemoX/2014``.
+다른 예로는 K-MOOC DemoX 강좌다. URL은 ``https://edge.edx.org/courses/edX/DemoX/2014/info`` 이고 강좌 ID는  ``edX/DemoX/2014``  가 된다.
 
-The same course ID applies to every item of content in the course.
+동일한 강좌 ID는 강좌 내 모든 콘텐츠에 적용된다.
 
 .. _Finding the Usage ID for Course Content:
 
 ****************************************
-Finding the Usage ID for Course Content
+강좌 콘텐츠의 사용 ID 찾기
 ****************************************
 
-The identifier for a specific component, unit, or subsection in your course can
-be in one of these formats.
+특정 구성요소, 학습활동 혹은 소주제의 식별자는 다음과 같은 형태를 갖는다.
 
-* ``{key type}:{org}+{course}+{run}+type@{type}+block@{display name}``, for
-  example, ``block-v1:edX+DemoX+2014+type@sequential+block@basic_questions``
+* ``{key type}:{org}+{course}+{run}+type@{type}+block@{display name}``, 예를 들어, ``block-v1:edX+DemoX+2014+type@sequential+block@basic_questions``
 
-* ``i4x:;_;_{org};_{course};_{type};_{display name}``, for example,
-  ``i4x:;_;_edX;_DemoX;_sequential;_basic_questions``
+* ``i4x:;_;_{org};_{course};_{type};_{display name}``, 예를 들어,  ``i4x:;_;_edX;_DemoX;_sequential;_basic_questions``
 
-Courses created since Fall 2014 typically have usage IDs in the first format,
-while older courses have usage IDs in the second format.
+2014년 가을 이후에 시작된 강좌는 첫 형식의 ID를 갖고 이전의 강좌는 두번째 형식의 ID를 갖는다.
 
-The following terms are used in the usage identifiers to indicate subsections,
-units, and components.
+다음 개념은 소주제, 학습활동 및 구성요소를 나타내는 사용 식별자에 쓰인다.
 
 .. list-table::
    :widths: 45 45
    :header-rows: 1
 
-   * - EdX Studio
-     - Page Source
-   * - subsection
-     - sequential
-   * - unit
-     - vertical
-   * - component
-     - problem, html, or video
+   * - K-MOOC 스튜디오
+     - 페이지 소스
+   * - 소주제
+     - 순차적
+   * - 학습활동
+     - 세로
+   * - 구성요소
+     - 문제, html 및 동영상
 
-The example usage IDs shown above include the word "sequential", so they
-indicate subsections in a course.
+위의 사용 ID 예제는 “sequential”을 포함하므로 소주제라는 것을 알 수 있다.
 
-Several methods are available to help you find the usage IDs for items in your
-course.
+몇가지 방법을 사용해 강좌 내 콘텐츠의 사용 ID를 찾을 수 있다.
 
-To find the usage ID for a unit or a component in an edX course, you can use
-any of these methods.
+K-MOOC 강좌의 학습활동이나 구성요소의 사용 ID를 찾기 위해 다음과 같은 방법을 사용할 수 있다.
 
-* :ref:`View staff debug info<View Staff Debug Info for the Usage ID>` for it
-  in the edX LMS.
+* K-MOOC 학습 관리 시스템에서 오류 검출 정보를 조회한다.
 
-* :ref:`View the page source<View the Page Source for the Usage ID>`.
+* 페이지 소스를 조회한다.
 
-* :ref:`View the course structure<View the Course Structure API for the Usage
-  ID>`.
+* 강좌 구조를 조회한다
 
-To find the usage ID for a subsection in an edX course, you can use one of
-these methods.
+K-MOOC 강좌의 소주제 사용 ID를 찾기 위해 다음과 같은 방법을 사용할 수 있다.
 
 * :ref:`View the page source<View the Page Source for the Usage ID>`.
 
-* :ref:`View the course structure API<View the Course Structure API for the
-  Usage ID>`.
+* :ref:`View the course structure API<View the Course Structure API for the Usage ID>`.
 
-.. note:: You must have the Staff or Admin role in a course to follow any
- of these procedures for finding usage IDs.
+.. note:: 사용 ID 검색 절차를 위해 운영팀이나 관리팀 권한이 필요하다.
 
 .. _View Staff Debug Info for the Usage ID:
 
 ==========================================
-View Staff Debug Info for the Usage ID
+사용 ID 오류 검출 정보 조회하기
 ==========================================
 
-To find the usage ID for a unit or component in the LMS, follow these steps.
+LMS에서 사용 ID를 검색하기 위해.
 
-#. In the edX LMS, open your course.
+#. K-MOOC 학습 관리 시스템에서 강좌를 연다.
 
-#. Select **Course**, and then go to the page that contains the unit or
-   component.
+#. 강좌를 선택하고 구성요소나 학습활동 페이지로 간다.
 
-#. Select **Staff Debug Info**.
+#. 오류 검출 정보를 선택한다.
 
-#. To find the usage ID for a component, find the **location**.
+#. 구성요소의 사용 ID를 찾기 위해 위치를 파악한다.
 
-   For example, ``location = block-v1:edX+BlendedX+1T2015+type@html+block@2114b1b8fd7947d28fba53414459ff01``
+   예를 들어, ``location = block-v1:edX+BlendedX+1T2015+type@html+block@2114b1b8fd7947d28fba53414459ff01``
 
-#. To find the usage ID for a unit, scroll down to find the **parent**.
+#. 학습활동의 사용 ID를 찾기 위해 스크롤을 내린다.
 
-   For example, ``parent  block-v1:edX+BlendedX+1T2015+type@vertical+block@ae7d9c34c2f34f7aa793ed7b55543ae5``
+   예를 들어, ``parent  block-v1:edX+BlendedX+1T2015+type@vertical+block@ae7d9c34c2f34f7aa793ed7b55543ae5``
 
-The usage ID value begins with ``block-v1`` for newer courses or ``i4x://`` for
-older courses. If you are using a spreadsheet to organize your location
-identifiers, you can select the usage ID value, and then copy and paste it into
-the spreadsheet.
+비교적 최근에 만들어진 강좌의 경우 사용 ID 값이  ``block-v1`` 로 시작하고 오래된 강좌는  ``i4x://`` 로 시작한다. 스프레드시트를 사용해 위치 식별자를 정리하고 있다면 사용 ID 값을 선택하고 이를 스프레드시트에 붙여넣기하면 된다.
 
-To close the Staff Debug viewer, click on the browser page outside of the
-viewer.
+오류 검출 정보 뷰어를 닫기 위해서 뷰어 밖의 브라우저 페이지를 선택한다.
 
-For more information, see :ref:`Staff Debug Info`.
+:ref:`Staff Debug Info`  에 자세한 안내가 나와있다.
 
 .. _View the Page Source for the Usage ID:
 
 ==========================================
-View the Page Source for the Usage ID
+사용 ID의 페이지 소스 조회하기
 ==========================================
 
-To find the usage ID for a subsection, unit, or component, you view the
-HTML page source for that page of the edX course.
+소주제, 학습활동 및 구성요소의 사용 ID를 찾기 위해 K-MOOC 강좌의 HTML 페이지를 조회한다.
 
-To find the usage ID for a subsection, unit, or component, follow these steps.
+소주제, 학습활동 및 구성요소의 사용 ID를 찾기 위해.
 
-#. In the edX LMS, open your course.
+#. K-MOOC 학습 관리 시스템에서 강좌를 연다.
 
-#. Select **Course**, and then go to the page with the content that you
-   want to include in an external LMS.
+#. 강좌를 선택하고 LMS에 추가할 콘텐츠가 있는 페이지에 접속한다.
 
-#. Open the HTML source for the page. For example, in a Chrome browser you
-   right click on the page, and then select **View Page Source**.
+#. 페이지의 HTML 소스를 연다. 예를 들어 크롬 브라우저에선 페이지를 오른쪽 클릭하고 페이지 소스 보기를 클릭한다.
 
-#. Use your browser's Find feature to locate the term ``data-usage-id``. This
-   attribute contains the usage ID.
+#. 브라우저의 기능 찾기를 사용해  ``data-usage-id`` 를 찾는다. 이 속성에 사용 ID가 있다.
 
-#. Review the value for the usage id to determine the part of the course it
-   identifies: the sequential (subsection), a unit (vertical) or a specific
-   component (problem, html, or video).
+#. 사용 ID 값을 확인해 강좌의 어느 부분을 나타내는지 알아낸다: 소주제 (sequential), 학습활동 (vertical) 혹은 특정 구성요소 (문제, HTML, 및 동영상)
 
-   .. important:: You might need to search beyond the first match to retrieve
-     the usage ID for the content you want to identify. Be sure to check the
-     ``data-usage-id`` for sequential, vertical, or problem, html, or video to
-     be sure that you specify the content that you want.
+   .. important:: 원하는 콘텐츠의 사용 ID가 첫 검색 결과에 나오지 않을 수도 있다. 반드시  ``data-usage-id`` 를 sequential, vertical, 문제, HTML 및 동영상에서 찾아 원하는 콘텐츠를 원하는 콘텐츠를 표시한다.
 
 
-For example, you want to link to a subsection in the edX Demo course. You open
-the course, go to the problem, and then right click to view the page source.
-When you search for ``data-usage-id``, the first match is
-``block-v1:edX+DemoX+Demo_Course+type@sequential+block@basic_questions``. You
-verify that this usage ID value is for the subsection by checking for the
-presence of ``sequential``.
+예를 들어 K-MOOC 데모 강좌의 소주제 링크를 원한다고 해보자. 강좌를 열어 문제에 들어가 페이지 소스 조회를 위해 마우스 오른쪽 클릭을 한다.   ``data-usage-id``  를 찾으면 첫 결과가  ``block-v1:edX+DemoX+Demo_Course+type@sequential+block@basic_questions``  로 나온다. 이 사용 ID 값이  ``sequential``  을 찾아 나온 소주제라는 것을 확인한다.
 
-A more complex example gets the usage ID for the Drag and Drop problem in the
-edX DemoX course. The Drag and Drop problem is the second problem in the first
-homework assignment in Week 1 of the course. After you view the page source and
-search for ``data-usage-id``, the first match is for the subsection
-(sequential). You search again, and see a usage ID that uses a slightly
-different format than the first usage ID, but contains the word "vertical", so
-you know that it is for the unit. The third time that you search, you get the
-usage ID for the first of the problems (problem) in the assignment. You
-search again, and find the usage ID for the second problem in the assignment,
-``block-v1:edX+DemoX+Demo_Course+type@problem+block@d2e35c1d294b4ba0b3b1048615605d2a``.
+조금 더 복잡한 예제로 K-MOOC DemoX 강좌의 드래그 앤 드랍 문제의 사용 ID를 원한다고 해보자. 드래그 앤 드랍 문제는 강좌 첫 주의 첫 과제의 2번째 문제다. 페이지 소스 조회 후  ``data-usage-id``  를 찾으면 첫 결과가 소주제(sequential)로 검색된다. 다시 검색하면 첫 사용 ID와 살짝 다른 “vertical”이라는 값이 포함된 사용 ID를 볼 수 있는데 이는 학습활동이라는 것을 뜻한다. 세번째로 과제에서 첫 문제(problem)의 사용 ID를 얻을 수 있다.  다시 검색하면 과제의 두번째 문제의 사용 ID를 얻을 수 있다:  ``block-v1:edX+DemoX+Demo_Course+type@problem+block@d2e35c1d294b4ba0b3b1048615605d2a`` 
 
-If you are using a spreadsheet to organize your location identifiers, you can
-select the usage ID value within the quotation marks or ``&#34;`` ISO codes,
-and then copy and paste it into the spreadsheet.
+스프레드시트를 활용해 위치 식별자를 정리하고 있다면 따옴표 안의 사용 ID 값을 선택하거나 ISO 코드를 선택해 스프레드시트에 붙여넣기 할 수 있다.
 
 .. _View the Course Structure API for the Usage ID:
 
 ===============================================
-View the Course Structure API for the Usage ID
+사용 ID의 강좌 구조 API 조회하기
 ===============================================
 
-The edX course structure API (application program interface) exposes
-information about your course, including the usage identifiers for every item
-it contains, in JSON format.
+K-MOOC 강좌 구조 API는 JSON 형식의 모든 항목의 사용 식별자를 포함한 강좌에 대한 정보를 담고 있다.
 
-To view this API for your course, you browse to a URL with the following
-format.
+강좌 API를 조회하기 위해 다음 형식의 URL을 검색한다.
 
   ``https://{host}/api/course_structure/v0/course_structures/{course_id}``
 
-You must have the Staff or Admin role for a course to view its course
-structure API.
+강좌 구조 API 조회를 위해 반드시 운영팀이나 관리팀 권한이 있어야 한다.
 
-To find usage IDs for your course in the course structure API, follow these
-steps.
+강좌 구조 API에서 사용 ID를 찾기 위해.
 
-#. In your browser, enter the URL for the course structure API.
+#. 브라우저에서 강좌 구조 API의 URL을 입력한다.
 
-   For example, to access the course structure API for the edX Demo course,
-   you enter this URL.
+   예를 들어 K-MOOC 데모 강좌의 강좌 구조 API를 위해 다음 URL을 입력한다.
 
    ``https://edge.edx.org/api/course_structure/v0/course_structures/course-v1:edX+DemoX+Demo_Course``
 
-#. Press Enter. The course structure API appears in the browser.
+#. 엔터를 누른다. 브라우저에 강좌 구조 API가 나타난다.
 
-#. Scroll down to verify that an ``HTTP 200 OK`` message appears.
+#. ``HTTP 200 OK`` 메시지가 나오는 것을 확인한다.
 
-   If you received a different HTTP response value, make sure that you have the
-   Staff or Admin role for the course, and that you have entered the URL
-   correctly.
+   다른 HTTP 반응 값을 받았을 경우 강좌 운영팀이나 관리팀 권한이 있는지 확인하고 올바른 URL을 입력했는지 확인한다.
 
-The API shows the ``root`` usage ID for your course, followed by the set of
-``blocks`` that the course contains. Each block provides information about one
-item in your course, using the sequential, vertical, and problem, html, or
-video identifiers. Each block includes the ``display_name`` that is defined for
-each item, which can help you locate specific subsections, units, and
-components.
+API는 강좌의 root 사용 ID를 보여주며 강좌의 blocks로 이어진다. 각 block은 강좌의 하나의 항목에 대한 정보를 보여주며 sequential, vertical, 문제, HTML 및 동영상 식별자를 보여준다. 각 block은 각 항목의 display_name을 포함하고 이를 통해 특정 소주제, 학습활동 및 구성요소를 찾을 수 있다.
 
-For example, this block is for a unit (vertical) that contains a single video
-component (indicated by the value for ``children``).
+예를 들어 다음 block은 하나의 (children 값으로 표시된)동영상 구성요소를 포함하는 학습활동(vertical)을 나타낸다.
 
 .. code-block:: json
 
@@ -264,43 +195,37 @@ component (indicated by the value for ``children``).
           ]
       },
 
-The usage ID for this unit is the value for ``"id"``.
+이 학습활동의 사용 ID는 “id”의 값이다.
 
   ``block-v1:edX+231_LTI+Fall_2015+type@vertical+block@7b3606b362c74222ba2d0c06e433df08``
 
-The usage ID begins with ``block-v1`` for newer courses or ``i4x://`` for
-older courses.
+비교적 최근에 만들어진 강좌의 경우 사용 ID 값이 ``block-v1`` 로 시작하고 오래된 강좌는 ``i4x://`` 로 시작한다.
 
-If you are using a spreadsheet to organize your location identifiers, you
-can select the usage ID value within the quotation marks, and then copy and
-paste it into the spreadsheet.
+스프레드시트를 사용해 위치 식별자를 정리하고 있다면 따옴표 안의 사용 ID 값을 선택하고 이를 스프레드시트에 붙여넣기하면 된다.
 
 ************************
-Constructing the LTI URL
+LTI URL 만들기 
 ************************
 
-To identify the edX content that you want to include in an external LMS, you
-provide its URL. This URL has the following format.
+LMS에 추가할 K-MOOC 콘텐츠를 나타내기 위해 다음 형식의 URL을 제공해야 한다.
 
   ``https://{host}/lti_provider/courses/{course_id}/{usage_id}``
 
-To construct the LTI URL, you add your course ID and the specific content ID.
+LTI URL을 construct(구성)하기 위해 강좌 ID와 특정 콘텐츠 ID를 추가한다.
 
-Examples of the possible formats for an LTI URL follow.
-
-LTI URLs for a subsection include "sequential", as follows.
+소주제 LTI URL의 경우 다음과 같이 “sequential”을 포함한다.
 
   ``https://edx-lti.org/lti_provider/courses/course-v1:edX+DemoX+2014/block-v1:edX+DemoX+2014+type@sequential+block@basic_questions``
 
   ``https://edx-lti.org/lti_provider/courses/edX/DemoX/2014/i4x:;_;_edX;_DemoX;_sequential;_graded_simulations``
 
-LTI URLs for a unit include "vertical", as follows.
+학습활동 LTI URL의 경우 다음과 같이 “vertical”을 포함한다.
 
   ``https://edx-lti.org/lti_provider/courses/course-v1:edX+DemoX+Demo_Course/block-v1:edX+DemoX+Demo_Course+type@vertical+block@vertical_3888db0bc286``
 
   ``https://edx-lti.org/lti_provider/courses/edX/DemoX/2014/i4x:;_;_edX;_DemoX;_vertical;_d6cee45205a449369d7ef8f159b22bdf``
 
-LTI URLs for HTML components include "html+block" or "html", as follows.
+HTML 구성요소 LTI URL의 경우 다음과 같이 “html+block”이나 “html”을 포함한다.
 
   ``https://edx-lti.org/lti_provider/courses/course-v1:edX+DemoX+Demo_Course/block-v1:edX+DemoX+Demo_Course+type@html+block@f9f3a25e7bab46e583fd1fbbd7a2f6a0``
 

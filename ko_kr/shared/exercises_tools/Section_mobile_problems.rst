@@ -1,7 +1,6 @@
 .. _Mobile-Ready Problem Types:
 
-Learners can read and submit answers for the following types of problems while
-they use the edX mobile app.
+학습자는 다음과 같은 문제 유형을 모바일 앱에서 읽고 답변을 제출할 수 있다.
 
 * :ref:`Checkbox`
 * :ref:`drag_and_drop_problem`
@@ -11,6 +10,4 @@ they use the edX mobile app.
 * :ref:`Numerical Input`
 * :ref:`Text Input`
 
-Questions that have other problem types do not appear in the edX mobile app.
-Instead, a message appears with a link to open the applicable problem component
-in a web browser.
+이외의 다른 문제 유형은 모바일 앱에서 사용할 수 없으며 웹 브라우저에서 이와 같은 문제를 열 수 있는 링크로 연결된다.

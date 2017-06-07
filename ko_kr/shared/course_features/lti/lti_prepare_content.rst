@@ -1,27 +1,17 @@
 .. _Preparing Content:
 
 #####################################
-Preparing to Reuse Course Content
+강좌 콘텐츠 재사용 준비하기
 #####################################
 
 .. only:: Partners
 
-  .. note:: Support for this feature is provisional. EdX is currently working
-   with a limited number of partners to test this feature on edX Edge.
+  .. note:: 이 기능은 현재 개발 중이다. K-MOOC은 소수의 협력 기관과 함께 테스트서버에 이 기능을 사용하기 위해 테스트 중이다.
 
-  To make the content of an existing edX course reusable in an external LMS,
-  you create a duplicate version of the course. You use the duplicate course
-  specifically as a source of content for your external LMS. Based on
-  configuration choices your organization makes for using edX as an LTI tool
-  provider, you might be asked to create the duplicate course on edX Edge or on
-  another host site.
+  LMS에서 기존 K-MOOC 강좌를 재사용하기 위해 강좌의 복사 버전을 만들어야 한다. 이 복사 버전을 LMS에 제공하면 된다. 소속 기관의 K-MOOC LTI 도구 공급자 설정에 따라 테스트서버나 기타 사이트에서 강좌의 복사 버전을 만들게 될 수도 있다.
 
 .. only:: Open_edX
 
-  Before you begin work to reuse the content in an Open edX course, check with
-  your development operations (DevOps) team for information about the
-  website to use. At some sites, a completely separate Open edX instance, with
-  a different Studio website, is set up to be the LTI tool provider.
 
 .. contents::
    :local:
@@ -30,154 +20,108 @@ Preparing to Reuse Course Content
 .. _Planning for Content Reuse:
 
 ***********************************
-Planning for Content Reuse
+강좌 재사용 계획하기
 ***********************************
 
-When you create links to edX course content in your external LMS, you can link
-to components individually, to all of the content in a unit, or to all of the
-content in a subsection.
+LMS에 K-MOOC 강좌 콘텐츠 링크를 만들 때 각 구성요소에 대해 개별적으로 만들 수도 있고 모든 콘텐츠를 하나의 학습활동이나 소주제로 만들 수도 있다.
 
-As you plan which parts of the course you want to reuse, note the following
-considerations.
+강좌의 어느 부분을 재사용할지 계획할 때 다음과 같은 사항을 참고하는 것이 좋다.
 
-* Some edX content can be confusing to learners when it appears in the context
-  of an external LMS. For example, in some configurations, edX course
-  discussions identify learners by their internally assigned edX IDs instead of
-  by their usernames. Rather than linking to a subsection or unit that contains
-  discussion components, you could plan to either link only to specific
-  components or remove the discussion components from the unit or subsection,
-  and then use the features available in your external LMS to add discussion
-  forums to the course.
+* 일부 K-MOOC 콘텐츠는 LMS에 등장했을 때 학습자가 이해하기 힘들 수 있다. 예를 들어 일부 설정에서 K-MOOC 강좌 게시판은 학습자를 사용자 이름이 아닌 K-MOOC ID로 구분한다. 게시판 구성요소가 있는 소주제나 학습활동으로 링크를 거는 것보다 특정 구성요소에만 링크를 걸거나 게시판 구성요소를 뺀 후 LMS 게시판을 활용하는 것이 좋다.
 
-* Optional edX course features that create groups of learners based on their
-  IDs, such as content experiments and cohorts, are not designed to provide
-  results for external use. To use features like these for your course, you
-  should plan to set them up in the external LMS.
+* 콘텐츠 실험과 학습그룹 등 ID를 기반으로 한 학습자 그룹 기능은 외부 사용을 위해 만들어지지 않았다. 강좌에서 이러한 기능을 사용하기 위해선 LMS의 기능을 사용해야 한다.
 
-* To ensure that edX content remains available without interruption, edX course
-  content appears in the external LMS regardless of the start, end, or
-  enrollment dates that are defined for the edX course.
+* K-MOOC 콘텐츠가 문제 없이 작동되도록 LMS의 강좌 콘텐츠는 K-MOOC 강좌 시작, 종료 및 수강신청 일자와 관계 없이 운영된다.
 
-* To ensure that learners see only edX content that is ready for use, only
-  course content that is published appears in an external LMS.
+* 학습자가 준비가 끝난 K-MOOC 콘텐츠만 볼 수 있도록 게시된 강좌 콘텐츠만이 LMS에 나타나게 된다.
 
-For more information about edX features that might not be suitable for use with
-LTI, see :ref:`Select Content in the Duplicate Course`.
+LTI에 적합하지 않을 수 있는 K-MOOC 기능은  :ref:`Select Content in the Duplicate Course` 에 자세한 안내가 나와있다.
 
-The topics that follow assume use of the edX Studio user interface. However,
-you can also complete these tasks by exporting the course and then reviewing or
-editing its XML before you import.
+다음 장은 K-MOOC 스튜디오 UI를 사용하는 것을 가정하지만 강좌를 내보내고 가져오기 전에 XML을 수정하여 수행할 수도 있다.
 
 ***********************************
-Create the Duplicate Course
+복사된 강좌 생성하기
 ***********************************
 
 .. only:: Partners
 
-  Before you create a duplicate course, be sure to check with your DevOps team
-  or your edX partner manager to determine the website that hosts your
-  organization's courses for LTI use.
+  복사된 강좌를 생성하기 전에 반드시 DevOps 팀이나 K-MOOC 파트너 매니저와 확인해 소속 기관의 강좌를 LTI로 사용할 사이트를 알아야 한다.
 
 .. only:: Open_edX
 
-  Before you create a duplicate course, be sure to check with your DevOps team
-  to determine the website that hosts your organization's courses for LTI use.
 
-To create the duplicate course, follow these steps.
 
-#. In Studio, export the original course. For more information, see
-   :ref:`Export a Course`.
+복사된 강좌를 생성하기 위해.
 
-#. In Studio on your organization's host site for LTI courses, create a course.
-   This is the duplicate course.
+#. 스튜디오에서 원 강좌를 내보낸다.  :ref:`Export a Course`  에 자세한 안내가 나와있다.
 
-   .. note:: If your organization uses the same site as the host for both the
-    original course and for LTI courses, be sure to give the duplicate course a
-    different name or run.
+#. 스튜디오의 소속 기관 LTI 강좌 사이트에서 강좌를 생성한다. 이 강좌가 복사된 강좌가 된다.
 
-#. In the duplicate course, import the tar.gz file that you exported in step 1.
-   For more information, see :ref:`Import a Course`.
+   .. note:: 소속 기관이 원 강좌와 LTI 강좌에 대해 동일한 사이트를 사용한다면 복사된 강좌에 다른 이름이나 run을 사용해야 한다.
+
+#. 복사된 강좌에서 1단계 때 내보내 tar.gz 파일을 가져온다. :ref:`Import a Course` 에 자세한 안내가 나와있다.
 
 .. future: add re-run as an option for sites that host courses for LTI on the same instance (edit from Mark, Phil says re-run should work). - Alison 1 Sep 2015
 
 .. _Select Content in the Duplicate Course:
 
 ***************************************
-Select Content in the Duplicate Course
+복사된 강좌에서 콘텐츠 선택하기
 ***************************************
 
-To select content in your duplicate edX course for reuse in an external LMS,
-you use Studio to review the course outline and make note of the components,
-units, and subsections you want to include.
+복사된 K-MOOC 강좌에서 콘텐츠를 선택해 외부 학습 관리 시스템(LMS)에서 재사용하기 위해 스튜디오를 사용해 강좌 개요를 검토하고 추가할 구성요소, 학습활동 및 소주제를 다시 한번 확인해야 한다.
 
-Using an organizational tool, such as a spreadsheet, can be helpful. For
-example, you can use a spreadsheet column to identify the type of content (for
-example, component, unit, subsection), and add their display names to the next
-column. Additional columns can contain the values that you use to construct the
-addresses for your LTI links. For more information about addressing content,
-see :ref:`Determining Content Addresses`.
+스프레드시트 등을 사용하는 것이 좋다. 에를 들어 스프레드시트 칼럼에 콘텐츠 종류 (구성요소, 학습활동, 소주제 등)을 정리하고 메뉴명을 다음 칼럼에 적는다. 추가 칼럼은 LTI 링크 주소를 구성하는데 사용하는 값을 적는다.  :ref:`Determining Content Addresses` 에 자세한 안내가 나와있다.
 
-Optionally, you can streamline the contents of units and subsections by
-removing components, or disable course features that you do not plan to use.
+또는 구성요소를 삭제해 학습활동과 소주제를 간소화하거나 사용하지 않을 강좌 기능을 차단할 수도 있다.
 
 .. list-table::
    :widths: 45 45
    :header-rows: 1
 
-   * - EdX Content or Feature
-     - Works Well with LTI?
-   * - Annotation Problem Components
-     - No
-   * - Cohorts
-     - No
-   * - Content Experiment Components
-     - No
-   * - Course-wide Discussions
-     - No
-   * - Discussion Components
-     - No
-   * - HTML Components
-     - Yes
-   * - Internal Links
-     - No
-   * - Problem Components
-     - Yes
-   * - Randomized Content Block Problem Components
-     - No
-   * - Video Components
-     - Yes
+   * - K-MOOC 콘텐츠 및 기능
+     - LTI에서 작동 여부
+   * - 주석 문제 구성요소
+     - 작동 불가
+   * - 학습그룹
+     - 작동 불가
+   * - 콘텐츠 실험 구성요소
+     - 작동 불가
+   * - 일반 게시판
+     - 작동 불가
+   * - 게시판 구성요소
+     - 작동 불가
+   * - HTML 구성요소
+     - 작동
+   * - 내부 링크
+     - 작동 불가
+   * - 문제 구성요소
+     - 작동
+   * - 무작위 콘텐츠 블록 문제 구성요소
+     - 작동 불가
+   * - 동영상 구성요소
+     - 작동
 
 .. check on randomized content blocks, that's an assumption - Alison 22 Aug 15
 
-For information about removing components, see :ref:`Delete a Component`. For
-information about disabling cohorts, see :ref:`Disabling the Cohort Feature`.
-To remove course-wide discussions, you select **Settings**, and then **Advanced
-Settings**, and then delete the contents of the **Discussion Topic Mapping**
-policy key. For more information, see :ref:`Create CourseWide Discussion
-Topics`.
+ :ref:`Delete a Component` 에 구성요소 삭제에 대한 자세한 안내가 나와있다. 강좌에서 학습그룹(코호트 기능을) 사용하지 않을 경우에는 :ref:`Disabling the Cohort Feature` 에 대한 자세한 안내가 나와있다. 일반 게시판을 삭제하려면 설정을 선택하고 고급 설정에 들어가 게시판 주제 Mapping(매핑) 규정 키의 내용을 삭제한다.  :ref:`Create CourseWide Discussion Topics` 에 자세한 안내가 나와있다.
 
 *******************************
-Verify Content Status
+콘텐츠 상태 확인하기
 *******************************
 
-Only edX course content that is published appears in an external LMS.
+게시된 K-MOOC 강좌 콘텐츠만이 외부 학습 관리 시스템(LMS)에 등장한다.
 
-.. note:: The **Hide from students** setting for sections, subsections,
- and units does not affect the visibility of content in an external LMS. Only
- the publication status of a unit can prevent content from being included.
+.. note:: 학습자로부터 주제, 소주제 및 학습 활동 감추기 기능은 외부 학습 관리 시스템(LMS)엔 영향을 주지 않는다. 학습활동 게시 상태만이 콘텐츠가 포함되지 않도록 할 수 있다.
 
-To verify that all of the content in your edX course is published, follow these
-steps.
+K-MOOC 강좌 내 모든 콘텐츠가 게시되었음을 확인하기 위해.
 
-#. In Studio, from the **Content** menu select **Outline**. The **Course
-   Outline** page opens.
+#. 스튜디오의 콘텐츠 메뉴에서 개요를 선택한다. 강좌 개요 페이지가 열린다.
 
-#. Expand each section and subsection.
+#. 각 주제와 소주제를 확장한다.
 
-#. Locate units with "Unpublished units will not be released" or "Unpublished
-   changes to live content" below the unit name.
+#. “게시되지 않은 학습활동은 공개되지 않는다”나 “게시하지 않은 내용은 여전히 보존되어 있다”
 
-#. For each unpublished unit, make any changes that are necessary to prepare
-   the content for publication. Alternatively, delete the unit.
+#. 게시되지 않은 학습활동마다 콘텐츠를 게시하는데 필요한 변경사항을 적용한다. 또는 학습활동을 삭제한다.
 
-#. Publish the unit. For more information, see :ref:`Publish a Unit`.
+#. 학습활동을 게시한다.  :ref:`Publish a Unit`  에 자세한 안내가 나와있다.

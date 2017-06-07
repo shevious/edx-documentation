@@ -1,34 +1,19 @@
 .. _Grading Remote Content:
 
 #####################################
-Grading Remote Content
+외부 콘텐츠 채점
 #####################################
 
 .. only:: Partners
 
-  .. note:: Support for this feature is provisional. EdX is currently working
-   with a limited number of partners to test this feature on edX Edge.
+  .. note:: 이 기능은 현재 개발 중이다. K-MOOC은 소수의 협력 기관과 함께 테스트서버에 이 기능을 사용하기 위해 테스트 중이다.
 
-When you include the problem components in a graded edX subsection in an
-external LMS, the edX system grades the learner responses to those problems.
-The edX system then transfers the learner scores back to the external LMS. This
-exchange between an external LMS, the edX system, and the external LMS again is
-near real time. It can take a few moments to complete this exchange for a
-single problem component, and up to several minutes to return aggregated scores
-of all of the problems in a unit or subsection.
+LMS 성적에 반영되는 K-MOOC 소주제에 문제 구성요소를 포함하면 K-MOOC 시스템은 학습자 답변을 채점하게 된다. 채점 후 K-MOOC 시스템은 학습자의 성적을 LMS에 전송한다. LMS에서 K-MOOC 시스템으로, 다시 LMS로 전송하는 작업은 거의 실시간으로 이뤄진다. 하나의 문제 구성요소의 경우 순식간에, 학습활동이나 소주제의 모든 문제 및 총 성적의 경우 몇 분 안에 작업이 완료된다.
 
-When you include edX problem components in an external LMS, note the following
-requirements.
+외부 학습 관리 시스템에 K-MOOC 문제 구성요소를 포함할 때 다음 조건을 기억해야 한다.
 
-* The edX problem component must be in one of the graded subsections in your
-  course.
+* K-MOOC 문제 구성요소는 반드시 강좌 내 성적이 반영되는 소주제여야 한다.
 
-* Your external LMS might also require that you use a specific part of the
-  course for graded content. For example, in Canvas, you must add the LTI URL
-  of a problem component to the "Assignments" section of a course, or to a
-  module item that points to an assignment. In addition, the user who launches
-  the LTI material must be eligible to get a grade for the assignment; that is,
-  a learner and not a TA or course designer.
+* LMS가 강좌 일정 부분을 성적에 반영하도록 요구할 수 있다. 예를 들어 Canvas에선 강좌의 “과제” 주제에 문제 구성요소의 LTI URL이나 과제로 이어지는 모듈 항목을 추가해야 한다. 또한, LTI 자료를 처음 사용하는 사용자는 반드시 과제 성적을 받을 수 있어야 한다. 즉, 학습자여야 하며 조교나 강좌 제작자여선 안된다.
 
-For more information about constructing an LTI URL for a course component, see
-:ref:`Determining Content Addresses`.
+:ref:`Determining Content Addresses` 에 강좌 구성요소의 LTI URl construct(구성)에 대한 자세한 안내가 나와있다.
