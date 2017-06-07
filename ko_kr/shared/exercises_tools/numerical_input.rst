@@ -63,7 +63,7 @@
 간편 편집기를 이용해 수식 입력 문제 생성하기
 ========================================================================
 
-:ref:`simple editor<Simple Editor>`  로 수식 입력 문제를 생성하기 위해.
+:ref:`Simple Editor`  로 수식 입력 문제를 생성하기 위해.
 
 #. **신규 구성요소 추가** 에서 **문제** 를 클릭한다.
 #. 두가지 문제 템플릿 중 하나를 선택한다.
@@ -111,7 +111,7 @@ Use the Advanced Editor to Create a Numerical Input Problem
 
 고급 편집기로 수식 입력 문제를 만들기 위해.
 
-#. :ref:`simple editor<Use the Simple Editor to Create a Numerical Input Problem>` 에서 문제를 만들었던 절차들을 따른다.
+#. :ref:`Use the Simple Editor to Create a Numerical Input Problem` 에서 문제를 만들었던 절차들을 따른다.
 #. **고급 편집기** 를 선택하고, 입력되지 않은 고급 문제를 선택하여 XML을 수정해 다음 예제와 같이 태그와 속성을 추가한다.
 
 **문제 코드**:
@@ -178,7 +178,7 @@ Use the Advanced Editor to Create a Numerical Input Problem
 간편 편집기에서 피드백 설정하기
 =======================================
 
-:ref:`simple editor<Simple Editor>` 에서 다음과 같이 피드백을 설정할 수 있다. 새 수식 입력 문제를 만들 때 힌트와 **피드백이 있는 수식 입력 문제** 템플릿을 선택한다. 이 템플릿엔 예제가 포함되어 있다.
+:ref:`Simple Editor` 에서 다음과 같이 피드백을 설정할 수 있다. 새 수식 입력 문제를 만들 때 힌트와 **피드백이 있는 수식 입력 문제** 템플릿을 선택한다. 이 템플릿엔 예제가 포함되어 있다.
 
 ::
 
@@ -197,7 +197,7 @@ Use the Advanced Editor to Create a Numerical Input Problem
 고급 편집기에서 피드백 설정하기
 =========================================
 
-:ref:`advanced editor<Advanced Editor>` 에서 다음과 같이 피드백을 설정할 수 있다.
+:ref:`Advanced Editor` 에서 다음과 같이 피드백을 설정할 수 있다.
 
 .. code-block:: xml
 
@@ -242,7 +242,7 @@ Use the Advanced Editor to Create a Numerical Input Problem
 편집기에서 사용자 피드백 라벨 설정하기
 ***********************************************
 
-:ref:`simple editor<Simple Editor>` 에서 사용자 지정 피드백 라벨을 설정할 수 있다.
+:ref:`Simple Editor` 에서 사용자 지정 피드백 라벨을 설정할 수 있다.
 
 ::
 
@@ -257,7 +257,7 @@ Use the Advanced Editor to Create a Numerical Input Problem
 고급 편집기에서 사용자 지정 피드백 라벨 설정하기
 *************************************************
 
-:ref:`advanced editor<Advanced Editor>` 에서 다음과 같이 사용자 지정 피드백 라벨을 설정할 수 있다.
+:ref:`Advanced Editor` 에서 다음과 같이 사용자 지정 피드백 라벨을 설정할 수 있다.
 
 .. code-block:: xml
 
@@ -289,7 +289,7 @@ Use the Advanced Editor to Create a Numerical Input Problem
 수식 입력 문제에서 부분 점수 부여하기
 *****************************************************
 
-수식 입력 문제에서 정답에 근접한 답변에 대해 부분 점수를 부여할 수 있다. 이때 반드시  :ref:`advanced editor<Use the Advanced Editor to Create a Numerical Input Problem>` 를 사용해야 한다
+수식 입력 문제에서 정답에 근접한 답변에 대해 부분 점수를 부여할 수 있다. 이때 반드시  :ref:`Use the Advanced Editor to Create a Numerical Input Problem` 를 사용해야 한다
 
 
 .. only:: Partners
@@ -394,7 +394,7 @@ Use the Advanced Editor to Create a Numerical Input Problem
  :alt: Three numerical input problems with text after the response field:
      "km", a percent sign, and a symbol for meters per second squared.
 
-이 기능은 반드시  :ref:`advanced editor<Advanced Editor>` 를 사용해야 한다.
+이 기능은 반드시  :ref:`Advanced Editor` 를 사용해야 한다.
 
 고급 편집기에서 문제를 열고 ``formulaequationinput`` 요소를 찾는다. 이 요소는 문제에 응답 필드를 만든다.  ``formulaequationinput`` 요소는 ``numericalresponse`` 요소의 하위요소이다.
 

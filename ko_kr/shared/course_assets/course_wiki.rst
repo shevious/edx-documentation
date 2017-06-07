@@ -14,7 +14,7 @@
 강좌 위키
 ***********************
 
-:ref:`seed the wiki<Seeding the Wiki>` 를 시작으로, 강좌 초반에 위키를 어떻게 사용할 것인지 학습자 및 강좌 운영팀이 정하면 된다.
+:ref:`Seeding the Wiki` 를 시작으로, 강좌 초반에 위키를 어떻게 사용할 것인지 학습자 및 강좌 운영팀이 정하면 된다.
 
 강좌 위키를 이용하여 다음과 같은 활동을 할 수 있다.
 
@@ -42,20 +42,20 @@
 
 강좌 운영팀은 아래와 같은 작업을 수행하며 위키를 관리한다.
 
-* :ref:`Show or Hide the Wiki<Showing or Hiding the Wiki>`
-* :ref:`Control Wiki Access<Controlling Wiki Access>`
-* :ref:`Seed the Wiki<Seeding the Wiki>`
-* :ref:`Lock a Wiki Article<Locking a Wiki Article>`
-* :ref:`Delete a Wiki Article<Deleting a Wiki Article>`
-* :ref:`Purge a Wiki Article<Purging a Wiki Article>`
-* :ref:`Restore a Deleted Wiki Article<Restoring a Deleted Wiki Article>`
+* :ref:`Showing or Hiding the Wiki`
+* :ref:`Controlling Wiki Access`
+* :ref:`Seeding the Wiki`
+* :ref:`Locking a Wiki Article`
+* :ref:`Deleting a Wiki Article`
+* :ref:`Purging a Wiki Article`
+* :ref:`Restoring a Deleted Wiki Article`
 
 학습자들을 포함하여 모든 사용자들은 문서에 설정해놓은 권한에 따라 다음의 작업을 수행할 수 있다.
 
-* :ref:`Add a Wiki Article<Adding a Wiki Article>`
-* :ref:`Edit a Wiki Article<Editing a Wiki Article>`
-* :ref:`Manage Versions of a Wiki Article<Managing Versions of a Wiki Article>`
-* :ref:`Search for Wiki Articles<Searching for Wiki Articles>`
+* :ref:`Adding a Wiki Article`
+* :ref:`Editing a Wiki Article`
+* :ref:`Managing Versions of a Wiki Article`
+* :ref:`Searching for Wiki Articles`
 
 .. _Showing or Hiding the Wiki:
 

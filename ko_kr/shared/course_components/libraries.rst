@@ -20,7 +20,7 @@
 
 .. note:: 콘텐츠 보관함은 강좌 식별자가 다음과 같은 형태일 경우에만 사용할 수 있다.  ``{key type}:{org}+{course}+{run}`` . (예, ``course-v1:edX+DemoX+Demo_2015`` ) 강좌를 Studio에서 열면, 브라우저 주소 표시줄에 나타나는 URL의 마지막 부분에 강좌 식별자가 표시된다. 더 자세한 안내는  :ref:`Create a New Course` 에 있다.
 
-콘텐츠 보관함을 생성하고 구성요소를 추가한 이후,  :ref:`enabled content libraries<Enable Content Libraries>` 를 설정하였다면 콘텐츠 보관함 구성요소를 임의로 부여할 수 있다.
+콘텐츠 보관함을 생성하고 구성요소를 추가한 이후,  :ref:`Enable Content Libraries` 를 설정하였다면 콘텐츠 보관함 구성요소를 임의로 부여할 수 있다.
 
 학습활동에 무작위 콘텐츠 블록을 추가하고, 무작위 콘텐츠를 가져올 1개 이상의 콘텐츠 보관함을 지정해야 한다. 또한 이때 학습자 1명에게 할당될 문제의 수와 유형도 지정해야 한다
 
@@ -32,7 +32,7 @@
 새 콘텐츠 보관함 만들기
 ********************
 
-:ref:`content libraries<Content Libraries>` 를 사용하여 구성요소 모음을 만들 수 있다..
+:ref:`Content Libraries` 를 사용하여 구성요소 모음을 만들 수 있다..
 
 새로운 보관함을 생성하기 위해서는 다음의 단계를 거쳐야 한다.
 
@@ -95,7 +95,7 @@
 콘텐츠 보관함에 구성요소 추가
 ****************************
 
-콘텐츠 보관함에  :ref:`components<Developing Course Components>` 를 추가하는 방법은 다음과 같다.
+콘텐츠 보관함에  :ref:`Developing Course Components` 를 추가하는 방법은 다음과 같다.
 
 #. Studio에 로그인 한다.
 

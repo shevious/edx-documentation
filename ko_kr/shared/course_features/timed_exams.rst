@@ -25,7 +25,7 @@
 
 .. only:: Partners
 
-  시간 제한 시험은 :ref:`proctored exams<CA_ProctoredExams>` 과 다르다. 두 시험 모두 시간 제한은 있지만 학습자는 프록터 시험의 경우에만 감시를 받는다.
+  시간 제한 시험은 :ref:`CA_ProctoredExams` 과 다르다. 두 시험 모두 시간 제한은 있지만 학습자는 프록터 시험의 경우에만 감시를 받는다.
 
 *******************
 시간 제한 시험 활성화하기
@@ -65,7 +65,7 @@
 
    .. only:: Partners
 
-     만약 강좌가 프록터 시험 기능도 활성화했다면 고급 탭에  :ref:`proctored and practice proctored exams<CA_ProctoredExams>` 에 대한 옵션도 있을 것이다.
+     만약 강좌가 프록터 시험 기능도 활성화했다면 고급 탭에  :ref:`CA_ProctoredExams` 에 대한 옵션도 있을 것이다.
 
 
 #. 한 시간 필드에 소주제 문제 풀이 제한 시간을 입력한다. 시간:분 형태로 입력하면 된다.

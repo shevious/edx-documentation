@@ -43,7 +43,7 @@
 일반 토의 주제와 학습 집단
 ***********************************************
 
-최초로  :ref:`create a course-wide discussion topic<Create CourseWide Discussion Topics>` 했을 때, 토의 주제는 모든 학습자에게 통합적으로 제시되고, 강좌의 모든 학습자는 속한 학습 집단에 상관 없이 이 주제에 대하여 게시글을 쓰고, 읽고, 응답하고, 코멘트를 남길 수 있다. 
+최초로  :ref:`Create CourseWide Discussion Topics` 했을 때, 토의 주제는 모든 학습자에게 통합적으로 제시되고, 강좌의 모든 학습자는 속한 학습 집단에 상관 없이 이 주제에 대하여 게시글을 쓰고, 읽고, 응답하고, 코멘트를 남길 수 있다. 
 
 
 일반 토의 주제를 추가한 후, 토의 주제가 학습 집단에 따라 분류되도록 환경 설정을 할 수 있다. 게시판 주제가 학습 집단에 따라 분류되었는지 확인하기 위해  :ref:`Specify Whether CourseWide Discussion Topics are Cohorted`  를 참고한다.
@@ -101,7 +101,7 @@
 주제별 토의와 학습집단
 **********************************************
 
-강좌에서 학습 집단 기능을 활성화하고, 스튜디오의 토의 구성 요소를 학습 활동에 추가하여  :ref:`create content-specific discussion topics<Create ContentSpecific Discussion Topics>`  할 때, 주제별 토의는 학습집단 기본 값으로 나뉘어진다. 하나의 학습집단에 배치된 학습자는 다른 학습집단 회원의 온라인 학습 활동들을 읽어보거나 게시글, 응답, 코멘트를 추가할 수 없다.
+강좌에서 학습 집단 기능을 활성화하고, 스튜디오의 토의 구성 요소를 학습 활동에 추가하여  :ref:`Create ContentSpecific Discussion Topics`  할 때, 주제별 토의는 학습집단 기본 값으로 나뉘어진다. 하나의 학습집단에 배치된 학습자는 다른 학습집단 회원의 온라인 학습 활동들을 읽어보거나 게시글, 응답, 코멘트를 추가할 수 없다.
 
 모든 주제별 토의를 학습집단으로 나누고자 한다면, 어떤 설정도 할 필요가 없다. 자세한 사항은  :ref:`Specify that All ContentSpecific Discussion Topics are Cohorted` 를 참고하면 된다.
 

@@ -26,9 +26,9 @@
 
 이미지맵 입력 문제를 만들기 위해.
 
-#. :ref:`Collect the information that you need for the image<Determine Coordinates>`.
+#. :ref:`Determine Coordinates`.
 
-#. :ref:`Create the problem in Studio<Create an IMI Problem in Studio>`.
+#. :ref:`Create an IMI Problem in Studio`.
 
 .. _Determine Coordinates:
 

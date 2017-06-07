@@ -85,9 +85,9 @@ K-MOOC 강좌의 학습활동이나 구성요소의 사용 ID를 찾기 위해 �
 
 K-MOOC 강좌의 소주제 사용 ID를 찾기 위해 다음과 같은 방법을 사용할 수 있다.
 
-* :ref:`View the page source<View the Page Source for the Usage ID>`.
+* :ref:`View the Page Source for the Usage ID`.
 
-* :ref:`View the course structure API<View the Course Structure API for the Usage ID>`.
+* :ref:`View the Course Structure API for the Usage ID`.
 
 .. note:: 사용 ID 검색 절차를 위해 운영팀이나 관리팀 권한이 필요하다.
 

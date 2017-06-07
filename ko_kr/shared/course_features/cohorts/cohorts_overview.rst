@@ -14,9 +14,9 @@
 개관
 *********
 
-:ref:`set up cohorts<Enabling and Configuring Cohorts>` 를 통해, 강좌에서 학습 집단을 설정을 이용하여 학습자 소규모 커뮤니티를 만들 수 있다. 이에 학습자 집단별로 다른 강좌 경험을 설계할 수 있다. 학습 집단별로 나뉘어진 토의 주제에서, 학습자는 소속된 학습 집단 안에서 의사소통을 하고 경험을 공유할 수 있다. 학습 집단 내 토의는 학습자가 공동체 의식을 갖도록 하는 데 도움이 되고, 특별한 경험을 제공하며, 보다 깊이 있고 유의미한 강좌에 참여할 수 있도록 한다.
+:ref:`Enabling and Configuring Cohorts` 를 통해, 강좌에서 학습 집단을 설정을 이용하여 학습자 소규모 커뮤니티를 만들 수 있다. 이에 학습자 집단별로 다른 강좌 경험을 설계할 수 있다. 학습 집단별로 나뉘어진 토의 주제에서, 학습자는 소속된 학습 집단 안에서 의사소통을 하고 경험을 공유할 수 있다. 학습 집단 내 토의는 학습자가 공동체 의식을 갖도록 하는 데 도움이 되고, 특별한 경험을 제공하며, 보다 깊이 있고 유의미한 강좌에 참여할 수 있도록 한다.
 
-강좌에서 학습 집단 기능을 사용하기 위해, 학습자의 커뮤니티을 의미하는 학습 집단을 정의하고, 학습 집단 배치 방법을 선택한다.  :ref:`assigning learners to cohorts<Options for Assigning Learners to Cohorts>`  에 자세히 안내되어 있다.
+강좌에서 학습 집단 기능을 사용하기 위해, 학습자의 커뮤니티을 의미하는 학습 집단을 정의하고, 학습 집단 배치 방법을 선택한다.  :ref:`Options for Assigning Learners to Cohorts`  에 자세히 안내되어 있다.
 
 .. note::
    * 모든 학습자는 반드시 하나의 학습 집단에 소속되어야 한다. 모든 학습자는 토의 주제를 읽고 참여해야 한다.
@@ -29,7 +29,7 @@
 
 * :ref:`Enabling and Configuring Cohorts`
 
-* :ref:`Setting Up Discussions in Courses with Cohorts<Set up Discussions in Cohorted Courses>`
+* :ref:`Set up Discussions in Cohorted Courses`
 
 * :ref:`Moderating Discussions for Cohorts`
 
@@ -93,7 +93,7 @@
 
 이 방법을 적용하기 위해서는, 학습자가 이미 속해있는 실제의 학습 집단을 확인해야 한다.학습 집단 기능을 활성화하고 각 학습 집단을 나타내기 위해서 “직접” 학습 집단을 생성한 후,각 학습자를 학습 집단에 직접 배치하면 된다.강좌가 시작된 후 등록한 학습자를 포함한 모든 등록된 학습자는 반드시 하나의 학습 집단에 속해야 한다.
 
-.. note:: 모든 학습자를 단일 학습 집단으로 지정하고 싶다면, 모든 학습자를 단일 학습 집단으로 지정하고 싶다면,  :ref:`hybrid assignment strategy<Hybrid Assignment>`  에 자세한 안내가 있다. 자동 배치 학습 집단을 만들지 않는다면, 시스템은 자동적으로 기본 학습 집단  :ref:`default cohort<Default Cohort Group>` 을 생성하고 필요시 학습자를 배치한다.
+.. note:: 모든 학습자를 단일 학습 집단으로 지정하고 싶다면, 모든 학습자를 단일 학습 집단으로 지정하고 싶다면,  :ref:`Hybrid Assignment`  에 자세한 안내가 있다. 자동 배치 학습 집단을 만들지 않는다면, 시스템은 자동적으로 기본 학습 집단  :ref:`default cohort<Default Cohort Group>` 을 생성하고 필요시 학습자를 배치한다.
 
 학습자 직접 배치 방법  :ref:`Implementing the Manual Assignment Strategy`  에서 보다 많은 정보를 확인할 수 있다.
 
@@ -128,4 +128,4 @@
        above the title.
  :width: 600
 
-학습자가 기본 학습 집단에 배치되어 있는지 알고 싶다면, 학습자 프로필 정보 보고서  :ref:`learner profile information report<View and download student data>` 를 참고할 수 있으며, 학습 집단을 달리 배치할 수도 있다. 토의 주제가 여러 가지로 나눠진 경우, 학습자는 현재 속해있는 학습 집단 구성원들의 게시글만 볼 수 있다는 것에 유의해야 하며, 학습자의 학습 집단을 변경하는 경우에 게시글들은 “사라지게 된다”. 학습 집단의 배치를 변경하는 것은 가능하면 강좌 운영 초기에 마쳐야 학습자가 게시글을 보거나 기여한 정도를 확인할 수 있다
+학습자가 기본 학습 집단에 배치되어 있는지 알고 싶다면, 학습자 프로필 정보 보고서  :ref:`View and download student data` 를 참고할 수 있으며, 학습 집단을 달리 배치할 수도 있다. 토의 주제가 여러 가지로 나눠진 경우, 학습자는 현재 속해있는 학습 집단 구성원들의 게시글만 볼 수 있다는 것에 유의해야 하며, 학습자의 학습 집단을 변경하는 경우에 게시글들은 “사라지게 된다”. 학습 집단의 배치를 변경하는 것은 가능하면 강좌 운영 초기에 마쳐야 학습자가 게시글을 보거나 기여한 정도를 확인할 수 있다

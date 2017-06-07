@@ -42,7 +42,7 @@ IFrame에서 연습 또는 도구를 추가하려면, IFrame HTML 구성 요소�
 
 #. 원하는 다른 설정을 지정 하려면 IFrame 요소에 있는 속성을 변경한다. 이러한 설정에 대한 더 자세한 내용은, :ref:`IFrame Settings` (IFrame 설정)을 참조하도록 한다. 열기 및 닫기 ``<iframe>`` 태그 사이에 텍스트를 변경할 수 있다. 학습자가 IFrame을 지원하지 않는 브라우저를 사용하는 경우에만 이 텍스트를 보게 된다.
 
-#. HTML 소스 코드 편집기를 닫고 :ref:`visual editor<The Visual Editor>` 돌아가기 위해 **확인** 을 클릭한다.
+#. HTML 소스 코드 편집기를 닫고 :ref:`The Visual Editor` 돌아가기 위해 **확인** 을 클릭한다.
 
 #. 시각편집기에서, 기본 텍스트를 자신의 텍스트로 바꾼다.
 

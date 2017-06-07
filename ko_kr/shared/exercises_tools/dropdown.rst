@@ -84,7 +84,7 @@
 
 고급 편집기로 드롭다운 문제를 편집하기 위해
 
-#. :ref:`simple editor<Use the Simple Editor to Create a Dropdown Problem>` 에 나와 있는 대로 문제를 만든다.
+#. :ref:`Use the Simple Editor to Create a Dropdown Problem` 에 나와 있는 대로 문제를 만든다.
  
 #. **고급 편집기** 를 선택하고 XML을 편집하여 태그와 속성을 추가한다. 예를 들어
 
@@ -168,7 +168,7 @@
 고급 편집기에서 피드백 설정하기
 =========================================
 
-:ref:`advanced editor<Advanced Editor>` 에서 다음과 같이 피드백을 설정할 수 있다.
+:ref:`Advanced Editor` 에서 다음과 같이 피드백을 설정할 수 있다.
 
 .. code-block:: xml
 
@@ -241,7 +241,7 @@
 간편 편집기에서 사용자 정의 피드백 라벨 사용하기
 ***********************************************
 
-:ref:`simple editor<Simple Editor>` 에서 다음과 같이 사용자 정의 피드백 라벨을 설정할 수 있다.
+:ref:`Simple Editor` 에서 다음과 같이 사용자 정의 피드백 라벨을 설정할 수 있다.
 
 ::
 
@@ -258,7 +258,7 @@
 고급 편집기에서 사용자 정의 피드백 라벨 설정하기
 *************************************************
 
-:ref:`advanced editor<Advanced Editor>` 에서 다음과 같이 사용자 정의 피드백 라벨을 설정할 수 있다.
+:ref:`Advanced Editor` 에서 다음과 같이 사용자 정의 피드백 라벨을 설정할 수 있다.
 
 .. code-block:: xml
 

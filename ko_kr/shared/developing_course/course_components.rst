@@ -49,7 +49,7 @@
 - :ref:`Working with Problem Components`
 - :ref:`Working with Video Components`
 
-구성요소를 추가한 후, :ref:`publish the unit<Publish a Unit>` 작업이 이루어져야 학습자가 이를 볼 수 있다.
+구성요소를 추가한 후, :ref:`Publish a Unit` 작업이 이루어져야 학습자가 이를 볼 수 있다.
 
 .. _Edit a Component:
 
@@ -65,7 +65,7 @@
 
 편집하려는 구성요소에 나오는 안내에 따라, 편집을 시작하면 된다.
 
-구성요소를 편집한 후, :ref:`publish the unit<Publish a Unit>` 를 하지 않으면 학습자가 변경사항을 볼 수 없다는 것에 유의한다.
+구성요소를 편집한 후, :ref:`Publish a Unit` 를 하지 않으면 학습자가 변경사항을 볼 수 없다는 것에 유의한다.
 
 =====================================
 구성요소 메뉴명 설정하기
@@ -115,7 +115,7 @@
 
 그 후 편집중인 구성요소의 안내를 따라 진행한다.
 
-구성요소를 복사해서 만든 구성요소는  :ref:`publish the unit<Publish a Unit>` 후에 학습자에게 공개될 수 있다.
+구성요소를 복사해서 만든 구성요소는  :ref:`Publish a Unit` 후에 학습자에게 공개될 수 있다.
 
 .. note::  콘텐츠 실험은 복사할 수 없다.
 
@@ -137,7 +137,7 @@
 
 2. 삭제 여부를 확인하는 대화상자가 뜨면, **네, 구성요소를 삭제합니다.** 를 클릭한다..
 
-구성요소를 삭제하더라도,  :ref:`publish the unit<Publish a Unit>`  하기 전에는 학습자가 볼 수 있다는 것에 유의한다.
+구성요소를 삭제하더라도,  :ref:`Publish a Unit`  하기 전에는 학습자가 볼 수 있다는 것에 유의한다.
 
 .. _Components that Contain Other Components:
 

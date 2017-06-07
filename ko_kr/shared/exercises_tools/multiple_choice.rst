@@ -14,7 +14,7 @@
 개관
 **********
 
-선다형 문제(multiple choice problem)에서는 학습자가 선택지 가운데 하나를 선택한다. 학습자가 드롭다운(dropdown) 화살표를 클릭하기 전까지 선택지가 표시되지 않는 :ref:`dropdown<Dropdown>` 문제와 달리, 선다형 문제에서는 해당 질문지 아래에서 선택지를 가시적으로 직접 확인할 수 있다 .
+선다형 문제(multiple choice problem)에서는 학습자가 선택지 가운데 하나를 선택한다. 학습자가 드롭다운(dropdown) 화살표를 클릭하기 전까지 선택지가 표시되지 않는 :ref:`Dropdown` 문제와 달리, 선다형 문제에서는 해당 질문지 아래에서 선택지를 가시적으로 직접 확인할 수 있다 .
 
 .. image:: ../../../shared/images/MultipleChoiceExample.png
  :alt: A multiple choice problem.
@@ -122,9 +122,9 @@ K-MOOC은 채점 문제에 대해 선다형 문제가 아닌 참평가를 사용
 고급 편집기로 선다형 문제 만들기
 ========================================================================
 
-:ref:`advanced editor<Advanced Editor>` 로 선다형 문제를 만들기 위해
+:ref:`Advanced Editor` 로 선다형 문제를 만들기 위해
 
-#. :ref:`simple editor<Use the Simple Editor to Create a Multiple Choice Problem>` 에서 문제를 만든다.
+#. :ref:`Use the Simple Editor to Create a Multiple Choice Problem` 에서 문제를 만든다.
 #. 고급 편집기를 선택하고 XML을 수정해 다음 예제와 같이 태그와 속성을 추가한다.
 
 .. code-block:: xml
@@ -179,7 +179,7 @@ K-MOOC은 채점 문제에 대해 선다형 문제가 아닌 참평가를 사용
 간편 편집기로 피드백 설정하기
 =======================================
 
-:ref:`simple editor<Simple Editor>` 에서 다음과 같이 피드백을 설정할 수 있다. 새로운 선다형 문제를 만들 때 힌트와 피드백이 있는 선다형 문제 템플릿을 고른다. 이 템플릿엔 예제가 포함되어 있다.
+:ref:`Simple Editor` 에서 다음과 같이 피드백을 설정할 수 있다. 새로운 선다형 문제를 만들 때 힌트와 피드백이 있는 선다형 문제 템플릿을 고른다. 이 템플릿엔 예제가 포함되어 있다.
 
 ::
 
@@ -269,7 +269,7 @@ K-MOOC은 채점 문제에 대해 선다형 문제가 아닌 참평가를 사용
 간편 편집기에서 사용자 지정 피드백 라벨 설정하기
 ***********************************************
 
-:ref:`simple editor<Simple Editor>` 에서 다음과 같이 사용자 지정 피드백 라벨을 설정한다.
+:ref:`Simple Editor` 에서 다음과 같이 사용자 지정 피드백 라벨을 설정한다.
 
 ::
 
@@ -286,7 +286,7 @@ K-MOOC은 채점 문제에 대해 선다형 문제가 아닌 참평가를 사용
 고급 편집기에서 사용자 지정 피드백 라벨 사용하기
 *************************************************
 
-:ref:`advanced editor<Advanced Editor>` 에서 다음과 같이 사용자 지정 피드백 라벨을 설정한다.
+:ref:`Advanced Editor` 에서 다음과 같이 사용자 지정 피드백 라벨을 설정한다.
 
 .. code-block:: xml
 
@@ -568,7 +568,7 @@ Lists an answer option.
 간편 편집기로 선택지 순서 변경하기
 *********************************************
 
-:ref:`simple editor<Simple Editor>` 에서 선택지 순서를 변경할 수 있다.
+:ref:`Simple Editor` 에서 선택지 순서를 변경할 수 있다.
 
 예를 들어, 선택지 순서 변경에 앞서 다음 텍스트로 정의되는 선다형 문제가 있다고 가정한다. 이때,  ``(x)`` 는 정답을 의미한다.
 
@@ -612,7 +612,7 @@ Lists an answer option.
 고급 편집기로 선택지 순서 변경하기
 *********************************************
 
-:ref:`advanced editor<Advanced Editor>` 의 XML을 통해 선택지 순서를 변경할 수 있다.
+:ref:`Advanced Editor` 의 XML을 통해 선택지 순서를 변경할 수 있다.
 
 예를 들어, 선택지 순서 변경에 앞서 다음 XML로 선다형 문제를 정의할 수 있다.
 
@@ -753,7 +753,7 @@ Lists an answer option.
 고급 편집기로 선택지 풀 구성하기
 **************************************************
 
-:ref:`advanced editor<Advanced Editor>` 의 XML을 통해 선택지 풀(answer pool)을 제공하는 문제를 구성한다.
+:ref:`Advanced Editor` 의 XML을 통해 선택지 풀(answer pool)을 제공하는 문제를 구성한다.
 
 다음 XML 지침을 따른다.
 

@@ -164,9 +164,9 @@
 #. 강좌 개요에서, 신규 소주제를 만들고 싶은 주제를 펼친다.
 #. 펼친 주제의 하단에 있는 + **새로운 소주제** 를 클릭한다. 그러면 소주제가 추가되며, 소주제명을 입력할 수 있게 된다.
 #. 소주제명을 입력한다. 주제명을 정확하게 정해야 K-MOOC Insights에서 강좌를 조회하고 학습자가 강좌를 검색하는데 좋다.
-#. 필요한 경우, 이어서  :ref:`Add units<Create a Unit>` 을 추가한다.
+#. 필요한 경우, 이어서  :ref:`Create a Unit` 을 추가한다.
 
-신규 소주제를 추가한 후,  :ref:`test course content <Testing Your Course Content>` 를 권장한다.
+신규 소주제를 추가한 후,  :ref:`Testing Your Course Content` 를 권장한다.
 
 ********************************
 소주제명 바꾸기

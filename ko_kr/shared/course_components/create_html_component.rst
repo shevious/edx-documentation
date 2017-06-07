@@ -118,7 +118,7 @@ HTML 구성요소 에디터 설정하기
 
 
 .. note::
-  비쥬얼 편집기는  :ref:`course handouts <Adding Course Updates and Handouts>`  에는 사용할 수 없다.
+  비쥬얼 편집기는  :ref:`Adding Course Updates and Handouts`  에는 사용할 수 없다.
 
 .. _Work with HTML code:
 
@@ -134,7 +134,7 @@ HTML 구성요소 에디터 설정하기
 
 필요한 대로 HTML 코드를 편집한다.
 
-비쥬얼 편집기에 있는 HTML 소스 코드에서는 사용자 스타일 및 스크립트를 추가할 수 없고, :ref:`raw HTML editor<The Raw HTML Editor>` 를 사용해야 한다.
+비쥬얼 편집기에 있는 HTML 소스 코드에서는 사용자 스타일 및 스크립트를 추가할 수 없고, :ref:`The Raw HTML Editor` 를 사용해야 한다.
 
 확인을 클릭하면 비쥬얼 편집기로 되돌아온다. 그러면 비쥬얼 편집기는 HTML 코드가 유효한지 확인한다. 예를 들어, 단락 태그를 닫지 않는 경우, 편집기가 자동으로 추가할 것이다.
 
@@ -191,7 +191,7 @@ HTML 구성요소 만들기
 
    비쥬얼 편집기에서 HTML 구성요소가 열린다.
 
-#. 강좌 콘텐츠를 입력하고 서식을 지정한다. 필요시 :ref:`review the HTML markup<Work with HTML code>` 를 해도 된다.
+#. 강좌 콘텐츠를 입력하고 서식을 지정한다. 필요시 :ref:`Work with HTML code` 를 해도 된다.
 
    .. image:: ../../../shared/images/HTMLEditor.png
     :alt: An image of the HTML component in the visual editor.

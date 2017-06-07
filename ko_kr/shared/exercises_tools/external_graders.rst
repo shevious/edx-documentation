@@ -206,7 +206,7 @@ K-MOOC가 아니라 강좌 운영팀이 외부 채점자에 대한 구축 및 �
 
 더 자세한 내용은 K-MOOC 프로그램 관리자에게 문의한다.
 
-유지 관리를 위해 특정 시간에 채점자를 이용할 수 없는 경우, :ref:`add a course update <Add a Course Update>` (강좌 업데이트를 추가)해야 한다.
+유지 관리를 위해 특정 시간에 채점자를 이용할 수 없는 경우, :ref:`Add a Course Update` (강좌 업데이트를 추가)해야 한다.
 
 .. _Testing:
 
@@ -222,7 +222,7 @@ K-MOOC가 아니라 강좌 운영팀이 외부 채점자에 대한 구축 및 �
 코드 응답 문제 만들기
 ********************************
 
-Studio에서 일반적인 빈 문제를 추가하여 코드 응답 문제를 만든 다음, :ref:`advanced editor<Advanced Editor>` (고급 편집기)에서 XML 문제 정의를 편집한다.
+Studio에서 일반적인 빈 문제를 추가하여 코드 응답 문제를 만든 다음, :ref:`Advanced Editor` (고급 편집기)에서 XML 문제 정의를 편집한다.
 
 더 자세한 내용은  :ref:`Working with Problem Components` (문제 구성 요소로 작업하기)를 참조하도록 한다.
 

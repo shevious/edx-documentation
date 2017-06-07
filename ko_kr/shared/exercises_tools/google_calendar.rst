@@ -97,7 +97,7 @@ OLX에서 구글 캘린더 활용하기
 
 #. **저장** 을 선택한다.
 
-   캘린더 설정 페이지를 닫고, 캘린더 탭으로 돌아간다. 다음에서  :ref:`obtaining the Google Calendar's ID<Obtain the Google Calendar ID>` 에 대해 계속 알아보도록 한다.
+   캘린더 설정 페이지를 닫고, 캘린더 탭으로 돌아간다. 다음에서  :ref:`Obtain the Google Calendar ID` 에 대해 계속 알아보도록 한다.
 
 .. _Obtain the Google Calendar ID:
 
@@ -131,7 +131,7 @@ OLX에서 구글 캘린더 활용하기
 스튜디오에서 구글 캘린더 구성 요소 추가하기
 **********************************************
 
-구글 캘린더 구성요소를 추가하기 전에, 강좌에서 구글 캘린더를 활용할 수 있다. :ref:`enable Google Calendars<Enable the Google Calendars Tool>` 를 확인한다.
+구글 캘린더 구성요소를 추가하기 전에, 강좌에서 구글 캘린더를 활용할 수 있다. :ref:`Enable the Google Calendars Tool` 를 확인한다.
 
 구글 캘린더 구성 요소를 추가 하려면.
 

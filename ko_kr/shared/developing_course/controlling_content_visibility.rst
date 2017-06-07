@@ -27,7 +27,7 @@
 
 공개일 전에는 학습자가 게시 상태인 학습활동을 볼 수 없다. 주제와 소주제의 공개일이 다른 경우, 각 공개일이 모두 지난 후에야 게시 상태의 학습활동을 볼 수 있다.
 
-한편 공개일 전이라도, 강좌 운영팀은 :ref:`previewing the course <Preview Course Content>` 나  :ref:`viewing the live course as staff<View Your Live Course>` 를 통해 콘텐츠를 볼 수 있다.
+한편 공개일 전이라도, 강좌 운영팀은 :ref:`Preview Course Content>` 나  :ref:`View Your Live Course` 를 통해 콘텐츠를 볼 수 있다.
 
 .. note:: 모든 날짜는 UTC를 기준으로 표기되며  `Time and Date Time Zone Converter <http://www.timeanddate.com/worldclock/converter.html>`_ 를 이용해 다시 한번 확인하는 것이 좋다.
 
@@ -67,9 +67,9 @@
 
 감추기 설정에도 여러 수준이 있다.
 
-* :ref:`Sections<Hide a Section from Students>`
-* :ref:`Subsections<Hide a Subsection from Students>`
-* :ref:`Units<Hide a Unit from Students>`
+* :ref:`Hide a Section from Students`
+* :ref:`Hide a Subsection from Students`
+* :ref:`Hide a Unit from Students`
 
 .. note::
  이전에 감추었던 주제나 소주제를 공개한다고 해서, 게시한 적이 없는 학습활동까지 게시되는 것은 아니다. 또한 게시했던 학습활동이라도 변경한 후 다시 게시하지 않는다면, 학습자는 변경 이전에 게시했던 버전의 학습활동을 볼 것이다.

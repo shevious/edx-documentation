@@ -22,19 +22,19 @@
 
 학습집단 활용 방법을 선택한 후, (해당하는 경우) 다음의 구성 단계에 따라 학습집단 기능을 활성화 할 수 있다.
 
-#. :ref:`Enable cohorts<Enable Cohorts>`.
+#. :ref:`Enable Cohorts`.
 
 #. 학습자를 학습집단에 배치하는 방법 결정하기.
 
-  * :ref:`Implement an automated assignment strategy<Implementing the Automated Assignment Strategy>`
+  * :ref:`Implementing the Automated Assignment Strategy`
 
-  * :ref:`Implement a manual assignment strategy<Implementing the Manual Assignment Strategy>` 와 :ref:`manually assign enrolled learners <Assign Learners to Cohorts Manually>` to the cohorts that you create
+  * :ref:`Implementing the Manual Assignment Strategy` 와 :ref:`Assign Learners to Cohorts Manually` to the cohorts that you create
 
-  * :ref:`Use a combination of automated and manual assignment<Hybrid Assignment>`
+  * :ref:`Hybrid Assignment`
 
 3. 선택적으로, 학습집단에 따라 나누길 원하는 토의 주제를 확인한다.
 
-  * 강좌 전체적인 내용을 다루는 토의는 기본설정에서 모든 학습자가 참여하도록 되어있지만 :ref:`divided by cohort<Specify Whether CourseWide Discussion Topics are Cohorted>` 설정할 수 있다.
+  * 강좌 전체적인 내용을 다루는 토의는 기본설정에서 모든 학습자가 참여하도록 되어있지만 :ref:`Specify Whether CourseWide Discussion Topics are Cohorted` 설정할 수 있다.
 
   * 반면, 학습 내용별 토의 주제를 학습 집단별로 나누기를 원한다면, 더 이상의 구성 절차를 완료할 필요가 없다. 대신 모든 주제별 토의를 모든 학습자에게 통합적으로 제시하기 를 원한다면, 약간의 구성 단계를 완료해야 한다
 
@@ -48,7 +48,7 @@
 학습자 자동 배치
 ***************************************************
 
-학습자를 자동 배치하기 위해서 우선 강좌의 :ref:`enable the cohort feature<Enable Cohorts>` 해야 하며 자동  :ref:`create cohorts<Add Cohorts>` 으로  :ref:`assignment method<Changing the Assignment Method of a Cohort>` 생성해야 한다. 이 집단에 학습자를 추가하기 위해 아무것도 할 필요 없다. 학습자가 처음 강좌 콘텐츠나 게시판에 접속했을 때 시스템이 자동으로 학습자를 무작위 배치한다. 홈 화면이나 교재 등 기타 강좌 페이지에 접속한 학습자는 강좌 콘텐츠나 게시판을 보기 전에 집단에 배치 받지 않는다
+학습자를 자동 배치하기 위해서 우선 강좌의 :ref:`Enable Cohorts` 해야 하며 자동  :ref:`Add Cohorts` 으로  :ref:`Changing the Assignment Method of a Cohort` 생성해야 한다. 이 집단에 학습자를 추가하기 위해 아무것도 할 필요 없다. 학습자가 처음 강좌 콘텐츠나 게시판에 접속했을 때 시스템이 자동으로 학습자를 무작위 배치한다. 홈 화면이나 교재 등 기타 강좌 페이지에 접속한 학습자는 강좌 콘텐츠나 게시판을 보기 전에 집단에 배치 받지 않는다
 
 .. note:: 자동 배치 집단과 수동 배치 집단 모두 학습자를 직접 집단에 배치할 수 있다.
 
@@ -60,7 +60,7 @@
 자동 학습집단
 =================
 
-학습자가 처음 강좌나 게시판 페이지에서 강좌 콘텐츠를 봤을 때 집단에 속해있지 않다면 자동 학습집단에 자동 배치된다. 자동 학습집단이 없다면 시스템은 :ref:`default cohort <Default Cohort Group>` 을 생성해 학습자를 배치한다
+학습자가 처음 강좌나 게시판 페이지에서 강좌 콘텐츠를 봤을 때 집단에 속해있지 않다면 자동 학습집단에 자동 배치된다. 자동 학습집단이 없다면 시스템은 :ref:`Default Cohort Group` 을 생성해 학습자를 배치한다
 
 .. note:: 기본 집단은 모든 학습자가 집단에 속하도록 하기 위해 생성된다. 기본 집단에서 다른 집단으로 학습자를 옮길 필요가 없도록 강좌 시작 전 자동 학습집단을 만들어 놓는 것이 좋다.
 
@@ -70,7 +70,7 @@
 학습자 직접 배치
 ***************************************************
 
-학습자를 직접 배치하기 위해서 우선 강좌의  :ref:`enable the cohort feature<Enable Cohorts>` 해야 하며 수동 :ref:`create cohorts<Add Cohorts>` 으로  :ref:`assignment method<Changing the Assignment Method of a Cohort>`  해야 한다. 그 후 직접 학습자를 집단에 배치할 수 있다.
+학습자를 직접 배치하기 위해서 우선 강좌의  :ref:`Enable Cohorts` 해야 하며 수동 :ref:`Add Cohorts` 으로  :ref:`Changing the Assignment Method of a Cohort`  해야 한다. 그 후 직접 학습자를 집단에 배치할 수 있다.
 
 .. note:: 강좌를 수강중인 학습자만 직접 집단에 배치할 수 있다.
 
@@ -88,7 +88,7 @@
 
 #. 집단 기능 허용을 선택한다.
 
-이제 강좌에  :ref:`add cohorts<Add Cohorts>` 할 수 있다.
+이제 강좌에  :ref:`Add Cohorts` 할 수 있다.
 
 .. warning:: 실시간 강좌에서 집단 기능을 사용할 때 학습자에게 영향을 줄 수 있으므로 주의해야 한다. 학습자는 기존에 볼 수 있었던 강좌 및 게시판 주제들을 볼 수 없을 수 있다.
 

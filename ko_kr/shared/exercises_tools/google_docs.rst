@@ -14,7 +14,7 @@
 
 외부 사이트의 콘텐츠를 강좌에 사용하기 전에 반드시 장애가 있는 학습자에게 제공할 수 있는지 확인해야 한다. 자세한 사항은 :ref:`Accessibility Best Practices for Course Content Development` 를 참고하면 된다.
 
-또한 강좌 내용에  :ref:`Google calendars<Google Calendar Tool>` 를 사용할 수 있다. 더 자세한 내용은 :ref:`Google Calendar Tool` 를 참조하도록 한다.
+또한 강좌 내용에  :ref:`Google Calendar Tool` 를 사용할 수 있다. 더 자세한 내용은 :ref:`Google Calendar Tool` 를 참조하도록 한다.
 
 .. note:: 구글은 일부 지역 및 국가에서 사용이 불가능하다. 만약 학습자의 지역에서 구글을 사용할 수 없다면 구글 드라이브 파일이나 구글 캘린더 자리에 “이미지 사용 불가” 메시지가 나올 수도 있다. K-MOOC은 이런 지역의 학습자를 위해 대체 방안을 마련할 것을 강력하게 권고한다.
 
@@ -121,7 +121,7 @@ OLX에서 구글 드라이브 파일 활용하기
 스튜디오에서 구글 드라이브 파일 구성 요소 추가하기    
 ******************************************************
 
-구성요소를 추가하기 전에,  :ref:`enable Google Drive files<Enable the Google Drive Files Tool>` 하는지 확인한다.
+구성요소를 추가하기 전에,  :ref:`Enable the Google Drive Files Tool` 하는지 확인한다.
 
 구글 드라이브 파일 구성 요소를 추가 하려면.
 

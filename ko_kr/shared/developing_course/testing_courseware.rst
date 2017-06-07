@@ -32,7 +32,7 @@
 
 .. note:: 만약 강좌에서 임의의 콘텐츠 블록을 사용한다면 미리보기를 할 수 없다. 임의의 콘텐츠 블록은 게시 전에 배정되지 않기 때문이다. 자세한 사항은  :ref:`Specific Student View` 를 참고하면 된다.
 
-예를 들어,  :ref:`publish a unit<Publish a Unit>` 를 하는데, 이 학습활동에 동영상과 게시판이 포함되어 있는 경우.
+예를 들어,  :ref:`Publish a Unit` 를 하는데, 이 학습활동에 동영상과 게시판이 포함되어 있는 경우.
 
 .. image:: ../../../shared/images/test-unit-studio.png
  :alt: A unit in Studio with video and discussion components.
@@ -46,7 +46,7 @@
 
 이렇게 변경된 학습활동을 게시하지 않으면, 이것이 학습자에게 어떻게 보일지 강좌 운영팀이 미리 볼 수 있다.
 
-미리보기를 선택하고 학습자로서 보게 된다면 LMS 안의 학습활동에서 다지선다 문제를 보게 된다. 이는 :ref:`publish the change<Publish a Unit>` 후, 학습자가 보게 될 화면이다.
+미리보기를 선택하고 학습자로서 보게 된다면 LMS 안의 학습활동에서 다지선다 문제를 보게 된다. 이는 :ref:`Publish a Unit` 후, 학습자가 보게 될 화면이다.
 
 .. I am getting different results. If the content is not published, I can Preview, but if I change to student view I get thrown out of the course. I think that the "View As" control in LMS is not useful with Preview, only with View Live. Opened DOC-2825  Alison 27 Mar 2016
 
@@ -116,7 +116,7 @@ LMS에서 강좌 운영팀이 보게 될 실시간 강좌를 확인하기 위해
 
 * :ref:`Draft (Never Published)`  상태의 학습활동은 볼 수 없다. 이 학습활동을 보려면 :ref:`Preview Course Content` 에서 안내된 방법에 따라 미리보기 모드에서 볼 수 있다.
 
-* :ref:`run your course<Managing Live Course Index>` 를 지원하는 교수자 대시보드를 이용할 수 있다.
+* :ref:`Managing Live Course Index` 를 지원하는 교수자 대시보드를 이용할 수 있다.
 
 운영팀 보기 권한으로 강좌를 보면, 의도했던 대로 강좌가 만들어지고 진행되는지 시험해볼 수 있다. 예를 들어, 소주제의 공개일 전에, 강좌 운영팀이 문제를 풀어보며 정답을 택했을 때 초록색 체크 표시가 나타나는지, 오답을 택했을 때 빨간색 X 표시가 나타나는지 확인해볼 수 있는 것이다.
 

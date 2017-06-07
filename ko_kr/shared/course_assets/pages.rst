@@ -127,7 +127,7 @@
 강좌 운영팀이 추가한 메뉴는 삭제 가능하다. 메뉴를 삭제하기 위해 **휴지통** 아이콘을 클릭한다. 삭제를 확인하라는 메시지가 표시된다.
 
 .. note::
-  :ref:`default pages<Default Pages>` 는 삭제할 수 없다. 단, 위키와 진도 메뉴는 :ref:`hide<Show or Hide the Course Wiki Page>` 있다.
+  :ref:`Default Pages` 는 삭제할 수 없다. 단, 위키와 진도 메뉴는 :ref:`Show or Hide the Course Wiki Page` 있다.
 
 .. _Code for Dynamic HTML Schedule:
 
@@ -138,7 +138,7 @@ HTML Schedule 코드
 강좌에서 HTML schedule을 제공하고 싶다면, 다음의 코드를 Raw HTML 편집기에 붙여넣으면 된다.
 
 .. note::
-  :ref:`raw HTML editor <The Raw HTML Editor>` 가 아닌 비주얼 편집기에 붙여넣기 하면 안된다.
+  :ref:`The Raw HTML Editor` 가 아닌 비주얼 편집기에 붙여넣기 하면 안된다.
 
 .. code-block:: html
 
