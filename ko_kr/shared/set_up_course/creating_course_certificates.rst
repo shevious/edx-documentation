@@ -19,8 +19,6 @@ Studio에서 강좌 이수증 만들 수 있다.
 
 .. only:: Open_edX
 
-  For information about awarding badges for your course, see :ref:`Enable or
-  Disable Badges for Your Course<Enable Badges in Course>`.
 
 .. _Overview:
 
@@ -34,13 +32,13 @@ Studio를 이용해서 학습자가 받을 수 있는 이수증을 만들 수 �
 
 .. only:: Open_edX
 
-    ***********************************
-    이수증과 개강일
-    ***********************************
+***********************************
+이수증과 개강일
+***********************************
 
-    이수증을 발급하도록 강좌를 설정했다면, 해당 이수증이 :ref:`Activate a Certificate` 되기 전에는 강좌를 개강할 수 없다.
+이수증을 발급하도록 강좌를 설정했다면, 해당 이수증이 :ref:`Activate a Certificate` 되기 전에는 강좌를 개강할 수 없다.
 
-    자세한 사항은 :ref:`Determine Start and End Dates` 를 참조하면 된다.
+자세한 사항은 :ref:`Determine Start and End Dates` 를 참조하면 된다.
 
 **********************
 이수증 디자인
@@ -94,7 +92,7 @@ Studio를 이용해서 학습자가 받을 수 있는 이수증을 만들 수 �
 
 6. 이수증을 만들었다면 **만들기** 를 클릭한다.
 
-   :ref:`preview the certificate<Preview a Certificate>` 를 통해 학습자에게 이수증이 어떻게 보이는지 조회할 수 있으며, 이수증이 :ref:`activated<Activate a Certificate>` 되기 전까지 학습자들은 이수증을 발급받을 수 없다.
+   :ref:`Preview a Certificate` 를 통해 학습자에게 이수증이 어떻게 보이는지 조회할 수 있으며, 이수증이 :ref:`Activate a Certificate` 되기 전까지 학습자들은 이수증을 발급받을 수 없다.
 
 
 .. _Edit a Certificate:
@@ -116,7 +114,7 @@ Studio를 이용해서 학습자가 받을 수 있는 이수증을 만들 수 �
 
 #. 이수증 편집 후 **저장** 을 클릭한다.
 
-   편집 저장 후 이수증 미리보기를 통해 수정사항이 반영되었는지 확인할 수 있으며, 이수증 발급 전에 :ref:`activate the certificate configuration<Activate a Certificate>` 해야 한다.
+   편집 저장 후 이수증 미리보기를 통해 수정사항이 반영되었는지 확인할 수 있으며, 이수증 발급 전에 :ref:`Activate a Certificate` 해야 한다.
 
 .. _Set a Course Number Override:
 
@@ -183,7 +181,7 @@ Studio를 이용해서 학습자가 받을 수 있는 이수증을 만들 수 �
      :width: 350
      :alt: The Preview button on the Certificates page in Studio.
 
-이수증 미리보기 이후, 이수증은 :ref:`edit the certificate<Edit a Certificate>` 하거나 :ref:`activate your certificate configuration<Activate a Certificate>` 할 수 있다.
+이수증 미리보기 이후, 이수증은 :ref:`Edit a Certificate` 하거나 :ref:`Activate a Certificate` 할 수 있다.
 
 
 .. _Activate a Certificate:
