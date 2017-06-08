@@ -17,7 +17,7 @@ Other edX Resources
  :local:
  :depth: 1
 
-K-MOOC에 대한 건의사항은 `kmooc@nile.or.kr`_ 로 보내면 된다.
+K-MOOC에 대한 건의사항은 kmooc@nile.or.kr 로 보내면 된다.
 
 
 .. _The Open edX Portal:
