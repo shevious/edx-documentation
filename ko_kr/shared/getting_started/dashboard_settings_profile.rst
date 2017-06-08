@@ -239,8 +239,6 @@ K-MOOC은 수정사항을 자동으로 저장한다.
 
 * **언어**: K-MOOC에서 표시될 언어이며 현재 몇 가지 언어를 선택할 수 있다.
 
-* **Country or Region**: The country or region that you live in.
-
 정보를 보거나 수정하기 위한 방법은 다음과 같다.
 
 .. note:: K-MOOC 아이디는 바꿀 수 없다.
