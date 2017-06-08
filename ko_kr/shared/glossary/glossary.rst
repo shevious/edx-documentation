@@ -21,7 +21,7 @@ A
 
 **A/B 테스트**
 
-  :ref:`partnercoursestaff:Content Experiment` 에 자세히 안내되어 있다.
+  :ref:`Content Experiment` 에 자세히 안내되어 있다.
 
 
 .. _About Page:
@@ -30,7 +30,7 @@ A
 
   예비 학습자에게 강좌의 요약, 선수강좌, 강좌 비디오와 이미지, 중요한 일정을 제공하는 페이지이다.
 
-  :ref:`partnercoursestaff:The Course About Page` 에 자세한 안내가 있다.
+  :ref:`The Course About Page` 에 자세한 안내가 있다.
 
 
 **접근성 라벨**
@@ -254,7 +254,7 @@ E
 
 **내보내기**
 
-  K-MOOC 스튜디오의 도구로 백업이나 XML 형식으로 강좌 및 보관함을 수정하기 위해 강좌나 보관함을 내보낼 수 있다. :ref:`I` 또한 참고하면 좋다.
+  K-MOOC 스튜디오의 도구로 백업이나 XML 형식으로 강좌 및 보관함을 수정하기 위해 강좌나 보관함을 내보낼 수 있다. :ref:`Import<I>` 또한 참고하면 좋다.
 
   :ref:`partnercoursestaff:Export a Course` 및   :ref:`partnercoursestaff:Export a Library` 에 자세한 안내가 있다.
 
@@ -326,7 +326,7 @@ I
 
 **가져오기**
 
-  Studio 외부에서 개발한 강좌나 보관함을 XML 형태로 가져오거나, Studio에서 만들어지지 않은 강좌의 새 버전을 실행하기 위해 가져오기 기능을 활용할 수 있다.  :ref:`E` 참고하면 좋다.
+  Studio 외부에서 개발한 강좌나 보관함을 XML 형태로 가져오거나, Studio에서 만들어지지 않은 강좌의 새 버전을 실행하기 위해 가져오기 기능을 활용할 수 있다.  :ref:`Export<E>` 참고하면 좋다.
 
   :ref:`partnercoursestaff:Import a Course` 에 자세한 안내가 있다
 
