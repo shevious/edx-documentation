@@ -77,7 +77,7 @@ C
 
 **장**
 
-  :ref:`S`  를 참고한다.
+  :ref:`Section<S>`  를 참고한다.
 
 .. _Checkbox_g:
 
@@ -127,7 +127,7 @@ C
 
 **콘텐츠 보관함**
 
-  :ref:`Library_g` 을 참고한다.
+  :ref:`Library<Library_g>` 을 참고한다.
 
 
 .. _Content Specific Discussion Topic_g:
@@ -148,7 +148,7 @@ C
 
 **강좌 자료**
 
-  C학습자가 강좌와 관련해 다운받을 수 있는 자료로, 강좌 정보 페이지 오른쪽에 있다.  :ref:`partnercoursestaff:Adding Course Updates and Handouts` 에 자세한 안내가 있다.
+  C학습자가 강좌와 관련해 다운받을 수 있는 자료로, 강좌 정보 페이지 오른쪽에 있다.  :ref:`Adding Course Updates and Handouts` 에 자세한 안내가 있다.
 
 **강좌 탐색 Pane**
 
@@ -160,7 +160,7 @@ C
 
 **기관별 강좌 번호**
 
-  강좌 제공 기관별로 자유롭게 번호를 지정할 수 있다.  :ref:`partnercoursestaff:Creating a New Course` 에 자세한 안내가 있다.
+  강좌 제공 기관별로 자유롭게 번호를 지정할 수 있다.  :ref:`Creating a New Course` 에 자세한 안내가 있다.
 
 .. _Course Page:
 
@@ -186,7 +186,7 @@ C
 
 **맞춤형 응답 문제**
 
-  맞춤형 응답 문제는 Python 스크립트가 결합된 텍스트로 된 답안을 평가하는 것이다. :ref:`partnercoursestaff:Write Your Own Grader` 에 자세한 안내가 있다.
+  맞춤형 응답 문제는 Python 스크립트가 결합된 텍스트로 된 답안을 평가하는 것이다. :ref:`Write Your Own Grader` 에 자세한 안내가 있다.
 
 .. _D:
 
@@ -200,11 +200,11 @@ D
 
   Data Czar는 협력 기관의 한 사람으로 K-MOOC에서 받는 모든 강좌 자료에 대한 책임을 진다. 또한, 자료 수신 후 연구자와 기타 기관에 안전하게 보내는 역할도 수행한다
 
-  :ref:`data:edX Research Guide` 에 자세한 안내가 있다.
+  :ref:`edX Research Guide` 에 자세한 안내가 있다.
 
 **게시판**
 
-  게시판을 통해 학습자는 강좌 일반 주제나, 학습활동 별로 만들어진 토의 주제에 대해 글을 게시하거나, 의견을 남기는 등 참여할 수 있다.  :ref:`partnercoursestaff:Discussions` 에 자세한 안내가 있다.
+  게시판을 통해 학습자는 강좌 일반 주제나, 학습활동 별로 만들어진 토의 주제에 대해 글을 게시하거나, 의견을 남기는 등 참여할 수 있다.  :ref:`Discussions` 에 자세한 안내가 있다.
 
 .. _Discussion Component:
 
@@ -221,7 +221,7 @@ D
 
 **드롭다운 문제**
 
-  드롭다운 목록의 형식으로 제시된 선택지에서 정답을 선택하는 문제 유형이다.  :ref:`partnercoursestaff:Dropdown` 에 자세한 안내가 있다.
+  드롭다운 목록의 형식으로 제시된 선택지에서 정답을 선택하는 문제 유형이다.  :ref:`Dropdown` 에 자세한 안내가 있다.
 
 
 .. _E:
@@ -256,7 +256,7 @@ E
 
   K-MOOC 스튜디오의 도구로 백업이나 XML 형식으로 강좌 및 보관함을 수정하기 위해 강좌나 보관함을 내보낼 수 있다. :ref:`Import<I>` 또한 참고하면 좋다.
 
-  :ref:`partnercoursestaff:Export a Course` 및   :ref:`partnercoursestaff:Export a Library` 에 자세한 안내가 있다.
+  :ref:`Export a Course` 및   :ref:`Export a Library` 에 자세한 안내가 있다.
 
 .. _F:
 
@@ -280,7 +280,7 @@ G
 
   수치 점수로 된 성적이 어떻게 관련되는지 한계치를 나타낸다. 
 
-  :ref:`partnercoursestaff:Set the Grade Range` 에 자세한 안내가 있다.
+  :ref:`Set the Grade Range` 에 자세한 안내가 있다.
 
 
 **채점 기준표**
@@ -304,7 +304,7 @@ H
 
 **HTML구성요소**
 
-  강좌에 추가하거나 텍스트 서식을 위한 구성요소다. HTML 구성요소는 텍스트, 목록, 링크, 이미지를 포함한다.  :ref:`partnercoursestaff:Working with HTML Components` 에 자세한 안내가 있다.
+  강좌에 추가하거나 텍스트 서식을 위한 구성요소다. HTML 구성요소는 텍스트, 목록, 링크, 이미지를 포함한다.  :ref:`Working with HTML Components` 에 자세한 안내가 있다.
 
 
 
@@ -319,7 +319,7 @@ I
 
 **이미지맵 입력 문제**
 
-  이미지를 부여주고 정답을 위해 이미지를 클릭하는 문제.  :ref:`partnercoursestaff:Image Mapped Input` 에 자세한 안내가 있다.
+  이미지를 부여주고 정답을 위해 이미지를 클릭하는 문제.  :ref:`:Image Mapped Input` 에 자세한 안내가 있다.
 
 
 .. _Import:
@@ -328,7 +328,7 @@ I
 
   Studio 외부에서 개발한 강좌나 보관함을 XML 형태로 가져오거나, Studio에서 만들어지지 않은 강좌의 새 버전을 실행하기 위해 가져오기 기능을 활용할 수 있다.  :ref:`Export<E>` 참고하면 좋다.
 
-  :ref:`partnercoursestaff:Import a Course` 에 자세한 안내가 있다
+  :ref:`Import a Course` 에 자세한 안내가 있다
 
 
 .. _K:
@@ -355,7 +355,7 @@ L
 
 **LaTeX**
 
-  마크업 언어이고, 문서 조판에 이용되는 프로그램이다. Import LaTeX Code 에 자세히 있다. 또한, LaTex 코드를  :ref:`partnercoursestaff:import LaTeX code` 를 할 수 있다.
+  마크업 언어이고, 문서 조판에 이용되는 프로그램이다. Import LaTeX Code 에 자세히 있다. 또한, LaTex 코드를  :ref:`import LaTeX code` 를 할 수 있다.
 
 
 .. _Learning Management System:
@@ -378,14 +378,14 @@ L
 
   여러 강좌에 걸쳐 공유될 수 있는 무작위 과제 구성요소들이다. 강좌 개요에서 강좌 운영팀은 무작위 콘텐츠 블록을 설정해 특정 구성요소 보관함을 칭하거나 콘텐츠 보관함에서 각 학습자에게 무작위로 문제를 뽑게 된다.
 
-  :ref:`partnercoursestaff:Content Libraries` 와  :ref:`partnercoursestaff:Randomized Content Blocks` 에 자세한 안내가 있다.
+  :ref:`Content Libraries` 와  :ref:`Randomized Content Blocks` 에 자세한 안내가 있다.
 
 
 .. _Live Mode:
 
 **적용 결과 보기**
 
-  학습자에게 학습활동이 어떻게 볼지 검토하는 기능이다. 학습활동을 포함하는 주제나 소주제의 공개일과 관계 없이 볼 수 있다. :ref:`partnercoursestaff:View Your Live Course` 에 자세한 안내가 있다.
+  학습자에게 학습활동이 어떻게 볼지 검토하는 기능이다. 학습활동을 포함하는 주제나 소주제의 공개일과 관계 없이 볼 수 있다. :ref:`View Your Live Course` 에 자세한 안내가 있다.
 
 **LON-CAPA**
 
@@ -403,7 +403,7 @@ M
 
   구체적이고 상대적으로 간단한 수식을 입력하도록 요구하는 문제다.
 
-  :ref:`learners:Math Formatting` 에 자세한 안내가 있다.
+  :ref:`Math Formatting` 에 자세한 안내가 있다.
 
 
 .. _MathJax:
@@ -412,7 +412,7 @@ M
 
   LaTeX와 같은 공식을 작성하는데 이용할 수 있는 언어이다. Studio 는 MathJax 를 이용하여 x^2 및 sqrt(x^2-4) 와 같은 텍스트를 입력하면 수식으로 변환시켜 준다.
 
-  :ref:`partnercoursestaff:MathJax in Studio` 에 자세한 안내가 있다.
+  :ref:`MathJax in Studio` 에 자세한 안내가 있다.
 
 
 .. _Module_g:
@@ -428,7 +428,7 @@ M
 
 **선다형 문제**
 
-  선택지에서 적절한 답을 선택하는 문제다. :ref:`partnercoursestaff:Multiple Choice` 에 자세한 안내가 있다.
+  선택지에서 적절한 답을 선택하는 문제다. :ref:`Multiple Choice` 에 자세한 안내가 있다.
 
 
 .. _N:
@@ -441,7 +441,7 @@ N
 
 **수치 입력 문제**
 
-  비교적 간단한 수식이나 숫자를 입력하는 문제다.  :ref:`partnercoursestaff:Numerical Input` 에 자세한 안내가 있다.
+  비교적 간단한 수식이나 숫자를 입력하는 문제다.  :ref:`Numerical Input` 에 자세한 안내가 있다.
 
 
 .. _O:
@@ -472,7 +472,7 @@ P
 
   페이지는 학습자가 학습 관리 시스템에서 선택한 항목별로 강좌 자료를 정리한다. 페이지에서 강좌 콘텐츠 및 강좌를 보충하는 도구와 파일에 접속할 수 있다. 각 페이지에 대한 링크는 강좌 자료 탐색 바에 나타난다.
 
-  :ref:`partnercoursestaff:Adding Pages to a Course` 에 자세한 안내가 있다.
+  :ref:`Adding Pages to a Course` 에 자세한 안내가 있다.
 
 **파트너 매니저**
 
@@ -485,7 +485,7 @@ P
 
   학습활동 상태와 공개일 여부에 따라 학습자가 보는것처럼 강좌의 모든 학습활동을 보여주는 것이다.
 
-  :ref:`partnercoursestaff:Preview Course Content` 에 자세한 안내가 있다.
+  :ref:`Preview Course Content` 에 자세한 안내가 있다.
 
 
 .. _Problem Component:
@@ -494,14 +494,14 @@ P
 
   강좌 콘텐츠에서 상호 작용적이고 자동채점되는 문제 구성요소이다. 다양한 문제의 유형을 만들 수 있다. .
 
-  :ref:`partnercoursestaff:Working with Problem Components` 에 자세한 안내가 있다. :ref:`partnercoursestaff:Exercises and Tools Index` 에도 자세한 안내가 있다..
+  :ref:`Working with Problem Components` 에 자세한 안내가 있다. :ref:`Exercises and Tools Index` 에도 자세한 안내가 있다..
 
 
 .. _Progress Page:
 
 **진도 페이지**
 
-  학습 관리 시스템에 있는 페이지로 성적에 반영되는 소주제에서의 점수를 보여준다. :ref:`learners:SFD Check Progress` 에 안내가 있다.
+  학습 관리 시스템에 있는 페이지로 성적에 반영되는 소주제에서의 점수를 보여준다. :ref:`SFD Check Progress` 에 안내가 있다.
 
 
 .. _Q:
@@ -514,7 +514,7 @@ Q
 
   질문은 강좌 운영팀 혹은 다른 학습자가 해결할 수 있는 이슈를 강좌 토의 게시판에서 다루기 위해 토의 주제로 만들 수 있도록 한 것이다.
 
-  :ref:`partnercoursestaff:Discussions` 에 자세한 안내가 있다.
+  :ref:`Discussions` 에 자세한 안내가 있다.
 
 .. _R:
 
@@ -526,15 +526,15 @@ R
 
   협력 기관이 이미 완료된 K-MOOC 강좌에 대해 추가 연구 프로젝트를 위한 데이터를 요청할 수 있는 K-MOOC 프로그램이다. RDX에 참여하고 있는 협력 기관만이 프로그램에 데이터를 제공하고 이 기관 소속 연구자만이 데이터를 요청할 수 있다.
 
-  :ref:`data:Research Data Exchange` 에 자세한 안내가 있다.
+  :ref:`Research Data Exchange` 에 자세한 안내가 있다.
 
 .. _Rubric_g:
 
 **루브릭**
 
-  개방형 응답 평가에서 학습자의 반응을 다루기 위한 항목들이다.   :ref:`partnercoursestaff:PA Rubric` 에 자세히 안내되어 있다..
+  개방형 응답 평가에서 학습자의 반응을 다루기 위한 항목들이다.   :ref:`PA Rubric` 에 자세히 안내되어 있다..
 
-  :ref:`Open Response Assessment<Open Response Assessment_g>` 에 안내가 있다.
+  :ref:`Open Response Assessment_g` 에 안내가 있다.
 
 
 .. _S:
@@ -550,12 +550,12 @@ S
 
   주제는 강좌에서 가장 상위 범주에 해당한다. 순차적으로 공개되는 주제를 보면 개강일 이후 강좌가 진행되는 흐름을 알 수도 있고, 강좌가 어떻게 구성되어 있는지를 한 눈에 볼 수 있기도 하다. 각 주제는 1개 이상의 소주제를 가진다.
 
-  :ref:`partnercoursestaff:Developing Course Sections` 에 자세한 안내가 있다.
+  :ref:`Developing Course Sections` 에 자세한 안내가 있다.
 
 
 **순차**
 
-  :ref:`Subsection<Subsection>` 를 참고한다.
+  :ref:`Subsection` 를 참고한다.
 
 
 .. _Short Course Description:
@@ -564,14 +564,14 @@ S
 
   K-MOOC 강좌 목록에 나타나는 강좌에 대한 설명이다.
 
-  :ref:`partnercoursestaff:Describe Your Course` 에 자세한 안내가 있다.
+  :ref:`Describe Your Course` 에 자세한 안내가 있다.
 
 
 .. _Simple Editor_g:
 
 **간편 편집기**
 
-  일부 문제 유형에서 이용가능한 것으로, 버튼 형식으로 되어 있어 사용하기 편리하다.  :ref:`partnercoursestaff:Problem Studio View` 에 자세한 안내가 있다.
+  일부 문제 유형에서 이용가능한 것으로, 버튼 형식으로 되어 있어 사용하기 편리하다.  :ref:`Problem Studio View` 에 자세한 안내가 있다.
 
 
 .. _Split_Test:
