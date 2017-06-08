@@ -184,7 +184,6 @@
 구성요소와 관련된 작업은 다음 링크와 같다.
 
 * `Edit a Component`_
-* `Set the Display Name for a Component`_
 * `Duplicate a Component`_
 * `Delete a Component`_
 
