@@ -26,7 +26,7 @@
  :alt: A learner typed n*x^(n-1) to enter the symbolic expression n times x to
      the n minus 1 power.
 
-학습자가 입력할 수 있는 문자에 관한 보다 구체적인 정보를 :ref:`openlearners:Math Formatting` 에서 확인할 수 있다.
+학습자가 입력할 수 있는 문자에 관한 보다 구체적인 정보를 :ref:`Math Formatting` 에서 확인할 수 있다.
 
 학습자가 작성한 정답이 정확할 필요 없게 오차범위를 설정할 수도 있다. Python 스크립트를 사용하거나 정확한 정답을 설정할 수 있다.
 
@@ -37,7 +37,7 @@
 수치 입력 문제 성과 분석하기
 **************************************************
 
-강좌의 수식 입력 문제에 Insights를 사용해 학습자 성과 데이터 및 답안을 분석할 수 있다. 자세한 사항은  :ref:`insights:Using edX Insights`  를 참고하면 된다.
+강좌의 수식 입력 문제에 Insights를 사용해 학습자 성과 데이터 및 답안을 분석할 수 있다. 자세한 사항은  :ref:`Using edX Insights`  를 참고하면 된다.
 
 ***********************************
 수치 입력 문제 생성하기
@@ -106,7 +106,7 @@
 .. _Use the Advanced Editor to Create a Numerical Input Problem:
 
 ========================================================================
-Use the Advanced Editor to Create a Numerical Input Problem
+고급 편집기로 수식 입력 문제 만들기
 ========================================================================
 
 고급 편집기로 수식 입력 문제를 만들기 위해.

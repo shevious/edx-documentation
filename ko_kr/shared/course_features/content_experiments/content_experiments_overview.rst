@@ -18,7 +18,7 @@
 
 강좌가 콘텐츠 실험을 활용하고 있다면 교수자 대시보드에서 만드는 성적표에 학습자가 참여한 실험 그룹에 대한 열이 포함된다. 자세한 사항은 :ref:`Interpret the Grade Report` 를 참고하면 된다.
 
-자세한 사항은 :ref:`data:AB_Event_Types` 를 참고하면 된다.
+자세한 사항은 :ref:`AB_Event_Types` 를 참고하면 된다.
 
 
 .. _Courses with Multiple Content Experiments:

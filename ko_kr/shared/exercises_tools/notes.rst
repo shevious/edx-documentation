@@ -31,6 +31,6 @@
 
 .. only:: Partners
 
- 자세한 사항은  `ref:`learners:SFD Notes`  을 참고하면 된다.
+ 자세한 사항은 :ref:`SFD Notes`  을 참고하면 된다.
 
 .. only:: Open_edX

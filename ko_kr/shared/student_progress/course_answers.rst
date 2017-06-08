@@ -10,7 +10,7 @@
  :local:
  :depth: 1
 
-차트와 보고를 포함한 학습자 답안 분포 데이터도 K-MOOC Insights에 있다.  :ref:`insights:Using edX Insights` 에 자세한 안내가 나와있다.
+차트와 보고를 포함한 학습자 답안 분포 데이터도 K-MOOC Insights에 있다.  :ref:`Using edX Insights` 에 자세한 안내가 나와있다.
 
 .. _Student_Answer_Submission:
 

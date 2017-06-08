@@ -67,7 +67,7 @@ OLX에서 구글 캘린더 활용하기
       ...
   </course>
 
-자세한 사항은  :ref:`olx:OLX Course Building Blocks` 을 참고하면 된다.
+자세한 사항은  :ref:`OLX Course Building Blocks` 을 참고하면 된다.
 
 .. _Make the Google Calendar Public and Obtain Its ID:
 
@@ -169,7 +169,7 @@ OLX에서 구글 캘린더 활용하기
 Add a Google Calendar XBlock in OLX
 **********************************************
 
-OLX에 구글 캘린더 XBlock를 추가 하려면,  ``google-calendar`` 요소를 만든다.  ``vertical`` 요소에 이 요소를 포함시킬 수 있거나 또는 ``vertical`` 요소 내에서 참고하는 해당 파일에 이 요소를 포함시킬 수 있다. 더 자세한 내용은 :ref:`olx:OLX Course Building Blocks` 를 참고하도록 한다.
+OLX에 구글 캘린더 XBlock를 추가 하려면,  ``google-calendar`` 요소를 만든다.  ``vertical`` 요소에 이 요소를 포함시킬 수 있거나 또는 ``vertical`` 요소 내에서 참고하는 해당 파일에 이 요소를 포함시킬 수 있다. 더 자세한 내용은 :ref:`OLX Course Building Blocks` 를 참고하도록 한다.
 
 예를 들면.
 

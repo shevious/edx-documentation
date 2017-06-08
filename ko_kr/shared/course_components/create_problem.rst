@@ -418,7 +418,7 @@ K-MOOC 플랫폼은 변수 종류가 최대 20가지로 제한된다. 이는 학
 
 .. note:: 강좌의 일부 XML을 편집하고 내보내는 방식으로 무작위로 추출되는 문제를 만드는 것은 더 이상 지원되지 않는다.
 
-무작위 콘텐츠 블록을 이용해 문제은행 방식을 이용한 무작위로 추출되는 문제를 만들 수 있다. 자세한 사항은 :ref:`partnercoursestaff:Randomized Content Blocks`  을 참고하면 된다.
+무작위 콘텐츠 블록을 이용해 문제은행 방식을 이용한 무작위로 추출되는 문제를 만들 수 있다. 자세한 사항은 :ref:`Randomized Content Blocks`  을 참고하면 된다.
 
 
 .. include:: ../../../shared/exercises_tools/Section_adding_tooltip.rst

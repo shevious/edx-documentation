@@ -50,7 +50,7 @@
 
 .. only:: Partners
 
-  학습자 이수증 신청에 대해  :ref:`learners:SFD On Demand Certificates` 에 자세한 안내가 나와있다.
+  학습자 이수증 신청에 대해  :ref:`SFD On Demand Certificates` 에 자세한 안내가 나와있다.
 
 .. note:: 학습자의 이수증 신청을 허용하지 않으면 이수증을 생성해야 한다.
 

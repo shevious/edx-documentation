@@ -55,7 +55,7 @@
   component.
  :width: 600
 
-진행중인 강좌에서는,  :ref:`publish the change<Publish a Unit>` 전까지는 학습자가 선다형 문제가 추가되기 전의 콘텐츠를 보게 될 것이다.
+진행중인 강좌에서는,  :ref:`Publish a Unit` 전까지는 학습자가 선다형 문제가 추가되기 전의 콘텐츠를 보게 될 것이다.
 
 .. note:: 학습활동의 상태가  :ref:`Published and Live` 일 때, 미리보기와 공개된 강좌는 똑같게 된다.
 

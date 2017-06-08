@@ -42,7 +42,7 @@ Canvas나 Blackboard 등의 외부 학습 관리 시스템에 강좌의 콘텐�
 
 .. only:: Partners
 
-  Studio를 LTI 도구 제공자로 사용하는 방법은 :ref:`partnercoursestaff:Using edX as an LTI Tool Provider` 를 참고하면 된다.
+  Studio를 LTI 도구 제공자로 사용하는 방법은 :ref:`Using edX as an LTI Tool Provider` 를 참고하면 된다.
 
 .. only:: Open_edX
 

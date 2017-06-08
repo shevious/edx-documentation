@@ -49,12 +49,12 @@
 .. only:: Partners
 
   For more information about the way learners experience instructor-paced and
-  self-paced courses, see :ref:`learners:SFD Self Paced`.
+  self-paced courses, see :ref:`SFD Self Paced`.
 
 .. only:: Open_edX
 
   For more information about the way learners experience instructor-paced and
-  self-paced courses, see :ref:`openlearners:SFD Self Paced`.
+  self-paced courses, see :ref:`SFD Self Paced`.
 
 ***************************
 강좌 일정 방식 결정하기

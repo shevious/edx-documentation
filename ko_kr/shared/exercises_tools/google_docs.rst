@@ -154,7 +154,7 @@ OLX에서 구글 드라이브 파일 XBlock 추가하기
 
 OLX에서 구글 드라이브 파일 XBlock을 추가하려면, ``google-document`` (구글 문서) 요소를 만든다. ``vertical`` (수직) 요소에 ``google-document`` (구글 문서) 요소를 포함시킬 수 있거나 또는 ``vertical`` (수직) 에서 참조하는 독립 실행형 파일로써 ``google-document`` (구글 문서) 요소를 만들 수 있다.
 
-더 자세한 내용은  :ref:`olx:OLX Course Building Blocks` 를 참조하도록 한다.
+더 자세한 내용은  :ref:`OLX Course Building Blocks` 를 참조하도록 한다.
 
 예를 들면:
 

@@ -11,7 +11,7 @@ K-MOOC 시작하기
   :depth: 1
 
 If you are creating a course to run on `edx.org`_ or `edX Edge`_, see
-:ref:`partnercoursestaff:Getting Started with Studio` in the *Building and
+:ref:`Getting Started with Studio` in the *Building and
 Running an edX Course* guide.
 
 .. _What is Studio?:
