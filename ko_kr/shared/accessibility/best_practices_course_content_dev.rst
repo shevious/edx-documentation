@@ -191,19 +191,15 @@ K-MOOC은 다음과 같은 방법으로 시각 장애가 있는 학습자에게 
 접근성 높은 이미지 자료
 =====================================================
 
-* W3C `Resources on Alternative Text for Images <http://www.w3.org/WAI/alt/>`_
+* `Resources on Alternative Text for Images <http://www.w3.org/WAI/alt/>`_
 
 * `W3C WAI Images Tutorial <http://www.w3.org/WAI/tutorials/images/>`_
 
 * `HTML5 - Requirements for providing text to act as an alternative for images <http://www.w3.org/TR/html5/embedded-content-0.html#alt>`_
 
-* `WebAim <http://webaim.org/techniques/alttext/>`_ provides general guidance
-  on the appropriate use of alternative text for images.
+* `WebAim <http://webaim.org/techniques/alttext/>`_  
 
-* `The DIAGRAM Center <http://www.diagramcenter.org/webinars.html>`_,
-  established by the US Department of Education (Office of Special Education
-  Programs), provides guidance on ways to make it easier, faster, and more
-  cost effective to create and use accessible images.
+* `The DIAGRAM Center <http://www.diagramcenter.org/webinars.html>`_ 
 
 .. _Creating Accessible Course Materials:
 
@@ -240,12 +236,9 @@ K-MOOC은 다음과 같은 방법으로 시각 장애가 있는 학습자에게 
 접근성 높은 강좌 자료
 =====================================================
 
-* `The DAISY Consortium <http://www.daisy.org>`_ is a global partnership of
-  organizations that supports and helps to develop inclusive publishing
-  standards.
+* `The DAISY Consortium <http://www.daisy.org>`_  
 
-* `The EPUB 3 format <http://www.idpf.org/epub/30/spec/epub30-overview.html>`_
-  is widely adopted as the format for digital books.
+* `The EPUB 3 format <http://www.idpf.org/epub/30/spec/epub30-overview.html>`_ 
 
 .. _Creating Accessible PDFs:
 
@@ -289,25 +282,17 @@ K-MOOC은 PDF 파일의 접근성을 확인할 때 (“접근성 확인” 등) 
 접근성을 높이는 PDF 자료
 *******************************************************
 
-* Microsoft provides detailed `guidance on generating accessible PDFs from
-  Microsoft Office applications <http://office.microsoft.com/en-gb/word-help/create-accessible-pdfs-HA102478227.aspx>`_, including Word, Excel, and
-  PowerPoint.
+* `guidance on generating accessible PDFs from Microsoft Office applications <http://office.microsoft.com/en-gb/word-help/create-accessible-pdfs-HA102478227.aspx>`_ 
 
-* Adobe provides documentation on how to `create and verify PDF accessibility
-  <https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html>`_.
+* `create and verify PDF accessibility <https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html>`_ 
 
-* `Adobe Accessibility <http://www.adobe.com/accessibility.html>`_ (Adobe) is a
-  comprehensive collection of resources on PDF authoring and repair, using
-  Adobe's products.
+* `Adobe Accessibility <http://www.adobe.com/accessibility.html>`_  
 
-* `PDF Accessibility <http://webaim.org/techniques/acrobat/>`_ (WebAIM)
-  provides a detailed and illustrated guide on creating accessible PDFs .
+* `PDF Accessibility <http://webaim.org/techniques/acrobat/>`_  
 
-* The National Center of Disability and Access to Education has a collection
-  of one-page `"cheat sheets" on accessible document authoring <http://ncdae.org/resources/cheatsheets/>`_.
+* `"cheat sheets" on accessible document authoring <http://ncdae.org/resources/cheatsheets/>`_  
 
-* The Accessible Digital Office Document (ADOD) Project provides guidance on
-  `creating accessible Office documents <http://adod.idrc.ocad.ca/>`_.
+* `creating accessible Office documents <http://adod.idrc.ocad.ca/>`_ 
 
 =====================================================
 접근성 높은 워드 문서 만들기
@@ -336,9 +321,9 @@ K-MOOC은 PDF 파일의 접근성을 확인할 때 (“접근성 확인” 등) 
 접근성을 높이는 워드 자료
 *************************************
 
-* Microsoft guide to `creating accessible Word documents <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D>`_.
+* `creating accessible Word documents <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D>`_  
 
-* Microsoft tool that allows you to `check Word documents for accessibility issues <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
+* `check Word documents for accessibility issues <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_  
 
 =====================================================
 접근성 높은 엑셀 문서 만들기
@@ -361,13 +346,9 @@ HTML에서 데이터 표에 적용되는 접근성을 높이는 방법들이 엑
 접근성을 높이는 엑셀 자료
 *******************************************************
 
-* Microsoft guide to `creating accessible Excel workbooks
-  <https://support.office.com/en-us/article/Creating-accessible-Excel-
-  workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593>`_.
+* `creating accessible Excel workbooks <https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593>`_  
 
-* Microsoft tool that allows you to `check Excel workbooks for accessibility
-  issues <https://support.office.com/en-us/article/Check-for-accessibility-
-  issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
+* `check Excel workbooks for accessibility issues <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_  
 
 =====================================================
 접근성 높은 파워포인트 문서 만들기
@@ -395,17 +376,11 @@ HTML에서 웹 콘텐츠에 적용되는 접근성을 높이는 방법들이 파
 접근성을 높이는 파워포인트 자료
 *******************************************************
 
-* Microsoft guide to `creating accessible PowerPoint presentations
-  <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-
-  presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25>`_.
+* `creating accessible PowerPoint presentations <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25>`_  
 
-* WebAIM's `PowerPoint Accessibility
-  <http://webaim.org/techniques/powerpoint/>`_.
+* `PowerPoint Accessibility <http://webaim.org/techniques/powerpoint/>`_  
 
-* Microsoft tool that allows you to `check Powerpoint documents for
-  accessibility issues <https://support.office.com/en-us/article/Check-for-
-  accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-
-  US&ad=US>`_.
+* `check Powerpoint documents for accessibility issues <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_   
 
 .. _Best Practices for Math Content:
 
@@ -415,8 +390,7 @@ HTML에서 웹 콘텐츠에 적용되는 접근성을 높이는 방법들이 파
 
 온라인 강좌에서 수학은 시각 장애가 있는 학습자에게 가르치기 어려운 과목이다. 수학적 내용을 담은 확대 및 축소가 힘든 이미지의 경우 저시력자는 보기 힘들며 아예 볼 수 없는 사람에겐 전혀 접근성이 없다.
 
-K-MOOC은 MathJax를 이용하여 화면 판독기를 이용하는 학습자에 대해 접근성 높고 읽을 수 있으며 깨끗한 형식으로 수학 콘텐츠를 제공한다. MathJax는 LaTeX나 MathML과 같은 문법을 사용하며 이미지나 텍스트를 사용하지 않는다. K-MOOC은 MathJax를 이용하여 가르치는 것을 권장한다. MathJax는 여러 형식을 제공해 최종 소비자가 원하는 형태로 수학 콘텐츠를 학습할 수 있기 때문이다. Studio는 LaTeX 컴파일러를 사용한 교수법도 제공한다
-<https://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/creating_content/create_html_component.html#import-latex-code>`_ to transform LaTeX into MathJax.
+K-MOOC은 MathJax를 이용하여 화면 판독기를 이용하는 학습자에 대해 접근성 높고 읽을 수 있으며 깨끗한 형식으로 수학 콘텐츠를 제공한다. MathJax는 LaTeX나 MathML과 같은 문법을 사용하며 이미지나 텍스트를 사용하지 않는다. K-MOOC은 MathJax를 이용하여 가르치는 것을 권장한다. MathJax는 여러 형식을 제공해 최종 소비자가 원하는 형태로 수학 콘텐츠를 학습할 수 있기 때문이다. Studio는 LaTeX 컴파일러를 사용한 교수법도 제공한다.
 
 ======================================================
 접근성 높은 수학 콘텐츠 자료

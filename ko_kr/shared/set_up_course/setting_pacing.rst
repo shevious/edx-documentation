@@ -46,24 +46,11 @@
 .. note::
     만약 과제와 시험에 대해 기한을 설정한 후 강좌를 자율 일정 방식으로 바꾸면 Studio는 설정해 놓은 그 날짜를 저장하고, 만약 당신이 다시 고정 일정 방식으로 바꾸면, Studio는 설정해 놓은 그 날짜를 다시 저장한다. 
 
-.. only:: Partners
-
-  For more information about the way learners experience instructor-paced and
-  self-paced courses, see :ref:`SFD Self Paced`.
-
-.. only:: Open_edX
-
-  For more information about the way learners experience instructor-paced and
-  self-paced courses, see :ref:`SFD Self Paced`.
 
 ***************************
 강좌 일정 방식 결정하기
 ***************************
 
-.. note::
- You cannot change the course pacing after the course start date has passed.
-
-To set the pacing for your course, follow these steps.
 
 #. **설정** 메뉴에서 **일정 및 세부사항** 을 클릭한다.
 #. **강좌 일정 방식** 을 본다.

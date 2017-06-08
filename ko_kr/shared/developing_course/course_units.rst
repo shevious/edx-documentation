@@ -248,7 +248,7 @@ Studio에서 강좌 운영팀은 작업중인 학습활동을 보게 된다. :re
 
 * `Edit the unit name`_
 * :ref:`Developing Course Components`
-* `Reorganize Components in Units`_
+* `Reorganize Components in Units`
 
 게시한 학습활동을 편집하면, 공개 여부와 관계 없이 학습활동의 상태가 수정안(아직 게시되지 않음) 으로 바뀐다.
 

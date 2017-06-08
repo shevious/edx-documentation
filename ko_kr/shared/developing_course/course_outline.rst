@@ -35,7 +35,7 @@
 .. image:: ../../../shared/images/outline_empty.png
  :alt: An empty course outline.
 
-You must :ref:`Create a Section`.
+:ref:`Create a Section`.
 
 ********************************************************
 강좌 개요의 기본 구조
