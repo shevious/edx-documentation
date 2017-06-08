@@ -17,7 +17,7 @@ Other edX Resources
  :local:
  :depth: 1
 
-K-MOOC에 대한 건의사항은 `docs@edx.org`_ 로 보내면 된다.
+K-MOOC에 대한 건의사항은 `kmooc@nile.or.kr`_ 로 보내면 된다.
 
 
 .. _The Open edX Portal:
@@ -218,7 +218,7 @@ K-MOOC으로부터
 
 K-MOOC 작업의 시작을 돕기 위해 K-MOOC 시작하기 강좌가 마련되어 있다. 이 강좌는 K-MOOC 사이트에 FAQ와 함께 있다.
 
-만일 추가적인 질문이나 건의사항이 있다면 K-MOOC 홈페이지 하단의 문의를 클릭하거나 info@edx.org로 이메일을 보내면 된다.
+만일 추가적인 질문이나 건의사항이 있다면 K-MOOC 홈페이지 하단의 문의를 클릭하거나 kmooc@nile.or.kr 로 이메일을 보내면 된다.
 
 K-MOOC 강좌에 관심이 있는 다른 사람을 만나기 위해선 K-MOOC 글로벌 커뮤니티 그룹을 확인하면 된다.
 
