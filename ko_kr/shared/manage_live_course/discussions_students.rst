@@ -4,7 +4,7 @@
 게시판 활용하기
 ###############################################
 
-강좌 게시판은 다른 학습자와 대화를 시작할 수 있으며, 강좌 운영팀에게 질문하고, 강좌 커뮤니티에 참여할 기회를 제공한다. 이전에 온라인 게시판을 사용해본 적이 없다면, 서두의  :ref:`"anatomy"<Anatomy of edX Course Discussions>` 주제를 참고하길 바란다.
+강좌 게시판은 다른 학습자와 대화를 시작할 수 있으며, 강좌 운영팀에게 질문하고, 강좌 커뮤니티에 참여할 기회를 제공한다. 이전에 온라인 게시판을 사용해본 적이 없다면, 서두의  :ref:`Anatomy of edX Course Discussions` 주제를 참고하길 바란다.
 
 이 주제에서는 효과적으로 활용할 수 있는 K-MOOC 게시판의 기능에 관한 설명하고자 한다.
 
@@ -297,13 +297,13 @@ K-MOOC 강좌 게시판 구조
 
 다른 학습자와 게시판 관리팀이 작성한 게시판 주제를 읽으면서, 완벽한 답글이나 댓글을 작성하지 않고 피드백을 제공하기 위해 다음과 같이 할 수 있다.
 
-* :ref:`Vote for posts and responses<Vote for Posts or Responses>` 
+* :ref:`Vote for Posts or Responses` 
 
-* :ref:`Follow posts<Follow Posts>` 
+* :ref:`Follow Posts` 
 
-* :ref:`Answer questions, and mark your questions as answered<Answer Questions>`.
+* :ref:`Answer Questions`.
 
-* :ref:`Report a contribution<Report Discussion Misuse>` 
+* :ref:`Report Discussion Misuse` 
 
 피드백 옵션을 선택하려면, 게시글, 답글, 댓글 우측 상단에 아이콘을 사용한다. 커서를 이 아이콘 위에 올려두면, 공감과 팔로우를 할 수 있는 아이콘이 뜬다.
 

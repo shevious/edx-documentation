@@ -14,9 +14,9 @@
 개관
 ****************************
 
-이 장에서는 개강에 대비해 준비 상태를 점검하기 위해  :ref:`course launch checklist<Course Launch Checklist>` 를 다룬다.
+이 장에서는 개강에 대비해 준비 상태를 점검하기 위해  :ref:`Course Launch Checklist` 를 다룬다.
 
-(강좌 시작 전후로 강좌 운영팀과 학습자의 의사소통을 돕기 위해 교수자 대시보드에서 이메일 메시지를 보낼 수 있다.  :ref:`Bulk Email` 을 확인한다. 여기에서  :ref:`example messages to learners<Example Messages to Students>` 를 확인할 수 있다.
+(강좌 시작 전후로 강좌 운영팀과 학습자의 의사소통을 돕기 위해 교수자 대시보드에서 이메일 메시지를 보낼 수 있다.  :ref:`Bulk Email` 을 확인한다. 여기에서  :ref:`Example Messages to Students` 를 확인할 수 있다.
 
 .. _Course Launch Checklist:
 

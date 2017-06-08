@@ -67,7 +67,7 @@ Studio에서 강좌를 만드는 또 다른 방법은 기존 강좌를 재개강
 
 .. only:: Partners
 
-   K-MOOC 운영팀만이 재 개강 권한을 갖고 있다. 테스트서버나 kmooc.kr의 강좌를 재 개강하기 원하면 K-MOOC 파트너 매니저와 상담해야 한다. 파트너 매니저가 :ref:`update the new course<Update the New Course>` 을 이용해 강좌를 새로 만들면 재 개강할 강좌를 업데이트 할 수 있다.
+   K-MOOC 운영팀만이 재 개강 권한을 갖고 있다. 테스트서버나 kmooc.kr의 강좌를 재 개강하기 원하면 K-MOOC 파트너 매니저와 상담해야 한다. 파트너 매니저가 :ref:`Update the New Course` 을 이용해 강좌를 새로 만들면 재 개강할 강좌를 업데이트 할 수 있다.
 
 .. only:: Open_edX
 
