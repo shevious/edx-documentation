@@ -20,7 +20,7 @@
 개관
 ****************************************
 
-종강이 다가오면 학습자들에게  :ref:`course farewell<Course Farewell and Certificates>` 을 보낼 수 있다.
+종강이 다가오면 학습자들에게  :ref:`Course Farewell and Certificates` 을 보낼 수 있다.
 
 강좌 마감일과 시간 이 지난 이후 강좌에 등록된 개별 학습자의 최종 성적을 산출할 수 있다. 이에 관한 자세한 안내는  :ref:`Access_grades` 에 있다.
 

@@ -36,7 +36,7 @@
 
 특정 학습자에 대해 정보를 조회하는 방법과 학습자 응답을 상호 평가와 동시에 보는 예제에 대한 자세한 정보는 :ref:`Access Learner Information` 를 참고하면 된다.
 
-학습자가 다른 학습자로부터 충분한 평가를 받았고 다른 학습자에 대해 충분히 평가했다는 것을 확인하기 위해 채점자와 반드시 채점해야 할 응답을 확인한다. 자세한 사항은  :ref:`Specify Step Settings<PA Specify Step Settings>` 를 참고하면 된다.
+학습자가 다른 학습자로부터 충분한 평가를 받았고 다른 학습자에 대해 충분히 평가했다는 것을 확인하기 위해 채점자와 반드시 채점해야 할 응답을 확인한다. 자세한 사항은  :ref:`PA Specify Step Settings` 를 참고하면 된다.
 
 
 .. _Access Learner Information:
@@ -204,4 +204,4 @@
 
 #. 일치하는 부분이 있다면 해당 부분을 작성한 사용자 이름을 확인한다.
 
-#. 사용자 이름을 적어 놓고  :ref:`remove a learner response from peer grading<Remove a learner response from peer grading>`  를 참고해 삭제한다.
+#. 사용자 이름을 적어 놓고  :ref:`Remove a learner response from peer grading`  를 참고해 삭제한다.

@@ -90,7 +90,7 @@ VideoX: K-MOOC 플랫폼을 위한 영상 만들기
 위키피디아 및 기타 사이트
 ====================
 
-:ref:`the Open edX Portal<The Open edX Portal>` 과 :ref:`the edX Partner Portal<The edX Partner Portal>` 에서 제작 로드맵에 관한 지침을 제공한다.
+:ref:`The Open edX Portal` 과 :ref:`The edX Partner Portal` 에서 제작 로드맵에 관한 지침을 제공한다.
 
 Open edX파트너 지원 사이트에서 의견을 올릴 수 있고 edX운영자가 모니터링한다.
 

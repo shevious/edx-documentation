@@ -20,7 +20,7 @@ Studio를 활용해서 신규 강좌 만드는 방법을 알아봅시다.
 또 하나의 강좌를 만드는 방법은 관리자의 승인 하에 기존 강좌를 재개강하는 것이다. 
 이에 대한 자세한 사항은 :ref:`Rerun a Course` 를 참고하면 된다.
 
-또한, XML에서 강좌를 편집하거나 백업할 때 :ref:`export<Export a Course>` 와 :ref:`import<Import a Course>` 를 할 수 있다. 
+또한, XML에서 강좌를 편집하거나 백업할 때 :ref:`Export a Course` 와 :ref:`Import a Course` 를 할 수 있다. 
 
 .. _Identifying the Course:
 
@@ -60,7 +60,7 @@ Studio를 활용해서 신규 강좌 만드는 방법을 알아봅시다.
 #. **새 강좌** 를 클릭한다.
 
 
-#. :ref:`identifying course information<Identifying the Course>` 를 입력하고 **만들기** 를 클릭한다.
+#. :ref:`Identifying the Course` 를 입력하고 **만들기** 를 클릭한다.
 
    .. image:: ../../../shared/images/new_course_info.png
      :width: 600
@@ -68,7 +68,7 @@ Studio를 활용해서 신규 강좌 만드는 방법을 알아봅시다.
       creating a new course: Course Name, Organization, Course Number, and
       Course Run.
 
-  강좌를 만들면 :ref:`Course Outline<Developing Your Course Outline>` 페이지가 열린다. 아직 어떤 콘텐츠도 만들지 않았으므로, 페이지가 비어 있을 것이다.
+  강좌를 만들면 :ref:`Developing Your Course Outline` 페이지가 열린다. 아직 어떤 콘텐츠도 만들지 않았으므로, 페이지가 비어 있을 것이다.
   자세한 사항은 :ref:`Getting Started with Course Content Development` 를 참고하면 된다.
 
 
@@ -79,8 +79,8 @@ Studio를 활용해서 신규 강좌 만드는 방법을 알아봅시다.
 ************************
 
   강좌를 만들면, 강좌가 Studio에서 자동으로 열리게 되며 교수자 및 강좌 운영팀은 편집을 시작할 수 있다. 
-  다른 구성원을  :ref:`course team members<Add Course Team Members>`  추가하거나 :ref:`course outline<Developing Your Course Outline>`  
-  :ref:`start and end dates<Scheduling Your Course>` 을 설정할 수 있고 강좌 개요를 만들 수 있다.
+  다른 구성원을  :ref:`Add Course Team Members`  추가하거나 :ref:`Developing Your Course Outline`  
+  :ref:`Scheduling Your Course` 을 설정할 수 있고 강좌 개요를 만들 수 있다.
 
 
   Studio의 **강좌** 대시보드에는 강좌 관리 권한을 가지고 있는 모든 강좌 목록이 나타난다.

@@ -74,7 +74,7 @@ K-MOOC은 강좌에 개방형 응답 평가를 활용할 때 다음과 같은 �
 
 * 필요 시 게시판 관리자가 상호 평가 채점과 관련된 질문을 받고 문제를 해결할 수 있도록 기한을 늘리는 것을 고려한다.
 
-  만약 게시판에서 개방형 응답 평가에 대해 문제가 생긴다면 강좌 운영팀은 :ref:`deleting a learner's history, or "state" <Adjust_grades>` 를 수행해 학습자가 다시 과제를 제출하도록 할 수 있으며 :ref:`overriding a learner's grade<Override a learner assessment grade>`, :ref:`removing a learner response <Remove a learner response from peer grading>` 등을 수행할 수 있다. 만약 상호 평가 채점과 관련된 문제가 지속 발생한다면 강좌 운영팀은 최종 성적 반영 비율을 낮추거나 학습자의 가장 낮은 과제 성적을 제외할 수도 있다
+  만약 게시판에서 개방형 응답 평가에 대해 문제가 생긴다면 강좌 운영팀은 :ref:`Adjust_grades` 를 수행해 학습자가 다시 과제를 제출하도록 할 수 있으며 :ref:`Override a learner assessment grade`, :ref:`Remove a learner response from peer grading` 등을 수행할 수 있다. 만약 상호 평가 채점과 관련된 문제가 지속 발생한다면 강좌 운영팀은 최종 성적 반영 비율을 낮추거나 학습자의 가장 낮은 과제 성적을 제외할 수도 있다
 
 
 .. _PA Elements:
@@ -85,11 +85,11 @@ K-MOOC은 강좌에 개방형 응답 평가를 활용할 때 다음과 같은 �
 
 개방형 응답 평가 과제에는 다음과 같은 요소를 포함된다.
 
-* 1개 이상의  :ref:`prompts <PA Prompts>`, 또는 질문.
+* 1개 이상의  :ref:`PA Prompts`, 또는 질문.
 
-* :ref:`rubric <PA Rubric>`. 하나의 기준표로 모든 과제를 채점한다.
+* :ref:`PA Rubric`. 하나의 기준표로 모든 과제를 채점한다.
 
-* 1가지 이상의  :ref:`assessment steps <PA Assessment Steps>`. 과제에는 학습자 평가 연습 단계, 상호 평가 단계, 자기 평가 단계가 포함될 수 있다.
+* 1가지 이상의  :ref:`PA Assessment Steps`  과제에는 학습자 평가 연습 단계, 상호 평가 단계, 자기 평가 단계가 포함될 수 있다.
 
 .. note:: 학습자 평가 연습 단계를 포함한다면 반드시 상호 평가 채점도 포함해야 한다. 상호 평가 채점과 자기 평가 단계 이전 학습자 평가 연습 단계가 우선 시행되어야 한다. 운영팀 평가 단계를 추가한다면 마지막 순서에 넣어야 한다.
 

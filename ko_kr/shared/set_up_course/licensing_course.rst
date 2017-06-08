@@ -92,7 +92,7 @@ All Rights Reserved의 의미는 당신이 저작권과 동시에 강좌 내용�
       :alt: The Creative Commons license options.
       :width: 600
 
-     원하는 :ref:`Creative Commons license options <Creative Commons License>` 을 선택한다.
+     원하는 :ref:`Creative Commons License` 을 선택한다.
 
 
    * 모든 강좌의 내용을 보호하려면, **All Rights Reserved** 를 클릭한다.
