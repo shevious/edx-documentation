@@ -41,21 +41,21 @@ A
 
   모든 문제는 필수적으로 접근성 라벨이 있어야 한다.
 
-  :ref:`partnercoursestaff:Simple Editor` 에 자세한 안내가 있다.
+  :ref:`Simple Editor` 에 자세한 안내가 있다.
 
 
 .. _Advanced Editor_g:
 
 **고급 편집기**
 
-  문제 구성요소에서의 문제 유형을 만들고 편집할 수 있도록 하는 XML 편집기로,  :ref:`partnercoursestaff:Advanced Editor` 에 자세한 안내가 있다.
+  문제 구성요소에서의 문제 유형을 만들고 편집할 수 있도록 하는 XML 편집기로,  :ref:`Advanced Editor` 에 자세한 안내가 있다.
 
 
 .. _Assignment Type:
 
 **과제 유형**
 
-  학습자 성적에 포함되는 과제 유형으로, 숙제, 시험, 연습문제 등이 있다.  :ref:`partnercoursestaff:Grading Index` 에 자세한 안내가 있다.
+  학습자 성적에 포함되는 과제 유형으로, 숙제, 시험, 연습문제 등이 있다.  :ref:`Grading Index` 에 자세한 안내가 있다.
 
 .. _C:
 
@@ -73,36 +73,36 @@ C
 
 **이수증**
 
-  강좌를 성공적으로 이수한 학습자에게 발급되는 증명서다. 모든 K-MOOC 강좌가 이수증을 발급하는 것은 아니며, 등록된 모든 학습자가 이수증을 받을 수 있는 것은 아니다. :ref:`partnercoursestaff:Setting Up Course Certificates` 에 자세한 안내가 나와있다. 
+  강좌를 성공적으로 이수한 학습자에게 발급되는 증명서다. 모든 K-MOOC 강좌가 이수증을 발급하는 것은 아니며, 등록된 모든 학습자가 이수증을 받을 수 있는 것은 아니다. :ref:`Setting Up Course Certificates` 에 자세한 안내가 나와있다. 
 
 **장**
 
-  :ref:`Section<S>`  를 참고한다.
+  :ref:`S`  를 참고한다.
 
 .. _Checkbox_g:
 
 **체크박스 문제**
 
-  학습자가 문제의 답으로 1개 이상의 선택지를 골라 체크하는 문제유형이다.  :ref:`partnercoursestaff:Checkbox` 에 자세한 안내가 있다.
+  학습자가 문제의 답으로 1개 이상의 선택지를 골라 체크하는 문제유형이다.  :ref:`Checkbox` 에 자세한 안내가 있다.
 
 .. _Chemical Equation_g:
 
 **화학 공식 문제**
 
-  학습자가 문제의 답으로 화학 공식을 입력할 수 있도록 하는 문제 유형이다.  :ref:`partnercoursestaff:Chemical Equation`  에 자세한 안내가 있다.
+  학습자가 문제의 답으로 화학 공식을 입력할 수 있도록 하는 문제 유형이다.  :ref:`Chemical Equation`  에 자세한 안내가 있다.
 
 
 .. _Circuit Schematic_g:
 
 **회로도 문제**
 
-  학습자가 인터랙티브 그리드(interactive grid)에 문제의 답으로 회로도를 구성하도록 하는 문제유형이다.  :ref:`partnercoursestaff:Circuit Schematic Builder`  에 자세한 안내가 있다.
+  학습자가 인터랙티브 그리드(interactive grid)에 문제의 답으로 회로도를 구성하도록 하는 문제유형이다.  :ref:`Circuit Schematic Builder`  에 자세한 안내가 있다.
 
 **닫힌 자막**
 
   동영상에서 실제로 말한 부분의 녹취록으로서 동영상 재생 중에 같이 표시된다. 자막을 보거나 감추기 위해 CC 아이콘을 클릭하면 된다. 닫힌 자막을 드래그하여 동영상 화면의 여러 부분으로 옮길 수 있다.
 
-  :ref:`learners:Video Player` 에 자세한 안내가 있다.
+  :ref:`Video Player` 에 자세한 안내가 있다.
 
 .. _Cohort:
 
@@ -110,24 +110,24 @@ C
 
   강좌에서 함께 참여하는 학습자 집단으로, 동일한 학습 집단에 속해 있는 학습자는 집단내에서만 소통하고 공유의 경험을 가질 수 있다.
 
-  K-MOOC 플랫폼에서 강좌의 선택적 특성이다. 학습집단의 활성화방법, 설정방법, 학습자를 학습집단에 배정하는 방법은 :ref:`partnercoursestaff:Cohorts Overview` 에 자세한 안내가 있다.
+  K-MOOC 플랫폼에서 강좌의 선택적 특성이다. 학습집단의 활성화방법, 설정방법, 학습자를 학습집단에 배정하는 방법은 :ref:`Cohorts Overview` 에 자세한 안내가 있다.
 
 .. _Component_g:
 
 **구성요소**
 
-  실제 강좌 콘텐츠를 포함하고 있는 학습활동 영역의 부분. 하나의 학습활동은 하나 이상의 구성요소를 가질 수 있다.  :ref:`partnercoursestaff:Developing Course Components` 에 자세한 안내가 있다.
+  실제 강좌 콘텐츠를 포함하고 있는 학습활동 영역의 부분. 하나의 학습활동은 하나 이상의 구성요소를 가질 수 있다.  :ref:`Developing Course Components` 에 자세한 안내가 있다.
 
 .. _Content Experiment:
 
 **콘텐츠 실험**
 
-  다른 형태로 강좌 콘텐츠를 재정의하고 임의로 할당된 학습자 집단이 이용하도록 하는 것으로, A/B 분할 테스트로 알려져 있다. 콘텐츠 실험은 다른 버전의 콘텐츠를 이용한 학습자들의 학습 결과를 비교하기 위해 사용한다.  :ref:`partnercoursestaff:Overview of Content Experiments` 에 자세한 안내가 있다.
+  다른 형태로 강좌 콘텐츠를 재정의하고 임의로 할당된 학습자 집단이 이용하도록 하는 것으로, A/B 분할 테스트로 알려져 있다. 콘텐츠 실험은 다른 버전의 콘텐츠를 이용한 학습자들의 학습 결과를 비교하기 위해 사용한다.  :ref:`Overview of Content Experiments` 에 자세한 안내가 있다.
 
 
 **콘텐츠 보관함**
 
-  :ref:`Library<Library_g>` 을 참고한다.
+  :ref:`Library_g` 을 참고한다.
 
 
 .. _Content Specific Discussion Topic_g:
