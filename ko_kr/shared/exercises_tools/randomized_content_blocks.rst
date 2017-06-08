@@ -56,7 +56,7 @@ Studio에서 콘텐츠 보관함 도구를 설정하기 위해  ``"library_conte
 강좌에 무작위 콘텐츠 블록 추가하기
 =============================================
 
-:ref:`enable content libraries<Enable Content Libraries>` 이후 무작위 콘텐츠 블록 고급 구성요소를 이용하여 보관함 콘텐츠를 강좌에 추가할 수 있다.
+:ref:`Enable Content Libraries` 이후 무작위 콘텐츠 블록 고급 구성요소를 이용하여 보관함 콘텐츠를 강좌에 추가할 수 있다.
 
 #. Studio에서 로그인 후 콘텐츠 보관함의 무작위 문제 를 추가하고자 하는 강좌를 연다.
 

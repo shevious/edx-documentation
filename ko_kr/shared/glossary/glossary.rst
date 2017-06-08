@@ -127,7 +127,7 @@ C
 
 **콘텐츠 보관함**
 
-  :ref:`Library<Library_g>` 을 참고한다.
+  :ref:`Library_g` 을 참고한다.
 
 
 .. _Content Specific Discussion Topic_g:
@@ -254,7 +254,7 @@ E
 
 **내보내기**
 
-  K-MOOC 스튜디오의 도구로 백업이나 XML 형식으로 강좌 및 보관함을 수정하기 위해 강좌나 보관함을 내보낼 수 있다. :ref:`Import<I>` 또한 참고하면 좋다.
+  K-MOOC 스튜디오의 도구로 백업이나 XML 형식으로 강좌 및 보관함을 수정하기 위해 강좌나 보관함을 내보낼 수 있다. :ref:`I` 또한 참고하면 좋다.
 
   :ref:`Export a Course` 및   :ref:`Export a Library` 에 자세한 안내가 있다.
 
@@ -266,7 +266,7 @@ F
 
 **포럼**
 
-  :ref:`Discussion<D>` 을 참고한다.
+  :ref:`D` 을 참고한다.
 
 .. _G:
 
@@ -285,7 +285,7 @@ G
 
 **채점 기준표**
 
-  :ref:`Rubric<R>` 을 참고한다.
+  :ref:`R` 을 참고한다.
 
 
 .. _H:
@@ -326,7 +326,7 @@ I
 
 **가져오기**
 
-  Studio 외부에서 개발한 강좌나 보관함을 XML 형태로 가져오거나, Studio에서 만들어지지 않은 강좌의 새 버전을 실행하기 위해 가져오기 기능을 활용할 수 있다.  :ref:`Export<E>` 참고하면 좋다.
+  Studio 외부에서 개발한 강좌나 보관함을 XML 형태로 가져오거나, Studio에서 만들어지지 않은 강좌의 새 버전을 실행하기 위해 가져오기 기능을 활용할 수 있다.  :ref:`E` 참고하면 좋다.
 
   :ref:`Import a Course` 에 자세한 안내가 있다
 
@@ -349,7 +349,7 @@ L
 
 **라벨**
 
-  :ref:`Accessible Label<A>` 을 참고한다.
+  :ref:`A` 을 참고한다.
 
 .. _LaTeX_g:
 
@@ -366,11 +366,11 @@ L
 
 **학습 순서**
 
-  :ref:`Unit Navigation Bar<U>` 를 참고한다.
+  :ref:`U` 를 참고한다.
 
 **좌측 메뉴**
 
-  :ref:`Course Navigation Pane<C>` 를 참고한다.
+  :ref:`C` 를 참고한다.
 
 .. _Library_g:
 
@@ -389,7 +389,7 @@ L
 
 **LON-CAPA**
 
-  컴퓨터 보조 개인 접근 온라인 학습 네트워크 플랫폼이다. K-MOOC 플랫폼의 CAPA 문제 유형은 LON-CAPA를 기반으로 하며  :ref:`CAPA Problems<C>`  에 자세한 안내가 있다.
+  컴퓨터 보조 개인 접근 온라인 학습 네트워크 플랫폼이다. K-MOOC 플랫폼의 CAPA 문제 유형은 LON-CAPA를 기반으로 하며  :ref:`C`  에 자세한 안내가 있다.
 
 .. _M:
 
@@ -578,7 +578,7 @@ S
 
 **Split Test**
 
-  :ref:`Content Experiment<C>` 에 자세히 안내되어 있다.
+  :ref:`C` 에 자세히 안내되어 있다.
 
 
 .. _Subsection:
@@ -587,7 +587,7 @@ S
 
   소주제는 주제에 속하는 하위 영역으로 학습활동을 포함한다. 강좌의 소주제를 살펴보면 강좌에서 무엇을 중점으로 두는지 이해할 수 있게 된다.
 
-  :ref:`partnercoursestaff:Developing Course Subsections` 에 자세히 안내되어 있다.
+  :ref:`Developing Course Subsections` 에 자세히 안내되어 있다.
 
 
 .. _T:
@@ -602,7 +602,7 @@ T
 
   학습자에게 텍스트를 입력하도록 하는 문제로 정답이 아닐 때 체크되어진다.
 
-  :ref:`partnercoursestaff:Text Input` 에 자세히 안내되어 있다.
+  :ref:`Text Input` 에 자세히 안내되어 있다.
 
 
 .. _Transcript:
@@ -611,7 +611,7 @@ T
 
   동영상 콘텐츠를 텍스트로 옮긴 것이다. 학습자를 위해 동영상 자막을 만들어 활용할 수 있다.
 
-  2단계. :ref:`partnercoursestaff:Create Transcript` 와  :ref:`partnercoursestaff:Working with Video Components` 에 자세한 안내가 있다.
+  2단계. :ref:`Create Transcript` 와  :ref:`Working with Video Components` 에 자세한 안내가 있다.
 
 .. _U:
 
@@ -623,13 +623,13 @@ U
 
   학습활동은 강좌 개요에서 소주제를 보여준다. 학습자는 한 페이지에서 한 학습활동의 모든 콘텐츠를 볼 수 있다.
 
-  :ref:`partnercoursestaff:Developing Course Units` 에 자세한 안내가 있다.
+  :ref:`Developing Course Units` 에 자세한 안내가 있다.
 
 **학습활동 탐색 바**
 
   학습 관리 시스템의 강좌 페이지 상단에 나오는 가로 방향의 탐색창이다. 학습활동 탐색 바에 선택한 소주제의 각 학습활동에 대한 아이콘이 있다. 마우스를 아이콘 위에 올려놓으면 학습활동 이름이 나타난다. 학습활동 하나를 즐겨찾기 했다면 해당 학습활동 아이콘 위에 깃발이 나타난다.
 
-  :ref:`Course Navigation Pane<C>` 에 자세한 안내가 있다.
+  :ref:`C` 에 자세한 안내가 있다.
 
 .. _V:
 
@@ -639,7 +639,7 @@ V
 
 **세로**
 
-  :ref:`Unit<U>` 을 참고한다.
+  :ref:`U` 을 참고한다.
 
 .. _Video Component:
 
@@ -647,7 +647,7 @@ V
 
   강좌에서 동영상을 사용할 수 있도록 하는 구성요소다.
 
-  :ref:`partnercoursestaff:Working with Video Components` 에 자세한 안내가 있다.
+  :ref:`Working with Video Components` 에 자세한 안내가 있다.
 
 
 .. _W:
@@ -662,14 +662,14 @@ W
 
   K-MOOC 강좌에서 특정 권한이 있는 학습자들의 목록을 Whitelist라고 부른다. 예를 들어 Whitelist에 포함된 학습자를 성적과 관계 없이 강좌에서 인증서를 받을 수 있도록 설정할 수 있다.
 
-  강좌의 성적표를 보면 이러한 학습자는 인증서 적격 항목에서 Yes 값을 갖는다.  :ref:`partnercoursestaff:Interpret the Grade Report` 에 자세한 안내가 있다.
+  강좌의 성적표를 보면 이러한 학습자는 인증서 적격 항목에서 Yes 값을 갖는다.  :ref:`Interpret the Grade Report` 에 자세한 안내가 있다.
 
 
 .. _Wiki:
 
 **위키(Wiki)**
 
-  각 K-MOOC 강좌는 위키 페이지에서 학습자 및 강좌 운영팀에서 콘텐츠를 작성하고, 수정하며, 삭제할 수 있다. 학습자는 위키를 링크, 노트, 도움이 되는 정보를 서로에게 공유하기 위해 사용할 수 있다.  :ref:`partnercoursestaff:Course_Wiki` 에 자세한 안내가 있다.
+  각 K-MOOC 강좌는 위키 페이지에서 학습자 및 강좌 운영팀에서 콘텐츠를 작성하고, 수정하며, 삭제할 수 있다. 학습자는 위키를 링크, 노트, 도움이 되는 정보를 서로에게 공유하기 위해 사용할 수 있다.  :ref:`Course_Wiki` 에 자세한 안내가 있다.
 
 
 .. _X:

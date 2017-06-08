@@ -14,7 +14,7 @@
 
 강좌 운영자는 설문 전체 결과와 함께 각 학습자의 답변을 조회할 수 있다.
 
-.. note:: 퀄트릭스 설문을 사용하려면 반드시 라이센스가 있어야 한다. 퀄트릭스 라이센스는  `Qualtrics website <http://www.qualtrics.com>`_ 에서 일정 비용을 지불하면 받을 수 있다. 설문을 추가하고 싶지만 퀄트릭스 라이센스가 없다면  :ref:`edX survey tool<Survey Tool>` 나 :ref:`Google form<Google Drive Files Tool>` 을 사용할 수 있다.
+.. note:: 퀄트릭스 설문을 사용하려면 반드시 라이센스가 있어야 한다. 퀄트릭스 라이센스는  `Qualtrics website <http://www.qualtrics.com>`_ 에서 일정 비용을 지불하면 받을 수 있다. 설문을 추가하고 싶지만 퀄트릭스 라이센스가 없다면  :ref:`Survey Tool` 나 :ref:`Google Drive Files Tool` 을 사용할 수 있다.
 
 자세한 내용은 다음을 참고하면 된다.
 
@@ -28,7 +28,7 @@
 강좌에 퀄트릭스 설문 추가하기
 *************************************
 
-강좌에 퀄트릭스 설문을 추가하기 위해  :ref:`create the survey in Qualtrics <Create the Qualtrics Survey>`   :ref:`create an HTML component in Studio <Create the HTML Component in Studio>`  해야 한다.
+강좌에 퀄트릭스 설문을 추가하기 위해  :ref:`Create the Qualtrics Survey`   :ref:`Create the HTML Component in Studio`  해야 한다.
 
 .. _Create the Qualtrics Survey:
 

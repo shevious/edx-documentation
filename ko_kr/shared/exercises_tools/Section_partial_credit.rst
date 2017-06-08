@@ -6,10 +6,10 @@
 
 다음과 같은 문제 유형에서 학습자에게 부분점수를 부여할 수 있다.
 
-* :ref:`Checkbox <Awarding Partial Credit in a Checkbox Problem>`
-* :ref:`Multiple Choice <Awarding Partial Credit in a Multiple Choice Problem>`
-* :ref:`Numerical Input <Awarding Partial Credit in a Numerical Input Problem>`
-* :ref:`Write-Your-Own Grader <Award Half Credit>`
+* :ref:`Awarding Partial Credit in a Checkbox Problem`
+* :ref:`Awarding Partial Credit in a Multiple Choice Problem`
+* :ref:`Awarding Partial Credit in a Numerical Input Problem`
+* :ref:`Award Half Credit`
 
 문제에 부분점수를 줌으로서 학습자가 아는 만큼 정확하게 점수를 줄 수 있고 이를 통해 의욕을 높일 수 있다.
 
@@ -42,7 +42,7 @@
 
 * 학습자가 부분 점수를 얻었을 때 생성되는 이벤트는 학습자가 정확한 답을 했음을 알려준다. 구체적으로 correctness 필드는 correct 값을 갖는다.
 
-  자세한 사항은  :ref:`data:problem` 를 참고하면 된다.
+  자세한 사항은  :ref:`problem` 를 참고하면 된다.
 
 * 학습자 정답 분포 보고에서 정답에 대한 값은 1이다.
 
