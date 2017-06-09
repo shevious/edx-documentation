@@ -9,7 +9,7 @@
 - :ref:`M` - :ref:`N` - :ref:`O` - :ref:`P` - :ref:`R`
 - :ref:`S` - :ref:`T` - :ref:`V` - :ref:`W` - :ref:`XYZ<X>`
 
-.. note:: 이 주요 용어 페이지의 링크 대부분은 K-MOOC 강좌 제작 및 운영하기에 있다..
+.. note:: 이 주요 용어 페이지의 링크 대부분은 K-MOOC 강좌 제작 및 운영하기에 있다.
 
 .. _A:
 
@@ -77,7 +77,7 @@ C
 
 **장**
 
-  :ref:`Section<S>`  를 참고한다.
+  :ref:`S`  를 참고한다.
 
 .. _Checkbox_g:
 
@@ -154,7 +154,7 @@ C
 
   학습 관리 시스템 강좌 페이지 측면에 있는 탐색 창이다. 강좌 탐색 Pane은 강좌의 주제를 보여준다. 주제를 선택하면 소주제들이 나오게 되고 소주제를 선택하면 소주제의 첫 학습활동이 강좌 페이지에 나타난다.
 
-  :ref:`Unit Navigation Bar<U>` 에 자세한 안내가 있다.
+  :ref:`U` 에 자세한 안내가 있다.
 
 .. _Run:
 
@@ -174,8 +174,6 @@ C
 **Courseware**
 
   열린 학습 XML (OLX)와 데이터 패키지에서 “강좌 내용”은 여러 학습과 평가로 이루어진 강좌의 주요 내용을 의미한다. 강좌 내용은 주제, 소주제 및 학습활동 등으로 이루어져 있다. 강좌 내용에는 기타 강좌 자료는 포함되지 않는다.
-
-  Note that the **Course** page was formerly called the **Courseware** page.
 
 
 **Course-Wide Discussion Topic**
