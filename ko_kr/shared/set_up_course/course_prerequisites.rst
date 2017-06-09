@@ -40,8 +40,6 @@
 #. 선수 과정에서 과정을 선택한다.
 #. 저장하기 버튼이 나타나면 누른다.
 
-.. note:: Currently, you can specify only one prerequisite course.
-
 .. _Require an Entrance Exam:
 
 ****************************
