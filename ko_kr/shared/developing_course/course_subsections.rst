@@ -55,12 +55,12 @@
 
 강좌 개설자는 소주제의 공개일을 조절할 수 있다. 콘텐츠를 학습자에게 공개하려면, 그 콘텐츠가 들어가 있는 소주제가 공개되어야 한다. 소주제의 공개 상태로는 다음과 같은 것이 있다.
 
-* `Scheduled with the Section`_
-* `Unscheduled`_
-* `Scheduled Later than the Section`_
-* `Scheduled with Unpublished Changes`_
-* `Released with Unpublished Changes`_
-* `Released`_
+* `주제와 함께 공개 예정`_
+* `공개일이 지정되지 않음`_
+* `주제 공개 후 소주제 공개`_
+* `공개 예정인 소주제의 학습활동 변경`_
+* `공개된 소주제의 학습활동 변경`_
+* `공개일시`_
 
 ==========================
 주제와 함께 공개 예정
