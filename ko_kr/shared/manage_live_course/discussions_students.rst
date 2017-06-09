@@ -380,8 +380,6 @@ K-MOOC 강좌 게시판 구조
 
 .. only:: Open_edX
 
-  .. note:: You can only mark questions as answered when you work in a web
-    browser. This option is not available when you work in an edX mobile app.
 
 적어도 하나 이상이 답글이 답변으로 표시되면, 게시판 메뉴 목록에서 게시물에 표시된 물음표 이미지가 체크 표시 또는 눈금 표시 이미지로 바뀐다.
 
