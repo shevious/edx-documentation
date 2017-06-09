@@ -1,7 +1,7 @@
 .. _Preface:
 
 ####################
-Other edX Resources
+기타 edX 정보
 ####################
 
 .. Doc team! Be sure that when you make any changes to this file that you also make them to the mirrored files in these other locations.

@@ -10,9 +10,6 @@ K-MOOC 시작하기
   :local:
   :depth: 1
 
-If you are creating a course to run on `edx.org`_ or `edX Edge`_, see
-:ref:`Getting Started with Studio` in the *Building and
-Running an edX Course* guide.
 
 .. _What is Studio?:
 
@@ -40,41 +37,29 @@ Studio를 이용하여 강좌 콘텐츠, 문제, 동영상 및 기타 자료를 
  :width: 600
  :alt: Image of the Studio home page where you create your first course
 
-#. Select **Create Your First Course**.
+#. **첫번째 강좌 만들기** 선택.
 
-#. Enter course information as needed, and then select **Create**.
+#. 강좌에 대한 정보를 입력하고 **만들기** 버튼 선택.
 
   .. image:: ../../../shared/images/new_course_info.png
    :width: 600
    :alt: Image of the Create New Course page
 
   .. note::
-    Enter new course information carefully. This information becomes part of
-    the URL for your course. Because this information becomes part of your
-    course URL, the total number of characters in the following three fields
-    must be 65 or fewer.
+    새 강좌의 정보를 주의해서 입력한다. 입력한 정보는 URL을 구성하는 요소가 됩니다. 강좌의 정보가 강좌의 URL이 되기 때문에 총 문자수는 3개의 필드를 모두 합쳐서 65자보다 작아야 한다.
 
-  * For **Course Name**, enter the title of your course. For example, the name
-    may be "Sets, Maps and Symmetry Groups". Use title capitalization for the
-    course title.
+  * **강좌명** 에는 강좌의 이름을 입력한다 예를 들면 "집합, 맵, 대칭 그룹"과 같은 것이다.
 
-  * For **Organization**, enter the name of your institution. Do not include
-    whitespace or special characters.
+  * **기관** 에는 기관의 명칭을 입력한다. 공백이나 특수문자, 한글 등을 사용하지 않도록 한다..
 
-  * For **Course Number**, enter both a subject abbreviation and a number. For
-    example, for public health course number 207, enter **PH207**. For math
-    course 101x, enter **Math101x**. Do not include whitespace or special
-    characters in the course number.
+  * **강좌 번호** 는 강좌의 고유번호와 약어를 사용하여 만든다. 예를 들면 Public Health 207 강좌일 경우 **PH207** 을 입력한다. 수학 101x 강좌인경우 **Math101x** 를 입력한다. 공백이나 특수문자, 한글을 사용하지 않도록 한다.
 
-#. Select **Save.**
+#. **저장** 을 선택한다.**
 
-Your new course opens to the **Course Outline** page. Because no content has
-been added, this page is empty.
+새로운 강좌가 생성되고 **강좌 개요** 페이지로 이동된다. 아무 콘텐츠가 없기때문에 내용은 비어 있을 것이다.
 
-In your browser's address bar, notice that the URL of your course includes the
-course organization, number, and course run.
+상단의 주소창에 입력된 기관, 강좌 번호, 강좌별 운영번호가 보일 것이다.
 
-The other sections of this guide describe how you now build and run your
-course.
+나머지 가이드에 강좌의 작성과 운영방법이 소개되어 있다.
 
 .. include:: ../../../links/links.rst
