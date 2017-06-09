@@ -4,7 +4,7 @@
 수강신청
 ##########################
 
-수강 신청 기간 동안 학습자는 직접 수강 신청 할 수 있다. `kmoocs.kr`_ 의 강좌는 K-MOOC 계정으로 등록한 모든 사람들이 공개적으로 수강신청할 수 있다.
+수강 신청 기간 동안 학습자는 직접 수강 신청 할 수 있다. kmoocs.kr 의 강좌는 K-MOOC 계정으로 등록한 모든 사람들이 공개적으로 수강신청할 수 있다.
 
 강좌 운영팀과 관리팀은 강좌에 학습자를 수강 등록하거나 수강 신청한 인원을 확인할 수 있으며, 필요에 따라 학습자 수강 신청을 취소할 수 있다.
 
@@ -90,8 +90,6 @@
 
 .. only:: Open_edX
 
-
-  .. include:: ../../../shared/manage_live_course/Section_view_enrollment_count.rst
 
 
 .. _Report Learners Not Yet Enrolled:

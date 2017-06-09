@@ -18,7 +18,7 @@
 
 학습집단이 학습자의 게시판 활용에 주는 영향에 대해선  :ref:`Moderating Discussions for Cohorts` 에 자세한 안내가 나와있다.
 
-.. note:: :ref:`Discussions for Students and Staff`는 학습자가 활용할 수 있는 모든 기능에 관해 설명하고 있어서, 온라인 토의에 익숙하지 않은 학습자들에게 유용할 것이다.
+.. note:: :ref:`Discussions for Students and Staff`  는 학습자가 활용할 수 있는 모든 기능에 관해 설명하고 있어서, 온라인 토의에 익숙하지 않은 학습자들에게 유용할 것이다.
 
 .. _Overview_discussions:
 
@@ -331,7 +331,7 @@
       that learner's active threads page in the course discussions, and an
       image of the learner's profile.
 
-자세한 사항은 :ref:`openlearners:SFD Dashboard Settings Profile` 에 자세히 안내되어 있다.
+자세한 사항은 :ref:`SFD Dashboard Settings Profile` 에 자세히 안내되어 있다.
 
 ========================================
 학습자에게 가이드라인 제공하기
@@ -555,9 +555,13 @@ Studio에서 제공되는 추가된 대괄호 사이에 이 값을 입력한다.
 * 학습자가 모바일 환경에서 강좌에 접속하면 주제별 게시판은 게시판 페이지의 일반 게시판과 함께 볼 수밖에 없다.
 
 * 다음 기능은 모바일 환경에서 제공되지 않는다.
+
   * 게시글 고정하기
+
   * 답변 완료 표시하기
+
   * 게시판 인도하기
+
   * 게시판이나 글 닫기
 
 
