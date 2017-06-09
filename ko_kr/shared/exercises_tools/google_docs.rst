@@ -141,7 +141,7 @@ OLX에서 구글 드라이브 파일 활용하기
 
 #. **표시 이름** 입력 필드에, 구성요소의 이름을 입력한다.
 
-#. **소스 코드** 입력 필드에,  `Obtain the Google Drive File Embed Code`_  작업에서 복사한 소스 코드를 붙여 넣는다.
+#. **소스 코드** 입력 필드에,  `구글 드라이브 파일 게시하기 및 포함된 소스 코드 얻기`_  작업에서 복사한 소스 코드를 붙여 넣는다.
 
 #. **저장** 을 클릭한다.
 
@@ -166,7 +166,9 @@ OLX에서 구글 드라이브 파일 XBlock을 추가하려면, ``google-documen
     ?key=0AuZ_5O2JZpH5dGVUVDNGUE05aTFNcEl2Z0ZuTUNmWUE&amp;output=html&amp;widge
     t=true&quot;&gt;&lt;/iframe&gt;" display_name="Google Document"/>
 
- ``embed_code`` 속성의 값은 `Obtain the Google Drive File Embed Code`_  작업에서 복사한 소스 코드이다.
+
+
+``embed_code`` 속성의 값은 `구글 드라이브 파일 게시하기 및 포함된 소스 코드 얻기`_  작업에서 복사한 소스 코드이다.
 
 .. note::
   K-MOOC 학습 관리 시스템은 구글 드라이브 파일에 대한 높이 및 너비 값을 설정한다. 이러한 속성을 추가하면, LMS는 값을 무시한다.
