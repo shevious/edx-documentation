@@ -11,7 +11,8 @@ Studio에서 공지사항 및 학습 자료를 추가할 수 있다. 학습자�
        & News" section containing a dated post and a "Course Handouts" frame
        with a list of links.
 
-.. contents:: Section Contents
+
+.. contents:: 
    :local:
    :depth: 1
 
