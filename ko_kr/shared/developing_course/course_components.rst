@@ -38,7 +38,7 @@
 
 강좌개요에서 **+새로운 학습활동** 을 클릭한 후, 바뀐 페이지의 신규 구성요소 추가 에서 원하는 구성요소 유형을 클릭한다.
 
-.. image:: ../../../shared/images/AddNewComponent.png
+.. image:: ../../../shared/images/AddNew.png
   :alt: The controls for the default component types you can add: Discussion,
       HTML, Problem, and Video.
 
