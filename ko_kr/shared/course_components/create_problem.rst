@@ -178,7 +178,7 @@ Studio에서 문제 보기
 
 .. note:: 성적에 반영되는 소주제에 포함된 문제만 학습자의 최종 성적으로 계산된다.
 
-학습자가 문제에서 받을 수 있는 최대 점수를 지정한다. 문제 가중치는 문제 제목 옆에 표시된다.
+학습자가 문제에서 받을 수 있는 최대 점수를 지정한다. 문제 가중치는 문제 제목 밑에 표시된다.
 
 .. image:: ../../../shared/images/ProblemWeight_DD.png
  :alt: An image of a problem from a learner's point of view, with the possible

@@ -98,7 +98,7 @@ Studio에 상호 설명 과제 추가하기
 
 #. **강좌 개요** 페이지에서 과제를 추가할 소주제를 선택하거나 새 학습활동을 연다.
 
-#. **새 구성요소 추가하기** 아래 **고급** 에서 **상호 설명** 을 선택한다. Studio는 새 구성요소를 학습활동에 추가해 예제 질문 및 답안이 포함된 템플릿을 제공한다.
+#. **신규 구성요소 추가** 아래 **고급** 에서 **상호 설명** 을 선택한다. Studio는 새 구성요소를 학습활동에 추가해 예제 질문 및 답안이 포함된 템플릿을 제공한다.
 
    .. image:: ../../../shared/images/peer_instruction_studio.png
      :alt: A peer instruction assignment in Studio that uses the template.
