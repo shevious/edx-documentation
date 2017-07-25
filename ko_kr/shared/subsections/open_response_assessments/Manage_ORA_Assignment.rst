@@ -166,7 +166,7 @@
     :alt: Dialog allowing comments to be entered when removing a learner
        submission.
 
-#. **답변 삭제(Remove submission)** 를 선택한다.
+7. **답변 삭제(Remove submission)** 를 선택한다.
 
    상호 평가에서 부적절한 답변은 삭제된다. 삭제된 답변은 우수 답변 목록에서도 제거된다.
 
