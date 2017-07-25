@@ -337,27 +337,24 @@ https:// 을 웹 URL에 다음 예제와 같이 추가해야 한다.
 
 ::
 
-  Subject: {course number} Starts Soon!
+제목: {course number} 곧 개강합니다!
 
-  Hello %%USER_FULLNAME%%,
+%%USER_FULLNAME%% 님, 안녕하세요?
 
-  We are excited that you are joining us for {course number}
-  %%COURSE_DISPLAY_NAME%%, offered by {organization name} through edX. Class
-  begins on {day}, {date} at {time} UTC (which is {time} {local time zone}).
-  Note that edX courses use Coordinated Universal Time (UTC) for due dates and
-  release times. You might want to verify the times in the course by using a
-  time zone converter such as {link}.
+{organization name}에서 제공하는 
+{course number} %%COURSE_DISPLAY_NAME%% 에 수강신청해주셔서 감사합니다.
+강좌는  {day}, {date}  {time} UTC (현지시각 {time} {local time zone})에 시작됩니다.
+본 과정은 한국시간이 아닌, UTC 표준 시간을 사용합니다. 한국시간이나 현지시간으로 변환하여 알고
+싶으실 경우에는 {link}를 이용부탁드립니다.
 
-  In case you haven't already found it, {course number} has its own official
-  Facebook page {add link}. You can find videos and photos posted there before
-  the course even begins.
+본 강좌는 다음의 페이스북 페이지 {add link}를 사용합니다. 강좌가 시작되기 전에 등록된 동영상이나
+사진 정보를 이용하실 수 있습니다.
 
-  If this is your first edX course, consider enrolling in the edX Demo course
-  {add link}. This course gives you an opportunity to explore the edX platform
-  and learn how to answer problems and track your progress, before {course
-  number} begins.
+이번이 처음 학습이시라면, 시작하기 강좌에 등록하고 사용하시기를 권장드립니다 {add link}
+이 강좌는 본 강좌를 듣기 전에 전반적인 이용 방법에 대해서 배우고 문제를 풀고 진도를 추적할
+수 있도록 하고 있습니다.
 
-  Your {course number} course staff
+{course number} 강좌 운영자 드림
 
 .. _Launch Day Welcome:
 
@@ -369,25 +366,23 @@ https:// 을 웹 URL에 다음 예제와 같이 추가해야 한다.
 
 ::
 
-  Subject: {course number} Starts Today!
+제목: {course number} 개강일입니다!
 
-  Hello everyone!
+학습자여러분, 안녕하세요?
 
-  At this time, edX course {course number} is available from your Dashboard
-  {add link}, and the staff would like to officially welcome you to the course!
-  You'll find materials for the first week on the Course page,
-  including both video lectures and problem sets.
+이제 {course number} 강좌가 대시보드에서 이용가능합니다 {add link}, 그리고
+학습자 여러분께 본 강좌의 운영팀은 환영의 말씀을 드립니다.
+동영상과 문항들을 비롯하여 첫주차의 강좌들이 이용가능합니다.
 
-  Please take some time to go to the Home page to read the handouts
-  and get familiar with course policies and philosophy.
+접속하셔서 유인물들과 교재를 둘러보는 시간을 갖고, 본 과정의 정책과 철학에 익숙해
+지시기를 바랍니다.
 
-  I will be your course lead and I hope you will all have a great time learning
-  {subject}! It may be challenging, it may be frustrating, but it will be
-  rewarding and you will learn a ton.
+저는 교수자로서 학습자 여러분이 다음의 학숩 {subject} 주제를 즐기실 수 있기를 바랍니다.
+본 과정은 때로는 도전적이고 불만스러울 수도 있으나, 그 결과는 만족스러울 것입니다.
 
-  On behalf of the staff, welcome, good luck, and have fun!
+운영팀을 대표해서 여러분을 환영하고, 즐거운 학습이 되기를 바랍니다!
 
-  {name} and the {course number} staff
+{name} 과 {course number} 운영팀 드림
 
 .. _Verified Registration Reminder:
 
@@ -399,23 +394,17 @@ https:// 을 웹 URL에 다음 예제와 같이 추가해야 한다.
 
 ::
 
-  Subject: Earn an edX verified certificate for {course name}!
+제목: {course name} 강좌의 이수증을 받으세요.
 
-  Dear %%USER_FULLNAME%%,
+%%USER_FULLNAME%% 님, 안녕하세요?
 
-  Interested in using an edX certificate to bolster a college application or to
-  advance your career? With an edX verified certificate, you can demonstrate to
-  colleges, employers, and colleagues that you successfully completed a
-  challenging edX course, while helping to support the edX mission.
+본 강좌에서 이수증을 받음으로서 다른 과정이나, 취업 등에 자료로 활용하고 싶진 않으신가요?
 
-  We would like to remind you that {date} is the last day to register for a
-  verified certificate in %%COURSE_DISPLAY_NAME%%. Registering for a
-  certificate is easy! Just go to this course on your edX dashboard and click
-  "Challenge Yourself".
+학습자 여러분께 %%COURSE_DISPLAY_NAME%% 강좍에서 {date}가 마지막으로 이수증을 취득할 수 있는 기간임을 알려드립니다.
 
-  Good luck!
+기간 내에 꼭 필요한 이수 기준을 충족시킬 경우 강좌 종료후 약 1주 이내에 이수증이 발급됩니다.
 
-  {name} and the {course number} staff
+감사합니다.
 
 .. _Weekly Highlights:
 
