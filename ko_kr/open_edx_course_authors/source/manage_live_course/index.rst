@@ -16,4 +16,4 @@
    discussions_students
    discussion_guidance_moderators
    staff_debug_info
-
+   copy_check
