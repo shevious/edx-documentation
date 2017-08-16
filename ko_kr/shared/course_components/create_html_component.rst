@@ -16,7 +16,7 @@ HTML 구성요소
 
 HTML 또는 HyperText Markup Language는 웹 페이지를 만드는데 이용되는 표준 마크업 언어이다. 웹 브라우저는 HTML 코드를 사람들이 보는 일반 문서 모양으로 변환해서 보여준다.
 
-학습자는 강좌에서 텍스트나 이미지를 볼 때 브라우저에서 형식화된 HTML 코드를 보게 된다. HTML에 대한 더 많은 정보는  `Wikipedia <http://en.wikipedia.org/wiki/HTML>`_ 등을 참고한다.
+학습자는 강좌에서 텍스트나 이미지를 볼 때 브라우저에서 형식화된 HTML 코드를 보게 된다. HTML에 대한 더 많은 정보는  `Wikipedia <http://ko.wikipedia.org/wiki/HTML>`_ 등을 참고한다.
 
 ===================
 HTML 구성요소

@@ -11,7 +11,7 @@
 스튜디오 개요에서 강좌를 개발하는 방법은  :ref:`Developing Your Course Index` 를 참고하면 된다.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    grade_range
    grace_period
