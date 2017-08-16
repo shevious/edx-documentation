@@ -19,5 +19,4 @@ product = 'Open_edX'
 def setup(app):
     app.add_config_value('product', '', True)
 
-
-project = u'K-MOOC 강좌 개발 및 운영 매뉴얼'
+project = u'K-MOOC'
