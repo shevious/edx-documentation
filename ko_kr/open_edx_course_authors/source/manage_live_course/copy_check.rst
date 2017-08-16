@@ -58,8 +58,7 @@
 
 표절 검사가 완료된  CSV파일의 양식은 다음 그림과 같이 학습자 ID, 상호채점 문항 번호의 표절 검사 종합점수(백분율), 표절 검사 세부 조회 링크로 구성되어 있다. 
 
-  .. image:: ../../../images/CopyCheck_3.png
-
+  .. image:: ../../../shared/images/CopyCheck_3.png
 
 
 
