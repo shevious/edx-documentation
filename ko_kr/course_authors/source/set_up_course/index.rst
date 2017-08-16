@@ -18,3 +18,5 @@ Studio의 강좌 개요 페이지에서 콘텐츠를 개발하는 방법은 :ref
    setting_up_student_view
    course_staffing
    creating_course_certificates
+   export_import_course
+   cdn_upload

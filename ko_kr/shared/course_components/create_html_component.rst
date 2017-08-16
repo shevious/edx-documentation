@@ -209,7 +209,7 @@ HTML 구성요소 만들기
 
 * :ref:`Add a Link in an HTML Component`
 * :ref:`Add an Image to an HTML Component`
-* :ref:`Import LaTeX Code`
+
 
 .. _Add a Link in an HTML Component:
 
@@ -387,20 +387,4 @@ HTML 구성요소에 이미지를 추가하기 전에  :ref:`Best Practices for 
 #. **HTML** 구성요소에 이미지를 삽입하려면 **확인** 을 클릭한다.
 
 #. **HTML** 구성요소를 저장하고 이미지가 나오는지 확인한다.
-
-
-.. _Import LaTeX Code:
-
-=========================================
-HTML 구성요소로 LaTeX 코드 가져오기
-=========================================
-
-LaTeX 코드를 HTML 구성요소로 가져올 수 있다. 이는 다음과 같은 수식을 입력할 때 사용할 수 있다.
-
-.. image:: ../../../shared/images/HTML_LaTeX_LMS.png
- :alt: An image of math formulas created with LaTeX in an HTML component.
- :width: 600
-
-.. warning::
- Studio가 사용하는 LaTeX 코드 XML변환 프로세서는 제3자 도구다. 이를 사용할 땐 조심해야 하며 운영자와 상담 후에 사용해야 한다. (현재 LaTeX 편집기는 K-MOOC에서는 이용할 수 없다.)
 
